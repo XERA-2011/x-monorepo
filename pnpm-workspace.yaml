@@ -46,7 +46,7 @@ catalog:
   '@tinymce/tinymce-vue': ^6.1.0
   '@tanstack/vue-query': ^5.91.0
   '@tanstack/vue-store': ^0.8.0
-  '@types/archiver': ^6.0.3
+  '@types/archiver': ^7.0.0
   '@types/codemirror': ^5.60.13
   '@types/crypto-js': ^4.2.2
   '@types/eslint': ^9.6.1
