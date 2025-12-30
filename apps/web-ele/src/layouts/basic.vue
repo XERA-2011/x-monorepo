@@ -10,7 +10,7 @@ import {
   AuthenticationLoginExpiredModal,
   useVbenModal,
 } from '@x-monorepo/common-ui';
-import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@x-monorepo/constants';
+import { PROJECT_DOC_URL, PROJECT_GITHUB_URL } from '@x-monorepo/constants';
 import { isTenantEnable, useTabs, useWatermark } from '@x-monorepo/hooks';
 import {
   AntdProfileOutlined,
@@ -69,7 +69,7 @@ const menus = computed(() => [
   },
   {
     handler: () => {
-      openWindow(VBEN_DOC_URL, {
+      openWindow(PROJECT_DOC_URL, {
         target: '_blank',
       });
     },
@@ -78,7 +78,7 @@ const menus = computed(() => [
   },
   {
     handler: () => {
-      openWindow(VBEN_GITHUB_URL, {
+      openWindow(PROJECT_GITHUB_URL, {
         target: '_blank',
       });
     },

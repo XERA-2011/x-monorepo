@@ -4,9 +4,9 @@ import type { AboutProps, DescriptionItem } from './about';
 import { h } from 'vue';
 
 import {
-  VBEN_DOC_URL,
-  VBEN_GITHUB_URL,
-  VBEN_PREVIEW_URL,
+  PROJECT_DOC_URL,
+  PROJECT_GITHUB_URL,
+  PROJECT_PREVIEW_URL,
 } from '@x-monorepo/constants';
 
 import { VbenRenderContent } from '@x-monorepo-core/shadcn-ui';
@@ -80,15 +80,15 @@ const vbenDescriptionItems: DescriptionItem[] = [
     title: '主页',
   },
   {
-    content: renderLink(VBEN_DOC_URL, '点击查看'),
+    content: renderLink(PROJECT_DOC_URL, '点击查看'),
     title: '文档地址',
   },
   {
-    content: renderLink(VBEN_PREVIEW_URL, '点击查看'),
+    content: renderLink(PROJECT_PREVIEW_URL, '点击查看'),
     title: '预览地址',
   },
   {
-    content: renderLink(VBEN_GITHUB_URL, '点击查看'),
+    content: renderLink(PROJECT_GITHUB_URL, '点击查看'),
     title: 'Github',
   },
   {
@@ -115,7 +115,7 @@ const devDependenciesItems = Object.keys(devDependencies).map((key) => ({
   <Page :title="title">
     <template #description>
       <p class="text-foreground mt-3 text-sm leading-6">
-        <a :href="VBEN_GITHUB_URL" class="vben-link" target="_blank">
+        <a :href="PROJECT_GITHUB_URL" class="vben-link" target="_blank">
           {{ name }}
         </a>
         {{ description }}
