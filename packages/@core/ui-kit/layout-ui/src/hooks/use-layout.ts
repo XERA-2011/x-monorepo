@@ -1,6 +1,6 @@
 import type { LayoutType } from '@x-monorepo-core/typings';
 
-import type { VbenLayoutProps } from '../vben-layout';
+import type { VbenLayoutProps } from '../app-layout';
 
 import { computed } from 'vue';
 
