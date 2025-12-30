@@ -33,17 +33,13 @@ const [Modal, modalApi] = useXAppModal({
           <p class="w-24 p-2">项目地址:</p>
           <XAppButton
             variant="link"
-            @click="
-              openWindow('https://gitee.com/yudaocode/x-monorepo')
-            "
+            @click="openWindow('https://gitee.com/yudaocode/x-monorepo')"
           >
             Gitee
           </XAppButton>
           <XAppButton
             variant="link"
-            @click="
-              openWindow('https://github.com/yudaocode/x-monorepo')
-            "
+            @click="openWindow('https://github.com/yudaocode/x-monorepo')"
           >
             Github
           </XAppButton>
@@ -53,20 +49,14 @@ const [Modal, modalApi] = useXAppModal({
           <p class="w-24 p-2">issues:</p>
           <XAppButton
             variant="link"
-            @click="
-              openWindow(
-                'https://gitee.com/yudaocode/x-monorepo/issues',
-              )
-            "
+            @click="openWindow('https://gitee.com/yudaocode/x-monorepo/issues')"
           >
             Gitee
           </XAppButton>
           <XAppButton
             variant="link"
             @click="
-              openWindow(
-                'https://github.com/yudaocode/x-monorepo/issues',
-              )
+              openWindow('https://github.com/yudaocode/x-monorepo/issues')
             "
           >
             Github

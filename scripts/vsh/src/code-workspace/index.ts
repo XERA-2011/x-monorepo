@@ -13,7 +13,7 @@ import {
   toPosixPath,
 } from '@x-monorepo/node-utils';
 
-const CODE_WORKSPACE_FILE = join('vben-admin.code-workspace');
+const CODE_WORKSPACE_FILE = join('x-monorepo.code-workspace');
 
 interface CodeWorkspaceCommandOptions {
   autoCommit?: boolean;
