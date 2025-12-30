@@ -20,6 +20,23 @@ export namespace AuthApi {
             username: string
             nickname: string
             avatar: string
+            mobile?: string
+            email?: string
+            sex?: number
+            createTime?: number
+            loginDate?: number
+            dept?: {
+                id: number
+                name: string
+            }
+            roles?: Array<{
+                id: number
+                name: string
+            }>
+            posts?: Array<{
+                id: number
+                name: string
+            }>
         }
         roles: string[]
         permissions: string[]

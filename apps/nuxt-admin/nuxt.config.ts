@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
+  ssr: false, // 禁用服务端渲染，使用纯客户端渲染（SPA 模式）
   devtools: { enabled: true },
   devServer: {
     port: 3001
@@ -27,7 +28,13 @@ export default defineNuxtConfig({
         '/api': {
           target: apiTarget,
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, '/admin-api')
+          rewrite: (path) => path.replace(/^\/api/, '/admin-api'),
+          // 跳过 Nuxt 内部请求（如图标）
+          bypass: (req) => {
+            if (req.url?.includes('/_nuxt')) {
+              return req.url
+            }
+          }
         }
       }
     }

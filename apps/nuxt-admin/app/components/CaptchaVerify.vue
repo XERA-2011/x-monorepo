@@ -1,6 +1,8 @@
 <template>
   <UModal v-model="isOpen">
     <UCard>
+      <!-- 隐藏的可聚焦元素，解决 FocusTrap 警告 -->
+      <button class="sr-only" aria-hidden="true">focus trap placeholder</button>
       <template #header>
         <div class="flex justify-between items-center">
           <span class="font-semibold">安全验证</span>
@@ -39,8 +41,11 @@
           <div 
             class="slider-thumb"
             :style="{ left: `${sliderValue}px` }"
+            tabindex="0"
             @mousedown="startDrag"
             @touchstart="startDrag"
+            @keydown.right="sliderValue = Math.min(sliderValue + 5, 270)"
+            @keydown.left="sliderValue = Math.max(sliderValue - 5, 0)"
           >
             <span class="text-lg">↔️</span>
           </div>
@@ -101,8 +106,8 @@ async function refreshCaptcha() {
     const res = await getCaptchaApi({ captchaType: 'blockPuzzle' })
     console.log('Captcha API response:', res)
     // API 返回格式：{ repCode: '0000', repData: {...} }
-    if (res && res.repCode === '0000' && res.repData) {
-      captchaData.value = res.repData
+    if ((res as any) && (res as any).repCode === '0000' && (res as any).repData) {
+      captchaData.value = (res as any).repData
     } else if (res && res.data) {
       // 兼容标准格式
       captchaData.value = res.data
@@ -121,7 +126,7 @@ async function refreshCaptcha() {
 function startDrag(e: MouseEvent | TouchEvent) {
   e.preventDefault()
   isDragging.value = true
-  startX.value = 'touches' in e ? e.touches[0].clientX : e.clientX
+  startX.value = 'touches' in e ? e.touches[0]?.clientX ?? 0 : e.clientX
   
   document.addEventListener('mousemove', onDrag)
   document.addEventListener('mouseup', endDrag)
@@ -133,7 +138,7 @@ function startDrag(e: MouseEvent | TouchEvent) {
 function onDrag(e: MouseEvent | TouchEvent) {
   if (!isDragging.value || !sliderContainer.value) return
   
-  const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX
+  const clientX = 'touches' in e ? e.touches[0]?.clientX ?? 0 : e.clientX
   const containerRect = sliderContainer.value.getBoundingClientRect()
   const maxValue = containerRect.width - 40 // 减去滑块宽度
   
@@ -185,7 +190,7 @@ async function verifyCaptcha() {
     console.log('Check captcha response:', res)
     
     // 检查验证结果：repCode === '0000' 表示成功
-    const isSuccess = (res && res.repCode === '0000')
+    const isSuccess = ((res as any) && (res as any).repCode === '0000')
     
     if (isSuccess) {
       // 验证成功，生成 captchaVerification
@@ -202,7 +207,7 @@ async function verifyCaptcha() {
       emit('success', captchaVerification)
       isOpen.value = false
     } else {
-      error.value = res?.repMsg || '验证失败，请重试'
+      error.value = (res as any)?.repMsg || '验证失败，请重试'
       await refreshCaptcha()
     }
   } catch (e: any) {

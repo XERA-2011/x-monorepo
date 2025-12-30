@@ -18,6 +18,11 @@ export const useAuth = () => {
                 token.value = result.accessToken
                 refreshToken.value = result.refreshToken
 
+                console.log('[useAuth] Token saved:', result.accessToken)
+
+                // 等待 Vue 响应式系统更新，确保 cookie 值同步
+                await nextTick()
+
                 // 登录成功后获取用户信息
                 await fetchUserInfo()
 
@@ -34,10 +39,15 @@ export const useAuth = () => {
     }
 
     const fetchUserInfo = async () => {
+        console.log('[useAuth] Fetching user info...')
         const res = await getPermissionInfoApi()
+        console.log('[useAuth] Permission info response:', res)
         if (res && res.code === 0) {
             user.value = res.data.user
             permissions.value = res.data.permissions
+            console.log('[useAuth] User info saved:', user.value)
+        } else {
+            console.error('[useAuth] Failed to get user info:', res)
         }
     }
 

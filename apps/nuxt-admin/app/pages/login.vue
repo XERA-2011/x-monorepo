@@ -7,13 +7,25 @@
       </div>
     </template>
 
-    <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
+    <UForm :schema="schema" :state="state" class="space-y-4" autocomplete="off" @submit="onSubmit">
       <UFormGroup label="用户名" name="username">
-        <UInput v-model="state.username" icon="i-heroicons-user" placeholder="请输入用户名" autofocus />
+        <UInput 
+          v-model="state.username" 
+          icon="i-heroicons-user" 
+          placeholder="请输入用户名" 
+          autocomplete="username"
+          autofocus 
+        />
       </UFormGroup>
 
       <UFormGroup label="密码" name="password">
-        <UInput v-model="state.password" type="password" icon="i-heroicons-lock-closed" placeholder="请输入密码" />
+        <UInput 
+          v-model="state.password" 
+          type="password" 
+          icon="i-heroicons-lock-closed" 
+          placeholder="请输入密码" 
+          autocomplete="new-password"
+        />
       </UFormGroup>
 
       <UButton type="submit" block :loading="loading" color="primary" size="lg">
@@ -24,12 +36,6 @@
          <span class="text-xs text-red-500" v-if="error">{{ error }}</span>
       </div>
     </UForm>
-
-    <template #footer>
-      <div class="text-center text-xs text-gray-500">
-        演示账号：admin / admin123
-      </div>
-    </template>
   </UCard>
 
   <!-- 验证码弹窗 -->
@@ -49,8 +55,8 @@ const error = ref('')
 const showCaptcha = ref(false)
 
 const state = reactive({
-  username: 'admin',
-  password: 'admin123'
+  username: '',
+  password: ''
 })
 
 // 保存登录凭据，等验证码通过后使用
