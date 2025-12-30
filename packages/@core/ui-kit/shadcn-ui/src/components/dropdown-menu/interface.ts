@@ -12,6 +12,10 @@ interface XAppDropdownMenuItem {
    */
   icon?: Component;
   /**
+   * @zh_CN 键值，用于循环
+   */
+  key?: string;
+  /**
    * @zh_CN 标题
    */
   label: string;
@@ -23,10 +27,6 @@ interface XAppDropdownMenuItem {
    * @zh_CN 唯一标识
    */
   value: string;
-  /**
-   * @zh_CN 键值，用于循环
-   */
-  key?: string;
 }
 
 interface DropdownMenuProps {

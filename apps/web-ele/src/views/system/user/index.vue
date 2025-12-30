@@ -217,78 +217,86 @@ const [Grid, gridApi] = useXAppVxeGrid({
         <Grid table-title="用户列表">
           <template #toolbar-tools>
             <TableAction
-              :actions="[
-                {
-                  label: $t('ui.actionTitle.create', ['用户']),
-                  type: 'primary',
-                  icon: ACTION_ICON.ADD,
-                  auth: ['system:user:create'],
-                  onClick: handleCreate,
-                },
-                {
-                  label: $t('ui.actionTitle.export'),
-                  type: 'primary',
-                  icon: ACTION_ICON.DOWNLOAD,
-                  auth: ['system:user:export'],
-                  onClick: handleExport,
-                },
-                {
-                  label: $t('ui.actionTitle.import', ['用户']),
-                  type: 'primary',
-                  icon: ACTION_ICON.UPLOAD,
-                  auth: ['system:user:import'],
-                  onClick: handleImport,
-                },
-                {
-                  label: $t('ui.actionTitle.deleteBatch'),
-                  type: 'danger',
-                  icon: ACTION_ICON.DELETE,
-                  disabled: isEmpty(checkedIds),
-                  auth: ['system:user:delete'],
-                  onClick: handleDeleteBatch,
-                },
-              ] as any"
+              :actions="
+                [
+                  {
+                    label: $t('ui.actionTitle.create', ['用户']),
+                    type: 'primary',
+                    icon: ACTION_ICON.ADD,
+                    auth: ['system:user:create'],
+                    onClick: handleCreate,
+                  },
+                  {
+                    label: $t('ui.actionTitle.export'),
+                    type: 'primary',
+                    icon: ACTION_ICON.DOWNLOAD,
+                    auth: ['system:user:export'],
+                    onClick: handleExport,
+                  },
+                  {
+                    label: $t('ui.actionTitle.import', ['用户']),
+                    type: 'primary',
+                    icon: ACTION_ICON.UPLOAD,
+                    auth: ['system:user:import'],
+                    onClick: handleImport,
+                  },
+                  {
+                    label: $t('ui.actionTitle.deleteBatch'),
+                    type: 'danger',
+                    icon: ACTION_ICON.DELETE,
+                    disabled: isEmpty(checkedIds),
+                    auth: ['system:user:delete'],
+                    onClick: handleDeleteBatch,
+                  },
+                ] as any
+              "
             />
           </template>
           <template #actions="{ row }">
             <TableAction
-              :actions="[
-                {
-                  label: $t('common.edit'),
-                  type: 'primary',
-                  link: true,
-                  icon: ACTION_ICON.EDIT,
-                  auth: ['system:user:update'],
-                  onClick: handleEdit.bind(null, row),
-                },
-                {
-                  label: $t('common.delete'),
-                  type: 'danger',
-                  link: true,
-                  icon: ACTION_ICON.DELETE,
-                  auth: ['system:user:delete'],
-                  popConfirm: {
-                    title: $t('ui.actionMessage.deleteConfirm', [row.username]),
-                    confirm: handleDelete.bind(null, row),
+              :actions="
+                [
+                  {
+                    label: $t('common.edit'),
+                    type: 'primary',
+                    link: true,
+                    icon: ACTION_ICON.EDIT,
+                    auth: ['system:user:update'],
+                    onClick: handleEdit.bind(null, row),
                   },
-                },
-              ] as any"
-              :drop-down-actions="[
-                {
-                  label: '分配角色',
-                  type: 'primary',
-                  link: true,
-                  auth: ['system:permission:assign-user-role'],
-                  onClick: handleAssignRole.bind(null, row),
-                },
-                {
-                  label: '重置密码',
-                  type: 'primary',
-                  link: true,
-                  auth: ['system:user:update-password'],
-                  onClick: handleResetPassword.bind(null, row),
-                },
-              ] as any"
+                  {
+                    label: $t('common.delete'),
+                    type: 'danger',
+                    link: true,
+                    icon: ACTION_ICON.DELETE,
+                    auth: ['system:user:delete'],
+                    popConfirm: {
+                      title: $t('ui.actionMessage.deleteConfirm', [
+                        row.username,
+                      ]),
+                      confirm: handleDelete.bind(null, row),
+                    },
+                  },
+                ] as any
+              "
+              :drop-down-actions="
+                [
+                  {
+                    label: '分配角色',
+                    type: 'primary',
+                    link: true,
+                    auth: ['system:permission:assign-user-role'],
+                    onClick: handleAssignRole.bind(null, row),
+                  },
+                  {
+                    label: '重置密码',
+                    type: 'primary',
+                    link: true,
+                    auth: ['system:user:update-password'],
+                    onClick: handleResetPassword.bind(null, row),
+                  },
+                ] as any
+              "
             />
           </template>
         </Grid>

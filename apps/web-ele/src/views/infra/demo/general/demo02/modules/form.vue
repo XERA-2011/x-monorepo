@@ -123,7 +123,7 @@ const [Modal, modalApi] = useXAppModal({
         <ElTreeSelect
           v-model="formData.parentId"
           :data="demo02CategoryTree"
-          :node-key="'id'"
+          node-key="id"
           :props="{
             label: 'name',
             children: 'children',
