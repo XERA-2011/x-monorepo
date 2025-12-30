@@ -10,7 +10,11 @@ import type { Recordable } from '@x-monorepo/types';
 
 import { defineAsyncComponent, defineComponent, h, ref } from 'vue';
 
-import { ApiComponent, globalShareState, IconPicker } from '@x-monorepo/common-ui';
+import {
+  ApiComponent,
+  globalShareState,
+  IconPicker,
+} from '@x-monorepo/common-ui';
 import { $t } from '@x-monorepo/locales';
 
 import { notification } from 'ant-design-vue';

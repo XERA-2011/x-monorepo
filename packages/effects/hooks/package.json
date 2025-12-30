@@ -20,12 +20,12 @@
     }
   },
   "dependencies": {
+    "@vueuse/core": "catalog:",
     "@x-monorepo-core/composables": "workspace:*",
     "@x-monorepo/preferences": "workspace:*",
     "@x-monorepo/stores": "workspace:*",
     "@x-monorepo/types": "workspace:*",
     "@x-monorepo/utils": "workspace:*",
-    "@vueuse/core": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:",
     "watermark-js-plus": "catalog:"

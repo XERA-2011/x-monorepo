@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import { Card, CardContent, CardHeader, CardTitle } from '@x-monorepo-core/shadcn-ui';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@x-monorepo-core/shadcn-ui';
 
 interface Props {
   title: string;

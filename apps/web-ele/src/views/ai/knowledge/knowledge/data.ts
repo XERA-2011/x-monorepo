@@ -1,7 +1,11 @@
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { AiModelTypeEnum, CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
+import {
+  AiModelTypeEnum,
+  CommonStatusEnum,
+  DICT_TYPE,
+} from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 
 import { z } from '#/adapter/form';

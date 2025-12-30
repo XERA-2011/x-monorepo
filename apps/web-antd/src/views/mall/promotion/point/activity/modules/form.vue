@@ -9,7 +9,11 @@ import type {
 import { computed, ref } from 'vue';
 
 import { useVbenModal } from '@x-monorepo/common-ui';
-import { cloneDeep, convertToInteger, formatToFraction } from '@x-monorepo/utils';
+import {
+  cloneDeep,
+  convertToInteger,
+  formatToFraction,
+} from '@x-monorepo/utils';
 
 import { Button, InputNumber, message } from 'ant-design-vue';
 

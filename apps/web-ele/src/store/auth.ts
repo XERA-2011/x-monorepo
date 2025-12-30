@@ -1,4 +1,8 @@
-import type { AuthPermissionInfo, Recordable, UserInfo } from '@x-monorepo/types';
+import type {
+  AuthPermissionInfo,
+  Recordable,
+  UserInfo,
+} from '@x-monorepo/types';
 
 import type { AuthApi } from '#/api';
 
@@ -7,7 +11,11 @@ import { useRouter } from 'vue-router';
 
 import { LOGIN_PATH } from '@x-monorepo/constants';
 import { preferences } from '@x-monorepo/preferences';
-import { resetAllStores, useAccessStore, useUserStore } from '@x-monorepo/stores';
+import {
+  resetAllStores,
+  useAccessStore,
+  useUserStore,
+} from '@x-monorepo/stores';
 
 import { ElNotification } from 'element-plus';
 import { defineStore } from 'pinia';

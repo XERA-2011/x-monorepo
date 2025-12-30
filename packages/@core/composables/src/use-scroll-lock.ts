@@ -1,4 +1,7 @@
-import { getScrollbarWidth, needsScrollbar } from '@x-monorepo-core/shared/utils';
+import {
+  getScrollbarWidth,
+  needsScrollbar,
+} from '@x-monorepo-core/shared/utils';
 
 import {
   useScrollLock as _useScrollLock,

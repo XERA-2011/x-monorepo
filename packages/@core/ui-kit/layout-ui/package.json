@@ -37,12 +37,12 @@
     }
   },
   "dependencies": {
+    "@vueuse/core": "catalog:",
     "@x-monorepo-core/composables": "workspace:*",
     "@x-monorepo-core/icons": "workspace:*",
     "@x-monorepo-core/shadcn-ui": "workspace:*",
     "@x-monorepo-core/shared": "workspace:*",
     "@x-monorepo-core/typings": "workspace:*",
-    "@vueuse/core": "catalog:",
     "vue": "catalog:"
   }
 }

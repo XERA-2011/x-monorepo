@@ -1,4 +1,7 @@
-import type { AppRouteRecordRaw, BasicUserInfo } from '@x-monorepo-core/typings';
+import type {
+  AppRouteRecordRaw,
+  BasicUserInfo,
+} from '@x-monorepo-core/typings';
 
 /** 用户信息 */
 interface UserInfo extends BasicUserInfo {

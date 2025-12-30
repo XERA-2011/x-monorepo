@@ -7,7 +7,10 @@ import { ContentWrap, Page, useVbenModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 import { Download, Plus, Trash2 } from '@x-monorepo/icons';
-import { useTableToolbar, VbenVxeTableToolbar } from '@x-monorepo/plugins/vxe-table';
+import {
+  useTableToolbar,
+  VbenVxeTableToolbar,
+} from '@x-monorepo/plugins/vxe-table';
 import {
   cloneDeep,
   downloadFileFromBlobPart,

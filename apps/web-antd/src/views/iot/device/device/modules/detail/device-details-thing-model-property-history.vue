@@ -11,7 +11,12 @@ import { computed, nextTick, reactive, ref, watch } from 'vue';
 
 import { IconifyIcon } from '@x-monorepo/icons';
 import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
-import { beginOfDay, endOfDay, formatDate, formatDateTime } from '@x-monorepo/utils';
+import {
+  beginOfDay,
+  endOfDay,
+  formatDate,
+  formatDateTime,
+} from '@x-monorepo/utils';
 
 import {
   Button,

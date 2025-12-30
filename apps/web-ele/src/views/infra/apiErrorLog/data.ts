@@ -5,7 +5,10 @@ import type { DescriptionItemSchema } from '#/components/description';
 import { h } from 'vue';
 
 import { JsonViewer } from '@x-monorepo/common-ui';
-import { DICT_TYPE, InfraApiErrorLogProcessStatusEnum } from '@x-monorepo/constants';
+import {
+  DICT_TYPE,
+  InfraApiErrorLogProcessStatusEnum,
+} from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 import { formatDateTime } from '@x-monorepo/utils';
 

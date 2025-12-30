@@ -7,7 +7,12 @@ import { computed, nextTick, ref, unref, useAttrs, watch } from 'vue';
 
 import { LoaderCircle } from '@x-monorepo/icons';
 
-import { cloneDeep, get, isEqual, isFunction } from '@x-monorepo-core/shared/utils';
+import {
+  cloneDeep,
+  get,
+  isEqual,
+  isFunction,
+} from '@x-monorepo-core/shared/utils';
 
 import { objectOmit } from '@vueuse/core';
 

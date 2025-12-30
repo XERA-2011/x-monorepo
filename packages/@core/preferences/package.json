@@ -29,9 +29,9 @@
     }
   },
   "dependencies": {
+    "@vueuse/core": "catalog:",
     "@x-monorepo-core/shared": "workspace:*",
     "@x-monorepo-core/typings": "workspace:*",
-    "@vueuse/core": "catalog:",
     "vue": "catalog:"
   }
 }

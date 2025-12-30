@@ -6,7 +6,11 @@ import { useContentMaximize, useTabs } from '@x-monorepo/hooks';
 import { preferences } from '@x-monorepo/preferences';
 import { useTabbarStore } from '@x-monorepo/stores';
 
-import { TabsToolMore, TabsToolScreen, TabsView } from '@x-monorepo-core/tabs-ui';
+import {
+  TabsToolMore,
+  TabsToolScreen,
+  TabsView,
+} from '@x-monorepo-core/tabs-ui';
 
 import { useTabbar } from './use-tabbar';
 

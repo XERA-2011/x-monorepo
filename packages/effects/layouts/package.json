@@ -20,6 +20,7 @@
     }
   },
   "dependencies": {
+    "@vueuse/core": "catalog:",
     "@x-monorepo-core/composables": "workspace:*",
     "@x-monorepo-core/form-ui": "workspace:*",
     "@x-monorepo-core/layout-ui": "workspace:*",
@@ -36,7 +37,6 @@
     "@x-monorepo/stores": "workspace:*",
     "@x-monorepo/types": "workspace:*",
     "@x-monorepo/utils": "workspace:*",
-    "@vueuse/core": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:"
   }

@@ -6,7 +6,10 @@ import { Languages } from '@x-monorepo/icons';
 import { loadLocaleMessages } from '@x-monorepo/locales';
 import { preferences, updatePreferences } from '@x-monorepo/preferences';
 
-import { VbenDropdownRadioMenu, VbenIconButton } from '@x-monorepo-core/shadcn-ui';
+import {
+  VbenDropdownRadioMenu,
+  VbenIconButton,
+} from '@x-monorepo-core/shadcn-ui';
 
 defineOptions({
   name: 'LanguageToggle',

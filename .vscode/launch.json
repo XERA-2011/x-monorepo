@@ -23,6 +23,6 @@
       },
       "sourceMaps": true,
       "webRoot": "${workspaceFolder}/apps/web-ele"
-    },
+    }
   ]
 }

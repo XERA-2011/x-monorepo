@@ -9,7 +9,10 @@ import type { Ref } from 'vue';
 
 import type { ClassType, DeepPartial } from '@x-monorepo/types';
 
-import type { BaseFormComponentType, VbenFormProps } from '@x-monorepo-core/form-ui';
+import type {
+  BaseFormComponentType,
+  VbenFormProps,
+} from '@x-monorepo-core/form-ui';
 
 import type { VxeGridApi } from './api';
 

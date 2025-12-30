@@ -5,7 +5,10 @@ import { nextTick, onMounted, reactive, ref, watch } from 'vue';
 
 import { ContentWrap, useVbenModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
-import { useTableToolbar, VbenVxeTableToolbar } from '@x-monorepo/plugins/vxe-table';
+import {
+  useTableToolbar,
+  VbenVxeTableToolbar,
+} from '@x-monorepo/plugins/vxe-table';
 import { cloneDeep, formatDateTime, isEmpty } from '@x-monorepo/utils';
 
 import {

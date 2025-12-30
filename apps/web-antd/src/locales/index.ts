@@ -2,7 +2,10 @@ import type { Locale } from 'ant-design-vue/es/locale';
 
 import type { App } from 'vue';
 
-import type { LocaleSetupOptions, SupportedLanguagesType } from '@x-monorepo/locales';
+import type {
+  LocaleSetupOptions,
+  SupportedLanguagesType,
+} from '@x-monorepo/locales';
 
 import { ref } from 'vue';
 

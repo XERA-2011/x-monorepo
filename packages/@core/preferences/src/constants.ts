@@ -1,4 +1,7 @@
-import type { BuiltinThemeType, TimezoneOption } from '@x-monorepo-core/typings';
+import type {
+  BuiltinThemeType,
+  TimezoneOption,
+} from '@x-monorepo-core/typings';
 
 interface BuiltinThemePreset {
   color: string;

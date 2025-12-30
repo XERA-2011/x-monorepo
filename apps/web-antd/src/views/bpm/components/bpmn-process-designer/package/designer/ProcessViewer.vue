@@ -2,7 +2,11 @@
 import { h, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
 import { BpmProcessInstanceStatus, DICT_TYPE } from '@x-monorepo/constants';
-import { UndoOutlined, ZoomInOutlined, ZoomOutOutlined } from '@x-monorepo/icons';
+import {
+  UndoOutlined,
+  ZoomInOutlined,
+  ZoomOutOutlined,
+} from '@x-monorepo/icons';
 import { formatDate, formatPast2 } from '@x-monorepo/utils';
 
 import { Button, ButtonGroup, Modal, Row, Table } from 'ant-design-vue';

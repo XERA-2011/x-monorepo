@@ -37,13 +37,13 @@
     }
   },
   "dependencies": {
+    "@vee-validate/zod": "catalog:",
+    "@vueuse/core": "catalog:",
     "@x-monorepo-core/composables": "workspace:*",
     "@x-monorepo-core/icons": "workspace:*",
     "@x-monorepo-core/shadcn-ui": "workspace:*",
     "@x-monorepo-core/shared": "workspace:*",
     "@x-monorepo-core/typings": "workspace:*",
-    "@vee-validate/zod": "catalog:",
-    "@vueuse/core": "catalog:",
     "vee-validate": "catalog:",
     "vue": "catalog:",
     "zod": "catalog:",

@@ -28,6 +28,8 @@
     }
   },
   "dependencies": {
+    "@vueuse/core": "catalog:",
+    "@vueuse/integrations": "catalog:",
     "@x-monorepo-core/form-ui": "workspace:*",
     "@x-monorepo-core/popup-ui": "workspace:*",
     "@x-monorepo-core/preferences": "workspace:*",
@@ -38,8 +40,6 @@
     "@x-monorepo/icons": "workspace:*",
     "@x-monorepo/locales": "workspace:*",
     "@x-monorepo/types": "workspace:*",
-    "@vueuse/core": "catalog:",
-    "@vueuse/integrations": "catalog:",
     "json-bigint": "catalog:",
     "qrcode": "catalog:",
     "tippy.js": "catalog:",

@@ -5,7 +5,10 @@ import { h, onMounted, reactive, ref } from 'vue';
 
 import { ContentWrap, Page, useVbenModal } from '@x-monorepo/common-ui';
 import { Download, Plus } from '@x-monorepo/icons';
-import { useTableToolbar, VbenVxeTableToolbar } from '@x-monorepo/plugins/vxe-table';
+import {
+  useTableToolbar,
+  VbenVxeTableToolbar,
+} from '@x-monorepo/plugins/vxe-table';
 import {
   cloneDeep,
   downloadFileFromBlobPart,

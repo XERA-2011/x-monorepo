@@ -4,7 +4,13 @@ import type { MallCommentApi } from '#/api/mall/product/comment';
 
 import { h } from 'vue';
 
-import { confirm, DocAlert, Page, prompt, useVbenModal } from '@x-monorepo/common-ui';
+import {
+  confirm,
+  DocAlert,
+  Page,
+  prompt,
+  useVbenModal,
+} from '@x-monorepo/common-ui';
 
 import { ElInput, ElMessage, ElRate } from 'element-plus';
 

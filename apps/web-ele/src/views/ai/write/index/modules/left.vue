@@ -3,7 +3,11 @@ import type { AiWriteApi } from '#/api/ai/write';
 
 import { ref } from 'vue';
 
-import { AiWriteTypeEnum, DICT_TYPE, WriteExample } from '@x-monorepo/constants';
+import {
+  AiWriteTypeEnum,
+  DICT_TYPE,
+  WriteExample,
+} from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 import { IconifyIcon } from '@x-monorepo/icons';
 

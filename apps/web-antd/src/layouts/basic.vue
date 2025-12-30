@@ -6,7 +6,10 @@ import type { SystemTenantApi } from '#/api/system/tenant';
 import { computed, onMounted, ref, watch } from 'vue';
 
 import { useAccess } from '@x-monorepo/access';
-import { AuthenticationLoginExpiredModal, useVbenModal } from '@x-monorepo/common-ui';
+import {
+  AuthenticationLoginExpiredModal,
+  useVbenModal,
+} from '@x-monorepo/common-ui';
 import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@x-monorepo/constants';
 import { isTenantEnable, useTabs, useWatermark } from '@x-monorepo/hooks';
 import {

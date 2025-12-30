@@ -5,7 +5,11 @@ import type {
 
 import type { ComponentType } from './component';
 
-import { setupVbenForm, useVbenForm as useForm, z } from '@x-monorepo/common-ui';
+import {
+  setupVbenForm,
+  useVbenForm as useForm,
+  z,
+} from '@x-monorepo/common-ui';
 import { $t } from '@x-monorepo/locales';
 import { isMobile } from '@x-monorepo/utils';
 

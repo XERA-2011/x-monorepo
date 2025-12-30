@@ -10,10 +10,10 @@
 - **Monorepo 架构**：使用 TurboRepo 高效管理多包项目 (Apps & Packages)。
 - **多端适配**：内置 Ant Design Vue (web-antd) 等多个 UI 版本的实现。
 - **企业级功能**：
-    - 完整的 RBAC 权限控制（菜单、按钮、数据权限）。
-    - 深度集成的 SaaS 多租户体系。
-    - 丰富的高级组件（表单、表格、上传、弹窗）。
-    - 国际化、暗黑模式、主题配置。
+  - 完整的 RBAC 权限控制（菜单、按钮、数据权限）。
+  - 深度集成的 SaaS 多租户体系。
+  - 丰富的高级组件（表单、表格、上传、弹窗）。
+  - 国际化、暗黑模式、主题配置。
 
 ## 目录结构 | Directory Structure
 
@@ -53,12 +53,14 @@ pnpm install
 你可以根据需要启动不同 UI 版本的应用：
 
 **启动 Ant Design Vue 版本 (主应用):**
+
 ```bash
 pnpm dev:antd
 # 访问地址: http://localhost:5555 (端口随占用自动递增)
 ```
 
 **启动其他版本:**
+
 ```bash
 # Element Plus 版本
 pnpm dev:ele
@@ -91,8 +93,7 @@ pnpm build:antd
 
 ## 部署 | Deployment
 
-推荐使用 Docker + Nginx 进行部署。
-请参考后端项目的 `docker-compose.yml` 中的 Nginx 配置，将 `dist` 目录挂载到 Nginx 容器中。
+推荐使用 Docker + Nginx 进行部署。请参考后端项目的 `docker-compose.yml` 中的 Nginx 配置，将 `dist` 目录挂载到 Nginx 容器中。
 
 ```nginx
 location / {

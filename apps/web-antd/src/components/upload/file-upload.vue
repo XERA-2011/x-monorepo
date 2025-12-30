@@ -10,7 +10,12 @@ import { computed, ref, toRefs, watch } from 'vue';
 
 import { IconifyIcon } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
-import { checkFileType, isFunction, isObject, isString } from '@x-monorepo/utils';
+import {
+  checkFileType,
+  isFunction,
+  isObject,
+  isString,
+} from '@x-monorepo/utils';
 
 import { Button, message, Upload } from 'ant-design-vue';
 

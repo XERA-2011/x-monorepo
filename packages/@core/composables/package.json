@@ -35,8 +35,8 @@
     }
   },
   "dependencies": {
-    "@x-monorepo-core/shared": "workspace:*",
     "@vueuse/core": "catalog:",
+    "@x-monorepo-core/shared": "workspace:*",
     "reka-ui": "catalog:",
     "sortablejs": "catalog:",
     "vue": "catalog:"

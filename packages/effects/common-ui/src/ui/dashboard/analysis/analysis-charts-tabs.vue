@@ -3,7 +3,12 @@ import type { TabOption } from '@x-monorepo/types';
 
 import { computed } from 'vue';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@x-monorepo-core/shadcn-ui';
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from '@x-monorepo-core/shadcn-ui';
 
 interface Props {
   tabs?: TabOption[];

@@ -41,6 +41,8 @@
   },
   "dependencies": {
     "@tinyflow-ai/vue": "catalog:",
+    "@vueuse/core": "catalog:",
+    "@vueuse/motion": "catalog:",
     "@x-monorepo-core/form-ui": "workspace:*",
     "@x-monorepo-core/shadcn-ui": "workspace:*",
     "@x-monorepo-core/shared": "workspace:*",
@@ -50,8 +52,6 @@
     "@x-monorepo/preferences": "workspace:*",
     "@x-monorepo/types": "workspace:*",
     "@x-monorepo/utils": "workspace:*",
-    "@vueuse/core": "catalog:",
-    "@vueuse/motion": "catalog:",
     "codemirror": "catalog:",
     "echarts": "catalog:",
     "markdown-it": "catalog:",

@@ -40,11 +40,11 @@
     }
   },
   "dependencies": {
+    "@vueuse/core": "catalog:",
     "@x-monorepo-core/composables": "workspace:*",
     "@x-monorepo-core/icons": "workspace:*",
     "@x-monorepo-core/shared": "workspace:*",
     "@x-monorepo-core/typings": "workspace:*",
-    "@vueuse/core": "catalog:",
     "class-variance-authority": "catalog:",
     "lucide-vue-next": "catalog:",
     "reka-ui": "catalog:",
