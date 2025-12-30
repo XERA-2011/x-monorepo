@@ -370,7 +370,7 @@ function getActivePaths() {
 </template>
 
 <style lang="scss">
-$namespace: x-app;
+$namespace: vben;
 
 @mixin menu-item-active {
   color: var(--menu-item-active-color);
