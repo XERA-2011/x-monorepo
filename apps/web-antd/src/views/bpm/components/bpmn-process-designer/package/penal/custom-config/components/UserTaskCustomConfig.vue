@@ -13,7 +13,7 @@ import type { ButtonSetting } from '#/views/bpm/components/simple-process-design
 
 import { inject, nextTick, onMounted, ref, toRaw, watch } from 'vue';
 
-import { BpmModelFormType } from '@vben/constants';
+import { BpmModelFormType } from '@x-monorepo/constants';
 
 import {
   Button,

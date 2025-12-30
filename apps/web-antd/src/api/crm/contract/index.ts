@@ -1,4 +1,4 @@
-import type { PageParam, PageResult } from '@vben/request';
+import type { PageParam, PageResult } from '@x-monorepo/request';
 
 import type { CrmPermissionApi } from '#/api/crm/permission';
 

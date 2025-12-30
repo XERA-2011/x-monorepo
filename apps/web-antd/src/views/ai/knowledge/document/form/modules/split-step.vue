@@ -3,7 +3,7 @@ import type { PropType } from 'vue';
 
 import { computed, getCurrentInstance, inject, onMounted, ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import {
   Button,

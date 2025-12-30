@@ -3,8 +3,8 @@ import type { AiImageApi } from '#/api/ai/image';
 
 import { onMounted, reactive, ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { Page } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { useDebounceFn } from '@vueuse/core';
 import { ElImage, ElInput, ElPagination } from 'element-plus';

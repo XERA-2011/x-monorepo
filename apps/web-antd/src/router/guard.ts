@@ -1,10 +1,10 @@
 import type { Router } from 'vue-router';
 
-import { LOGIN_PATH } from '@vben/constants';
-import { $t } from '@vben/locales';
-import { preferences } from '@vben/preferences';
-import { useAccessStore, useDictStore, useUserStore } from '@vben/stores';
-import { startProgress, stopProgress } from '@vben/utils';
+import { LOGIN_PATH } from '@x-monorepo/constants';
+import { $t } from '@x-monorepo/locales';
+import { preferences } from '@x-monorepo/preferences';
+import { useAccessStore, useDictStore, useUserStore } from '@x-monorepo/stores';
+import { startProgress, stopProgress } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

@@ -7,9 +7,9 @@ import {
   VBEN_DOC_URL,
   VBEN_GITHUB_URL,
   VBEN_PREVIEW_URL,
-} from '@vben/constants';
+} from '@x-monorepo/constants';
 
-import { VbenRenderContent } from '@vben-core/shadcn-ui';
+import { VbenRenderContent } from '@x-monorepo-core/shadcn-ui';
 
 import { Page } from '../../components';
 

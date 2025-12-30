@@ -3,7 +3,7 @@ import type { MallRewardActivityApi } from '#/api/mall/promotion/reward/rewardAc
 
 import { computed, ref } from 'vue';
 
-import { useVbenForm, useVbenModal } from '@vben/common-ui';
+import { useVbenForm, useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElMessage } from 'element-plus';
 

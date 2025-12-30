@@ -3,7 +3,7 @@ import type { IotStatisticsApi } from '#/api/iot/statistics';
 
 import { computed, nextTick, onMounted, ref, watch } from 'vue';
 
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
 
 import { Card, Col, Empty, Row } from 'ant-design-vue';
 

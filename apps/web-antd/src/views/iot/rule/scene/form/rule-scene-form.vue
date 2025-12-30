@@ -3,8 +3,8 @@ import type { IotSceneRule } from '#/api/iot/rule/scene';
 
 import { computed, nextTick, reactive, ref, watch } from 'vue';
 
-import { CommonStatusEnum } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { CommonStatusEnum } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { useVModel } from '@vueuse/core';
 import { Button, Drawer, Form, message } from 'ant-design-vue';

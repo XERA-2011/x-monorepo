@@ -4,7 +4,7 @@ import type { VbenFormSchema } from '#/adapter/form';
 import { computed, onMounted, reactive, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { AuthenticationAuthTitle, VbenButton } from '@vben/common-ui';
+import { AuthenticationAuthTitle, VbenButton } from '@x-monorepo/common-ui';
 
 import { useVbenForm } from '#/adapter/form';
 import { authorize, getAuthorize } from '#/api/system/oauth2/open';

@@ -3,7 +3,7 @@ import type { AiModelModelApi } from '#/api/ai/model/model';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElMessage } from 'element-plus';
 

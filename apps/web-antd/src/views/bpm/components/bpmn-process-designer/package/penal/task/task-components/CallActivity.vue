@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { h, inject, nextTick, ref, toRaw, watch } from 'vue';
 
-import { alert } from '@vben/common-ui';
-import { PlusOutlined } from '@vben/icons';
+import { alert } from '@x-monorepo/common-ui';
+import { PlusOutlined } from '@x-monorepo/icons';
 
 import {
   Button,

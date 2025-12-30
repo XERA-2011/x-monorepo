@@ -4,7 +4,7 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { CrmBusinessApi } from '#/api/crm/business';
 import type { DescriptionItemSchema } from '#/components/description';
 
-import { erpPriceInputFormatter, formatDateTime } from '@vben/utils';
+import { erpPriceInputFormatter, formatDateTime } from '@x-monorepo/utils';
 
 import {
   DEFAULT_STATUSES,

@@ -3,10 +3,10 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
 import { nextTick, onMounted, reactive, ref, watch } from 'vue';
 
-import { ContentWrap, useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { useTableToolbar, VbenVxeTableToolbar } from '@vben/plugins/vxe-table';
-import { cloneDeep, formatDateTime, isEmpty } from '@vben/utils';
+import { ContentWrap, useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { useTableToolbar, VbenVxeTableToolbar } from '@x-monorepo/plugins/vxe-table';
+import { cloneDeep, formatDateTime, isEmpty } from '@x-monorepo/utils';
 
 import {
   Button,

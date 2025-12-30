@@ -3,7 +3,7 @@ import type { SystemSocialUserApi } from '#/api/system/social/user';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { getSocialUser } from '#/api/system/social/user';
 import { useDescription } from '#/components/description';

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { DocAlert, Page } from '@vben/common-ui';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
 
 import PropertyGrid from './modules/property-grid.vue';
 import ValueGrid from './modules/value-grid.vue';

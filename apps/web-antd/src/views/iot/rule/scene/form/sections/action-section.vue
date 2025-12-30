@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import type { Action } from '#/api/iot/rule/scene';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { useVModel } from '@vueuse/core';
 import { Button, Card, Empty, Form, Select, Tag } from 'ant-design-vue';

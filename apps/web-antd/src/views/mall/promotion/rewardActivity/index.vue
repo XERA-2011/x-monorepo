@@ -2,8 +2,8 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallRewardActivityApi } from '#/api/mall/promotion/reward/rewardActivity';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { CommonStatusEnum } from '@vben/constants';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { CommonStatusEnum } from '@x-monorepo/constants';
 
 import { message } from 'ant-design-vue';
 

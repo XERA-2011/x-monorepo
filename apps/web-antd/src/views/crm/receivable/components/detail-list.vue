@@ -3,7 +3,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { CrmReceivableApi } from '#/api/crm/receivable';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

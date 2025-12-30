@@ -1,4 +1,4 @@
-import { buildUUID } from '@vben/utils';
+import { buildUUID } from '@x-monorepo/utils';
 
 import {
   localeProps,

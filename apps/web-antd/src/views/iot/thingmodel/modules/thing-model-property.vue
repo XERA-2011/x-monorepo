@@ -6,7 +6,7 @@ import type { ThingModelProperty } from '#/api/iot/thingmodel';
 
 import { computed, watch } from 'vue';
 
-import { isEmpty } from '@vben/utils';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { useVModel } from '@vueuse/core';
 import { Form, Input, Radio, Select } from 'ant-design-vue';

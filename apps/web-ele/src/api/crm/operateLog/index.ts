@@ -1,4 +1,4 @@
-import type { PageResult } from '@vben/request';
+import type { PageResult } from '@x-monorepo/request';
 
 import type { SystemOperateLogApi } from '#/api/system/operate-log';
 

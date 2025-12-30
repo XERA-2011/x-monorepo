@@ -4,7 +4,7 @@ import type { Emoji } from './emoji';
 
 import { computed } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElPopover, ElScrollbar } from 'element-plus';
 

@@ -4,8 +4,8 @@ import type { BpmOALeaveApi } from '#/api/bpm/oa/leave';
 
 import { h } from 'vue';
 
-import { DocAlert, Page, prompt } from '@vben/common-ui';
-import { BpmProcessInstanceStatus } from '@vben/constants';
+import { DocAlert, Page, prompt } from '@x-monorepo/common-ui';
+import { BpmProcessInstanceStatus } from '@x-monorepo/constants';
 
 import { message, Textarea } from 'ant-design-vue';
 

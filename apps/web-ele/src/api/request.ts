@@ -1,18 +1,18 @@
 /**
  * 该文件可自行根据业务逻辑进行调整
  */
-import type { RequestClientOptions } from '@vben/request';
+import type { RequestClientOptions } from '@x-monorepo/request';
 
-import { isTenantEnable, useAppConfig } from '@vben/hooks';
-import { preferences } from '@vben/preferences';
+import { isTenantEnable, useAppConfig } from '@x-monorepo/hooks';
+import { preferences } from '@x-monorepo/preferences';
 import {
   authenticateResponseInterceptor,
   defaultResponseInterceptor,
   errorMessageResponseInterceptor,
   RequestClient,
-} from '@vben/request';
-import { useAccessStore } from '@vben/stores';
-import { createApiEncrypt } from '@vben/utils';
+} from '@x-monorepo/request';
+import { useAccessStore } from '@x-monorepo/stores';
+import { createApiEncrypt } from '@x-monorepo/utils';
 
 import { ElMessage } from 'element-plus';
 

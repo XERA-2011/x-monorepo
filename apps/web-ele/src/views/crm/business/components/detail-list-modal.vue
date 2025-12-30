@@ -6,7 +6,7 @@ import type { CrmBusinessApi } from '#/api/crm/business';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElButton, ElMessage } from 'element-plus';
 

@@ -5,7 +5,7 @@ import type { FormSchema, MaybeComponentProps } from '../types';
 
 import { computed, nextTick, onUnmounted, useTemplateRef, watch } from 'vue';
 
-import { CircleAlert } from '@vben-core/icons';
+import { CircleAlert } from '@x-monorepo-core/icons';
 import {
   FormControl,
   FormDescription,
@@ -14,8 +14,8 @@ import {
   FormMessage,
   VbenRenderContent,
   VbenTooltip,
-} from '@vben-core/shadcn-ui';
-import { cn, isFunction, isObject, isString } from '@vben-core/shared/utils';
+} from '@x-monorepo-core/shadcn-ui';
+import { cn, isFunction, isObject, isString } from '@x-monorepo-core/shared/utils';
 
 import { toTypedSchema } from '@vee-validate/zod';
 import { useFieldError, useFormValues } from 'vee-validate';

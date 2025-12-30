@@ -3,7 +3,7 @@ import type { Ref } from 'vue';
 
 import { computed, nextTick, onMounted, ref, toRaw, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, DatePicker, Input, Modal, Tooltip } from 'ant-design-vue';
 

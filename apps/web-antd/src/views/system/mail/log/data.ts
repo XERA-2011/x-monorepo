@@ -4,9 +4,9 @@ import type { DescriptionItemSchema } from '#/components/description';
 
 import { h } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { formatDateTime } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { getSimpleMailAccountList } from '#/api/system/mail/account';
 import { DictTag } from '#/components/dict-tag';

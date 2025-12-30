@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 
-import { useAntdDesignTokens } from '@vben/hooks';
-import { preferences, usePreferences } from '@vben/preferences';
+import { useAntdDesignTokens } from '@x-monorepo/hooks';
+import { preferences, usePreferences } from '@x-monorepo/preferences';
 
 import { App, ConfigProvider, theme } from 'ant-design-vue';
 

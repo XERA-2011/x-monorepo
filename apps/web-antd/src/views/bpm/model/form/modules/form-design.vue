@@ -5,9 +5,9 @@ import type { BpmFormApi } from '#/api/bpm/form';
 
 import { ref, watch } from 'vue';
 
-import { BpmModelFormType, DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
+import { BpmModelFormType, DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import FormCreate from '@form-create/ant-design-vue';
 import {

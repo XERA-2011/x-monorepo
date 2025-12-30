@@ -1,6 +1,6 @@
-import type { IconifyIconStructure } from '@vben-core/icons';
+import type { IconifyIconStructure } from '@x-monorepo-core/icons';
 
-import { addIcon } from '@vben-core/icons';
+import { addIcon } from '@x-monorepo-core/icons';
 
 let loaded = false;
 if (!loaded) {

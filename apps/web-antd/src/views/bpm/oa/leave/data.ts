@@ -4,9 +4,9 @@ import type { DescriptionItemSchema } from '#/components/description';
 
 import { h } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { formatDate } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { formatDate } from '@x-monorepo/utils';
 
 import { DictTag } from '#/components/dict-tag';
 import { getRangePickerDefaultProps } from '#/utils';

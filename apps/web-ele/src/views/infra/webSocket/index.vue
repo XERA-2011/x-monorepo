@@ -3,9 +3,9 @@ import type { SystemUserApi } from '#/api/system/user';
 
 import { computed, onMounted, ref, watchEffect } from 'vue';
 
-import { DocAlert, Page } from '@vben/common-ui';
-import { useAccessStore } from '@vben/stores';
-import { formatDate } from '@vben/utils';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
+import { useAccessStore } from '@x-monorepo/stores';
+import { formatDate } from '@x-monorepo/utils';
 
 import { useWebSocket } from '@vueuse/core';
 import {

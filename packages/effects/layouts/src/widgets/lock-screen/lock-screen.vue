@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from 'vue';
 
-import { LockKeyhole } from '@vben/icons';
-import { $t, useI18n } from '@vben/locales';
-import { storeToRefs, useAccessStore } from '@vben/stores';
+import { LockKeyhole } from '@x-monorepo/icons';
+import { $t, useI18n } from '@x-monorepo/locales';
+import { storeToRefs, useAccessStore } from '@x-monorepo/stores';
 
-import { useScrollLock } from '@vben-core/composables';
-import { useVbenForm, z } from '@vben-core/form-ui';
-import { VbenAvatar, VbenButton } from '@vben-core/shadcn-ui';
+import { useScrollLock } from '@x-monorepo-core/composables';
+import { useVbenForm, z } from '@x-monorepo-core/form-ui';
+import { VbenAvatar, VbenButton } from '@x-monorepo-core/shadcn-ui';
 
 import { useDateFormat, useNow } from '@vueuse/core';
 

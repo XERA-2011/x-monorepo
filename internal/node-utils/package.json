@@ -1,12 +1,12 @@
 {
-  "name": "@vben/node-utils",
+  "name": "@x-monorepo/node-utils",
   "version": "5.5.9",
   "private": true,
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "homepage": "https://github.com/XERA-2011/x-monorepo",
+  "bugs": "https://github.com/XERA-2011/x-monorepo/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "url": "git+https://github.com/XERA-2011/x-monorepo.git",
     "directory": "internal/node-utils"
   },
   "license": "MIT",

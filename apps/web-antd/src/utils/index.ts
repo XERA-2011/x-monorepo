@@ -1,4 +1,4 @@
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@x-monorepo/types';
 
 export * from './rangePickerProps';
 export * from './routerHelper';

@@ -1,6 +1,6 @@
 import type { MallTradeStatisticsApi } from '#/api/mall/statistics/trade';
 
-import { fenToYuan } from '@vben/utils';
+import { fenToYuan } from '@x-monorepo/utils';
 
 /** 交易趋势折线图配置 */
 export function getTradeTrendChartOptions(

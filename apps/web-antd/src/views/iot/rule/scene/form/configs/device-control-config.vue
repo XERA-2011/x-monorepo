@@ -8,7 +8,7 @@ import type {
 
 import { computed, onMounted, ref, watch } from 'vue';
 
-import { isObject } from '@vben/utils';
+import { isObject } from '@x-monorepo/utils';
 
 import { useVModel } from '@vueuse/core';
 import { Col, Form, Row, Select, Tag } from 'ant-design-vue';

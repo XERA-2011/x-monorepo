@@ -4,8 +4,8 @@ import type { MallSpuApi } from '#/api/mall/product/spu';
 import { onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { ContentWrap, Page } from '@vben/common-ui';
-import { convertToInteger, formatToFraction } from '@vben/utils';
+import { ContentWrap, Page } from '@x-monorepo/common-ui';
+import { convertToInteger, formatToFraction } from '@x-monorepo/utils';
 
 import { ElButton, ElTabs } from 'element-plus';
 

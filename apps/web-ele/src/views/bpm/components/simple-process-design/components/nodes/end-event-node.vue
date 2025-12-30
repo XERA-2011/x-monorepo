@@ -5,7 +5,7 @@ import type { SimpleFlowNode } from '../../consts';
 
 import { inject, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { useTaskStatusClass, useWatchNode } from '../../helpers';
 import ProcessInstanceModal from './modules/process-instance-modal.vue';

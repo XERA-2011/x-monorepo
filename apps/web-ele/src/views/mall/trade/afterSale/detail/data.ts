@@ -2,8 +2,8 @@ import type { DescriptionItemSchema } from '#/components/description';
 
 import { h } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { fenToYuan, formatDate } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { fenToYuan, formatDate } from '@x-monorepo/utils';
 
 import { ElImage } from 'element-plus';
 

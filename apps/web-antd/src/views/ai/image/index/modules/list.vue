@@ -4,9 +4,9 @@ import type { AiImageApi } from '#/api/ai/image';
 import { onMounted, onUnmounted, reactive, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { confirm, useVbenDrawer } from '@vben/common-ui';
-import { AiImageStatusEnum } from '@vben/constants';
-import { downloadFileFromImageUrl } from '@vben/utils';
+import { confirm, useVbenDrawer } from '@x-monorepo/common-ui';
+import { AiImageStatusEnum } from '@x-monorepo/constants';
+import { downloadFileFromImageUrl } from '@x-monorepo/utils';
 
 import { useDebounceFn } from '@vueuse/core';
 import { Button, Card, message, Pagination } from 'ant-design-vue';

@@ -4,8 +4,8 @@ import type { SystemUserApi } from '#/api/system/user';
 
 import { h } from 'vue';
 
-import { CommonStatusEnum, DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { Tag } from 'ant-design-vue';
 

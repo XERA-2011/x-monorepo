@@ -3,7 +3,7 @@ import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getCombinationRecordPage } from '#/api/mall/promotion/combination/combinationRecord';

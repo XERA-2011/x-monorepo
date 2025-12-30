@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import type { Dayjs } from 'dayjs';
 
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import { onMounted, ref } from 'vue';
 
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
 
 import dayjs from 'dayjs';
 import { ElCard, ElRadio, ElRadioGroup } from 'element-plus';

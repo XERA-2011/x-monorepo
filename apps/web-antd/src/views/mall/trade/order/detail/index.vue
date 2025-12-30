@@ -7,13 +7,13 @@ import type { MallOrderApi } from '#/api/mall/trade/order';
 import { onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { confirm, Page, useVbenModal } from '@vben/common-ui';
+import { confirm, Page, useVbenModal } from '@x-monorepo/common-ui';
 import {
   DeliveryTypeEnum,
   DICT_TYPE,
   TradeOrderStatusEnum,
-} from '@vben/constants';
-import { useTabs } from '@vben/hooks';
+} from '@x-monorepo/constants';
+import { useTabs } from '@x-monorepo/hooks';
 
 import { message, Tag } from 'ant-design-vue';
 

@@ -8,9 +8,9 @@ import type { AxiosProgressEvent } from '#/api/infra/file';
 
 import { computed, ref, toRefs, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
-import { checkFileType, isFunction, isObject, isString } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
+import { checkFileType, isFunction, isObject, isString } from '@x-monorepo/utils';
 
 import { Button, message, Upload } from 'ant-design-vue';
 

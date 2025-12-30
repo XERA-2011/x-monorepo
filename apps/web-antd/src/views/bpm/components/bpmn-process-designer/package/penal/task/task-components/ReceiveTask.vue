@@ -9,7 +9,7 @@ import {
   watch,
 } from 'vue';
 
-import { PlusOutlined } from '@vben/icons';
+import { PlusOutlined } from '@x-monorepo/icons';
 
 import {
   Button,

@@ -5,12 +5,12 @@ import type { AiModelModelApi } from '#/api/ai/model/model';
 
 import { ref, watch } from 'vue';
 
-import { confirm } from '@vben/common-ui';
+import { confirm } from '@x-monorepo/common-ui';
 import {
   AiPlatformEnum,
   ImageHotWords,
   OtherPlatformEnum,
-} from '@vben/constants';
+} from '@x-monorepo/constants';
 
 import {
   ElButton,

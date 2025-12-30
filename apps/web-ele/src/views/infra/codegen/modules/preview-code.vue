@@ -5,9 +5,9 @@ import type { InfraCodegenApi } from '#/api/infra/codegen';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { CodeEditor } from '@vben/plugins/code-editor';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { CodeEditor } from '@x-monorepo/plugins/code-editor';
 
 import { useClipboard } from '@vueuse/core';
 import { ElMessage, ElTabPane, ElTabs, ElTree } from 'element-plus';

@@ -2,7 +2,7 @@ import type { SystemDictTypeApi } from '#/api/system/dict/type';
 
 import { onMounted, ref } from 'vue';
 
-import { buildUUID, cloneDeep } from '@vben/utils';
+import { buildUUID, cloneDeep } from '@x-monorepo/utils';
 
 import { getSimpleDictTypeList } from '#/api/system/dict/type';
 import {

@@ -3,8 +3,8 @@ import type { DiyComponent, DiyComponentLibrary } from '../util';
 
 import { ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { cloneDeep } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { cloneDeep } from '@x-monorepo/utils';
 
 import { Collapse } from 'ant-design-vue';
 import draggable from 'vuedraggable';

@@ -1,7 +1,7 @@
 import type { VbenFormSchema } from '#/adapter/form';
 
-import { useUserStore } from '@vben/stores';
-import { handleTree } from '@vben/utils';
+import { useUserStore } from '@x-monorepo/stores';
+import { handleTree } from '@x-monorepo/utils';
 
 import { getSimpleDeptList } from '#/api/system/dept';
 import { getSimpleUserList } from '#/api/system/user';

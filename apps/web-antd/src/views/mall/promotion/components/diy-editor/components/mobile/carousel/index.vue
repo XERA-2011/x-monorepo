@@ -3,7 +3,7 @@ import type { CarouselProperty } from './config';
 
 import { ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Carousel, Image } from 'ant-design-vue';
 

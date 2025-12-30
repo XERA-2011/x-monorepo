@@ -2,7 +2,7 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { CrmProductCategoryApi } from '#/api/crm/product/category';
 
-import { handleTree } from '@vben/utils';
+import { handleTree } from '@x-monorepo/utils';
 
 import { getProductCategoryList } from '#/api/crm/product/category';
 

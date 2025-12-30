@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 
 // import { isHexColor } from '@/utils/color' // TODO @芋艿：【可优化】增加 cssClass 的处理 https://gitee.com/yudaocode/yudao-ui-admin-vben/blob/v2.4.1/src/components/DictTag/src/DictTag.vue#L60 @xingyu：这个要适配掉 ele 版本里么？
-import { getDictObj } from '@vben/hooks';
+import { getDictObj } from '@x-monorepo/hooks';
 
 import { ElTag } from 'element-plus';
 

@@ -7,10 +7,10 @@ import type { MallCombinationActivityApi } from '#/api/mall/promotion/combinatio
 
 import { computed, onMounted, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { fenToYuan, formatDate, handleTree } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { fenToYuan, formatDate, handleTree } from '@x-monorepo/utils';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getCategoryList } from '#/api/mall/product/category';

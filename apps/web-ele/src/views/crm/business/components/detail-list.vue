@@ -7,7 +7,7 @@ import type { CrmContactApi } from '#/api/crm/contact';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { confirm, useVbenModal } from '@vben/common-ui';
+import { confirm, useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElButton, ElMessage } from 'element-plus';
 

@@ -6,7 +6,7 @@ import type { MallCombinationActivityApi } from '#/api/mall/promotion/combinatio
 
 import { ref, watch } from 'vue';
 
-import { fenToYuan } from '@vben/utils';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { ElImage } from 'element-plus';
 

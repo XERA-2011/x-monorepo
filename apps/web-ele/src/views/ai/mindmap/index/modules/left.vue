@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue';
 
-import { MindMapContentExample } from '@vben/constants';
+import { MindMapContentExample } from '@x-monorepo/constants';
 
 import { ElButton, ElInput } from 'element-plus';
 

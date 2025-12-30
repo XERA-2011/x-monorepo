@@ -1,8 +1,8 @@
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { useUserStore } from '@vben/stores';
-import { erpPriceMultiply } from '@vben/utils';
+import { useUserStore } from '@x-monorepo/stores';
+import { erpPriceMultiply } from '@x-monorepo/utils';
 
 import { z } from '#/adapter/form';
 import { getBusinessStatusTypeSimpleList } from '#/api/crm/business/status';

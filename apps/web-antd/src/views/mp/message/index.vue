@@ -3,10 +3,10 @@ import type { Dayjs } from 'dayjs';
 
 import { reactive, ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
-import { DICT_TYPE, MpMsgType } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
+import { Page } from '@x-monorepo/common-ui';
+import { DICT_TYPE, MpMsgType } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import {
   Button,

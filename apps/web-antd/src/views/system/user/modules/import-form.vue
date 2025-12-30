@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import type { FileType } from 'ant-design-vue/es/upload/interface';
 
-import { useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { Button, message, Upload } from 'ant-design-vue';
 

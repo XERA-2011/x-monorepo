@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import type { Dayjs } from 'dayjs';
 
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import { onMounted, ref } from 'vue';
 
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
-import { fenToYuan } from '@vben/utils';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { Card, Radio, RadioGroup, Spin } from 'ant-design-vue';
 import dayjs from 'dayjs';

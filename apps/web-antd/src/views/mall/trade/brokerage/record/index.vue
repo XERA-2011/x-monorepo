@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallBrokerageRecordApi } from '#/api/mall/trade/brokerage/record';
 
-import { DocAlert, Page } from '@vben/common-ui';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getBrokerageRecordPage } from '#/api/mall/trade/brokerage/record';

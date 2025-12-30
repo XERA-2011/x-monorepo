@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref, watch } from 'vue';
 
-import { isEmpty } from '@vben/utils';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { useVModel } from '@vueuse/core';
 import { FormItem, Input, Select } from 'ant-design-vue';

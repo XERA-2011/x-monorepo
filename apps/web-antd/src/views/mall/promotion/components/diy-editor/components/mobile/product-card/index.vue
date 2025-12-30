@@ -5,7 +5,7 @@ import type { MallSpuApi } from '#/api/mall/product/spu';
 
 import { ref, watch } from 'vue';
 
-import { fenToYuan } from '@vben/utils';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { Image } from 'ant-design-vue';
 

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { VideoPlayer } from '@videojs-player/vue';
 import { Modal } from 'ant-design-vue';

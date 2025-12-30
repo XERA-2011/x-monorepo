@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
 
-import { DocAlert, IFrame, Page } from '@vben/common-ui';
+import { DocAlert, IFrame, Page } from '@x-monorepo/common-ui';
 
 import { getConfigKey } from '#/api/infra/config';
 

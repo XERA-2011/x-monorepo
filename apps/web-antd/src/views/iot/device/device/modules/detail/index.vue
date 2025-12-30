@@ -6,7 +6,7 @@ import type { ThingModelData } from '#/api/iot/thingmodel';
 import { onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@x-monorepo/common-ui';
 
 import { message, Tabs } from 'ant-design-vue';
 

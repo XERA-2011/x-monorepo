@@ -2,8 +2,8 @@
 import type { ActionItem, VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { PayAppApi } from '#/api/pay/app';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { CommonStatusEnum, PayChannelEnum } from '@vben/constants';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { CommonStatusEnum, PayChannelEnum } from '@x-monorepo/constants';
 
 import { message } from 'ant-design-vue';
 

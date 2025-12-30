@@ -1,7 +1,7 @@
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { formatDateTime } from '@vben/utils';
+import { formatDateTime } from '@x-monorepo/utils';
 
 /** 获取表格列配置 */
 export function useGridColumns(): VxeTableGridOptions['columns'] {

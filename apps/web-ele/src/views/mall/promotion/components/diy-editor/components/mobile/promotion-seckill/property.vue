@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { PromotionSeckillProperty } from './config';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { useVModel } from '@vueuse/core';
 import {

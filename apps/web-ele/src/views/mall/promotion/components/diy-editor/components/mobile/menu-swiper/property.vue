@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { MenuSwiperProperty } from './config';
 
-import { cloneDeep } from '@vben/utils';
+import { cloneDeep } from '@x-monorepo/utils';
 
 import { useVModel } from '@vueuse/core';
 import {

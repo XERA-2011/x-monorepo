@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { NoticeBarProperty } from './config';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElCarousel, ElCarouselItem, ElDivider, ElImage } from 'element-plus';
 

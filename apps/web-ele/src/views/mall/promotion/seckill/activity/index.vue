@@ -4,8 +4,8 @@ import type { MallSeckillActivityApi } from '#/api/mall/promotion/seckill/seckil
 
 import { onMounted } from 'vue';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { $t } from '@x-monorepo/locales';
 
 import { ElLoading, ElMessage, ElTag } from 'element-plus';
 

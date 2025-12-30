@@ -4,7 +4,7 @@ import type { MallSeckillActivityApi } from '#/api/mall/promotion/seckill/seckil
 
 import { onMounted } from 'vue';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { message, Tag } from 'ant-design-vue';
 

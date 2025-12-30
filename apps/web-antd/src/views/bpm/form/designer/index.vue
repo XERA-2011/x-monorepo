@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { useTabs } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { useTabs } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import FcDesigner from '@form-create/antd-designer';
 import { Button, message, Spin } from 'ant-design-vue';

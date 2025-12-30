@@ -6,7 +6,7 @@ import type { PayWalletApi } from '#/api/pay/wallet/balance';
 
 import { computed, nextTick, ref, toRefs, watch } from 'vue';
 
-import { isEmpty } from '@vben/utils';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { useScroll } from '@vueuse/core';
 import { Empty, message } from 'ant-design-vue';

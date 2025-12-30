@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AlertConfigApi } from '#/api/iot/alert/config';
 
-import { Page, useVbenModal } from '@vben/common-ui';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { message, Tag } from 'ant-design-vue';
 

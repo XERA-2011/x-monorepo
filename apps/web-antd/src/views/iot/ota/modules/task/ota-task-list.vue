@@ -5,8 +5,8 @@ import type { OtaTask } from '#/api/iot/ota/task';
 
 import { onMounted, reactive, ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { formatDate } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { formatDate } from '@x-monorepo/utils';
 
 import {
   Button,

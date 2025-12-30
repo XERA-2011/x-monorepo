@@ -3,9 +3,9 @@ import type { MallCouponTemplateApi } from '#/api/mall/promotion/coupon/couponTe
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { CouponTemplateTakeTypeEnum } from '@vben/constants';
-import { convertToInteger, formatToFraction } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { CouponTemplateTakeTypeEnum } from '@x-monorepo/constants';
+import { convertToInteger, formatToFraction } from '@x-monorepo/utils';
 
 import { ElMessage } from 'element-plus';
 

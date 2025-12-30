@@ -1,4 +1,4 @@
-import type { AxiosResponse } from '@vben/request';
+import type { AxiosResponse } from '@x-monorepo/request';
 
 import type { AxiosProgressEvent } from '#/api/infra/file';
 

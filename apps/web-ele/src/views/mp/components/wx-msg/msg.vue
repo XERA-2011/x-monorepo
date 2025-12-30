@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { MpMsgType } from '@vben/constants';
+import { MpMsgType } from '@x-monorepo/constants';
 
 import {
   WxLocation,

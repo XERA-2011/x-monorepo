@@ -2,8 +2,8 @@
 <script setup lang="ts">
 import { onMounted, ref, unref } from 'vue';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { isString } from '@vben/utils';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { isString } from '@x-monorepo/utils';
 
 import formCreate from '@form-create/ant-design-vue';
 import FcDesigner from '@form-create/antd-designer';

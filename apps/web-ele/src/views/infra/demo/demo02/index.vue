@@ -4,8 +4,8 @@ import type { Demo02CategoryApi } from '#/api/infra/demo/demo02';
 
 import { ref } from 'vue';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

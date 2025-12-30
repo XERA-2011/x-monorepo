@@ -4,7 +4,7 @@ import type { MallSpuApi } from '#/api/mall/product/spu';
 
 import { computed, ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElImage, ElTooltip } from 'element-plus';
 

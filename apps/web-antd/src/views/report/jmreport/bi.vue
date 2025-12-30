@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { DocAlert, IFrame, Page } from '@vben/common-ui';
-import { useAccessStore } from '@vben/stores';
+import { DocAlert, IFrame, Page } from '@x-monorepo/common-ui';
+import { useAccessStore } from '@x-monorepo/stores';
 
 defineOptions({ name: 'JimuBI' });
 const accessStore = useAccessStore();

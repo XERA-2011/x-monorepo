@@ -6,8 +6,8 @@ import type { SystemDeptApi } from '#/api/system/dept';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { handleTree } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { handleTree } from '@x-monorepo/utils';
 
 import { Card, Col, Row, Tree } from 'ant-design-vue';
 

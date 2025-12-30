@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { CircleX } from '@vben-core/icons';
+import { CircleX } from '@x-monorepo-core/icons';
 
 import {
   Select,

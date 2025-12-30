@@ -2,7 +2,7 @@
 // TODO @haohao：应该先有【规则】【目的】两个 tab；然后，在进行管理操作；类似，apps/web-antd/src/views/ai/chat/manager
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { Page, useVbenModal } from '@vben/common-ui';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

@@ -2,8 +2,8 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { DemoWithdrawApi } from '#/api/pay/demo/withdraw';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { erpPriceInputFormatter } from '@vben/utils';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { erpPriceInputFormatter } from '@x-monorepo/utils';
 
 import { message, Tag } from 'ant-design-vue';
 

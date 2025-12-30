@@ -5,7 +5,7 @@ import type { IotProductApi } from '#/api/iot/product/product';
 import { onMounted, provide, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@x-monorepo/common-ui';
 
 import { message, Tabs } from 'ant-design-vue';
 

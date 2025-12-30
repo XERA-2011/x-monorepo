@@ -3,7 +3,7 @@ import type { ErpPurchaseOrderApi } from '#/api/erp/purchase/order';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

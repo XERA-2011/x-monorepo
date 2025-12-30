@@ -1,8 +1,8 @@
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { DICT_TYPE } from '@vben/constants';
-import { formatDateTime } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { formatDateTime } from '@x-monorepo/utils';
 
 /** 新增/修改的表单 */
 export function useFormSchema(): VbenFormSchema[] {

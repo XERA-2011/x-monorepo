@@ -1,13 +1,13 @@
-import type { AuthPermissionInfo, Recordable, UserInfo } from '@vben/types';
+import type { AuthPermissionInfo, Recordable, UserInfo } from '@x-monorepo/types';
 
 import type { AuthApi } from '#/api';
 
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { LOGIN_PATH } from '@vben/constants';
-import { preferences } from '@vben/preferences';
-import { resetAllStores, useAccessStore, useUserStore } from '@vben/stores';
+import { LOGIN_PATH } from '@x-monorepo/constants';
+import { preferences } from '@x-monorepo/preferences';
+import { resetAllStores, useAccessStore, useUserStore } from '@x-monorepo/stores';
 
 import { notification } from 'ant-design-vue';
 import { defineStore } from 'pinia';

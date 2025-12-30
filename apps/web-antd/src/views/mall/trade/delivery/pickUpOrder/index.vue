@@ -4,10 +4,10 @@ import type { MallOrderApi } from '#/api/mall/trade/order';
 
 import { h, ref } from 'vue';
 
-import { Page, prompt, SummaryCard } from '@vben/common-ui';
-import { DeliveryTypeEnum } from '@vben/constants';
-import { $t } from '@vben/locales';
-import { fenToYuan } from '@vben/utils';
+import { Page, prompt, SummaryCard } from '@x-monorepo/common-ui';
+import { DeliveryTypeEnum } from '@x-monorepo/constants';
+import { $t } from '@x-monorepo/locales';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { Card, Image, Input, message, Tag } from 'ant-design-vue';
 

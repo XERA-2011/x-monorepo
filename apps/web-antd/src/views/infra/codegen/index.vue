@@ -6,8 +6,8 @@ import type { InfraDataSourceConfigApi } from '#/api/infra/data-source-config';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { isEmpty } from '@vben/utils';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

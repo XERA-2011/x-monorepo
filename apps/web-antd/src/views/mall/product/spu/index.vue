@@ -5,9 +5,9 @@ import type { MallSpuApi } from '#/api/mall/product/spu';
 import { onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { confirm, DocAlert, Page } from '@vben/common-ui';
-import { ProductSpuStatusEnum } from '@vben/constants';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
+import { ProductSpuStatusEnum } from '@x-monorepo/constants';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { message, Tabs } from 'ant-design-vue';
 

@@ -4,8 +4,8 @@ import type { InfraFileApi } from '#/api/infra/file';
 
 import { ref } from 'vue';
 
-import { confirm, Page, useVbenModal } from '@vben/common-ui';
-import { isEmpty, openWindow } from '@vben/utils';
+import { confirm, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { isEmpty, openWindow } from '@x-monorepo/utils';
 
 import { useClipboard } from '@vueuse/core';
 import { Button, Image, message } from 'ant-design-vue';

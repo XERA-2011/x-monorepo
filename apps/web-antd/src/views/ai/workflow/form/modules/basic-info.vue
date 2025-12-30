@@ -3,8 +3,8 @@ import type { Rule } from 'ant-design-vue/es/form';
 
 import { ref } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { Form, Input, Select } from 'ant-design-vue';
 

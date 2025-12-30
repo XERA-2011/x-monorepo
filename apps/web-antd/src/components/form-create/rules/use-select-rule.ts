@@ -1,6 +1,6 @@
 import type { SelectRuleOption } from '#/components/form-create/typing';
 
-import { buildUUID, cloneDeep } from '@vben/utils';
+import { buildUUID, cloneDeep } from '@x-monorepo/utils';
 
 import {
   localeProps,

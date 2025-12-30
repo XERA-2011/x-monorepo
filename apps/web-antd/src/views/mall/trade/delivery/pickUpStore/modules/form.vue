@@ -3,7 +3,7 @@ import type { MallDeliveryPickUpStoreApi } from '#/api/mall/trade/delivery/pickU
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { Button, message } from 'ant-design-vue';
 import dayjs from 'dayjs';

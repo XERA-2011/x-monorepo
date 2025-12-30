@@ -1,11 +1,11 @@
 {
-  "name": "@vben/access",
+  "name": "@x-monorepo/access",
   "version": "5.5.9",
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "homepage": "https://github.com/XERA-2011/x-monorepo",
+  "bugs": "https://github.com/XERA-2011/x-monorepo/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "url": "git+https://github.com/XERA-2011/x-monorepo.git",
     "directory": "packages/effects/permissions"
   },
   "license": "MIT",
@@ -20,10 +20,10 @@
     }
   },
   "dependencies": {
-    "@vben/preferences": "workspace:*",
-    "@vben/stores": "workspace:*",
-    "@vben/types": "workspace:*",
-    "@vben/utils": "workspace:*",
+    "@x-monorepo/preferences": "workspace:*",
+    "@x-monorepo/stores": "workspace:*",
+    "@x-monorepo/types": "workspace:*",
+    "@x-monorepo/utils": "workspace:*",
     "vue": "catalog:"
   }
 }

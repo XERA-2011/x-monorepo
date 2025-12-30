@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallDeliveryExpressTemplateApi } from '#/api/mall/trade/delivery/expressTemplate';
 
-import { Page, useVbenModal } from '@vben/common-ui';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

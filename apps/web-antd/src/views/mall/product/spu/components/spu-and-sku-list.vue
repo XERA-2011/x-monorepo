@@ -3,8 +3,8 @@ import type { MallSpuApi, RuleConfig, SpuProperty } from './type';
 
 import { ref, watch } from 'vue';
 
-import { confirm } from '@vben/common-ui';
-import { formatToFraction } from '@vben/utils';
+import { confirm } from '@x-monorepo/common-ui';
+import { formatToFraction } from '@x-monorepo/utils';
 
 import { Button, Image } from 'ant-design-vue';
 

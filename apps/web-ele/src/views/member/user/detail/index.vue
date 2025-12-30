@@ -5,8 +5,8 @@ import type { PayWalletApi } from '#/api/pay/wallet/balance';
 import { onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { useTabs } from '@vben/hooks';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { useTabs } from '@x-monorepo/hooks';
 
 import { ElButton, ElCard, ElMessage, ElTabPane, ElTabs } from 'element-plus';
 

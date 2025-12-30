@@ -5,8 +5,8 @@ import type { MemberUserApi } from '#/api/member/user';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { isEmpty } from '@vben/utils';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getUserPage } from '#/api/member/user';

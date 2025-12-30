@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallBargainActivityApi } from '#/api/mall/promotion/bargain/bargainActivity';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

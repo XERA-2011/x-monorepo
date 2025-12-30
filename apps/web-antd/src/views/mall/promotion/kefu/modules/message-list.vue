@@ -6,9 +6,9 @@ import type { MallKefuMessageApi } from '#/api/mall/promotion/kefu/message';
 
 import { computed, reactive, ref, toRefs, unref, watch } from 'vue';
 
-import { UserTypeEnum } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
-import { formatDate, isEmpty, jsonParse } from '@vben/utils';
+import { UserTypeEnum } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { formatDate, isEmpty, jsonParse } from '@x-monorepo/utils';
 
 import { useScroll } from '@vueuse/core';
 import { Avatar, Empty, Image, notification, Textarea } from 'ant-design-vue';

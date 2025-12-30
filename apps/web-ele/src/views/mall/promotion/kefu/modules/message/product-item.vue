@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useRouter } from 'vue-router';
 
-import { fenToYuan } from '@vben/utils';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { ElButton, ElImage } from 'element-plus';
 

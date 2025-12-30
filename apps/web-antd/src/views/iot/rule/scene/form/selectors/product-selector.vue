@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
+import { DICT_TYPE } from '@x-monorepo/constants';
 
 import { Select } from 'ant-design-vue';
 

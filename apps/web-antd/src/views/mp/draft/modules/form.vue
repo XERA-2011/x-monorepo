@@ -3,7 +3,7 @@ import type { MpDraftApi } from '#/api/mp/draft';
 
 import { computed, provide, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

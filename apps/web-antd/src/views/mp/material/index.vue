@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { provide, reactive, ref } from 'vue';
 
-import { useAccess } from '@vben/access';
-import { confirm, DocAlert, Page } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { useAccess } from '@x-monorepo/access';
+import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Card, Form, message, Pagination, Tabs } from 'ant-design-vue';
 

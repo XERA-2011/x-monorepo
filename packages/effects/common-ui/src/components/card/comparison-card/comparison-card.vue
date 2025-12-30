@@ -9,7 +9,7 @@ import {
   VbenCountToAnimator,
   VbenIcon,
   VbenLoading,
-} from '@vben-core/shadcn-ui';
+} from '@x-monorepo-core/shadcn-ui';
 
 /** 对比卡片 */
 defineOptions({ name: 'ComparisonCard' });

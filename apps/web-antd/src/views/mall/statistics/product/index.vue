@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { DocAlert, Page } from '@vben/common-ui';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
 
 import ProductRankCard from './modules/rank-card.vue';
 import ProductSummaryCard from './modules/summary-card.vue';

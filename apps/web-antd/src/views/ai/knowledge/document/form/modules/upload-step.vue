@@ -8,8 +8,8 @@ import type { AxiosProgressEvent } from '#/api/infra/file';
 
 import { computed, getCurrentInstance, inject, onMounted, ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { generateAcceptedFileTypes } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { generateAcceptedFileTypes } from '@x-monorepo/utils';
 
 import { Button, Form, message, UploadDragger } from 'ant-design-vue';
 

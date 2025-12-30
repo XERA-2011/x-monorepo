@@ -1,14 +1,14 @@
 import type { Component, VNode } from 'vue';
 
-import type { Recordable } from '@vben-core/typings';
+import type { Recordable } from '@x-monorepo-core/typings';
 
 import type { AlertProps, BeforeCloseScope, PromptProps } from './alert';
 
 import { h, nextTick, ref, render } from 'vue';
 
-import { useSimpleLocale } from '@vben-core/composables';
-import { Input, VbenRenderContent } from '@vben-core/shadcn-ui';
-import { isFunction, isString } from '@vben-core/shared/utils';
+import { useSimpleLocale } from '@x-monorepo-core/composables';
+import { Input, VbenRenderContent } from '@x-monorepo-core/shadcn-ui';
+import { isFunction, isString } from '@x-monorepo-core/shared/utils';
 
 import Alert from './alert.vue';
 

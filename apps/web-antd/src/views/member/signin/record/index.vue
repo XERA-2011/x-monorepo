@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MemberSignInRecordApi } from '#/api/member/signin/record';
 
-import { DocAlert, Page } from '@vben/common-ui';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getSignInRecordPage } from '#/api/member/signin/record';

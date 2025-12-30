@@ -6,10 +6,10 @@ import type { MallPointActivityApi } from '#/api/mall/promotion/point';
 
 import { computed } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { dateFormatter, fenToYuanFormat } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { dateFormatter, fenToYuanFormat } from '@x-monorepo/utils';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getPointActivityPage } from '#/api/mall/promotion/point';

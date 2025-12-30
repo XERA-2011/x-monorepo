@@ -4,22 +4,22 @@ import type { SystemUserApi } from '#/api/system/user';
 
 import { nextTick, onMounted, ref, shallowRef, watch } from 'vue';
 
-import { Page, useVbenModal } from '@vben/common-ui';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
 import {
   BpmFieldPermissionType,
   BpmModelFormType,
   BpmModelType,
   BpmTaskStatusEnum,
   DICT_TYPE,
-} from '@vben/constants';
+} from '@x-monorepo/constants';
 import {
   IconifyIcon,
   SvgBpmApproveIcon,
   SvgBpmCancelIcon,
   SvgBpmRejectIcon,
   SvgBpmRunningIcon,
-} from '@vben/icons';
-import { formatDateTime } from '@vben/utils';
+} from '@x-monorepo/icons';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import {
   ElAvatar,

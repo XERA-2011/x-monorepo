@@ -2,10 +2,10 @@
 import { onBeforeUnmount, onMounted, provide, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { confirm, Page } from '@vben/common-ui';
-import { AiModelTypeEnum, CommonStatusEnum } from '@vben/constants';
-import { useTabs } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
+import { confirm, Page } from '@x-monorepo/common-ui';
+import { AiModelTypeEnum, CommonStatusEnum } from '@x-monorepo/constants';
+import { useTabs } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Card, message } from 'ant-design-vue';
 

@@ -5,8 +5,8 @@ import type { MpDraftApi } from '#/api/mp/draft';
 
 import { computed, inject, reactive, ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { useAccessStore } from '@vben/stores';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { useAccessStore } from '@x-monorepo/stores';
 
 import { ElButton, ElDialog, ElImage, ElMessage, ElUpload } from 'element-plus';
 

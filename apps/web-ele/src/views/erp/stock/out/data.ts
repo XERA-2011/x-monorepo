@@ -1,8 +1,8 @@
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { getProductSimpleList } from '#/api/erp/product/product';
 import { getCustomerSimpleList } from '#/api/erp/sale/customer';

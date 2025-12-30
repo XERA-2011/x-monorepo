@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { WalletRechargePackageApi } from '#/api/pay/wallet/rechargePackage';
 
-import { Page, useVbenModal } from '@vben/common-ui';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

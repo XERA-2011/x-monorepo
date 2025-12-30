@@ -5,8 +5,8 @@ import type { Demo02CategoryApi } from '#/api/infra/demo/demo02';
 
 import { computed, reactive, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { handleTree } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { handleTree } from '@x-monorepo/utils';
 
 import {
   ElForm,

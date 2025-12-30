@@ -4,8 +4,8 @@ import type { BpmProcessListenerApi } from '#/api/bpm/processListener';
 
 import { reactive, ref } from 'vue';
 
-import { ContentWrap } from '@vben/common-ui';
-import { CommonStatusEnum, DICT_TYPE } from '@vben/constants';
+import { ContentWrap } from '@x-monorepo/common-ui';
+import { CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
 
 import { Button, Modal, Pagination, Table } from 'ant-design-vue';
 

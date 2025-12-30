@@ -5,8 +5,8 @@ import type { BpmProcessDefinitionApi } from '#/api/bpm/definition';
 import { computed, nextTick, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { Page } from '@vben/common-ui';
-import { groupBy } from '@vben/utils';
+import { Page } from '@x-monorepo/common-ui';
+import { groupBy } from '@x-monorepo/utils';
 
 import {
   ElCard,

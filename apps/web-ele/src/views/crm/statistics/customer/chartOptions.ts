@@ -1,5 +1,5 @@
-import { DICT_TYPE } from '@vben/constants';
-import { getDictLabel } from '@vben/hooks';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel } from '@x-monorepo/hooks';
 
 export function getChartOptions(activeTabName: any, res: any): any {
   switch (activeTabName) {

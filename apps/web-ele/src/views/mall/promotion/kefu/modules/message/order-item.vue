@@ -4,7 +4,7 @@ import type { MallKefuMessageApi } from '#/api/mall/promotion/kefu/message';
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { fenToYuan, isObject, jsonParse } from '@vben/utils';
+import { fenToYuan, isObject, jsonParse } from '@x-monorepo/utils';
 
 import ProductItem from './product-item.vue';
 

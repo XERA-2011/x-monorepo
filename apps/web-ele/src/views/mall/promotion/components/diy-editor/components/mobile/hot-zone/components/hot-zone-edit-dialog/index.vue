@@ -6,8 +6,8 @@ import type { AppLink } from '#/views/mall/promotion/components/app-link-input/d
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElButton, ElImage } from 'element-plus';
 

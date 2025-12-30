@@ -5,8 +5,8 @@ import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
 import { ref } from 'vue';
 
-import { buildSortingField } from '@vben/request';
-import { formatDateTime } from '@vben/utils';
+import { buildSortingField } from '@x-monorepo/request';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { ElCard } from 'element-plus';
 

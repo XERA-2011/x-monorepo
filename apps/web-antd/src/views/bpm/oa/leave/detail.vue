@@ -4,7 +4,7 @@ import type { BpmOALeaveApi } from '#/api/bpm/oa/leave';
 import { computed, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { ContentWrap } from '@vben/common-ui';
+import { ContentWrap } from '@x-monorepo/common-ui';
 
 import { Spin } from 'ant-design-vue';
 

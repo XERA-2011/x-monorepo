@@ -5,8 +5,8 @@ import type { MallAfterSaleApi } from '#/api/mall/trade/afterSale';
 import { onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { Button, Image, Tabs, Tag } from 'ant-design-vue';
 

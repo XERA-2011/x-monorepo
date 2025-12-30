@@ -4,7 +4,7 @@ import type { StatsData } from './data';
 
 import { onMounted, ref } from 'vue';
 
-import { ComparisonCard, Page } from '@vben/common-ui';
+import { ComparisonCard, Page } from '@x-monorepo/common-ui';
 
 import { Col, Row } from 'ant-design-vue';
 

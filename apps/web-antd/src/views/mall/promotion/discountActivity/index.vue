@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallDiscountActivityApi } from '#/api/mall/promotion/discount/discountActivity';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

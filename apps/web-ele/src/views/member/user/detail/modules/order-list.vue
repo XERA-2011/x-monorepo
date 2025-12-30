@@ -4,8 +4,8 @@ import type { MallOrderApi } from '#/api/mall/trade/order';
 
 import { useRouter } from 'vue-router';
 
-import { DICT_TYPE } from '@vben/constants';
-import { fenToYuan } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { ElImage, ElTag } from 'element-plus';
 

@@ -5,7 +5,7 @@ import type { MallPointActivityApi } from '#/api/mall/promotion/point';
 
 import { ref, watch } from 'vue';
 
-import { fenToYuan } from '@vben/utils';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { Image } from 'ant-design-vue';
 

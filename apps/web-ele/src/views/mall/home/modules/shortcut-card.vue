@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useRouter } from 'vue-router';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElCard } from 'element-plus';
 

@@ -4,10 +4,10 @@ import {
   SvgGithubIcon,
   SvgQQChatIcon,
   SvgWeChatIcon,
-} from '@vben/icons';
-import { $t } from '@vben/locales';
+} from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
 
-import { VbenIconButton } from '@vben-core/shadcn-ui';
+import { VbenIconButton } from '@x-monorepo-core/shadcn-ui';
 
 defineOptions({
   name: 'ThirdPartyLogin',

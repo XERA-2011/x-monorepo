@@ -6,7 +6,7 @@ import type { MallSeckillActivityApi } from '#/api/mall/promotion/seckill/seckil
 
 import { ref, watch } from 'vue';
 
-import { fenToYuan } from '@vben/utils';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { ElImage } from 'element-plus';
 

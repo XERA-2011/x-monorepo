@@ -1,8 +1,8 @@
-import type { PageResult } from '@vben/request';
+import type { PageResult } from '@x-monorepo/request';
 
-import { useAppConfig } from '@vben/hooks';
-import { fetchEventSource } from '@vben/request';
-import { useAccessStore } from '@vben/stores';
+import { useAppConfig } from '@x-monorepo/hooks';
+import { fetchEventSource } from '@x-monorepo/request';
+import { useAccessStore } from '@x-monorepo/stores';
 
 import { requestClient } from '#/api/request';
 

@@ -2,8 +2,8 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallDeliveryExpressApi } from '#/api/mall/trade/delivery/express';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

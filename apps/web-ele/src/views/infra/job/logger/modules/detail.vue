@@ -3,7 +3,7 @@ import type { InfraJobLogApi } from '#/api/infra/job-log';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { getJobLog } from '#/api/infra/job-log';
 import { useDescription } from '#/components/description';

@@ -4,7 +4,7 @@ import type { MallCombinationActivityApi } from '#/api/mall/promotion/combinatio
 
 import { computed, ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElImage, ElTooltip } from 'element-plus';
 

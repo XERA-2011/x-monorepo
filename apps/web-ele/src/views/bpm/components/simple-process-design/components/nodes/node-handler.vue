@@ -3,9 +3,9 @@ import type { SimpleFlowNode } from '../../consts';
 
 import { inject, ref } from 'vue';
 
-import { BpmNodeTypeEnum } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
-import { cloneDeep, buildShortUUID as generateUUID } from '@vben/utils';
+import { BpmNodeTypeEnum } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { cloneDeep, buildShortUUID as generateUUID } from '@x-monorepo/utils';
 
 import { ElMessage, ElPopover } from 'element-plus';
 

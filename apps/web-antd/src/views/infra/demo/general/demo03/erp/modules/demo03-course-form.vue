@@ -5,7 +5,7 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { Form, Input, message } from 'ant-design-vue';
 

@@ -4,7 +4,7 @@ import type { DictSelectProps } from '../typing';
 
 import { computed, useAttrs } from 'vue';
 
-import { getDictOptions } from '@vben/hooks';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import {
   Checkbox,

@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   action:
-    if: github.repository == 'vbenjs/vue-vben-admin'
+    if: github.repository == 'XERA-2011/x-monorepo'
     runs-on: ubuntu-latest
     steps:
       - uses: dessant/lock-threads@v5

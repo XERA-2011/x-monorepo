@@ -6,10 +6,10 @@ import type { MallOrderApi } from '#/api/mall/trade/order';
 import { onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { confirm, Page, useVbenModal } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { useTabs } from '@vben/hooks';
-import { $t } from '@vben/locales';
+import { confirm, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { useTabs } from '@x-monorepo/hooks';
+import { $t } from '@x-monorepo/locales';
 
 import { message, Tag } from 'ant-design-vue';
 

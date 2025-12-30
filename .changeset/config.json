@@ -2,10 +2,10 @@
   "$schema": "https://unpkg.com/@changesets/config@3.0.0/schema.json",
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "vbenjs/vue-vben-admin" }
+    { "repo": "XERA-2011/x-monorepo" }
   ],
   "commit": false,
-  "fixed": [["@vben-core/*", "@vben/*"]],
+  "fixed": [["@x-monorepo-core/*", "@x-monorepo/*"]],
   "snapshot": {
     "prereleaseTemplate": "{tag}-{datetime}"
   },

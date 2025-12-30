@@ -6,10 +6,10 @@ import type { DiyComponentLibrary } from '#/views/mall/promotion/components'; //
 import { onMounted, reactive, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { useTabs } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
-import { useAccessStore } from '@vben/stores';
-import { isEmpty } from '@vben/utils';
+import { useTabs } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { useAccessStore } from '@x-monorepo/stores';
+import { isEmpty } from '@x-monorepo/utils';
 
 import {
   ElLoading,

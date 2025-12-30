@@ -1,12 +1,12 @@
 {
-  "name": "@vben-core/typings",
+  "name": "@x-monorepo-core/typings",
   "version": "5.5.9",
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "homepage": "https://github.com/XERA-2011/x-monorepo",
+  "bugs": "https://github.com/XERA-2011/x-monorepo/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
-    "directory": "packages/@vben-core/base/typings"
+    "url": "git+https://github.com/XERA-2011/x-monorepo.git",
+    "directory": "packages/@x-monorepo-core/base/typings"
   },
   "license": "MIT",
   "type": "module",

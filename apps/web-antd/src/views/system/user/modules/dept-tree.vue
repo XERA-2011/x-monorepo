@@ -3,8 +3,8 @@ import type { SystemDeptApi } from '#/api/system/dept';
 
 import { onMounted, ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { handleTree } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { handleTree } from '@x-monorepo/utils';
 
 import { Input, Spin, Tree } from 'ant-design-vue';
 

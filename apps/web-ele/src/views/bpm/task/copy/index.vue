@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 
-import { DocAlert, Page } from '@vben/common-ui';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
 
 import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getProcessInstanceCopyPage } from '#/api/bpm/processInstance';

@@ -9,8 +9,8 @@ import {
   StableDiffusionClipGuidancePresets,
   StableDiffusionSamplers,
   StableDiffusionStylePresets,
-} from '@vben/constants';
-import { formatDateTime } from '@vben/utils';
+} from '@x-monorepo/constants';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { Image } from 'ant-design-vue';
 

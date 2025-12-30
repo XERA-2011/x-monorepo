@@ -3,7 +3,7 @@ import type { ComponentStyle, DiyComponent } from '../util';
 
 import { computed } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElButton, ElTooltip } from 'element-plus';
 

@@ -2,12 +2,12 @@ import type {
   AppRouteRecordRaw,
   ComponentRecordType,
   GenerateMenuAndRoutesOptions,
-} from '@vben/types';
+} from '@x-monorepo/types';
 
-import { generateAccessible } from '@vben/access';
-import { preferences } from '@vben/preferences';
-import { useAccessStore } from '@vben/stores';
-import { convertServerMenuToRouteRecordStringComponent } from '@vben/utils';
+import { generateAccessible } from '@x-monorepo/access';
+import { preferences } from '@x-monorepo/preferences';
+import { useAccessStore } from '@x-monorepo/stores';
+import { convertServerMenuToRouteRecordStringComponent } from '@x-monorepo/utils';
 
 import { BasicLayout, IFrameView } from '#/layouts';
 

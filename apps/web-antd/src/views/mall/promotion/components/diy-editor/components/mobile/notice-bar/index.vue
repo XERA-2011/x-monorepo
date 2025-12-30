@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { NoticeBarProperty } from './config';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Carousel, Divider, Image } from 'ant-design-vue';
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useScrollLock } from '@vben-core/composables';
+import { useScrollLock } from '@x-monorepo-core/composables';
 
 useScrollLock();
 </script>

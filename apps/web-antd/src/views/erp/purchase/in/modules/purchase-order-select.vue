@@ -4,7 +4,7 @@ import type { ErpPurchaseOrderApi } from '#/api/erp/purchase/order';
 
 import { ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Input, message, Modal } from 'ant-design-vue';
 

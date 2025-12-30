@@ -3,7 +3,7 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElMessage, ElTabPane, ElTabs } from 'element-plus';
 

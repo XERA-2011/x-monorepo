@@ -4,8 +4,8 @@ import type { AiModelModelApi } from '#/api/ai/model/model';
 
 import { nextTick, onMounted, ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
-import { AiModelTypeEnum, AiPlatformEnum } from '@vben/constants';
+import { Page } from '@x-monorepo/common-ui';
+import { AiModelTypeEnum, AiPlatformEnum } from '@x-monorepo/constants';
 
 import { ElSegmented } from 'element-plus';
 

@@ -5,7 +5,7 @@ import type {
   UploadRequestOptions,
 } from 'element-plus';
 
-import type { AxiosResponse } from '@vben/request';
+import type { AxiosResponse } from '@x-monorepo/request';
 
 import type { UploadListType } from './typing';
 
@@ -13,15 +13,15 @@ import type { AxiosProgressEvent } from '#/api/infra/file';
 
 import { ref, toRefs, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
 import {
   defaultImageAccepts,
   isFunction,
   isImage,
   isObject,
   isString,
-} from '@vben/utils';
+} from '@x-monorepo/utils';
 
 import { ElMessage, ElUpload } from 'element-plus';
 

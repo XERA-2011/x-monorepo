@@ -3,8 +3,8 @@ import type { MallTradeConfigApi } from '#/api/mall/trade/config';
 
 import { onMounted, ref } from 'vue';
 
-import { DocAlert, Page } from '@vben/common-ui';
-import { fenToYuan, yuanToFen } from '@vben/utils';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
+import { fenToYuan, yuanToFen } from '@x-monorepo/utils';
 
 import { ElCard, ElMessage, ElTabPane, ElTabs } from 'element-plus';
 

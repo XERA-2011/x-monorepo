@@ -4,9 +4,9 @@ import type {
   ComponentRecordType,
   GenerateMenuAndRoutesOptions,
   RouteRecordStringComponent,
-} from '@vben-core/typings';
+} from '@x-monorepo-core/typings';
 
-import { mapTree } from '@vben-core/shared/utils';
+import { mapTree } from '@x-monorepo-core/shared/utils';
 
 /**
  * 动态生成路由 - 后端方式

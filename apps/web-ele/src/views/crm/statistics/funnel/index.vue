@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import type {
   VxeGridListeners,
@@ -9,8 +9,8 @@ import type { CrmStatisticsFunnelApi } from '#/api/crm/statistics/funnel';
 
 import { reactive, ref } from 'vue';
 
-import { ContentWrap, Page } from '@vben/common-ui';
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
+import { ContentWrap, Page } from '@x-monorepo/common-ui';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
 
 import { ElButton, ElButtonGroup, ElTabPane, ElTabs } from 'element-plus';
 

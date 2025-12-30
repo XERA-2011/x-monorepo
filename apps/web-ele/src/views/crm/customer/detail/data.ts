@@ -3,9 +3,9 @@ import type { DescriptionItemSchema } from '#/components/description';
 
 import { h } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { useUserStore } from '@vben/stores';
-import { formatDateTime } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { useUserStore } from '@x-monorepo/stores';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { getSimpleUserList } from '#/api/system/user';
 import { DictTag } from '#/components/dict-tag';

@@ -15,10 +15,10 @@ import {
   toRefs,
 } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
 
-import { AES } from '@vben-core/shared/utils';
+import { AES } from '@x-monorepo-core/shared/utils';
 
 import { resetSize } from './utils/util';
 

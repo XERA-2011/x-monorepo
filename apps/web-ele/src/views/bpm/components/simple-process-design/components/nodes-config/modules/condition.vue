@@ -5,9 +5,9 @@ import type { Ref } from 'vue';
 
 import { computed, inject, reactive, ref } from 'vue';
 
-import { BpmModelFormType } from '@vben/constants';
-import { IconifyIcon, Plus, Trash2 } from '@vben/icons';
-import { cloneDeep } from '@vben/utils';
+import { BpmModelFormType } from '@x-monorepo/constants';
+import { IconifyIcon, Plus, Trash2 } from '@x-monorepo/icons';
+import { cloneDeep } from '@x-monorepo/utils';
 
 import {
   ElCard,

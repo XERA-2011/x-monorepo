@@ -2,9 +2,9 @@
 // TODO @xingyu：要不要改成 yudao-ui-admin-vue3/src/components/OperateLogV2/src/OperateLogV2.vue 这种；一行：时间、userType、userName、action
 import type { OperateLogProps } from './typing';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictLabel, getDictObj } from '@vben/hooks';
-import { formatDateTime } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel, getDictObj } from '@x-monorepo/hooks';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { Tag, Timeline } from 'ant-design-vue';
 

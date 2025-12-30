@@ -3,7 +3,7 @@ import type { WxLocationProps } from './types';
 
 import { computed, onMounted, ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElCol, ElLink, ElMessage, ElRow } from 'element-plus';
 

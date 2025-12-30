@@ -4,8 +4,8 @@ import type { ErpStockOutApi } from '#/api/erp/stock/out';
 
 import { ref } from 'vue';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart, isEmpty } from '@vben/utils';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

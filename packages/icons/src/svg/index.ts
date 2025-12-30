@@ -1,4 +1,4 @@
-import { createIconifyIcon } from '@vben-core/icons';
+import { createIconifyIcon } from '@x-monorepo-core/icons';
 
 import './load.js';
 

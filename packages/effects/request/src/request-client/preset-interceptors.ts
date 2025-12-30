@@ -1,8 +1,8 @@
 import type { RequestClient } from './request-client';
 import type { MakeErrorMessageFn, ResponseInterceptorConfig } from './types';
 
-import { $t } from '@vben/locales';
-import { isFunction } from '@vben/utils';
+import { $t } from '@x-monorepo/locales';
+import { isFunction } from '@x-monorepo/utils';
 
 import axios from 'axios';
 

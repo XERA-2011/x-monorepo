@@ -2,8 +2,8 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemTenantPackageApi } from '#/api/system/tenant-package';
 
-import { CommonStatusEnum, DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { z } from '#/adapter/form';
 import { getTenantPackageList } from '#/api/system/tenant-package';

@@ -3,7 +3,7 @@ import type { CrmCustomerPoolConfigApi } from '#/api/crm/customer/poolConfig';
 
 import { onMounted } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@x-monorepo/common-ui';
 
 import { Card, message } from 'ant-design-vue';
 

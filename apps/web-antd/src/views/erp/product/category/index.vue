@@ -4,8 +4,8 @@ import type { ErpProductCategoryApi } from '#/api/erp/product/category';
 
 import { ref } from 'vue';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

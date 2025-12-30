@@ -2,8 +2,8 @@ import type { DescriptionItemSchema } from '#/components/description';
 
 import { h } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { erpPriceInputFormatter } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { erpPriceInputFormatter } from '@x-monorepo/utils';
 
 import { DictTag } from '#/components/dict-tag';
 

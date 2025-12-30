@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { UploadFile, UploadRawFile } from 'element-plus';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElMessage, ElUpload } from 'element-plus';
 

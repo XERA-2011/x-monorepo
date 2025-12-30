@@ -4,7 +4,7 @@ import type { MallDiyTemplateApi } from '#/api/mall/promotion/diy/template';
 
 import { useRouter } from 'vue-router';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

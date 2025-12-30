@@ -1,4 +1,4 @@
-import type { BasicUserInfo } from '@vben/types';
+import type { BasicUserInfo } from '@x-monorepo/types';
 
 export interface Props {
   title?: string;

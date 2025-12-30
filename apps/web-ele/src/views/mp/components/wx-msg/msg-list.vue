@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import type { MpUserApi } from '#/api/mp/user/index';
 
-import { preferences } from '@vben/preferences';
-import { formatDateTime } from '@vben/utils';
+import { preferences } from '@x-monorepo/preferences';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import Msg from './msg.vue';
 

@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiMindmapApi } from '#/api/ai/mindmap';
 
-import { DocAlert, Page, useVbenDrawer } from '@vben/common-ui';
+import { DocAlert, Page, useVbenDrawer } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

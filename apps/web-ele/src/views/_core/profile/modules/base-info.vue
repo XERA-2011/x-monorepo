@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@x-monorepo/types';
 
 import type { SystemUserProfileApi } from '#/api/system/user/profile';
 
 import { watch } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { $t } from '@vben/locales';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { $t } from '@x-monorepo/locales';
 
 import { ElMessage } from 'element-plus';
 

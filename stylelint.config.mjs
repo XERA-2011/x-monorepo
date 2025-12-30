@@ -1,4 +1,4 @@
 export default {
-  extends: ['@vben/stylelint-config'],
+  extends: ['@x-monorepo/stylelint-config'],
   root: true,
 };

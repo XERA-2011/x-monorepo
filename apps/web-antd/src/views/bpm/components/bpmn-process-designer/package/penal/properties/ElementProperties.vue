@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { inject, nextTick, ref, toRaw, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { cloneDeep } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { cloneDeep } from '@x-monorepo/utils';
 
 import {
   Button,

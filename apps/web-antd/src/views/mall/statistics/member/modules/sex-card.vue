@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import type { MallMemberStatisticsApi } from '#/api/mall/statistics/member';
 
 import { onMounted, ref } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
 
 import { Card, Spin } from 'ant-design-vue';
 

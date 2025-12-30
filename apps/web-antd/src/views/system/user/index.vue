@@ -5,10 +5,10 @@ import type { SystemUserApi } from '#/api/system/user';
 
 import { ref } from 'vue';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictLabel } from '@vben/hooks';
-import { downloadFileFromBlobPart, isEmpty } from '@vben/utils';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel } from '@x-monorepo/hooks';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
 
 import { Card, message } from 'ant-design-vue';
 

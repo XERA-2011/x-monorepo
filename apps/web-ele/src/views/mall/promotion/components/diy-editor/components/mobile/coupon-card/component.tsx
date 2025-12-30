@@ -6,8 +6,8 @@ import { defineComponent } from 'vue';
 import {
   CouponTemplateValidityTypeEnum,
   PromotionDiscountTypeEnum,
-} from '@vben/constants';
-import { floatToFixed2, formatDate } from '@vben/utils';
+} from '@x-monorepo/constants';
+import { floatToFixed2, formatDate } from '@x-monorepo/utils';
 
 /** 有效期 */
 export const CouponValidTerm = defineComponent({

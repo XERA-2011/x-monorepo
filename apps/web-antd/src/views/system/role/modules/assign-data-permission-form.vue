@@ -4,9 +4,9 @@ import type { SystemRoleApi } from '#/api/system/role';
 
 import { ref } from 'vue';
 
-import { Tree, useVbenModal } from '@vben/common-ui';
-import { SystemDataScopeEnum } from '@vben/constants';
-import { handleTree } from '@vben/utils';
+import { Tree, useVbenModal } from '@x-monorepo/common-ui';
+import { SystemDataScopeEnum } from '@x-monorepo/constants';
+import { handleTree } from '@x-monorepo/utils';
 
 import { Checkbox, message, Spin } from 'ant-design-vue';
 

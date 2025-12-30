@@ -7,7 +7,7 @@ import type { MallSpuApi } from '#/api/mall/product/spu';
 
 import { computed, nextTick, onMounted, ref } from 'vue';
 
-import { handleTree } from '@vben/utils';
+import { handleTree } from '@x-monorepo/utils';
 
 import { message, Modal } from 'ant-design-vue';
 

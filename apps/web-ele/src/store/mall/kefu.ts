@@ -1,7 +1,7 @@
 import type { MallKefuConversationApi } from '#/api/mall/promotion/kefu/conversation';
 import type { MallKefuMessageApi } from '#/api/mall/promotion/kefu/message';
 
-import { isEmpty } from '@vben/utils';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { acceptHMRUpdate, defineStore } from 'pinia';
 

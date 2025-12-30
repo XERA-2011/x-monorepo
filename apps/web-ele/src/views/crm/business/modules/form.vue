@@ -3,8 +3,8 @@ import type { CrmBusinessApi } from '#/api/crm/business';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { erpPriceMultiply } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { erpPriceMultiply } from '@x-monorepo/utils';
 
 import { ElMessage } from 'element-plus';
 

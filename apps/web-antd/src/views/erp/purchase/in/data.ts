@@ -1,9 +1,9 @@
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { erpNumberFormatter, erpPriceInputFormatter } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { erpNumberFormatter, erpPriceInputFormatter } from '@x-monorepo/utils';
 
 import { z } from '#/adapter/form';
 import { getAccountSimpleList } from '#/api/erp/finance/account';

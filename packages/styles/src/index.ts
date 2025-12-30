@@ -1,1 +1,1 @@
-import '@vben-core/design';
+import '@x-monorepo-core/design';

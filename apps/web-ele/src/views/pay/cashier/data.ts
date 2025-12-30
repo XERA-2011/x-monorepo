@@ -11,7 +11,7 @@ import {
   SvgWxLiteIcon,
   SvgWxNativeIcon,
   SvgWxPubIcon,
-} from '@vben/icons';
+} from '@x-monorepo/icons';
 
 export const channelsAlipay = [
   {

@@ -3,8 +3,8 @@ import type { Reply } from './types';
 
 import { computed, ref } from 'vue';
 
-import { NewsType } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { NewsType } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Col, Modal, Row } from 'ant-design-vue';
 

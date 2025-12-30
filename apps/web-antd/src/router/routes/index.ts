@@ -1,6 +1,6 @@
 import type { RouteRecordRaw } from 'vue-router';
 
-import { mergeRouteModules, traverseTreeValues } from '@vben/utils';
+import { mergeRouteModules, traverseTreeValues } from '@x-monorepo/utils';
 
 import { coreRoutes, fallbackNotFoundRoute } from './core';
 
@@ -35,7 +35,7 @@ const coreRouteNames = traverseTreeValues(coreRoutes, (route) => route.name);
 /** 有权限校验的路由列表，包含动态路由和静态路由 */
 const accessRoutes = [...dynamicRoutes, ...staticRoutes];
 
-// add by 芋艿：from https://github.com/vbenjs/vue-vben-admin/blob/main/playground/src/router/routes/index.ts#L38-L45
+// add by 芋艿：from https://github.com/XERA-2011/x-monorepo/blob/main/playground/src/router/routes/index.ts#L38-L45
 const componentKeys: string[] = Object.keys(
   import.meta.glob('../../views/**/*.vue'),
 )

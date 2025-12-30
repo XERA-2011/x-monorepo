@@ -1,16 +1,16 @@
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { useUserStore } from '@vben/stores';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { useUserStore } from '@x-monorepo/stores';
 import {
   beginOfDay,
   endOfDay,
   erpCalculatePercentage,
   formatDateTime,
   handleTree,
-} from '@vben/utils';
+} from '@x-monorepo/utils';
 
 import { getSimpleDeptList } from '#/api/system/dept';
 import { getSimpleUserList } from '#/api/system/user';

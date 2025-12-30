@@ -5,14 +5,14 @@ import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 import {
   BpmCandidateStrategyEnum,
   BpmNodeTypeEnum,
   BpmTaskStatusEnum,
-} from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
-import { formatDateTime, isEmpty } from '@vben/utils';
+} from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { formatDateTime, isEmpty } from '@x-monorepo/utils';
 
 import {
   ElAvatar,

@@ -5,9 +5,9 @@ import type { InfraJobApi } from '#/api/infra/job';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { InfraJobStatusEnum } from '@vben/constants';
-import { downloadFileFromBlobPart, isEmpty } from '@vben/utils';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { InfraJobStatusEnum } from '@x-monorepo/constants';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

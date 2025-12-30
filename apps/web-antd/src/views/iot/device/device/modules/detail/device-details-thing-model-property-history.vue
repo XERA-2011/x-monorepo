@@ -3,15 +3,15 @@
 <script setup lang="ts">
 import type { Dayjs } from 'dayjs';
 
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import type { IotDeviceApi } from '#/api/iot/device/device';
 
 import { computed, nextTick, reactive, ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
-import { beginOfDay, endOfDay, formatDate, formatDateTime } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
+import { beginOfDay, endOfDay, formatDate, formatDateTime } from '@x-monorepo/utils';
 
 import {
   Button,

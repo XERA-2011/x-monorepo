@@ -4,8 +4,8 @@ import type { SystemTenantPackageApi } from '#/api/system/tenant-package';
 
 import { computed, ref } from 'vue';
 
-import { Tree, useVbenModal } from '@vben/common-ui';
-import { handleTree } from '@vben/utils';
+import { Tree, useVbenModal } from '@x-monorepo/common-ui';
+import { handleTree } from '@x-monorepo/utils';
 
 import { ElCheckbox, ElMessage } from 'element-plus';
 

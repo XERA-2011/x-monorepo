@@ -1,20 +1,20 @@
 <script lang="ts" setup>
-import type { NotificationItem } from '@vben/layouts';
+import type { NotificationItem } from '@x-monorepo/layouts';
 
 import type { SystemTenantApi } from '#/api/system/tenant';
 
 import { computed, onMounted, ref, watch } from 'vue';
 
-import { useAccess } from '@vben/access';
-import { AuthenticationLoginExpiredModal, useVbenModal } from '@vben/common-ui';
-import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@vben/constants';
-import { isTenantEnable, useTabs, useWatermark } from '@vben/hooks';
+import { useAccess } from '@x-monorepo/access';
+import { AuthenticationLoginExpiredModal, useVbenModal } from '@x-monorepo/common-ui';
+import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@x-monorepo/constants';
+import { isTenantEnable, useTabs, useWatermark } from '@x-monorepo/hooks';
 import {
   AntdProfileOutlined,
   BookOpenText,
   CircleHelp,
   SvgGithubIcon,
-} from '@vben/icons';
+} from '@x-monorepo/icons';
 import {
   BasicLayout,
   Help,
@@ -22,10 +22,10 @@ import {
   Notification,
   TenantDropdown,
   UserDropdown,
-} from '@vben/layouts';
-import { preferences } from '@vben/preferences';
-import { useAccessStore, useUserStore } from '@vben/stores';
-import { formatDateTime, openWindow } from '@vben/utils';
+} from '@x-monorepo/layouts';
+import { preferences } from '@x-monorepo/preferences';
+import { useAccessStore, useUserStore } from '@x-monorepo/stores';
+import { formatDateTime, openWindow } from '@x-monorepo/utils';
 
 import { ElMessage } from 'element-plus';
 

@@ -8,10 +8,10 @@ import {
   watch,
 } from 'vue';
 
-import { ContentWrap } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
-import { formatDate } from '@vben/utils';
+import { ContentWrap } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { formatDate } from '@x-monorepo/utils';
 
 import {
   Button,

@@ -9,8 +9,8 @@ import {
   DICT_TYPE,
   PromotionDiscountTypeEnum,
   PromotionProductScopeEnum,
-} from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+} from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { getRangePickerDefaultProps } from '#/utils';
 

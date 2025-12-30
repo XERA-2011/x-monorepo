@@ -3,8 +3,8 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
 import { nextTick, ref, watch } from 'vue';
 
-import { ContentWrap } from '@vben/common-ui';
-import { formatDateTime } from '@vben/utils';
+import { ContentWrap } from '@x-monorepo/common-ui';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
 import { getDemo03CourseListByStudentId } from '#/api/infra/demo/demo03/inner';

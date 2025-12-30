@@ -8,9 +8,9 @@ import type {
 import { onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { useTabs } from '@vben/hooks';
-import { convertToInteger, formatToFraction } from '@vben/utils';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { useTabs } from '@x-monorepo/hooks';
+import { convertToInteger, formatToFraction } from '@x-monorepo/utils';
 
 import { Button, Card, message } from 'ant-design-vue';
 

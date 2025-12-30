@@ -1,6 +1,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { DICT_TYPE } from '@vben/constants';
+import { DICT_TYPE } from '@x-monorepo/constants';
 
 /** 审批记录列表字段 */
 export function useGridColumns(): VxeTableGridOptions['columns'] {

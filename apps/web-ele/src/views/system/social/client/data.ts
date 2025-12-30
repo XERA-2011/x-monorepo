@@ -5,8 +5,8 @@ import {
   CommonStatusEnum,
   DICT_TYPE,
   SystemUserSocialTypeEnum,
-} from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+} from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { z } from '#/adapter/form';
 

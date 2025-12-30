@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { inject, reactive, ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { formatPast } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { formatPast } from '@x-monorepo/utils';
 
 import { Image, Slider } from 'ant-design-vue';
 

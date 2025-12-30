@@ -5,7 +5,7 @@ import type { AiModelChatRoleApi } from '#/api/ai/model/chatRole';
 
 import { ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Avatar, Button, Card, Dropdown, Menu } from 'ant-design-vue';
 

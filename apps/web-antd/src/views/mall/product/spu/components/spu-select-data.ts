@@ -7,7 +7,7 @@ import type { MallCategoryApi } from '#/api/mall/product/category';
 
 import { computed } from 'vue';
 
-import { fenToYuan } from '@vben/utils';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { getRangePickerDefaultProps } from '#/utils';
 

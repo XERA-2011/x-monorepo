@@ -5,8 +5,8 @@ import type { IotProductApi } from '#/api/iot/product/product';
 
 import { reactive, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Form, Input, message } from 'ant-design-vue';
 

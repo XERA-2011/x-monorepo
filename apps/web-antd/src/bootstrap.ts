@@ -1,12 +1,12 @@
 import { createApp, watchEffect } from 'vue';
 import VueDOMPurifyHTML from 'vue-dompurify-html';
 
-import { registerAccessDirective } from '@vben/access';
-import { registerLoadingDirective } from '@vben/common-ui/es/loading';
-import { preferences } from '@vben/preferences';
-import { initStores } from '@vben/stores';
-import '@vben/styles';
-import '@vben/styles/antd';
+import { registerAccessDirective } from '@x-monorepo/access';
+import { registerLoadingDirective } from '@x-monorepo/common-ui/es/loading';
+import { preferences } from '@x-monorepo/preferences';
+import { initStores } from '@x-monorepo/stores';
+import '@x-monorepo/styles';
+import '@x-monorepo/styles/antd';
 
 import { useTitle } from '@vueuse/core';
 
@@ -53,7 +53,7 @@ async function bootstrap(namespace: string) {
   registerAccessDirective(app);
 
   // 初始化 tippy
-  const { initTippy } = await import('@vben/common-ui/es/tippy');
+  const { initTippy } = await import('@x-monorepo/common-ui/es/tippy');
   initTippy(app);
 
   // 配置路由及路由守卫
@@ -63,7 +63,7 @@ async function bootstrap(namespace: string) {
   setupFormCreate(app);
 
   // 配置Motion插件
-  const { MotionPlugin } = await import('@vben/plugins/motion');
+  const { MotionPlugin } = await import('@x-monorepo/plugins/motion');
   app.use(MotionPlugin);
 
   // 动态更新标题

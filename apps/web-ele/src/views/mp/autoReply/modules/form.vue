@@ -3,8 +3,8 @@ import type { Reply } from '#/views/mp/components/wx-reply/types';
 
 import { computed, nextTick, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { AutoReplyMsgType, ReplyType } from '@vben/constants';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { AutoReplyMsgType, ReplyType } from '@x-monorepo/constants';
 
 import { ElMessage } from 'element-plus';
 

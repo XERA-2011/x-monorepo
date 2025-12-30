@@ -4,30 +4,25 @@
   "configurations": [
     {
       "type": "chrome",
-      "name": "vben admin antd dev",
+      "name": "x-monorepo admin antd dev",
       "request": "launch",
       "url": "http://localhost:5666",
-      "env": { "NODE_ENV": "development" },
+      "env": {
+        "NODE_ENV": "development"
+      },
       "sourceMaps": true,
       "webRoot": "${workspaceFolder}/apps/web-antd"
     },
     {
       "type": "chrome",
-      "name": "vben admin ele dev",
+      "name": "x-monorepo admin ele dev",
       "request": "launch",
       "url": "http://localhost:5777",
-      "env": { "NODE_ENV": "development" },
+      "env": {
+        "NODE_ENV": "development"
+      },
       "sourceMaps": true,
       "webRoot": "${workspaceFolder}/apps/web-ele"
     },
-    {
-      "type": "chrome",
-      "name": "vben admin naive dev",
-      "request": "launch",
-      "url": "http://localhost:5888",
-      "env": { "NODE_ENV": "development" },
-      "sourceMaps": true,
-      "webRoot": "${workspaceFolder}/apps/web-naive"
-    }
   ]
 }

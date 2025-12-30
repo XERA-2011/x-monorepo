@@ -3,7 +3,7 @@ import type { Ref } from 'vue';
 
 import { computed, inject, nextTick, ref } from 'vue';
 
-import { BpmModelType } from '@vben/constants';
+import { BpmModelType } from '@x-monorepo/constants';
 
 import BpmModelEditor from './bpm-model-editor.vue';
 import SimpleModelDesign from './simple-model-design.vue';

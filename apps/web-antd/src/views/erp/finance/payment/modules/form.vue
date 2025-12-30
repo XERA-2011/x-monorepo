@@ -3,8 +3,8 @@ import type { ErpFinancePaymentApi } from '#/api/erp/finance/payment';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { $t } from '@x-monorepo/locales';
 
 import { message } from 'ant-design-vue';
 

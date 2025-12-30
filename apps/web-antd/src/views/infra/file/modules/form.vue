@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { FileType } from 'ant-design-vue/es/upload/interface';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { message, Upload } from 'ant-design-vue';
 

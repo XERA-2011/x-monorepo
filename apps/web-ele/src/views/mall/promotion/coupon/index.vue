@@ -4,9 +4,9 @@ import type { MallCouponApi } from '#/api/mall/promotion/coupon/coupon';
 
 import { ref } from 'vue';
 
-import { DocAlert, Page } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { ElLoading, ElMessage, ElTabPane, ElTabs } from 'element-plus';
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@x-monorepo/types';
 
 import { provide, ref } from 'vue';
 

@@ -3,7 +3,7 @@ import type { MallOrderApi } from '#/api/mall/trade/order';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElMessage } from 'element-plus';
 

@@ -3,8 +3,8 @@ import type { AiWriteApi } from '#/api/ai/write';
 
 import { nextTick, ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
-import { WriteExample } from '@vben/constants';
+import { Page } from '@x-monorepo/common-ui';
+import { WriteExample } from '@x-monorepo/constants';
 
 import { message } from 'ant-design-vue';
 

@@ -4,8 +4,8 @@ import type { SystemDictDataApi } from '#/api/system/dict/data';
 
 import { ref, watch } from 'vue';
 
-import { confirm, useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart, isEmpty } from '@vben/utils';
+import { confirm, useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
 
 import { message, Tag } from 'ant-design-vue';
 

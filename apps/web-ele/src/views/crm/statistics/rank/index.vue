@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { CrmStatisticsCustomerApi } from '#/api/crm/statistics/customer';
 
 import { onMounted, ref } from 'vue';
 
-import { ContentWrap, Page } from '@vben/common-ui';
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
+import { ContentWrap, Page } from '@x-monorepo/common-ui';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
 
 import { ElTabPane, ElTabs } from 'element-plus';
 

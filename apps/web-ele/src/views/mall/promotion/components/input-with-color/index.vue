@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { PREDEFINE_COLORS } from '@vben/constants';
+import { PREDEFINE_COLORS } from '@x-monorepo/constants';
 
 import { useVModels } from '@vueuse/core';
 import { ElColorPicker, ElInput } from 'element-plus';

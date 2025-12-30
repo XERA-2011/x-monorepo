@@ -3,7 +3,7 @@ import type { Menu } from './types';
 
 import { computed } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import draggable from 'vuedraggable';
 

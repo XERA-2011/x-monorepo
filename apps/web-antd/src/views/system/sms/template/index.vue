@@ -4,8 +4,8 @@ import type { SystemSmsTemplateApi } from '#/api/system/sms/template';
 
 import { ref } from 'vue';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart, isEmpty } from '@vben/utils';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

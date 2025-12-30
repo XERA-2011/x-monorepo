@@ -5,10 +5,10 @@ import type { SystemSocialUserApi } from '#/api/system/social/user';
 import { computed, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { confirm } from '@vben/common-ui';
-import { DICT_TYPE, SystemUserSocialTypeEnum } from '@vben/constants';
-import { getDictLabel } from '@vben/hooks';
-import { getUrlValue } from '@vben/utils';
+import { confirm } from '@x-monorepo/common-ui';
+import { DICT_TYPE, SystemUserSocialTypeEnum } from '@x-monorepo/constants';
+import { getDictLabel } from '@x-monorepo/hooks';
+import { getUrlValue } from '@x-monorepo/utils';
 
 import { Button, Card, Image, message } from 'ant-design-vue';
 

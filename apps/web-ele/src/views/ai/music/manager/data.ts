@@ -2,8 +2,8 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemUserApi } from '#/api/system/user';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { getSimpleUserList } from '#/api/system/user';
 import { getRangePickerDefaultProps } from '#/utils';

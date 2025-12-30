@@ -1,6 +1,6 @@
 import { onMounted, ref } from 'vue';
 
-import { isEmpty } from '@vben/utils';
+import { isEmpty } from '@x-monorepo/utils';
 
 const emojiList = [
   { name: '[笑掉牙]', file: 'xiaodiaoya.png' },

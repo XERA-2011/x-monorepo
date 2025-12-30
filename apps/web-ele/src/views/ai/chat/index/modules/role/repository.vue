@@ -5,8 +5,8 @@ import type { AiModelChatRoleApi } from '#/api/ai/model/chatRole';
 import { onMounted, reactive, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { useVbenDrawer, useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { useVbenDrawer, useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import {
   ElButton,

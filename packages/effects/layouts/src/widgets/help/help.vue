@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { $t } from '@vben/locales';
-import { openWindow } from '@vben/utils';
+import { $t } from '@x-monorepo/locales';
+import { openWindow } from '@x-monorepo/utils';
 
-import { useVbenModal } from '@vben-core/popup-ui';
-import { Badge, VbenButton, VbenButtonGroup } from '@vben-core/shadcn-ui';
+import { useVbenModal } from '@x-monorepo-core/popup-ui';
+import { Badge, VbenButton, VbenButtonGroup } from '@x-monorepo-core/shadcn-ui';
 
 import { useMagicKeys, whenever } from '@vueuse/core';
 

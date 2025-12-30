@@ -4,8 +4,8 @@ import type { BpmFormApi } from '#/api/bpm/form';
 
 import { onActivated } from 'vue';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { $t } from '@x-monorepo/locales';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

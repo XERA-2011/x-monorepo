@@ -3,7 +3,7 @@ import type { UploadRequestOptions } from 'element-plus';
 
 import { computed, ref } from 'vue';
 
-import { $t } from '@vben/locales';
+import { $t } from '@x-monorepo/locales';
 
 import { ElButton, ElUpload } from 'element-plus';
 

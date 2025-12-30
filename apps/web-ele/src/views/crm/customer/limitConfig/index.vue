@@ -4,7 +4,7 @@ import type { CrmCustomerLimitConfigApi } from '#/api/crm/customer/limitConfig';
 
 import { ref } from 'vue';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage, ElTabPane, ElTabs } from 'element-plus';
 

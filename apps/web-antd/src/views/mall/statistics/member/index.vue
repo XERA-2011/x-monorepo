@@ -3,8 +3,8 @@ import type { MallMemberStatisticsApi } from '#/api/mall/statistics/member';
 
 import { onMounted, ref } from 'vue';
 
-import { DocAlert, Page, SummaryCard } from '@vben/common-ui';
-import { fenToYuan } from '@vben/utils';
+import { DocAlert, Page, SummaryCard } from '@x-monorepo/common-ui';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { Col, Row } from 'ant-design-vue';
 

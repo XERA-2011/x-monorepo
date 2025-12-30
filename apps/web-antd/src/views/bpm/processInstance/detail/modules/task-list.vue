@@ -6,9 +6,9 @@ import type { BpmTaskApi } from '#/api/bpm/task';
 
 import { nextTick, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button } from 'ant-design-vue';
 

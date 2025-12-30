@@ -4,8 +4,8 @@ import type { AxiosProgressEvent, InfraFileApi } from '#/api/infra/file';
 
 import { computed, unref } from 'vue';
 
-import { useAppConfig } from '@vben/hooks';
-import { $t } from '@vben/locales';
+import { useAppConfig } from '@x-monorepo/hooks';
+import { $t } from '@x-monorepo/locales';
 
 import { createFile, getFilePresignedUrl, uploadFile } from '#/api/infra/file';
 import { baseRequestClient } from '#/api/request';

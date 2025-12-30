@@ -2,7 +2,7 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallSpuApi } from '#/api/mall/product/spu';
 
-import { fenToYuan, handleTree, treeToString } from '@vben/utils';
+import { fenToYuan, handleTree, treeToString } from '@x-monorepo/utils';
 
 import { getCategoryList } from '#/api/mall/product/category';
 import { getRangePickerDefaultProps } from '#/utils';

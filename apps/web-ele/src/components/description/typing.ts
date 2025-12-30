@@ -3,7 +3,7 @@ import type { JSX } from 'vue/jsx-runtime';
 
 import type { CSSProperties, VNode } from 'vue';
 
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@x-monorepo/types';
 
 export interface DescriptionItemSchema {
   labelMinWidth?: number;

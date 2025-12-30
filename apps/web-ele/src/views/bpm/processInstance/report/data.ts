@@ -5,8 +5,8 @@ import type {
 } from '#/adapter/vxe-table';
 import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { getSimpleUserList } from '#/api/system/user';
 import { getRangePickerDefaultProps } from '#/utils';

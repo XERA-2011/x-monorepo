@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { MpMsgType } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { MpMsgType } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import {
   WxLocation,

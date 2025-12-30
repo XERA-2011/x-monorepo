@@ -7,7 +7,7 @@ import type { DescriptionItemSchema, DescriptionProps } from './typing';
 
 import { computed, defineComponent, ref, unref, useAttrs } from 'vue';
 
-import { get, getNestedValue, isFunction } from '@vben/utils';
+import { get, getNestedValue, isFunction } from '@x-monorepo/utils';
 
 import { Card, Descriptions } from 'ant-design-vue';
 

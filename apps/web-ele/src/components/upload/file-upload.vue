@@ -11,8 +11,8 @@ import type {
 
 import { ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { isString } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { isString } from '@x-monorepo/utils';
 
 import { ElButton, ElLink, ElMessage, ElUpload } from 'element-plus';
 

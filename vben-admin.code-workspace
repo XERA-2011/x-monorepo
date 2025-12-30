@@ -1,167 +1,155 @@
 {
   "folders": [
     {
-      "name": "@vben/web-antd",
+      "name": "@x-monorepo/web-antd",
       "path": "apps/web-antd",
     },
     {
-      "name": "@vben/web-ele",
+      "name": "@x-monorepo/web-ele",
       "path": "apps/web-ele",
     },
     {
-      "name": "@vben/web-naive",
-      "path": "apps/web-naive",
-    },
-    {
-      "name": "@vben/web-tdesign",
-      "path": "apps/web-tdesign",
-    },
-    {
-      "name": "@vben/docs",
-      "path": "docs",
-    },
-    {
-      "name": "@vben/commitlint-config",
+      "name": "@x-monorepo/commitlint-config",
       "path": "internal/lint-configs/commitlint-config",
     },
     {
-      "name": "@vben/eslint-config",
+      "name": "@x-monorepo/eslint-config",
       "path": "internal/lint-configs/eslint-config",
     },
     {
-      "name": "@vben/prettier-config",
+      "name": "@x-monorepo/prettier-config",
       "path": "internal/lint-configs/prettier-config",
     },
     {
-      "name": "@vben/stylelint-config",
+      "name": "@x-monorepo/stylelint-config",
       "path": "internal/lint-configs/stylelint-config",
     },
     {
-      "name": "@vben/node-utils",
+      "name": "@x-monorepo/node-utils",
       "path": "internal/node-utils",
     },
     {
-      "name": "@vben/tailwind-config",
+      "name": "@x-monorepo/tailwind-config",
       "path": "internal/tailwind-config",
     },
     {
-      "name": "@vben/tsconfig",
+      "name": "@x-monorepo/tsconfig",
       "path": "internal/tsconfig",
     },
     {
-      "name": "@vben/vite-config",
+      "name": "@x-monorepo/vite-config",
       "path": "internal/vite-config",
     },
     {
-      "name": "@vben-core/design",
+      "name": "@x-monorepo-core/design",
       "path": "packages/@core/base/design",
     },
     {
-      "name": "@vben-core/icons",
+      "name": "@x-monorepo-core/icons",
       "path": "packages/@core/base/icons",
     },
     {
-      "name": "@vben-core/shared",
+      "name": "@x-monorepo-core/shared",
       "path": "packages/@core/base/shared",
     },
     {
-      "name": "@vben-core/typings",
+      "name": "@x-monorepo-core/typings",
       "path": "packages/@core/base/typings",
     },
     {
-      "name": "@vben-core/composables",
+      "name": "@x-monorepo-core/composables",
       "path": "packages/@core/composables",
     },
     {
-      "name": "@vben-core/preferences",
+      "name": "@x-monorepo-core/preferences",
       "path": "packages/@core/preferences",
     },
     {
-      "name": "@vben-core/form-ui",
+      "name": "@x-monorepo-core/form-ui",
       "path": "packages/@core/ui-kit/form-ui",
     },
     {
-      "name": "@vben-core/layout-ui",
+      "name": "@x-monorepo-core/layout-ui",
       "path": "packages/@core/ui-kit/layout-ui",
     },
     {
-      "name": "@vben-core/menu-ui",
+      "name": "@x-monorepo-core/menu-ui",
       "path": "packages/@core/ui-kit/menu-ui",
     },
     {
-      "name": "@vben-core/popup-ui",
+      "name": "@x-monorepo-core/popup-ui",
       "path": "packages/@core/ui-kit/popup-ui",
     },
     {
-      "name": "@vben-core/shadcn-ui",
+      "name": "@x-monorepo-core/shadcn-ui",
       "path": "packages/@core/ui-kit/shadcn-ui",
     },
     {
-      "name": "@vben-core/tabs-ui",
+      "name": "@x-monorepo-core/tabs-ui",
       "path": "packages/@core/ui-kit/tabs-ui",
     },
     {
-      "name": "@vben/constants",
+      "name": "@x-monorepo/constants",
       "path": "packages/constants",
     },
     {
-      "name": "@vben/access",
+      "name": "@x-monorepo/access",
       "path": "packages/effects/access",
     },
     {
-      "name": "@vben/common-ui",
+      "name": "@x-monorepo/common-ui",
       "path": "packages/effects/common-ui",
     },
     {
-      "name": "@vben/hooks",
+      "name": "@x-monorepo/hooks",
       "path": "packages/effects/hooks",
     },
     {
-      "name": "@vben/layouts",
+      "name": "@x-monorepo/layouts",
       "path": "packages/effects/layouts",
     },
     {
-      "name": "@vben/plugins",
+      "name": "@x-monorepo/plugins",
       "path": "packages/effects/plugins",
     },
     {
-      "name": "@vben/request",
+      "name": "@x-monorepo/request",
       "path": "packages/effects/request",
     },
     {
-      "name": "@vben/icons",
+      "name": "@x-monorepo/icons",
       "path": "packages/icons",
     },
     {
-      "name": "@vben/locales",
+      "name": "@x-monorepo/locales",
       "path": "packages/locales",
     },
     {
-      "name": "@vben/preferences",
+      "name": "@x-monorepo/preferences",
       "path": "packages/preferences",
     },
     {
-      "name": "@vben/stores",
+      "name": "@x-monorepo/stores",
       "path": "packages/stores",
     },
     {
-      "name": "@vben/styles",
+      "name": "@x-monorepo/styles",
       "path": "packages/styles",
     },
     {
-      "name": "@vben/types",
+      "name": "@x-monorepo/types",
       "path": "packages/types",
     },
     {
-      "name": "@vben/utils",
+      "name": "@x-monorepo/utils",
       "path": "packages/utils",
     },
     {
-      "name": "@vben/turbo-run",
+      "name": "@x-monorepo/turbo-run",
       "path": "scripts/turbo-run",
     },
     {
-      "name": "@vben/vsh",
+      "name": "@x-monorepo/vsh",
       "path": "scripts/vsh",
     },
   ],

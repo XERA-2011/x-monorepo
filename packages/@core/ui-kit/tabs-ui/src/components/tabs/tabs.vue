@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import type { TabDefinition } from '@vben-core/typings';
+import type { TabDefinition } from '@x-monorepo-core/typings';
 
 import type { TabConfig, TabsProps } from '../../types';
 
 import { computed } from 'vue';
 
-import { Pin, X } from '@vben-core/icons';
-import { VbenContextMenu, VbenIcon } from '@vben-core/shadcn-ui';
+import { Pin, X } from '@x-monorepo-core/icons';
+import { VbenContextMenu, VbenIcon } from '@x-monorepo-core/shadcn-ui';
 
 interface Props extends TabsProps {}
 

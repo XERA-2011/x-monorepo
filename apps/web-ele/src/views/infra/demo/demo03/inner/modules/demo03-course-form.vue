@@ -3,7 +3,7 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
 import { nextTick, watch } from 'vue';
 
-import { Plus } from '@vben/icons';
+import { Plus } from '@x-monorepo/icons';
 
 import { ElButton, ElInput } from 'element-plus';
 

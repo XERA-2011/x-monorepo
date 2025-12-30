@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { BpmProcessExpressionApi } from '#/api/bpm/processExpression';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

@@ -5,8 +5,8 @@ import type { BpmModelApi } from '#/api/bpm/model';
 
 import { inject, onBeforeUnmount, provide, ref, shallowRef, watch } from 'vue';
 
-import { ContentWrap } from '@vben/common-ui';
-import { BpmModelFormType } from '@vben/constants';
+import { ContentWrap } from '@x-monorepo/common-ui';
+import { BpmModelFormType } from '@x-monorepo/constants';
 
 import { message } from 'ant-design-vue';
 

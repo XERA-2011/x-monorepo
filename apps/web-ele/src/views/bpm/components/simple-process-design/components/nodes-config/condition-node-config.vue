@@ -3,9 +3,9 @@ import type { SimpleFlowNode } from '../../consts';
 
 import { nextTick, ref, watch } from 'vue';
 
-import { useVbenDrawer } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { cloneDeep } from '@vben/utils';
+import { useVbenDrawer } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { cloneDeep } from '@x-monorepo/utils';
 
 import { ElInput } from 'element-plus';
 

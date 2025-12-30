@@ -5,7 +5,7 @@ import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 import { h, onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { Page, prompt } from '@vben/common-ui';
+import { Page, prompt } from '@x-monorepo/common-ui';
 
 import { message, Textarea } from 'ant-design-vue';
 

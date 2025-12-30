@@ -18,7 +18,7 @@ import {
   BpmNodeTypeEnum,
   BpmTaskStatusEnum,
   ProcessVariableEnum,
-} from '@vben/constants';
+} from '@x-monorepo/constants';
 
 import {
   ApproveMethodType,

@@ -4,8 +4,8 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
 import { nextTick, ref, watch } from 'vue';
 
-import { confirm, useVbenModal } from '@vben/common-ui';
-import { isEmpty } from '@vben/utils';
+import { confirm, useVbenModal } from '@x-monorepo/common-ui';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

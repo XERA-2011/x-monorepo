@@ -3,7 +3,7 @@ import type { PayOrderApi } from '#/api/pay/order';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { getOrderDetail } from '#/api/pay/order';
 import { useDescription } from '#/components/description';

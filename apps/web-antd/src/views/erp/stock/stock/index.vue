@@ -2,8 +2,8 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { ErpStockApi } from '#/api/erp/stock/stock';
 
-import { DocAlert, Page } from '@vben/common-ui';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
 import { exportStock, getStockPage } from '#/api/erp/stock/stock';

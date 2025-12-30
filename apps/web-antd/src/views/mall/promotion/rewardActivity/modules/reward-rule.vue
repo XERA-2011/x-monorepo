@@ -3,7 +3,7 @@ import type { MallRewardActivityApi } from '#/api/mall/promotion/reward/rewardAc
 
 import { computed } from 'vue';
 
-import { PromotionConditionTypeEnum } from '@vben/constants';
+import { PromotionConditionTypeEnum } from '@x-monorepo/constants';
 
 import { useVModel } from '@vueuse/core';
 import {

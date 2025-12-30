@@ -4,8 +4,8 @@ import type { IoTOtaFirmwareApi } from '#/api/iot/ota/firmware';
 
 import { useRouter } from 'vue-router';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { message } from 'ant-design-vue';
 

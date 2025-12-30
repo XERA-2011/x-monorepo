@@ -2,7 +2,7 @@
 // TODO @haohao：放到 detail/modules 里。然后名字就是 info.vue
 import type { IotProductApi } from '#/api/iot/product/product';
 
-import { DICT_TYPE } from '@vben/constants';
+import { DICT_TYPE } from '@x-monorepo/constants';
 
 import { Card, Descriptions } from 'ant-design-vue';
 

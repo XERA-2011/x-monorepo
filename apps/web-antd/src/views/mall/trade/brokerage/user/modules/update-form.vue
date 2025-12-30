@@ -3,10 +3,10 @@ import type { MallBrokerageUserApi } from '#/api/mall/trade/brokerage/user';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { $t } from '@vben/locales';
-import { formatDate, isEmpty } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { $t } from '@x-monorepo/locales';
+import { formatDate, isEmpty } from '@x-monorepo/utils';
 
 import {
   Avatar,

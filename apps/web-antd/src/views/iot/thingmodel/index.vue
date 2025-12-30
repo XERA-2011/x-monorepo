@@ -3,7 +3,7 @@ import type { IotProductApi } from '#/api/iot/product/product';
 
 import { onMounted, provide, ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

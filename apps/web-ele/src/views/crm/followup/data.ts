@@ -4,9 +4,9 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { DescriptionItemSchema } from '#/components/description';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { formatDateTime } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { getBusinessPageByCustomer } from '#/api/crm/business';
 import { getContactPageByCustomer } from '#/api/crm/contact';

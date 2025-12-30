@@ -4,7 +4,7 @@ import type { MallBargainHelpApi } from '#/api/mall/promotion/bargain/bargainHel
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getBargainHelpPage } from '#/api/mall/promotion/bargain/bargainHelp';

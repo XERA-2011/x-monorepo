@@ -2,8 +2,8 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { PayRefundApi } from '#/api/pay/refund';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { Tag } from 'ant-design-vue';
 

@@ -3,7 +3,7 @@ import type { CodeEditorProps } from './types';
 
 import { computed } from 'vue';
 
-import { isString } from '@vben/utils';
+import { isString } from '@x-monorepo/utils';
 
 import CodeMirrorEditor from './code-mirror.vue';
 import { MODE } from './types';

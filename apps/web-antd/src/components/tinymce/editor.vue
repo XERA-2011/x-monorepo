@@ -15,8 +15,8 @@ import {
   watch,
 } from 'vue';
 
-import { preferences, usePreferences } from '@vben/preferences';
-import { buildShortUUID, isNumber } from '@vben/utils';
+import { preferences, usePreferences } from '@x-monorepo/preferences';
+import { buildShortUUID, isNumber } from '@x-monorepo/utils';
 
 import Editor from '@tinymce/tinymce-vue';
 
@@ -322,7 +322,7 @@ function handleError(name: string) {
 </template>
 <style lang="scss">
 .tox.tox-silver-sink.tox-tinymce-aux {
-  z-index: 2025; /* 由于 vben modal/drawer 的 zIndex 为 2000，需要调整 z-index（默认 1300）超过它，避免遮挡 */
+  z-index: 2025; /* 由于 modal/drawer 的 zIndex 为 2000，需要调整 z-index（默认 1300）超过它，避免遮挡 */
 }
 </style>
 

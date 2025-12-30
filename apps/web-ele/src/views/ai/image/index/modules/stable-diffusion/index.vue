@@ -5,14 +5,14 @@ import type { AiModelModelApi } from '#/api/ai/model/model';
 
 import { ref } from 'vue';
 
-import { alert, confirm } from '@vben/common-ui';
+import { alert, confirm } from '@x-monorepo/common-ui';
 import {
   AiPlatformEnum,
   ImageHotEnglishWords,
   StableDiffusionClipGuidancePresets,
   StableDiffusionSamplers,
   StableDiffusionStylePresets,
-} from '@vben/constants';
+} from '@x-monorepo/constants';
 
 import {
   ElButton,

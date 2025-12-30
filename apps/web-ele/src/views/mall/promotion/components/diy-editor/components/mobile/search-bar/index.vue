@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { SearchProperty } from './config';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 /** 搜索框 */
 defineOptions({ name: 'SearchBar' });

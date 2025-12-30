@@ -3,7 +3,7 @@ import type { Point, Rect } from './util';
 
 import { ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { createRect, isContains, isOverlap } from './util';
 

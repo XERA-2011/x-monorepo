@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { base64ToFile } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { base64ToFile } from '@x-monorepo/utils';
 
 import Vue3Signature from 'vue3-signature';
 

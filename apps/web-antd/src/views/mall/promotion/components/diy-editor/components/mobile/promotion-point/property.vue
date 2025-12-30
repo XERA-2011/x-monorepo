@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { PromotionPointProperty } from './config';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { useVModel } from '@vueuse/core';
 import {

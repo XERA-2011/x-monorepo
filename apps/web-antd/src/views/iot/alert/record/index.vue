@@ -4,8 +4,8 @@ import type { AlertRecord } from '#/api/iot/alert/record';
 
 import { h, onMounted, ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { Page } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, message, Modal, Popover, Tag } from 'ant-design-vue';
 

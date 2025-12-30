@@ -1,6 +1,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { DICT_TYPE } from '@vben/constants';
+import { DICT_TYPE } from '@x-monorepo/constants';
 
 /** 产品详情列表的列定义 */
 export function useDetailListColumns(

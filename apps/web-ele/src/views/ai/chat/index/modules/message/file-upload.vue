@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, onUnmounted, ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { formatFileSize, getFileIcon } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { formatFileSize, getFileIcon } from '@x-monorepo/utils';
 
 import { ElMessage } from 'element-plus';
 

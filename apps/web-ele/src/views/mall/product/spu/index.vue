@@ -5,14 +5,14 @@ import type { MallSpuApi } from '#/api/mall/product/spu';
 import { onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { confirm, DocAlert, Page } from '@vben/common-ui';
-import { ProductSpuStatusEnum } from '@vben/constants';
+import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
+import { ProductSpuStatusEnum } from '@x-monorepo/constants';
 import {
   downloadFileFromBlobPart,
   fenToYuan,
   handleTree,
   treeToString,
-} from '@vben/utils';
+} from '@x-monorepo/utils';
 
 import { ElDescriptions, ElLoading, ElMessage, ElTabs } from 'element-plus';
 

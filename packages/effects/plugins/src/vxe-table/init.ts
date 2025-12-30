@@ -2,9 +2,9 @@ import type { SetupVxeTable } from './types';
 
 import { defineComponent, watch } from 'vue';
 
-import { usePreferences } from '@vben/preferences';
+import { usePreferences } from '@x-monorepo/preferences';
 
-import { useVbenForm } from '@vben-core/form-ui';
+import { useVbenForm } from '@x-monorepo-core/form-ui';
 
 import {
   VxeButton,

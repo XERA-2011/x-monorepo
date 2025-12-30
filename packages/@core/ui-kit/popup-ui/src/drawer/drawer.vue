@@ -15,8 +15,8 @@ import {
   useIsMobile,
   usePriorityValues,
   useSimpleLocale,
-} from '@vben-core/composables';
-import { X } from '@vben-core/icons';
+} from '@x-monorepo-core/composables';
+import { X } from '@x-monorepo-core/icons';
 import {
   Separator,
   Sheet,
@@ -31,10 +31,10 @@ import {
   VbenIconButton,
   VbenLoading,
   VisuallyHidden,
-} from '@vben-core/shadcn-ui';
-import { ELEMENT_ID_MAIN_CONTENT } from '@vben-core/shared/constants';
-import { globalShareState } from '@vben-core/shared/global-state';
-import { cn } from '@vben-core/shared/utils';
+} from '@x-monorepo-core/shadcn-ui';
+import { ELEMENT_ID_MAIN_CONTENT } from '@x-monorepo-core/shared/constants';
+import { globalShareState } from '@x-monorepo-core/shared/global-state';
+import { cn } from '@x-monorepo-core/shared/utils';
 
 interface Props extends DrawerProps {
   drawerApi?: ExtendedDrawerApi;

@@ -4,10 +4,10 @@ import type { DescriptionItemSchema } from '#/components/description';
 
 import { h } from 'vue';
 
-import { JsonViewer } from '@vben/common-ui';
-import { DICT_TYPE, InfraApiErrorLogProcessStatusEnum } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { formatDateTime } from '@vben/utils';
+import { JsonViewer } from '@x-monorepo/common-ui';
+import { DICT_TYPE, InfraApiErrorLogProcessStatusEnum } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { DictTag } from '#/components/dict-tag';
 import { getRangePickerDefaultProps } from '#/utils';

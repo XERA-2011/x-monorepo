@@ -5,12 +5,12 @@ import type { BpmModelApi, ModelCategoryInfo } from '#/api/bpm/model';
 import { computed, ref, watchEffect } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { useAccess } from '@vben/access';
-import { confirm, EllipsisText, useVbenModal } from '@vben/common-ui';
-import { BpmModelFormType } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
-import { useUserStore } from '@vben/stores';
-import { cloneDeep, formatDateTime, isEqual } from '@vben/utils';
+import { useAccess } from '@x-monorepo/access';
+import { confirm, EllipsisText, useVbenModal } from '@x-monorepo/common-ui';
+import { BpmModelFormType } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { useUserStore } from '@x-monorepo/stores';
+import { cloneDeep, formatDateTime, isEqual } from '@x-monorepo/utils';
 
 import { useDebounceFn } from '@vueuse/core';
 import { useSortable } from '@vueuse/integrations/useSortable';

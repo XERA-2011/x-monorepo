@@ -1,20 +1,20 @@
 <!-- dall3 -->
 <script setup lang="ts">
-import type { ImageModel, ImageSize } from '@vben/constants';
+import type { ImageModel, ImageSize } from '@x-monorepo/constants';
 
 import type { AiImageApi } from '#/api/ai/image';
 import type { AiModelModelApi } from '#/api/ai/model/model';
 
 import { ref } from 'vue';
 
-import { confirm } from '@vben/common-ui';
+import { confirm } from '@x-monorepo/common-ui';
 import {
   AiPlatformEnum,
   Dall3Models,
   Dall3SizeList,
   Dall3StyleList,
   ImageHotWords,
-} from '@vben/constants';
+} from '@x-monorepo/constants';
 
 import { ElButton, ElImage, ElMessage, ElSpace } from 'element-plus';
 

@@ -5,8 +5,8 @@ import {
   CommonStatusEnum,
   DICT_TYPE,
   SystemDataScopeEnum,
-} from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+} from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { z } from '#/adapter/form';
 import { getRangePickerDefaultProps } from '#/utils';

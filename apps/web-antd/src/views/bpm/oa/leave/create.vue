@@ -4,10 +4,10 @@ import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 
 import { computed, onMounted, ref, watch } from 'vue';
 
-import { confirm, Page, useVbenForm } from '@vben/common-ui';
-import { BpmCandidateStrategyEnum, BpmNodeIdEnum } from '@vben/constants';
-import { useTabs } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
+import { confirm, Page, useVbenForm } from '@x-monorepo/common-ui';
+import { BpmCandidateStrategyEnum, BpmNodeIdEnum } from '@x-monorepo/constants';
+import { useTabs } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Card, message, Space } from 'ant-design-vue';
 import dayjs from 'dayjs';

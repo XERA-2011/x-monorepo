@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallCouponTemplateApi } from '#/api/mall/promotion/coupon/couponTemplate';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getCouponTemplatePage } from '#/api/mall/promotion/coupon/couponTemplate';

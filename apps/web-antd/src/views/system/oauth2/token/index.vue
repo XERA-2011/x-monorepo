@@ -4,8 +4,8 @@ import type { SystemOAuth2TokenApi } from '#/api/system/oauth2/token';
 
 import { ref } from 'vue';
 
-import { confirm, DocAlert, Page } from '@vben/common-ui';
-import { isEmpty } from '@vben/utils';
+import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

@@ -2,7 +2,7 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeGridPropTypes } from '#/adapter/vxe-table';
 import type { MpAccountApi } from '#/api/mp/account';
 
-import { formatDateTime } from '@vben/utils';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { getSimpleAccountList } from '#/api/mp/account';
 

@@ -5,8 +5,8 @@ import type { CropperAvatarProps } from './typing';
 
 import { computed, ref, unref, watch, watchEffect } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { $t } from '@x-monorepo/locales';
 
 import { ElButton, ElMessage } from 'element-plus';
 

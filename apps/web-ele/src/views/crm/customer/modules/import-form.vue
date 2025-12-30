@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { ElButton, ElMessage, ElUpload } from 'element-plus';
 

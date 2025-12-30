@@ -4,14 +4,14 @@ import type { PayOrderApi } from '#/api/pay/order';
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { Page, useVbenModal } from '@vben/common-ui';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
 import {
   PayChannelEnum,
   PayDisplayModeEnum,
   PayOrderStatusEnum,
-} from '@vben/constants';
-import { useTabs } from '@vben/hooks';
-import { fenToYuan, formatDate } from '@vben/utils';
+} from '@x-monorepo/constants';
+import { useTabs } from '@x-monorepo/hooks';
+import { fenToYuan, formatDate } from '@x-monorepo/utils';
 
 import {
   Button,

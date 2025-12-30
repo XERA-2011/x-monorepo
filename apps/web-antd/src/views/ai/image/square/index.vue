@@ -3,7 +3,7 @@ import type { AiImageApi } from '#/api/ai/image';
 
 import { onMounted, reactive, ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@x-monorepo/common-ui';
 
 import { useDebounceFn } from '@vueuse/core';
 import { Image, Input, Pagination } from 'ant-design-vue';

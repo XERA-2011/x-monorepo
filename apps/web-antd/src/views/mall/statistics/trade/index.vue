@@ -4,8 +4,8 @@ import type { MallTradeStatisticsApi } from '#/api/mall/statistics/trade';
 
 import { onMounted, ref } from 'vue';
 
-import { DocAlert, Page, StatisticCard } from '@vben/common-ui';
-import { fenToYuan } from '@vben/utils';
+import { DocAlert, Page, StatisticCard } from '@x-monorepo/common-ui';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { Col, Row } from 'ant-design-vue';
 

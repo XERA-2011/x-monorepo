@@ -5,9 +5,9 @@ import type { CropperAvatarProps } from './typing';
 
 import { computed, ref, unref, watch, watchEffect } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
 
 import { Button, message } from 'ant-design-vue';
 

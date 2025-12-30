@@ -1,4 +1,4 @@
-import { formatDate } from '@vben/utils';
+import { formatDate } from '@x-monorepo/utils';
 
 // 全局变量，用于存储配置列表
 let configList: any[] = [];

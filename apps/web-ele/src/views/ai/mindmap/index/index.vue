@@ -3,8 +3,8 @@ import type { AiMindmapApi } from '#/api/ai/mindmap';
 
 import { nextTick, onMounted, ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
-import { MindMapContentExample } from '@vben/constants';
+import { Page } from '@x-monorepo/common-ui';
+import { MindMapContentExample } from '@x-monorepo/constants';
 
 import { ElMessage } from 'element-plus';
 

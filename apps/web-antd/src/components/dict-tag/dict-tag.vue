@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-import { getDictObj } from '@vben/hooks';
-import { isValidColor, TinyColor } from '@vben/utils';
+import { getDictObj } from '@x-monorepo/hooks';
+import { isValidColor, TinyColor } from '@x-monorepo/utils';
 
 import { Tag } from 'ant-design-vue';
 

@@ -3,12 +3,12 @@ import type { MallRewardActivityApi } from '#/api/mall/promotion/reward/rewardAc
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 import {
   PromotionConditionTypeEnum,
   PromotionProductScopeEnum,
-} from '@vben/constants';
-import { convertToInteger, formatToFraction } from '@vben/utils';
+} from '@x-monorepo/constants';
+import { convertToInteger, formatToFraction } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

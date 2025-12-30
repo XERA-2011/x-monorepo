@@ -4,11 +4,11 @@ import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import { onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import {
   Button,

@@ -3,9 +3,9 @@ import type { PayChannelApi } from '#/api/pay/channel';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { CommonStatusEnum } from '@vben/constants';
-import { $t } from '@vben/locales';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { CommonStatusEnum } from '@x-monorepo/constants';
+import { $t } from '@x-monorepo/locales';
 
 import { message } from 'ant-design-vue';
 

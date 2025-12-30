@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@x-monorepo/types';
 
-import { $t } from '@vben/locales';
+import { $t } from '@x-monorepo/locales';
 
 import { message } from 'ant-design-vue';
 

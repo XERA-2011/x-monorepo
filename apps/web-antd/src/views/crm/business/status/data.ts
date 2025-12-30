@@ -1,7 +1,7 @@
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { handleTree } from '@vben/utils';
+import { handleTree } from '@x-monorepo/utils';
 
 import { getDeptList } from '#/api/system/dept';
 

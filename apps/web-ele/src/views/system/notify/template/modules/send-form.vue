@@ -3,7 +3,7 @@ import type { SystemNotifyTemplateApi } from '#/api/system/notify/template';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElMessage } from 'element-plus';
 

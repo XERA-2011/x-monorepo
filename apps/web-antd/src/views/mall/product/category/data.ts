@@ -2,9 +2,9 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallCategoryApi } from '#/api/mall/product/category';
 
-import { CommonStatusEnum, DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { handleTree } from '@vben/utils';
+import { CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { handleTree } from '@x-monorepo/utils';
 
 import { z } from '#/adapter/form';
 import { getCategoryList } from '#/api/mall/product/category';

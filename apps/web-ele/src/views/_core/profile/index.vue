@@ -3,7 +3,7 @@ import type { SystemUserProfileApi } from '#/api/system/user/profile';
 
 import { onMounted, ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@x-monorepo/common-ui';
 
 import { ElCard, ElTabPane, ElTabs } from 'element-plus';
 

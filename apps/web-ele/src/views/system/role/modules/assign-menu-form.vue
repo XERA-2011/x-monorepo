@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@x-monorepo/types';
 
 import type { SystemMenuApi } from '#/api/system/menu';
 import type { SystemRoleApi } from '#/api/system/role';
 
 import { nextTick, ref } from 'vue';
 
-import { Tree, useVbenModal } from '@vben/common-ui';
-import { SystemMenuTypeEnum } from '@vben/constants';
-import { handleTree } from '@vben/utils';
+import { Tree, useVbenModal } from '@x-monorepo/common-ui';
+import { SystemMenuTypeEnum } from '@x-monorepo/constants';
+import { handleTree } from '@x-monorepo/utils';
 
 import { ElCheckbox, ElMessage } from 'element-plus';
 

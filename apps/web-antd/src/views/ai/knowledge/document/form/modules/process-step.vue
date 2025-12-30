@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, inject, onBeforeUnmount, onMounted, ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Progress } from 'ant-design-vue';
 

@@ -4,8 +4,8 @@ import type { CrmCustomerApi } from '#/api/crm/customer';
 
 import { useRouter } from 'vue-router';
 
-import { DocAlert, Page } from '@vben/common-ui';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { ElButton } from 'element-plus';
 

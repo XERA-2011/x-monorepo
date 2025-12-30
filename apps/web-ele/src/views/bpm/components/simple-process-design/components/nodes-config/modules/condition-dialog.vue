@@ -3,8 +3,8 @@ import type { ConditionGroup } from '../../../consts';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { cloneDeep } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { cloneDeep } from '@x-monorepo/utils';
 
 import { ElMessage } from 'element-plus';
 

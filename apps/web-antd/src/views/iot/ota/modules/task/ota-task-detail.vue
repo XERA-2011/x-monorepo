@@ -6,8 +6,8 @@ import type { OtaTaskRecord } from '#/api/iot/ota/task/record';
 
 import { computed, reactive, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { formatDate } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { formatDate } from '@x-monorepo/utils';
 
 import {
   Card,

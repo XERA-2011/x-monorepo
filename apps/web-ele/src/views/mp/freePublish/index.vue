@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MpFreePublishApi } from '#/api/mp/freePublish';
 
-import { DocAlert, Page } from '@vben/common-ui';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
 
 import { ElImage, ElLink, ElLoading, ElMessage } from 'element-plus';
 

@@ -4,13 +4,13 @@ import type { MallOrderApi } from '#/api/mall/trade/order';
 
 import { useRouter } from 'vue-router';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
 import {
   DeliveryTypeEnum,
   DICT_TYPE,
   TradeOrderStatusEnum,
-} from '@vben/constants';
-import { fenToYuan } from '@vben/utils';
+} from '@x-monorepo/constants';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { Image, List, Tag } from 'ant-design-vue';
 

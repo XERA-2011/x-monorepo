@@ -1,7 +1,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallMemberStatisticsApi } from '#/api/mall/statistics/member';
 
-import { fenToYuan } from '@vben/utils';
+import { fenToYuan } from '@x-monorepo/utils';
 
 /** 会员地域分布图表配置 */
 export function getAreaChartOptions(

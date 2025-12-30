@@ -3,10 +3,10 @@ import type { Ref } from 'vue';
 
 import { inject, ref } from 'vue';
 
-import { useVbenDrawer } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { Tinyflow } from '@vben/plugins/tinyflow';
-import { isNumber } from '@vben/utils';
+import { useVbenDrawer } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { Tinyflow } from '@x-monorepo/plugins/tinyflow';
+import { isNumber } from '@x-monorepo/utils';
 
 import { ElButton, ElInput, ElOption, ElSelect } from 'element-plus';
 

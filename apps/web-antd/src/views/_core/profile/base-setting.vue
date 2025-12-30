@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@x-monorepo/types';
 
 import type { VbenFormSchema } from '#/adapter/form';
 import type { SystemUserProfileApi } from '#/api/system/user/profile';
 
 import { computed, ref, watch } from 'vue';
 
-import { ProfileBaseSetting, z } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { ProfileBaseSetting, z } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { message } from 'ant-design-vue';
 

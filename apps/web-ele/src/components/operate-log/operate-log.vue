@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type { OperateLogProps } from './typing';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictLabel, getDictObj } from '@vben/hooks';
-import { formatDateTime } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel, getDictObj } from '@x-monorepo/hooks';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { ElTag, ElTimeline, ElTimelineItem } from 'element-plus';
 

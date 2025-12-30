@@ -4,7 +4,7 @@ import type { MallCombinationActivityApi } from '#/api/mall/promotion/combinatio
 
 import { computed, ref, watch } from 'vue';
 
-import { CloseCircleFilled, PlusOutlined } from '@vben/icons';
+import { CloseCircleFilled, PlusOutlined } from '@x-monorepo/icons';
 
 import { Image, Tooltip } from 'ant-design-vue';
 

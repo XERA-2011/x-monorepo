@@ -5,7 +5,7 @@ import type { CrmFollowUpApi } from '#/api/crm/followup';
 import { watch } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { Button, message } from 'ant-design-vue';
 

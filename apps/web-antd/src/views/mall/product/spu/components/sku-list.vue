@@ -14,7 +14,7 @@ import {
   formatToFraction,
   getNestedValue,
   isEmpty,
-} from '@vben/utils';
+} from '@x-monorepo/utils';
 
 import { Button, Image, Input, InputNumber, message } from 'ant-design-vue';
 

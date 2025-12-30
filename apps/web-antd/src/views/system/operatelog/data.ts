@@ -2,7 +2,7 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { DescriptionItemSchema } from '#/components/description';
 
-import { formatDateTime } from '@vben/utils';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { getSimpleUserList } from '#/api/system/user';
 import { getRangePickerDefaultProps } from '#/utils';

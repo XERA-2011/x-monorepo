@@ -3,8 +3,8 @@ import type { Reply } from './types';
 
 import { computed, ref, unref, watch } from 'vue';
 
-import { NewsType, ReplyType } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { NewsType, ReplyType } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElRow, ElTabPane, ElTabs } from 'element-plus';
 

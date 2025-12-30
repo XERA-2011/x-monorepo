@@ -6,10 +6,10 @@ import type { ActionItem, PopConfirm } from './typing';
 
 import { computed, unref, watch } from 'vue';
 
-import { useAccess } from '@vben/access';
-import { IconifyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
-import { isBoolean, isFunction } from '@vben/utils';
+import { useAccess } from '@x-monorepo/access';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
+import { isBoolean, isFunction } from '@x-monorepo/utils';
 
 import {
   Button,

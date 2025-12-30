@@ -5,8 +5,8 @@ import type { UploadRawFile } from '#/views/mp/hooks/useUpload';
 
 import { computed, reactive, ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { useAccessStore } from '@vben/stores';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { useAccessStore } from '@x-monorepo/stores';
 
 import { Button, Col, message, Modal, Row, Upload } from 'ant-design-vue';
 

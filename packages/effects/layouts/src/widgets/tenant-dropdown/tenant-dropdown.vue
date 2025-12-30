@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
 
 import {
   Button,
@@ -11,7 +11,7 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@vben-core/shadcn-ui';
+} from '@x-monorepo-core/shadcn-ui';
 
 interface Tenant {
   id?: number;

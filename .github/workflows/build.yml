@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   post-update:
-    if: github.repository == 'vbenjs/vue-vben-admin'
+    if: github.repository == 'XERA-2011/x-monorepo'
     # if: ${{ github.actor == 'dependabot[bot]' }}
     runs-on: ${{ matrix.os }}
     strategy:

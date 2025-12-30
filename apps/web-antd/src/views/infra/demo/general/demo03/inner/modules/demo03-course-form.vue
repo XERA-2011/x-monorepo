@@ -4,7 +4,7 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/normal';
 
 import { ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Input } from 'ant-design-vue';
 

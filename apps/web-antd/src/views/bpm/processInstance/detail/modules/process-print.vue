@@ -3,11 +3,11 @@ import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictLabel } from '@vben/hooks';
-import { useUserStore } from '@vben/stores';
-import { formatDate } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel } from '@x-monorepo/hooks';
+import { useUserStore } from '@x-monorepo/stores';
+import { formatDate } from '@x-monorepo/utils';
 
 import { Button } from 'ant-design-vue';
 // @ts-ignore - 安装 vue3-print-nb 局部指令 v-print

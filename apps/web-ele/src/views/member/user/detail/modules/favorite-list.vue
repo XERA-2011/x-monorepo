@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallFavoriteApi } from '#/api/mall/product/favorite';
 
-import { DICT_TYPE } from '@vben/constants';
+import { DICT_TYPE } from '@x-monorepo/constants';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getFavoritePage } from '#/api/mall/product/favorite';

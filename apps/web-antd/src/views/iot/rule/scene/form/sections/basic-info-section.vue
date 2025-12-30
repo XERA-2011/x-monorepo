@@ -2,9 +2,9 @@
 <script setup lang="ts">
 import type { IotSceneRule } from '#/api/iot/rule/scene';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { useVModel } from '@vueuse/core';
 import { Card, Col, Form, Input, Radio, Row } from 'ant-design-vue';

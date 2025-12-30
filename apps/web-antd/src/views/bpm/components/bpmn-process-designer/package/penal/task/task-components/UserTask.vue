@@ -17,8 +17,8 @@ import {
   watch,
 } from 'vue';
 
-import { SelectOutlined } from '@vben/icons';
-import { handleTree } from '@vben/utils';
+import { SelectOutlined } from '@x-monorepo/icons';
+import { handleTree } from '@x-monorepo/utils';
 
 import {
   Button,

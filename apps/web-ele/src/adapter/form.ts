@@ -1,13 +1,13 @@
 import type {
   VbenFormSchema as FormSchema,
   VbenFormProps,
-} from '@vben/common-ui';
+} from '@x-monorepo/common-ui';
 
 import type { ComponentType } from './component';
 
-import { setupVbenForm, useVbenForm as useForm, z } from '@vben/common-ui';
-import { $t } from '@vben/locales';
-import { isMobile } from '@vben/utils';
+import { setupVbenForm, useVbenForm as useForm, z } from '@x-monorepo/common-ui';
+import { $t } from '@x-monorepo/locales';
+import { isMobile } from '@x-monorepo/utils';
 
 async function initSetupVbenForm() {
   setupVbenForm<ComponentType>({

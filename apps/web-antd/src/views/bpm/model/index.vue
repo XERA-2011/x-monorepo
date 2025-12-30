@@ -3,9 +3,9 @@ import type { ModelCategoryInfo } from '#/api/bpm/model';
 
 import { onActivated, reactive, ref, useTemplateRef, watch } from 'vue';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { cloneDeep } from '@vben/utils';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { cloneDeep } from '@x-monorepo/utils';
 
 import { useSortable } from '@vueuse/integrations/useSortable';
 import { Button, Card, Dropdown, Input, Menu, message } from 'ant-design-vue';

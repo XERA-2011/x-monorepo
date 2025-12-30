@@ -4,9 +4,9 @@ import type { MpMaterialApi } from '#/api/mp/material';
 
 import { reactive, ref, watch } from 'vue';
 
-import { Page } from '@vben/common-ui';
-import { NewsType } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { Page } from '@x-monorepo/common-ui';
+import { NewsType } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Pagination, Row, Spin } from 'ant-design-vue';
 

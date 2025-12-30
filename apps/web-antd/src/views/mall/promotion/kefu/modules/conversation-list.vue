@@ -3,9 +3,9 @@ import type { MallKefuConversationApi } from '#/api/mall/promotion/kefu/conversa
 
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
-import { confirm } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { formatPast, jsonParse } from '@vben/utils';
+import { confirm } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { formatPast, jsonParse } from '@x-monorepo/utils';
 
 import { Avatar, message } from 'ant-design-vue';
 

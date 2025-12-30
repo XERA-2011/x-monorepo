@@ -1,8 +1,8 @@
 import type {
   BpmCandidateStrategyEnum,
   BpmNodeTypeEnum,
-} from '@vben/constants';
-import type { PageParam, PageResult } from '@vben/request';
+} from '@x-monorepo/constants';
+import type { PageParam, PageResult } from '@x-monorepo/request';
 
 import type { BpmTaskApi } from '../task';
 

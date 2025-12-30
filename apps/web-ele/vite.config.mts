@@ -1,4 +1,4 @@
-import { defineConfig } from '@vben/vite-config';
+import { defineConfig } from '@x-monorepo/vite-config';
 
 import ElementPlus from 'unplugin-element-plus/vite';
 

@@ -5,8 +5,8 @@ import type { AiChatMessageApi } from '#/api/ai/chat/message';
 import { computed, nextTick, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { alert, confirm, Page, useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { alert, confirm, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Layout, message, Switch } from 'ant-design-vue';
 

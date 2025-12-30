@@ -3,8 +3,8 @@ import type { Ref } from 'vue';
 
 import { inject, onBeforeUnmount, provide, ref, shallowRef, watch } from 'vue';
 
-import { ContentWrap } from '@vben/common-ui';
-import { BpmModelFormType } from '@vben/constants';
+import { ContentWrap } from '@x-monorepo/common-ui';
+import { BpmModelFormType } from '@x-monorepo/constants';
 
 import { getForm } from '#/api/bpm/form';
 // import {

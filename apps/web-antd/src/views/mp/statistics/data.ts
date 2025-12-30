@@ -1,6 +1,6 @@
 import type { VbenFormSchema } from '#/adapter/form';
 
-import { beginOfDay, endOfDay, formatDateTime } from '@vben/utils';
+import { beginOfDay, endOfDay, formatDateTime } from '@x-monorepo/utils';
 
 /** 列表的搜索表单 */
 export function useGridFormSchema(): VbenFormSchema[] {

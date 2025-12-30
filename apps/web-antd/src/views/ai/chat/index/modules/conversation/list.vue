@@ -5,8 +5,8 @@ import type { AiChatConversationApi } from '#/api/ai/chat/conversation';
 
 import { h, onMounted, ref, toRefs, watch } from 'vue';
 
-import { confirm, prompt, useVbenDrawer } from '@vben/common-ui';
-import { IconifyIcon, SvgGptIcon } from '@vben/icons';
+import { confirm, prompt, useVbenDrawer } from '@x-monorepo/common-ui';
+import { IconifyIcon, SvgGptIcon } from '@x-monorepo/icons';
 
 import { Avatar, Button, Empty, Input, Layout, message } from 'ant-design-vue';
 

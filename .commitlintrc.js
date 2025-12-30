@@ -1,1 +1,1 @@
-export { default } from '@vben/commitlint-config';
+export { default } from '@x-monorepo/commitlint-config';

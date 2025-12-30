@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { onMounted, reactive, ref } from 'vue';
 
-import { NewsType } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
-import { formatTime } from '@vben/utils';
+import { NewsType } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { formatTime } from '@x-monorepo/utils';
 
 import {
   ElButton,

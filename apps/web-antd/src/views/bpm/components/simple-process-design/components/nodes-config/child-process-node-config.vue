@@ -5,9 +5,9 @@ import type { IOParameter, SimpleFlowNode } from '../../consts';
 
 import { computed, onMounted, reactive, ref } from 'vue';
 
-import { useVbenDrawer } from '@vben/common-ui';
-import { BpmNodeTypeEnum } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { useVbenDrawer } from '@x-monorepo/common-ui';
+import { BpmNodeTypeEnum } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import {
   Button,

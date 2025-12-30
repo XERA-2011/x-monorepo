@@ -4,9 +4,9 @@ import type { MpAutoReplyApi } from '#/api/mp/autoReply';
 
 import { computed, nextTick, ref } from 'vue';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { AutoReplyMsgType } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { AutoReplyMsgType } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElLoading, ElMessage, ElRow, ElTabPane, ElTabs } from 'element-plus';
 

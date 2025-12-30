@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ImageBarProperty } from './config';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Image } from 'ant-design-vue';
 

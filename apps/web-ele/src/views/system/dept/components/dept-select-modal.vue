@@ -4,8 +4,8 @@ import type { SystemDeptApi } from '#/api/system/dept';
 
 import { nextTick, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { handleTree } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { handleTree } from '@x-monorepo/utils';
 
 import { ElCard, ElCol, ElRow, ElTree } from 'element-plus';
 

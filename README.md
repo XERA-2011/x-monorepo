@@ -63,12 +63,6 @@ pnpm dev:antd
 # Element Plus 版本
 pnpm dev:ele
 
-# Naive UI 版本
-pnpm dev:naive
-
-# TDesign 版本
-pnpm dev:tdesign
-
 # 同时启动所有应用
 pnpm dev
 ```

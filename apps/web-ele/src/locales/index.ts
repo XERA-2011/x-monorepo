@@ -2,7 +2,7 @@ import type { Language } from 'element-plus/es/locale';
 
 import type { App } from 'vue';
 
-import type { LocaleSetupOptions, SupportedLanguagesType } from '@vben/locales';
+import type { LocaleSetupOptions, SupportedLanguagesType } from '@x-monorepo/locales';
 
 import { ref } from 'vue';
 
@@ -10,8 +10,8 @@ import {
   $t,
   setupI18n as coreSetup,
   loadLocalesMapFromDir,
-} from '@vben/locales';
-import { preferences } from '@vben/preferences';
+} from '@x-monorepo/locales';
+import { preferences } from '@x-monorepo/preferences';
 
 import dayjs from 'dayjs';
 import enLocale from 'element-plus/es/locale/lang/en';

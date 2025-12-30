@@ -3,7 +3,7 @@ import type { MarkdownViewProps } from './typing';
 
 import { computed, onMounted, ref } from 'vue';
 
-import { MarkdownIt } from '@vben/plugins/markmap';
+import { MarkdownIt } from '@x-monorepo/plugins/markmap';
 
 import { useClipboard } from '@vueuse/core';
 import { ElMessage } from 'element-plus';

@@ -1,17 +1,17 @@
-import type { VxeTableGridOptions } from '@vben/plugins/vxe-table';
-import type { Recordable } from '@vben/types';
+import type { VxeTableGridOptions } from '@x-monorepo/plugins/vxe-table';
+import type { Recordable } from '@x-monorepo/types';
 
 import { h } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { $te } from '@vben/locales';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { $te } from '@x-monorepo/locales';
 import {
   AsyncVxeColumn,
   AsyncVxeTable,
   createRequiredValidation,
   setupVbenVxeTable,
   useVbenVxeGrid,
-} from '@vben/plugins/vxe-table';
+} from '@x-monorepo/plugins/vxe-table';
 import {
   erpCountInputFormatter,
   erpNumberFormatter,
@@ -20,7 +20,7 @@ import {
   formatPast2,
   isFunction,
   isString,
-} from '@vben/utils';
+} from '@x-monorepo/utils';
 
 import { ElButton, ElImage, ElPopconfirm, ElSwitch, ElTag } from 'element-plus';
 
@@ -152,7 +152,7 @@ setupVbenVxeTable({
     });
 
     // 表格配置项可以用 cellRender: { name: 'CellSwitch', props: { beforeChange: () => {} } },
-    // add by 芋艿：from https://github.com/vbenjs/vue-vben-admin/blob/main/playground/src/adapter/vxe-table.ts#L97-L123
+    // add by 芋艿：from https://github.com/XERA-2011/x-monorepo/blob/main/playground/src/adapter/vxe-table.ts#L97-L123
     vxeUI.renderer.add('CellSwitch', {
       renderTableDefault({ attrs, props }, { column, row }) {
         const loadingKey = `__loading_${column.field}`;
@@ -185,7 +185,7 @@ setupVbenVxeTable({
     });
 
     // 注册表格的操作按钮渲染器 cellRender: { name: 'CellOperation', options: ['edit', 'delete'] }
-    // add by 芋艿：from https://github.com/vbenjs/vue-vben-admin/blob/main/playground/src/adapter/vxe-table.ts#L125-L255
+    // add by 芋艿：from https://github.com/XERA-2011/x-monorepo/blob/main/playground/src/adapter/vxe-table.ts#L125-L255
     vxeUI.renderer.add('CellOperation', {
       renderTableDefault({ attrs, options, props }, { column, row }) {
         const defaultProps = {
@@ -362,4 +362,4 @@ export const [VxeTable, VxeColumn] = [AsyncVxeTable, AsyncVxeColumn];
 
 export * from '#/components/table-action';
 
-export type * from '@vben/plugins/vxe-table';
+export type * from '@x-monorepo/plugins/vxe-table';

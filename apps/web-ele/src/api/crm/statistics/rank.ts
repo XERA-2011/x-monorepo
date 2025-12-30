@@ -1,4 +1,4 @@
-import type { PageParam } from '@vben/request';
+import type { PageParam } from '@x-monorepo/request';
 
 import { requestClient } from '#/api/request';
 

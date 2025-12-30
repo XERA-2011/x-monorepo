@@ -4,8 +4,8 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
 import { ref } from 'vue';
 
-import { confirm, Page, useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart, isEmpty } from '@vben/utils';
+import { confirm, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
 
 import { message, Tabs } from 'ant-design-vue';
 

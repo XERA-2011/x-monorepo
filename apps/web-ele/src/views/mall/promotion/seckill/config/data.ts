@@ -2,8 +2,8 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallSeckillConfigApi } from '#/api/mall/promotion/seckill/seckillConfig';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 /** 新增/修改的表单 */
 export function useFormSchema(): VbenFormSchema[] {

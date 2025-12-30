@@ -2,7 +2,7 @@ import type { UploadProps } from 'ant-design-vue';
 
 import type { UploadRawFile } from '#/views/mp/hooks/useUpload';
 
-import { useAccessStore } from '@vben/stores';
+import { useAccessStore } from '@x-monorepo/stores';
 
 import { UploadType, useBeforeUpload } from '#/views/mp/hooks/useUpload';
 

@@ -3,8 +3,8 @@ import type { SearchProperty } from './config';
 
 import { watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { isString } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { isString } from '@x-monorepo/utils';
 
 import { useVModel } from '@vueuse/core';
 import {

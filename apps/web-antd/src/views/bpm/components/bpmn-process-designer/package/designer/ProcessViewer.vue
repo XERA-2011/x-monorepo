@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { h, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
-import { BpmProcessInstanceStatus, DICT_TYPE } from '@vben/constants';
-import { UndoOutlined, ZoomInOutlined, ZoomOutOutlined } from '@vben/icons';
-import { formatDate, formatPast2 } from '@vben/utils';
+import { BpmProcessInstanceStatus, DICT_TYPE } from '@x-monorepo/constants';
+import { UndoOutlined, ZoomInOutlined, ZoomOutOutlined } from '@x-monorepo/icons';
+import { formatDate, formatPast2 } from '@x-monorepo/utils';
 
 import { Button, ButtonGroup, Modal, Row, Table } from 'ant-design-vue';
 import BpmnViewer from 'bpmn-js/lib/Viewer';

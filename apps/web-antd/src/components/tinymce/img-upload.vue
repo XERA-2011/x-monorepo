@@ -3,7 +3,7 @@ import type { UploadRequestOption } from 'ant-design-vue/lib/vc-upload/interface
 
 import { computed, ref } from 'vue';
 
-import { $t } from '@vben/locales';
+import { $t } from '@x-monorepo/locales';
 
 import { Button, Upload } from 'ant-design-vue';
 

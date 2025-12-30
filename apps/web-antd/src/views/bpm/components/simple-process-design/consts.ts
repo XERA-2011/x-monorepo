@@ -1,4 +1,4 @@
-import { BpmNodeTypeEnum, BpmTaskStatusEnum } from '@vben/constants';
+import { BpmNodeTypeEnum, BpmTaskStatusEnum } from '@x-monorepo/constants';
 
 interface DictDataType {
   label: string;

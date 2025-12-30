@@ -3,15 +3,15 @@ import type { Demo02CategoryApi } from '#/api/infra/demo/demo02';
 
 import { onMounted, reactive, ref } from 'vue';
 
-import { ContentWrap, Page, useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { useTableToolbar, VbenVxeTableToolbar } from '@vben/plugins/vxe-table';
+import { ContentWrap, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { useTableToolbar, VbenVxeTableToolbar } from '@x-monorepo/plugins/vxe-table';
 import {
   cloneDeep,
   downloadFileFromBlobPart,
   formatDateTime,
   isEmpty,
-} from '@vben/utils';
+} from '@x-monorepo/utils';
 
 import { Button, Form, Input, message, RangePicker } from 'ant-design-vue';
 

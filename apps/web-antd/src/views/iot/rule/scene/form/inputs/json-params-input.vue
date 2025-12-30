@@ -4,7 +4,7 @@ import type { JsonParamsInputType } from '#/views/iot/utils/constants';
 
 import { computed, nextTick, onMounted, ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { useVModel } from '@vueuse/core';
 import { Button, Input, Popover, Tag } from 'ant-design-vue';

@@ -1,6 +1,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { DICT_TYPE } from '@vben/constants';
+import { DICT_TYPE } from '@x-monorepo/constants';
 
 /** 联系人明细列表列配置 */
 export function useDetailListColumns(): VxeTableGridOptions['columns'] {

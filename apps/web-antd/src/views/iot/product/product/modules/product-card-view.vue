@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictLabel } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import {
   Button,

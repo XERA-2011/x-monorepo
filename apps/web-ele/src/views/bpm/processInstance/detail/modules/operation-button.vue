@@ -8,7 +8,7 @@ import type { SystemUserApi } from '#/api/system/user';
 import { computed, nextTick, reactive, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 import {
   BpmCandidateStrategyEnum,
   BpmModelFormType,
@@ -17,10 +17,10 @@ import {
   BpmTaskOperationButtonTypeEnum,
   BpmTaskStatusEnum,
   OPERATION_BUTTON_NAME,
-} from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
-import { useUserStore } from '@vben/stores';
-import { isEmpty } from '@vben/utils';
+} from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { useUserStore } from '@x-monorepo/stores';
+import { isEmpty } from '@x-monorepo/utils';
 
 import FormCreate from '@form-create/element-ui';
 import {

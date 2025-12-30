@@ -2,8 +2,8 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallBrokerageUserApi } from '#/api/mall/trade/brokerage/user';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { $t } from '@x-monorepo/locales';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

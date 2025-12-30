@@ -7,7 +7,7 @@ import {
   erpCountInputFormatter,
   erpPriceInputFormatter,
   erpPriceMultiply,
-} from '@vben/utils';
+} from '@x-monorepo/utils';
 
 import { Input, InputNumber, Select } from 'ant-design-vue';
 

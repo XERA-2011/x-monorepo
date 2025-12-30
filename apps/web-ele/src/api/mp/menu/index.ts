@@ -1,4 +1,4 @@
-import { MenuType } from '@vben/constants';
+import { MenuType } from '@x-monorepo/constants';
 
 import { requestClient } from '#/api/request';
 

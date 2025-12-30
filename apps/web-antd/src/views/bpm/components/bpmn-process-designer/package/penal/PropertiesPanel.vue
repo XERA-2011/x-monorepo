@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { nextTick, onBeforeUnmount, onMounted, provide, ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { cloneDeep } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { cloneDeep } from '@x-monorepo/utils';
 
 import { Collapse } from 'ant-design-vue';
 

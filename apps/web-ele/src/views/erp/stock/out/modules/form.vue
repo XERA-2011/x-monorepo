@@ -3,7 +3,7 @@ import type { ErpStockOutApi } from '#/api/erp/stock/out';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElMessage } from 'element-plus';
 

@@ -1,4 +1,4 @@
-import { isFunction, isObject } from '@vben/utils';
+import { isFunction, isObject } from '@x-monorepo/utils';
 
 const WILDCARD = '*';
 

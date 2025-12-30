@@ -5,9 +5,9 @@ import type { AiKnowledgeDocumentApi } from '#/api/ai/knowledge/document';
 import { onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { confirm, Page } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictLabel } from '@vben/hooks';
+import { confirm, Page } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel } from '@x-monorepo/hooks';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

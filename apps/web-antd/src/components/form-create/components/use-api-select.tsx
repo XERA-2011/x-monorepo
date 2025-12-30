@@ -2,7 +2,7 @@ import type { ApiSelectProps } from '#/components/form-create/typing';
 
 import { defineComponent, onMounted, ref, useAttrs } from 'vue';
 
-import { isEmpty } from '@vben/utils';
+import { isEmpty } from '@x-monorepo/utils';
 
 import {
   Checkbox,

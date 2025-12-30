@@ -4,13 +4,13 @@ import type { MallBrokerageWithdrawApi } from '#/api/mall/trade/brokerage/withdr
 
 import { h } from 'vue';
 
-import { confirm, Page, prompt } from '@vben/common-ui';
+import { confirm, Page, prompt } from '@x-monorepo/common-ui';
 import {
   BrokerageWithdrawStatusEnum,
   BrokerageWithdrawTypeEnum,
   DICT_TYPE,
-} from '@vben/constants';
-import { formatDateTime } from '@vben/utils';
+} from '@x-monorepo/constants';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { Input, message } from 'ant-design-vue';
 

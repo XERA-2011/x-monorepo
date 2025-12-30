@@ -1,8 +1,8 @@
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { useUserStore } from '@vben/stores';
-import { beginOfDay, endOfDay, formatDateTime, handleTree } from '@vben/utils';
+import { useUserStore } from '@x-monorepo/stores';
+import { beginOfDay, endOfDay, formatDateTime, handleTree } from '@x-monorepo/utils';
 
 import { getSimpleDeptList } from '#/api/system/dept';
 import { getRangePickerDefaultProps } from '#/utils';

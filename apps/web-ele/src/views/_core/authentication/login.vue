@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@vben/common-ui';
+import type { VbenFormSchema } from '@x-monorepo/common-ui';
 
 import type { AuthApi } from '#/api/core/auth';
 
 import { computed, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { AuthenticationLogin, Verification, z } from '@vben/common-ui';
-import { isCaptchaEnable, isTenantEnable } from '@vben/hooks';
-import { $t } from '@vben/locales';
-import { useAccessStore } from '@vben/stores';
+import { AuthenticationLogin, Verification, z } from '@x-monorepo/common-ui';
+import { isCaptchaEnable, isTenantEnable } from '@x-monorepo/hooks';
+import { $t } from '@x-monorepo/locales';
+import { useAccessStore } from '@x-monorepo/stores';
 
 import {
   checkCaptcha,

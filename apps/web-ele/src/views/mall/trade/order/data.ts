@@ -2,9 +2,9 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeGridPropTypes } from '#/adapter/vxe-table';
 import type { MallDeliveryPickUpStoreApi } from '#/api/mall/trade/delivery/pickUpStore';
 
-import { DeliveryTypeEnum, DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { convertToInteger, formatToFraction } from '@vben/utils';
+import { DeliveryTypeEnum, DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { convertToInteger, formatToFraction } from '@x-monorepo/utils';
 
 import { getSimpleDeliveryExpressList } from '#/api/mall/trade/delivery/express';
 import { getSimpleDeliveryPickUpStoreList } from '#/api/mall/trade/delivery/pickUpStore';

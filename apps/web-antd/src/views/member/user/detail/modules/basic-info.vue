@@ -3,8 +3,8 @@ import type { MemberUserApi } from '#/api/member/user';
 
 import { h } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { formatDate } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { formatDate } from '@x-monorepo/utils';
 
 import { Avatar, Card, Col, Row } from 'ant-design-vue';
 

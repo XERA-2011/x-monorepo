@@ -3,7 +3,7 @@ import type { PopoverProperty } from './config';
 
 import { ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElImage } from 'element-plus';
 

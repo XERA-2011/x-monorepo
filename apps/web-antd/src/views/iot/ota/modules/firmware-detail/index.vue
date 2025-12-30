@@ -4,7 +4,7 @@ import type { IoTOtaFirmware } from '#/api/iot/ota/firmware';
 import { onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { formatDate } from '@vben/utils';
+import { formatDate } from '@x-monorepo/utils';
 
 import { Card, Col, Descriptions, Row } from 'ant-design-vue';
 

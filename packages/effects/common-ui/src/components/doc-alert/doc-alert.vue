@@ -3,10 +3,10 @@ import type { DocAlertProps } from './types';
 
 import { ref } from 'vue';
 
-import { isDocAlertEnable } from '@vben/hooks';
+import { isDocAlertEnable } from '@x-monorepo/hooks';
 
-import { VbenIcon } from '@vben-core/shadcn-ui';
-import { openWindow } from '@vben-core/shared/utils';
+import { VbenIcon } from '@x-monorepo-core/shadcn-ui';
+import { openWindow } from '@x-monorepo-core/shared/utils';
 
 defineOptions({
   name: 'DocAlert',

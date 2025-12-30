@@ -4,7 +4,7 @@ import type { Ref } from 'vue';
 
 import { watch } from 'vue';
 
-import { isEmpty } from '@vben/utils';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { useVModel } from '@vueuse/core';
 import { Form, Radio } from 'ant-design-vue';

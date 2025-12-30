@@ -4,8 +4,8 @@ import type { Ref } from 'vue';
 
 import type { DataSpecsNumberData } from '#/api/iot/thingmodel';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { useVModel } from '@vueuse/core';
 import { Form, Input, Select } from 'ant-design-vue';

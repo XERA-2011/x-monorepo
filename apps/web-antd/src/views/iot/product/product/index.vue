@@ -4,9 +4,9 @@ import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import { onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { Button, Card, Image, Input, message, Space } from 'ant-design-vue';
 

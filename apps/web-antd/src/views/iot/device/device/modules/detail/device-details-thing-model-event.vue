@@ -4,9 +4,9 @@ import type { ThingModelData } from '#/api/iot/thingmodel';
 
 import { computed, onMounted, reactive, ref } from 'vue';
 
-import { ContentWrap } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { formatDate } from '@vben/utils';
+import { ContentWrap } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { formatDate } from '@x-monorepo/utils';
 
 import {
   Button,

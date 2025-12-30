@@ -2,8 +2,8 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallBrokerageRecordApi } from '#/api/mall/trade/brokerage/record';
 
-import { useVbenModal } from '@vben/common-ui';
-import { BrokerageRecordBizTypeEnum } from '@vben/constants';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { BrokerageRecordBizTypeEnum } from '@x-monorepo/constants';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getBrokerageRecordPage } from '#/api/mall/trade/brokerage/record';

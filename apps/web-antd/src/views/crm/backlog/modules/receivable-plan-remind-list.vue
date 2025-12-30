@@ -5,7 +5,7 @@ import type { CrmReceivablePlanApi } from '#/api/crm/receivable/plan';
 
 import { useRouter } from 'vue-router';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { Button } from 'ant-design-vue';
 

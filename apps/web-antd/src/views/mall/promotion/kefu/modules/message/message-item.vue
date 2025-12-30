@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { MallKefuMessageApi } from '#/api/mall/promotion/kefu/message';
 
-import { UserTypeEnum } from '@vben/constants';
+import { UserTypeEnum } from '@x-monorepo/constants';
 
 /** 消息组件 */
 

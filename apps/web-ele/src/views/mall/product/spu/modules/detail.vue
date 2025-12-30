@@ -1,16 +1,16 @@
 <script lang="ts" setup>
-import type { DictDataType } from '@vben/hooks';
+import type { DictDataType } from '@x-monorepo/hooks';
 
 import type { MallSpuApi } from '#/api/mall/product/spu';
 
 import { onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { Page } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
-import { floatToFixed2 } from '@vben/utils';
+import { Page } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { floatToFixed2 } from '@x-monorepo/utils';
 
 import {
   ElButton,

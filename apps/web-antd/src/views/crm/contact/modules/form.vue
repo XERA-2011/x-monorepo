@@ -3,7 +3,7 @@ import type { CrmContactApi } from '#/api/crm/contact';
 
 import { computed, ref } from 'vue';
 
-import { useVbenForm, useVbenModal } from '@vben/common-ui';
+import { useVbenForm, useVbenModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

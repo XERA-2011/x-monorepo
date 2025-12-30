@@ -3,7 +3,7 @@ import type { MentionItem } from '../modules/tinymce-plugin';
 
 import { computed, onBeforeUnmount, ref, shallowRef } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import Editor from '@tinymce/tinymce-vue';
 import { Alert } from 'ant-design-vue';

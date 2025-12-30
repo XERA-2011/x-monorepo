@@ -3,8 +3,8 @@ import type { MallKefuConversationApi } from '#/api/mall/promotion/kefu/conversa
 
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
-import { Page } from '@vben/common-ui';
-import { useAccessStore } from '@vben/stores';
+import { Page } from '@x-monorepo/common-ui';
+import { useAccessStore } from '@x-monorepo/stores';
 
 import { useWebSocket } from '@vueuse/core';
 import { message } from 'ant-design-vue';

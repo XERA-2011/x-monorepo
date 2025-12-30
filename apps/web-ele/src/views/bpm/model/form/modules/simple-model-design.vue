@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import { ContentWrap } from '@vben/common-ui';
+import { ContentWrap } from '@x-monorepo/common-ui';
 
 import { SimpleProcessDesigner } from '#/views/bpm/components/simple-process-design';
 

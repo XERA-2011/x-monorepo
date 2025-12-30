@@ -4,8 +4,8 @@ import type { MallDeliveryPickUpStoreApi } from '#/api/mall/trade/delivery/pickU
 
 import { ref } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { useUserStore } from '@vben/stores';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { useUserStore } from '@x-monorepo/stores';
 
 import { getSimpleDeliveryPickUpStoreList } from '#/api/mall/trade/delivery/pickUpStore';
 import { getRangePickerDefaultProps } from '#/utils';

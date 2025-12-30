@@ -3,7 +3,7 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
 import { nextTick, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Input } from 'ant-design-vue';
 

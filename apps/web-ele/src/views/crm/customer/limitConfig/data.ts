@@ -1,10 +1,10 @@
-import type { VbenFormSchema } from '@vben/common-ui';
+import type { VbenFormSchema } from '@x-monorepo/common-ui';
 
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { handleTree } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { handleTree } from '@x-monorepo/utils';
 
 import { LimitConfType } from '#/api/crm/customer/limitConfig';
 import { getSimpleDeptList } from '#/api/system/dept';

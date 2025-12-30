@@ -7,8 +7,8 @@ import type { SystemUserApi } from '#/api/system/user';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { handleTree } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { handleTree } from '@x-monorepo/utils';
 
 import {
   Button,

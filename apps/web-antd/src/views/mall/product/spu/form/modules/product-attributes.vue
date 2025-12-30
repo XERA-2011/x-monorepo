@@ -5,7 +5,7 @@ import type { PropertyAndValues } from '#/views/mall/product/spu/components';
 
 import { computed, ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Col, Divider, message, Select, Tag } from 'ant-design-vue';
 

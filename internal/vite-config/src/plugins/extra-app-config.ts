@@ -4,7 +4,7 @@ import {
   colors,
   generatorContentHash,
   readPackageJSON,
-} from '@vben/node-utils';
+} from '@x-monorepo/node-utils';
 
 import { loadEnv } from '../utils/env';
 

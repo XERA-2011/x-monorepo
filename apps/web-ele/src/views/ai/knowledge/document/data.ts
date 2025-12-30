@@ -2,8 +2,8 @@ import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiKnowledgeDocumentApi } from '#/api/ai/knowledge/document';
 
-import { AiModelTypeEnum, CommonStatusEnum, DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { AiModelTypeEnum, CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { z } from '#/adapter/form';
 import { getModelSimpleList } from '#/api/ai/model/model';

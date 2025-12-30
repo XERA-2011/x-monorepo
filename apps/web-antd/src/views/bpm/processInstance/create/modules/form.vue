@@ -10,9 +10,9 @@ import {
   BpmModelFormType,
   BpmModelType,
   BpmNodeIdEnum,
-} from '@vben/constants';
-import { useTabs } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
+} from '@x-monorepo/constants';
+import { useTabs } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import formCreate from '@form-create/ant-design-vue';
 import { Button, Card, Col, message, Row, Space, Tabs } from 'ant-design-vue';

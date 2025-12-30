@@ -1,8 +1,8 @@
 import type { VbenFormSchema } from '#/adapter/form';
 
-import { DeliveryTypeEnum, DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { handleTree } from '@vben/utils';
+import { DeliveryTypeEnum, DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { handleTree } from '@x-monorepo/utils';
 
 import { getSimpleBrandList } from '#/api/mall/product/brand';
 import { getCategoryList } from '#/api/mall/product/category';

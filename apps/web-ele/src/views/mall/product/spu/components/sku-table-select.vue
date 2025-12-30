@@ -5,8 +5,8 @@ import type { MallSpuApi } from '#/api/mall/product/spu';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { fenToYuan } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getSpu } from '#/api/mall/product/spu';

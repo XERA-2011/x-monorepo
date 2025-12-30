@@ -3,7 +3,7 @@ import type { CrmContractConfigApi } from '#/api/crm/contract/config';
 
 import { onMounted } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@x-monorepo/common-ui';
 
 import { ElCard, ElMessage } from 'element-plus';
 

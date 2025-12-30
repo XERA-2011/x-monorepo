@@ -3,7 +3,7 @@ import type { MpUserApi } from '#/api/mp/user/index';
 
 import { nextTick, onMounted, reactive, ref, unref } from 'vue';
 
-import { preferences } from '@vben/preferences';
+import { preferences } from '@x-monorepo/preferences';
 
 import { ElButton, ElMessage } from 'element-plus';
 

@@ -3,8 +3,8 @@ import type { Menu, RawMenu } from './modules/types';
 
 import { nextTick, onMounted, ref } from 'vue';
 
-import { confirm, ContentWrap, DocAlert, Page } from '@vben/common-ui';
-import { handleTree } from '@vben/utils';
+import { confirm, ContentWrap, DocAlert, Page } from '@x-monorepo/common-ui';
+import { handleTree } from '@x-monorepo/utils';
 
 import { Button, message } from 'ant-design-vue';
 

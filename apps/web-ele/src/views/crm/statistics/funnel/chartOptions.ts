@@ -1,4 +1,4 @@
-import { erpCalculatePercentage } from '@vben/utils';
+import { erpCalculatePercentage } from '@x-monorepo/utils';
 
 export function getChartOptions(
   activeTabName: any,

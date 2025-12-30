@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, onActivated, onMounted, ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@x-monorepo/common-ui';
 
 import { ElBadge, ElCard } from 'element-plus';
 

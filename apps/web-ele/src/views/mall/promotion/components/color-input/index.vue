@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-import { PREDEFINE_COLORS } from '@vben/constants';
+import { PREDEFINE_COLORS } from '@x-monorepo/constants';
 
 import { ElColorPicker, ElInput } from 'element-plus';
 

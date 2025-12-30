@@ -3,7 +3,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { CrmReceivablePlanApi } from '#/api/crm/receivable/plan';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

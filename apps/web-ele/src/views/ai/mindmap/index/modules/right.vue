@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 import {
   MarkdownIt,
   Markmap,
   Toolbar,
   Transformer,
-} from '@vben/plugins/markmap';
-import { downloadImageByCanvas } from '@vben/utils';
+} from '@x-monorepo/plugins/markmap';
+import { downloadImageByCanvas } from '@x-monorepo/utils';
 
 import { ElButton, ElCard, ElMessage } from 'element-plus';
 

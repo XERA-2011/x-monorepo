@@ -3,7 +3,7 @@ import type { PayRefundApi } from '#/api/pay/refund';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { getRefund } from '#/api/pay/refund';
 import { useDescription } from '#/components/description';

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { HttpRequestParam } from '../../../consts';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import {
   ElButton,

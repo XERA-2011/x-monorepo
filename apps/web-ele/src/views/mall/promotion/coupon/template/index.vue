@@ -2,9 +2,9 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MallCouponTemplateApi } from '#/api/mall/promotion/coupon/couponTemplate';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { CommonStatusEnum } from '@vben/constants';
-import { $t } from '@vben/locales';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { CommonStatusEnum } from '@x-monorepo/constants';
+import { $t } from '@x-monorepo/locales';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

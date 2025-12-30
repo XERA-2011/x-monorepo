@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-import type { AnalysisOverviewItem } from '@vben/common-ui';
+import type { AnalysisOverviewItem } from '@x-monorepo/common-ui';
 
 import { computed } from 'vue';
 
-import { AnalysisOverview } from '@vben/common-ui';
+import { AnalysisOverview } from '@x-monorepo/common-ui';
 import {
   SvgBellIcon,
   SvgCakeIcon,
   SvgCardIcon,
   SvgDownloadIcon,
-} from '@vben/icons';
+} from '@x-monorepo/icons';
 
 interface Props {
   saleSummary?: {

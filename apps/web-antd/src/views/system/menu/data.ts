@@ -1,4 +1,4 @@
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@x-monorepo/types';
 
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
@@ -10,10 +10,10 @@ import {
   CommonStatusEnum,
   DICT_TYPE,
   SystemMenuTypeEnum,
-} from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
-import { handleTree, isHttpUrl } from '@vben/utils';
+} from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { handleTree, isHttpUrl } from '@x-monorepo/utils';
 
 import { z } from '#/adapter/form';
 import { getMenuList } from '#/api/system/menu';

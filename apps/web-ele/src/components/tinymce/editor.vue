@@ -15,8 +15,8 @@ import {
   watch,
 } from 'vue';
 
-import { preferences, usePreferences } from '@vben/preferences';
-import { buildShortUUID, isNumber } from '@vben/utils';
+import { preferences, usePreferences } from '@x-monorepo/preferences';
+import { buildShortUUID, isNumber } from '@x-monorepo/utils';
 
 import Editor from '@tinymce/tinymce-vue';
 

@@ -1,6 +1,6 @@
 import type { ComponentStyle, DiyComponent } from '../../../util';
 
-import { cloneDeep } from '@vben/utils';
+import { cloneDeep } from '@x-monorepo/utils';
 
 /** 列表导航属性 */
 export interface MenuListProperty {

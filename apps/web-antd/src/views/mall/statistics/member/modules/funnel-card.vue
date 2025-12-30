@@ -3,7 +3,7 @@ import type { Dayjs } from 'dayjs';
 
 import { ref } from 'vue';
 
-import { fenToYuan } from '@vben/utils';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { Card } from 'ant-design-vue';
 

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { DemoWithdrawApi } from '#/api/pay/demo/withdraw';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElMessage } from 'element-plus';
 

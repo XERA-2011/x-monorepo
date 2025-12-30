@@ -3,7 +3,7 @@ import type { InfraRedisApi } from '#/api/infra/redis';
 
 import { onMounted, ref } from 'vue';
 
-import { DocAlert, Page } from '@vben/common-ui';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
 
 import { ElCard } from 'element-plus';
 

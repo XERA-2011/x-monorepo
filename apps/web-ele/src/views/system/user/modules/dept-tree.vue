@@ -3,8 +3,8 @@ import type { SystemDeptApi } from '#/api/system/dept';
 
 import { onMounted, ref } from 'vue';
 
-import { Search } from '@vben/icons';
-import { handleTree } from '@vben/utils';
+import { Search } from '@x-monorepo/icons';
+import { handleTree } from '@x-monorepo/utils';
 
 import { ElInput, ElTree } from 'element-plus';
 

@@ -2,7 +2,7 @@
 import type { MemberUserApi } from '#/api/member/user';
 import type { PayWalletApi } from '#/api/pay/wallet/balance';
 
-import { fenToYuan } from '@vben/utils';
+import { fenToYuan } from '@x-monorepo/utils';
 
 import { Card } from 'ant-design-vue';
 

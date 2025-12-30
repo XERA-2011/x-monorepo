@@ -5,7 +5,7 @@ import type { MallCategoryApi } from '#/api/mall/product/category';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

@@ -3,7 +3,7 @@ import type { MagicCubeProperty } from './config';
 
 import { computed } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElImage } from 'element-plus';
 

@@ -5,8 +5,8 @@ import type { AppLink } from './data';
 
 import { nextTick, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { getUrlNumberValue } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { getUrlNumberValue } from '@x-monorepo/utils';
 
 import {
   ElButton,

@@ -4,8 +4,8 @@ import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 
 import { h } from 'vue';
 
-import { DocAlert, Page, prompt } from '@vben/common-ui';
-import { BpmProcessInstanceStatus } from '@vben/constants';
+import { DocAlert, Page, prompt } from '@x-monorepo/common-ui';
+import { BpmProcessInstanceStatus } from '@x-monorepo/constants';
 
 import { ElButton, ElInput, ElMessage } from 'element-plus';
 

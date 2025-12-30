@@ -4,9 +4,9 @@ import type { SystemMenuApi } from '#/api/system/menu';
 
 import { ref } from 'vue';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { SystemMenuTypeEnum } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { SystemMenuTypeEnum } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { message } from 'ant-design-vue';
 

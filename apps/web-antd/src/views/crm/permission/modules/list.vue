@@ -4,8 +4,8 @@ import type { CrmPermissionApi } from '#/api/crm/permission';
 
 import { ref, watch } from 'vue';
 
-import { confirm, useVbenModal } from '@vben/common-ui';
-import { useUserStore } from '@vben/stores';
+import { confirm, useVbenModal } from '@x-monorepo/common-ui';
+import { useUserStore } from '@x-monorepo/stores';
 
 import { message } from 'ant-design-vue';
 

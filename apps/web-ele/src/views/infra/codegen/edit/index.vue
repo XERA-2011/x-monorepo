@@ -4,8 +4,8 @@ import type { InfraCodegenApi } from '#/api/infra/codegen';
 import { ref, unref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { Page } from '@vben/common-ui';
-import { useTabs } from '@vben/hooks';
+import { Page } from '@x-monorepo/common-ui';
+import { useTabs } from '@x-monorepo/hooks';
 
 import { ElButton, ElLoading, ElMessage, ElStep, ElSteps } from 'element-plus';
 

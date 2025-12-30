@@ -5,7 +5,7 @@ import type { CrmProductApi } from '#/api/crm/product';
 
 import { nextTick, onMounted, ref, watch } from 'vue';
 
-import { erpPriceMultiply } from '@vben/utils';
+import { erpPriceMultiply } from '@x-monorepo/utils';
 
 import { ElInputNumber, ElOption, ElSelect } from 'element-plus';
 

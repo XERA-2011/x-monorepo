@@ -4,8 +4,8 @@ import type { BpmProcessExpressionApi } from '#/api/bpm/processExpression';
 
 import { reactive, ref } from 'vue';
 
-import { ContentWrap } from '@vben/common-ui';
-import { CommonStatusEnum } from '@vben/constants';
+import { ContentWrap } from '@x-monorepo/common-ui';
+import { CommonStatusEnum } from '@x-monorepo/constants';
 
 import { Button, Modal, Pagination, Table, TableColumn } from 'ant-design-vue';
 

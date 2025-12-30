@@ -1,4 +1,4 @@
-import type { AuthPermissionInfo } from '@vben/types';
+import type { AuthPermissionInfo } from '@x-monorepo/types';
 
 import { baseRequestClient, requestClient } from '#/api/request';
 

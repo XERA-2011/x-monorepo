@@ -4,8 +4,8 @@ import type { SystemAreaApi } from '#/api/system/area';
 
 import { computed, onMounted, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { cloneDeep, fenToYuan, yuanToFen } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { cloneDeep, fenToYuan, yuanToFen } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

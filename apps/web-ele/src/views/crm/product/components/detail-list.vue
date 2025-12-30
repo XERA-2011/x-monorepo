@@ -5,7 +5,7 @@ import type { CrmProductApi } from '#/api/crm/product';
 
 import { ref } from 'vue';
 
-import { erpPriceInputFormatter } from '@vben/utils';
+import { erpPriceInputFormatter } from '@x-monorepo/utils';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getBusiness } from '#/api/crm/business';

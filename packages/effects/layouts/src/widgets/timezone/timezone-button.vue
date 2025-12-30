@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { ref, unref } from 'vue';
 
-import { createIconifyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
-import { useTimezoneStore } from '@vben/stores';
+import { createIconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
+import { useTimezoneStore } from '@x-monorepo/stores';
 
-import { useVbenModal } from '@vben-core/popup-ui';
+import { useVbenModal } from '@x-monorepo-core/popup-ui';
 import {
   RadioGroup,
   RadioGroupItem,
   VbenIconButton,
-} from '@vben-core/shadcn-ui';
+} from '@x-monorepo-core/shadcn-ui';
 
 const TimezoneIcon = createIconifyIcon('fluent-mdl2:world-clock');
 

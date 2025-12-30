@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-import { useVbenForm, useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { useVbenForm, useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

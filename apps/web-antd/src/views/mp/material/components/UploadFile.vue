@@ -5,7 +5,7 @@ import type { UploadData } from './upload';
 
 import { inject, reactive, ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, message, Upload } from 'ant-design-vue';
 

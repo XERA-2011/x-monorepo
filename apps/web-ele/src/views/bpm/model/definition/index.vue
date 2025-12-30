@@ -5,9 +5,9 @@ import type { BpmProcessDefinitionApi } from '#/api/bpm/definition';
 import { onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { BpmModelFormType } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { BpmModelFormType } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElButton, ElTooltip } from 'element-plus';
 

@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import { ref } from 'vue';
 
-import { ContentWrap, Page } from '@vben/common-ui';
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
-import { addTime, betweenDay, formatDate } from '@vben/utils';
+import { ContentWrap, Page } from '@x-monorepo/common-ui';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
+import { addTime, betweenDay, formatDate } from '@x-monorepo/utils';
 
 import { ElCard, ElMessage } from 'element-plus';
 

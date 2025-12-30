@@ -4,8 +4,8 @@ import type { VxeToolbarInstance } from 'vxe-table';
 
 import { ref } from 'vue';
 
-import { useContentMaximize, useRefresh } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
+import { useContentMaximize, useRefresh } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { VxeButton, VxeTooltip } from 'vxe-pc-ui';
 import { VxeToolbar } from 'vxe-table';

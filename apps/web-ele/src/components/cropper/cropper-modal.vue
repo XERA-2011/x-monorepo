@@ -3,9 +3,9 @@ import type { CropendResult, CropperModalProps, CropperType } from './typing';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { $t } from '@vben/locales';
-import { dataURLtoBlob, isFunction } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { $t } from '@x-monorepo/locales';
+import { dataURLtoBlob, isFunction } from '@x-monorepo/utils';
 
 import {
   ElAvatar,

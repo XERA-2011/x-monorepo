@@ -5,9 +5,9 @@ import {
   DICT_TYPE,
   PromotionConditionTypeEnum,
   PromotionProductScopeEnum,
-} from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { $t } from '@vben/locales';
+} from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { $t } from '@x-monorepo/locales';
 
 import { z } from '#/adapter/form';
 import { getRangePickerDefaultProps } from '#/utils';

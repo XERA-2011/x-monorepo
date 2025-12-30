@@ -4,7 +4,7 @@ import type { MallSpuApi } from '#/api/mall/product/spu';
 
 import { computed, ref, watch } from 'vue';
 
-import { CloseCircleFilled, PlusOutlined } from '@vben/icons';
+import { CloseCircleFilled, PlusOutlined } from '@x-monorepo/icons';
 
 import { Image, Tooltip } from 'ant-design-vue';
 

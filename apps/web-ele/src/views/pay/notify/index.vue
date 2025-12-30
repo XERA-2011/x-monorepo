@@ -2,8 +2,8 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { PayNotifyApi } from '#/api/pay/notify';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { $t } from '@x-monorepo/locales';
 
 import { ElTag } from 'element-plus';
 

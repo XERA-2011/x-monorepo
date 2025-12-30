@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { useClipboard } from '@vueuse/core';
 import { Button, Card, message, Textarea } from 'ant-design-vue';

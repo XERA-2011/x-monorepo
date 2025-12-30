@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { onMounted } from 'vue';
 
-import { isEmpty } from '@vben/utils';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { useVModel } from '@vueuse/core';
 import { FormItem, Input, Switch } from 'ant-design-vue';

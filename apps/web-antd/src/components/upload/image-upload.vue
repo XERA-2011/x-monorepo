@@ -8,15 +8,15 @@ import type { AxiosProgressEvent } from '#/api/infra/file';
 
 import { computed, ref, toRefs, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
 import {
   defaultImageAccepts,
   isFunction,
   isImage,
   isObject,
   isString,
-} from '@vben/utils';
+} from '@x-monorepo/utils';
 
 import { message, Modal, Upload } from 'ant-design-vue';
 

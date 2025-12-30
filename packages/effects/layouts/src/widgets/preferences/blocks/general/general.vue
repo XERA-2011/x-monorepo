@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SUPPORT_LANGUAGES } from '@vben/constants';
-import { $t } from '@vben/locales';
+import { SUPPORT_LANGUAGES } from '@x-monorepo/constants';
+import { $t } from '@x-monorepo/locales';
 
 import InputItem from '../input-item.vue';
 import SelectItem from '../select-item.vue';

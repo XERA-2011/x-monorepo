@@ -5,9 +5,9 @@ import type { IotStatisticsApi } from '#/api/iot/statistics';
 
 import { computed, nextTick, onMounted, reactive, ref } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
 
 import { Card, Empty, Select } from 'ant-design-vue';
 import dayjs from 'dayjs';

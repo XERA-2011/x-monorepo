@@ -3,9 +3,9 @@ import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
 import { h } from 'vue';
 
-import { CommonStatusEnum, DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { convertToInteger, formatToFraction } from '@vben/utils';
+import { CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { convertToInteger, formatToFraction } from '@x-monorepo/utils';
 
 import { Tag } from 'ant-design-vue';
 

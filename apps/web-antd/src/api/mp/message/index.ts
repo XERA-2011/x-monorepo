@@ -1,6 +1,6 @@
-import type { PageParam, PageResult } from '@vben/request';
+import type { PageParam, PageResult } from '@x-monorepo/request';
 
-import { MessageType } from '@vben/constants';
+import { MessageType } from '@x-monorepo/constants';
 
 import { requestClient } from '#/api/request';
 

@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import { onMounted, ref } from 'vue';
 
-import { getDictOptions } from '@vben/hooks';
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
 
 import { ElCard } from 'element-plus';
 

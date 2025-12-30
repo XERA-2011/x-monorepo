@@ -4,8 +4,8 @@ import type { SystemDeptApi } from '#/api/system/dept';
 
 import { ref } from 'vue';
 
-import { confirm, Page, useVbenModal } from '@vben/common-ui';
-import { isEmpty } from '@vben/utils';
+import { confirm, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

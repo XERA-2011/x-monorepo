@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { inject } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Image } from 'ant-design-vue';
 

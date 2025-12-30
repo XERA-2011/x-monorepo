@@ -3,8 +3,8 @@ import type { MpDraftApi } from '#/api/mp/draft';
 
 import { computed, ref } from 'vue';
 
-import { confirm } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { confirm } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import {
   ElAside,

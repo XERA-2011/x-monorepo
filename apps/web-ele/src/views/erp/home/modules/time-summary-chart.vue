@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import type { ErpPurchaseStatisticsApi } from '#/api/erp/statistics/purchase';
 import type { ErpSaleStatisticsApi } from '#/api/erp/statistics/sale';
 
 import { onMounted, ref, watch } from 'vue';
 
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
 
 import { ElCard } from 'element-plus';
 

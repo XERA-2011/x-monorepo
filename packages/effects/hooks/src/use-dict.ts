@@ -1,5 +1,5 @@
-import { useDictStore } from '@vben/stores';
-import { isObject } from '@vben/utils';
+import { useDictStore } from '@x-monorepo/stores';
+import { isObject } from '@x-monorepo/utils';
 
 type ColorType = 'error' | 'info' | 'success' | 'warning';
 

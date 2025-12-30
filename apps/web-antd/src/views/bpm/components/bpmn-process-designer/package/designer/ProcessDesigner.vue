@@ -18,7 +18,7 @@ import {
   WarningOutlined,
   ZoomInOutlined,
   ZoomOutOutlined,
-} from '@vben/icons';
+} from '@x-monorepo/icons';
 
 import { Button, ButtonGroup, message, Modal, Tooltip } from 'ant-design-vue';
 // 模拟流转流程

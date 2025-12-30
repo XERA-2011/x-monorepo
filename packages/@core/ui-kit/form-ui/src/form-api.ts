@@ -7,13 +7,13 @@ import type {
 
 import type { ComponentPublicInstance } from 'vue';
 
-import type { Recordable } from '@vben-core/typings';
+import type { Recordable } from '@x-monorepo-core/typings';
 
 import type { FormActions, FormSchema, VbenFormProps } from './types';
 
 import { isRef, toRaw } from 'vue';
 
-import { Store } from '@vben-core/shared/store';
+import { Store } from '@x-monorepo-core/shared/store';
 import {
   bindMethods,
   createMerge,
@@ -24,7 +24,7 @@ import {
   isObject,
   mergeWithArrayOverride,
   StateHandler,
-} from '@vben-core/shared/utils';
+} from '@x-monorepo-core/shared/utils';
 
 function getDefaultState(): VbenFormProps {
   return {

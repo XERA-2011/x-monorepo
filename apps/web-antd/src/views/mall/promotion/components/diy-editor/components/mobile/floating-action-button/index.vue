@@ -3,7 +3,7 @@ import type { FloatingActionButtonProperty } from './config';
 
 import { ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Image } from 'ant-design-vue';
 

@@ -5,8 +5,8 @@ import type { SystemOperateLogApi } from '#/api/system/operate-log';
 import { onMounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { useTabs } from '@vben/hooks';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { useTabs } from '@x-monorepo/hooks';
 
 import { ElCard, ElTabPane, ElTabs } from 'element-plus';
 

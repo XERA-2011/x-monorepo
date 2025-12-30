@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import type { InfraRedisApi } from '#/api/infra/redis';
 
 import { onMounted, ref, watch } from 'vue';
 
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
 
 const props = defineProps<{
   redisData?: InfraRedisApi.RedisMonitorInfo;

@@ -3,7 +3,7 @@ import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { PayWalletApi } from '#/api/pay/wallet/balance';
 import type { WalletTransactionApi } from '#/api/pay/wallet/transaction';
 
-import { Page, useVbenModal } from '@vben/common-ui';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getTransactionPage } from '#/api/pay/wallet/transaction';

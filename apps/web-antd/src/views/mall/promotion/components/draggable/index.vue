@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { IconifyIcon } from '@vben/icons';
-import { cloneDeep } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { cloneDeep } from '@x-monorepo/utils';
 
 import { useVModel } from '@vueuse/core';
 import { Button, Tooltip } from 'ant-design-vue';

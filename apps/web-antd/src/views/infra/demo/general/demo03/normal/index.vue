@@ -3,17 +3,17 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/normal';
 
 import { onMounted, reactive, ref } from 'vue';
 
-import { ContentWrap, Page, useVbenModal } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
-import { useTableToolbar, VbenVxeTableToolbar } from '@vben/plugins/vxe-table';
+import { ContentWrap, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { useTableToolbar, VbenVxeTableToolbar } from '@x-monorepo/plugins/vxe-table';
 import {
   cloneDeep,
   downloadFileFromBlobPart,
   formatDateTime,
   isEmpty,
-} from '@vben/utils';
+} from '@x-monorepo/utils';
 
 import {
   Button,

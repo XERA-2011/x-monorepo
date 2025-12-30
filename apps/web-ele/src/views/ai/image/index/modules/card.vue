@@ -5,9 +5,9 @@ import type { AiImageApi } from '#/api/ai/image';
 
 import { onMounted, ref, toRefs, watch } from 'vue';
 
-import { confirm } from '@vben/common-ui';
-import { AiImageStatusEnum } from '@vben/constants';
-import { IconifyIcon } from '@vben/icons';
+import { confirm } from '@x-monorepo/common-ui';
+import { AiImageStatusEnum } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElButton, ElCard, ElImage, ElMessage } from 'element-plus';
 

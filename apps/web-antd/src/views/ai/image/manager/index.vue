@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiImageApi } from '#/api/ai/image';
 
-import { confirm, DocAlert, Page } from '@vben/common-ui';
+import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

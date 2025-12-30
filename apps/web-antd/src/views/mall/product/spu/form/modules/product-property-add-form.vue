@@ -5,7 +5,7 @@ import type { MallPropertyApi } from '#/api/mall/product/property';
 
 import { ref, watch } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 

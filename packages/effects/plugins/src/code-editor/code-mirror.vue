@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { Nullable } from '@vben/types';
+import type { Nullable } from '@x-monorepo/types';
 
 import type { CodeEditorProps } from './types';
 
@@ -13,7 +13,7 @@ import {
   watchEffect,
 } from 'vue';
 
-import { usePreferences } from '@vben/preferences';
+import { usePreferences } from '@x-monorepo/preferences';
 
 import { useDebounceFn, useWindowSize } from '@vueuse/core';
 import CodeMirror from 'codemirror';

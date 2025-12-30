@@ -8,10 +8,10 @@ import type { ThingModelData } from '#/api/iot/thingmodel';
 
 import { inject, ref } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { $t } from '@vben/locales';
-import { cloneDeep } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { $t } from '@x-monorepo/locales';
+import { cloneDeep } from '@x-monorepo/utils';
 
 import { Form, Input, message, Modal, Radio } from 'ant-design-vue';
 

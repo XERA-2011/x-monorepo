@@ -8,8 +8,8 @@ import type { ThingModelData } from '#/api/iot/thingmodel';
 
 import { computed, ref } from 'vue';
 
-import { ContentWrap } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { ContentWrap } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import {
   Button,

@@ -4,7 +4,7 @@ import type { ThingModelData } from '#/api/iot/thingmodel';
 
 import { ref } from 'vue';
 
-import { ContentWrap } from '@vben/common-ui';
+import { ContentWrap } from '@x-monorepo/common-ui';
 
 import { Tabs } from 'ant-design-vue';
 

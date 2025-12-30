@@ -6,9 +6,9 @@ import type {
   MenuRecordRaw,
   RouteMeta,
   RouteRecordStringComponent,
-} from '@vben-core/typings';
+} from '@x-monorepo-core/typings';
 
-import { filterTree, isHttpUrl, mapTree } from '@vben-core/shared/utils';
+import { filterTree, isHttpUrl, mapTree } from '@x-monorepo-core/shared/utils';
 
 /**
  * 根据 routes 生成菜单列表

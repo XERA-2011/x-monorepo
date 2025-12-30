@@ -1,10 +1,10 @@
 import type { VbenFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { z } from '@vben/common-ui';
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
-import { useUserStore } from '@vben/stores';
+import { z } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { useUserStore } from '@x-monorepo/stores';
 
 import { getAreaTree } from '#/api/system/area';
 import { getSimpleUserList } from '#/api/system/user';

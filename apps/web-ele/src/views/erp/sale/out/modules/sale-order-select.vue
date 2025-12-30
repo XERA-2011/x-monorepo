@@ -4,7 +4,7 @@ import type { ErpSaleOrderApi } from '#/api/erp/sale/order';
 
 import { ref } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
+import { IconifyIcon } from '@x-monorepo/icons';
 
 import { ElButton, ElDialog, ElInput, ElMessage } from 'element-plus';
 

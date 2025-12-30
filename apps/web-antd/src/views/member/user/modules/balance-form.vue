@@ -3,8 +3,8 @@ import type { MemberUserApi } from '#/api/member/user';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { fenToYuan, yuanToFen } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { fenToYuan, yuanToFen } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 

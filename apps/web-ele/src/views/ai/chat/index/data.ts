@@ -1,6 +1,6 @@
 import type { VbenFormSchema } from '#/adapter/form';
 
-import { AiModelTypeEnum } from '@vben/constants';
+import { AiModelTypeEnum } from '@x-monorepo/constants';
 
 import { getModelSimpleList } from '#/api/ai/model/model';
 

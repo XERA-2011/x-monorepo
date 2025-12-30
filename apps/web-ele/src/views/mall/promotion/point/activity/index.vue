@@ -4,7 +4,7 @@ import type { MallPointActivityApi } from '#/api/mall/promotion/point';
 
 import { computed } from 'vue';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@vben/common-ui';
+import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

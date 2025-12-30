@@ -4,8 +4,8 @@ import type { MpMessageApi } from '#/api/mp/message';
 
 import { onMounted, watch } from 'vue';
 
-import { MpMsgType as MsgType } from '@vben/constants';
-import { formatDate2 } from '@vben/utils';
+import { MpMsgType as MsgType } from '@x-monorepo/constants';
+import { formatDate2 } from '@x-monorepo/utils';
 
 import { Button, Image, Tag } from 'ant-design-vue';
 

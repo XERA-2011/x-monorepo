@@ -6,10 +6,10 @@ import type { AiChatMessageApi } from '#/api/ai/chat/message';
 
 import { computed, nextTick, onMounted, ref, toRefs } from 'vue';
 
-import { IconifyIcon, SvgGptIcon } from '@vben/icons';
-import { preferences } from '@vben/preferences';
-import { useUserStore } from '@vben/stores';
-import { formatDateTime } from '@vben/utils';
+import { IconifyIcon, SvgGptIcon } from '@x-monorepo/icons';
+import { preferences } from '@x-monorepo/preferences';
+import { useUserStore } from '@x-monorepo/stores';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { useClipboard } from '@vueuse/core';
 import { ElAvatar, ElButton, ElMessage } from 'element-plus';

@@ -1,4 +1,4 @@
-import type { AxiosRequestConfig, PageParam, PageResult } from '@vben/request';
+import type { AxiosRequestConfig, PageParam, PageResult } from '@x-monorepo/request';
 
 import { requestClient } from '#/api/request';
 

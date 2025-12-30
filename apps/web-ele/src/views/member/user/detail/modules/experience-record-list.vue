@@ -5,8 +5,8 @@ import type { MemberExperienceRecordApi } from '#/api/member/experience-record';
 
 import { h } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { ElTag } from 'element-plus';
 

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue';
 
-import { $t } from '@vben/locales';
+import { $t } from '@x-monorepo/locales';
 
-import { useVbenModal } from '@vben-core/popup-ui';
+import { useVbenModal } from '@x-monorepo-core/popup-ui';
 
 interface Props {
   // 轮询时间，分钟

@@ -3,7 +3,7 @@ import type { CrmCustomerApi } from '#/api/crm/customer';
 
 import { computed, ref } from 'vue';
 
-import { useVbenForm, useVbenModal } from '@vben/common-ui';
+import { useVbenForm, useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElMessage } from 'element-plus';
 

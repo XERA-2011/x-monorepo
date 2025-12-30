@@ -7,8 +7,8 @@ import {
   AutoReplyMsgType,
   DICT_TYPE,
   RequestMessageTypes,
-} from '@vben/constants';
-import { getDictOptions } from '@vben/hooks';
+} from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
 
 import { WxReply } from '#/views/mp/components';
 

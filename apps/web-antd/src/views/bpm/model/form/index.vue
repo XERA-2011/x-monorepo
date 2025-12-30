@@ -8,15 +8,15 @@ import type { SystemUserApi } from '#/api/system/user';
 import { onBeforeUnmount, onMounted, provide, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { confirm, Page } from '@vben/common-ui';
+import { confirm, Page } from '@x-monorepo/common-ui';
 import {
   BpmAutoApproveType,
   BpmModelFormType,
   BpmModelType,
-} from '@vben/constants';
-import { useTabs } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
-import { useUserStore } from '@vben/stores';
+} from '@x-monorepo/constants';
+import { useTabs } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { useUserStore } from '@x-monorepo/stores';
 
 import { Button, Card, message } from 'ant-design-vue';
 

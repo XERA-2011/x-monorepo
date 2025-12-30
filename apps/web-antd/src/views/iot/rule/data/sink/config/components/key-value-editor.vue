@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { isEmpty } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { isEmpty } from '@x-monorepo/utils';
 
 import { Button, Input } from 'ant-design-vue';
 

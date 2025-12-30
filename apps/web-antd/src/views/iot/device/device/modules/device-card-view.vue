@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 
-import { DICT_TYPE } from '@vben/constants';
-import { getDictLabel, getDictObj } from '@vben/hooks';
-import { IconifyIcon } from '@vben/icons';
-import { isValidColor, TinyColor } from '@vben/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel, getDictObj } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { isValidColor, TinyColor } from '@x-monorepo/utils';
 
 import {
   Button,

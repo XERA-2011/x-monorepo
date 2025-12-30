@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiMusicApi } from '#/api/ai/music';
 
-import { confirm, DocAlert, Page } from '@vben/common-ui';
+import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
 
 import { ElButton, ElLoading, ElMessage } from 'element-plus';
 

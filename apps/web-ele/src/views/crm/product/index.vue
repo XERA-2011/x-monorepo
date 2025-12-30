@@ -4,8 +4,8 @@ import type { CrmProductApi } from '#/api/crm/product';
 
 import { useRouter } from 'vue-router';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { downloadFileFromBlobPart } from '@vben/utils';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { ElButton, ElLoading, ElMessage } from 'element-plus';
 

@@ -3,7 +3,7 @@ import type { CrmBusinessStatusApi } from '#/api/crm/business/status';
 
 import { computed, nextTick, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElInput, ElInputNumber, ElMessage } from 'element-plus';
 

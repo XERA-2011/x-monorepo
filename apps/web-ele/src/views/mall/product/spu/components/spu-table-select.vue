@@ -7,8 +7,8 @@ import type { MallSpuApi } from '#/api/mall/product/spu';
 
 import { computed, onMounted, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { handleTree } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { handleTree } from '@x-monorepo/utils';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getCategoryList } from '#/api/mall/product/category';

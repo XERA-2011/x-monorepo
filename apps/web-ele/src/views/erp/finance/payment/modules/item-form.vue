@@ -5,8 +5,8 @@ import type { ErpPurchaseReturnApi } from '#/api/erp/purchase/return';
 
 import { computed, nextTick, ref, watch } from 'vue';
 
-import { ErpBizType } from '@vben/constants';
-import { erpPriceInputFormatter } from '@vben/utils';
+import { ErpBizType } from '@x-monorepo/constants';
+import { erpPriceInputFormatter } from '@x-monorepo/utils';
 
 import { ElInput, ElInputNumber, ElMessage } from 'element-plus';
 

@@ -3,8 +3,8 @@ import type { WalletRechargePackageApi } from '#/api/pay/wallet/rechargePackage'
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
-import { fenToYuan, yuanToFen } from '@vben/utils';
+import { useVbenModal } from '@x-monorepo/common-ui';
+import { fenToYuan, yuanToFen } from '@x-monorepo/utils';
 
 import { ElMessage } from 'element-plus';
 

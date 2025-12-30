@@ -4,7 +4,7 @@ import type { MallRewardActivityApi } from '#/api/mall/promotion/reward/rewardAc
 
 import { nextTick, onMounted, ref, watch } from 'vue';
 
-import { CouponTemplateTakeTypeEnum, DICT_TYPE } from '@vben/constants';
+import { CouponTemplateTakeTypeEnum, DICT_TYPE } from '@x-monorepo/constants';
 
 import { useVModel } from '@vueuse/core';
 import { Button, Input } from 'ant-design-vue';

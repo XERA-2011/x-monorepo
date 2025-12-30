@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue';
 
-import { handleTree } from '@vben/utils';
+import { handleTree } from '@x-monorepo/utils';
 
 import { ElTreeSelect } from 'element-plus';
 

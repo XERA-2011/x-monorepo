@@ -3,9 +3,9 @@ import type { DiyComponent, DiyComponentLibrary, PageConfig } from './util';
 
 import { onMounted, ref, unref, watch } from 'vue';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { cloneDeep, isEmpty, isString } from '@vben/utils';
+import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { cloneDeep, isEmpty, isString } from '@x-monorepo/utils';
 
 import { Button, Card, Col, QRCode, Row, Tag, Tooltip } from 'ant-design-vue';
 import draggable from 'vuedraggable';

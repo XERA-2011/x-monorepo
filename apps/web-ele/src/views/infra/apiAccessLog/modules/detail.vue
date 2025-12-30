@@ -3,7 +3,7 @@ import type { InfraApiAccessLogApi } from '#/api/infra/api-access-log';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@vben/common-ui';
+import { useVbenModal } from '@x-monorepo/common-ui';
 
 import { useDescription } from '#/components/description';
 

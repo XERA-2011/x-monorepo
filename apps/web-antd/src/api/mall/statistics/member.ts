@@ -2,7 +2,7 @@ import type { Dayjs } from 'dayjs';
 
 import type { DataComparisonRespVO } from './common';
 
-import { formatDateTime } from '@vben/utils';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { requestClient } from '#/api/request';
 

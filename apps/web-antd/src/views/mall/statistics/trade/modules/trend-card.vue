@@ -1,22 +1,22 @@
 <script lang="ts" setup>
 import type { Dayjs } from 'dayjs';
 
-import type { EchartsUIType } from '@vben/plugins/echarts';
+import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
 import type { DataComparisonRespVO } from '#/api/mall/statistics/common';
 import type { MallTradeStatisticsApi } from '#/api/mall/statistics/trade';
 
 import { ref } from 'vue';
 
-import { confirm, SummaryCard } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
-import { EchartsUI, useEcharts } from '@vben/plugins/echarts';
+import { confirm, SummaryCard } from '@x-monorepo/common-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
 import {
   downloadFileFromBlobPart,
   fenToYuan,
   formatDateTime,
   isSameDay,
-} from '@vben/utils';
+} from '@x-monorepo/utils';
 
 import { Button, Card, Col, Row, Spin } from 'ant-design-vue';
 import dayjs from 'dayjs';

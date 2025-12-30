@@ -1,16 +1,16 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@vben/common-ui';
-import type { Recordable } from '@vben/types';
+import type { VbenFormSchema } from '@x-monorepo/common-ui';
+import type { Recordable } from '@x-monorepo/types';
 
 import type { AuthApi } from '#/api';
 
 import { computed, onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { AuthenticationForgetPassword, z } from '@vben/common-ui';
-import { isTenantEnable } from '@vben/hooks';
-import { $t } from '@vben/locales';
-import { useAccessStore } from '@vben/stores';
+import { AuthenticationForgetPassword, z } from '@x-monorepo/common-ui';
+import { isTenantEnable } from '@x-monorepo/hooks';
+import { $t } from '@x-monorepo/locales';
+import { useAccessStore } from '@x-monorepo/stores';
 
 import { message } from 'ant-design-vue';
 

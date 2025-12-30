@@ -4,7 +4,7 @@ import type { AiKnowledgeKnowledgeApi } from '#/api/ai/knowledge/knowledge';
 
 import { useRouter } from 'vue-router';
 
-import { DocAlert, Page, useVbenModal } from '@vben/common-ui';
+import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 

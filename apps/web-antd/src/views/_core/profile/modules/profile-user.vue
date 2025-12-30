@@ -3,9 +3,9 @@ import type { SystemUserProfileApi } from '#/api/system/user/profile';
 
 import { computed } from 'vue';
 
-import { IconifyIcon } from '@vben/icons';
-import { preferences } from '@vben/preferences';
-import { formatDateTime } from '@vben/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { preferences } from '@x-monorepo/preferences';
+import { formatDateTime } from '@x-monorepo/utils';
 
 import { Descriptions, DescriptionsItem, Tooltip } from 'ant-design-vue';
 

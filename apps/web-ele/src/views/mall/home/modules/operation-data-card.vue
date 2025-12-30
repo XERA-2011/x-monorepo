@@ -2,7 +2,7 @@
 import { onActivated, onMounted, reactive } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { CountTo } from '@vben/common-ui';
+import { CountTo } from '@x-monorepo/common-ui';
 
 import { ElCard } from 'element-plus';
 

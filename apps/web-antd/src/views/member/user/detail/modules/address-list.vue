@@ -2,7 +2,7 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { MemberAddressApi } from '#/api/member/address';
 
-import { DICT_TYPE } from '@vben/constants';
+import { DICT_TYPE } from '@x-monorepo/constants';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
 import { getAddressList } from '#/api/member/address';
