@@ -22,7 +22,12 @@
             >
               关于
             </NuxtLink>
-            <UColorModeButton />
+            <UButton
+              :icon="isDark ? 'i-heroicons-sun' : 'i-heroicons-moon'"
+              color="gray"
+              variant="ghost"
+              @click="isDark = !isDark"
+            />
           </nav>
         </div>
       </div>
@@ -43,3 +48,11 @@
     </footer>
   </div>
 </template>
+
+<script setup lang="ts">
+const colorMode = useColorMode()
+const isDark = computed({
+  get: () => colorMode.value === 'dark',
+  set: (v) => colorMode.preference = v ? 'dark' : 'light'
+})
+</script>
