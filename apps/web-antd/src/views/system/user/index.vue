@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemDeptApi } from '#/api/system/dept';
 import type { SystemUserApi } from '#/api/system/user';
 
@@ -165,7 +164,10 @@ const [Grid, gridApi] = useXAppVxeGrid({
     keepSource: true,
     proxyConfig: {
       ajax: {
-        query: async ({ page }, formValues) => {
+        query: async (
+          { page }: { page: { currentPage: number; pageSize: number } },
+          formValues: any,
+        ) => {
           return await getUserPage({
             pageNo: page.currentPage,
             pageSize: page.pageSize,
@@ -183,7 +185,7 @@ const [Grid, gridApi] = useXAppVxeGrid({
       refresh: true,
       search: true,
     },
-  } as VxeTableGridOptions<SystemUserApi.User>,
+  } as any,
   gridEvents: {
     checkboxAll: handleRowCheckboxChange,
     checkboxChange: handleRowCheckboxChange,
@@ -253,40 +255,46 @@ const [Grid, gridApi] = useXAppVxeGrid({
           </template>
           <template #actions="{ row }">
             <TableAction
-              :actions="[
-                {
-                  label: $t('common.edit'),
-                  type: 'link',
-                  icon: ACTION_ICON.EDIT,
-                  auth: ['system:user:update'],
-                  onClick: handleEdit.bind(null, row),
-                },
-                {
-                  label: $t('common.delete'),
-                  type: 'link',
-                  danger: true,
-                  icon: ACTION_ICON.DELETE,
-                  auth: ['system:user:delete'],
-                  popConfirm: {
-                    title: $t('ui.actionMessage.deleteConfirm', [row.username]),
-                    confirm: handleDelete.bind(null, row),
+              :actions="
+                [
+                  {
+                    label: $t('common.edit'),
+                    type: 'link',
+                    icon: ACTION_ICON.EDIT,
+                    auth: ['system:user:update'],
+                    onClick: handleEdit.bind(null, row),
                   },
-                },
-              ]"
-              :drop-down-actions="[
-                {
-                  label: '分配角色',
-                  type: 'link',
-                  auth: ['system:permission:assign-user-role'],
-                  onClick: handleAssignRole.bind(null, row),
-                },
-                {
-                  label: '重置密码',
-                  type: 'link',
-                  auth: ['system:user:update-password'],
-                  onClick: handleResetPassword.bind(null, row),
-                },
-              ]"
+                  {
+                    label: $t('common.delete'),
+                    type: 'link',
+                    danger: true,
+                    icon: ACTION_ICON.DELETE,
+                    auth: ['system:user:delete'],
+                    popConfirm: {
+                      title: $t('ui.actionMessage.deleteConfirm', [
+                        row.username,
+                      ]),
+                      confirm: handleDelete.bind(null, row),
+                    },
+                  },
+                ] as any
+              "
+              :drop-down-actions="
+                [
+                  {
+                    label: '分配角色',
+                    type: 'link',
+                    auth: ['system:permission:assign-user-role'],
+                    onClick: handleAssignRole.bind(null, row),
+                  },
+                  {
+                    label: '重置密码',
+                    type: 'link',
+                    auth: ['system:user:update-password'],
+                    onClick: handleResetPassword.bind(null, row),
+                  },
+                ] as any
+              "
             />
           </template>
         </Grid>

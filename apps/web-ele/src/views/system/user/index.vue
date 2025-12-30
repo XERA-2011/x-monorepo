@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemDeptApi } from '#/api/system/dept';
 import type { SystemUserApi } from '#/api/system/user';
 
@@ -163,7 +162,10 @@ const [Grid, gridApi] = useXAppVxeGrid({
     keepSource: true,
     proxyConfig: {
       ajax: {
-        query: async ({ page }, formValues) => {
+        query: async (
+          { page }: { page: { currentPage: number; pageSize: number } },
+          formValues: any,
+        ) => {
           return await getUserPage({
             pageNo: page.currentPage,
             pageSize: page.pageSize,
@@ -181,7 +183,7 @@ const [Grid, gridApi] = useXAppVxeGrid({
       refresh: true,
       search: true,
     },
-  } as VxeTableGridOptions<SystemUserApi.User>,
+  } as any,
   gridEvents: {
     checkboxAll: handleRowCheckboxChange,
     checkboxChange: handleRowCheckboxChange,
@@ -245,7 +247,7 @@ const [Grid, gridApi] = useXAppVxeGrid({
                   auth: ['system:user:delete'],
                   onClick: handleDeleteBatch,
                 },
-              ]"
+              ] as any"
             />
           </template>
           <template #actions="{ row }">
@@ -270,7 +272,7 @@ const [Grid, gridApi] = useXAppVxeGrid({
                     confirm: handleDelete.bind(null, row),
                   },
                 },
-              ]"
+              ] as any"
               :drop-down-actions="[
                 {
                   label: '分配角色',
@@ -286,7 +288,7 @@ const [Grid, gridApi] = useXAppVxeGrid({
                   auth: ['system:user:update-password'],
                   onClick: handleResetPassword.bind(null, row),
                 },
-              ]"
+              ] as any"
             />
           </template>
         </Grid>

@@ -315,7 +315,7 @@ async function init() {
       '[XApp Vxe Table]: The formConfig in the grid is not supported, please use the `formOptions` props',
     );
   }
-  props.api?.setState?.({ gridOptions: defaultGridOptions });
+  props.api?.setState?.({ gridOptions: defaultGridOptions as any });
   // form 由 x-app-form 代替，所以需要保证query相关事件可以拿到参数
   extendProxyOptions(props.api, defaultGridOptions, () =>
     formApi.getLatestSubmissionValues(),
