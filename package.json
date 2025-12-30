@@ -2,8 +2,12 @@
     "name": "x-monorepo",
     "private": true,
     "scripts": {
-        "build": "turbo run build",
         "dev": "turbo run dev",
+        "dev:web": "pnpm --filter nuxt-web dev",
+        "dev:admin": "pnpm --filter nuxt-admin dev",
+        "build": "turbo run build",
+        "build:web": "pnpm --filter nuxt-web build",
+        "build:admin": "pnpm --filter nuxt-admin build",
         "lint": "turbo run lint",
         "format": "prettier --write \"**/*.{ts,tsx,md}\""
     },
