@@ -1,4 +1,4 @@
-<!-- add by 星语：参考 vben2 的方式，增加 TableAction 组件 -->
+<!-- add by 星语：参考 xapp2 的方式，增加 TableAction 组件 -->
 <script setup lang="ts">
 import type { PropType } from 'vue';
 

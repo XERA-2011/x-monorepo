@@ -509,7 +509,7 @@ $namespace: x-app;
     --menu-item-padding-x: 12px;
   }
 
-  // .vben-menu__popup,
+  // .x-app-menu__popup,
   &.is-horizontal {
     --menu-item-padding-y: 0px;
     --menu-item-padding-x: 10px;

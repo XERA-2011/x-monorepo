@@ -16,18 +16,18 @@ const alerts = ref<Array<{ container: HTMLElement; instance: Component }>>([]);
 
 const { $t } = useSimpleLocale();
 
-export function vbenAlert(options: AlertProps): Promise<void>;
-export function vbenAlert(
+export function xAppAlert(options: AlertProps): Promise<void>;
+export function xAppAlert(
   message: string,
   options?: Partial<AlertProps>,
 ): Promise<void>;
-export function vbenAlert(
+export function xAppAlert(
   message: string,
   title?: string,
   options?: Partial<AlertProps>,
 ): Promise<void>;
 
-export function vbenAlert(
+export function xAppAlert(
   arg0: AlertProps | string,
   arg1?: Partial<AlertProps> | string,
   arg2?: Partial<AlertProps>,
@@ -95,18 +95,18 @@ export function vbenAlert(
   });
 }
 
-export function vbenConfirm(options: AlertProps): Promise<void>;
-export function vbenConfirm(
+export function xAppConfirm(options: AlertProps): Promise<void>;
+export function xAppConfirm(
   message: string,
   options?: Partial<AlertProps>,
 ): Promise<void>;
-export function vbenConfirm(
+export function xAppConfirm(
   message: string,
   title?: string,
   options?: Partial<AlertProps>,
 ): Promise<void>;
 
-export function vbenConfirm(
+export function xAppConfirm(
   arg0: AlertProps | string,
   arg1?: Partial<AlertProps> | string,
   arg2?: Partial<AlertProps>,
@@ -116,20 +116,20 @@ export function vbenConfirm(
   };
   if (!arg1) {
     return isString(arg0)
-      ? vbenAlert(arg0, defaultProps)
-      : vbenAlert({ ...defaultProps, ...arg0 });
+      ? xAppAlert(arg0, defaultProps)
+      : xAppAlert({ ...defaultProps, ...arg0 });
   } else if (!arg2) {
     return isString(arg1)
-      ? vbenAlert(arg0 as string, arg1, defaultProps)
-      : vbenAlert(arg0 as string, { ...defaultProps, ...arg1 });
+      ? xAppAlert(arg0 as string, arg1, defaultProps)
+      : xAppAlert(arg0 as string, { ...defaultProps, ...arg1 });
   }
-  return vbenAlert(arg0 as string, arg1 as string, {
+  return xAppAlert(arg0 as string, arg1 as string, {
     ...defaultProps,
     ...arg2,
   });
 }
 
-export async function vbenPrompt<T = any>(
+export async function xAppPrompt<T = any>(
   options: PromptProps<T>,
 ): Promise<T | undefined> {
   const {
@@ -230,7 +230,7 @@ export async function vbenPrompt<T = any>(
     },
   };
 
-  await vbenConfirm(props);
+  await xAppConfirm(props);
   return modelValue.value;
 }
 

@@ -67,12 +67,12 @@ const projectItems: WorkbenchProjectItem[] = [
   },
   {
     color: '#e18525',
-    content: 'github.com/yudaocode/yudao-ui-admin-vben',
+    content: 'github.com/yudaocode/x-monorepo',
     date: '2025-05-06',
-    group: 'Vue3 + vben5(antd) 管理后台',
+    group: 'Vue3 + xapp5(antd) 管理后台',
     icon: 'devicon:antdesign',
-    title: 'yudao-ui-admin-vben',
-    url: 'https://github.com/yudaocode/yudao-ui-admin-vben',
+    title: 'x-monorepo',
+    url: 'https://github.com/yudaocode/x-monorepo',
   },
   {
     color: '#2979ff',

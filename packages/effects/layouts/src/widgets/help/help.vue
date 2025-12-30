@@ -34,7 +34,7 @@ const [Modal, modalApi] = useXAppModal({
           <XAppButton
             variant="link"
             @click="
-              openWindow('https://gitee.com/yudaocode/yudao-ui-admin-vben')
+              openWindow('https://gitee.com/yudaocode/x-monorepo')
             "
           >
             Gitee
@@ -42,7 +42,7 @@ const [Modal, modalApi] = useXAppModal({
           <XAppButton
             variant="link"
             @click="
-              openWindow('https://github.com/yudaocode/yudao-ui-admin-vben')
+              openWindow('https://github.com/yudaocode/x-monorepo')
             "
           >
             Github
@@ -55,7 +55,7 @@ const [Modal, modalApi] = useXAppModal({
             variant="link"
             @click="
               openWindow(
-                'https://gitee.com/yudaocode/yudao-ui-admin-vben/issues',
+                'https://gitee.com/yudaocode/x-monorepo/issues',
               )
             "
           >
@@ -65,7 +65,7 @@ const [Modal, modalApi] = useXAppModal({
             variant="link"
             @click="
               openWindow(
-                'https://github.com/yudaocode/yudao-ui-admin-vben/issues',
+                'https://github.com/yudaocode/x-monorepo/issues',
               )
             "
           >

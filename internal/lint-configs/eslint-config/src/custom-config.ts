@@ -82,7 +82,7 @@ const customConfig: Linter.Config[] = [
             {
               group: ['@x-monorepo/*'],
               message:
-                'The @core package cannot import the @vben package, please use the @core package itself',
+                'The @core package cannot import the @x-monorepo package, please use the @core package itself',
             },
           ],
         },
@@ -101,7 +101,7 @@ const customConfig: Linter.Config[] = [
             {
               group: ['@x-monorepo/*', '@x-monorepo-core/*'],
               message:
-                'The @x-monorepo-core/shared package cannot import the @vben package, please use the @core/shared package itself',
+                'The @x-monorepo-core/shared package cannot import the @x-monorepo package, please use the @core/shared package itself',
             },
           ],
         },
@@ -130,7 +130,7 @@ const customConfig: Linter.Config[] = [
             {
               group: ['@x-monorepo/*'],
               message:
-                'The @vben package cannot be imported, please use the @core package itself',
+                'The @x-monorepo package cannot be imported, please use the @core package itself',
             },
           ],
         },

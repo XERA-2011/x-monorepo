@@ -9,10 +9,10 @@ export function getPopupContainer(node?: HTMLElement): HTMLElement {
   );
 }
 
-// TODO @xingyu：这个需要 pr 给 vben 官方么？体感上，这个是全局性的哈；
+// TODO @xingyu：这个需要 pr 给 x-app 官方么？体感上，这个是全局性的哈；
 /**
  * VxeTable专用弹窗层
- * 解决问题: https://gitee.com/dapppp/ruoyi-plus-vben5/issues/IB1DM3
+ * 解决问题: https://gitee.com/dapppp/ruoyi-plus-xapp5/issues/IB1DM3
  * 单表格用法跟上面getPopupContainer一样
  * 一个页面(body下)有多个表格元素 必须先指定ID & ID参数传入该函数
  * <BasicTable id="xxx" />

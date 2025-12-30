@@ -62,7 +62,7 @@ const {
   // vite inject-metadata 插件注入的全局变量
 } = __VBEN_ADMIN_METADATA__ || {};
 
-const vbenDescriptionItems: DescriptionItem[] = [
+const xAppDescriptionItems: DescriptionItem[] = [
   {
     content: version,
     title: '版本号',
@@ -115,7 +115,7 @@ const devDependenciesItems = Object.keys(devDependencies).map((key) => ({
   <Page :title="title">
     <template #description>
       <p class="text-foreground mt-3 text-sm leading-6">
-        <a :href="PROJECT_GITHUB_URL" class="vben-link" target="_blank">
+        <a :href="PROJECT_GITHUB_URL" class="x-app-link" target="_blank">
           {{ name }}
         </a>
         {{ description }}
@@ -127,7 +127,7 @@ const devDependenciesItems = Object.keys(devDependencies).map((key) => ({
       </div>
       <div class="mt-4">
         <dl class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <template v-for="item in vbenDescriptionItems" :key="item.title">
+          <template v-for="item in xAppDescriptionItems" :key="item.title">
             <div class="border-border border-t px-4 py-6 sm:col-span-1 sm:px-0">
               <dt class="text-foreground text-sm font-medium leading-6">
                 {{ item.title }}

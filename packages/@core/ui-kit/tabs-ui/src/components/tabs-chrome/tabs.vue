@@ -16,7 +16,7 @@ defineOptions({
 });
 
 const props = withDefaults(defineProps<Props>(), {
-  contentClass: 'vben-tabs-content',
+  contentClass: 'x-app-tabs-content',
   contextMenus: () => [],
   gap: 7,
   tabs: () => [],

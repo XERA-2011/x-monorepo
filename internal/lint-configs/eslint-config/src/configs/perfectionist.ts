@@ -23,13 +23,13 @@ export async function perfectionist(): Promise<Linter.Config[]> {
           {
             customGroups: {
               type: {
-                'vben-core-type': ['^@x-monorepo-core/.+'],
-                'vben-type': ['^@x-monorepo/.+'],
+                'x-monorepo-core-type': ['^@x-monorepo-core/.+'],
+                'x-monorepo-type': ['^@x-monorepo/.+'],
                 'vue-type': ['^vue$', '^vue-.+', '^@vue/.+'],
               },
               value: {
-                vben: ['^@x-monorepo/.+'],
-                'vben-core': ['^@x-monorepo-core/.+'],
+                'x-monorepo': ['^@x-monorepo/.+'],
+                'x-monorepo-core': ['^@x-monorepo-core/.+'],
                 vue: ['^vue$', '^vue-.+', '^@vue/.+'],
               },
             },
@@ -37,14 +37,14 @@ export async function perfectionist(): Promise<Linter.Config[]> {
             groups: [
               ['external-type', 'builtin-type', 'type'],
               'vue-type',
-              'vben-type',
-              'vben-core-type',
+              'x-monorepo-type',
+              'x-monorepo-core-type',
               ['parent-type', 'sibling-type', 'index-type'],
               ['internal-type'],
               'builtin',
               'vue',
-              'vben',
-              'vben-core',
+              'x-monorepo',
+              'x-monorepo-core',
               'external',
               'internal',
               ['parent', 'sibling', 'index'],

@@ -122,8 +122,8 @@ const initOptions = computed((): InitOptions => {
     branding: false, // 禁止显示，右下角的“使用 TinyMCE 构建”
     default_link_target: '_blank',
     link_title: false,
-    object_resizing: true, // 和 vben2.0 不同，它默认是 false
-    auto_focus: undefined, // 和 vben2.0 不同，它默认是 true
+    object_resizing: true, // 和 xapp2.0 不同，它默认是 false
+    auto_focus: undefined, // 和 xapp2.0 不同，它默认是 true
     skin: skinName.value,
     content_css: contentCss.value,
     content_style:
@@ -322,7 +322,7 @@ function handleError(name: string) {
 </template>
 <style lang="scss">
 .tox.tox-silver-sink.tox-tinymce-aux {
-  z-index: 2025; /* 由于 vben modal/drawer 的 zIndex 为 2000，需要调整 z-index（默认 1300）超过它，避免遮挡 */
+  z-index: 2025; /* 由于 x-app modal/drawer 的 zIndex 为 2000，需要调整 z-index（默认 1300）超过它，避免遮挡 */
 }
 </style>
 

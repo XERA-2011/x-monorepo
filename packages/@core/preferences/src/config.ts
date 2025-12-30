@@ -42,7 +42,7 @@ const defaultPreferences: Preferences = {
   },
   copyright: {
     companyName: 'XApp',
-    companySiteLink: 'https://www.vben.pro',
+    companySiteLink: 'https://github.com/XERA-2011/x-monorepo',
     date: '2024',
     enable: true,
     icp: '',

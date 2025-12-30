@@ -18,7 +18,7 @@ export * from './unique';
 export * from './update-css-variables';
 export * from './upload';
 export * from './util';
-export * from './uuid'; // add by 芋艿：从 vben2.0 复制
+export * from './uuid'; // add by 芋艿：从 xapp2.0 复制
 export * from './window';
 export { get, isEqual, set } from 'es-toolkit/compat';
 // export { cloneDeep } from 'es-toolkit/object';

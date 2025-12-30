@@ -16,7 +16,7 @@ withDefaults(
   <div
     :class="
       cn(
-        'vben-button-group rounded-md',
+        'x-app-button-group rounded-md',
         `size-${size}`,
         gap ? 'with-gap' : 'no-gap',
         $attrs.class as string,
@@ -29,7 +29,7 @@ withDefaults(
 </template>
 
 <style lang="scss" scoped>
-.vben-button-group {
+.x-app-button-group {
   display: inline-flex;
 
   &.size-large :deep(button) {

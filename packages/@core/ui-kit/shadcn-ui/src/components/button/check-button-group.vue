@@ -108,7 +108,7 @@ async function onBtnClick(value: ValueType) {
   <XAppButtonGroup
     :size="props.size"
     :gap="props.gap"
-    class="vben-check-button-group"
+    class="x-app-check-button-group"
   >
     <Button
       v-for="(btn, index) in props.options"
@@ -145,7 +145,7 @@ async function onBtnClick(value: ValueType) {
   </XAppButtonGroup>
 </template>
 <style lang="scss" scoped>
-.vben-check-button-group {
+.x-app-check-button-group {
   display: flex;
   flex-wrap: wrap;
 

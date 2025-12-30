@@ -122,8 +122,8 @@ const initOptions = computed((): InitOptions => {
     branding: false, // 禁止显示，右下角的“使用 TinyMCE 构建”
     default_link_target: '_blank',
     link_title: false,
-    object_resizing: true, // 和 vben2.0 不同，它默认是 false
-    auto_focus: undefined, // 和 vben2.0 不同，它默认是 true
+    object_resizing: true, // 和 xapp2.0 不同，它默认是 false
+    auto_focus: undefined, // 和 xapp2.0 不同，它默认是 true
     skin: skinName.value,
     content_css: contentCss.value,
     content_style:

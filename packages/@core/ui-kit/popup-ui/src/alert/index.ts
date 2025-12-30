@@ -7,8 +7,8 @@ export type {
 export { useAlertContext } from './alert';
 export { default as Alert } from './alert.vue';
 export {
-  vbenAlert as alert,
+  xAppAlert as alert,
   clearAllAlerts,
-  vbenConfirm as confirm,
-  vbenPrompt as prompt,
+  xAppConfirm as confirm,
+  xAppPrompt as prompt,
 } from './AlertBuilder';
