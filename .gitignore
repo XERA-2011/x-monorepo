@@ -1,11 +1,29 @@
+# Node dependencies
 node_modules
-.DS_Store
+
+# Build outputs
+.output
+.nuxt
+.nitro
+.cache
 dist
 .turbo
 .next
 out
 build
+
+# Logs
+*.log
+logs
+
+# Environment files
 .env
 .env.local
 .env.*.local
-*.log
+!.env.example
+
+# Misc
+.DS_Store
+.fleet
+.idea
+.vscode

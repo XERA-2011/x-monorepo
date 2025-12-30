@@ -1,11 +1,8 @@
 <template>
   <div>
-    <AppHeader>
-      <template #logo>
-        Nuxt Web
-      </template>
-    </AppHeader>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
     <NuxtRouteAnnouncer />
-    <NuxtWelcome />
   </div>
 </template>
