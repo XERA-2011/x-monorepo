@@ -141,7 +141,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-:deep(.vben-page-content) {
+:deep(.x-app-page-content) {
   padding: 16px;
 }
 </style>

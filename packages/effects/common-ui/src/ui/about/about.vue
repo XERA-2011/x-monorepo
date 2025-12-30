@@ -45,7 +45,7 @@ declare global {
 const renderLink = (href: string, text: string) =>
   h(
     'a',
-    { href, target: '_blank', class: 'vben-link' },
+    { href, target: '_blank', class: 'x-app-link' },
     { default: () => text },
   );
 
