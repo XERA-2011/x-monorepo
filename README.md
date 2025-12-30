@@ -2,7 +2,7 @@
 
 ## 简介 | Introduction
 
-**X-MONOREPO** 是基于 **Vben Admin 5.0** 构建的企业级前端工程，采用 **Monorepo** 架构管理。它与 **X-SPRING-BOOT** 后端完美协同，提供了一套功能丰富、性能优越的 SaaS 管理后台解决方案。
+**X-MONOREPO** 是一套企业级前端工程，采用 **Monorepo** 架构管理。它与 **X-SPRING-BOOT** 后端完美协同，提供了一套功能丰富、性能优越的 SaaS 管理后台解决方案。
 
 ### 核心特性
 
