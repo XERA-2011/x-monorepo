@@ -5,7 +5,7 @@ import type { SimpleFlowNode } from '../../consts';
 
 import { inject, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { useTaskStatusClass, useWatchNode } from '../../helpers';
 import ProcessInstanceModal from './modules/process-instance-modal.vue';
@@ -23,7 +23,7 @@ const currentNode = useWatchNode(props);
 const readonly = inject<Boolean>('readonly');
 const processInstance = inject<Ref<any>>('processInstance', ref({}));
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   connectedComponent: ProcessInstanceModal,
   destroyOnClose: true,
 });

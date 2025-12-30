@@ -3,7 +3,7 @@ import type { InfraJobApi } from '#/api/infra/job';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { getJob, getJobNextTimes } from '#/api/infra/job';
 import { useDescription } from '#/components/description';
@@ -19,7 +19,7 @@ const [Descriptions] = useDescription({
   schema: useDetailSchema(),
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onOpenChange(isOpen: boolean) {
     if (!isOpen) {
       formData.value = undefined;

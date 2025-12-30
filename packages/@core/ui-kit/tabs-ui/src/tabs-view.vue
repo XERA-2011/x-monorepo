@@ -3,7 +3,7 @@ import type { TabsEmits, TabsProps } from './types';
 
 import { useForwardPropsEmits } from '@x-monorepo-core/composables';
 import { ChevronLeft, ChevronRight } from '@x-monorepo-core/icons';
-import { VbenScrollbar } from '@x-monorepo-core/shadcn-ui';
+import { XAppScrollbar } from '@x-monorepo-core/shadcn-ui';
 
 import { Tabs, TabsChrome } from './components';
 import { useTabsDrag } from './use-tabs-drag';
@@ -68,7 +68,7 @@ useTabsDrag(props, emit);
       }"
       class="size-full flex-1 overflow-hidden"
     >
-      <VbenScrollbar
+      <XAppScrollbar
         ref="scrollbarRef"
         :shadow-bottom="false"
         :shadow-top="false"
@@ -87,7 +87,7 @@ useTabsDrag(props, emit);
         />
 
         <Tabs v-else v-bind="{ ...forward, ...$attrs, ...$props }" />
-      </VbenScrollbar>
+      </XAppScrollbar>
     </div>
 
     <!-- 右侧滚动按钮 -->

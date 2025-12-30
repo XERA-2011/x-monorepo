@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import type { FileType } from 'ant-design-vue/es/upload/interface';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { Button, message, Upload } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import { importUser, importUserTemplate } from '#/api/system/user';
 import { $t } from '#/locales';
 
@@ -14,7 +14,7 @@ import { useImportFormSchema } from '../data';
 
 const emit = defineEmits(['success']);
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     formItemClass: 'col-span-2',
     labelWidth: 120,
@@ -24,7 +24,7 @@ const [Form, formApi] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) {

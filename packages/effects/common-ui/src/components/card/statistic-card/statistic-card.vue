@@ -8,8 +8,8 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-  VbenCountToAnimator,
-  VbenIcon,
+  XAppCountToAnimator,
+  XAppIcon,
 } from '@x-monorepo-core/shadcn-ui';
 
 /** 统计卡片 */
@@ -28,7 +28,7 @@ withDefaults(defineProps<StatisticCardProps>(), {
         <TooltipProvider v-if="tooltip">
           <Tooltip>
             <TooltipTrigger>
-              <VbenIcon
+              <XAppIcon
                 icon="lucide:circle-alert"
                 class="text-muted-foreground size-4 cursor-help"
               />
@@ -40,7 +40,7 @@ withDefaults(defineProps<StatisticCardProps>(), {
         </TooltipProvider>
       </div>
       <div class="mb-4 text-3xl font-medium">
-        <VbenCountToAnimator
+        <XAppCountToAnimator
           :prefix="prefix"
           :end-val="value ?? 0"
           :decimals="decimals ?? 0"
@@ -57,7 +57,7 @@ withDefaults(defineProps<StatisticCardProps>(), {
           class="flex items-center gap-0.5"
         >
           {{ Math.abs(Number(percent ?? 0)).toFixed(2) }}%
-          <VbenIcon
+          <XAppIcon
             :icon="
               Number(percent) > 0
                 ? 'lucide:trending-up'

@@ -1,1 +1,1 @@
-export { default as VbenExpandableArrow } from './expandable-arrow.vue';
+export { default as XAppExpandableArrow } from './expandable-arrow.vue';

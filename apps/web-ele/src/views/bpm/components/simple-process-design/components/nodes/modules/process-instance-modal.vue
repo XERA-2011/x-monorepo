@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useXAppVxeGrid } from '#/adapter/vxe-table';
 
 import { useGridColumns } from './process-instance-data';
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   gridOptions: {
     columns: useGridColumns(),
     border: true,
@@ -19,7 +19,7 @@ const [Grid, gridApi] = useVbenVxeGrid({
   },
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   footer: false,
   async onOpenChange(isOpen: boolean) {
     if (!isOpen) {

@@ -2,10 +2,10 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemMailLogApi } from '#/api/system/mail/log';
 
-import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getMailLogPage } from '#/api/system/mail/log';
 import { DictTag } from '#/components/dict-tag';
 import { $t } from '#/locales';
@@ -13,7 +13,7 @@ import { $t } from '#/locales';
 import { useGridColumns, useGridFormSchema } from './data';
 import Detail from './modules/detail.vue';
 
-const [DetailModal, detailModalApi] = useVbenModal({
+const [DetailModal, detailModalApi] = useXAppModal({
   connectedComponent: Detail,
   destroyOnClose: true,
 });
@@ -28,7 +28,7 @@ function handleDetail(row: SystemMailLogApi.MailLog) {
   detailModalApi.setData(row).open();
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

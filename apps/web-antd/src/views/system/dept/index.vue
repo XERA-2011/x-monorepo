@@ -4,19 +4,19 @@ import type { SystemDeptApi } from '#/api/system/dept';
 
 import { ref } from 'vue';
 
-import { confirm, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { isEmpty } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteDept, deleteDeptList, getDeptList } from '#/api/system/dept';
 import { $t } from '#/locales';
 
 import { useGridColumns } from './data';
 import Form from './modules/form.vue';
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Form,
   destroyOnClose: true,
 });
@@ -89,7 +89,7 @@ function handleRowCheckboxChange({
   checkedIds.value = records.map((item) => item.id!);
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   gridOptions: {
     columns: useGridColumns(),
     height: 'auto',

@@ -5,7 +5,7 @@ import type { InfraCodegenApi } from '#/api/infra/codegen';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { CodeEditor } from '@x-monorepo/plugins/code-editor';
 
@@ -192,7 +192,7 @@ function handleTabsEdit(
 }
 
 /** 模态框实例 */
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   footer: false,
   fullscreen: true,
   async onOpenChange(isOpen: boolean) {

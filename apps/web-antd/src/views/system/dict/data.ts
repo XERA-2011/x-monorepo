@@ -1,4 +1,4 @@
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
 import { CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
@@ -10,7 +10,7 @@ import { getSimpleDictTypeList } from '#/api/system/dict/type';
 // ============================== 字典类型 ==============================
 
 /** 类型新增/修改的表单 */
-export function useTypeFormSchema(): VbenFormSchema[] {
+export function useTypeFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'id',
@@ -67,7 +67,7 @@ export function useTypeFormSchema(): VbenFormSchema[] {
 }
 
 /** 类型列表的搜索表单 */
-export function useTypeGridFormSchema(): VbenFormSchema[] {
+export function useTypeGridFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'name',
@@ -171,7 +171,7 @@ const colorOptions = [
 ];
 
 /** 数据新增/修改的表单 */
-export function useDataFormSchema(): VbenFormSchema[] {
+export function useDataFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'id',
@@ -268,7 +268,7 @@ export function useDataFormSchema(): VbenFormSchema[] {
 }
 
 /** 字典数据列表搜索表单 */
-export function useDataGridFormSchema(): VbenFormSchema[] {
+export function useDataGridFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'label',

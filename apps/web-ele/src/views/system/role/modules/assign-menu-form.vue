@@ -6,13 +6,13 @@ import type { SystemRoleApi } from '#/api/system/role';
 
 import { nextTick, ref } from 'vue';
 
-import { Tree, useVbenModal } from '@x-monorepo/common-ui';
+import { Tree, useXAppModal } from '@x-monorepo/common-ui';
 import { SystemMenuTypeEnum } from '@x-monorepo/constants';
 import { handleTree } from '@x-monorepo/utils';
 
 import { ElCheckbox, ElMessage } from 'element-plus';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import { getSimpleMenusList } from '#/api/system/menu';
 import { assignRoleMenu, getRoleMenuList } from '#/api/system/permission';
 import { $t } from '#/locales';
@@ -27,7 +27,7 @@ const isAllSelected = ref(false); // 全选状态
 const isExpanded = ref(false); // 展开状态
 const expandedKeys = ref<number[]>([]); // 展开的节点
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     componentProps: {
       class: 'w-full',
@@ -40,7 +40,7 @@ const [Form, formApi] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) {

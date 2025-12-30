@@ -17,7 +17,7 @@ interface Props {
 }
 
 defineOptions({
-  name: 'VbenSpinner',
+  name: 'XAppSpinner',
 });
 
 const props = withDefaults(defineProps<Props>(), {

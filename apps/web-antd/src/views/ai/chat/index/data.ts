@@ -1,10 +1,10 @@
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 
 import { AiModelTypeEnum } from '@x-monorepo/constants';
 
 import { getModelSimpleList } from '#/api/ai/model/model';
 
-export function useFormSchema(): VbenFormSchema[] {
+export function useFormSchema(): XAppFormSchema[] {
   return [
     {
       component: 'Input',

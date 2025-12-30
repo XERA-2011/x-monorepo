@@ -11,7 +11,7 @@ import { getDictLabel } from '@x-monorepo/hooks';
 
 import { message } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteKnowledgeDocument,
   getKnowledgeDocumentPage,
@@ -96,7 +96,7 @@ async function handleStatusChange(
   });
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

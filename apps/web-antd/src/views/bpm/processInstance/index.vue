@@ -9,7 +9,7 @@ import { BpmProcessInstanceStatus, DICT_TYPE } from '@x-monorepo/constants';
 
 import { Button, message, Textarea } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getProcessDefinition } from '#/api/bpm/definition';
 import {
   cancelProcessInstanceByStartUser,
@@ -79,7 +79,7 @@ function handleCancel(row: BpmProcessInstanceApi.ProcessInstance) {
   });
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

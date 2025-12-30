@@ -8,7 +8,7 @@ import { useRoute, useRouter } from 'vue-router';
 
 import { $t } from '@x-monorepo/locales';
 
-import { VbenBreadcrumbView } from '@x-monorepo-core/shadcn-ui';
+import { XAppBreadcrumbView } from '@x-monorepo-core/shadcn-ui';
 
 interface Props {
   hideWhenOnlyOne?: boolean;
@@ -64,7 +64,7 @@ function handleSelect(path: string) {
 }
 </script>
 <template>
-  <VbenBreadcrumbView
+  <XAppBreadcrumbView
     :breadcrumbs="breadcrumbs"
     :show-icon="showIcon"
     :style-type="type"

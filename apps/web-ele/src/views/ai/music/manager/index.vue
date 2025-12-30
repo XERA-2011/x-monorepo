@@ -6,7 +6,7 @@ import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
 
 import { ElButton, ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteMusic, getMusicPage, updateMusic } from '#/api/ai/music';
 import { $t } from '#/locales';
 
@@ -57,7 +57,7 @@ async function handleUpdatePublicStatusChange(
   });
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

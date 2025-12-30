@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import type { Recordable } from '@x-monorepo/types';
 
-import type { VbenFormSchema } from '@x-monorepo-core/form-ui';
+import type { XAppFormSchema } from '@x-monorepo-core/form-ui';
 
 import { computed, reactive } from 'vue';
 
-import { useVbenForm } from '@x-monorepo-core/form-ui';
-import { VbenButton } from '@x-monorepo-core/shadcn-ui';
+import { useXAppForm } from '@x-monorepo-core/form-ui';
+import { XAppButton } from '@x-monorepo-core/shadcn-ui';
 
 interface Props {
-  formSchema?: VbenFormSchema[];
+  formSchema?: XAppFormSchema[];
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -20,7 +20,7 @@ const emit = defineEmits<{
   submit: [Recordable<any>];
 }>();
 
-const [Form, formApi] = useVbenForm(
+const [Form, formApi] = useXAppForm(
   reactive({
     commonConfig: {
       // 所有表单项
@@ -49,8 +49,8 @@ defineExpose({
 <template>
   <div @keydown.enter.prevent="handleSubmit">
     <Form />
-    <VbenButton type="submit" class="mt-4" @click="handleSubmit">
+    <XAppButton type="submit" class="mt-4" @click="handleSubmit">
       更新基本信息
-    </VbenButton>
+    </XAppButton>
   </div>
 </template>

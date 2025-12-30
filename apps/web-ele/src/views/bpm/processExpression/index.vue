@@ -2,11 +2,11 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { BpmProcessExpressionApi } from '#/api/bpm/processExpression';
 
-import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteProcessExpression,
   getProcessExpressionPage,
@@ -16,7 +16,7 @@ import { $t } from '#/locales';
 import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Form,
   destroyOnClose: true,
 });
@@ -50,7 +50,7 @@ async function handleDelete(row: BpmProcessExpressionApi.ProcessExpression) {
   }
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

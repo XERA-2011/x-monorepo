@@ -8,7 +8,7 @@ import { computed, onMounted, ref, watch } from 'vue';
 import { useAccess } from '@x-monorepo/access';
 import {
   AuthenticationLoginExpiredModal,
-  useVbenModal,
+  useXAppModal,
 } from '@x-monorepo/common-ui';
 import { PROJECT_DOC_URL, PROJECT_GITHUB_URL } from '@x-monorepo/constants';
 import { isTenantEnable, useTabs, useWatermark } from '@x-monorepo/hooks';
@@ -55,7 +55,7 @@ const notifications = ref<NotificationItem[]>([]);
 const unreadCount = ref(0);
 const showDot = computed(() => unreadCount.value > 0);
 
-const [HelpModal, helpModalApi] = useVbenModal({
+const [HelpModal, helpModalApi] = useXAppModal({
   connectedComponent: Help,
 });
 

@@ -3,11 +3,11 @@ import type { SystemMailTemplateApi } from '#/api/system/mail/template';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import { sendMail } from '#/api/system/mail/template';
 
 import { useSendMailFormSchema } from '../data';
@@ -15,7 +15,7 @@ import { useSendMailFormSchema } from '../data';
 const emit = defineEmits(['success']);
 const formData = ref<SystemMailTemplateApi.MailTemplate>();
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     componentProps: {
       class: 'w-full',
@@ -27,7 +27,7 @@ const [Form, formApi] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) {

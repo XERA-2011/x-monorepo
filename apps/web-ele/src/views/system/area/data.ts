@@ -1,11 +1,11 @@
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemAreaApi } from '#/api/system/area';
 
 import { z } from '#/adapter/form';
 
 /** 查询 IP 的表单 */
-export function useFormSchema(): VbenFormSchema[] {
+export function useFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'ip',

@@ -4,7 +4,7 @@ import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 
 import { DocAlert, Page } from '@x-monorepo/common-ui';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getProcessInstanceCopyPage } from '#/api/bpm/processInstance';
 import { $t } from '#/locales';
 import { router } from '#/router';
@@ -25,7 +25,7 @@ function handleDetail(row: BpmProcessInstanceApi.ProcessInstanceCopyRespVO) {
   });
 }
 
-const [Grid] = useVbenVxeGrid({
+const [Grid] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

@@ -1,4 +1,4 @@
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
 import {
@@ -12,7 +12,7 @@ import { z } from '#/adapter/form';
 import { getRangePickerDefaultProps } from '#/utils';
 
 /** 新增/修改的表单 */
-export function useFormSchema(): VbenFormSchema[] {
+export function useFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'id',
@@ -73,7 +73,7 @@ export function useFormSchema(): VbenFormSchema[] {
 }
 
 /** 分配数据权限的表单 */
-export function useAssignDataPermissionFormSchema(): VbenFormSchema[] {
+export function useAssignDataPermissionFormSchema(): XAppFormSchema[] {
   return [
     {
       component: 'Input',
@@ -123,7 +123,7 @@ export function useAssignDataPermissionFormSchema(): VbenFormSchema[] {
 }
 
 /** 分配菜单的表单 */
-export function useAssignMenuFormSchema(): VbenFormSchema[] {
+export function useAssignMenuFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'id',
@@ -159,7 +159,7 @@ export function useAssignMenuFormSchema(): VbenFormSchema[] {
 }
 
 /** 列表的搜索表单 */
-export function useGridFormSchema(): VbenFormSchema[] {
+export function useGridFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'name',

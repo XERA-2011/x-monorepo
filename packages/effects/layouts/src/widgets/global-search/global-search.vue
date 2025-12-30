@@ -13,7 +13,7 @@ import {
 import { $t } from '@x-monorepo/locales';
 import { isWindowsOs } from '@x-monorepo/utils';
 
-import { useVbenModal } from '@x-monorepo-core/popup-ui';
+import { useXAppModal } from '@x-monorepo-core/popup-ui';
 
 import { useMagicKeys, whenever } from '@vueuse/core';
 
@@ -34,7 +34,7 @@ const props = withDefaults(
 const keyword = ref('');
 const searchInputRef = ref<HTMLInputElement>();
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   onCancel() {
     modalApi.close();
   },

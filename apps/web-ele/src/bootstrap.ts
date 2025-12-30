@@ -15,7 +15,7 @@ import { $t, setupI18n } from '#/locales';
 import { setupFormCreate } from '#/plugins/form-create';
 
 import { initComponentAdapter } from './adapter/component';
-import { initSetupVbenForm } from './adapter/form';
+import { initSetupXAppForm } from './adapter/form';
 import App from './app.vue';
 import { router } from './router';
 
@@ -24,7 +24,7 @@ async function bootstrap(namespace: string) {
   await initComponentAdapter();
 
   // 初始化表单组件
-  await initSetupVbenForm();
+  await initSetupXAppForm();
 
   // // 设置弹窗的默认配置
   // setDefaultModalProps({
@@ -39,9 +39,9 @@ async function bootstrap(namespace: string) {
   // 注册Element Plus提供的v-loading指令
   app.directive('loading', ElLoading.directive);
 
-  // 注册Vben提供的v-loading和v-spinning指令
+  // 注册XApp提供的v-loading和v-spinning指令
   registerLoadingDirective(app, {
-    loading: false, // Vben提供的v-loading指令和Element Plus提供的v-loading指令二选一即可，此处false表示不注册Vben提供的v-loading指令
+    loading: false, // XApp提供的v-loading指令和Element Plus提供的v-loading指令二选一即可，此处false表示不注册XApp提供的v-loading指令
     spinning: 'spinning',
   });
 

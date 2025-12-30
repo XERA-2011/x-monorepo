@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@x-monorepo/common-ui';
+import type { XAppFormSchema } from '@x-monorepo/common-ui';
 import type { Recordable } from '@x-monorepo/types';
 
 import type { AuthApi } from '#/api';
@@ -67,10 +67,10 @@ onMounted(() => {
   fetchTenantList();
 });
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): XAppFormSchema[] => {
   return [
     {
-      component: 'VbenSelect',
+      component: 'XAppSelect',
       componentProps: {
         options: tenantList.value.map((item) => ({
           label: item.name,
@@ -92,7 +92,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       },
     },
     {
-      component: 'VbenInput',
+      component: 'XAppInput',
       componentProps: {
         placeholder: $t('authentication.mobile'),
       },
@@ -106,7 +106,7 @@ const formSchema = computed((): VbenFormSchema[] => {
         }),
     },
     {
-      component: 'VbenPinInput',
+      component: 'XAppPinInput',
       componentProps: {
         codeLength: CODE_LENGTH,
         createText: (countdown: number) => {

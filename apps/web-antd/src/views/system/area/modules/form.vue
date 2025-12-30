@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import { getAreaByIp } from '#/api/system/area';
 import { $t } from '#/locales';
 
 import { useFormSchema } from '../data';
 
-const [Form, { setFieldValue, validate, getValues }] = useVbenForm({
+const [Form, { setFieldValue, validate, getValues }] = useXAppForm({
   commonConfig: {
     componentProps: {
       class: 'w-full',
@@ -22,7 +22,7 @@ const [Form, { setFieldValue, validate, getValues }] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await validate();
     if (!valid) {

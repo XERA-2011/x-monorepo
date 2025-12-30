@@ -4,7 +4,7 @@ import { useRouter } from 'vue-router';
 
 import { $t } from '@x-monorepo/locales';
 
-import { VbenButton } from '@x-monorepo-core/shadcn-ui';
+import { XAppButton } from '@x-monorepo-core/shadcn-ui';
 
 import { useQRCode } from '@vueuse/integrations/useQRCode';
 
@@ -94,13 +94,13 @@ function goToLogin() {
       </p>
     </div>
 
-    <VbenButton
+    <XAppButton
       v-if="showBack"
       class="mt-4 w-full"
       variant="outline"
       @click="goToLogin()"
     >
       {{ $t('common.back') }}
-    </VbenButton>
+    </XAppButton>
   </div>
 </template>

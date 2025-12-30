@@ -1,4 +1,4 @@
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
@@ -8,7 +8,7 @@ import { getDictOptions } from '@x-monorepo/hooks';
 import { getRangePickerDefaultProps } from '#/utils';
 
 /** 新增/修改的表单 */
-export function useFormSchema(): VbenFormSchema[] {
+export function useFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'id',
@@ -59,7 +59,7 @@ export function useFormSchema(): VbenFormSchema[] {
 }
 
 /** 列表的搜索表单 */
-export function useGridFormSchema(): VbenFormSchema[] {
+export function useGridFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'name',
@@ -153,7 +153,7 @@ export function useGridColumns(): VxeTableGridOptions<Demo03StudentApi.Demo03Stu
 // ==================== 子表（学生课程） ====================
 
 /** 新增/修改的表单 */
-export function useDemo03CourseFormSchema(): VbenFormSchema[] {
+export function useDemo03CourseFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'id',
@@ -185,7 +185,7 @@ export function useDemo03CourseFormSchema(): VbenFormSchema[] {
 }
 
 /** 列表的搜索表单 */
-export function useDemo03CourseGridFormSchema(): VbenFormSchema[] {
+export function useDemo03CourseGridFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'studentId',
@@ -268,7 +268,7 @@ export function useDemo03CourseGridColumns(): VxeTableGridOptions<Demo03StudentA
 // ==================== 子表（学生班级） ====================
 
 /** 新增/修改的表单 */
-export function useDemo03GradeFormSchema(): VbenFormSchema[] {
+export function useDemo03GradeFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'id',
@@ -300,7 +300,7 @@ export function useDemo03GradeFormSchema(): VbenFormSchema[] {
 }
 
 /** 列表的搜索表单 */
-export function useDemo03GradeGridFormSchema(): VbenFormSchema[] {
+export function useDemo03GradeGridFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'studentId',

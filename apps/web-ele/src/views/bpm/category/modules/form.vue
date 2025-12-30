@@ -3,11 +3,11 @@ import type { BpmCategoryApi } from '#/api/bpm/category';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { ElMessage } from 'element-plus';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import {
   createCategory,
   getCategory,
@@ -25,7 +25,7 @@ const getTitle = computed(() => {
     : $t('ui.actionTitle.create', ['流程分类']);
 });
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     componentProps: {
       class: 'w-full',
@@ -38,7 +38,7 @@ const [Form, formApi] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) {

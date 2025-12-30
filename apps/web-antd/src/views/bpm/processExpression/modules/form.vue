@@ -3,11 +3,11 @@ import type { BpmProcessExpressionApi } from '#/api/bpm/processExpression';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import {
   createProcessExpression,
   getProcessExpression,
@@ -25,13 +25,13 @@ const getTitle = computed(() => {
     : $t('ui.actionTitle.create', ['流程表达式']);
 });
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   layout: 'horizontal',
   schema: useFormSchema(),
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) {

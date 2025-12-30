@@ -5,7 +5,7 @@ import type { AiChatMessageApi } from '#/api/ai/chat/message';
 import { computed, nextTick, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { alert, confirm, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { alert, confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Layout, message, Switch } from 'ant-design-vue';
@@ -29,7 +29,7 @@ import MessageNewConversation from './modules/message/new-conversation.vue';
 defineOptions({ name: 'AiChat' });
 
 const route = useRoute();
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: ConversationUpdateForm,
   destroyOnClose: true,
 });

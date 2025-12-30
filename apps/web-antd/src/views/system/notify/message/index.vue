@@ -2,16 +2,16 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemNotifyMessageApi } from '#/api/system/notify/message';
 
-import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getNotifyMessagePage } from '#/api/system/notify/message';
 import { $t } from '#/locales';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Detail from './modules/detail.vue';
 
-const [DetailModal, detailModalApi] = useVbenModal({
+const [DetailModal, detailModalApi] = useXAppModal({
   connectedComponent: Detail,
   destroyOnClose: true,
 });
@@ -26,7 +26,7 @@ function handleDetail(row: SystemNotifyMessageApi.NotifyMessage) {
   detailModalApi.setData(row).open();
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

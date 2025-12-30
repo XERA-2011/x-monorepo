@@ -1,4 +1,4 @@
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 
 import { CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
@@ -6,7 +6,7 @@ import { getDictOptions } from '@x-monorepo/hooks';
 import { z } from '#/adapter/form';
 
 /** 新增/修改的表单 */
-export function useFormSchema(): VbenFormSchema[] {
+export function useFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'id',

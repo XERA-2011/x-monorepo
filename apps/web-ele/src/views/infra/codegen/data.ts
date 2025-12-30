@@ -1,6 +1,6 @@
 import type { Recordable } from '@x-monorepo/types';
 
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { InfraCodegenApi } from '#/api/infra/codegen';
 import type { SystemMenuApi } from '#/api/system/menu';
@@ -18,7 +18,7 @@ import { $t } from '#/locales';
 import { getRangePickerDefaultProps } from '#/utils';
 
 /** 导入数据库表的表单 */
-export function useImportTableFormSchema(): VbenFormSchema[] {
+export function useImportTableFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'dataSourceConfigId',
@@ -64,7 +64,7 @@ export function useImportTableColumns(): VxeTableGridOptions['columns'] {
 }
 
 /** 基本信息表单的 schema */
-export function useBasicInfoFormSchema(): VbenFormSchema[] {
+export function useBasicInfoFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'tableName',
@@ -117,7 +117,7 @@ export function useBasicInfoFormSchema(): VbenFormSchema[] {
 }
 
 /** 生成信息表单基础 schema */
-export function useGenerationInfoBaseFormSchema(): VbenFormSchema[] {
+export function useGenerationInfoBaseFormSchema(): XAppFormSchema[] {
   return [
     {
       component: 'Select',
@@ -232,7 +232,7 @@ export function useGenerationInfoBaseFormSchema(): VbenFormSchema[] {
 /** 树表信息 schema */
 export function useGenerationInfoTreeFormSchema(
   columns: InfraCodegenApi.CodegenColumn[] = [],
-): VbenFormSchema[] {
+): XAppFormSchema[] {
   return [
     {
       component: 'Divider',
@@ -284,7 +284,7 @@ export function useGenerationInfoTreeFormSchema(
 export function useGenerationInfoSubTableFormSchema(
   columns: InfraCodegenApi.CodegenColumn[] = [],
   tables: InfraCodegenApi.CodegenTable[] = [],
-): VbenFormSchema[] {
+): XAppFormSchema[] {
   return [
     {
       component: 'Divider',
@@ -355,7 +355,7 @@ export function useGenerationInfoSubTableFormSchema(
 }
 
 /** 列表的搜索表单 */
-export function useGridFormSchema(): VbenFormSchema[] {
+export function useGridFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'tableName',

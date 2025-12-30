@@ -2,7 +2,7 @@ import type { VxeTableInstance, VxeToolbarInstance } from 'vxe-table';
 
 import { ref, watch } from 'vue';
 
-import VbenVxeTableToolbar from './table-toolbar.vue';
+import XAppVxeTableToolbar from './table-toolbar.vue';
 
 /**
  * vxe 原生工具栏挂载封装
@@ -10,7 +10,7 @@ import VbenVxeTableToolbar from './table-toolbar.vue';
  */
 export function useTableToolbar() {
   const hiddenSearchBar = ref(false); // 隐藏搜索栏
-  const tableToolbarRef = ref<InstanceType<typeof VbenVxeTableToolbar>>();
+  const tableToolbarRef = ref<InstanceType<typeof XAppVxeTableToolbar>>();
   const tableRef = ref<VxeTableInstance>();
   const isBound = ref<boolean>(false);
 

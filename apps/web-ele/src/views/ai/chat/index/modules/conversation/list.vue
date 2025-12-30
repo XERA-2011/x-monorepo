@@ -5,7 +5,7 @@ import type { AiChatConversationApi } from '#/api/ai/chat/conversation';
 
 import { h, onMounted, ref, toRefs, watch } from 'vue';
 
-import { confirm, prompt, useVbenDrawer } from '@x-monorepo/common-ui';
+import { confirm, prompt, useXAppDrawer } from '@x-monorepo/common-ui';
 import { IconifyIcon, SvgGptIcon } from '@x-monorepo/icons';
 
 import {
@@ -42,7 +42,7 @@ const emits = defineEmits([
   'onConversationDelete',
 ]);
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useXAppDrawer({
   connectedComponent: RoleRepository,
 });
 

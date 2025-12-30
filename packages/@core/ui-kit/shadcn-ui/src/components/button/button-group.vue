@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { cn } from '@x-monorepo-core/shared/utils';
 
-defineOptions({ name: 'VbenButtonGroup' });
+defineOptions({ name: 'XAppButtonGroup' });
 
 withDefaults(
   defineProps<{

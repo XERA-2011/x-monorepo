@@ -6,12 +6,12 @@ import { $t, loadLocaleMessages } from '@x-monorepo/locales';
 import { preferences, updatePreferences } from '@x-monorepo/preferences';
 import { capitalizeFirstLetter } from '@x-monorepo/utils';
 
-import { useVbenDrawer } from '@x-monorepo-core/popup-ui';
-import { VbenButton } from '@x-monorepo-core/shadcn-ui';
+import { useXAppDrawer } from '@x-monorepo-core/popup-ui';
+import { XAppButton } from '@x-monorepo-core/shadcn-ui';
 
 import PreferencesDrawer from './preferences-drawer.vue';
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useXAppDrawer({
   connectedComponent: PreferencesDrawer,
 });
 
@@ -60,12 +60,12 @@ const listen = computed(() => {
 
     <div @click="() => drawerApi.open()">
       <slot>
-        <VbenButton
+        <XAppButton
           :title="$t('preferences.title')"
           class="bg-primary flex-col-center size-10 cursor-pointer rounded-l-lg rounded-r-none border-none"
         >
           <Settings class="size-5" />
-        </VbenButton>
+        </XAppButton>
       </slot>
     </div>
   </div>

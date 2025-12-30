@@ -21,19 +21,19 @@ export * from '@x-monorepo-core/popup-ui';
 
 // 给文档用
 export {
-  VbenAvatar,
-  VbenButton,
-  VbenButtonGroup,
-  VbenCheckbox,
-  VbenCheckButtonGroup,
-  VbenCountToAnimator,
-  VbenFullScreen,
-  VbenInputPassword,
-  VbenLoading,
-  VbenLogo,
-  VbenPinInput,
-  VbenSelect,
-  VbenSpinner,
+  XAppAvatar,
+  XAppButton,
+  XAppButtonGroup,
+  XAppCheckbox,
+  XAppCheckButtonGroup,
+  XAppCountToAnimator,
+  XAppFullScreen,
+  XAppInputPassword,
+  XAppLoading,
+  XAppLogo,
+  XAppPinInput,
+  XAppSelect,
+  XAppSpinner,
 } from '@x-monorepo-core/shadcn-ui';
 
 export type { FlattenedItem } from '@x-monorepo-core/shadcn-ui';

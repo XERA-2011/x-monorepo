@@ -4,7 +4,7 @@ import type { BpmTaskApi } from '#/api/bpm/task';
 
 import { DocAlert, Page } from '@x-monorepo/common-ui';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getTaskManagerPage } from '#/api/bpm/task';
 import { router } from '#/router';
 
@@ -22,7 +22,7 @@ function handleHistory(row: BpmTaskApi.TaskManager) {
   });
 }
 
-const [Grid] = useVbenVxeGrid({
+const [Grid] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

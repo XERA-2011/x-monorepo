@@ -3,7 +3,7 @@ import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictLabel } from '@x-monorepo/hooks';
 import { useUserStore } from '@x-monorepo/stores';
@@ -33,7 +33,7 @@ const printObj = ref({
   zIndex: 20_003,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   closable: true,
   footer: false,
   title: '打印流程',

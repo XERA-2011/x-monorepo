@@ -3,7 +3,7 @@ import { onMounted, onUnmounted, ref } from 'vue';
 
 import { $t } from '@x-monorepo/locales';
 
-import { useVbenModal } from '@x-monorepo-core/popup-ui';
+import { useXAppModal } from '@x-monorepo-core/popup-ui';
 
 interface Props {
   // 轮询时间，分钟
@@ -24,7 +24,7 @@ const currentVersionTag = ref('');
 const lastVersionTag = ref('');
 const timer = ref<ReturnType<typeof setInterval>>();
 
-const [UpdateNoticeModal, modalApi] = useVbenModal({
+const [UpdateNoticeModal, modalApi] = useXAppModal({
   closable: false,
   closeOnPressEscape: false,
   closeOnClickModal: false,

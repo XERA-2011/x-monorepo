@@ -4,17 +4,17 @@ import type { TreeProps } from '@x-monorepo-core/shadcn-ui';
 import { Inbox } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 
-import { treePropsDefaults, VbenTree } from '@x-monorepo-core/shadcn-ui';
+import { treePropsDefaults, XAppTree } from '@x-monorepo-core/shadcn-ui';
 
 const props = withDefaults(defineProps<TreeProps>(), treePropsDefaults());
 </script>
 
 <template>
-  <VbenTree v-if="props.treeData?.length > 0" v-bind="props">
+  <XAppTree v-if="props.treeData?.length > 0" v-bind="props">
     <template v-for="(_, key) in $slots" :key="key" #[key]="slotProps">
       <slot :name="key" v-bind="slotProps"> </slot>
     </template>
-  </VbenTree>
+  </XAppTree>
   <div
     v-else
     class="flex-col-center text-muted-foreground cursor-pointer rounded-lg border p-10 text-sm font-medium"

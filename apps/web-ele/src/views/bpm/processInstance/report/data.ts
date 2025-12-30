@@ -1,4 +1,4 @@
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 import type {
   VxeGridPropTypes,
   VxeTableGridOptions,
@@ -20,9 +20,9 @@ interface FormField {
 /** 列表的搜索表单 */
 export function useGridFormSchema(
   formFields: FormField[] = [],
-): VbenFormSchema[] {
+): XAppFormSchema[] {
   // 基础搜索字段配置
-  const baseFormSchema: VbenFormSchema[] = [
+  const baseFormSchema: XAppFormSchema[] = [
     {
       fieldName: 'startUserId',
       label: '发起人',
@@ -78,7 +78,7 @@ export function useGridFormSchema(
   ];
 
   // 动态表单字段配置：目前支持 input 和 textarea 类型
-  const dynamicFormSchema: VbenFormSchema[] = formFields
+  const dynamicFormSchema: XAppFormSchema[] = formFields
     .filter((item) => ['input', 'textarea'].includes(item.type))
     .map((item) => ({
       fieldName: `formFieldsParams.${item.field}`,

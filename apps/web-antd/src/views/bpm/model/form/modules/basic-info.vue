@@ -10,7 +10,7 @@ import type { SystemUserApi } from '#/api/system/user';
 
 import { ref, watch } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 import { IconifyIcon } from '@x-monorepo/icons';
@@ -43,12 +43,12 @@ const props = defineProps({
   },
 });
 
-const [UserSelectModalComp, userSelectModalApi] = useVbenModal({
+const [UserSelectModalComp, userSelectModalApi] = useXAppModal({
   connectedComponent: UserSelectModal,
   destroyOnClose: true,
 });
 
-const [DeptSelectModalComp, deptSelectModalApi] = useVbenModal({
+const [DeptSelectModalComp, deptSelectModalApi] = useXAppModal({
   connectedComponent: DeptSelectModal,
   destroyOnClose: true,
 });

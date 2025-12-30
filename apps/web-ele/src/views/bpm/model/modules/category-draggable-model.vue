@@ -6,7 +6,7 @@ import { computed, ref, watchEffect } from 'vue';
 import { useRouter } from 'vue-router';
 
 import { useAccess } from '@x-monorepo/access';
-import { confirm, EllipsisText, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, EllipsisText, useXAppModal } from '@x-monorepo/common-ui';
 import { BpmModelFormType } from '@x-monorepo/constants';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { useUserStore } from '@x-monorepo/stores';
@@ -26,7 +26,7 @@ import {
   ElTooltip,
 } from 'element-plus';
 
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteCategory } from '#/api/bpm/category';
 import {
   cleanModel,
@@ -49,12 +49,12 @@ const props = defineProps<{
 
 const emit = defineEmits(['success']);
 
-const [CategoryRenameModal, categoryRenameModalApi] = useVbenModal({
+const [CategoryRenameModal, categoryRenameModalApi] = useXAppModal({
   connectedComponent: CategoryRenameForm,
   destroyOnClose: true,
 });
 
-const [FormCreateDetailModal, formCreateDetailModalApi] = useVbenModal({
+const [FormCreateDetailModal, formCreateDetailModalApi] = useXAppModal({
   connectedComponent: FormCreateDetail,
   destroyOnClose: true,
 });
@@ -84,7 +84,7 @@ const hasPermiDeploy = computed(() => {
   return hasAccessByCodes(['bpm:model:deploy']);
 });
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   gridOptions: {
     columns: useGridColumns(),
     data: modelList.value,

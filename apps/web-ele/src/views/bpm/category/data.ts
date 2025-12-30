@@ -1,4 +1,4 @@
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
 import { CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
@@ -8,7 +8,7 @@ import { z } from '#/adapter/form';
 import { getRangePickerDefaultProps } from '#/utils';
 
 /** 新增/修改的表单 */
-export function useFormSchema(): VbenFormSchema[] {
+export function useFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'id',
@@ -68,7 +68,7 @@ export function useFormSchema(): VbenFormSchema[] {
 }
 
 /** 重命名的表单 */
-export function useRenameFormSchema(): VbenFormSchema[] {
+export function useRenameFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'name',
@@ -83,7 +83,7 @@ export function useRenameFormSchema(): VbenFormSchema[] {
 }
 
 /** 列表的搜索表单 */
-export function useGridFormSchema(): VbenFormSchema[] {
+export function useGridFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'name',

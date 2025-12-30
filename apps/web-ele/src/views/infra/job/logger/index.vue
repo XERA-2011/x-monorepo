@@ -4,10 +4,10 @@ import type { InfraJobLogApi } from '#/api/infra/job-log';
 
 import { useRoute } from 'vue-router';
 
-import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { exportJobLog, getJobLogPage } from '#/api/infra/job-log';
 import { $t } from '#/locales';
 
@@ -16,7 +16,7 @@ import Detail from './modules/detail.vue';
 
 const { query } = useRoute();
 
-const [DetailModal, detailModalApi] = useVbenModal({
+const [DetailModal, detailModalApi] = useXAppModal({
   connectedComponent: Detail,
   destroyOnClose: true,
 });
@@ -32,7 +32,7 @@ function handleDetail(row: InfraJobLogApi.JobLog) {
   detailModalApi.setData({ id: row.id }).open();
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

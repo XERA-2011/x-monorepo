@@ -11,7 +11,7 @@ import type { SystemUserApi } from '#/api/system/user';
 
 import { inject, onMounted, provide, ref, watch } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { BpmModelFormType, BpmNodeTypeEnum } from '@x-monorepo/constants';
 import { handleTree } from '@x-monorepo/utils';
 
@@ -115,7 +115,7 @@ const processNodeTree = ref<SimpleFlowNode | undefined>();
 provide('processNodeTree', processNodeTree);
 
 // 创建错误提示弹窗
-const [ErrorModal, errorModalApi] = useVbenModal({
+const [ErrorModal, errorModalApi] = useXAppModal({
   fullscreenButton: false,
 });
 

@@ -6,7 +6,7 @@ import { Page } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteWorkflow, getWorkflowPage } from '#/api/ai/workflow';
 import { $t } from '#/locales';
 import { router } from '#/router';
@@ -48,7 +48,7 @@ async function handleDelete(row: any) {
   }
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

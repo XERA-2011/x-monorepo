@@ -5,7 +5,7 @@ import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import {
   BpmCandidateStrategyEnum,
   BpmNodeTypeEnum,
@@ -147,7 +147,7 @@ function getApprovalNodeTime(node: BpmProcessInstanceApi.ApprovalNodeInfo) {
   return '';
 }
 
-const [UserSelectModalComp, userSelectModalApi] = useVbenModal({
+const [UserSelectModalComp, userSelectModalApi] = useXAppModal({
   connectedComponent: UserSelectModal,
   destroyOnClose: true,
 });

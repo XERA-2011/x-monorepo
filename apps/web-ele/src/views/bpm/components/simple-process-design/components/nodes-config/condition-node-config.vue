@@ -3,7 +3,7 @@ import type { SimpleFlowNode } from '../../consts';
 
 import { nextTick, ref, watch } from 'vue';
 
-import { useVbenDrawer } from '@x-monorepo/common-ui';
+import { useXAppDrawer } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { cloneDeep } from '@x-monorepo/utils';
 
@@ -90,7 +90,7 @@ async function saveConfig() {
   return true;
 }
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useXAppDrawer({
   title: currentNode.value.name,
   onConfirm: saveConfig,
 });

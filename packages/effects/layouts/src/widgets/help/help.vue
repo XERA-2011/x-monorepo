@@ -2,8 +2,8 @@
 import { $t } from '@x-monorepo/locales';
 import { openWindow } from '@x-monorepo/utils';
 
-import { useVbenModal } from '@x-monorepo-core/popup-ui';
-import { Badge, VbenButton, VbenButtonGroup } from '@x-monorepo-core/shadcn-ui';
+import { useXAppModal } from '@x-monorepo-core/popup-ui';
+import { Badge, XAppButton, XAppButtonGroup } from '@x-monorepo-core/shadcn-ui';
 
 import { useMagicKeys, whenever } from '@vueuse/core';
 
@@ -16,7 +16,7 @@ whenever(keys['Alt+KeyH']!, () => {
   modalApi.open();
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   draggable: true,
   overlayBlur: 5,
   footer: false,
@@ -29,29 +29,29 @@ const [Modal, modalApi] = useVbenModal({
   <Modal class="w-1/3" :title="$t('ui.widgets.qa')">
     <div class="mt-2 flex flex-col">
       <div class="mt-2 flex flex-col">
-        <VbenButtonGroup class="basis-1/3" :gap="2" border size="large">
+        <XAppButtonGroup class="basis-1/3" :gap="2" border size="large">
           <p class="w-24 p-2">项目地址:</p>
-          <VbenButton
+          <XAppButton
             variant="link"
             @click="
               openWindow('https://gitee.com/yudaocode/yudao-ui-admin-vben')
             "
           >
             Gitee
-          </VbenButton>
-          <VbenButton
+          </XAppButton>
+          <XAppButton
             variant="link"
             @click="
               openWindow('https://github.com/yudaocode/yudao-ui-admin-vben')
             "
           >
             Github
-          </VbenButton>
-        </VbenButtonGroup>
+          </XAppButton>
+        </XAppButtonGroup>
 
-        <VbenButtonGroup class="basis-1/3" :gap="2" border size="large">
+        <XAppButtonGroup class="basis-1/3" :gap="2" border size="large">
           <p class="w-24 p-2">issues:</p>
-          <VbenButton
+          <XAppButton
             variant="link"
             @click="
               openWindow(
@@ -60,8 +60,8 @@ const [Modal, modalApi] = useVbenModal({
             "
           >
             Gitee
-          </VbenButton>
-          <VbenButton
+          </XAppButton>
+          <XAppButton
             variant="link"
             @click="
               openWindow(
@@ -70,21 +70,21 @@ const [Modal, modalApi] = useVbenModal({
             "
           >
             Github
-          </VbenButton>
-        </VbenButtonGroup>
+          </XAppButton>
+        </XAppButtonGroup>
 
-        <VbenButtonGroup class="basis-1/3" :gap="2" border size="large">
+        <XAppButtonGroup class="basis-1/3" :gap="2" border size="large">
           <p class="w-24 p-2">开发文档:</p>
-          <VbenButton
+          <XAppButton
             variant="link"
             @click="openWindow('https://doc.iocoder.cn/quick-start/')"
           >
             项目文档
-          </VbenButton>
-          <VbenButton variant="link" @click="openWindow('https://antdv.com/')">
+          </XAppButton>
+          <XAppButton variant="link" @click="openWindow('https://antdv.com/')">
             antdv 文档
-          </VbenButton>
-        </VbenButtonGroup>
+          </XAppButton>
+        </XAppButtonGroup>
       </div>
 
       <div class="mt-2 flex justify-start">

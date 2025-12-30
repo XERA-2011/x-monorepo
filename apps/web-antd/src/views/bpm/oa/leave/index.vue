@@ -9,7 +9,7 @@ import { BpmProcessInstanceStatus } from '@x-monorepo/constants';
 
 import { message, Textarea } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getLeavePage } from '#/api/bpm/oa/leave';
 import { cancelProcessInstanceByStartUser } from '#/api/bpm/processInstance';
 import { $t } from '#/locales';
@@ -87,7 +87,7 @@ function handleProgress(row: BpmOALeaveApi.Leave) {
   });
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

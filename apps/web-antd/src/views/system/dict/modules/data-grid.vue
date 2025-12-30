@@ -4,12 +4,12 @@ import type { SystemDictDataApi } from '#/api/system/dict/data';
 
 import { ref, watch } from 'vue';
 
-import { confirm, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, useXAppModal } from '@x-monorepo/common-ui';
 import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
 
 import { message, Tag } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteDictData,
   deleteDictDataList,
@@ -28,7 +28,7 @@ const props = defineProps({
   },
 });
 
-const [DataFormModal, dataFormModalApi] = useVbenModal({
+const [DataFormModal, dataFormModalApi] = useXAppModal({
   connectedComponent: DataForm,
   destroyOnClose: true,
 });
@@ -95,7 +95,7 @@ function handleRowCheckboxChange({
   checkedIds.value = records.map((item) => item.id!);
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useDataGridFormSchema(),
   },

@@ -1,19 +1,19 @@
 import type {
   BaseFormComponentType,
   ExtendedFormApi,
-  VbenFormProps,
+  XAppFormProps,
 } from './types';
 
 import { defineComponent, h, isReactive, onBeforeUnmount, watch } from 'vue';
 
 import { useStore } from '@x-monorepo-core/shared/store';
 
-import VbenUseForm from './app-use-form.vue';
+import XAppUseForm from './app-use-form.vue';
 import { FormApi } from './form-api';
 
-export function useVbenForm<
+export function useXAppForm<
   T extends BaseFormComponentType = BaseFormComponentType,
->(options: VbenFormProps<T>) {
+>(options: XAppFormProps<T>) {
   const IS_REACTIVE = isReactive(options);
   const api = new FormApi(options);
   const extendedApi: ExtendedFormApi = api as never;
@@ -22,16 +22,16 @@ export function useVbenForm<
   };
 
   const Form = defineComponent(
-    (props: VbenFormProps, { attrs, slots }) => {
+    (props: XAppFormProps, { attrs, slots }) => {
       onBeforeUnmount(() => {
         api.unmount();
       });
       api.setState({ ...props, ...attrs });
       return () =>
-        h(VbenUseForm, { ...props, ...attrs, formApi: extendedApi }, slots);
+        h(XAppUseForm, { ...props, ...attrs, formApi: extendedApi }, slots);
     },
     {
-      name: 'VbenUseForm',
+      name: 'XAppUseForm',
       inheritAttrs: false,
     },
   );

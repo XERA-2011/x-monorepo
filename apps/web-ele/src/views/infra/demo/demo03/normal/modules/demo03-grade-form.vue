@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { nextTick, watch } from 'vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import { getDemo03GradeByStudentId } from '#/api/infra/demo/demo03/normal';
 
 import { useDemo03GradeFormSchema } from '../data';
@@ -10,7 +10,7 @@ const props = defineProps<{
   studentId?: number; // 学生编号（主表的关联字段）
 }>();
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     componentProps: {
       class: 'w-full',

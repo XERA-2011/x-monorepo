@@ -6,7 +6,7 @@ import { nextTick, onMounted, ref, watch } from 'vue';
 
 import { ElCheckbox, ElInput, ElOption, ElSelect } from 'element-plus';
 
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getSimpleDictTypeList } from '#/api/system/dict/type';
 
 import { useCodegenColumnTableColumns } from '../data';
@@ -16,7 +16,7 @@ const props = defineProps<{
 }>();
 
 /** 表格配置 */
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   gridOptions: {
     columns: useCodegenColumnTableColumns(),
     border: true,

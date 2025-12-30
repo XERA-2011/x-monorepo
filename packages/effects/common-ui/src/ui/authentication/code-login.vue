@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import type { Recordable } from '@x-monorepo/types';
 
-import type { VbenFormSchema } from '@x-monorepo-core/form-ui';
+import type { XAppFormSchema } from '@x-monorepo-core/form-ui';
 
 import { computed, reactive } from 'vue';
 import { useRouter } from 'vue-router';
 
 import { $t } from '@x-monorepo/locales';
 
-import { useVbenForm } from '@x-monorepo-core/form-ui';
-import { VbenButton } from '@x-monorepo-core/shadcn-ui';
+import { useXAppForm } from '@x-monorepo-core/form-ui';
+import { XAppButton } from '@x-monorepo-core/shadcn-ui';
 
 import Title from './auth-title.vue';
 
 interface Props {
-  formSchema: VbenFormSchema[];
+  formSchema: XAppFormSchema[];
   /**
    * @zh_CN 是否处于加载处理状态
    */
@@ -60,7 +60,7 @@ const emit = defineEmits<{
 
 const router = useRouter();
 
-const [Form, formApi] = useVbenForm(
+const [Form, formApi] = useXAppForm(
   reactive({
     commonConfig: {
       hideLabel: true,
@@ -103,7 +103,7 @@ defineExpose({
       </template>
     </Title>
     <Form />
-    <VbenButton
+    <XAppButton
       :class="{
         'cursor-wait': loading,
       }"
@@ -114,14 +114,14 @@ defineExpose({
       <slot name="submitButtonText">
         {{ submitButtonText || $t('common.login') }}
       </slot>
-    </VbenButton>
-    <VbenButton
+    </XAppButton>
+    <XAppButton
       v-if="showBack"
       class="mt-4 w-full"
       variant="outline"
       @click="goToLogin()"
     >
       {{ $t('common.back') }}
-    </VbenButton>
+    </XAppButton>
   </div>
 </template>

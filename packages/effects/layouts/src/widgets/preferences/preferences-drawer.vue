@@ -25,11 +25,11 @@ import {
   usePreferences,
 } from '@x-monorepo/preferences';
 
-import { useVbenDrawer } from '@x-monorepo-core/popup-ui';
+import { useXAppDrawer } from '@x-monorepo-core/popup-ui';
 import {
-  VbenButton,
-  VbenIconButton,
-  VbenSegmented,
+  XAppButton,
+  XAppIconButton,
+  XAppSegmented,
 } from '@x-monorepo-core/shadcn-ui';
 import { globalShareState } from '@x-monorepo-core/shared/global-state';
 
@@ -181,7 +181,7 @@ const {
 } = usePreferences();
 const { copy } = useClipboard({ legacy: true });
 
-const [Drawer] = useVbenDrawer();
+const [Drawer] = useXAppDrawer();
 
 const activeTab = ref('appearance');
 
@@ -248,7 +248,7 @@ async function handleReset() {
     >
       <template #extra>
         <div class="flex items-center">
-          <VbenIconButton
+          <XAppIconButton
             :disabled="!diffPreference"
             :tooltip="$t('preferences.resetTip')"
             class="relative"
@@ -259,8 +259,8 @@ async function handleReset() {
               class="bg-primary absolute right-0.5 top-0.5 h-2 w-2 rounded"
             ></span>
             <RotateCw class="size-4" />
-          </VbenIconButton>
-          <VbenIconButton
+          </XAppIconButton>
+          <XAppIconButton
             :tooltip="
               appEnableStickyPreferencesNavigationBar
                 ? $t('preferences.disableStickyPreferencesNavigationBar')
@@ -278,12 +278,12 @@ async function handleReset() {
               class="size-4"
             />
             <Pin v-else class="size-4" />
-          </VbenIconButton>
+          </XAppIconButton>
         </div>
       </template>
 
       <div>
-        <VbenSegmented
+        <XAppSegmented
           v-model="activeTab"
           :tabs="tabs"
           :class="{
@@ -451,11 +451,11 @@ async function handleReset() {
               />
             </Block>
           </template>
-        </VbenSegmented>
+        </XAppSegmented>
       </div>
 
       <template #footer>
-        <VbenButton
+        <XAppButton
           :disabled="!diffPreference"
           class="mx-4 w-full"
           size="sm"
@@ -464,8 +464,8 @@ async function handleReset() {
         >
           <Copy class="mr-2 size-3" />
           {{ $t('preferences.copyPreferences') }}
-        </VbenButton>
-        <VbenButton
+        </XAppButton>
+        <XAppButton
           :disabled="!diffPreference"
           class="mr-4 w-full"
           size="sm"
@@ -473,7 +473,7 @@ async function handleReset() {
           @click="handleClearCache"
         >
           {{ $t('preferences.clearAndLogout') }}
-        </VbenButton>
+        </XAppButton>
       </template>
     </Drawer>
   </div>

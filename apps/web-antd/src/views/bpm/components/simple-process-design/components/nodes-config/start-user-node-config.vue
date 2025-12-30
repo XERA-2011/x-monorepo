@@ -8,7 +8,7 @@ import type { SystemUserApi } from '#/api/system/user';
 
 import { inject, ref } from 'vue';
 
-import { useVbenDrawer } from '@x-monorepo/common-ui';
+import { useXAppDrawer } from '@x-monorepo/common-ui';
 import { BpmModelFormType, BpmNodeTypeEnum } from '@x-monorepo/constants';
 import { IconifyIcon } from '@x-monorepo/icons';
 
@@ -88,8 +88,8 @@ function getDeptNames(deptIds: number[]): string {
   return deptNames.join(',');
 }
 
-// 使用 VbenDrawer
-const [Drawer, drawerApi] = useVbenDrawer({
+// 使用 XAppDrawer
+const [Drawer, drawerApi] = useXAppDrawer({
   header: true,
   closable: true,
   onCancel() {

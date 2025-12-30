@@ -4,7 +4,7 @@ import type { SystemDeptApi } from '#/api/system/dept';
 
 import { nextTick, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { handleTree } from '@x-monorepo/utils';
 
 import { ElCard, ElCol, ElRow, ElTree } from 'element-plus';
@@ -49,7 +49,7 @@ const deptData = ref<SystemDeptApi.Dept[]>([]);
 const treeRef = ref();
 
 // 对话框配置
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     // 获取选中的部门ID
     const selectedIds: number[] = props.checkStrictly

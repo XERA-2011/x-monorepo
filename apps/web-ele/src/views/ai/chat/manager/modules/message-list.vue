@@ -6,7 +6,7 @@ import { Page } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteChatMessageByAdmin,
   getChatMessagePage,
@@ -34,7 +34,7 @@ async function handleDelete(row: AiChatConversationApi.ChatConversation) {
   }
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchemaMessage(),
   },

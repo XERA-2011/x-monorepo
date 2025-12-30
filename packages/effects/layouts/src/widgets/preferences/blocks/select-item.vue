@@ -11,7 +11,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-  VbenTooltip,
+  XAppTooltip,
 } from '@x-monorepo-core/shadcn-ui';
 
 defineOptions({
@@ -47,12 +47,12 @@ const slots = useSlots();
     <span class="flex items-center text-sm">
       <slot></slot>
 
-      <VbenTooltip v-if="slots.tip" side="bottom">
+      <XAppTooltip v-if="slots.tip" side="bottom">
         <template #trigger>
           <CircleHelp class="ml-1 size-3 cursor-help" />
         </template>
         <slot name="tip"></slot>
-      </VbenTooltip>
+      </XAppTooltip>
     </span>
     <Select v-model="selectValue">
       <SelectTrigger class="h-8 w-[165px]">

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import FormCreate from '@form-create/ant-design-vue';
 
@@ -10,7 +10,7 @@ import { setConfAndFields2 } from '#/components/form-create';
 
 const formConfig = ref<any>({});
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   footer: false,
   async onOpenChange(isOpen: boolean) {
     if (!isOpen) {

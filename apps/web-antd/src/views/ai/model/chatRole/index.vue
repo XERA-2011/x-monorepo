@@ -2,18 +2,18 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiModelChatRoleApi } from '#/api/ai/model/chatRole';
 
-import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteChatRole, getChatRolePage } from '#/api/ai/model/chatRole';
 import { $t } from '#/locales';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Form,
   destroyOnClose: true,
 });
@@ -48,7 +48,7 @@ async function handleDelete(row: AiModelChatRoleApi.ChatRole) {
   }
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

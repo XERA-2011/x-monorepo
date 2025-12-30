@@ -9,7 +9,7 @@ import type { SystemUserApi } from '#/api/system/user';
 import { computed, nextTick, reactive, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import {
   BpmCandidateStrategyEnum,
   BpmModelFormType,
@@ -72,7 +72,7 @@ const props = defineProps<{
 }>(); // 当前登录的编号
 const emit = defineEmits(['success']);
 
-const [SignatureModal, signatureModalApi] = useVbenModal({
+const [SignatureModal, signatureModalApi] = useXAppModal({
   connectedComponent: Signature,
   destroyOnClose: true,
 });

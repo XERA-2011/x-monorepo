@@ -4,12 +4,12 @@ import type { BpmFormApi } from '#/api/bpm/form';
 
 import { onActivated } from 'vue';
 
-import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { $t } from '@x-monorepo/locales';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteForm, getFormPage } from '#/api/bpm/form';
 import { router } from '#/router';
 
@@ -74,12 +74,12 @@ async function handleDetail(row: BpmFormApi.Form) {
   detailModalApi.setData(row).open();
 }
 
-const [DetailModal, detailModalApi] = useVbenModal({
+const [DetailModal, detailModalApi] = useXAppModal({
   connectedComponent: Detail,
   destroyOnClose: true,
 });
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

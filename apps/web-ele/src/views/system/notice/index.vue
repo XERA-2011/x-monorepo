@@ -4,12 +4,12 @@ import type { SystemNoticeApi } from '#/api/system/notice';
 
 import { ref } from 'vue';
 
-import { confirm, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { isEmpty } from '@x-monorepo/utils';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteNotice,
   deleteNoticeList,
@@ -21,7 +21,7 @@ import { $t } from '#/locales';
 import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Form,
   destroyOnClose: true,
 });
@@ -93,7 +93,7 @@ async function handlePush(row: SystemNoticeApi.Notice) {
   }
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

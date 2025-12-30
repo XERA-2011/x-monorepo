@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { Settings } from '@x-monorepo/icons';
 
-import { VbenIconButton } from '@x-monorepo-core/shadcn-ui';
+import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 
 import Preferences from './preferences.vue';
 
@@ -13,8 +13,8 @@ function clearPreferencesAndLogout() {
 </script>
 <template>
   <Preferences @clear-preferences-and-logout="clearPreferencesAndLogout">
-    <VbenIconButton class="hover:animate-[shrink_0.3s_ease-in-out]">
+    <XAppIconButton class="hover:animate-[shrink_0.3s_ease-in-out]">
       <Settings class="text-foreground size-4" />
-    </VbenIconButton>
+    </XAppIconButton>
   </Preferences>
 </template>

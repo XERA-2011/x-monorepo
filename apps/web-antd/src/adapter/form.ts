@@ -1,20 +1,20 @@
 import type {
-  VbenFormSchema as FormSchema,
-  VbenFormProps,
+  XAppFormSchema as FormSchema,
+  XAppFormProps,
 } from '@x-monorepo/common-ui';
 
 import type { ComponentType } from './component';
 
 import {
-  setupVbenForm,
-  useVbenForm as useForm,
+  setupXAppForm,
+  useXAppForm as useForm,
   z,
 } from '@x-monorepo/common-ui';
 import { $t } from '@x-monorepo/locales';
 import { isMobile } from '@x-monorepo/utils';
 
-async function initSetupVbenForm() {
-  setupVbenForm<ComponentType>({
+async function initSetupXAppForm() {
+  setupXAppForm<ComponentType>({
     config: {
       // ant design vue组件库默认都是 v-model:value
       baseModelPropName: 'value',
@@ -65,9 +65,9 @@ async function initSetupVbenForm() {
   });
 }
 
-const useVbenForm = useForm<ComponentType>;
+const useXAppForm = useForm<ComponentType>;
 
-export { initSetupVbenForm, useVbenForm, z };
+export { initSetupXAppForm, useXAppForm, z };
 
-export type VbenFormSchema = FormSchema<ComponentType>;
-export type { VbenFormProps };
+export type XAppFormSchema = FormSchema<ComponentType>;
+export type { XAppFormProps };

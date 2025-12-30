@@ -11,7 +11,7 @@ import { $t } from '@x-monorepo/locales';
 
 import { ElMessage } from 'element-plus';
 
-import { useVbenForm, z } from '#/adapter/form';
+import { useXAppForm, z } from '#/adapter/form';
 import { updateUserProfile } from '#/api/system/user/profile';
 
 const props = defineProps<{
@@ -22,7 +22,7 @@ const emit = defineEmits<{
 }>();
 
 // TODO @puhui999：展示貌似不太对；应该是左右，不是上下哈
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     labelWidth: 70,
   },

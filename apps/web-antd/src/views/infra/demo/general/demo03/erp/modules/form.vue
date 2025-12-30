@@ -5,7 +5,7 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 
@@ -60,7 +60,7 @@ function resetForm() {
   formRef.value?.resetFields();
 }
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     await formRef.value?.validate();
     modalApi.lock();

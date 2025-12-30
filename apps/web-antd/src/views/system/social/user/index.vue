@@ -2,16 +2,16 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemSocialUserApi } from '#/api/system/social/user';
 
-import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getSocialUserPage } from '#/api/system/social/user';
 import { $t } from '#/locales';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Detail from './modules/detail.vue';
 
-const [DetailModal, detailModalApi] = useVbenModal({
+const [DetailModal, detailModalApi] = useXAppModal({
   connectedComponent: Detail,
   destroyOnClose: true,
 });
@@ -21,7 +21,7 @@ function handleDetail(row: SystemSocialUserApi.SocialUser) {
   detailModalApi.setData(row).open();
 }
 
-const [Grid] = useVbenVxeGrid({
+const [Grid] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

@@ -7,10 +7,10 @@ import { Bell, CircleCheckBig, CircleX, MailCheck } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 
 import {
-  VbenButton,
-  VbenIconButton,
-  VbenPopover,
-  VbenScrollbar,
+  XAppButton,
+  XAppIconButton,
+  XAppPopover,
+  XAppScrollbar,
 } from '@x-monorepo-core/shadcn-ui';
 
 import { useToggle } from '@vueuse/core';
@@ -93,34 +93,34 @@ function handleOpen() {
 }
 </script>
 <template>
-  <VbenPopover
+  <XAppPopover
     v-model:open="open"
     content-class="relative right-2 w-[360px] p-0"
   >
     <template #trigger>
       <div class="flex-center mr-2 h-full" @click.stop="handleOpen">
-        <VbenIconButton class="bell-button text-foreground relative">
+        <XAppIconButton class="bell-button text-foreground relative">
           <span
             v-if="dot"
             class="bg-primary absolute right-0.5 top-0.5 h-2 w-2 rounded"
           ></span>
           <Bell class="size-4" />
-        </VbenIconButton>
+        </XAppIconButton>
       </div>
     </template>
 
     <div class="relative">
       <div class="flex items-center justify-between p-4 py-3">
         <div class="text-foreground">{{ $t('ui.widgets.notifications') }}</div>
-        <VbenIconButton
+        <XAppIconButton
           :disabled="notifications.length <= 0"
           :tooltip="$t('ui.widgets.markAllAsRead')"
           @click="handleMakeAll"
         >
           <MailCheck class="size-4" />
-        </VbenIconButton>
+        </XAppIconButton>
       </div>
-      <VbenScrollbar v-if="notifications.length > 0">
+      <XAppScrollbar v-if="notifications.length > 0">
         <ul class="!flex max-h-[360px] w-full flex-col">
           <template v-for="item in notifications" :key="item.id ?? item.title">
             <li
@@ -152,7 +152,7 @@ function handleOpen() {
               <div
                 class="absolute right-3 top-1/2 flex -translate-y-1/2 flex-col gap-2"
               >
-                <VbenIconButton
+                <XAppIconButton
                   v-if="!item.isRead"
                   size="xs"
                   variant="ghost"
@@ -161,8 +161,8 @@ function handleOpen() {
                   @click.stop="emit('read', item)"
                 >
                   <CircleCheckBig class="size-4" />
-                </VbenIconButton>
-                <VbenIconButton
+                </XAppIconButton>
+                <XAppIconButton
                   v-if="item.isRead"
                   size="xs"
                   variant="ghost"
@@ -171,12 +171,12 @@ function handleOpen() {
                   @click.stop="emit('remove', item)"
                 >
                   <CircleX class="size-4" />
-                </VbenIconButton>
+                </XAppIconButton>
               </div>
             </li>
           </template>
         </ul>
-      </VbenScrollbar>
+      </XAppScrollbar>
 
       <template v-else>
         <div class="flex-center text-muted-foreground min-h-[150px] w-full">
@@ -187,20 +187,20 @@ function handleOpen() {
       <div
         class="border-border flex items-center justify-between border-t px-4 py-3"
       >
-        <VbenButton
+        <XAppButton
           :disabled="notifications.length <= 0"
           size="sm"
           variant="ghost"
           @click="handleClear"
         >
           {{ $t('ui.widgets.clearNotifications') }}
-        </VbenButton>
-        <VbenButton size="sm" @click="handleViewAll">
+        </XAppButton>
+        <XAppButton size="sm" @click="handleViewAll">
           {{ $t('ui.widgets.viewAll') }}
-        </VbenButton>
+        </XAppButton>
       </div>
     </div>
-  </VbenPopover>
+  </XAppPopover>
 </template>
 
 <style scoped>

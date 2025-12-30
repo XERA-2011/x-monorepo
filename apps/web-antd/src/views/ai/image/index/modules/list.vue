@@ -4,7 +4,7 @@ import type { AiImageApi } from '#/api/ai/image';
 import { onMounted, onUnmounted, reactive, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { confirm, useVbenDrawer } from '@x-monorepo/common-ui';
+import { confirm, useXAppDrawer } from '@x-monorepo/common-ui';
 import { AiImageStatusEnum } from '@x-monorepo/constants';
 import { downloadFileFromImageUrl } from '@x-monorepo/utils';
 
@@ -23,7 +23,7 @@ import ImageDetail from './detail.vue';
 
 const emits = defineEmits(['onRegeneration']);
 const router = useRouter();
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useXAppDrawer({
   title: '图片详情',
   footer: false,
 });

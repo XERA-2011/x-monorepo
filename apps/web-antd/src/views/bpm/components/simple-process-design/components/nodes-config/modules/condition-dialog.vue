@@ -3,7 +3,7 @@ import type { ConditionGroup } from '../../../consts';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { cloneDeep } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
@@ -29,7 +29,7 @@ const conditionData = ref<{
 // 条件组件的引用
 const conditionRef = ref();
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   title: '条件配置',
   destroyOnClose: true,
   draggable: true,

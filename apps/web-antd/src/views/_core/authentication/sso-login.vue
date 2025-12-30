@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 
 import { computed, onMounted, reactive, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { AuthenticationAuthTitle, VbenButton } from '@x-monorepo/common-ui';
+import { AuthenticationAuthTitle, XAppButton } from '@x-monorepo/common-ui';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import { authorize, getAuthorize } from '#/api/system/oauth2/open';
 
 defineOptions({ name: 'SSOLogin' });
@@ -143,7 +143,7 @@ function formatScope(scope: string) {
   }
 }
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): XAppFormSchema[] => {
   return [
     {
       fieldName: 'scopes',
@@ -160,7 +160,7 @@ const formSchema = computed((): VbenFormSchema[] => {
   ];
 });
 
-const [Form, formApi] = useVbenForm(
+const [Form, formApi] = useXAppForm(
   reactive({
     commonConfig: {
       hideLabel: true,
@@ -193,7 +193,7 @@ onMounted(() => {
     <Form />
 
     <div class="flex gap-2">
-      <VbenButton
+      <XAppButton
         :class="{
           'cursor-wait': loading,
         }"
@@ -203,8 +203,8 @@ onMounted(() => {
         @click="handleSubmit(true)"
       >
         同意授权
-      </VbenButton>
-      <VbenButton
+      </XAppButton>
+      <XAppButton
         :class="{
           'cursor-wait': loading,
         }"
@@ -215,7 +215,7 @@ onMounted(() => {
         @click="handleSubmit(false)"
       >
         拒绝
-      </VbenButton>
+      </XAppButton>
     </div>
   </div>
 </template>

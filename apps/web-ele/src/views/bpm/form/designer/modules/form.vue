@@ -5,11 +5,11 @@ import type { BpmFormApi } from '#/api/bpm/form';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { ElMessage } from 'element-plus';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import { createForm, updateForm } from '#/api/bpm/form';
 import { encodeConf, encodeFields } from '#/components/form-create';
 import { $t } from '#/locales';
@@ -31,13 +31,13 @@ const getTitle = computed(() => {
     : $t('ui.actionTitle.edit', ['流程表单']);
 });
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   layout: 'horizontal',
   schema: useFormSchema(),
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) {

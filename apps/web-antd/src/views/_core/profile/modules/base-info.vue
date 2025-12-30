@@ -11,7 +11,7 @@ import { $t } from '@x-monorepo/locales';
 
 import { message } from 'ant-design-vue';
 
-import { useVbenForm, z } from '#/adapter/form';
+import { useXAppForm, z } from '#/adapter/form';
 import { updateUserProfile } from '#/api/system/user/profile';
 
 const props = defineProps<{
@@ -21,7 +21,7 @@ const emit = defineEmits<{
   (e: 'success'): void;
 }>();
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     labelWidth: 70,
   },

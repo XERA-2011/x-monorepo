@@ -3,7 +3,7 @@ import type { ModelCategoryInfo } from '#/api/bpm/model';
 
 import { onActivated, reactive, ref, useTemplateRef, watch } from 'vue';
 
-import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { Page, useXAppModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { cloneDeep } from '@x-monorepo/utils';
 
@@ -20,7 +20,7 @@ import { router } from '#/router';
 import CategoryForm from '../category/modules/form.vue';
 import CategoryDraggableModel from './modules/category-draggable-model.vue';
 
-const [CategoryFormModal, categoryFormModalApi] = useVbenModal({
+const [CategoryFormModal, categoryFormModalApi] = useXAppModal({
   connectedComponent: CategoryForm,
   destroyOnClose: true,
 });

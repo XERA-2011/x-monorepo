@@ -5,7 +5,7 @@ import type { Demo02CategoryApi } from '#/api/infra/demo/demo02';
 
 import { computed, reactive, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { handleTree } from '@x-monorepo/utils';
 
 import {
@@ -64,7 +64,7 @@ const getDemo02CategoryTree = async () => {
   demo02CategoryTree.value = handleTree(data);
 };
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     await formRef.value?.validate();
     modalApi.lock();

@@ -6,7 +6,7 @@ import { computed, ref, watch } from 'vue';
 import { InfraCodegenTemplateTypeEnum } from '@x-monorepo/constants';
 import { isEmpty } from '@x-monorepo/utils';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import { getCodegenTableList } from '#/api/infra/codegen';
 
 import {
@@ -32,7 +32,7 @@ const isSubTable = computed(
 );
 
 /** 基础表单实例 */
-const [BaseForm, baseFormApi] = useVbenForm({
+const [BaseForm, baseFormApi] = useXAppForm({
   wrapperClass: 'grid grid-cols-1 md:grid-cols-2 gap-4', // 配置表单布局为两列
   layout: 'horizontal',
   showDefaultActions: false,
@@ -49,7 +49,7 @@ const [BaseForm, baseFormApi] = useVbenForm({
 });
 
 /** 树表信息表单实例 */
-const [TreeForm, treeFormApi] = useVbenForm({
+const [TreeForm, treeFormApi] = useXAppForm({
   wrapperClass: 'grid grid-cols-1 md:grid-cols-2 gap-4', // 配置表单布局为两列
   layout: 'horizontal',
   showDefaultActions: false,
@@ -57,7 +57,7 @@ const [TreeForm, treeFormApi] = useVbenForm({
 });
 
 /** 主子表信息表单实例 */
-const [SubForm, subFormApi] = useVbenForm({
+const [SubForm, subFormApi] = useXAppForm({
   wrapperClass: 'grid grid-cols-1 md:grid-cols-2 gap-4', // 配置表单布局为两列
   layout: 'horizontal',
   showDefaultActions: false,

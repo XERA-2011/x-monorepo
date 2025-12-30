@@ -5,16 +5,16 @@ import { $t } from '@x-monorepo/locales';
 
 import { ElMessage } from 'element-plus';
 
-import { useVbenForm, z } from '#/adapter/form';
+import { useXAppForm, z } from '#/adapter/form';
 import { updateUserPassword } from '#/api/system/user/profile';
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     labelWidth: 70,
   },
   schema: [
     {
-      component: 'VbenInputPassword',
+      component: 'XAppInputPassword',
       componentProps: {
         passwordStrength: true,
         placeholder: $t('authentication.password'),
@@ -27,7 +27,7 @@ const [Form, formApi] = useVbenForm({
         .max(20, '密码长度不能超过 20 个字符'),
     },
     {
-      component: 'VbenInputPassword',
+      component: 'XAppInputPassword',
       componentProps: {
         passwordStrength: true,
         placeholder: '请输入新密码',
@@ -50,7 +50,7 @@ const [Form, formApi] = useVbenForm({
       rules: 'required',
     },
     {
-      component: 'VbenInputPassword',
+      component: 'XAppInputPassword',
       componentProps: {
         passwordStrength: true,
         placeholder: $t('authentication.confirmPassword'),

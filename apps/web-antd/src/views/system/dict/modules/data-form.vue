@@ -3,11 +3,11 @@ import type { SystemDictDataApi } from '#/api/system/dict/data';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { message } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import {
   createDictData,
   getDictData,
@@ -27,7 +27,7 @@ const getTitle = computed(() => {
     : $t('ui.actionTitle.create', ['字典数据']);
 });
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     componentProps: {
       class: 'w-full',
@@ -40,7 +40,7 @@ const [Form, formApi] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) {

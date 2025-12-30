@@ -5,7 +5,7 @@ import { computed } from 'vue';
 
 import { useNamespace } from '@x-monorepo-core/composables';
 import { ChevronDown, ChevronRight } from '@x-monorepo-core/icons';
-import { VbenIcon } from '@x-monorepo-core/shadcn-ui';
+import { XAppIcon } from '@x-monorepo-core/shadcn-ui';
 
 import { useMenuContext } from '../hooks';
 
@@ -82,7 +82,7 @@ const iconArrowStyle = computed(() => {
   >
     <slot></slot>
 
-    <VbenIcon
+    <XAppIcon
       v-if="!isMenuMore"
       :class="nsMenu.e('icon')"
       :icon="icon"

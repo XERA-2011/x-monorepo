@@ -6,12 +6,12 @@ import type { InfraDataSourceConfigApi } from '#/api/infra/data-source-config';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { isEmpty } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteCodegenTable,
   deleteCodegenTableList,
@@ -38,12 +38,12 @@ const getDataSourceConfigName = (dataSourceConfigId: number) => {
   )?.name;
 };
 
-const [ImportModal, importModalApi] = useVbenModal({
+const [ImportModal, importModalApi] = useXAppModal({
   connectedComponent: ImportTable,
   destroyOnClose: true,
 });
 
-const [PreviewModal, previewModalApi] = useVbenModal({
+const [PreviewModal, previewModalApi] = useXAppModal({
   connectedComponent: PreviewCode,
   destroyOnClose: true,
 });
@@ -145,7 +145,7 @@ async function handleGenerate(row: InfraCodegenApi.CodegenTable) {
   }
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

@@ -2,13 +2,13 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { InfraApiErrorLogApi } from '#/api/infra/api-error-log';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { InfraApiErrorLogProcessStatusEnum } from '@x-monorepo/constants';
 import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   exportApiErrorLog,
   getApiErrorLogPage,
@@ -19,7 +19,7 @@ import { $t } from '#/locales';
 import { useGridColumns, useGridFormSchema } from './data';
 import Detail from './modules/detail.vue';
 
-const [DetailModal, detailModalApi] = useVbenModal({
+const [DetailModal, detailModalApi] = useXAppModal({
   connectedComponent: Detail,
   destroyOnClose: true,
 });
@@ -58,7 +58,7 @@ async function handleProcess(id: number, processStatus: number) {
   }
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

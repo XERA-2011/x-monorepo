@@ -12,7 +12,7 @@ import { getUrlValue } from '@x-monorepo/utils';
 
 import { Button, Card, Image, message } from 'ant-design-vue';
 
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useXAppVxeGrid } from '#/adapter/vxe-table';
 import { socialAuthRedirect } from '#/api/core/auth';
 import {
   getBindSocialUserList,
@@ -78,7 +78,7 @@ function useGridColumns(): VxeTableGridOptions['columns'] {
   ];
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   gridOptions: {
     columns: useGridColumns(),
     minHeight: 0,

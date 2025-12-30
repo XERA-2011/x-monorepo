@@ -9,7 +9,7 @@ import { BpmProcessInstanceStatus } from '@x-monorepo/constants';
 
 import { ElButton, ElInput, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   cancelProcessInstanceByAdmin,
   getProcessInstanceManagerPage,
@@ -68,7 +68,7 @@ function handleCancel(row: BpmProcessInstanceApi.ProcessInstance) {
   });
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

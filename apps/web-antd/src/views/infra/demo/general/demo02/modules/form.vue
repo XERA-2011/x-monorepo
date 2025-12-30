@@ -5,7 +5,7 @@ import type { Demo02CategoryApi } from '#/api/infra/demo/demo02';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { handleTree } from '@x-monorepo/utils';
 
 import { Form, Input, message, TreeSelect } from 'ant-design-vue';
@@ -58,7 +58,7 @@ async function getDemo02CategoryTree() {
   demo02CategoryTree.value = handleTree(data);
 }
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     await formRef.value?.validate();
     modalApi.lock();

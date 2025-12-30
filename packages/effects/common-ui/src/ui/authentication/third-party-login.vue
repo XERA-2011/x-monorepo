@@ -7,7 +7,7 @@ import {
 } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 
-import { VbenIconButton } from '@x-monorepo-core/shadcn-ui';
+import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 
 defineOptions({
   name: 'ThirdPartyLogin',
@@ -38,18 +38,18 @@ function handleThirdLogin(type: number) {
     </div>
 
     <div class="mt-4 flex flex-wrap justify-center">
-      <VbenIconButton class="mb-3" @click="handleThirdLogin(30)">
+      <XAppIconButton class="mb-3" @click="handleThirdLogin(30)">
         <SvgWeChatIcon />
-      </VbenIconButton>
-      <VbenIconButton class="mb-3" @click="handleThirdLogin(20)">
+      </XAppIconButton>
+      <XAppIconButton class="mb-3" @click="handleThirdLogin(20)">
         <SvgDingDingIcon />
-      </VbenIconButton>
-      <VbenIconButton class="mb-3" @click="handleThirdLogin(0)">
+      </XAppIconButton>
+      <XAppIconButton class="mb-3" @click="handleThirdLogin(0)">
         <SvgQQChatIcon />
-      </VbenIconButton>
-      <VbenIconButton class="mb-3" @click="handleThirdLogin(0)">
+      </XAppIconButton>
+      <XAppIconButton class="mb-3" @click="handleThirdLogin(0)">
         <SvgGithubIcon />
-      </VbenIconButton>
+      </XAppIconButton>
     </div>
   </div>
 </template>

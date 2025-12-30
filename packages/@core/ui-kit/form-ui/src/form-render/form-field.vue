@@ -12,8 +12,8 @@ import {
   FormField,
   FormItem,
   FormMessage,
-  VbenRenderContent,
-  VbenTooltip,
+  XAppRenderContent,
+  XAppTooltip,
 } from '@x-monorepo-core/shadcn-ui';
 import {
   cn,
@@ -328,7 +328,7 @@ onUnmounted(() => {
         :style="labelStyle"
       >
         <template v-if="label">
-          <VbenRenderContent :content="label" />
+          <XAppRenderContent :content="label" />
         </template>
       </FormLabel>
       <div class="flex-auto overflow-hidden p-[1px]">
@@ -357,14 +357,14 @@ onUnmounted(() => {
                   :key="name"
                   #[name]="renderSlotProps"
                 >
-                  <VbenRenderContent
+                  <XAppRenderContent
                     :content="customContentRender[name]"
                     v-bind="{ ...renderSlotProps, formContext: slotProps }"
                   />
                 </template>
                 <!-- <slot></slot> -->
               </component>
-              <VbenTooltip
+              <XAppTooltip
                 v-if="compact && isInValid"
                 :delay-duration="300"
                 side="left"
@@ -381,15 +381,15 @@ onUnmounted(() => {
                   </slot>
                 </template>
                 <FormMessage />
-              </VbenTooltip>
+              </XAppTooltip>
             </slot>
           </FormControl>
           <!-- 自定义后缀 -->
           <div v-if="suffix" class="ml-1">
-            <VbenRenderContent :content="suffix" />
+            <XAppRenderContent :content="suffix" />
           </div>
           <FormDescription v-if="description" class="ml-1">
-            <VbenRenderContent :content="description" />
+            <XAppRenderContent :content="description" />
           </FormDescription>
         </div>
 

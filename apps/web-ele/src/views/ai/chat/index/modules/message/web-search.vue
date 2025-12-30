@@ -3,7 +3,7 @@ import type { AiChatMessageApi } from '#/api/ai/chat/message';
 
 import { ref } from 'vue';
 
-import { useVbenDrawer } from '@x-monorepo/common-ui';
+import { useXAppDrawer } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 
 defineProps<{
@@ -14,7 +14,7 @@ const isExpanded = ref(false); // 默认收起
 const selectedResult = ref<AiChatMessageApi.WebSearchPage | null>(null); // 选中的搜索结果
 const iconLoadError = ref<Record<number, boolean>>({}); // 记录图标加载失败
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useXAppDrawer({
   title: '联网搜索详情',
   closable: true,
   footer: true,

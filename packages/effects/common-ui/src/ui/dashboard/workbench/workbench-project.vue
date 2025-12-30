@@ -6,7 +6,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-  VbenIcon,
+  XAppIcon,
 } from '@x-monorepo-core/shadcn-ui';
 
 interface Props {
@@ -44,7 +44,7 @@ defineEmits(['click']);
           @click="$emit('click', item)"
         >
           <div class="flex items-center">
-            <VbenIcon
+            <XAppIcon
               :color="item.color"
               :icon="item.icon"
               class="size-8 transition-all duration-300 group-hover:scale-110"

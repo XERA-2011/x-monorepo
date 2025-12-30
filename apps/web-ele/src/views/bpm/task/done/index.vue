@@ -6,7 +6,7 @@ import { DocAlert, Page } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getTaskDonePage, withdrawTask } from '#/api/bpm/task';
 import { router } from '#/router';
 
@@ -39,7 +39,7 @@ async function handleWithdraw(row: BpmTaskApi.TaskManager) {
   }
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

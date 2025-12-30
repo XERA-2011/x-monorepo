@@ -4,13 +4,13 @@ import type { SystemRoleApi } from '#/api/system/role';
 
 import { ref } from 'vue';
 
-import { Tree, useVbenModal } from '@x-monorepo/common-ui';
+import { Tree, useXAppModal } from '@x-monorepo/common-ui';
 import { SystemDataScopeEnum } from '@x-monorepo/constants';
 import { handleTree } from '@x-monorepo/utils';
 
 import { Checkbox, message, Spin } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import { getDeptList } from '#/api/system/dept';
 import { assignRoleDataScope } from '#/api/system/permission';
 import { getRole } from '#/api/system/role';
@@ -27,7 +27,7 @@ const isExpanded = ref(false); // 展开状态
 const isCheckStrictly = ref(true); // 父子联动状态
 const expandedKeys = ref<number[]>([]); // 展开的节点
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     componentProps: {
       class: 'w-full',
@@ -40,7 +40,7 @@ const [Form, formApi] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) {

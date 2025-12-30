@@ -6,7 +6,7 @@ import type { SimpleFlowNode } from '../../consts';
 
 import { inject, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { BpmNodeTypeEnum } from '@x-monorepo/constants';
 import { IconifyIcon } from '@x-monorepo/icons';
 
@@ -44,7 +44,7 @@ const { showInput, changeNodeName, clickTitle, inputRef } = useNodeName2(
 
 const nodeSetting = ref();
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   connectedComponent: TaskListModal,
   destroyOnClose: true,
 });

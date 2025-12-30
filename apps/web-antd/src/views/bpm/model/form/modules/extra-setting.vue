@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, provide, ref, watch } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import {
   BpmAutoApproveType,
   BpmModelFormType,
@@ -263,7 +263,7 @@ async function validate() {
 }
 
 /** 自定义打印模板模态框 */
-const [PrintTemplateModal, printTemplateModalApi] = useVbenModal({
+const [PrintTemplateModal, printTemplateModalApi] = useXAppModal({
   connectedComponent: PrintTemplate,
   destroyOnClose: true,
 });

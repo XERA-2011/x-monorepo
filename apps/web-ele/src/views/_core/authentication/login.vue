@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@x-monorepo/common-ui';
+import type { XAppFormSchema } from '@x-monorepo/common-ui';
 
 import type { AuthApi } from '#/api/core/auth';
 
@@ -117,10 +117,10 @@ onMounted(() => {
   fetchTenantList();
 });
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): XAppFormSchema[] => {
   return [
     {
-      component: 'VbenSelect',
+      component: 'XAppSelect',
       componentProps: {
         options: tenantList.value.map((item) => ({
           label: item.name,
@@ -142,7 +142,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       },
     },
     {
-      component: 'VbenInput',
+      component: 'XAppInput',
       componentProps: {
         placeholder: $t('authentication.usernameTip'),
       },
@@ -154,7 +154,7 @@ const formSchema = computed((): VbenFormSchema[] => {
         .default(import.meta.env.VITE_APP_DEFAULT_USERNAME),
     },
     {
-      component: 'VbenInputPassword',
+      component: 'XAppInputPassword',
       componentProps: {
         placeholder: $t('authentication.passwordTip'),
       },

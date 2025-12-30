@@ -3,18 +3,18 @@ import type { Component } from 'vue';
 import type {
   BaseFormComponentType,
   FormCommonConfig,
-  VbenFormAdapterOptions,
+  XAppFormAdapterOptions,
 } from './types';
 
 import { h } from 'vue';
 
 import {
-  VbenButton,
-  VbenCheckbox,
-  Input as VbenInput,
-  VbenInputPassword,
-  VbenPinInput,
-  VbenSelect,
+  XAppButton,
+  XAppCheckbox,
+  Input as XAppInput,
+  XAppInputPassword,
+  XAppPinInput,
+  XAppSelect,
 } from '@x-monorepo-core/shadcn-ui';
 import { globalShareState } from '@x-monorepo-core/shared/global-state';
 
@@ -25,24 +25,24 @@ const DEFAULT_MODEL_PROP_NAME = 'modelValue';
 export const DEFAULT_FORM_COMMON_CONFIG: FormCommonConfig = {};
 
 export const COMPONENT_MAP: Record<BaseFormComponentType, Component> = {
-  DefaultButton: h(VbenButton, { size: 'sm', variant: 'outline' }),
-  PrimaryButton: h(VbenButton, { size: 'sm', variant: 'default' }),
-  VbenCheckbox,
-  VbenInput,
-  VbenInputPassword,
-  VbenPinInput,
-  VbenSelect,
+  DefaultButton: h(XAppButton, { size: 'sm', variant: 'outline' }),
+  PrimaryButton: h(XAppButton, { size: 'sm', variant: 'default' }),
+  XAppCheckbox,
+  XAppInput,
+  XAppInputPassword,
+  XAppPinInput,
+  XAppSelect,
 };
 
 export const COMPONENT_BIND_EVENT_MAP: Partial<
   Record<BaseFormComponentType, string>
 > = {
-  VbenCheckbox: 'checked',
+  XAppCheckbox: 'checked',
 };
 
-export function setupVbenForm<
+export function setupXAppForm<
   T extends BaseFormComponentType = BaseFormComponentType,
->(options: VbenFormAdapterOptions<T>) {
+>(options: XAppFormAdapterOptions<T>) {
   const { config, defineRules } = options;
 
   const {

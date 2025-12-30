@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Recordable } from '@x-monorepo/types';
 
-import type { VbenFormSchema } from '@x-monorepo-core/form-ui';
+import type { XAppFormSchema } from '@x-monorepo-core/form-ui';
 
 import type { AuthenticationProps } from './types';
 
@@ -10,15 +10,15 @@ import { useRouter } from 'vue-router';
 
 import { $t } from '@x-monorepo/locales';
 
-import { useVbenForm } from '@x-monorepo-core/form-ui';
-import { VbenButton, VbenCheckbox } from '@x-monorepo-core/shadcn-ui';
+import { useXAppForm } from '@x-monorepo-core/form-ui';
+import { XAppButton, XAppCheckbox } from '@x-monorepo-core/shadcn-ui';
 
 import Title from './auth-title.vue';
 import DocLink from './doc-link.vue';
 import ThirdPartyLogin from './third-party-login.vue';
 
 interface Props extends AuthenticationProps {
-  formSchema?: VbenFormSchema[];
+  formSchema?: XAppFormSchema[];
 }
 
 defineOptions({
@@ -48,7 +48,7 @@ const emit = defineEmits<{
   thirdLogin: [type: number];
 }>();
 
-const [Form, formApi] = useVbenForm(
+const [Form, formApi] = useXAppForm(
   reactive({
     commonConfig: {
       hideLabel: true,
@@ -126,13 +126,13 @@ defineExpose({
       class="mb-6 flex justify-between"
     >
       <div class="flex-center">
-        <VbenCheckbox
+        <XAppCheckbox
           v-if="showRememberMe"
           v-model="rememberMe"
           name="rememberMe"
         >
           {{ $t('authentication.rememberMe') }}
-        </VbenCheckbox>
+        </XAppCheckbox>
       </div>
 
       <span
@@ -143,7 +143,7 @@ defineExpose({
         {{ $t('authentication.forgetPassword') }}
       </span>
     </div>
-    <VbenButton
+    <XAppButton
       :class="{
         'cursor-wait': loading,
       }"
@@ -153,28 +153,28 @@ defineExpose({
       @click="handleSubmit"
     >
       {{ submitButtonText || $t('common.login') }}
-    </VbenButton>
+    </XAppButton>
 
     <div
       v-if="showCodeLogin || showQrcodeLogin"
       class="mb-2 mt-4 flex items-center justify-between"
     >
-      <VbenButton
+      <XAppButton
         v-if="showCodeLogin"
         class="w-1/2"
         variant="outline"
         @click="handleGo(codeLoginPath)"
       >
         {{ $t('authentication.mobileLogin') }}
-      </VbenButton>
-      <VbenButton
+      </XAppButton>
+      <XAppButton
         v-if="showQrcodeLogin"
         class="ml-4 w-1/2"
         variant="outline"
         @click="handleGo(qrCodeLoginPath)"
       >
         {{ $t('authentication.qrcodeLogin') }}
-      </VbenButton>
+      </XAppButton>
     </div>
 
     <!-- 第三方登录 -->

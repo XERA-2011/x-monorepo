@@ -5,7 +5,7 @@ import { useSlots } from 'vue';
 
 import { CircleHelp } from '@x-monorepo/icons';
 
-import { VbenCheckButtonGroup, VbenTooltip } from '@x-monorepo-core/shadcn-ui';
+import { XAppCheckButtonGroup, XAppTooltip } from '@x-monorepo-core/shadcn-ui';
 
 defineOptions({
   name: 'PreferenceCheckboxItem',
@@ -44,14 +44,14 @@ const slots = useSlots();
     <span class="flex items-center text-sm">
       <slot></slot>
 
-      <VbenTooltip v-if="slots.tip" side="bottom">
+      <XAppTooltip v-if="slots.tip" side="bottom">
         <template #trigger>
           <CircleHelp class="ml-1 size-3 cursor-help" />
         </template>
         <slot name="tip"></slot>
-      </VbenTooltip>
+      </XAppTooltip>
     </span>
-    <VbenCheckButtonGroup
+    <XAppCheckButtonGroup
       v-model="inputValue"
       class="h-8 w-[165px]"
       :options="items"

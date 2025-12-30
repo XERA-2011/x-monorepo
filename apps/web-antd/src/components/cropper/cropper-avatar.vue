@@ -5,7 +5,7 @@ import type { CropperAvatarProps } from './typing';
 
 import { computed, ref, unref, watch, watchEffect } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 
@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<CropperAvatarProps>(), {
 const emit = defineEmits(['update:value', 'change']);
 
 const sourceValue = ref(props.value || '');
-const [CropperModal, modalApi] = useVbenModal({
+const [CropperModal, modalApi] = useXAppModal({
   connectedComponent: cropperModal,
 });
 

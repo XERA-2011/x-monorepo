@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Recordable } from '@x-monorepo/types';
 
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 import type { SystemUserProfileApi } from '#/api/system/user/profile';
 
 import { computed, ref, watch } from 'vue';
@@ -24,7 +24,7 @@ const emit = defineEmits<{
 
 const profileBaseSettingRef = ref();
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): XAppFormSchema[] => {
   return [
     {
       label: '用户昵称',

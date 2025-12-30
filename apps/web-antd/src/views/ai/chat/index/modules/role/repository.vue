@@ -5,7 +5,7 @@ import type { AiModelChatRoleApi } from '#/api/ai/model/chatRole';
 import { onMounted, reactive, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { useVbenDrawer, useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppDrawer, useXAppModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Input, Layout, Tabs } from 'ant-design-vue';
@@ -19,13 +19,13 @@ import RoleList from './list.vue';
 
 const router = useRouter();
 
-const [Drawer] = useVbenDrawer({
+const [Drawer] = useXAppDrawer({
   title: '角色管理',
   footer: false,
   class: 'w-2/5',
 });
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Form,
   destroyOnClose: true,
 });

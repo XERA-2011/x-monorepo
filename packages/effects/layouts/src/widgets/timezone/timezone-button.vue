@@ -5,11 +5,11 @@ import { createIconifyIcon } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 import { useTimezoneStore } from '@x-monorepo/stores';
 
-import { useVbenModal } from '@x-monorepo-core/popup-ui';
+import { useXAppModal } from '@x-monorepo-core/popup-ui';
 import {
   RadioGroup,
   RadioGroupItem,
-  VbenIconButton,
+  XAppIconButton,
 } from '@x-monorepo-core/shadcn-ui';
 
 const TimezoneIcon = createIconifyIcon('fluent-mdl2:world-clock');
@@ -25,7 +25,7 @@ const timezoneOptionsRef = ref<
   }[]
 >([]);
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   fullscreenButton: false,
   onConfirm: async () => {
     try {
@@ -54,13 +54,13 @@ const handleClick = () => {
 
 <template>
   <div>
-    <VbenIconButton
+    <XAppIconButton
       :tooltip="$t('ui.widgets.timezone.setTimezone')"
       class="hover:animate-[shrink_0.3s_ease-in-out]"
       @click="handleClick"
     >
       <TimezoneIcon class="text-foreground size-4" />
-    </VbenIconButton>
+    </XAppIconButton>
     <Modal :title="$t('ui.widgets.timezone.setTimezone')">
       <div class="timezone-container">
         <RadioGroup v-model="timezoneRef" class="flex flex-col gap-2">

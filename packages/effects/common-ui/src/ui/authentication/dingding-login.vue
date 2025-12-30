@@ -4,8 +4,8 @@ import { useRoute } from 'vue-router';
 import { SvgDingDingIcon } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 
-import { alert, useVbenModal } from '@x-monorepo-core/popup-ui';
-import { VbenIconButton } from '@x-monorepo-core/shadcn-ui';
+import { alert, useXAppModal } from '@x-monorepo-core/popup-ui';
+import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 import { loadScript } from '@x-monorepo-core/shared/utils';
 
 interface Props {
@@ -21,7 +21,7 @@ const props = defineProps<Props>();
 
 const route = useRoute();
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   header: false,
   footer: false,
   fullscreenButton: false,
@@ -91,13 +91,13 @@ const handleLogin = () => {
 
 <template>
   <div>
-    <VbenIconButton
+    <XAppIconButton
       @click="handleLogin"
       :tooltip="$t('authentication.dingdingLogin')"
       tooltip-side="top"
     >
       <SvgDingDingIcon />
-    </VbenIconButton>
+    </XAppIconButton>
     <Modal>
       <div id="dingding_qrcode_login_element"></div>
     </Modal>

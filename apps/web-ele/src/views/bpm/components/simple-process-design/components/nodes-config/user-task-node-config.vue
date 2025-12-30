@@ -8,7 +8,7 @@ import type { UserTaskFormType } from '../../helpers';
 
 import { computed, nextTick, onMounted, reactive, ref } from 'vue';
 
-import { useVbenDrawer } from '@x-monorepo/common-ui';
+import { useXAppDrawer } from '@x-monorepo/common-ui';
 import {
   BpmModelFormType,
   BpmNodeTypeEnum,
@@ -99,7 +99,7 @@ const deptLevelLabel = computed(() => {
 // 监控节点的变化
 const currentNode = useWatchNode(props);
 // 抽屉配置
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useXAppDrawer({
   header: true,
   closable: true,
   title: '',

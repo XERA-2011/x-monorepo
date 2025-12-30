@@ -9,8 +9,8 @@ import {
   AsyncVxeColumn,
   AsyncVxeTable,
   createRequiredValidation,
-  setupVbenVxeTable,
-  useVbenVxeGrid,
+  setupXAppVxeTable,
+  useXAppVxeGrid,
 } from '@x-monorepo/plugins/vxe-table';
 import {
   erpCountInputFormatter,
@@ -34,9 +34,9 @@ import {
 import { DictTag } from '#/components/dict-tag';
 import { $t } from '#/locales';
 
-import { useVbenForm } from './form';
+import { useXAppForm } from './form';
 
-setupVbenVxeTable({
+setupXAppVxeTable({
   configVxeTable: (vxeUI) => {
     vxeUI.setConfig({
       grid: {
@@ -359,10 +359,10 @@ setupVbenVxeTable({
       },
     });
   },
-  useVbenForm,
+  useXAppForm,
 });
 
-export { createRequiredValidation, useVbenVxeGrid };
+export { createRequiredValidation, useXAppVxeGrid };
 
 export const [VxeTable, VxeColumn] = [AsyncVxeTable, AsyncVxeColumn];
 

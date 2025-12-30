@@ -2,7 +2,7 @@
 import { computed, toRaw, unref, watch } from 'vue';
 
 import { useSimpleLocale } from '@x-monorepo-core/composables';
-import { VbenExpandableArrow } from '@x-monorepo-core/shadcn-ui';
+import { XAppExpandableArrow } from '@x-monorepo-core/shadcn-ui';
 import {
   cn,
   isFunction,
@@ -178,13 +178,13 @@ defineExpose({
     <!-- 展开按钮前 -->
     <slot name="expand-before"></slot>
 
-    <VbenExpandableArrow
+    <XAppExpandableArrow
       class="ml-[-0.3em]"
       v-if="rootProps.showCollapseButton"
       v-model:model-value="collapsed"
     >
       <span>{{ collapsed ? $t('expand') : $t('collapse') }}</span>
-    </VbenExpandableArrow>
+    </XAppExpandableArrow>
 
     <!-- 展开按钮后 -->
     <slot name="expand-after"></slot>

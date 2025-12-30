@@ -3,7 +3,7 @@ import type { Ref } from 'vue';
 
 import { inject, ref } from 'vue';
 
-import { useVbenDrawer } from '@x-monorepo/common-ui';
+import { useXAppDrawer } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { Tinyflow } from '@x-monorepo/plugins/tinyflow';
 import { isNumber } from '@x-monorepo/utils';
@@ -24,7 +24,7 @@ const testResult = ref(null);
 const loading = ref(false);
 const error = ref(null);
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useXAppDrawer({
   footer: false,
   closeOnClickModal: false,
   modal: false,

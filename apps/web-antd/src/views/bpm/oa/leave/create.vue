@@ -4,7 +4,7 @@ import type { BpmProcessInstanceApi } from '#/api/bpm/processInstance';
 
 import { computed, onMounted, ref, watch } from 'vue';
 
-import { confirm, Page, useVbenForm } from '@x-monorepo/common-ui';
+import { confirm, Page, useXAppForm } from '@x-monorepo/common-ui';
 import { BpmCandidateStrategyEnum, BpmNodeIdEnum } from '@x-monorepo/constants';
 import { useTabs } from '@x-monorepo/hooks';
 import { IconifyIcon } from '@x-monorepo/icons';
@@ -39,7 +39,7 @@ const getTitle = computed(() => {
     : $t('ui.actionTitle.create', ['请假']);
 });
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     componentProps: {
       class: 'w-full',

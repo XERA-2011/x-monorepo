@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue';
 
-import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { Page, useXAppModal } from '@x-monorepo/common-ui';
 import { useTabs } from '@x-monorepo/hooks';
 import { IconifyIcon } from '@x-monorepo/icons';
 
@@ -30,7 +30,7 @@ const tabs = useTabs();
 const flowFormConfig = ref();
 const designerRef = ref<InstanceType<typeof FcDesigner>>();
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Form,
   destroyOnClose: true,
 });

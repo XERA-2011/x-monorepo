@@ -6,13 +6,13 @@ import type { BpmTaskApi } from '#/api/bpm/task';
 
 import { nextTick, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button } from 'ant-design-vue';
 
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getTaskListByProcessInstanceId } from '#/api/bpm/task';
 import { setConfAndFields2 } from '#/components/form-create';
 
@@ -95,7 +95,7 @@ const taskForm = ref<TaskForm>({
   value: {},
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   title: '查看表单',
   footer: false,
 });
@@ -135,7 +135,7 @@ async function handleShowFormDetail(row: BpmTaskApi.TaskManager) {
   formApi.disabled(true);
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   gridOptions: {
     columns: useGridColumns(),
     keepSource: true,

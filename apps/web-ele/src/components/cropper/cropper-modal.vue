@@ -3,7 +3,7 @@ import type { CropendResult, CropperModalProps, CropperType } from './typing';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { $t } from '@x-monorepo/locales';
 import { dataURLtoBlob, isFunction } from '@x-monorepo/utils';
 
@@ -37,7 +37,7 @@ let scaleX = 1;
 let scaleY = 1;
 
 const prefixCls = 'cropper-am';
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   onConfirm: handleOk,
   onOpenChange(isOpen) {
     if (isOpen) {

@@ -1,1 +1,1 @@
-export { default as VbenLogo } from './logo.vue';
+export { default as XAppLogo } from './logo.vue';

@@ -3,11 +3,11 @@ import type { Demo02CategoryApi } from '#/api/infra/demo/demo02';
 
 import { onMounted, reactive, ref } from 'vue';
 
-import { ContentWrap, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { ContentWrap, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 import {
   useTableToolbar,
-  VbenVxeTableToolbar,
+  XAppVxeTableToolbar,
 } from '@x-monorepo/plugins/vxe-table';
 import {
   cloneDeep,
@@ -65,7 +65,7 @@ function resetQuery() {
   handleQuery();
 }
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Demo02CategoryForm,
   destroyOnClose: true,
 });
@@ -171,7 +171,7 @@ onMounted(() => {
     <!-- 列表 -->
     <ContentWrap title="示例分类">
       <template #extra>
-        <VbenVxeTableToolbar
+        <XAppVxeTableToolbar
           ref="tableToolbarRef"
           v-model:hidden-search="hiddenSearchBar"
         >
@@ -197,7 +197,7 @@ onMounted(() => {
             <IconifyIcon icon="lucide:download" />
             {{ $t('ui.actionTitle.export') }}
           </Button>
-        </VbenVxeTableToolbar>
+        </XAppVxeTableToolbar>
       </template>
       <VxeTable
         ref="tableRef"

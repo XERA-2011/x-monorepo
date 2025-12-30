@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@x-monorepo/common-ui';
+import type { XAppFormSchema } from '@x-monorepo/common-ui';
 
 import type { AuthApi } from '#/api/core/auth';
 
@@ -97,10 +97,10 @@ onMounted(() => {
   fetchTenantList();
 });
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): XAppFormSchema[] => {
   return [
     {
-      component: 'VbenSelect',
+      component: 'XAppSelect',
       componentProps: {
         options: tenantList.value.map((item) => ({
           label: item.name,
@@ -122,7 +122,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       },
     },
     {
-      component: 'VbenInput',
+      component: 'XAppInput',
       componentProps: {
         placeholder: $t('authentication.usernameTip'),
       },
@@ -131,7 +131,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       rules: z.string().min(1, { message: $t('authentication.usernameTip') }),
     },
     {
-      component: 'VbenInput',
+      component: 'XAppInput',
       componentProps: {
         placeholder: $t('authentication.nicknameTip'),
       },
@@ -140,7 +140,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       rules: z.string().min(1, { message: $t('authentication.nicknameTip') }),
     },
     {
-      component: 'VbenInputPassword',
+      component: 'XAppInputPassword',
       componentProps: {
         passwordStrength: true,
         placeholder: $t('authentication.password'),
@@ -155,7 +155,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       rules: z.string().min(1, { message: $t('authentication.passwordTip') }),
     },
     {
-      component: 'VbenInputPassword',
+      component: 'XAppInputPassword',
       componentProps: {
         placeholder: $t('authentication.confirmPassword'),
       },
@@ -175,7 +175,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       label: $t('authentication.confirmPassword'),
     },
     {
-      component: 'VbenCheckbox',
+      component: 'XAppCheckbox',
       fieldName: 'agreePolicy',
       renderComponentContent: () => ({
         default: () =>

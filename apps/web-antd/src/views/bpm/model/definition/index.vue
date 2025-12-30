@@ -5,12 +5,12 @@ import type { BpmProcessDefinitionApi } from '#/api/bpm/definition';
 import { onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { BpmModelFormType } from '@x-monorepo/constants';
 
 import { Button, Tooltip } from 'ant-design-vue';
 
-import { TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getProcessDefinitionPage } from '#/api/bpm/definition';
 
 import FormCreateDetail from '../../form/modules/detail.vue';
@@ -21,7 +21,7 @@ defineOptions({ name: 'BpmProcessDefinition' });
 const route = useRoute();
 const router = useRouter();
 
-const [FormCreateDetailModal, formCreateDetailModalApi] = useVbenModal({
+const [FormCreateDetailModal, formCreateDetailModalApi] = useXAppModal({
   connectedComponent: FormCreateDetail,
   destroyOnClose: true,
 });
@@ -55,7 +55,7 @@ async function handleRecover(row: BpmProcessDefinitionApi.ProcessDefinition) {
   });
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   gridOptions: {
     columns: useGridColumns(),
     height: 'auto',

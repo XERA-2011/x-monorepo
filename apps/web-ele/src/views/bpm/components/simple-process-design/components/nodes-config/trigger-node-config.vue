@@ -10,7 +10,7 @@ import type {
 
 import { computed, getCurrentInstance, onMounted, reactive, ref } from 'vue';
 
-import { useVbenDrawer } from '@x-monorepo/common-ui';
+import { useXAppDrawer } from '@x-monorepo/common-ui';
 import { BpmNodeTypeEnum } from '@x-monorepo/constants';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { cloneDeep } from '@x-monorepo/utils';
@@ -59,7 +59,7 @@ const props = defineProps({
 const { proxy } = getCurrentInstance() as any;
 
 // 抽屉配置
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useXAppDrawer({
   header: true,
   closable: true,
   title: '',

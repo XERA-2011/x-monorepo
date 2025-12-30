@@ -2,18 +2,18 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiMindmapApi } from '#/api/ai/mindmap';
 
-import { DocAlert, Page, useVbenDrawer } from '@x-monorepo/common-ui';
+import { DocAlert, Page, useXAppDrawer } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteMindMap, getMindMapPage } from '#/api/ai/mindmap';
 import { $t } from '#/locales';
 
 import Right from '../index/modules/right.vue';
 import { useGridColumns, useGridFormSchema } from './data';
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useXAppDrawer({
   header: false,
   footer: false,
   destroyOnClose: true,
@@ -43,7 +43,7 @@ async function openPreview(row: AiMindmapApi.MindMap) {
   drawerApi.setData(row.generatedContent).open();
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

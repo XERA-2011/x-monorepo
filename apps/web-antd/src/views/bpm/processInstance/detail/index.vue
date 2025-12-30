@@ -4,7 +4,7 @@ import type { SystemUserApi } from '#/api/system/user';
 
 import { nextTick, onMounted, ref, shallowRef, watch } from 'vue';
 
-import { Page, useVbenModal } from '@x-monorepo/common-ui';
+import { Page, useXAppModal } from '@x-monorepo/common-ui';
 import {
   BpmFieldPermissionType,
   BpmModelFormType,
@@ -191,7 +191,7 @@ const refresh = () => {
   getDetail();
 };
 
-const [PrintModal, printModalApi] = useVbenModal({
+const [PrintModal, printModalApi] = useXAppModal({
   connectedComponent: ProcessssPrint,
   destroyOnClose: true,
 });

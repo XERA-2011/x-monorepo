@@ -1,6 +1,6 @@
 import type { Recordable } from '@x-monorepo/types';
 
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemMenuApi } from '#/api/system/menu';
 
@@ -21,7 +21,7 @@ import { $t } from '#/locales';
 import { componentKeys } from '#/router/routes';
 
 /** 新增/修改的表单 */
-export function useFormSchema(): VbenFormSchema[] {
+export function useFormSchema(): XAppFormSchema[] {
   return [
     {
       component: 'Input',

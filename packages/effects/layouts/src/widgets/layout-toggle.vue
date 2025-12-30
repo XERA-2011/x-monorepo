@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { AuthPageLayoutType } from '@x-monorepo/types';
 
-import type { VbenDropdownMenuItem } from '@x-monorepo-core/shadcn-ui';
+import type { XAppDropdownMenuItem } from '@x-monorepo-core/shadcn-ui';
 
 import { computed } from 'vue';
 
@@ -14,15 +14,15 @@ import {
 } from '@x-monorepo/preferences';
 
 import {
-  VbenDropdownRadioMenu,
-  VbenIconButton,
+  XAppDropdownRadioMenu,
+  XAppIconButton,
 } from '@x-monorepo-core/shadcn-ui';
 
 defineOptions({
   name: 'AuthenticationLayoutToggle',
 });
 
-const menus = computed((): VbenDropdownMenuItem[] => [
+const menus = computed((): XAppDropdownMenuItem[] => [
   {
     icon: PanelLeft,
     label: $t('authentication.layout.alignLeft'),
@@ -53,15 +53,15 @@ function handleUpdate(value: string | undefined) {
 </script>
 
 <template>
-  <VbenDropdownRadioMenu
+  <XAppDropdownRadioMenu
     :menus="menus"
     :model-value="preferences.app.authPageLayout"
     @update:model-value="handleUpdate"
   >
-    <VbenIconButton>
+    <XAppIconButton>
       <PanelRight v-if="authPanelRight" class="size-4" />
       <PanelLeft v-if="authPanelLeft" class="size-4" />
       <InspectionPanel v-if="authPanelCenter" class="size-4" />
-    </VbenIconButton>
-  </VbenDropdownRadioMenu>
+    </XAppIconButton>
+  </XAppDropdownRadioMenu>
 </template>

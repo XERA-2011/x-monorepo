@@ -3,7 +3,7 @@ import { Maximize, Minimize } from '@x-monorepo-core/icons';
 
 import { useFullscreen } from '@vueuse/core';
 
-import { VbenIconButton } from '../button';
+import { XAppIconButton } from '../button';
 
 defineOptions({ name: 'FullScreen' });
 
@@ -21,11 +21,11 @@ isFullscreen.value = !!(
 );
 </script>
 <template>
-  <VbenIconButton
+  <XAppIconButton
     class="hover:animate-[shrink_0.3s_ease-in-out]"
     @click="toggle"
   >
     <Minimize v-if="isFullscreen" class="size-4 text-foreground" />
     <Maximize v-else class="size-4 text-foreground" />
-  </VbenIconButton>
+  </XAppIconButton>
 </template>

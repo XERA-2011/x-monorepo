@@ -7,7 +7,7 @@ import { useRoute } from 'vue-router';
 import { preferences } from '@x-monorepo/preferences';
 import { useTabbarStore } from '@x-monorepo/stores';
 
-import { VbenSpinner } from '@x-monorepo-core/shadcn-ui';
+import { XAppSpinner } from '@x-monorepo-core/shadcn-ui';
 
 defineOptions({ name: 'IFrameRouterView' });
 
@@ -74,7 +74,7 @@ function showSpinning(index: number) {
         v-show="routeShow(item)"
         class="relative size-full"
       >
-        <VbenSpinner :spinning="showSpinning(index)" />
+        <XAppSpinner :spinning="showSpinning(index)" />
         <iframe
           :src="item.meta.iframeSrc as string"
           class="size-full"

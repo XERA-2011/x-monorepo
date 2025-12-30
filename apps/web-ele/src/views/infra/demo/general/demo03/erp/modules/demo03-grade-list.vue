@@ -3,11 +3,11 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
 import { h, nextTick, onMounted, reactive, ref, watch } from 'vue';
 
-import { ContentWrap, useVbenModal } from '@x-monorepo/common-ui';
+import { ContentWrap, useXAppModal } from '@x-monorepo/common-ui';
 import { Plus, Trash2 } from '@x-monorepo/icons';
 import {
   useTableToolbar,
-  VbenVxeTableToolbar,
+  XAppVxeTableToolbar,
 } from '@x-monorepo/plugins/vxe-table';
 import { cloneDeep, formatDateTime, isEmpty } from '@x-monorepo/utils';
 
@@ -36,7 +36,7 @@ const props = defineProps<{
   studentId?: number; // 学生编号（主表的关联字段）
 }>();
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Demo03GradeForm,
   destroyOnClose: true,
 });
@@ -213,7 +213,7 @@ onMounted(() => {
     <!-- 列表 -->
     <ContentWrap title="学生">
       <template #extra>
-        <VbenVxeTableToolbar
+        <XAppVxeTableToolbar
           ref="tableToolbarRef"
           v-model:hidden-search="hiddenSearchBar"
         >
@@ -236,7 +236,7 @@ onMounted(() => {
           >
             批量删除
           </ElButton>
-        </VbenVxeTableToolbar>
+        </XAppVxeTableToolbar>
       </template>
       <VxeTable
         ref="tableRef"

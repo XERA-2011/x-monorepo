@@ -1,4 +1,4 @@
-import type { VbenFormSchema } from '#/adapter/form';
+import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemUserApi } from '#/api/system/user';
 
@@ -14,7 +14,7 @@ import { getSimpleRoleList } from '#/api/system/role';
 import { getRangePickerDefaultProps } from '#/utils';
 
 /** 新增/修改的表单 */
-export function useFormSchema(): VbenFormSchema[] {
+export function useFormSchema(): XAppFormSchema[] {
   return [
     {
       component: 'Input',
@@ -130,7 +130,7 @@ export function useFormSchema(): VbenFormSchema[] {
 }
 
 /** 重置密码的表单 */
-export function useResetPasswordFormSchema(): VbenFormSchema[] {
+export function useResetPasswordFormSchema(): XAppFormSchema[] {
   return [
     {
       component: 'Input',
@@ -141,7 +141,7 @@ export function useResetPasswordFormSchema(): VbenFormSchema[] {
       },
     },
     {
-      component: 'VbenInputPassword',
+      component: 'XAppInputPassword',
       componentProps: {
         passwordStrength: true,
         placeholder: '请输入新密码',
@@ -164,7 +164,7 @@ export function useResetPasswordFormSchema(): VbenFormSchema[] {
       rules: 'required',
     },
     {
-      component: 'VbenInputPassword',
+      component: 'XAppInputPassword',
       componentProps: {
         passwordStrength: true,
         placeholder: $t('authentication.confirmPassword'),
@@ -190,7 +190,7 @@ export function useResetPasswordFormSchema(): VbenFormSchema[] {
 }
 
 /** 分配角色的表单 */
-export function useAssignRoleFormSchema(): VbenFormSchema[] {
+export function useAssignRoleFormSchema(): XAppFormSchema[] {
   return [
     {
       component: 'Input',
@@ -232,7 +232,7 @@ export function useAssignRoleFormSchema(): VbenFormSchema[] {
 }
 
 /** 用户导入的表单 */
-export function useImportFormSchema(): VbenFormSchema[] {
+export function useImportFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'file',
@@ -256,7 +256,7 @@ export function useImportFormSchema(): VbenFormSchema[] {
 }
 
 /** 列表的搜索表单 */
-export function useGridFormSchema(): VbenFormSchema[] {
+export function useGridFormSchema(): XAppFormSchema[] {
   return [
     {
       fieldName: 'username',

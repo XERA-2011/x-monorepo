@@ -3,7 +3,7 @@ import type { InfraCodegenApi } from '#/api/infra/codegen';
 
 import { watch } from 'vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 
 import { useBasicInfoFormSchema } from '../data';
 
@@ -12,7 +12,7 @@ const props = defineProps<{
 }>();
 
 /** 表单实例 */
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   wrapperClass: 'grid grid-cols-1 md:grid-cols-2 gap-4', // 配置表单布局为两列
   schema: useBasicInfoFormSchema(),
   layout: 'horizontal',

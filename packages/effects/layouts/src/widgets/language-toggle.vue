@@ -7,8 +7,8 @@ import { loadLocaleMessages } from '@x-monorepo/locales';
 import { preferences, updatePreferences } from '@x-monorepo/preferences';
 
 import {
-  VbenDropdownRadioMenu,
-  VbenIconButton,
+  XAppDropdownRadioMenu,
+  XAppIconButton,
 } from '@x-monorepo-core/shadcn-ui';
 
 defineOptions({
@@ -29,14 +29,14 @@ async function handleUpdate(value: string | undefined) {
 
 <template>
   <div>
-    <VbenDropdownRadioMenu
+    <XAppDropdownRadioMenu
       :menus="SUPPORT_LANGUAGES"
       :model-value="preferences.app.locale"
       @update:model-value="handleUpdate"
     >
-      <VbenIconButton class="hover:animate-[shrink_0.3s_ease-in-out]">
+      <XAppIconButton class="hover:animate-[shrink_0.3s_ease-in-out]">
         <Languages class="text-foreground size-4" />
-      </VbenIconButton>
-    </VbenDropdownRadioMenu>
+      </XAppIconButton>
+    </XAppDropdownRadioMenu>
   </div>
 </template>

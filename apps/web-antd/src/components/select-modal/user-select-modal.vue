@@ -7,7 +7,7 @@ import type { SystemUserApi } from '#/api/system/user';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { handleTree } from '@x-monorepo/utils';
 
 import {
@@ -69,7 +69,7 @@ const userList = ref<SystemUserApi.User[]>([]); // 存储所有已知用户
 const selectedUserIds = ref<string[]>([]);
 
 // 弹窗配置
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   onCancel: handleCancel,
   onClosed: handleClosed,
   async onOpenChange(isOpen: boolean) {

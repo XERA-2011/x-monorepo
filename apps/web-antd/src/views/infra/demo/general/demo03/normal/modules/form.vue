@@ -5,7 +5,7 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/normal';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 
@@ -69,7 +69,7 @@ const resetForm = () => {
   formRef.value?.resetFields();
 };
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     await formRef.value?.validate();
     // 校验子表单

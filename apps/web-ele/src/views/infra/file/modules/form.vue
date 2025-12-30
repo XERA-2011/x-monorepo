@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import type { UploadFile, UploadRawFile } from 'element-plus';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { ElMessage, ElUpload } from 'element-plus';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import { useUpload } from '#/components/upload/use-upload';
 import { $t } from '#/locales';
 
@@ -13,7 +13,7 @@ import { useFormSchema } from '../data';
 
 const emit = defineEmits(['success']);
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     componentProps: {
       class: 'w-full',
@@ -27,7 +27,7 @@ const [Form, formApi] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) {

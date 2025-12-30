@@ -9,7 +9,7 @@ import type { ComponentPublicInstance } from 'vue';
 
 import type { Recordable } from '@x-monorepo-core/typings';
 
-import type { FormActions, FormSchema, VbenFormProps } from './types';
+import type { FormActions, FormSchema, XAppFormProps } from './types';
 
 import { isRef, toRaw } from 'vue';
 
@@ -26,7 +26,7 @@ import {
   StateHandler,
 } from '@x-monorepo-core/shared/utils';
 
-function getDefaultState(): VbenFormProps {
+function getDefaultState(): XAppFormProps {
   return {
     actionWrapperClass: '',
     collapsed: false,
@@ -51,14 +51,14 @@ function getDefaultState(): VbenFormProps {
 }
 
 export class FormApi {
-  // private api: Pick<VbenFormProps, 'handleReset' | 'handleSubmit'>;
+  // private api: Pick<XAppFormProps, 'handleReset' | 'handleSubmit'>;
   public form = {} as FormActions;
   isMounted = false;
 
-  public state: null | VbenFormProps = null;
+  public state: null | XAppFormProps = null;
   stateHandler: StateHandler;
 
-  public store: Store<VbenFormProps>;
+  public store: Store<XAppFormProps>;
 
   /**
    * 组件实例映射
@@ -68,14 +68,14 @@ export class FormApi {
   // 最后一次点击提交时的表单值
   private latestSubmissionValues: null | Recordable<any> = null;
 
-  private prevState: null | VbenFormProps = null;
+  private prevState: null | XAppFormProps = null;
 
-  constructor(options: VbenFormProps = {}) {
+  constructor(options: XAppFormProps = {}) {
     const { ...storeState } = options;
 
     const defaultState = getDefaultState();
 
-    this.store = new Store<VbenFormProps>(
+    this.store = new Store<XAppFormProps>(
       {
         ...defaultState,
         ...storeState,
@@ -325,8 +325,8 @@ export class FormApi {
 
   setState(
     stateOrFn:
-      | ((prev: VbenFormProps) => Partial<VbenFormProps>)
-      | Partial<VbenFormProps>,
+      | ((prev: XAppFormProps) => Partial<XAppFormProps>)
+      | Partial<XAppFormProps>,
   ) {
     if (isFunction(stateOrFn)) {
       this.store.setState((prev) => {
@@ -476,7 +476,7 @@ export class FormApi {
       await this.stateHandler.waitForCondition();
     }
     if (!this.form?.meta) {
-      throw new Error('<VbenForm /> is not mounted');
+      throw new Error('<XAppForm /> is not mounted');
     }
     return this.form;
   }

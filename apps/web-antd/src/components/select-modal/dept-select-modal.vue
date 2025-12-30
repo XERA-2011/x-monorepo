@@ -6,7 +6,7 @@ import type { SystemDeptApi } from '#/api/system/dept';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { handleTree } from '@x-monorepo/utils';
 
 import { Card, Col, Row, Tree } from 'ant-design-vue';
@@ -50,7 +50,7 @@ const selectedDeptIds = ref<checkedKeys>([]);
 const deptData = ref<SystemDeptApi.Dept[]>([]);
 
 // 对话框配置
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     // 获取选中的部门ID
     const selectedIds: number[] = Array.isArray(selectedDeptIds.value)

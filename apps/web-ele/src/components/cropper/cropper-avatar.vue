@@ -5,7 +5,7 @@ import type { CropperAvatarProps } from './typing';
 
 import { computed, ref, unref, watch, watchEffect } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { $t } from '@x-monorepo/locales';
 
 import { ElButton, ElMessage } from 'element-plus';
@@ -29,7 +29,7 @@ const emit = defineEmits(['update:value', 'change']);
 const sourceValue = ref(props.value || '');
 // TODO @puhui999：这个有办法去掉么？
 const prefixCls = 'cropper-avatar';
-const [CropperModal, modalApi] = useVbenModal({
+const [CropperModal, modalApi] = useXAppModal({
   connectedComponent: cropperModal,
 });
 

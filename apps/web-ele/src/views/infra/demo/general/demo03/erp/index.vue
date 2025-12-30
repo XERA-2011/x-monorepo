@@ -3,13 +3,13 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
 import { h, onMounted, reactive, ref } from 'vue';
 
-import { ContentWrap, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { ContentWrap, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 import { Download, Plus, Trash2 } from '@x-monorepo/icons';
 import {
   useTableToolbar,
-  VbenVxeTableToolbar,
+  XAppVxeTableToolbar,
 } from '@x-monorepo/plugins/vxe-table';
 import {
   cloneDeep,
@@ -97,7 +97,7 @@ function resetQuery() {
   handleQuery();
 }
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Demo03StudentForm,
   destroyOnClose: true,
 });
@@ -225,7 +225,7 @@ onMounted(() => {
     <!-- 列表 -->
     <ContentWrap title="学生">
       <template #extra>
-        <VbenVxeTableToolbar
+        <XAppVxeTableToolbar
           ref="tableToolbarRef"
           v-model:hidden-search="hiddenSearchBar"
         >
@@ -258,7 +258,7 @@ onMounted(() => {
           >
             批量删除
           </ElButton>
-        </VbenVxeTableToolbar>
+        </XAppVxeTableToolbar>
       </template>
       <VxeTable
         ref="tableRef"

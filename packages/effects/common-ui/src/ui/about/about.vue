@@ -9,7 +9,7 @@ import {
   PROJECT_PREVIEW_URL,
 } from '@x-monorepo/constants';
 
-import { VbenRenderContent } from '@x-monorepo-core/shadcn-ui';
+import { XAppRenderContent } from '@x-monorepo-core/shadcn-ui';
 
 import { Page } from '../../components';
 
@@ -22,7 +22,7 @@ defineOptions({
 withDefaults(defineProps<Props>(), {
   description:
     '是一个现代化开箱即用的中后台解决方案，采用最新的技术栈，包括 Vue 3.0、Vite、TailwindCSS 和 TypeScript 等前沿技术，代码规范严谨，提供丰富的配置选项，旨在为中大型项目的开发提供现成的开箱即用解决方案及丰富的示例，同时，它也是学习和深入前端技术的一个极佳示例。',
-  name: 'Vben Admin',
+  name: 'XApp Admin',
   title: '关于项目',
 });
 
@@ -133,7 +133,7 @@ const devDependenciesItems = Object.keys(devDependencies).map((key) => ({
                 {{ item.title }}
               </dt>
               <dd class="text-foreground mt-1 text-sm leading-6 sm:mt-2">
-                <VbenRenderContent :content="item.content" />
+                <XAppRenderContent :content="item.content" />
               </dd>
             </div>
           </template>
@@ -153,7 +153,7 @@ const devDependenciesItems = Object.keys(devDependencies).map((key) => ({
                 {{ item.title }}
               </dt>
               <dd class="text-foreground/80 mt-1 text-sm sm:mt-2">
-                <VbenRenderContent :content="item.content" />
+                <XAppRenderContent :content="item.content" />
               </dd>
             </div>
           </template>
@@ -172,7 +172,7 @@ const devDependenciesItems = Object.keys(devDependencies).map((key) => ({
                 {{ item.title }}
               </dt>
               <dd class="text-foreground/80 mt-1 text-sm sm:mt-2">
-                <VbenRenderContent :content="item.content" />
+                <XAppRenderContent :content="item.content" />
               </dd>
             </div>
           </template>

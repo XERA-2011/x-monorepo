@@ -7,7 +7,7 @@ import { IconifyIcon } from '@x-monorepo/icons';
 
 import { Button, Input } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getDemo03CourseListByStudentId } from '#/api/infra/demo/demo03/normal';
 import { $t } from '#/locales';
 
@@ -17,7 +17,7 @@ const props = defineProps<{
   studentId?: number; // 学生编号（主表的关联字段）
 }>();
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   gridOptions: {
     columns: useDemo03CourseGridEditColumns(),
     border: true,

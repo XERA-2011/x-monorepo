@@ -4,12 +4,12 @@ import type { SystemNotifyTemplateApi } from '#/api/system/notify/template';
 
 import { ref } from 'vue';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteNotifyTemplate,
   deleteNotifyTemplateList,
@@ -22,12 +22,12 @@ import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';
 import SendForm from './modules/send-form.vue';
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Form,
   destroyOnClose: true,
 });
 
-const [SendModal, sendModalApi] = useVbenModal({
+const [SendModal, sendModalApi] = useXAppModal({
   connectedComponent: SendForm,
   destroyOnClose: true,
 });
@@ -99,7 +99,7 @@ function handleRowCheckboxChange({
   checkedIds.value = records.map((item) => item.id!);
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

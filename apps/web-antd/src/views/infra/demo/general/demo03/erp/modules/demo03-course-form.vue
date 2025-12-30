@@ -5,7 +5,7 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { Form, Input, message } from 'ant-design-vue';
 
@@ -36,7 +36,7 @@ const rules: Record<string, Rule[]> = {
   score: [{ required: true, message: '分数不能为空', trigger: 'blur' }],
 };
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     await formRef.value?.validate();
 

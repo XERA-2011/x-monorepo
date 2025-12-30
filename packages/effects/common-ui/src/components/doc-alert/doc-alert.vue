@@ -5,7 +5,7 @@ import { ref } from 'vue';
 
 import { isDocAlertEnable } from '@x-monorepo/hooks';
 
-import { VbenIcon } from '@x-monorepo-core/shadcn-ui';
+import { XAppIcon } from '@x-monorepo-core/shadcn-ui';
 import { openWindow } from '@x-monorepo-core/shared/utils';
 
 defineOptions({
@@ -32,7 +32,7 @@ function close() {
     class="border-primary bg-primary/10 relative m-3 my-2 flex h-8 items-center gap-2 rounded-md border p-2"
   >
     <span class="grid shrink-0 place-items-center">
-      <VbenIcon icon="mdi:information-outline" class="text-primary size-5" />
+      <XAppIcon icon="mdi:information-outline" class="text-primary size-5" />
     </span>
     <div class="text-primary min-w-0 flex-1 font-sans text-sm leading-none">
       <span class="inline-block">【{{ title }}】</span>
@@ -45,7 +45,7 @@ function close() {
       </a>
     </div>
     <span class="grid shrink-0 cursor-pointer place-items-center">
-      <VbenIcon
+      <XAppIcon
         icon="mdi:close"
         class="text-primary size-5 hover:text-red-500"
         @click="close"

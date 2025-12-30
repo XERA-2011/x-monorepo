@@ -4,11 +4,11 @@ import type { InfraCodegenApi } from '#/api/infra/codegen';
 
 import { reactive } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useXAppVxeGrid } from '#/adapter/vxe-table';
 import { createCodegenList, getSchemaTableList } from '#/api/infra/codegen';
 import { $t } from '#/locales';
 import {
@@ -27,7 +27,7 @@ const formData = reactive<InfraCodegenApi.CodegenCreateListReqVO>({
 });
 
 /** 表格实例 */
-const [Grid] = useVbenVxeGrid({
+const [Grid] = useXAppVxeGrid({
   formOptions: {
     schema: useImportTableFormSchema(),
     submitOnChange: true,
@@ -78,7 +78,7 @@ const [Grid] = useVbenVxeGrid({
 });
 
 /** 模态框实例 */
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   title: '导入表',
   class: 'w-1/2',
   async onConfirm() {

@@ -3,7 +3,7 @@ import type { SystemSocialUserApi } from '#/api/system/social/user';
 
 import { ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { getSocialUser } from '#/api/system/social/user';
 import { useDescription } from '#/components/description';
@@ -19,7 +19,7 @@ const [Descriptions] = useDescription({
   schema: useDetailSchema(),
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   title: $t('ui.actionTitle.detail'),
   async onOpenChange(isOpen: boolean) {
     if (!isOpen) {

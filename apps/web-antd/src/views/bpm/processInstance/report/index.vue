@@ -9,7 +9,7 @@ import { Page, prompt } from '@x-monorepo/common-ui';
 
 import { message, Textarea } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getProcessDefinition } from '#/api/bpm/definition';
 import {
   cancelProcessInstanceByAdmin,
@@ -86,7 +86,7 @@ function handleCancel(row: BpmProcessInstanceApi.ProcessInstance) {
   });
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

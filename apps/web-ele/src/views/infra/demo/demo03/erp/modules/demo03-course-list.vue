@@ -4,12 +4,12 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
 import { nextTick, ref, watch } from 'vue';
 
-import { confirm, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, useXAppModal } from '@x-monorepo/common-ui';
 import { isEmpty } from '@x-monorepo/utils';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteDemo03Course,
   deleteDemo03CourseList,
@@ -27,7 +27,7 @@ const props = defineProps<{
   studentId?: number; // 学生编号（主表的关联字段）
 }>();
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Demo03CourseForm,
   destroyOnClose: true,
 });
@@ -85,7 +85,7 @@ function handleRowCheckboxChange({
   checkedIds.value = records.map((item) => item.id!);
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useDemo03CourseGridFormSchema(),
   },

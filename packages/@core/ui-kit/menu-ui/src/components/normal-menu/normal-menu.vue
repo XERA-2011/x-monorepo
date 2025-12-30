@@ -4,7 +4,7 @@ import type { MenuRecordRaw } from '@x-monorepo-core/typings';
 import type { NormalMenuProps } from './normal-menu';
 
 import { useNamespace } from '@x-monorepo-core/composables';
-import { VbenIcon } from '@x-monorepo-core/shadcn-ui';
+import { XAppIcon } from '@x-monorepo-core/shadcn-ui';
 
 interface Props extends NormalMenuProps {}
 
@@ -50,7 +50,7 @@ function menuIcon(menu: MenuRecordRaw) {
         @click="() => emit('select', menu)"
         @mouseenter="() => emit('enter', menu)"
       >
-        <VbenIcon :class="e('icon')" :icon="menuIcon(menu)" fallback />
+        <XAppIcon :class="e('icon')" :icon="menuIcon(menu)" fallback />
 
         <span :class="e('name')" class="truncate"> {{ menu.name }}</span>
       </li>

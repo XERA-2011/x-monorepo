@@ -25,11 +25,11 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  VbenButton,
-  VbenHelpTooltip,
-  VbenIconButton,
-  VbenLoading,
   VisuallyHidden,
+  XAppButton,
+  XAppHelpTooltip,
+  XAppIconButton,
+  XAppLoading,
 } from '@x-monorepo-core/shadcn-ui';
 import { ELEMENT_ID_MAIN_CONTENT } from '@x-monorepo-core/shared/constants';
 import { globalShareState } from '@x-monorepo-core/shared/global-state';
@@ -289,9 +289,9 @@ function handleClosed() {
             {{ title }}
 
             <slot v-if="titleTooltip" name="titleTooltip">
-              <VbenHelpTooltip trigger-class="pb-1">
+              <XAppHelpTooltip trigger-class="pb-1">
                 {{ titleTooltip }}
-              </VbenHelpTooltip>
+              </XAppHelpTooltip>
             </slot>
           </slot>
         </DialogTitle>
@@ -315,15 +315,15 @@ function handleClosed() {
       >
         <slot></slot>
       </div>
-      <VbenLoading v-if="showLoading || submitting" spinning />
-      <VbenIconButton
+      <XAppLoading v-if="showLoading || submitting" spinning />
+      <XAppIconButton
         v-if="fullscreenButton"
         class="flex-center absolute right-10 top-3 hidden size-6 rounded-full px-1 text-lg text-foreground/80 opacity-70 transition-opacity hover:bg-accent hover:text-accent-foreground hover:opacity-100 focus:outline-none disabled:pointer-events-none sm:block"
         @click="handleFullscreen"
       >
         <Shrink v-if="fullscreen" class="size-3.5" />
         <Expand v-else class="size-3.5" />
-      </VbenIconButton>
+      </XAppIconButton>
 
       <DialogFooter
         v-if="showFooter"
@@ -341,7 +341,7 @@ function handleClosed() {
         <slot name="prepend-footer"></slot>
         <slot name="footer">
           <component
-            :is="components.DefaultButton || VbenButton"
+            :is="components.DefaultButton || XAppButton"
             v-if="showCancelButton"
             variant="ghost"
             :disabled="submitting"
@@ -353,7 +353,7 @@ function handleClosed() {
           </component>
           <slot name="center-footer"></slot>
           <component
-            :is="components.PrimaryButton || VbenButton"
+            :is="components.PrimaryButton || XAppButton"
             v-if="showConfirmButton"
             :disabled="confirmDisabled"
             :loading="confirmLoading || submitting"

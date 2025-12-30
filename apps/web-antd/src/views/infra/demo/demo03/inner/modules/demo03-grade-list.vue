@@ -4,7 +4,7 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
 import { nextTick, watch } from 'vue';
 
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getDemo03GradeByStudentId } from '#/api/infra/demo/demo03/inner';
 
 import { useDemo03GradeGridColumns } from '../data';
@@ -13,7 +13,7 @@ const props = defineProps<{
   studentId?: number; // 学生编号（主表的关联字段）
 }>();
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   gridOptions: {
     columns: useDemo03GradeGridColumns(),
     pagerConfig: {

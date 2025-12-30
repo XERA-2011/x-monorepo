@@ -4,12 +4,12 @@ import type { SystemRoleApi } from '#/api/system/role';
 
 import { ref } from 'vue';
 
-import { confirm, DocAlert, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
 
 import { message } from 'ant-design-vue';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteRole,
   deleteRoleList,
@@ -23,18 +23,18 @@ import AssignDataPermissionForm from './modules/assign-data-permission-form.vue'
 import AssignMenuForm from './modules/assign-menu-form.vue';
 import Form from './modules/form.vue';
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Form,
   destroyOnClose: true,
 });
 
 const [AssignDataPermissionFormModel, assignDataPermissionFormApi] =
-  useVbenModal({
+  useXAppModal({
     connectedComponent: AssignDataPermissionForm,
     destroyOnClose: true,
   });
 
-const [AssignMenuFormModel, assignMenuFormApi] = useVbenModal({
+const [AssignMenuFormModel, assignMenuFormApi] = useXAppModal({
   connectedComponent: AssignMenuForm,
   destroyOnClose: true,
 });
@@ -111,7 +111,7 @@ function handleAssignMenu(row: SystemRoleApi.Role) {
   assignMenuFormApi.setData(row).open();
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

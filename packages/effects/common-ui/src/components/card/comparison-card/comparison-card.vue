@@ -6,9 +6,9 @@ import { computed } from 'vue';
 import {
   Card,
   CardContent,
-  VbenCountToAnimator,
-  VbenIcon,
-  VbenLoading,
+  XAppCountToAnimator,
+  XAppIcon,
+  XAppLoading,
 } from '@x-monorepo-core/shadcn-ui';
 
 /** 对比卡片 */
@@ -31,7 +31,7 @@ const iconName = computed(() => iconMap[props.icon] || iconMap.menu);
   <Card
     class="relative h-40 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
   >
-    <VbenLoading :spinning="loading" />
+    <XAppLoading :spinning="loading" />
     <CardContent class="flex h-full flex-col p-6">
       <div class="mb-4 flex items-start justify-between">
         <div class="flex flex-1 flex-col">
@@ -40,11 +40,11 @@ const iconName = computed(() => iconMap[props.icon] || iconMap.menu);
           </span>
           <span class="text-3xl font-bold text-gray-800">
             <span v-if="value === -1">--</span>
-            <VbenCountToAnimator v-else :end-val="value" :duration="1000" />
+            <XAppCountToAnimator v-else :end-val="value" :duration="1000" />
           </span>
         </div>
         <div :class="`text-4xl ${iconColor || ''}`">
-          <VbenIcon :icon="iconName" />
+          <XAppIcon :icon="iconName" />
         </div>
       </div>
 

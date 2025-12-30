@@ -4,12 +4,12 @@ import type { SystemDictTypeApi } from '#/api/system/dict/type';
 
 import { ref } from 'vue';
 
-import { confirm, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, useXAppModal } from '@x-monorepo/common-ui';
 import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteDictType,
   deleteDictTypeList,
@@ -23,7 +23,7 @@ import TypeForm from './type-form.vue';
 
 const emit = defineEmits(['select']);
 
-const [TypeFormModal, typeFormModalApi] = useVbenModal({
+const [TypeFormModal, typeFormModalApi] = useXAppModal({
   connectedComponent: TypeForm,
   destroyOnClose: true,
 });
@@ -88,7 +88,7 @@ function handleRowCheckboxChange({
   checkedIds.value = records.map((item) => item.id!);
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useTypeGridFormSchema(),
   },

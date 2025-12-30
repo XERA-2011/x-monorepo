@@ -3,11 +3,11 @@ import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
 import { computed, ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import { ElMessage, ElTabPane, ElTabs } from 'element-plus';
 
-import { useVbenForm } from '#/adapter/form';
+import { useXAppForm } from '#/adapter/form';
 import {
   createDemo03Student,
   getDemo03Student,
@@ -32,7 +32,7 @@ const subTabsName = ref('demo03Course');
 const demo03CourseFormRef = ref<InstanceType<typeof Demo03CourseForm>>();
 const demo03GradeFormRef = ref<InstanceType<typeof Demo03GradeForm>>();
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useXAppForm({
   commonConfig: {
     componentProps: {
       class: 'w-full',
@@ -45,7 +45,7 @@ const [Form, formApi] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) {

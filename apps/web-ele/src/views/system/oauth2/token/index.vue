@@ -9,7 +9,7 @@ import { isEmpty } from '@x-monorepo/utils';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteOAuth2Token,
   getOAuth2TokenPage,
@@ -62,7 +62,7 @@ function handleRowCheckboxChange({
   checkedIds.value = records.map((item) => item.accessToken);
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

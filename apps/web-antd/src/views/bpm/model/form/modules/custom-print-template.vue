@@ -3,7 +3,7 @@ import type { MentionItem } from '../modules/tinymce-plugin';
 
 import { computed, onBeforeUnmount, ref, shallowRef } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 
 import Editor from '@tinymce/tinymce-vue';
 import { Alert } from 'ant-design-vue';
@@ -26,7 +26,7 @@ const emits = defineEmits<{
 /** TinyMCE 自托管：https://www.jianshu.com/p/59a9c3802443 */
 const tinymceScriptSrc = `${import.meta.env.VITE_BASE}tinymce/tinymce.min.js`;
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onOpenChange(isOpen: boolean) {
     if (!isOpen) {
       return;

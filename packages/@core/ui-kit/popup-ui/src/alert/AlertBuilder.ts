@@ -7,7 +7,7 @@ import type { AlertProps, BeforeCloseScope, PromptProps } from './alert';
 import { h, nextTick, ref, render } from 'vue';
 
 import { useSimpleLocale } from '@x-monorepo-core/composables';
-import { Input, VbenRenderContent } from '@x-monorepo-core/shadcn-ui';
+import { Input, XAppRenderContent } from '@x-monorepo-core/shadcn-ui';
 import { isFunction, isString } from '@x-monorepo-core/shared/utils';
 
 import Alert from './alert.vue';
@@ -145,7 +145,7 @@ export async function vbenPrompt<T = any>(
   const modelValue = ref<T | undefined>(defaultValue);
   const inputComponentRef = ref<null | VNode>(null);
   const staticContents: Component[] = [
-    h(VbenRenderContent, { content, renderBr: true }),
+    h(XAppRenderContent, { content, renderBr: true }),
   ];
 
   const modelPropName = _modelPropName || 'modelValue';

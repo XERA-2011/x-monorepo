@@ -17,8 +17,8 @@ import {
 import { useAccessStore } from '@x-monorepo/stores';
 import { cloneDeep, mapTree } from '@x-monorepo/utils';
 
-import { VbenAdminLayout } from '@x-monorepo-core/layout-ui';
-import { VbenBackTop, VbenLogo } from '@x-monorepo-core/shadcn-ui';
+import { XAppAdminLayout } from '@x-monorepo-core/layout-ui';
+import { XAppBackTop, XAppLogo } from '@x-monorepo-core/shadcn-ui';
 
 import { Breadcrumb, CheckUpdates, Preferences } from '../widgets';
 import { LayoutContent, LayoutContentSpinner } from './content';
@@ -198,7 +198,7 @@ const headerSlots = computed(() => {
 </script>
 
 <template>
-  <VbenAdminLayout
+  <XAppAdminLayout
     v-model:sidebar-extra-visible="sidebarExtraVisible"
     :content-compact="preferences.app.contentCompact"
     :content-compact-width="preferences.app.contentCompactWidth"
@@ -253,7 +253,7 @@ const headerSlots = computed(() => {
   >
     <!-- logo -->
     <template #logo>
-      <VbenLogo
+      <XAppLogo
         v-if="preferences.logo.enable"
         :fit="preferences.logo.fit"
         :class="logoClass"
@@ -267,7 +267,7 @@ const headerSlots = computed(() => {
         <template v-if="$slots['logo-text']" #text>
           <slot name="logo-text"></slot>
         </template>
-      </VbenLogo>
+      </XAppLogo>
     </template>
     <!-- 头部区域 -->
     <template #header>
@@ -348,7 +348,7 @@ const headerSlots = computed(() => {
       />
     </template>
     <template #side-extra-title>
-      <VbenLogo
+      <XAppLogo
         v-if="preferences.logo.enable"
         :fit="preferences.logo.fit"
         :src="preferences.logo.source"
@@ -359,7 +359,7 @@ const headerSlots = computed(() => {
         <template v-if="$slots['logo-text']" #text>
           <slot name="logo-text"></slot>
         </template>
-      </VbenLogo>
+      </XAppLogo>
     </template>
 
     <template #tabbar>
@@ -406,7 +406,7 @@ const headerSlots = computed(() => {
           @clear-preferences-and-logout="clearPreferencesAndLogout"
         />
       </template>
-      <VbenBackTop />
+      <XAppBackTop />
     </template>
-  </VbenAdminLayout>
+  </XAppAdminLayout>
 </template>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { CSSProperties } from 'vue';
 
-import type { VbenLayoutProps } from './app-layout';
+import type { XAppLayoutProps } from './app-layout';
 
 import { computed, ref, watch } from 'vue';
 
@@ -11,7 +11,7 @@ import {
   useLayoutHeaderStyle,
 } from '@x-monorepo-core/composables';
 import { IconifyIcon } from '@x-monorepo-core/icons';
-import { VbenIconButton } from '@x-monorepo-core/shadcn-ui';
+import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 import { ELEMENT_ID_MAIN_CONTENT } from '@x-monorepo-core/shared/constants';
 
 import { useMouse, useScroll, useThrottleFn } from '@vueuse/core';
@@ -25,10 +25,10 @@ import {
 } from './components';
 import { useLayout } from './hooks/use-layout';
 
-interface Props extends VbenLayoutProps {}
+interface Props extends XAppLayoutProps {}
 
 defineOptions({
-  name: 'VbenLayout',
+  name: 'XAppLayout',
 });
 
 const props = withDefaults(defineProps<Props>(), {
@@ -554,14 +554,14 @@ const idMainContent = ELEMENT_ID_MAIN_CONTENT;
           </template>
 
           <template #toggle-button>
-            <VbenIconButton
+            <XAppIconButton
               v-if="showHeaderToggleButton"
               class="my-0 mr-1 rounded-md"
               @click="handleHeaderToggle"
             >
               <IconifyIcon v-if="showSidebar" icon="ep:fold" />
               <IconifyIcon v-else icon="ep:expand" />
-            </VbenIconButton>
+            </XAppIconButton>
           </template>
           <slot name="header"></slot>
         </LayoutHeader>

@@ -1,1 +1,1 @@
-export { default as VbenInputPassword } from './input-password.vue';
+export { default as XAppInputPassword } from './input-password.vue';

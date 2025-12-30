@@ -5,13 +5,13 @@ import type { AiKnowledgeSegmentApi } from '#/api/ai/knowledge/segment';
 import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { confirm, Page, useVbenModal } from '@x-monorepo/common-ui';
+import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictLabel } from '@x-monorepo/hooks';
 
 import { ElLoading, ElMessage } from 'element-plus';
 
-import { ACTION_ICON, TableAction, useVbenVxeGrid } from '#/adapter/vxe-table';
+import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteKnowledgeSegment,
   getKnowledgeSegmentPage,
@@ -24,7 +24,7 @@ import Form from './modules/form.vue';
 
 const route = useRoute();
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useXAppModal({
   connectedComponent: Form,
   destroyOnClose: true,
 });
@@ -80,7 +80,7 @@ async function handleStatusChange(
   });
 }
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),
   },

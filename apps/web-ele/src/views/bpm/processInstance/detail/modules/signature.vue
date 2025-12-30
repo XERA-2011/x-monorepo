@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { useVbenModal } from '@x-monorepo/common-ui';
+import { useXAppModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { base64ToFile } from '@x-monorepo/utils';
 
@@ -17,7 +17,7 @@ const emits = defineEmits(['success']);
 
 const signature = ref<InstanceType<typeof Vue3Signature>>();
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useXAppModal({
   async onConfirm() {
     modalApi.lock();
     try {
