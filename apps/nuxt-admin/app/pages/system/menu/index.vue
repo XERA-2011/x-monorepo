@@ -32,7 +32,7 @@
         </template>
 
         <template #icon-data="{ row }">
-          <UIcon v-if="row.icon" :name="row.icon" class="text-lg" />
+          <UIcon v-if="row.icon && row.icon !== '#'" :name="row.icon" class="text-lg" />
           <span v-else class="text-gray-400">-</span>
         </template>
 
@@ -79,7 +79,7 @@ function getTypeLabel(type: number) {
 }
 
 function getTypeColor(type: number) {
-  const map: Record<number, string> = { 1: 'blue', 2: 'green', 3: 'orange' }
+  const map: Record<number, 'blue' | 'green' | 'orange'> = { 1: 'blue', 2: 'green', 3: 'orange' }
   return map[type] || 'gray'
 }
 

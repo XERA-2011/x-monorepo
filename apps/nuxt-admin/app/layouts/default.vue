@@ -129,7 +129,9 @@ const systemChildren = [
   { label: '菜单管理', icon: 'i-heroicons-bars-3', to: '/system/menu' },
   { label: '部门管理', icon: 'i-heroicons-building-office', to: '/system/dept' },
   { label: '岗位管理', icon: 'i-heroicons-briefcase', to: '/system/post' },
-  { label: '字典管理', icon: 'i-heroicons-book-open', to: '/system/dict' }
+  { label: '字典管理', icon: 'i-heroicons-book-open', to: '/system/dict' },
+  { label: '租户管理', icon: 'i-heroicons-user-group', to: '/system/tenant' },
+  { label: '租户套餐', icon: 'i-heroicons-rectangle-stack', to: '/system/tenant/package' }
 ]
 
 const { user, logout } = useAuth()
@@ -146,7 +148,10 @@ const breadcrumbs = computed(() => {
     'menu': '菜单管理',
     'dept': '部门管理',
     'post': '岗位管理',
+
     'dict': '字典管理',
+    'tenant': '租户管理',
+    'package': '租户套餐',
     'settings': '设置',
     'profile': '个人设置'
   }
