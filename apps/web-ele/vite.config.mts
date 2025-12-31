@@ -12,6 +12,7 @@ export default defineConfig(async () => {
         }),
       ],
       server: {
+        port: 2012,
         proxy: {
           '/admin-api': {
             changeOrigin: true,

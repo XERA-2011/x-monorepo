@@ -53,11 +53,11 @@ pnpm install
 ```bash
 # 启动 Element Plus 后台管理系统
 pnpm dev:ele
-# 访问地址: http://localhost:5555
+# 访问地址: http://localhost:2012
 
 # 启动 Nuxt 前台应用
 pnpm dev:nuxt
-# 访问地址: http://localhost:3000
+# 访问地址: http://localhost:2011
 ```
 
 > **注意**: 默认配置连接远程或本地后端。
@@ -111,7 +111,7 @@ Nuxt 应用构建后生成 Node.js 服务，建议使用 PM2 或 Docker 运行�
 
 ```nginx
 location / {
-    proxy_pass http://web-nuxt-container:3000;
+    proxy_pass http://web-nuxt-container:2011;
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection 'upgrade';

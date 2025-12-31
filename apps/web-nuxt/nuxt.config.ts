@@ -20,7 +20,7 @@ export default defineNuxtConfig({
 
   // 开发服务器配置
   devServer: {
-    port: 3000,
+    port: 2011,
   },
 
   // 运行时配置
