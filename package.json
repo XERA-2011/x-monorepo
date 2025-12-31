@@ -105,7 +105,8 @@
     "supportedArchitectures": {
       "os": [
         "current",
-        "linux"
+        "linux",
+        "win32"
       ],
       "cpu": [
         "current",
