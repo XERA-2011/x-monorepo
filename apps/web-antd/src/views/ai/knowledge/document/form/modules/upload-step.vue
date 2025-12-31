@@ -240,7 +240,7 @@ onMounted(() => {
               danger
               type="text"
               link
-              @click="removeFile(index)"
+              @click="removeFile(Number(index))"
               class="ml-2"
             >
               <IconifyIcon icon="lucide:trash-2" />

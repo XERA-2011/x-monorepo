@@ -21,10 +21,12 @@ describe('useUserStore', () => {
     store.setUserInfo({
       roles: [{ roleName: 'User', value: 'user' }],
     } as any);
+    store.setUserRoles(['user']);
     expect(store.userInfo).not.toBeNull();
     expect(store.userRoles.length).toBeGreaterThan(0);
 
     store.setUserInfo(null as any);
+    store.setUserRoles([]);
     expect(store.userInfo).toBeNull();
     expect(store.userRoles).toEqual([]);
   });

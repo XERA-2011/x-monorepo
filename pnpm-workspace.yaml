@@ -219,7 +219,7 @@ catalog:
   vue-tippy: ^6.7.1
   vue-tsc: ^3.2.1
   vuedraggable: ^4.1.0
-  vue3-print-nb: "^0.1.4"
+  vue3-print-nb: '^0.1.4'
   vue3-signature: ^0.2.4
   vxe-pc-ui: ^4.11.25
   vxe-table: ^4.17.37

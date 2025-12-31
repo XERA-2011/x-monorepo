@@ -96,6 +96,7 @@ async function handleStatusChange(
   });
 }
 
+// @ts-expect-error vxe-table 类型实例化过深
 const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),

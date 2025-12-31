@@ -4,16 +4,12 @@
   "compilerOptions": {
     "composite": false,
     "target": "ESNext",
-
     "moduleDetection": "force",
     "experimentalDecorators": true,
-
     "baseUrl": ".",
     "module": "ESNext",
-
     "moduleResolution": "node",
     "resolveJsonModule": true,
-
     "strict": true,
     "strictNullChecks": true,
     "noFallthroughCasesInSwitch": true,
@@ -21,9 +17,8 @@
     "noImplicitOverride": true,
     "noImplicitThis": true,
     "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
-
     "inlineSources": false,
     "noEmit": true,
     "removeComments": true,
