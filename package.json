@@ -100,7 +100,8 @@
       "esbuild": "0.25.3",
       "jiti": "catalog:",
       "pinia": "catalog:",
-      "vue": "catalog:"
+      "vue": "catalog:",
+      "oxc-parser": "0.102.0"
     },
     "supportedArchitectures": {
       "os": [
