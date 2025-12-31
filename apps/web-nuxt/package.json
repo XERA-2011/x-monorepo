@@ -37,6 +37,8 @@
     "@x-monorepo/eslint-config": "workspace:*",
     "@oxc-parser/binding-linux-x64-gnu": "0.102.0",
     "@oxc-transform/binding-linux-x64-gnu": "0.102.0",
+    "@oxc-minify/binding-linux-x64-gnu": "0.102.0",
+    "@unrs/resolver-binding-linux-x64-gnu": "1.11.1",
     "tailwindcss": "^4.0.0"
   }
 }

@@ -772,12 +772,18 @@ importers:
         specifier: ^4.6.4
         version: 4.6.4(vue@3.5.26(typescript@5.9.3))
     devDependencies:
+      '@oxc-minify/binding-linux-x64-gnu':
+        specifier: 0.102.0
+        version: 0.102.0
       '@oxc-parser/binding-linux-x64-gnu':
         specifier: 0.102.0
         version: 0.102.0
       '@oxc-transform/binding-linux-x64-gnu':
         specifier: 0.102.0
         version: 0.102.0
+      '@unrs/resolver-binding-linux-x64-gnu':
+        specifier: 1.11.1
+        version: 1.11.1
       '@x-monorepo/eslint-config':
         specifier: workspace:*
         version: link:../../internal/lint-configs/eslint-config
@@ -3787,7 +3793,6 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-minify/binding-linux-x64-musl@0.102.0':
     resolution: {integrity: sha512-Ew4QDpEsXoV+pG5+bJpheEy3GH436GBe6ASPB0X27Hh9cQ2gb1NVZ7cY7xJj68+fizwS/PtT8GHoG3uxyH17Pg==}
@@ -3979,7 +3984,6 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-transform/binding-linux-x64-musl@0.102.0':
     resolution: {integrity: sha512-rUHZSZBw0FUnUgOhL/Rs7xJz9KjH2eFur/0df6Lwq/isgJc/ggtBtFoZ+y4Fb8ON87a3Y2gS2LT7SEctX0XdPQ==}
@@ -14452,8 +14456,7 @@ snapshots:
   '@oxc-minify/binding-linux-s390x-gnu@0.102.0':
     optional: true
 
-  '@oxc-minify/binding-linux-x64-gnu@0.102.0':
-    optional: true
+  '@oxc-minify/binding-linux-x64-gnu@0.102.0': {}
 
   '@oxc-minify/binding-linux-x64-musl@0.102.0':
     optional: true
@@ -15730,8 +15733,7 @@ snapshots:
   '@unrs/resolver-binding-linux-s390x-gnu@1.11.1':
     optional: true
 
-  '@unrs/resolver-binding-linux-x64-gnu@1.11.1':
-    optional: true
+  '@unrs/resolver-binding-linux-x64-gnu@1.11.1': {}
 
   '@unrs/resolver-binding-linux-x64-musl@1.11.1':
     optional: true
