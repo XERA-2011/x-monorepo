@@ -102,10 +102,6 @@
       "pinia": "catalog:",
       "vue": "catalog:"
     },
-    "neverBuiltDependencies": [
-      "canvas",
-      "node-gyp"
-    ],
     "supportedArchitectures": {
       "os": [
         "current",
