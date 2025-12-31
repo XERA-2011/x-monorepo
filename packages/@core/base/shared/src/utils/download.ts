@@ -139,9 +139,8 @@ export function downloadFileFromBlobPart({
  */
 export function dataURLtoBlob(base64Buf: string): Blob {
   const arr = base64Buf.split(',');
-  // 使用更精确的正则表达式避免 ReDoS 攻击
   // 使用更安全的解析方式，避免正则 ReDoS
-  const mime = arr[0]?.match(/:(.*?);/)?.[1] ?? 'application/octet-stream';
+  const mime = extractMimeType(arr[0] || '') ?? 'application/octet-stream';
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const bstr = window.atob(arr[1]!);
   let n = bstr.length;
@@ -196,12 +195,11 @@ export function base64ToFile(base64: string, fileName: string): File {
     throw new Error('无效的 base64 格式');
   }
 
-  // 使用更精确的正则表达式避免 ReDoS 攻击
-  const typeMatch = data[0].match(/:(.*?);/);
-  if (!typeMatch || !typeMatch[1]) {
+  // 使用更安全的解析方式，避免正则 ReDoS
+  const type = extractMimeType(data[0]);
+  if (!type) {
     throw new Error('无法解析 base64 类型信息');
   }
-  const type = typeMatch[1];
 
   // 从类型信息中获取具体的文件格式后缀（png、jpeg、webp）
   const typeParts = type.split('/');
@@ -233,6 +231,20 @@ export function base64ToFile(base64: string, fileName: string): File {
       `Base64 解码失败: ${error instanceof Error ? error.message : '未知错误'}`,
     );
   }
+}
+
+/**
+ * 提取 MIME 类型，替代正则表达式以避免 ReDoS
+ * @param str - Data URI 头部字符串 (e.g. "data:image/png;base64")
+ */
+function extractMimeType(str: string): string | undefined {
+  if (!str) return undefined;
+  const start = str.indexOf(':');
+  const end = str.indexOf(';', start);
+  if (start !== -1 && end !== -1 && end > start) {
+    return str.slice(start + 1, end);
+  }
+  return undefined;
 }
 
 /**
