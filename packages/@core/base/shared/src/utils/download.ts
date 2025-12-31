@@ -139,9 +139,9 @@ export function downloadFileFromBlobPart({
  */
 export function dataURLtoBlob(base64Buf: string): Blob {
   const arr = base64Buf.split(',');
-  const typeItem = arr[0];
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  const mime = typeItem!.match(/:(.*?);/)![1];
+  // 使用更精确的正则表达式避免 ReDoS 攻击
+  const mimeMatch = arr[0]?.match(/:([^;]+);/);
+  const mime = mimeMatch?.[1] ?? 'application/octet-stream';
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const bstr = window.atob(arr[1]!);
   let n = bstr.length;
@@ -196,8 +196,8 @@ export function base64ToFile(base64: string, fileName: string): File {
     throw new Error('无效的 base64 格式');
   }
 
-  // 利用正则表达式从前缀中获取类型信息（image/png、image/jpeg、image/webp等）
-  const typeMatch = data[0].match(/:(.*?);/);
+  // 使用更精确的正则表达式避免 ReDoS 攻击
+  const typeMatch = data[0].match(/:([^;]+);/);
   if (!typeMatch || !typeMatch[1]) {
     throw new Error('无法解析 base64 类型信息');
   }

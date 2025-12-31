@@ -3,6 +3,16 @@ for (let i = 0; i <= 15; i++) {
   hexList[i] = i.toString(16);
 }
 
+/**
+ * 获取加密安全的随机整数
+ * @param max 最大值（不包含）
+ */
+function getSecureRandomInt(max: number): number {
+  const randomBuffer = new Uint32Array(1);
+  crypto.getRandomValues(randomBuffer);
+  return (randomBuffer[0] ?? 0) % max;
+}
+
 export function buildUUID(): string {
   let uuid = '';
   for (let i = 1; i <= 36; i++) {
@@ -19,11 +29,11 @@ export function buildUUID(): string {
         break;
       }
       case 20: {
-        uuid += hexList[(Math.random() * 4) | 8];
+        uuid += hexList[getSecureRandomInt(4) | 8];
         break;
       }
       default: {
-        uuid += hexList[Math.trunc(Math.random() * 16)];
+        uuid += hexList[getSecureRandomInt(16)];
       }
     }
   }
@@ -33,7 +43,7 @@ export function buildUUID(): string {
 let unique = 0;
 export function buildShortUUID(prefix = ''): string {
   const time = Date.now();
-  const random = Math.floor(Math.random() * 1_000_000_000);
+  const random = getSecureRandomInt(1_000_000_000);
   unique++;
   return `${prefix}_${random}${unique}${String(time)}`;
 }
