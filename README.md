@@ -8,7 +8,9 @@
 
 - **最新技术栈**：Vue 3.5, Vite 5, TypeScript, TailwindCSS, Pinia。
 - **Monorepo 架构**：使用 TurboRepo 高效管理多包项目 (Apps & Packages)。
-- **UI 框架**：基于 Element Plus 构建，样式侵入低，易于维护。
+- **UI 框架**：
+  - 后台：基于 Element Plus (web-ele)，样式侵入低。
+  - 前台：基于 Nuxt 4 + Nuxt UI (web-nuxt)，SSR 支持。
 - **企业级功能**：
   - 完整的 RBAC 权限控制（菜单、按钮、数据权限）。
   - 深度集成的 SaaS 多租户体系。
@@ -20,7 +22,8 @@
 ```text
 x-monorepo/
 ├── apps/
-│   └── web-ele/        # [主应用] 基于 Element Plus 的管理后台
+│   ├── web-ele/        # [后台应用] 基于 Element Plus 的管理后台
+│   └── web-nuxt/       # [前台应用] 基于 Nuxt 4 + Nuxt UI 的 SSR 应用
 ├── packages/           # 共享代码库
 │   ├── @core/          # 核心框架逻辑 (UI Kit, Preferences, etc.)
 │   ├── effects/        # 副作用层 (Hooks, Plugins)
@@ -50,24 +53,35 @@ pnpm install
 ```bash
 # 启动 Element Plus 后台管理系统
 pnpm dev:ele
-# 访问地址: http://localhost:5555 (端口随占用自动递增)
+# 访问地址: http://localhost:5555
+
+# 启动 Nuxt 前台应用
+pnpm dev:nuxt
+# 访问地址: http://localhost:3000
 ```
 
-> **注意**: 默认配置连接远程或本地后端。如需修改，请编辑 `apps/web-ele/.env.development` 文件中的 `VITE_GLOB_API_URL`。
+> **注意**: 默认配置连接远程或本地后端。
+>
+> - 后台配置: `apps/web-ele/.env.development`
+> - 前台配置: `apps/web-nuxt/.env.development`
 
 ### 4. 项目打包
 
 构建生产环境产物：
 
 ```bash
+# 构建后台
 pnpm build:ele
+
+# 构建前台
+pnpm build:nuxt
 ```
 
-构建完成后，产物位于 `apps/web-ele/dist` 目录。
+构建完成后，产物分别位于 `apps/web-ele/dist` 和 `apps/web-nuxt/.output` 目录。
 
 ## 配置说明 | Configuration
 
-项目通过 `.env` 文件进行环境变量配置，位于 `apps/web-ele/` 目录下。
+项目通过 `.env` 文件进行环境变量配置，位于各个 `apps/` 子项目下。
 
 | 文件 | 说明 | 关键变量 |
 | --- | --- | --- |
@@ -77,15 +91,38 @@ pnpm build:ele
 
 ## 部署 | Deployment
 
-推荐使用 Docker + Nginx 进行部署。请参考后端项目的 `docker-compose.yml` 中的 Nginx 配置，将 `dist` 目录挂载到 Nginx 容器中。
+推荐使用 Docker + Nginx 进行部署。
+
+### 1. Web-Ele (后台管理 - SPA)
+
+将 `apps/web-ele/dist` 静态文件挂载到 Nginx：
+
+```nginx
+location /admin {
+    alias  /usr/share/nginx/html/admin;
+    index  index.html index.htm;
+    try_files $uri $uri/ /admin/index.html;
+}
+```
+
+### 2. Web-Nuxt (前台网站 - SSR)
+
+Nuxt 应用构建后生成 Node.js 服务，建议使用 PM2 或 Docker 运行，通过 Nginx 反向代理：
 
 ```nginx
 location / {
-    root   /usr/share/nginx/html;
-    index  index.html index.htm;
-    try_files $uri $uri/ /index.html;
+    proxy_pass http://web-nuxt-container:3000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
 }
+```
 
+### 3. API 代理
+
+```nginx
 location /admin-api/ {
     proxy_pass http://xera-server:8080/admin-api/;
 }

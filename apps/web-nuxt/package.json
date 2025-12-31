@@ -1,0 +1,39 @@
+{
+  "name": "@x-monorepo/web-nuxt",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "homepage": "",
+  "bugs": "https://github.com/XERA-2011/x-monorepo/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XERA-2011/x-monorepo.git",
+    "directory": "apps/web-nuxt"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "XERA-2011",
+    "url": "https://github.com/XERA-2011"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "lint": "eslint .",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck"
+  },
+  "imports": {
+    "#/*": "./*"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.3.0",
+    "nuxt": "^4.2.2",
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.0.0"
+  }
+}

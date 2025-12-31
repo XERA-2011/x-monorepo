@@ -5,6 +5,10 @@
       "path": "apps/web-ele",
     },
     {
+      "name": "@x-monorepo/web-nuxt",
+      "path": "apps/web-nuxt",
+    },
+    {
       "name": "@x-monorepo/commitlint-config",
       "path": "internal/lint-configs/commitlint-config",
     },
