@@ -93,7 +93,7 @@ pnpm build:nuxt
 
 推荐使用 Docker + Nginx 进行部署。
 
-### 1. admin-ele (后台管理 - SPA)
+### 1. Admin-Ele (后台管理 - SPA)
 
 将 `apps/admin-ele/dist` 静态文件挂载到 Nginx：
 
