@@ -8,7 +8,7 @@
 
 - **最新技术栈**：Vue 3.5, Vite 5, TypeScript, TailwindCSS, Pinia。
 - **Monorepo 架构**：使用 TurboRepo 高效管理多包项目 (Apps & Packages)。
-- **多端适配**：内置 Ant Design Vue (web-antd) 等多个 UI 版本的实现。
+- **UI 框架**：基于 Element Plus 构建，样式侵入低，易于维护。
 - **企业级功能**：
   - 完整的 RBAC 权限控制（菜单、按钮、数据权限）。
   - 深度集成的 SaaS 多租户体系。
@@ -20,12 +20,9 @@
 ```text
 x-monorepo/
 ├── apps/
-│   ├── web-antd/       # [主应用] 基于 Ant Design Vue 的管理后台
-│   ├── web-ele/        # 基于 Element Plus 的管理后台
-│   └── ...
+│   └── web-ele/        # [主应用] 基于 Element Plus 的管理后台
 ├── packages/           # 共享代码库
 │   ├── @core/          # 核心框架逻辑 (UI Kit, Preferences, etc.)
-│   ├── api/            # 统一 API 定义
 │   ├── effects/        # 副作用层 (Hooks, Plugins)
 │   ├── utils/          # 通用工具类
 │   └── ...
@@ -50,40 +47,27 @@ pnpm install
 
 ### 3. 本地开发
 
-你可以根据需要启动不同 UI 版本的应用：
-
-**启动 Ant Design Vue 版本 (主应用):**
-
 ```bash
-pnpm dev:antd
+# 启动 Element Plus 后台管理系统
+pnpm dev:ele
 # 访问地址: http://localhost:5555 (端口随占用自动递增)
 ```
 
-**启动其他版本:**
-
-```bash
-# Element Plus 版本
-pnpm dev:ele
-
-# 同时启动所有应用
-pnpm dev
-```
-
-> **注意**: 默认配置连接远程或本地后端。如需修改，请编辑对应 `apps/` 子目录下 `.env.development` 文件中的 `VITE_GLOB_API_URL`。
+> **注意**: 默认配置连接远程或本地后端。如需修改，请编辑 `apps/web-ele/.env.development` 文件中的 `VITE_GLOB_API_URL`。
 
 ### 4. 项目打包
 
 构建生产环境产物：
 
 ```bash
-pnpm build:antd
+pnpm build:ele
 ```
 
-构建完成后，产物位于 `apps/web-antd/dist` 目录。
+构建完成后，产物位于 `apps/web-ele/dist` 目录。
 
 ## 配置说明 | Configuration
 
-项目通过 `.env` 文件进行环境变量配置，位于各个 `apps/` 子项目下。
+项目通过 `.env` 文件进行环境变量配置，位于 `apps/web-ele/` 目录下。
 
 | 文件 | 说明 | 关键变量 |
 | --- | --- | --- |
