@@ -22,7 +22,7 @@ catalog:
   '@commitlint/config-conventional': ^19.8.1
   '@ctrl/tinycolor': ^4.2.0
   '@eslint/js': ^9.39.2
-  '@faker-js/faker': ^9.9.0
+  '@faker-js/faker': ^10.1.0
   '@form-create/ant-design-vue': ^3.2.34
   '@form-create/antd-designer': ^3.4.0
   '@form-create/designer': ^3.4.0
