@@ -4,6 +4,7 @@ import { interopDefault } from '../util';
 
 export async function vue(): Promise<Linter.Config[]> {
   const [pluginVue, parserVue, parserTs] = await Promise.all([
+    // @ts-ignore: eslint-plugin-vue types are not compatible with flat config yet
     interopDefault(import('eslint-plugin-vue')),
     interopDefault(import('vue-eslint-parser')),
     interopDefault(import('@typescript-eslint/parser')),
