@@ -1,12 +1,12 @@
 {
-  "name": "@x-monorepo/web-ele",
+  "name": "@x-monorepo/admin-ele",
   "version": "5.5.9",
   "homepage": "",
   "bugs": "https://github.com/XERA-2011/x-monorepo/issues",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/XERA-2011/x-monorepo.git",
-    "directory": "apps/web-ele"
+    "directory": "apps/admin-ele"
   },
   "license": "MIT",
   "author": {
@@ -19,7 +19,7 @@
     "build:analyze": "pnpm vite build --mode analyze",
     "dev": "pnpm vite --mode development",
     "preview": "vite preview",
-    "typecheck": "echo 'Skipping typecheck for web-ele due to legacy type issues - see GitHub Actions CI fix'"
+    "typecheck": "echo 'Skipping typecheck for admin-ele due to legacy type issues - see GitHub Actions CI fix'"
   },
   "imports": {
     "#/*": "./src/*"

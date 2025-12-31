@@ -22,7 +22,7 @@
         "NODE_ENV": "development"
       },
       "sourceMaps": true,
-      "webRoot": "${workspaceFolder}/apps/web-ele"
+      "webRoot": "${workspaceFolder}/apps/admin-ele"
     }
   ]
 }

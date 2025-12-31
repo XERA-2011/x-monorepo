@@ -1,8 +1,8 @@
 {
   "folders": [
     {
-      "name": "@x-monorepo/web-ele",
-      "path": "apps/web-ele",
+      "name": "@x-monorepo/admin-ele",
+      "path": "apps/admin-ele",
     },
     {
       "name": "@x-monorepo/web-nuxt",

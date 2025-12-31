@@ -9,7 +9,7 @@
 - **最新技术栈**：Vue 3.5, Vite 5, TypeScript, TailwindCSS, Pinia。
 - **Monorepo 架构**：使用 TurboRepo 高效管理多包项目 (Apps & Packages)。
 - **UI 框架**：
-  - 后台：基于 Element Plus (web-ele)，样式侵入低。
+  - 后台：基于 Element Plus (admin-ele)，样式侵入低。
   - 前台：基于 Nuxt 4 + Nuxt UI (web-nuxt)，SSR 支持。
 - **企业级功能**：
   - 完整的 RBAC 权限控制（菜单、按钮、数据权限）。
@@ -22,7 +22,7 @@
 ```text
 x-monorepo/
 ├── apps/
-│   ├── web-ele/        # [后台应用] 基于 Element Plus 的管理后台
+│   ├── admin-ele/      # [后台应用] 基于 Element Plus 的管理后台
 │   └── web-nuxt/       # [前台应用] 基于 Nuxt 4 + Nuxt UI 的 SSR 应用
 ├── packages/           # 共享代码库
 │   ├── @core/          # 核心框架逻辑 (UI Kit, Preferences, etc.)
@@ -62,7 +62,7 @@ pnpm dev:nuxt
 
 > **注意**: 默认配置连接远程或本地后端。
 >
-> - 后台配置: `apps/web-ele/.env.development`
+> - 后台配置: `apps/admin-ele/.env.development`
 > - 前台配置: `apps/web-nuxt/.env.development`
 
 ### 4. 项目打包
@@ -77,7 +77,7 @@ pnpm build:ele
 pnpm build:nuxt
 ```
 
-构建完成后，产物分别位于 `apps/web-ele/dist` 和 `apps/web-nuxt/.output` 目录。
+构建完成后，产物分别位于 `apps/admin-ele/dist` 和 `apps/web-nuxt/.output` 目录。
 
 ## 配置说明 | Configuration
 
@@ -93,9 +93,9 @@ pnpm build:nuxt
 
 推荐使用 Docker + Nginx 进行部署。
 
-### 1. Web-Ele (后台管理 - SPA)
+### 1. admin-ele (后台管理 - SPA)
 
-将 `apps/web-ele/dist` 静态文件挂载到 Nginx：
+将 `apps/admin-ele/dist` 静态文件挂载到 Nginx：
 
 ```nginx
 location /admin {
