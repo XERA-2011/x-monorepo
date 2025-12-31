@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import process from 'node:process';
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
@@ -38,14 +40,6 @@ export default defineNuxtConfig({
         target: process.env.NUXT_API_URL || 'http://localhost:8080',
         changeOrigin: true,
       },
-    },
-  },
-
-  // Nuxt UI 配置
-  ui: {
-    colors: {
-      primary: 'blue',
-      neutral: 'zinc',
     },
   },
 });
