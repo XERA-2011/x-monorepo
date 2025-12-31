@@ -105,6 +105,16 @@
     "neverBuiltDependencies": [
       "canvas",
       "node-gyp"
-    ]
+    ],
+    "supportedArchitectures": {
+      "os": [
+        "current",
+        "linux"
+      ],
+      "cpu": [
+        "current",
+        "x64"
+      ]
+    }
   }
 }
