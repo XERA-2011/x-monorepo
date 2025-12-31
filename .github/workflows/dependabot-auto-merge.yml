@@ -15,8 +15,8 @@ jobs:
         id: metadata
         uses: dependabot/fetch-metadata@v2
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-      
+          github-token: '${{ secrets.GITHUB_TOKEN }}'
+
       - name: Enable auto-merge for Dependabot PRs
         # 仅对 Dependabot 的 PR 启用自动合并
         # --auto 标志意味着只有在所有必需的状态检查通过后才会合并
