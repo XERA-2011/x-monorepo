@@ -42,11 +42,11 @@ export async function downloadFileFromUrl({
 
 /**
  * 下载图片（允许跨域）
- * @param url - 图片 URL
- * @param canvasWidth - 画布宽度
- * @param canvasHeight - 画布高度
- * @param drawWithImageSize - 将图片绘制在画布上时带上图片的宽高值, 默认是要带上的
- * @returns
+ * @param options - 选项对象
+ * @param options.url - 图片 URL
+ * @param options.canvasWidth - 画布宽度
+ * @param options.canvasHeight - 画布高度
+ * @param options.drawWithImageSize - 将图片绘制在画布上时带上图片的宽高值, 默认是要带上的
  */
 export function downloadImageByCanvas({
   url,
@@ -140,8 +140,8 @@ export function downloadFileFromBlobPart({
 export function dataURLtoBlob(base64Buf: string): Blob {
   const arr = base64Buf.split(',');
   // 使用更精确的正则表达式避免 ReDoS 攻击
-  const mimeMatch = arr[0]?.match(/:([^;]+);/);
-  const mime = mimeMatch?.[1] ?? 'application/octet-stream';
+  // 使用更安全的解析方式，避免正则 ReDoS
+  const mime = arr[0]?.match(/:(.*?);/)?.[1] ?? 'application/octet-stream';
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const bstr = window.atob(arr[1]!);
   let n = bstr.length;
@@ -197,7 +197,7 @@ export function base64ToFile(base64: string, fileName: string): File {
   }
 
   // 使用更精确的正则表达式避免 ReDoS 攻击
-  const typeMatch = data[0].match(/:([^;]+);/);
+  const typeMatch = data[0].match(/:(.*?);/);
   if (!typeMatch || !typeMatch[1]) {
     throw new Error('无法解析 base64 类型信息');
   }
