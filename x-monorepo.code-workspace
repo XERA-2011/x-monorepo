@@ -1,10 +1,6 @@
 {
   "folders": [
     {
-      "name": "@x-monorepo/web-antd",
-      "path": "apps/web-antd",
-    },
-    {
       "name": "@x-monorepo/web-ele",
       "path": "apps/web-ele",
     },
