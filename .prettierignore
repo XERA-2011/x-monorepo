@@ -8,6 +8,8 @@ coverage
 CODEOWNERS
 .nitro
 .output
+.nuxt
+.vercel
 
 
 **/*.svg
