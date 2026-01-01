@@ -1,8 +1,11 @@
 <template>
   <UApp>
-    <div
-      class="flex min-h-screen flex-col bg-white font-sans text-gray-900 transition-colors duration-300 dark:bg-gray-950 dark:text-gray-100"
-    >
+    <!-- 背景特效层 -->
+    <div class="perspective-grid"></div>
+    <div class="floating-sun"></div>
+
+    <!-- 主内容 -->
+    <div class="scanlines relative z-10 flex min-h-screen flex-col">
       <AppHeader />
       <main class="flex-1">
         <NuxtRouteAnnouncer />
@@ -12,3 +15,9 @@
     </div>
   </UApp>
 </template>
+
+<script setup lang="ts">
+// 强制暗色模式
+const colorMode = useColorMode();
+colorMode.preference = 'dark';
+</script>

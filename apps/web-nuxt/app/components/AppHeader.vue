@@ -1,15 +1,4 @@
 <script setup lang="ts">
-const colorMode = useColorMode();
-
-const isDark = computed({
-  get() {
-    return colorMode.value === 'dark';
-  },
-  set() {
-    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
-  },
-});
-
 const links = [
   { label: '首页', to: '/', icon: 'i-lucide-home' },
   { label: '项目', to: '#projects', icon: 'i-lucide-folder-git-2' },
@@ -19,49 +8,44 @@ const links = [
 
 <template>
   <header
-    class="sticky top-0 z-50 border-b border-gray-200 bg-white/75 backdrop-blur-md dark:border-gray-800 dark:bg-gray-900/75"
+    class="sticky top-0 z-50 border-b-2 border-[#2D1B4E] bg-[rgba(9,0,20,0.85)] backdrop-blur-xl"
   >
     <UContainer class="flex h-16 items-center justify-between">
-      <div class="flex items-center gap-2">
-        <UIcon name="i-lucide-box" class="text-primary-500 h-8 w-8" />
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <div
+          class="flex h-10 w-10 items-center justify-center border-2 border-[#FF00FF] bg-[rgba(255,0,255,0.1)]"
+        >
+          <UIcon name="i-lucide-box" class="h-6 w-6 text-[#FF00FF]" />
+        </div>
         <span
-          class="from-primary-500 bg-gradient-to-r to-cyan-500 bg-clip-text text-xl font-bold text-transparent"
+          class="font-heading gradient-text text-xl font-bold tracking-wider"
         >
           X-MONOREPO
         </span>
       </div>
 
-      <nav class="hidden items-center gap-6 md:flex">
+      <!-- 导航链接 -->
+      <nav class="hidden items-center gap-8 md:flex">
         <NuxtLink
           v-for="link in links"
           :key="link.to"
           :to="link.to"
-          class="hover:text-primary-500 dark:hover:text-primary-400 text-sm font-medium text-gray-600 transition-colors dark:text-gray-300"
+          class="font-mono text-sm uppercase tracking-widest text-[#E0E0E0] transition-all duration-200 hover:text-[#00FFFF] hover:drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]"
         >
           {{ link.label }}
         </NuxtLink>
       </nav>
 
-      <div class="flex items-center gap-2">
-        <UButton
-          to="https://github.com/XERA-2011/x-monorepo"
+      <!-- 右侧按钮 -->
+      <div class="flex items-center gap-3">
+        <a
+          href="https://github.com/XERA-2011/x-monorepo"
           target="_blank"
-          color="neutral"
-          variant="ghost"
-          icon="i-lucide-github"
-        />
-        <ClientOnly>
-          <UButton
-            :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'"
-            color="neutral"
-            variant="ghost"
-            aria-label="Theme"
-            @click="isDark = !isDark"
-          />
-          <template #fallback>
-            <div class="h-8 w-8"></div>
-          </template>
-        </ClientOnly>
+          class="flex h-10 w-10 items-center justify-center border-2 border-[#00FFFF] bg-transparent text-[#00FFFF] transition-all duration-200 hover:bg-[#00FFFF] hover:text-black hover:shadow-[0_0_20px_#00FFFF]"
+        >
+          <UIcon name="i-lucide-github" class="h-5 w-5" />
+        </a>
       </div>
     </UContainer>
   </header>
