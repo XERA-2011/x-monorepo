@@ -22,17 +22,13 @@ export async function perfectionist(): Promise<Linter.Config[]> {
           'error',
           {
             groups: [
-              ['external-type', 'builtin-type', 'type'],
-              ['parent-type', 'sibling-type', 'index-type'],
-              ['internal-type'],
+              'type',
               'builtin',
               'external',
               'internal',
               ['parent', 'sibling', 'index'],
               'side-effect',
-              'side-effect-style',
               'style',
-              'object',
               'unknown',
             ],
             order: 'asc',
