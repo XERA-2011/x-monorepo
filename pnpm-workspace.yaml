@@ -91,7 +91,7 @@ catalog:
   circular-dependency-scanner: ^2.3.0
   class-variance-authority: ^0.7.1
   clsx: ^2.1.1
-  codemirror: ^6.0.2
+  codemirror: ^5.65.18
   commitlint-plugin-function-rules: ^4.2.1
   consola: ^3.4.2
   cropperjs: ^1.6.2
@@ -224,4 +224,4 @@ catalog:
   vxe-table: ^4.17.37
   watermark-js-plus: ^1.6.3
   zod: ^3.25.76
-  zod-defaults: 0.2.3
+  zod-defaults: 0.1.3

@@ -1,129 +1,156 @@
 # X-MONOREPO
 
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=node.js)](https://nodejs.org/)
+[![pnpm](https://img.shields.io/badge/pnpm-10+-F69220?logo=pnpm)](https://pnpm.io/)
+[![Vue](https://img.shields.io/badge/Vue-3.5-4FC08D?logo=vue.js)](https://vuejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)](https://www.typescriptlang.org/)
+
 ## 简介 | Introduction
 
 **X-MONOREPO** 是一套企业级前端工程，采用 **Monorepo** 架构管理。它与 **X-SPRING-BOOT** 后端完美协同，提供了一套功能丰富、性能优越的 SaaS 管理后台解决方案。
 
 ### 核心特性
 
-- **最新技术栈**：Vue 3.5, Vite 5, TypeScript, TailwindCSS, Pinia。
-- **Monorepo 架构**：使用 TurboRepo 高效管理多包项目 (Apps & Packages)。
-- **UI 框架**：
-  - 后台：基于 Element Plus (admin-ele)，样式侵入低。
-  - 前台：基于 Nuxt 4 + Nuxt UI (web-nuxt)，SSR 支持。
-- **企业级功能**：
-  - 完整的 RBAC 权限控制（菜单、按钮、数据权限）。
-  - 深度集成的 SaaS 多租户体系。
-  - 丰富的高级组件（表单、表格、上传、弹窗）。
-  - 国际化、暗黑模式、主题配置。
+| 特性 | 说明 |
+|------|------|
+| 🚀 **最新技术栈** | Vue 3.5, Vite 7, TypeScript 5, TailwindCSS 4, Pinia |
+| 📦 **Monorepo** | TurboRepo 高效管理多包项目 |
+| 🎨 **后台管理** | Element Plus + 丰富业务组件 |
+| 🌐 **前台网站** | Nuxt 4 + Nuxt UI + SSG 静态生成 |
+| 🔐 **权限控制** | RBAC 菜单/按钮/数据权限 |
+| 🏢 **多租户** | 深度集成 SaaS 多租户体系 |
+| 🌍 **国际化** | 中英文切换 |
+| 🌙 **暗黑模式** | 支持亮/暗主题切换 |
 
 ## 目录结构 | Directory Structure
 
-```text
+```
 x-monorepo/
 ├── apps/
-│   ├── admin-ele/      # [后台应用] 基于 Element Plus 的管理后台
-│   └── web-nuxt/       # [前台应用] 基于 Nuxt 4 + Nuxt UI 的 SSR 应用
-├── packages/           # 共享代码库
-│   ├── @core/          # 核心框架逻辑 (UI Kit, Preferences, etc.)
-│   ├── effects/        # 副作用层 (Hooks, Plugins)
-│   ├── utils/          # 通用工具类
-│   └── ...
-├── scripts/            # 构建与工具脚本
-└── turbo.json          # TurboRepo 配置
+│   ├── admin-ele/          # 后台管理 (Element Plus)
+│   └── web-nuxt/           # 前台网站 (Nuxt 4 + SSG)
+├── packages/
+│   ├── @core/              # 核心框架 (UI Kit, Composables)
+│   ├── effects/            # 副作用层 (Hooks, Plugins)
+│   └── utils/              # 通用工具类
+├── internal/               # 构建配置 (ESLint, Vite, Tailwind)
+├── scripts/                # 部署脚本
+└── nginx.conf              # Nginx 配置模板
 ```
 
 ## 快速开始 | Quick Start
 
-### 1. 环境准备
+### 环境要求
 
-- **Node.js**: v18.12.0+ (建议 v20+)
-- **Pnpm**: v8+ (推荐最新版)
-- **Git**: 建议使用 Git Bash 或类似终端
+- **Node.js** ≥ 20.12.0
+- **pnpm** ≥ 10.14.0
 
-### 2. 安装依赖
+### 安装与运行
 
 ```bash
-# 在项目根目录下运行
+# 1. 安装依赖
 pnpm install
+
+# 2. 启动开发服务器
+pnpm dev:ele     # 后台管理 → http://localhost:2012
+pnpm dev:nuxt    # 前台网站 → http://localhost:2011
 ```
 
-### 3. 本地开发
+> **配置文件**  
+> - 后台: `apps/admin-ele/.env.development`  
+> - 前台: `apps/web-nuxt/.env.development`
 
-```bash
-# 启动 Element Plus 后台管理系统
-pnpm dev:ele
-# 访问地址: http://localhost:2012
+## 常用命令 | Commands
 
-# 启动 Nuxt 前台应用
-pnpm dev:nuxt
-# 访问地址: http://localhost:2011
-```
-
-> **注意**: 默认配置连接远程或本地后端。
->
-> - 后台配置: `apps/admin-ele/.env.development`
-> - 前台配置: `apps/web-nuxt/.env.development`
-
-### 4. 项目打包
-
-构建生产环境产物：
-
-```bash
-# 构建后台
-pnpm build:ele
-
-# 构建前台
-pnpm build:nuxt
-```
-
-构建完成后，产物分别位于 `apps/admin-ele/dist` 和 `apps/web-nuxt/.output` 目录。
+| 命令 | 说明 |
+|------|------|
+| `pnpm dev` | 交互式选择应用启动 |
+| `pnpm dev:ele` | 启动后台管理 (localhost:2012) |
+| `pnpm dev:nuxt` | 启动前台网站 (localhost:2011) |
+| `pnpm run build:ele` | 构建后台 → `apps/admin-ele/dist` |
+| `pnpm --filter @x-monorepo/web-nuxt generate` | SSG 构建前台 → `apps/web-nuxt/.output/public` |
+| `pnpm lint` | 代码检查 |
+| `pnpm format` | 代码格式化 |
+| `pnpm clean` | 清理构建产物 |
+| `pnpm reinstall` | 重新安装依赖 |
 
 ## 配置说明 | Configuration
 
-项目通过 `.env` 文件进行环境变量配置，位于各个 `apps/` 子项目下。
-
-| 文件 | 说明 | 关键变量 |
-| --- | --- | --- |
-| `.env` | 所有环境通用配置 | `VITE_APP_TITLE`, `VITE_APP_CAPTCHA_ENABLE` |
-| `.env.development` | 本地开发环境 | `VITE_GLOB_API_URL` (后端API地址) |
-| `.env.production` | 生产构建环境 | `VITE_GLOB_API_URL` (通常设为 `/admin-api`) |
+| 文件 | 环境 | 关键变量 |
+|------|------|----------|
+| `.env` | 通用 | `VITE_APP_TITLE` |
+| `.env.development` | 开发 | `VITE_GLOB_API_URL` |
+| `.env.production` | 生产 | `VITE_BASE`, `VITE_GLOB_API_URL` |
 
 ## 部署 | Deployment
 
-推荐使用 Docker + Nginx 进行部署。
+### Docker + Nginx 部署架构
 
-### 1. Admin-Ele (后台管理 - SPA)
+```
+┌─────────────────────────────────────────────────────┐
+│                   Nginx (Docker)                     │
+│  ┌─────────────────┬─────────────────────────────┐  │
+│  │   /             │  /admin/                    │  │
+│  │   web-nuxt      │  admin-ele                  │  │
+│  │   (SSG 静态)    │  (SPA 静态)                 │  │
+│  └─────────────────┴─────────────────────────────┘  │
+│                         ↓                            │
+│              /admin-api/ → Spring Boot              │
+└─────────────────────────────────────────────────────┘
+```
 
-将 `apps/admin-ele/dist` 静态文件挂载到 Nginx：
+### Nginx 配置
 
 ```nginx
-location /admin {
-    alias  /usr/share/nginx/html/admin;
-    index  index.html index.htm;
-    try_files $uri $uri/ /admin/index.html;
+server {
+    listen 80;
+
+    # 前台网站 (/)
+    location / {
+        root /usr/share/nginx/html;
+        index index.html;
+        try_files $uri $uri/ /index.html;
+    }
+
+    # 后台管理 (/admin/)
+    location /admin/ {
+        alias /usr/share/nginx/html/admin/;
+        index index.html;
+        try_files $uri $uri/ /admin/index.html;
+    }
+
+    # API 代理
+    location /admin-api/ {
+        proxy_pass http://xera-server:8080/admin-api/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
 }
 ```
 
-### 2. Web-Nuxt (前台网站 - SSR)
+### 部署步骤
 
-Nuxt 应用构建后生成 Node.js 服务，建议使用 PM2 或 Docker 运行，通过 Nginx 反向代理：
+```bash
+# 1. 本地构建
+pnpm run build:ele
+pnpm --filter @x-monorepo/web-nuxt generate
 
-```nginx
-location / {
-    proxy_pass http://web-nuxt-container:2011;
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_cache_bypass $http_upgrade;
-}
+# 2. 上传到服务器
+# - apps/web-nuxt/.output/public/* → /opt/xera/html/
+# - apps/admin-ele/dist/*         → /opt/xera/html/admin/
+# - nginx.conf                     → /opt/xera/nginx.conf
+
+# 3. 重载 Nginx
+docker exec xera-nginx nginx -s reload
 ```
 
-### 3. API 代理
+### 访问地址
 
-```nginx
-location /admin-api/ {
-    proxy_pass http://xera-server:8080/admin-api/;
-}
-```
+| 应用 | URL |
+|------|-----|
+| 前台网站 | http://your-server/ |
+| 后台管理 | http://your-server/admin/ |
+
+## License
+
+[MIT](./LICENSE)

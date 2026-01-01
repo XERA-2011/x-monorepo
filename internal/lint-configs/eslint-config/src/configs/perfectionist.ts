@@ -21,18 +21,14 @@ export async function perfectionist(): Promise<Linter.Config[]> {
         'perfectionist/sort-imports': [
           'error',
           {
-            customGroups: {
-              type: {
-                'x-monorepo-core-type': ['^@x-monorepo-core/.+'],
-                'x-monorepo-type': ['^@x-monorepo/.+'],
-                'vue-type': ['^vue$', '^vue-.+', '^@vue/.+'],
-              },
-              value: {
-                'x-monorepo': ['^@x-monorepo/.+'],
-                'x-monorepo-core': ['^@x-monorepo-core/.+'],
-                vue: ['^vue$', '^vue-.+', '^@vue/.+'],
-              },
-            },
+            customGroups: [
+              { groupName: 'vue-type', modifiers: ['type'], elementNamePattern: ['^vue$', '^vue-.+', '^@vue/.+'] },
+              { groupName: 'x-monorepo-type', modifiers: ['type'], elementNamePattern: ['^@x-monorepo/.+'] },
+              { groupName: 'x-monorepo-core-type', modifiers: ['type'], elementNamePattern: ['^@x-monorepo-core/.+'] },
+              { groupName: 'vue', elementNamePattern: ['^vue$', '^vue-.+', '^@vue/.+'] },
+              { groupName: 'x-monorepo', elementNamePattern: ['^@x-monorepo/.+'] },
+              { groupName: 'x-monorepo-core', elementNamePattern: ['^@x-monorepo-core/.+'] },
+            ],
             environment: 'node',
             groups: [
               ['external-type', 'builtin-type', 'type'],
