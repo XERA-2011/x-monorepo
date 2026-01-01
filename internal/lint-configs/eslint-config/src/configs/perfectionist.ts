@@ -22,12 +22,12 @@ export async function perfectionist(): Promise<Linter.Config[]> {
           'error',
           {
             customGroups: [
-              { groupName: 'vue-type', modifiers: ['type'], elementNamePattern: ['^vue$', '^vue-.+', '^@vue/.+'] },
-              { groupName: 'x-monorepo-type', modifiers: ['type'], elementNamePattern: ['^@x-monorepo/.+'] },
-              { groupName: 'x-monorepo-core-type', modifiers: ['type'], elementNamePattern: ['^@x-monorepo-core/.+'] },
-              { groupName: 'vue', elementNamePattern: ['^vue$', '^vue-.+', '^@vue/.+'] },
-              { groupName: 'x-monorepo', elementNamePattern: ['^@x-monorepo/.+'] },
-              { groupName: 'x-monorepo-core', elementNamePattern: ['^@x-monorepo-core/.+'] },
+              { groupName: 'vue-type', modifiers: ['type'], elementNamePattern: '^vue$|^vue-.+|^@vue/.+' },
+              { groupName: 'x-monorepo-type', modifiers: ['type'], elementNamePattern: '^@x-monorepo/.+' },
+              { groupName: 'x-monorepo-core-type', modifiers: ['type'], elementNamePattern: '^@x-monorepo-core/.+' },
+              { groupName: 'vue', elementNamePattern: '^vue$|^vue-.+|^@vue/.+' },
+              { groupName: 'x-monorepo', elementNamePattern: '^@x-monorepo/.+' },
+              { groupName: 'x-monorepo-core', elementNamePattern: '^@x-monorepo-core/.+' },
             ],
             environment: 'node',
             groups: [
@@ -51,7 +51,10 @@ export async function perfectionist(): Promise<Linter.Config[]> {
               'unknown',
             ],
             internalPattern: ['^#/.+'],
-            newlinesBetween: 'always',
+            newlinesBetween: {
+              groups: 'always',
+              fallback: 'never',
+            },
             order: 'asc',
             type: 'natural',
           },
