@@ -1,13 +1,10 @@
 <script setup lang="ts">
+import type { SheetVariants } from './sheet';
 import type { DialogContentEmits, DialogContentProps } from 'reka-ui';
 
-import type { SheetVariants } from './sheet';
-
-import { computed, ref } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { DialogContent, useForwardPropsEmits } from 'reka-ui';
+import { computed, ref } from 'vue';
 
 import { sheetVariants } from './sheet';
 import SheetOverlay from './SheetOverlay.vue';

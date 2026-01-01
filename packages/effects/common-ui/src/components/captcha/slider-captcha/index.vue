@@ -5,13 +5,10 @@ import type {
   SliderRotateVerifyPassingData,
 } from '../types';
 
-import { reactive, unref, useTemplateRef, watch, watchEffect } from 'vue';
-
-import { $t } from '@x-monorepo/locales';
-
-import { cn } from '@x-monorepo-core/shared/utils';
-
 import { useTimeoutFn } from '@vueuse/core';
+import { cn } from '@x-monorepo-core/shared/utils';
+import { $t } from '@x-monorepo/locales';
+import { reactive, unref, useTemplateRef, watch, watchEffect } from 'vue';
 
 import SliderCaptchaAction from './slider-captcha-action.vue';
 import SliderCaptchaBar from './slider-captcha-bar.vue';

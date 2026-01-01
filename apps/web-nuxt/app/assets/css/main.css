@@ -1,6 +1,5 @@
 /* 字体导入 - 必须放在最前面 */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap');
-
 @import 'tailwindcss';
 @import '@nuxt/ui';
 
@@ -12,12 +11,12 @@
 @theme {
   /* 颜色系统 */
   --color-void: #090014;
-  --color-chrome: #E0E0E0;
-  --color-card: rgba(26, 16, 60, 0.8);
-  --color-neon-magenta: #FF00FF;
-  --color-neon-cyan: #00FFFF;
-  --color-neon-orange: #FF9900;
-  --color-border-dark: #2D1B4E;
+  --color-chrome: #e0e0e0;
+  --color-card: rgb(26 16 60 / 80%);
+  --color-neon-magenta: #f0f;
+  --color-neon-cyan: #0ff;
+  --color-neon-orange: #f90;
+  --color-border-dark: #2d1b4e;
 
   /* 字体 */
   --font-heading: 'Orbitron', sans-serif;
@@ -30,28 +29,33 @@ html {
 }
 
 body {
-  background-color: var(--color-void);
-  color: var(--color-chrome);
   font-family: var(--font-mono);
+  color: var(--color-chrome);
+  background-color: var(--color-void);
 }
 
 /* 标题字体 */
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .font-heading {
   font-family: var(--font-heading);
 }
 
 /* CRT 扫描线叠加层 */
 .scanlines::after {
-  content: '';
   position: fixed;
   inset: 0;
   z-index: 9999;
   pointer-events: none;
+  content: '';
   background: repeating-linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.15) 0px,
-    rgba(0, 0, 0, 0.15) 1px,
+    rgb(0 0 0 / 15%) 0,
+    rgb(0 0 0 / 15%) 1px,
     transparent 1px,
     transparent 2px
   );
@@ -61,26 +65,26 @@ h1, h2, h3, h4, h5, h6,
 .perspective-grid {
   position: fixed;
   inset: 0;
-  overflow: hidden;
   z-index: 0;
+  overflow: hidden;
   pointer-events: none;
 }
 
 .perspective-grid::before {
-  content: '';
   position: absolute;
   bottom: 0;
   left: -50%;
   width: 200%;
   height: 100%;
-  background-image: 
+  content: '';
+  background-image:
     linear-gradient(transparent 97%, var(--color-neon-magenta) 97%),
     linear-gradient(90deg, transparent 97%, var(--color-neon-magenta) 97%);
   background-size: 60px 60px;
-  transform: perspective(300px) rotateX(60deg);
-  transform-origin: bottom center;
   opacity: 0.15;
   mask-image: linear-gradient(to top, black 0%, transparent 60%);
+  transform: perspective(300px) rotateX(60deg);
+  transform-origin: bottom center;
 }
 
 /* 浮动太阳渐变球 */
@@ -88,15 +92,19 @@ h1, h2, h3, h4, h5, h6,
   position: fixed;
   top: 10%;
   left: 50%;
-  transform: translateX(-50%);
+  z-index: 0;
   width: 500px;
   height: 500px;
-  background: linear-gradient(to bottom, var(--color-neon-orange), var(--color-neon-magenta));
-  border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.15;
-  z-index: 0;
   pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    var(--color-neon-orange),
+    var(--color-neon-magenta)
+  );
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(120px);
+  transform: translateX(-50%);
 }
 
 /* 霓虹发光效果 */
@@ -118,10 +126,14 @@ h1, h2, h3, h4, h5, h6,
 
 /* 渐变文字 */
 .gradient-text {
-  background: linear-gradient(to right, var(--color-neon-orange), var(--color-neon-magenta), var(--color-neon-cyan));
-  -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
+  background: linear-gradient(
+    to right,
+    var(--color-neon-orange),
+    var(--color-neon-magenta),
+    var(--color-neon-cyan)
+  );
+  background-clip: text;
 }
 
 /* 斜切按钮容器 */
@@ -145,17 +157,17 @@ h1, h2, h3, h4, h5, h6,
 
 /* 终端窗口样式 */
 .terminal-window {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(0 0 0 / 80%);
   border: 2px solid var(--color-neon-cyan);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgb(0 255 255 / 20%);
 }
 
 .terminal-titlebar {
   display: flex;
-  align-items: center;
   gap: 8px;
+  align-items: center;
   padding: 8px 12px;
-  background: rgba(0, 255, 255, 0.1);
+  background: rgb(0 255 255 / 10%);
   border-bottom: 1px solid var(--color-neon-cyan);
 }
 
@@ -180,15 +192,15 @@ h1, h2, h3, h4, h5, h6,
 /* 霓虹卡片 */
 .neon-card {
   background: var(--color-card);
-  border: 1px solid rgba(255, 0, 255, 0.3);
+  border: 1px solid rgb(255 0 255 / 30%);
   border-top: 2px solid var(--color-neon-cyan);
   backdrop-filter: blur(12px);
   transition: all 0.2s ease-out;
 }
 
 .neon-card:hover {
+  box-shadow: 0 0 30px rgb(0 255 255 / 30%);
   transform: translateY(-4px);
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
 }
 
 /* 菱形图标容器 */

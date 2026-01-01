@@ -1,12 +1,11 @@
 import type { SelectRuleOption } from '#/components/form-create/typing';
 
-import { buildUUID, cloneDeep } from '@x-monorepo/utils';
-
 import {
   localeProps,
   makeRequiredRule,
 } from '#/components/form-create/helpers';
 import { selectRule } from '#/components/form-create/rules/data';
+import { buildUUID, cloneDeep } from '@x-monorepo/utils';
 
 /**
  * 通用选择器规则 hook

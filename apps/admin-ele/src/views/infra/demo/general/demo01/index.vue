@@ -1,8 +1,15 @@
 <script lang="ts" setup>
 import type { Demo01ContactApi } from '#/api/infra/demo/demo01';
 
-import { h, onMounted, reactive, ref } from 'vue';
-
+import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
+import {
+  deleteDemo01Contact,
+  deleteDemo01ContactList,
+  exportDemo01Contact,
+  getDemo01ContactPage,
+} from '#/api/infra/demo/demo01';
+import { DictTag } from '#/components/dict-tag';
+import { $t } from '#/locales';
 import { ContentWrap, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
@@ -17,7 +24,6 @@ import {
   formatDateTime,
   isEmpty,
 } from '@x-monorepo/utils';
-
 import {
   ElButton,
   ElDatePicker,
@@ -30,16 +36,7 @@ import {
   ElPagination,
   ElSelect,
 } from 'element-plus';
-
-import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
-import {
-  deleteDemo01Contact,
-  deleteDemo01ContactList,
-  exportDemo01Contact,
-  getDemo01ContactPage,
-} from '#/api/infra/demo/demo01';
-import { DictTag } from '#/components/dict-tag';
-import { $t } from '#/locales';
+import { h, onMounted, reactive, ref } from 'vue';
 
 import Demo01ContactForm from './modules/form.vue';
 

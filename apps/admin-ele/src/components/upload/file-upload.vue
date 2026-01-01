@@ -9,12 +9,10 @@ import type {
   UploadUserFile,
 } from 'element-plus';
 
-import { ref, watch } from 'vue';
-
 import { IconifyIcon } from '@x-monorepo/icons';
 import { isString } from '@x-monorepo/utils';
-
 import { ElButton, ElLink, ElMessage, ElUpload } from 'element-plus';
+import { ref, watch } from 'vue';
 
 import { useUpload } from './use-upload';
 

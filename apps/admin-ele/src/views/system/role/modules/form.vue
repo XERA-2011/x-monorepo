@@ -1,15 +1,12 @@
 <script lang="ts" setup>
 import type { SystemRoleApi } from '#/api/system/role';
 
-import { computed, ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import { createRole, getRole, updateRole } from '#/api/system/role';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage } from 'element-plus';
+import { computed, ref } from 'vue';
 
 import { useFormSchema } from '../data';
 

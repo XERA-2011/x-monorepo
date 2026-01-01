@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import type { CaptchaPoint, PointSelectionCaptchaProps } from '../types';
 
+import { XAppButton, XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 import { RotateCw } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
-
-import { XAppButton, XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 
 import { useCaptchaPoints } from '../hooks/useCaptchaPoints';
 import CaptchaCard from './point-selection-captcha-card.vue';

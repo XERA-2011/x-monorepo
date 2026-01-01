@@ -1,6 +1,5 @@
-import type { CSSProperties } from 'vue';
-
 import type { ClassType } from '@x-monorepo/types';
+import type { CSSProperties } from 'vue';
 
 export interface CaptchaData {
   /**

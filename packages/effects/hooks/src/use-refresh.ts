@@ -1,6 +1,5 @@
-import { useRouter } from 'vue-router';
-
 import { useTabbarStore } from '@x-monorepo/stores';
+import { useRouter } from 'vue-router';
 
 export function useRefresh() {
   const router = useRouter();

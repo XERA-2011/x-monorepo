@@ -1,10 +1,9 @@
 import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
+import { z } from '#/adapter/form';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
-
-import { z } from '#/adapter/form';
 
 /** 新增/修改的表单 */
 export function useFormSchema(): XAppFormSchema[] {

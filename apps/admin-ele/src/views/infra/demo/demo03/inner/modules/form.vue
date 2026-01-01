@@ -1,12 +1,6 @@
 <script lang="ts" setup>
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
-import { computed, ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage, ElTabPane, ElTabs } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import {
   createDemo03Student,
@@ -14,6 +8,9 @@ import {
   updateDemo03Student,
 } from '#/api/infra/demo/demo03/inner';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage, ElTabPane, ElTabs } from 'element-plus';
+import { computed, ref } from 'vue';
 
 import { useFormSchema } from '../data';
 import Demo03CourseForm from './demo03-course-form.vue';

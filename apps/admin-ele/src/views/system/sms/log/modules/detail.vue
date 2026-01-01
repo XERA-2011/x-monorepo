@@ -1,11 +1,9 @@
 <script lang="ts" setup>
 import type { SystemSmsLogApi } from '#/api/system/sms/log';
 
-import { ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
 import { useDescription } from '#/components/description';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ref } from 'vue';
 
 import { useDetailSchema } from '../data';
 

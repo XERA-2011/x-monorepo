@@ -1,10 +1,6 @@
-import type { VxeGridInstance } from 'vxe-table';
-
-import type { ExtendedFormApi } from '@x-monorepo-core/form-ui';
-
 import type { VxeGridProps } from './types';
-
-import { toRaw } from 'vue';
+import type { ExtendedFormApi } from '@x-monorepo-core/form-ui';
+import type { VxeGridInstance } from 'vxe-table';
 
 import { Store } from '@x-monorepo-core/shared/store';
 import {
@@ -14,6 +10,7 @@ import {
   mergeWithArrayOverride,
   StateHandler,
 } from '@x-monorepo-core/shared/utils';
+import { toRaw } from 'vue';
 
 function getDefaultState(): VxeGridProps {
   return {

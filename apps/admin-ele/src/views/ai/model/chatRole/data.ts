@@ -1,17 +1,16 @@
 import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
+import { z } from '#/adapter/form';
+import { getSimpleKnowledgeList } from '#/api/ai/knowledge/knowledge';
+import { getModelSimpleList } from '#/api/ai/model/model';
+import { getToolSimpleList } from '#/api/ai/model/tool';
 import {
   AiModelTypeEnum,
   CommonStatusEnum,
   DICT_TYPE,
 } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
-
-import { z } from '#/adapter/form';
-import { getSimpleKnowledgeList } from '#/api/ai/knowledge/knowledge';
-import { getModelSimpleList } from '#/api/ai/model/model';
-import { getToolSimpleList } from '#/api/ai/model/tool';
 
 /** 新增/修改的表单 */
 export function useFormSchema(): XAppFormSchema[] {

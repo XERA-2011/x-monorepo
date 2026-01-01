@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import type { CSSProperties } from 'vue';
-
 import type { ContentCompactType } from '@x-monorepo-core/typings';
-
-import { computed } from 'vue';
+import type { CSSProperties } from 'vue';
 
 import { useLayoutContentStyle } from '@x-monorepo-core/composables';
 import { Slot } from '@x-monorepo-core/shadcn-ui';
+import { computed } from 'vue';
 
 interface Props {
   /**

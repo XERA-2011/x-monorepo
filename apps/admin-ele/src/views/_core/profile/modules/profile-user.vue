@@ -1,17 +1,14 @@
 <script setup lang="ts">
 import type { SystemUserProfileApi } from '#/api/system/user/profile';
 
-import { computed } from 'vue';
-
-import { IconifyIcon } from '@x-monorepo/icons';
-import { preferences } from '@x-monorepo/preferences';
-import { formatDateTime } from '@x-monorepo/utils';
-
-import { ElDescriptions, ElDescriptionsItem, ElTooltip } from 'element-plus';
-
 import { updateUserProfile } from '#/api/system/user/profile';
 import { CropperAvatar } from '#/components/cropper';
 import { useUpload } from '#/components/upload/use-upload';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { preferences } from '@x-monorepo/preferences';
+import { formatDateTime } from '@x-monorepo/utils';
+import { ElDescriptions, ElDescriptionsItem, ElTooltip } from 'element-plus';
+import { computed } from 'vue';
 
 const props = defineProps<{
   profile?: SystemUserProfileApi.UserProfileRespVO;

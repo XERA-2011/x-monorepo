@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { DialogTitleProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { DialogTitle } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<DialogTitleProps & { class?: any }>();
 

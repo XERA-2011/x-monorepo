@@ -1,8 +1,7 @@
+import { requestClient } from '#/api/request';
 import { useAppConfig } from '@x-monorepo/hooks';
 import { fetchEventSource } from '@x-monorepo/request';
 import { useAccessStore } from '@x-monorepo/stores';
-
-import { requestClient } from '#/api/request';
 
 const { apiURL } = useAppConfig(import.meta.env, import.meta.env.PROD);
 const accessStore = useAccessStore();

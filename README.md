@@ -1,9 +1,6 @@
 # X-MONOREPO
 
-[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=node.js)](https://nodejs.org/)
-[![pnpm](https://img.shields.io/badge/pnpm-10+-F69220?logo=pnpm)](https://pnpm.io/)
-[![Vue](https://img.shields.io/badge/Vue-3.5-4FC08D?logo=vue.js)](https://vuejs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=node.js)](https://nodejs.org/) [![pnpm](https://img.shields.io/badge/pnpm-10+-F69220?logo=pnpm)](https://pnpm.io/) [![Vue](https://img.shields.io/badge/Vue-3.5-4FC08D?logo=vue.js)](https://vuejs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 
 ## 简介 | Introduction
 
@@ -11,16 +8,16 @@
 
 ### 核心特性
 
-| 特性 | 说明 |
-|------|------|
+| 特性              | 说明                                                |
+| ----------------- | --------------------------------------------------- |
 | 🚀 **最新技术栈** | Vue 3.5, Vite 7, TypeScript 5, TailwindCSS 4, Pinia |
-| 📦 **Monorepo** | TurboRepo 高效管理多包项目 |
-| 🎨 **后台管理** | Element Plus + 丰富业务组件 |
-| 🌐 **前台网站** | Nuxt 4 + Nuxt UI + SSG 静态生成 |
-| 🔐 **权限控制** | RBAC 菜单/按钮/数据权限 |
-| 🏢 **多租户** | 深度集成 SaaS 多租户体系 |
-| 🌍 **国际化** | 中英文切换 |
-| 🌙 **暗黑模式** | 支持亮/暗主题切换 |
+| 📦 **Monorepo**   | TurboRepo 高效管理多包项目                          |
+| 🎨 **后台管理**   | Element Plus + 丰富业务组件                         |
+| 🌐 **前台网站**   | Nuxt 4 + Nuxt UI + SSG 静态生成                     |
+| 🔐 **权限控制**   | RBAC 菜单/按钮/数据权限                             |
+| 🏢 **多租户**     | 深度集成 SaaS 多租户体系                            |
+| 🌍 **国际化**     | 中英文切换                                          |
+| 🌙 **暗黑模式**   | 支持亮/暗主题切换                                   |
 
 ## 目录结构 | Directory Structure
 
@@ -56,14 +53,15 @@ pnpm dev:ele     # 后台管理 → http://localhost:2012
 pnpm dev:nuxt    # 前台网站 → http://localhost:2011
 ```
 
-> **配置文件**  
-> - 后台: `apps/admin-ele/.env.development`  
+> **配置文件**
+>
+> - 后台: `apps/admin-ele/.env.development`
 > - 前台: `apps/web-nuxt/.env.development`
 
 ## 常用命令 | Commands
 
 | 命令 | 说明 |
-|------|------|
+| --- | --- |
 | `pnpm dev` | 交互式选择应用启动 |
 | `pnpm dev:ele` | 启动后台管理 (localhost:2012) |
 | `pnpm dev:nuxt` | 启动前台网站 (localhost:2011) |
@@ -76,11 +74,11 @@ pnpm dev:nuxt    # 前台网站 → http://localhost:2011
 
 ## 配置说明 | Configuration
 
-| 文件 | 环境 | 关键变量 |
-|------|------|----------|
-| `.env` | 通用 | `VITE_APP_TITLE` |
-| `.env.development` | 开发 | `VITE_GLOB_API_URL` |
-| `.env.production` | 生产 | `VITE_BASE`, `VITE_GLOB_API_URL` |
+| 文件               | 环境 | 关键变量                         |
+| ------------------ | ---- | -------------------------------- |
+| `.env`             | 通用 | `VITE_APP_TITLE`                 |
+| `.env.development` | 开发 | `VITE_GLOB_API_URL`              |
+| `.env.production`  | 生产 | `VITE_BASE`, `VITE_GLOB_API_URL` |
 
 ## 部署 | Deployment
 
@@ -146,9 +144,9 @@ docker exec xera-nginx nginx -s reload
 
 ### 访问地址
 
-| 应用 | URL |
-|------|-----|
-| 前台网站 | http://your-server/ |
+| 应用     | URL                       |
+| -------- | ------------------------- |
+| 前台网站 | http://your-server/       |
 | 后台管理 | http://your-server/admin/ |
 
 ## License

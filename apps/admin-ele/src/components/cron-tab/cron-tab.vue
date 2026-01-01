@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import type { PropType } from 'vue';
 
-import { computed, onMounted, reactive, ref, watch } from 'vue';
-
 import {
   ElButton,
   ElDialog,
@@ -18,6 +16,7 @@ import {
   ElTabPane,
   ElTabs,
 } from 'element-plus';
+import { computed, onMounted, reactive, ref, watch } from 'vue';
 
 defineOptions({ name: 'Crontab' });
 

@@ -1,9 +1,7 @@
+import type { VisibleDomRect } from '@x-monorepo-core/shared/utils';
 import type { CSSProperties } from 'vue';
 
-import type { VisibleDomRect } from '@x-monorepo-core/shared/utils';
-
-import { computed, onMounted, onUnmounted, ref } from 'vue';
-
+import { useCssVar, useDebounceFn } from '@vueuse/core';
 import {
   CSS_VARIABLE_LAYOUT_CONTENT_HEIGHT,
   CSS_VARIABLE_LAYOUT_CONTENT_WIDTH,
@@ -11,8 +9,7 @@ import {
   CSS_VARIABLE_LAYOUT_HEADER_HEIGHT,
 } from '@x-monorepo-core/shared/constants';
 import { getElementVisibleRect } from '@x-monorepo-core/shared/utils';
-
-import { useCssVar, useDebounceFn } from '@vueuse/core';
+import { computed, onMounted, onUnmounted, ref } from 'vue';
 
 /**
  * @zh_CN content style

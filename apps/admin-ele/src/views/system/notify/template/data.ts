@@ -1,16 +1,15 @@
 import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
+import { z } from '#/adapter/form';
+import { getSimpleUserList } from '#/api/system/user';
+import { getRangePickerDefaultProps } from '#/utils';
 import {
   CommonStatusEnum,
   DICT_TYPE,
   UserTypeEnum,
 } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
-
-import { z } from '#/adapter/form';
-import { getSimpleUserList } from '#/api/system/user';
-import { getRangePickerDefaultProps } from '#/utils';
 
 /** 新增/修改的表单 */
 export function useFormSchema(): XAppFormSchema[] {

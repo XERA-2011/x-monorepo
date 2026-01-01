@@ -1,14 +1,11 @@
-import type { Ref } from 'vue';
-
 import type { AxiosProgressEvent, InfraFileApi } from '#/api/infra/file';
-
-import { computed, unref } from 'vue';
-
-import { useAppConfig } from '@x-monorepo/hooks';
-import { $t } from '@x-monorepo/locales';
+import type { Ref } from 'vue';
 
 import { createFile, getFilePresignedUrl, uploadFile } from '#/api/infra/file';
 import { baseRequestClient } from '#/api/request';
+import { useAppConfig } from '@x-monorepo/hooks';
+import { $t } from '@x-monorepo/locales';
+import { computed, unref } from 'vue';
 
 const { apiURL } = useAppConfig(import.meta.env, import.meta.env.PROD);
 

@@ -2,13 +2,12 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemMailLogApi } from '#/api/system/mail/log';
 
-import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { DICT_TYPE } from '@x-monorepo/constants';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getMailLogPage } from '#/api/system/mail/log';
 import { DictTag } from '#/components/dict-tag';
 import { $t } from '#/locales';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Detail from './modules/detail.vue';

@@ -2,19 +2,16 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemOAuth2TokenApi } from '#/api/system/oauth2/token';
 
-import { ref } from 'vue';
-
-import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
-import { isEmpty } from '@x-monorepo/utils';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteOAuth2Token,
   getOAuth2TokenPage,
 } from '#/api/system/oauth2/token';
 import { $t } from '#/locales';
+import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
+import { isEmpty } from '@x-monorepo/utils';
+import { ElLoading, ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import { useGridColumns, useGridFormSchema } from './data';
 

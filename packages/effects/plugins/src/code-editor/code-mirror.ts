@@ -3,7 +3,6 @@ import 'codemirror/mode/javascript/javascript';
 import 'codemirror/mode/css/css';
 import 'codemirror/mode/htmlmixed/htmlmixed';
 import 'codemirror/mode/vue/vue';
-
 // import 'codemirror/addon/lint/lint.css';
 import './codemirror.css';
 import 'codemirror/theme/idea.css';

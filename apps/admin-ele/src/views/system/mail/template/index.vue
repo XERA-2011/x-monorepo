@@ -3,13 +3,6 @@ import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemMailAccountApi } from '#/api/system/mail/account';
 import type { SystemMailTemplateApi } from '#/api/system/mail/template';
 
-import { onMounted, ref } from 'vue';
-
-import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { isEmpty } from '@x-monorepo/utils';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getSimpleMailAccountList } from '#/api/system/mail/account';
 import {
@@ -18,6 +11,10 @@ import {
   getMailTemplatePage,
 } from '#/api/system/mail/template';
 import { $t } from '#/locales';
+import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { isEmpty } from '@x-monorepo/utils';
+import { ElLoading, ElMessage } from 'element-plus';
+import { onMounted, ref } from 'vue';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';

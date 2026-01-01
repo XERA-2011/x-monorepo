@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import type { PropType } from 'vue';
 
-import { computed, getCurrentInstance, inject, onMounted, ref } from 'vue';
-
+import {
+  createKnowledgeDocumentList,
+  updateKnowledgeDocument,
+} from '#/api/ai/knowledge/document';
+import { splitContent } from '#/api/ai/knowledge/segment';
 import { IconifyIcon } from '@x-monorepo/icons';
-
 import {
   ElButton,
   ElDropdown,
@@ -17,12 +19,7 @@ import {
   ElMessage,
   ElTooltip,
 } from 'element-plus';
-
-import {
-  createKnowledgeDocumentList,
-  updateKnowledgeDocument,
-} from '#/api/ai/knowledge/document';
-import { splitContent } from '#/api/ai/knowledge/segment';
+import { computed, getCurrentInstance, inject, onMounted, ref } from 'vue';
 
 const props = defineProps({
   modelValue: {

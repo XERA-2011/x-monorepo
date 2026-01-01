@@ -1,9 +1,7 @@
 import type { ApiSelectProps } from '#/components/form-create/typing';
 
-import { defineComponent, onMounted, ref, useAttrs } from 'vue';
-
+import { requestClient } from '#/api/request';
 import { isEmpty } from '@x-monorepo/utils';
-
 import {
   ElCheckbox,
   ElCheckboxGroup,
@@ -12,8 +10,7 @@ import {
   ElRadioGroup,
   ElSelect,
 } from 'element-plus';
-
-import { requestClient } from '#/api/request';
+import { defineComponent, onMounted, ref, useAttrs } from 'vue';
 
 export function useApiSelect(option: ApiSelectProps) {
   return defineComponent({

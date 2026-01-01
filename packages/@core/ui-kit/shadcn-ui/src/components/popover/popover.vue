@@ -1,15 +1,13 @@
 <script setup lang="ts">
+import type { ClassType } from '@x-monorepo-core/typings';
 import type {
   PopoverContentProps,
   PopoverRootEmits,
   PopoverRootProps,
 } from 'reka-ui';
 
-import type { ClassType } from '@x-monorepo-core/typings';
-
-import { computed } from 'vue';
-
 import { useForwardPropsEmits } from 'reka-ui';
+import { computed } from 'vue';
 
 import {
   PopoverContent,

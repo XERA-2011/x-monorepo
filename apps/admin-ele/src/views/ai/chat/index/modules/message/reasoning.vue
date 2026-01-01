@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
-
-import { IconifyIcon } from '@x-monorepo/icons';
-
 import { MarkdownView } from '#/components/markdown-view';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { computed, ref } from 'vue';
 
 const props = defineProps<{
   content?: string;

@@ -1,17 +1,14 @@
 <script setup lang="ts">
 import type { MenuRecordRaw } from '@x-monorepo/types';
 
-import { nextTick, onMounted, ref, shallowRef, watch } from 'vue';
-import { useRouter } from 'vue-router';
-
+import { onKeyStroke, useLocalStorage, useThrottleFn } from '@vueuse/core';
+import { XAppIcon, XAppScrollbar } from '@x-monorepo-core/shadcn-ui';
+import { isHttpUrl } from '@x-monorepo-core/shared/utils';
 import { SearchX, X } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 import { mapTree, traverseTreeValues, uniqueByField } from '@x-monorepo/utils';
-
-import { XAppIcon, XAppScrollbar } from '@x-monorepo-core/shadcn-ui';
-import { isHttpUrl } from '@x-monorepo-core/shared/utils';
-
-import { onKeyStroke, useLocalStorage, useThrottleFn } from '@vueuse/core';
+import { nextTick, onMounted, ref, shallowRef, watch } from 'vue';
+import { useRouter } from 'vue-router';
 
 defineOptions({
   name: 'SearchPanel',

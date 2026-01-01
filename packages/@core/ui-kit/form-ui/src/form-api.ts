@@ -1,17 +1,12 @@
+import type { FormActions, FormSchema, XAppFormProps } from './types';
+import type { Recordable } from '@x-monorepo-core/typings';
 import type {
   FormState,
   GenericObject,
   ResetFormOpts,
   ValidationOptions,
 } from 'vee-validate';
-
 import type { ComponentPublicInstance } from 'vue';
-
-import type { Recordable } from '@x-monorepo-core/typings';
-
-import type { FormActions, FormSchema, XAppFormProps } from './types';
-
-import { isRef, toRaw } from 'vue';
 
 import { Store } from '@x-monorepo-core/shared/store';
 import {
@@ -25,6 +20,7 @@ import {
   mergeWithArrayOverride,
   StateHandler,
 } from '@x-monorepo-core/shared/utils';
+import { isRef, toRaw } from 'vue';
 
 function getDefaultState(): XAppFormProps {
   return {

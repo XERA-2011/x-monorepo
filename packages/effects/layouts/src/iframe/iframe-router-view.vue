@@ -1,13 +1,11 @@
 <script lang="ts" setup>
 import type { RouteLocationNormalized } from 'vue-router';
 
-import { computed, ref } from 'vue';
-import { useRoute } from 'vue-router';
-
+import { XAppSpinner } from '@x-monorepo-core/shadcn-ui';
 import { preferences } from '@x-monorepo/preferences';
 import { useTabbarStore } from '@x-monorepo/stores';
-
-import { XAppSpinner } from '@x-monorepo-core/shadcn-ui';
+import { computed, ref } from 'vue';
+import { useRoute } from 'vue-router';
 
 defineOptions({ name: 'IFrameRouterView' });
 

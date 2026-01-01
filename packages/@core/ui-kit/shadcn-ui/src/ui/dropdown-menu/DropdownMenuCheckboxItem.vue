@@ -4,16 +4,14 @@ import type {
   DropdownMenuCheckboxItemProps,
 } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Check } from 'lucide-vue-next';
 import {
   DropdownMenuCheckboxItem,
   DropdownMenuItemIndicator,
   useForwardPropsEmits,
 } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<DropdownMenuCheckboxItemProps & { class?: any }>();
 const emits = defineEmits<DropdownMenuCheckboxItemEmits>();

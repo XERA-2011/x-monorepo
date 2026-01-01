@@ -2,15 +2,13 @@ import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { DescriptionItemSchema } from '#/components/description';
 
-import { h } from 'vue';
-
+import { DictTag } from '#/components/dict-tag';
+import { getRangePickerDefaultProps } from '#/utils';
 import { JsonViewer } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 import { formatDateTime } from '@x-monorepo/utils';
-
-import { DictTag } from '#/components/dict-tag';
-import { getRangePickerDefaultProps } from '#/utils';
+import { h } from 'vue';
 
 /** 列表的搜索表单 */
 export function useGridFormSchema(): XAppFormSchema[] {

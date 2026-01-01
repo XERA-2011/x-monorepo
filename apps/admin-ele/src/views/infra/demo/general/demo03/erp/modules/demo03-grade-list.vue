@@ -1,8 +1,13 @@
 <script lang="ts" setup>
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
-import { h, nextTick, onMounted, reactive, ref, watch } from 'vue';
-
+import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
+import {
+  deleteDemo03Grade,
+  deleteDemo03GradeList,
+  getDemo03GradePage,
+} from '#/api/infra/demo/demo03/erp';
+import { $t } from '#/locales';
 import { ContentWrap, useXAppModal } from '@x-monorepo/common-ui';
 import { Plus, Trash2 } from '@x-monorepo/icons';
 import {
@@ -10,7 +15,6 @@ import {
   XAppVxeTableToolbar,
 } from '@x-monorepo/plugins/vxe-table';
 import { cloneDeep, formatDateTime, isEmpty } from '@x-monorepo/utils';
-
 import {
   ElButton,
   ElDatePicker,
@@ -21,14 +25,7 @@ import {
   ElMessage,
   ElPagination,
 } from 'element-plus';
-
-import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
-import {
-  deleteDemo03Grade,
-  deleteDemo03GradeList,
-  getDemo03GradePage,
-} from '#/api/infra/demo/demo03/erp';
-import { $t } from '#/locales';
+import { h, nextTick, onMounted, reactive, ref, watch } from 'vue';
 
 import Demo03GradeForm from './demo03-grade-form.vue';
 

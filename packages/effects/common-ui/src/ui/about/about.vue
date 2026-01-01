@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import type { AboutProps, DescriptionItem } from './about';
 
-import { h } from 'vue';
-
+import { XAppRenderContent } from '@x-monorepo-core/shadcn-ui';
 import {
   PROJECT_DOC_URL,
   PROJECT_GITHUB_URL,
   PROJECT_PREVIEW_URL,
 } from '@x-monorepo/constants';
-
-import { XAppRenderContent } from '@x-monorepo-core/shadcn-ui';
+import { h } from 'vue';
 
 import { Page } from '../../components';
 

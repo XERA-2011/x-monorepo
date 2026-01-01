@@ -1,10 +1,9 @@
 <script lang="ts" setup>
 import type { MenuItemProps, MenuItemRegistered } from '../types';
 
-import { computed, onBeforeUnmount, onMounted, reactive, useSlots } from 'vue';
-
 import { useNamespace } from '@x-monorepo-core/composables';
 import { XAppIcon, XAppTooltip } from '@x-monorepo-core/shadcn-ui';
+import { computed, onBeforeUnmount, onMounted, reactive, useSlots } from 'vue';
 
 import { MenuBadge } from '../components';
 import { useMenu, useMenuContext, useSubMenuContext } from '../hooks';

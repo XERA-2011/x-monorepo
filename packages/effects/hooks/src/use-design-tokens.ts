@@ -1,7 +1,6 @@
-import { reactive, watch } from 'vue';
-
 import { preferences, usePreferences } from '@x-monorepo/preferences';
 import { convertToRgb, updateCSSVariables } from '@x-monorepo/utils';
+import { reactive, watch } from 'vue';
 
 /**
  * 用于适配各个框架的设计系统

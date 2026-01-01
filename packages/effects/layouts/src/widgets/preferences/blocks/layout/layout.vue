@@ -1,14 +1,11 @@
 <script setup lang="ts">
+import type { LayoutType } from '@x-monorepo/types';
 import type { Component } from 'vue';
 
-import type { LayoutType } from '@x-monorepo/types';
-
-import { computed } from 'vue';
-
+import { XAppTooltip } from '@x-monorepo-core/shadcn-ui';
 import { CircleHelp } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
-
-import { XAppTooltip } from '@x-monorepo-core/shadcn-ui';
+import { computed } from 'vue';
 
 import {
   FullContent,

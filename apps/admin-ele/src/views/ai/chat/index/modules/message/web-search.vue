@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import type { AiChatMessageApi } from '#/api/ai/chat/message';
 
-import { ref } from 'vue';
-
 import { useXAppDrawer } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
+import { ref } from 'vue';
 
 defineProps<{
   webSearchPages?: AiChatMessageApi.WebSearchPage[];

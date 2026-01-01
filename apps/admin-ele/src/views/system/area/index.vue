@@ -1,10 +1,9 @@
 <script lang="ts" setup>
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
-import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getAreaTree } from '#/api/system/area';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
 
 import { useGridColumns } from './data';
 import Form from './modules/form.vue';

@@ -2,14 +2,12 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { InfraJobLogApi } from '#/api/infra/job-log';
 
-import { useRoute } from 'vue-router';
-
-import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { downloadFileFromBlobPart } from '@x-monorepo/utils';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { exportJobLog, getJobLogPage } from '#/api/infra/job-log';
 import { $t } from '#/locales';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
+import { useRoute } from 'vue-router';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Detail from './modules/detail.vue';

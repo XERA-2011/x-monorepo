@@ -1,8 +1,6 @@
-import type { Component, Ref } from 'vue';
-
-import type { ClassType, MaybePromise } from '@x-monorepo-core/typings';
-
 import type { DrawerApi } from './drawer-api';
+import type { ClassType, MaybePromise } from '@x-monorepo-core/typings';
+import type { Component, Ref } from 'vue';
 
 export type DrawerPlacement = 'bottom' | 'left' | 'right' | 'top';
 

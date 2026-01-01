@@ -1,20 +1,6 @@
 <script lang="ts" setup>
-import type { FormRules } from 'element-plus';
-
 import type { Demo02CategoryApi } from '#/api/infra/demo/demo02';
-
-import { computed, reactive, ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-import { handleTree } from '@x-monorepo/utils';
-
-import {
-  ElForm,
-  ElFormItem,
-  ElInput,
-  ElMessage,
-  ElTreeSelect,
-} from 'element-plus';
+import type { FormRules } from 'element-plus';
 
 import {
   createDemo02Category,
@@ -23,6 +9,16 @@ import {
   updateDemo02Category,
 } from '#/api/infra/demo/demo02';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { handleTree } from '@x-monorepo/utils';
+import {
+  ElForm,
+  ElFormItem,
+  ElInput,
+  ElMessage,
+  ElTreeSelect,
+} from 'element-plus';
+import { computed, reactive, ref } from 'vue';
 
 const emit = defineEmits(['success']);
 

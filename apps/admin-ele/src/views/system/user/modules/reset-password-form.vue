@@ -1,13 +1,11 @@
 <script lang="ts" setup>
 import type { SystemUserApi } from '#/api/system/user';
 
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import { resetUserPassword } from '#/api/system/user';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage } from 'element-plus';
 
 import { useResetPasswordFormSchema } from '../data';
 

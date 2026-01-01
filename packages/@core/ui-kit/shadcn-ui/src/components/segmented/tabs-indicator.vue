@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { TabsIndicatorProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { TabsIndicator, useForwardProps } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<TabsIndicatorProps & { class?: any }>();
 

@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { PinInputRootEmits, PinInputRootProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { PinInputRoot, useForwardPropsEmits } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<PinInputRootProps & { class?: any }>();
 const emits = defineEmits<PinInputRootEmits>();

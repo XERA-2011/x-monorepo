@@ -2,14 +2,12 @@
 import type { BuiltinThemePreset } from '@x-monorepo/preferences';
 import type { BuiltinThemeType } from '@x-monorepo/types';
 
-import { computed, ref, watch } from 'vue';
-
+import { useThrottleFn } from '@vueuse/core';
 import { UserRoundPen } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 import { BUILT_IN_THEME_PRESETS } from '@x-monorepo/preferences';
 import { convertToHsl, TinyColor } from '@x-monorepo/utils';
-
-import { useThrottleFn } from '@vueuse/core';
+import { computed, ref, watch } from 'vue';
 
 defineOptions({
   name: 'PreferenceBuiltinTheme',

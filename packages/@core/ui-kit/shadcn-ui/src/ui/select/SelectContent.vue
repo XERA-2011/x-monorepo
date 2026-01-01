@@ -1,16 +1,14 @@
 <script setup lang="ts">
 import type { SelectContentEmits, SelectContentProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import {
   SelectContent,
   SelectPortal,
   SelectViewport,
   useForwardPropsEmits,
 } from 'reka-ui';
+import { computed } from 'vue';
 
 import SelectScrollDownButton from './SelectScrollDownButton.vue';
 import SelectScrollUpButton from './SelectScrollUpButton.vue';

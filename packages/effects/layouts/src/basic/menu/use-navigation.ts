@@ -1,8 +1,7 @@
 import type { RouteRecordNormalized } from 'vue-router';
 
-import { useRouter } from 'vue-router';
-
 import { isHttpUrl, openRouteInNewWindow, openWindow } from '@x-monorepo/utils';
+import { useRouter } from 'vue-router';
 
 function useNavigation() {
   const router = useRouter();

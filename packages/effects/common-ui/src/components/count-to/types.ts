@@ -1,5 +1,4 @@
 import type { CubicBezierPoints, EasingFunction } from '@vueuse/core';
-
 import type { StyleValue } from 'vue';
 
 import { TransitionPresets as TransitionPresetsData } from '@vueuse/core';

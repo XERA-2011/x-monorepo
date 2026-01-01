@@ -1,6 +1,5 @@
-import type { AxiosResponse } from '@x-monorepo/request';
-
 import type { AxiosProgressEvent } from '#/api/infra/file';
+import type { AxiosResponse } from '@x-monorepo/request';
 
 export type UploadListType = 'picture' | 'picture-card' | 'text';
 

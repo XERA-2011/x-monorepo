@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import type { Recordable } from '@x-monorepo/types';
-
 import type { XAppFormSchema } from '@x-monorepo-core/form-ui';
-
-import { computed, reactive } from 'vue';
+import type { Recordable } from '@x-monorepo/types';
 
 import { useXAppForm } from '@x-monorepo-core/form-ui';
 import { XAppButton } from '@x-monorepo-core/shadcn-ui';
+import { computed, reactive } from 'vue';
 
 interface Props {
   formSchema?: XAppFormSchema[];

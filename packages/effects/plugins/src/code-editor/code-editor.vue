@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import type { CodeEditorProps } from './types';
 
-import { computed } from 'vue';
-
 import { isString } from '@x-monorepo/utils';
+import { computed } from 'vue';
 
 import CodeMirrorEditor from './code-mirror.vue';
 import { MODE } from './types';

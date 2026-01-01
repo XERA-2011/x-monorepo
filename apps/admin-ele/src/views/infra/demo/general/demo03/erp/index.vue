@@ -1,8 +1,15 @@
 <script lang="ts" setup>
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
-import { h, onMounted, reactive, ref } from 'vue';
-
+import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
+import {
+  deleteDemo03Student,
+  deleteDemo03StudentList,
+  exportDemo03Student,
+  getDemo03StudentPage,
+} from '#/api/infra/demo/demo03/erp';
+import { DictTag } from '#/components/dict-tag';
+import { $t } from '#/locales';
 import { ContentWrap, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
@@ -17,7 +24,6 @@ import {
   formatDateTime,
   isEmpty,
 } from '@x-monorepo/utils';
-
 import {
   ElButton,
   ElDatePicker,
@@ -32,16 +38,7 @@ import {
   ElTabPane,
   ElTabs,
 } from 'element-plus';
-
-import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
-import {
-  deleteDemo03Student,
-  deleteDemo03StudentList,
-  exportDemo03Student,
-  getDemo03StudentPage,
-} from '#/api/infra/demo/demo03/erp';
-import { DictTag } from '#/components/dict-tag';
-import { $t } from '#/locales';
+import { h, onMounted, reactive, ref } from 'vue';
 
 import Demo03CourseList from './modules/demo03-course-list.vue';
 import Demo03GradeList from './modules/demo03-grade-list.vue';

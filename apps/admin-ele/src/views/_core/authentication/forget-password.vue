@@ -1,21 +1,17 @@
 <script lang="ts" setup>
+import type { AuthApi } from '#/api';
 import type { XAppFormSchema } from '@x-monorepo/common-ui';
 import type { Recordable } from '@x-monorepo/types';
 
-import type { AuthApi } from '#/api';
-
-import { computed, onMounted, ref } from 'vue';
-import { useRouter } from 'vue-router';
-
+import { sendSmsCode, smsResetPassword } from '#/api';
+import { getTenantByWebsite, getTenantSimpleList } from '#/api/core/auth';
 import { AuthenticationForgetPassword, z } from '@x-monorepo/common-ui';
 import { isTenantEnable } from '@x-monorepo/hooks';
 import { $t } from '@x-monorepo/locales';
 import { useAccessStore } from '@x-monorepo/stores';
-
 import { ElMessage } from 'element-plus';
-
-import { sendSmsCode, smsResetPassword } from '#/api';
-import { getTenantByWebsite, getTenantSimpleList } from '#/api/core/auth';
+import { computed, onMounted, ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 defineOptions({ name: 'ForgetPassword' });
 

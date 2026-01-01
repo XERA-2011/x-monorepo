@@ -1,16 +1,14 @@
 <script lang="ts" setup>
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
-
-import { useContentMaximize, useTabs } from '@x-monorepo/hooks';
-import { preferences } from '@x-monorepo/preferences';
-import { useTabbarStore } from '@x-monorepo/stores';
-
 import {
   TabsToolMore,
   TabsToolScreen,
   TabsView,
 } from '@x-monorepo-core/tabs-ui';
+import { useContentMaximize, useTabs } from '@x-monorepo/hooks';
+import { preferences } from '@x-monorepo/preferences';
+import { useTabbarStore } from '@x-monorepo/stores';
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
 
 import { useTabbar } from './use-tabbar';
 

@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
-
-import { DocAlert, IFrame, Page } from '@x-monorepo/common-ui';
-
 import { getConfigKey } from '#/api/infra/config';
+import { DocAlert, IFrame, Page } from '@x-monorepo/common-ui';
+import { onMounted, ref } from 'vue';
 
 const loading = ref(true); // 是否加载中
 const src = ref(`${import.meta.env.VITE_BASE_URL}/admin/applications`);

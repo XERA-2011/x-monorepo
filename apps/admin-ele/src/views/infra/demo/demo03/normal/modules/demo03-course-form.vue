@@ -1,15 +1,12 @@
 <script lang="ts" setup>
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/normal';
 
-import { nextTick, watch } from 'vue';
-
-import { Plus } from '@x-monorepo/icons';
-
-import { ElButton, ElInput } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getDemo03CourseListByStudentId } from '#/api/infra/demo/demo03/normal';
 import { $t } from '#/locales';
+import { Plus } from '@x-monorepo/icons';
+import { ElButton, ElInput } from 'element-plus';
+import { nextTick, watch } from 'vue';
 
 import { useDemo03CourseGridEditColumns } from '../data';
 

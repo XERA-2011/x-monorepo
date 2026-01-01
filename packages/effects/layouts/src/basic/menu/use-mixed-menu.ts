@@ -1,11 +1,10 @@
 import type { MenuRecordRaw } from '@x-monorepo/types';
 
-import { computed, onBeforeMount, ref, watch } from 'vue';
-import { useRoute } from 'vue-router';
-
 import { preferences, usePreferences } from '@x-monorepo/preferences';
 import { useAccessStore } from '@x-monorepo/stores';
 import { findRootMenuByPath } from '@x-monorepo/utils';
+import { computed, onBeforeMount, ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 
 import { useNavigation } from './use-navigation';
 

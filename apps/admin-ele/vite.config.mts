@@ -1,5 +1,4 @@
 import { defineConfig } from '@x-monorepo/vite-config';
-
 import ElementPlus from 'unplugin-element-plus/vite';
 
 export default defineConfig(async () => {

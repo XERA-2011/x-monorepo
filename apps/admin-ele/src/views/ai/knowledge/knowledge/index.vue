@@ -2,18 +2,15 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiKnowledgeKnowledgeApi } from '#/api/ai/knowledge/knowledge';
 
-import { useRouter } from 'vue-router';
-
-import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteKnowledge,
   getKnowledgePage,
 } from '#/api/ai/knowledge/knowledge';
 import { $t } from '#/locales';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { ElLoading, ElMessage } from 'element-plus';
+import { useRouter } from 'vue-router';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';

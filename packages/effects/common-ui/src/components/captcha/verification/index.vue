@@ -5,9 +5,8 @@
  */
 import type { VerificationProps } from './typing';
 
-import { defineAsyncComponent, markRaw, ref, toRefs, watchEffect } from 'vue';
-
 import { IconifyIcon } from '@x-monorepo/icons';
+import { defineAsyncComponent, markRaw, ref, toRefs, watchEffect } from 'vue';
 
 import './verify.css';
 

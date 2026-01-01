@@ -2,14 +2,11 @@
 <script lang="ts" setup>
 import type { SystemDeptApi } from '#/api/system/dept';
 
-import { nextTick, ref } from 'vue';
-
+import { getSimpleDeptList } from '#/api/system/dept';
 import { useXAppModal } from '@x-monorepo/common-ui';
 import { handleTree } from '@x-monorepo/utils';
-
 import { ElCard, ElCol, ElRow, ElTree } from 'element-plus';
-
-import { getSimpleDeptList } from '#/api/system/dept';
+import { nextTick, ref } from 'vue';
 
 defineOptions({ name: 'DeptSelectModal' });
 

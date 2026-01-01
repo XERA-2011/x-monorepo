@@ -2,16 +2,6 @@
 import type { DrawerProps, ExtendedDrawerApi } from './drawer';
 
 import {
-  computed,
-  onDeactivated,
-  provide,
-  ref,
-  unref,
-  useId,
-  watch,
-} from 'vue';
-
-import {
   useIsMobile,
   usePriorityValues,
   useSimpleLocale,
@@ -35,6 +25,15 @@ import {
 import { ELEMENT_ID_MAIN_CONTENT } from '@x-monorepo-core/shared/constants';
 import { globalShareState } from '@x-monorepo-core/shared/global-state';
 import { cn } from '@x-monorepo-core/shared/utils';
+import {
+  computed,
+  onDeactivated,
+  provide,
+  ref,
+  unref,
+  useId,
+  watch,
+} from 'vue';
 
 interface Props extends DrawerProps {
   drawerApi?: ExtendedDrawerApi;

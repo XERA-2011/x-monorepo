@@ -1,24 +1,9 @@
+import type { AuthApi } from '#/api';
 import type {
   AuthPermissionInfo,
   Recordable,
   UserInfo,
 } from '@x-monorepo/types';
-
-import type { AuthApi } from '#/api';
-
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
-
-import { LOGIN_PATH } from '@x-monorepo/constants';
-import { preferences } from '@x-monorepo/preferences';
-import {
-  resetAllStores,
-  useAccessStore,
-  useUserStore,
-} from '@x-monorepo/stores';
-
-import { ElNotification } from 'element-plus';
-import { defineStore } from 'pinia';
 
 import {
   getAuthPermissionInfoApi,
@@ -29,6 +14,17 @@ import {
   socialLogin,
 } from '#/api';
 import { $t } from '#/locales';
+import { LOGIN_PATH } from '@x-monorepo/constants';
+import { preferences } from '@x-monorepo/preferences';
+import {
+  resetAllStores,
+  useAccessStore,
+  useUserStore,
+} from '@x-monorepo/stores';
+import { ElNotification } from 'element-plus';
+import { defineStore } from 'pinia';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 export const useAuthStore = defineStore('auth', () => {
   const accessStore = useAccessStore();

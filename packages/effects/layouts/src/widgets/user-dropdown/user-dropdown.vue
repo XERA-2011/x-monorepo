@@ -1,17 +1,8 @@
 <script setup lang="ts">
+import type { AnyFunction } from '@x-monorepo/types';
 import type { Component } from 'vue';
 
-import type { AnyFunction } from '@x-monorepo/types';
-
-import { computed, useTemplateRef, watch } from 'vue';
-
-import { useHoverToggle } from '@x-monorepo/hooks';
-import { LockKeyhole, LogOut } from '@x-monorepo/icons';
-import { $t } from '@x-monorepo/locales';
-import { preferences, usePreferences } from '@x-monorepo/preferences';
-import { useAccessStore } from '@x-monorepo/stores';
-import { isWindowsOs } from '@x-monorepo/utils';
-
+import { useMagicKeys, whenever } from '@vueuse/core';
 import { useXAppModal } from '@x-monorepo-core/popup-ui';
 import {
   Badge,
@@ -25,8 +16,13 @@ import {
   XAppAvatar,
   XAppIcon,
 } from '@x-monorepo-core/shadcn-ui';
-
-import { useMagicKeys, whenever } from '@vueuse/core';
+import { useHoverToggle } from '@x-monorepo/hooks';
+import { LockKeyhole, LogOut } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
+import { preferences, usePreferences } from '@x-monorepo/preferences';
+import { useAccessStore } from '@x-monorepo/stores';
+import { isWindowsOs } from '@x-monorepo/utils';
+import { computed, useTemplateRef, watch } from 'vue';
 
 import { LockScreenModal } from '../lock-screen';
 

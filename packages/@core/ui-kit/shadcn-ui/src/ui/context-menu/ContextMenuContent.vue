@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import type { ContextMenuContentEmits, ContextMenuContentProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import {
   ContextMenuContent,
   ContextMenuPortal,
   useForwardPropsEmits,
 } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<ContextMenuContentProps & { class?: any }>();
 const emits = defineEmits<ContextMenuContentEmits>();

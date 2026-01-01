@@ -1,6 +1,5 @@
-import type { Component, VNode, VNodeArrayChildren } from 'vue';
-
 import type { Recordable } from '@x-monorepo-core/typings';
+import type { Component, VNode, VNodeArrayChildren } from 'vue';
 
 import { createContext } from '@x-monorepo-core/shadcn-ui';
 

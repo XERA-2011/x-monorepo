@@ -1,13 +1,11 @@
 <script lang="ts" setup>
 import type { SystemUserApi } from '#/api/system/user';
 
-import { computed, onMounted, ref, watchEffect } from 'vue';
-
+import { getSimpleUserList } from '#/api/system/user';
+import { useWebSocket } from '@vueuse/core';
 import { DocAlert, Page } from '@x-monorepo/common-ui';
 import { useAccessStore } from '@x-monorepo/stores';
 import { formatDate } from '@x-monorepo/utils';
-
-import { useWebSocket } from '@vueuse/core';
 import {
   ElAvatar,
   ElBadge,
@@ -21,8 +19,7 @@ import {
   ElSelect,
   ElTag,
 } from 'element-plus';
-
-import { getSimpleUserList } from '#/api/system/user';
+import { computed, onMounted, ref, watchEffect } from 'vue';
 
 const accessStore = useAccessStore();
 const refreshToken = accessStore.refreshToken as string;

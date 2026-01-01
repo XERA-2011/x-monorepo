@@ -1,15 +1,12 @@
 <script setup lang="ts">
-import { computed, reactive, ref } from 'vue';
-
-import { LockKeyhole } from '@x-monorepo/icons';
-import { $t, useI18n } from '@x-monorepo/locales';
-import { storeToRefs, useAccessStore } from '@x-monorepo/stores';
-
+import { useDateFormat, useNow } from '@vueuse/core';
 import { useScrollLock } from '@x-monorepo-core/composables';
 import { useXAppForm, z } from '@x-monorepo-core/form-ui';
 import { XAppAvatar, XAppButton } from '@x-monorepo-core/shadcn-ui';
-
-import { useDateFormat, useNow } from '@vueuse/core';
+import { LockKeyhole } from '@x-monorepo/icons';
+import { $t, useI18n } from '@x-monorepo/locales';
+import { storeToRefs, useAccessStore } from '@x-monorepo/stores';
+import { computed, reactive, ref } from 'vue';
 
 interface Props {
   avatar?: string;

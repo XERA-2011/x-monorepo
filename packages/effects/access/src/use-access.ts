@@ -1,7 +1,6 @@
-import { computed } from 'vue';
-
 import { preferences, updatePreferences } from '@x-monorepo/preferences';
 import { useAccessStore, useUserStore } from '@x-monorepo/stores';
+import { computed } from 'vue';
 
 function useAccess() {
   const accessStore = useAccessStore();

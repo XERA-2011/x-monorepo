@@ -1,3 +1,4 @@
+import type { TabDefinition } from '@x-monorepo-core/typings';
 import type { ComputedRef } from 'vue';
 import type {
   RouteLocationNormalized,
@@ -5,18 +6,14 @@ import type {
   RouteRecordNormalized,
 } from 'vue-router';
 
-import type { TabDefinition } from '@x-monorepo-core/typings';
-
-import { toRaw } from 'vue';
-
 import { preferences } from '@x-monorepo-core/preferences';
 import {
   openRouteInNewWindow,
   startProgress,
   stopProgress,
 } from '@x-monorepo-core/shared/utils';
-
 import { acceptHMRUpdate, defineStore } from 'pinia';
+import { toRaw } from 'vue';
 
 interface TabbarState {
   /**

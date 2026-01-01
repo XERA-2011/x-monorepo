@@ -1,22 +1,19 @@
 <script setup lang="ts">
 import type { AiImageApi } from '#/api/ai/image';
 
-import { onMounted, onUnmounted, reactive, ref } from 'vue';
-import { useRouter } from 'vue-router';
-
-import { confirm, useXAppDrawer } from '@x-monorepo/common-ui';
-import { AiImageStatusEnum } from '@x-monorepo/constants';
-import { downloadFileFromImageUrl } from '@x-monorepo/utils';
-
-import { useDebounceFn } from '@vueuse/core';
-import { ElButton, ElCard, ElMessage, ElPagination } from 'element-plus';
-
 import {
   deleteImageMy,
   getImageListMyByIds,
   getImagePageMy,
   midjourneyAction,
 } from '#/api/ai/image';
+import { useDebounceFn } from '@vueuse/core';
+import { confirm, useXAppDrawer } from '@x-monorepo/common-ui';
+import { AiImageStatusEnum } from '@x-monorepo/constants';
+import { downloadFileFromImageUrl } from '@x-monorepo/utils';
+import { ElButton, ElCard, ElMessage, ElPagination } from 'element-plus';
+import { onMounted, onUnmounted, reactive, ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 import ImageCard from './card.vue';
 import ImageDetail from './detail.vue';

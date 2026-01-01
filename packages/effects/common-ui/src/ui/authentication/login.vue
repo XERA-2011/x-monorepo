@@ -1,17 +1,13 @@
 <script setup lang="ts">
-import type { Recordable } from '@x-monorepo/types';
-
-import type { XAppFormSchema } from '@x-monorepo-core/form-ui';
-
 import type { AuthenticationProps } from './types';
-
-import { computed, onMounted, reactive, ref } from 'vue';
-import { useRouter } from 'vue-router';
-
-import { $t } from '@x-monorepo/locales';
+import type { XAppFormSchema } from '@x-monorepo-core/form-ui';
+import type { Recordable } from '@x-monorepo/types';
 
 import { useXAppForm } from '@x-monorepo-core/form-ui';
 import { XAppButton, XAppCheckbox } from '@x-monorepo-core/shadcn-ui';
+import { $t } from '@x-monorepo/locales';
+import { computed, onMounted, reactive, ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 import Title from './auth-title.vue';
 import DocLink from './doc-link.vue';

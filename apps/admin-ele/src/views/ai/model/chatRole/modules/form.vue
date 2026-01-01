@@ -1,12 +1,6 @@
 <script lang="ts" setup>
 import type { AiModelChatRoleApi } from '#/api/ai/model/chatRole';
 
-import { computed, ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import {
   createChatRole,
@@ -14,6 +8,9 @@ import {
   updateChatRole,
 } from '#/api/ai/model/chatRole';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage } from 'element-plus';
+import { computed, ref } from 'vue';
 
 import { useFormSchema } from '../data';
 

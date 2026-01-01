@@ -1,5 +1,3 @@
-import type { Router, RouteRecordRaw } from 'vue-router';
-
 import type {
   AppRouteRecordRaw,
   ExRouteRecordRaw,
@@ -7,6 +5,7 @@ import type {
   RouteMeta,
   RouteRecordStringComponent,
 } from '@x-monorepo-core/typings';
+import type { Router, RouteRecordRaw } from 'vue-router';
 
 import { filterTree, isHttpUrl, mapTree } from '@x-monorepo-core/shared/utils';
 

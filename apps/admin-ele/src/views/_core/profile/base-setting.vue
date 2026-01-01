@@ -1,19 +1,15 @@
 <script setup lang="ts">
-import type { Recordable } from '@x-monorepo/types';
-
 import type { XAppFormSchema } from '#/adapter/form';
 import type { SystemUserProfileApi } from '#/api/system/user/profile';
-
-import { computed, ref, watch } from 'vue';
-
-import { ProfileBaseSetting, z } from '@x-monorepo/common-ui';
-import { DICT_TYPE } from '@x-monorepo/constants';
-import { getDictOptions } from '@x-monorepo/hooks';
-
-import { ElMessage } from 'element-plus';
+import type { Recordable } from '@x-monorepo/types';
 
 import { updateUserProfile } from '#/api/system/user/profile';
 import { $t } from '#/locales';
+import { ProfileBaseSetting, z } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { ElMessage } from 'element-plus';
+import { computed, ref, watch } from 'vue';
 
 const props = defineProps<{
   profile?: SystemUserProfileApi.UserProfileRespVO;

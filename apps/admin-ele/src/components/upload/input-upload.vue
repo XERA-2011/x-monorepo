@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import type { InputProps } from 'element-plus';
-
 import type { FileUploadProps } from './typing';
-
-import { computed } from 'vue';
+import type { InputProps } from 'element-plus';
 
 import { useVModel } from '@vueuse/core';
 import { ElCol, ElInput, ElRow } from 'element-plus';
+import { computed } from 'vue';
 
 import FileUpload from './file-upload.vue';
 

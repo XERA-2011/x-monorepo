@@ -1,8 +1,7 @@
 import type { Ref } from 'vue';
 
-import { watch } from 'vue';
-
 import { useDebounceFn } from '@vueuse/core';
+import { watch } from 'vue';
 
 interface UseMenuScrollOptions {
   delay?: number;

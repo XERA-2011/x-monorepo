@@ -1,12 +1,6 @@
 <script lang="ts" setup>
 import type { SystemMailTemplateApi } from '#/api/system/mail/template';
 
-import { computed, ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import {
   createMailTemplate,
@@ -14,6 +8,9 @@ import {
   updateMailTemplate,
 } from '#/api/system/mail/template';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage } from 'element-plus';
+import { computed, ref } from 'vue';
 
 import { useFormSchema } from '../data';
 

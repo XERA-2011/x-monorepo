@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import type { StyleValue } from 'vue';
-
 import type { ContentWrapProps } from './types';
-
-import { computed, nextTick, onMounted, ref, useTemplateRef } from 'vue';
+import type { StyleValue } from 'vue';
 
 import { CSS_VARIABLE_LAYOUT_CONTENT_HEIGHT } from '@x-monorepo-core/shared/constants';
 import { cn } from '@x-monorepo-core/shared/utils';
+import { computed, nextTick, onMounted, ref, useTemplateRef } from 'vue';
 
 defineOptions({
   name: 'ContentWrap',

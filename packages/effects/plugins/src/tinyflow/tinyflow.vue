@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { ref } from 'vue';
-
 import { Tinyflow } from '@tinyflow-ai/vue';
+import { ref } from 'vue';
 
 import '@tinyflow-ai/vue/dist/index.css';
 

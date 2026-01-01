@@ -5,11 +5,10 @@ import type {
   RouteLocationNormalizedLoadedGeneric,
 } from 'vue-router';
 
-import { computed } from 'vue';
-import { RouterView } from 'vue-router';
-
 import { preferences, usePreferences } from '@x-monorepo/preferences';
 import { getTabKey, storeToRefs, useTabbarStore } from '@x-monorepo/stores';
+import { computed } from 'vue';
+import { RouterView } from 'vue-router';
 
 import { IFrameRouterView } from '../../iframe';
 

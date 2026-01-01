@@ -1,12 +1,9 @@
-import type { Component } from 'vue';
-
 import type {
   BaseFormComponentType,
   FormCommonConfig,
   XAppFormAdapterOptions,
 } from './types';
-
-import { h } from 'vue';
+import type { Component } from 'vue';
 
 import {
   XAppButton,
@@ -17,8 +14,8 @@ import {
   XAppSelect,
 } from '@x-monorepo-core/shadcn-ui';
 import { globalShareState } from '@x-monorepo-core/shared/global-state';
-
 import { defineRule } from 'vee-validate';
+import { h } from 'vue';
 
 const DEFAULT_MODEL_PROP_NAME = 'modelValue';
 

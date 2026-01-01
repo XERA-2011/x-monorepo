@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { PinInputInputProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { PinInputInput, useForwardProps } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<PinInputInputProps & { class?: any }>();
 

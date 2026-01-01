@@ -1,17 +1,14 @@
-import type { DeepPartial } from '@x-monorepo-core/typings';
-
 import type { InitialOptions, Preferences } from './types';
-
-import { markRaw, reactive, readonly, watch } from 'vue';
-
-import { StorageManager } from '@x-monorepo-core/shared/cache';
-import { isMacOs, merge } from '@x-monorepo-core/shared/utils';
+import type { DeepPartial } from '@x-monorepo-core/typings';
 
 import {
   breakpointsTailwind,
   useBreakpoints,
   useDebounceFn,
 } from '@vueuse/core';
+import { StorageManager } from '@x-monorepo-core/shared/cache';
+import { isMacOs, merge } from '@x-monorepo-core/shared/utils';
+import { markRaw, reactive, readonly, watch } from 'vue';
 
 import { defaultPreferences } from './config';
 import { updateCSSVariables } from './update-css-variables';

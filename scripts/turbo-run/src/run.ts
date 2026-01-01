@@ -1,6 +1,5 @@
-import { execaCommand, getPackages } from '@x-monorepo/node-utils';
-
 import { cancel, isCancel, select } from '@clack/prompts';
+import { execaCommand, getPackages } from '@x-monorepo/node-utils';
 
 interface RunOptions {
   command?: string;

@@ -6,6 +6,7 @@ import type {
   SliderTranslateCaptchaProps,
 } from '../types';
 
+import { $t } from '@x-monorepo/locales';
 import {
   computed,
   onMounted,
@@ -15,8 +16,6 @@ import {
   useTemplateRef,
   watch,
 } from 'vue';
-
-import { $t } from '@x-monorepo/locales';
 
 import SliderCaptcha from '../slider-captcha/index.vue';
 

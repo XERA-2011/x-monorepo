@@ -2,12 +2,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { InfraCodegenApi } from '#/api/infra/codegen';
 
-import { reactive } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { useXAppVxeGrid } from '#/adapter/vxe-table';
 import { createCodegenList, getSchemaTableList } from '#/api/infra/codegen';
 import { $t } from '#/locales';
@@ -15,6 +9,9 @@ import {
   useImportTableColumns,
   useImportTableFormSchema,
 } from '#/views/infra/codegen/data';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElLoading, ElMessage } from 'element-plus';
+import { reactive } from 'vue';
 
 /** 定义组件事件 */
 const emit = defineEmits<{

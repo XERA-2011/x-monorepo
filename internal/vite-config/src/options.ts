@@ -1,6 +1,5 @@
-import type { Options as PwaPluginOptions } from 'vite-plugin-pwa';
-
 import type { ImportmapPluginOptions } from './typing';
+import type { Options as PwaPluginOptions } from 'vite-plugin-pwa';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 

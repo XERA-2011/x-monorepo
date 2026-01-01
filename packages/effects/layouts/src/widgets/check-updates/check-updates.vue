@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue';
-
-import { $t } from '@x-monorepo/locales';
-
 import { useXAppModal } from '@x-monorepo-core/popup-ui';
+import { $t } from '@x-monorepo/locales';
+import { onMounted, onUnmounted, ref } from 'vue';
 
 interface Props {
   // 轮询时间，分钟

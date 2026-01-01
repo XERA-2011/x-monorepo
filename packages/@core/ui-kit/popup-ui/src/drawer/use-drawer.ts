@@ -4,6 +4,7 @@ import type {
   ExtendedDrawerApi,
 } from './drawer';
 
+import { useStore } from '@x-monorepo-core/shared/store';
 import {
   defineComponent,
   h,
@@ -13,8 +14,6 @@ import {
   reactive,
   ref,
 } from 'vue';
-
-import { useStore } from '@x-monorepo-core/shared/store';
 
 import { DrawerApi } from './drawer-api';
 import XAppDrawer from './drawer.vue';

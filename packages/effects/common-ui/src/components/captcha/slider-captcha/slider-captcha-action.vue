@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { CSSProperties } from 'vue';
 
-import { computed, ref, useTemplateRef } from 'vue';
-
-import { Check, ChevronsRight } from '@x-monorepo/icons';
-
 import { Slot } from '@x-monorepo-core/shadcn-ui';
+import { Check, ChevronsRight } from '@x-monorepo/icons';
+import { computed, ref, useTemplateRef } from 'vue';
 
 const props = defineProps<{
   actionStyle: CSSProperties;

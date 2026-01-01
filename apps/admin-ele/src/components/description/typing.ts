@@ -1,9 +1,7 @@
-import type { DescriptionProps as ElDescriptionProps } from 'element-plus';
-import type { JSX } from 'vue/jsx-runtime';
-
-import type { CSSProperties, VNode } from 'vue';
-
 import type { Recordable } from '@x-monorepo/types';
+import type { DescriptionProps as ElDescriptionProps } from 'element-plus';
+import type { CSSProperties, VNode } from 'vue';
+import type { JSX } from 'vue/jsx-runtime';
 
 export interface DescriptionItemSchema {
   labelMinWidth?: number;

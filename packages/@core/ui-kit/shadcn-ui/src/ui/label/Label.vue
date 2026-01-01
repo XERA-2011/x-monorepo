@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { LabelProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Label } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<LabelProps & { class?: any }>();
 

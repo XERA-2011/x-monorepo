@@ -2,17 +2,6 @@
 import type { ExtendedModalApi, ModalProps } from './modal';
 
 import {
-  computed,
-  nextTick,
-  onDeactivated,
-  provide,
-  ref,
-  unref,
-  useId,
-  watch,
-} from 'vue';
-
-import {
   useIsMobile,
   usePriorityValues,
   useSimpleLocale,
@@ -34,6 +23,16 @@ import {
 import { ELEMENT_ID_MAIN_CONTENT } from '@x-monorepo-core/shared/constants';
 import { globalShareState } from '@x-monorepo-core/shared/global-state';
 import { cn } from '@x-monorepo-core/shared/utils';
+import {
+  computed,
+  nextTick,
+  onDeactivated,
+  provide,
+  ref,
+  unref,
+  useId,
+  watch,
+} from 'vue';
 
 import { useModalDraggable } from './use-modal-draggable';
 

@@ -1,19 +1,16 @@
 <!-- eslint-disable no-useless-escape -->
 <script setup lang="ts">
-import { onMounted, ref, unref } from 'vue';
-
-import { Page, useXAppModal } from '@x-monorepo/common-ui';
-import { isString } from '@x-monorepo/utils';
-
+import { useFormCreateDesigner } from '#/components/form-create';
 import FcDesigner from '@form-create/designer';
 import formCreate from '@form-create/element-ui';
 import { useClipboard } from '@vueuse/core';
+import { Page, useXAppModal } from '@x-monorepo/common-ui';
+import { isString } from '@x-monorepo/utils';
 import { ElButton, ElMessage } from 'element-plus';
 import hljs from 'highlight.js';
 import xml from 'highlight.js/lib/languages/java';
 import json from 'highlight.js/lib/languages/json';
-
-import { useFormCreateDesigner } from '#/components/form-create';
+import { onMounted, ref, unref } from 'vue';
 
 import 'highlight.js/styles/github.css';
 

@@ -1,20 +1,16 @@
 <script lang="ts" setup>
+import type { AnyPromiseFunction } from '@x-monorepo/types';
 import type { Component } from 'vue';
 
-import type { AnyPromiseFunction } from '@x-monorepo/types';
-
-import { computed, nextTick, ref, unref, useAttrs, watch } from 'vue';
-
-import { LoaderCircle } from '@x-monorepo/icons';
-
+import { objectOmit } from '@vueuse/core';
 import {
   cloneDeep,
   get,
   isEqual,
   isFunction,
 } from '@x-monorepo-core/shared/utils';
-
-import { objectOmit } from '@vueuse/core';
+import { LoaderCircle } from '@x-monorepo/icons';
+import { computed, nextTick, ref, unref, useAttrs, watch } from 'vue';
 
 type OptionsItem = {
   [name: string]: any;

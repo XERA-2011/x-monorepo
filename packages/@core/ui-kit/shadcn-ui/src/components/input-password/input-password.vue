@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { ref, useSlots } from 'vue';
-
 import { Eye, EyeOff } from '@x-monorepo-core/icons';
 import { cn } from '@x-monorepo-core/shared/utils';
+import { ref, useSlots } from 'vue';
 
 import { Input } from '../../ui';
 import PasswordStrength from './password-strength.vue';

@@ -1,13 +1,11 @@
 <script lang="ts" setup>
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
-import { nextTick, ref, watch } from 'vue';
-
-import { ContentWrap } from '@x-monorepo/common-ui';
-import { formatDateTime } from '@x-monorepo/utils';
-
 import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
 import { getDemo03CourseListByStudentId } from '#/api/infra/demo/demo03/inner';
+import { ContentWrap } from '@x-monorepo/common-ui';
+import { formatDateTime } from '@x-monorepo/utils';
+import { nextTick, ref, watch } from 'vue';
 
 const props = defineProps<{
   studentId?: number; // 学生编号（主表的关联字段）

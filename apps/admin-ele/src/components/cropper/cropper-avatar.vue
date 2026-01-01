@@ -1,14 +1,11 @@
 <script lang="ts" setup>
-import type { CSSProperties } from 'vue';
-
 import type { CropperAvatarProps } from './typing';
-
-import { computed, ref, unref, watch, watchEffect } from 'vue';
+import type { CSSProperties } from 'vue';
 
 import { useXAppModal } from '@x-monorepo/common-ui';
 import { $t } from '@x-monorepo/locales';
-
 import { ElButton, ElMessage } from 'element-plus';
+import { computed, ref, unref, watch, watchEffect } from 'vue';
 
 import cropperModal from './cropper-modal.vue';
 

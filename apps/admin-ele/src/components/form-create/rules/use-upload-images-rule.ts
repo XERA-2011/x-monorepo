@@ -1,9 +1,8 @@
-import { buildUUID } from '@x-monorepo/utils';
-
 import {
   localeProps,
   makeRequiredRule,
 } from '#/components/form-create/helpers';
+import { buildUUID } from '@x-monorepo/utils';
 
 export function useUploadImagesRule() {
   const label = '多图上传';

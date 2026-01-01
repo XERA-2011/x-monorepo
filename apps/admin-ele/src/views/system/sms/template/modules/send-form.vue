@@ -1,14 +1,11 @@
 <script lang="ts" setup>
 import type { SystemSmsTemplateApi } from '#/api/system/sms/template';
 
-import { ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import { sendSms } from '#/api/system/sms/template';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import { useSendSmsFormSchema } from '../data';
 

@@ -3,14 +3,6 @@ import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { InfraCodegenApi } from '#/api/infra/codegen';
 import type { InfraDataSourceConfigApi } from '#/api/infra/data-source-config';
 
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
-
-import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { isEmpty } from '@x-monorepo/utils';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteCodegenTable,
@@ -21,6 +13,11 @@ import {
 } from '#/api/infra/codegen';
 import { getDataSourceConfigList } from '#/api/infra/data-source-config';
 import { $t } from '#/locales';
+import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { isEmpty } from '@x-monorepo/utils';
+import { ElLoading, ElMessage } from 'element-plus';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import ImportTable from './modules/import-table.vue';

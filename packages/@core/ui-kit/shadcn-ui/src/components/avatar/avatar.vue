@@ -1,13 +1,11 @@
 <script setup lang="ts">
+import type { ClassType } from '@x-monorepo-core/typings';
 import type {
   AvatarFallbackProps,
   AvatarImageProps,
   AvatarRootProps,
 } from 'reka-ui';
-
 import type { CSSProperties } from 'vue';
-
-import type { ClassType } from '@x-monorepo-core/typings';
 
 import { computed } from 'vue';
 

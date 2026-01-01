@@ -1,11 +1,9 @@
+import type { TabsProps } from './types';
 import type { Sortable } from '@x-monorepo-core/composables';
 import type { EmitType } from '@x-monorepo-core/typings';
 
-import type { TabsProps } from './types';
-
-import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
-
 import { useIsMobile, useSortable } from '@x-monorepo-core/composables';
+import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 
 // 可能会找到拖拽的子元素，这里需要确保拖拽的dom时tab元素
 function findParentElement(element: HTMLElement) {

@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { ref, watch } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
+import { ref, watch } from 'vue';
 
 interface Props {
   class?: string;

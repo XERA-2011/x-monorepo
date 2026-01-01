@@ -1,11 +1,8 @@
 import type { SetupVxeTable } from './types';
 
-import { defineComponent, watch } from 'vue';
-
-import { usePreferences } from '@x-monorepo/preferences';
-
 import { useXAppForm } from '@x-monorepo-core/form-ui';
-
+import { usePreferences } from '@x-monorepo/preferences';
+import { defineComponent, watch } from 'vue';
 import {
   VxeButton,
   VxeCheckbox,

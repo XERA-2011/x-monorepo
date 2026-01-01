@@ -1,21 +1,6 @@
 <script setup lang="ts">
-import type { PropType } from 'vue';
-
 import type { AiChatConversationApi } from '#/api/ai/chat/conversation';
-
-import { h, onMounted, ref, toRefs, watch } from 'vue';
-
-import { confirm, prompt, useXAppDrawer } from '@x-monorepo/common-ui';
-import { IconifyIcon, SvgGptIcon } from '@x-monorepo/icons';
-
-import {
-  ElAside,
-  ElAvatar,
-  ElButton,
-  ElEmpty,
-  ElInput,
-  ElMessage,
-} from 'element-plus';
+import type { PropType } from 'vue';
 
 import {
   createChatConversationMy,
@@ -25,6 +10,17 @@ import {
   updateChatConversationMy,
 } from '#/api/ai/chat/conversation';
 import { $t } from '#/locales';
+import { confirm, prompt, useXAppDrawer } from '@x-monorepo/common-ui';
+import { IconifyIcon, SvgGptIcon } from '@x-monorepo/icons';
+import {
+  ElAside,
+  ElAvatar,
+  ElButton,
+  ElEmpty,
+  ElInput,
+  ElMessage,
+} from 'element-plus';
+import { h, onMounted, ref, toRefs, watch } from 'vue';
 
 import RoleRepository from '../role/repository.vue';
 

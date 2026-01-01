@@ -1,15 +1,13 @@
 <script setup lang="ts">
+import type { ClassType } from '@x-monorepo-core/typings';
 import type {
   HoverCardContentProps,
   HoverCardRootEmits,
   HoverCardRootProps,
 } from 'reka-ui';
 
-import type { ClassType } from '@x-monorepo-core/typings';
-
-import { computed } from 'vue';
-
 import { useForwardPropsEmits } from 'reka-ui';
+import { computed } from 'vue';
 
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '../../ui';
 

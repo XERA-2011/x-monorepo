@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 import {
   SvgDingDingIcon,
   SvgGithubIcon,
@@ -6,8 +7,6 @@ import {
   SvgWeChatIcon,
 } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
-
-import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 
 defineOptions({
   name: 'ThirdPartyLogin',

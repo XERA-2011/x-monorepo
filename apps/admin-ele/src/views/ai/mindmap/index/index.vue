@@ -1,14 +1,11 @@
 <script lang="ts" setup>
 import type { AiMindmapApi } from '#/api/ai/mindmap';
 
-import { nextTick, onMounted, ref } from 'vue';
-
+import { generateMindMap } from '#/api/ai/mindmap';
 import { Page } from '@x-monorepo/common-ui';
 import { MindMapContentExample } from '@x-monorepo/constants';
-
 import { ElMessage } from 'element-plus';
-
-import { generateMindMap } from '#/api/ai/mindmap';
+import { nextTick, onMounted, ref } from 'vue';
 
 import Left from './modules/left.vue';
 import Right from './modules/right.vue';

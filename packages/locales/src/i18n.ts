@@ -1,17 +1,15 @@
-import type { App } from 'vue';
-import type { Locale } from 'vue-i18n';
-
 import type {
   ImportLocaleFn,
   LoadMessageFn,
   LocaleSetupOptions,
   SupportedLanguagesType,
 } from './typing';
-
-import { unref } from 'vue';
-import { createI18n } from 'vue-i18n';
+import type { App } from 'vue';
+import type { Locale } from 'vue-i18n';
 
 import { useSimpleLocale } from '@x-monorepo-core/composables';
+import { unref } from 'vue';
+import { createI18n } from 'vue-i18n';
 
 const i18n = createI18n({
   globalInjection: true,

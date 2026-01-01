@@ -1,9 +1,7 @@
 <script lang="ts" setup>
-import { useElementPlusDesignTokens } from '@x-monorepo/hooks';
-
-import { ElConfigProvider } from 'element-plus';
-
 import { elementLocale } from '#/locales';
+import { useElementPlusDesignTokens } from '@x-monorepo/hooks';
+import { ElConfigProvider } from 'element-plus';
 
 defineOptions({ name: 'App' });
 

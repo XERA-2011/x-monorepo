@@ -1,12 +1,6 @@
 <script lang="ts" setup>
 import type { SystemOAuth2ClientApi } from '#/api/system/oauth2/client';
 
-import { computed, ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import {
   createOAuth2Client,
@@ -14,6 +8,9 @@ import {
   updateOAuth2Client,
 } from '#/api/system/oauth2/client';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage } from 'element-plus';
+import { computed, ref } from 'vue';
 
 import { useFormSchema } from '../data';
 

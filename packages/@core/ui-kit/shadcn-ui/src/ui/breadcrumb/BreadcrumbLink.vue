@@ -2,7 +2,6 @@
 import type { PrimitiveProps } from 'reka-ui';
 
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Primitive } from 'reka-ui';
 
 const props = withDefaults(defineProps<PrimitiveProps & { class?: any }>(), {

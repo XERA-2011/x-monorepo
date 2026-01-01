@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { reactive, ref } from 'vue';
-
 import {
   ElButton,
   ElInput,
@@ -9,6 +7,7 @@ import {
   ElSpace,
   ElTag,
 } from 'element-plus';
+import { reactive, ref } from 'vue';
 
 import Title from '../title/index.vue';
 

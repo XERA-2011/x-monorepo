@@ -1,7 +1,6 @@
 import type { Arrayable } from '@vueuse/core';
-import type { FlattenedItem } from 'reka-ui';
-
 import type { Recordable } from '@x-monorepo-core/typings';
+import type { FlattenedItem } from 'reka-ui';
 
 export interface TreeProps {
   /** 单选时允许取消已有选项 */

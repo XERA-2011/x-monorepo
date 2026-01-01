@@ -2,14 +2,12 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiWorkflowApi } from '#/api/ai/workflow';
 
-import { Page } from '@x-monorepo/common-ui';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteWorkflow, getWorkflowPage } from '#/api/ai/workflow';
 import { $t } from '#/locales';
 import { router } from '#/router';
+import { Page } from '@x-monorepo/common-ui';
+import { ElLoading, ElMessage } from 'element-plus';
 
 import { useGridColumns, useGridFormSchema } from './data';
 

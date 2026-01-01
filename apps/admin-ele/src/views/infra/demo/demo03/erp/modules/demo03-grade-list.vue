@@ -2,13 +2,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 
-import { nextTick, ref, watch } from 'vue';
-
-import { confirm, useXAppModal } from '@x-monorepo/common-ui';
-import { isEmpty } from '@x-monorepo/utils';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteDemo03Grade,
@@ -16,6 +9,10 @@ import {
   getDemo03GradePage,
 } from '#/api/infra/demo/demo03/erp';
 import { $t } from '#/locales';
+import { confirm, useXAppModal } from '@x-monorepo/common-ui';
+import { isEmpty } from '@x-monorepo/utils';
+import { ElLoading, ElMessage } from 'element-plus';
+import { nextTick, ref, watch } from 'vue';
 
 import {
   useDemo03GradeGridColumns,

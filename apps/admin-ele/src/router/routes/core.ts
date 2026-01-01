@@ -1,9 +1,8 @@
 import type { RouteRecordRaw } from 'vue-router';
 
+import { $t } from '#/locales';
 import { LOGIN_PATH } from '@x-monorepo/constants';
 import { preferences } from '@x-monorepo/preferences';
-
-import { $t } from '#/locales';
 
 const BasicLayout = () => import('#/layouts/basic.vue');
 const AuthPageLayout = () => import('#/layouts/auth.vue');

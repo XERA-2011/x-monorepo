@@ -1,12 +1,9 @@
-import type { Component, DefineComponent } from 'vue';
-
 import type {
   AccessModeType,
   GenerateMenuAndRoutesOptions,
   RouteRecordRaw,
 } from '@x-monorepo/types';
-
-import { defineComponent, h } from 'vue';
+import type { Component, DefineComponent } from 'vue';
 
 import {
   cloneDeep,
@@ -17,6 +14,7 @@ import {
   isString,
   mapTree,
 } from '@x-monorepo/utils';
+import { defineComponent, h } from 'vue';
 
 async function generateAccessible(
   mode: AccessModeType,

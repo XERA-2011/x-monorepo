@@ -1,9 +1,6 @@
 <script lang="ts" setup>
-import type { Component } from 'vue';
-
 import type { AlertProps } from './alert';
-
-import { computed, h, nextTick, ref } from 'vue';
+import type { Component } from 'vue';
 
 import { useSimpleLocale } from '@x-monorepo-core/composables';
 import {
@@ -27,6 +24,7 @@ import {
 } from '@x-monorepo-core/shadcn-ui';
 import { globalShareState } from '@x-monorepo-core/shared/global-state';
 import { cn } from '@x-monorepo-core/shared/utils';
+import { computed, h, nextTick, ref } from 'vue';
 
 import { provideAlertContext } from './alert';
 

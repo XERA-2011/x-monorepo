@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { getKnowledgeDocument } from '#/api/ai/knowledge/document';
+import { Page } from '@x-monorepo/common-ui';
+import { useTabs } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { ElCard } from 'element-plus';
 import {
   getCurrentInstance,
   onBeforeUnmount,
@@ -7,14 +12,6 @@ import {
   ref,
 } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-
-import { Page } from '@x-monorepo/common-ui';
-import { useTabs } from '@x-monorepo/hooks';
-import { IconifyIcon } from '@x-monorepo/icons';
-
-import { ElCard } from 'element-plus';
-
-import { getKnowledgeDocument } from '#/api/ai/knowledge/document';
 
 import ProcessStep from './modules/process-step.vue';
 import SplitStep from './modules/split-step.vue';

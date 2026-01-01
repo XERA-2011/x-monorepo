@@ -1,14 +1,7 @@
-import type { EChartsOption } from 'echarts';
-
-import type { Ref } from 'vue';
-
-import type { Nullable } from '@x-monorepo/types';
-
 import type EchartsUI from './echarts-ui.vue';
-
-import { computed, nextTick, watch } from 'vue';
-
-import { usePreferences } from '@x-monorepo/preferences';
+import type { Nullable } from '@x-monorepo/types';
+import type { EChartsOption } from 'echarts';
+import type { Ref } from 'vue';
 
 import {
   tryOnUnmounted,
@@ -17,6 +10,8 @@ import {
   useTimeoutFn,
   useWindowSize,
 } from '@vueuse/core';
+import { usePreferences } from '@x-monorepo/preferences';
+import { computed, nextTick, watch } from 'vue';
 
 import echarts from './echarts';
 // TODO @xingyu：有 500kb，china.json 会影响打包么？

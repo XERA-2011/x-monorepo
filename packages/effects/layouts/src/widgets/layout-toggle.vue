@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import type { XAppDropdownMenuItem } from '@x-monorepo-core/shadcn-ui';
 import type { AuthPageLayoutType } from '@x-monorepo/types';
 
-import type { XAppDropdownMenuItem } from '@x-monorepo-core/shadcn-ui';
-
-import { computed } from 'vue';
-
+import {
+  XAppDropdownRadioMenu,
+  XAppIconButton,
+} from '@x-monorepo-core/shadcn-ui';
 import { InspectionPanel, PanelLeft, PanelRight } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 import {
@@ -12,11 +13,7 @@ import {
   updatePreferences,
   usePreferences,
 } from '@x-monorepo/preferences';
-
-import {
-  XAppDropdownRadioMenu,
-  XAppIconButton,
-} from '@x-monorepo-core/shadcn-ui';
+import { computed } from 'vue';
 
 defineOptions({
   name: 'AuthenticationLayoutToggle',

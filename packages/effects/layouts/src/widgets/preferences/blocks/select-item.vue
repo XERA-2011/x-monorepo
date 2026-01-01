@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import type { SelectOption } from '@x-monorepo/types';
 
-import { useSlots } from 'vue';
-
-import { CircleHelp } from '@x-monorepo/icons';
-
 import {
   Select,
   SelectContent,
@@ -13,6 +9,8 @@ import {
   SelectValue,
   XAppTooltip,
 } from '@x-monorepo-core/shadcn-ui';
+import { CircleHelp } from '@x-monorepo/icons';
+import { useSlots } from 'vue';
 
 defineOptions({
   name: 'PreferenceSelectItem',

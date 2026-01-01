@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { Component } from 'vue';
 
-import { computed } from 'vue';
-
 import { $t } from '@x-monorepo/locales';
+import { computed } from 'vue';
 
 import { ContentCompact, ContentWide } from '../../icons';
 

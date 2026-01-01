@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import type { SelectItemProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Check } from 'lucide-vue-next';
 import {
   SelectItem,
@@ -12,6 +9,7 @@ import {
   SelectItemText,
   useForwardProps,
 } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<SelectItemProps & { class?: any }>();
 

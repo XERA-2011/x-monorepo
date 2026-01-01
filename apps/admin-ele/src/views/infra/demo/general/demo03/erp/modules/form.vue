@@ -1,14 +1,17 @@
 <script lang="ts" setup>
+import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
 import type { FormRules } from 'element-plus';
 
-import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
-
-import { computed, reactive, ref } from 'vue';
-
+import {
+  createDemo03Student,
+  getDemo03Student,
+  updateDemo03Student,
+} from '#/api/infra/demo/demo03/erp';
+import { Tinymce as RichTextarea } from '#/components/tinymce';
+import { $t } from '#/locales';
 import { useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
-
 import {
   ElDatePicker,
   ElForm,
@@ -18,14 +21,7 @@ import {
   ElRadio,
   ElRadioGroup,
 } from 'element-plus';
-
-import {
-  createDemo03Student,
-  getDemo03Student,
-  updateDemo03Student,
-} from '#/api/infra/demo/demo03/erp';
-import { Tinymce as RichTextarea } from '#/components/tinymce';
-import { $t } from '#/locales';
+import { computed, reactive, ref } from 'vue';
 
 const emit = defineEmits(['success']);
 

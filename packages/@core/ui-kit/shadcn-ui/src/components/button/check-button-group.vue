@@ -1,14 +1,11 @@
 <script lang="ts" setup>
+import type { ValueType, XAppButtonGroupProps } from './button';
 import type { Arrayable } from '@vueuse/core';
 
-import type { ValueType, XAppButtonGroupProps } from './button';
-
-import { computed, ref, watch } from 'vue';
-
+import { objectOmit } from '@vueuse/core';
 import { Circle, CircleCheckBig, LoaderCircle } from '@x-monorepo-core/icons';
 import { cn, isFunction } from '@x-monorepo-core/shared/utils';
-
-import { objectOmit } from '@vueuse/core';
+import { computed, ref, watch } from 'vue';
 
 import { XAppRenderContent } from '../render-content';
 import XAppButtonGroup from './button-group.vue';

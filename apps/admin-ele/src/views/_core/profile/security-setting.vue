@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-
 import { ProfileSecuritySetting } from '@x-monorepo/common-ui';
+import { computed } from 'vue';
 
 const formSchema = computed(() => {
   return [

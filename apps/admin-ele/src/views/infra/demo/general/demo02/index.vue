@@ -1,8 +1,13 @@
 <script lang="ts" setup>
 import type { Demo02CategoryApi } from '#/api/infra/demo/demo02';
 
-import { h, onMounted, reactive, ref } from 'vue';
-
+import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
+import {
+  deleteDemo02Category,
+  exportDemo02Category,
+  getDemo02CategoryList,
+} from '#/api/infra/demo/demo02';
+import { $t } from '#/locales';
 import { ContentWrap, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { Download, Plus } from '@x-monorepo/icons';
 import {
@@ -15,7 +20,6 @@ import {
   formatDateTime,
   isEmpty,
 } from '@x-monorepo/utils';
-
 import {
   ElButton,
   ElDatePicker,
@@ -25,14 +29,7 @@ import {
   ElLoading,
   ElMessage,
 } from 'element-plus';
-
-import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
-import {
-  deleteDemo02Category,
-  exportDemo02Category,
-  getDemo02CategoryList,
-} from '#/api/infra/demo/demo02';
-import { $t } from '#/locales';
+import { h, onMounted, reactive, ref } from 'vue';
 
 import Demo02CategoryForm from './modules/form.vue';
 

@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import type { PointSelectionCaptchaCardProps } from '../types';
 
-import { computed } from 'vue';
-
-import { $t } from '@x-monorepo/locales';
-
 import {
   Card,
   CardContent,
@@ -12,6 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from '@x-monorepo-core/shadcn-ui';
+import { $t } from '@x-monorepo/locales';
+import { computed } from 'vue';
 
 const props = withDefaults(defineProps<PointSelectionCaptchaCardProps>(), {
   height: '220px',

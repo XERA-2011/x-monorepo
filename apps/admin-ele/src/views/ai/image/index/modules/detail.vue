@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import type { AiImageApi } from '#/api/ai/image';
 
-import { ref, toRefs, watch } from 'vue';
-
+import { getImageMy } from '#/api/ai/image';
 import {
   AiPlatformEnum,
   Dall3StyleList,
@@ -11,10 +10,8 @@ import {
   StableDiffusionStylePresets,
 } from '@x-monorepo/constants';
 import { formatDateTime } from '@x-monorepo/utils';
-
 import { ElImage } from 'element-plus';
-
-import { getImageMy } from '#/api/ai/image';
+import { ref, toRefs, watch } from 'vue';
 
 const props = defineProps({
   id: {

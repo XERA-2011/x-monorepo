@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import type { PaginationPrevProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { ChevronLeft } from 'lucide-vue-next';
 import { PaginationPrev } from 'reka-ui';
+import { computed } from 'vue';
 
 import { Button } from '../button';
 

@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { XAppFormSchema } from '#/adapter/form';
 
-import { computed, ref } from 'vue';
-
 import { ProfilePasswordSetting, z } from '@x-monorepo/common-ui';
-
 import { ElMessage } from 'element-plus';
+import { computed, ref } from 'vue';
 
 const profilePasswordSettingRef = ref();
 

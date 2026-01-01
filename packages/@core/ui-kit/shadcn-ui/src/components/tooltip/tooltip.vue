@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import type { TooltipContentProps } from 'reka-ui';
-
-import type { StyleValue } from 'vue';
-
 import type { ClassType } from '@x-monorepo-core/typings';
+import type { TooltipContentProps } from 'reka-ui';
+import type { StyleValue } from 'vue';
 
 import {
   Tooltip,

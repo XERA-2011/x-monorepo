@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { NumberFieldInput } from 'reka-ui';
 </script>
 

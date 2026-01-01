@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { ChevronRight } from 'lucide-vue-next';
 
 const props = defineProps<{

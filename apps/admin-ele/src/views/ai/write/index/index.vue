@@ -1,14 +1,11 @@
 <script lang="ts" setup>
 import type { AiWriteApi } from '#/api/ai/write';
 
-import { nextTick, ref } from 'vue';
-
+import { writeStream } from '#/api/ai/write';
 import { Page } from '@x-monorepo/common-ui';
 import { WriteExample } from '@x-monorepo/constants';
-
 import { ElMessage } from 'element-plus';
-
-import { writeStream } from '#/api/ai/write';
+import { nextTick, ref } from 'vue';
 
 import Left from './modules/left.vue';
 import Right from './modules/right.vue';

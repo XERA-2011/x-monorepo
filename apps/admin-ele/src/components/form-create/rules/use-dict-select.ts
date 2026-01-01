@@ -1,15 +1,13 @@
 import type { SystemDictTypeApi } from '#/api/system/dict/type';
 
-import { onMounted, ref } from 'vue';
-
-import { buildUUID, cloneDeep } from '@x-monorepo/utils';
-
 import { getSimpleDictTypeList } from '#/api/system/dict/type';
 import {
   localeProps,
   makeRequiredRule,
 } from '#/components/form-create/helpers';
 import { selectRule } from '#/components/form-create/rules/data';
+import { buildUUID, cloneDeep } from '@x-monorepo/utils';
+import { onMounted, ref } from 'vue';
 
 /** 字典选择器规则，如果规则使用到动态数据则需要单独配置不能使用 useSelectRule */
 export function useDictSelectRule() {

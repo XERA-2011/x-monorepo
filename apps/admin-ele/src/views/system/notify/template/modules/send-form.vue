@@ -1,15 +1,12 @@
 <script lang="ts" setup>
 import type { SystemNotifyTemplateApi } from '#/api/system/notify/template';
 
-import { ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import { sendNotify } from '#/api/system/notify/template';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import { useSendNotifyFormSchema } from '../data';
 

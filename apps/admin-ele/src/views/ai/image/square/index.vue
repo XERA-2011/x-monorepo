@@ -1,15 +1,12 @@
 <script setup lang="ts">
 import type { AiImageApi } from '#/api/ai/image';
 
-import { onMounted, reactive, ref } from 'vue';
-
+import { getImagePageMy } from '#/api/ai/image';
+import { useDebounceFn } from '@vueuse/core';
 import { Page } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
-
-import { useDebounceFn } from '@vueuse/core';
 import { ElImage, ElInput, ElPagination } from 'element-plus';
-
-import { getImagePageMy } from '#/api/ai/image';
+import { onMounted, reactive, ref } from 'vue';
 
 const loading = ref(true); // 列表的加载中
 const list = ref<AiImageApi.Image[]>([]); // 列表的数据

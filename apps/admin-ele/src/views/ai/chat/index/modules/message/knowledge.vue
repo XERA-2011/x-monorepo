@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
-
 import { IconifyIcon } from '@x-monorepo/icons';
-
 import { ElTooltip } from 'element-plus';
+import { computed, ref } from 'vue';
 
 const props = defineProps<{
   segments: {

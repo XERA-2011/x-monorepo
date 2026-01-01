@@ -2,16 +2,14 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiChatConversationApi } from '#/api/ai/chat/conversation';
 
-import { Page } from '@x-monorepo/common-ui';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteChatMessageByAdmin,
   getChatMessagePage,
 } from '#/api/ai/chat/message';
 import { $t } from '#/locales';
+import { Page } from '@x-monorepo/common-ui';
+import { ElLoading, ElMessage } from 'element-plus';
 
 import { useGridColumnsMessage, useGridFormSchemaMessage } from '../data';
 

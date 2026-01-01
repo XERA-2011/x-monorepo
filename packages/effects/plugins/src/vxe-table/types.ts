@@ -1,20 +1,16 @@
+import type { VxeGridApi } from './api';
+import type {
+  BaseFormComponentType,
+  XAppFormProps,
+} from '@x-monorepo-core/form-ui';
+import type { ClassType, DeepPartial } from '@x-monorepo/types';
+import type { Ref } from 'vue';
 import type {
   VxeGridListeners,
   VxeGridPropTypes,
   VxeGridProps as VxeTableGridProps,
   VxeUIExport,
 } from 'vxe-table';
-
-import type { Ref } from 'vue';
-
-import type { ClassType, DeepPartial } from '@x-monorepo/types';
-
-import type {
-  BaseFormComponentType,
-  XAppFormProps,
-} from '@x-monorepo-core/form-ui';
-
-import type { VxeGridApi } from './api';
 
 import { useXAppForm } from '@x-monorepo-core/form-ui';
 

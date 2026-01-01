@@ -1,11 +1,9 @@
 <script lang="ts" setup>
 import type { AlertDialogDescriptionProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { AlertDialogDescription, useForwardProps } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<AlertDialogDescriptionProps & { class?: any }>();
 

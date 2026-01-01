@@ -1,12 +1,9 @@
 import type { Arrayable, MaybeElementRef } from '@vueuse/core';
-
 import type { Ref } from 'vue';
 
-import { computed, effectScope, onUnmounted, ref, unref, watch } from 'vue';
-
-import { isFunction } from '@x-monorepo/utils';
-
 import { useElementHover } from '@vueuse/core';
+import { isFunction } from '@x-monorepo/utils';
+import { computed, effectScope, onUnmounted, ref, unref, watch } from 'vue';
 
 interface HoverDelayOptions {
   /** 鼠标进入延迟时间 */

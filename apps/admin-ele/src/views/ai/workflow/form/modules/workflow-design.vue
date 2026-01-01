@@ -1,16 +1,13 @@
 <script lang="ts" setup>
 import type { Ref } from 'vue';
 
-import { inject, ref } from 'vue';
-
+import { testWorkflow } from '#/api/ai/workflow';
 import { useXAppDrawer } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { Tinyflow } from '@x-monorepo/plugins/tinyflow';
 import { isNumber } from '@x-monorepo/utils';
-
 import { ElButton, ElInput, ElOption, ElSelect } from 'element-plus';
-
-import { testWorkflow } from '#/api/ai/workflow';
+import { inject, ref } from 'vue';
 
 defineProps<{
   provider: any;

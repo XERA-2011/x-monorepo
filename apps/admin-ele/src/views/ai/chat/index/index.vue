@@ -2,12 +2,14 @@
 import type { AiChatConversationApi } from '#/api/ai/chat/conversation';
 import type { AiChatMessageApi } from '#/api/ai/chat/message';
 
-import { computed, nextTick, onMounted, ref } from 'vue';
-import { useRoute } from 'vue-router';
-
+import { getChatConversationMy } from '#/api/ai/chat/conversation';
+import {
+  deleteByConversationId,
+  getChatMessageListByConversationId,
+  sendChatMessageStream,
+} from '#/api/ai/chat/message';
 import { alert, confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
-
 import {
   ElButton,
   ElContainer,
@@ -17,13 +19,8 @@ import {
   ElMessage,
   ElSwitch,
 } from 'element-plus';
-
-import { getChatConversationMy } from '#/api/ai/chat/conversation';
-import {
-  deleteByConversationId,
-  getChatMessageListByConversationId,
-  sendChatMessageStream,
-} from '#/api/ai/chat/message';
+import { computed, nextTick, onMounted, ref } from 'vue';
+import { useRoute } from 'vue-router';
 
 import ConversationList from './modules/conversation/list.vue';
 import ConversationUpdateForm from './modules/conversation/update-form.vue';

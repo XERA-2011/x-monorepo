@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import { onMounted, reactive, ref } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-
+import { getKnowledge } from '#/api/ai/knowledge/knowledge';
+import { searchKnowledgeSegment } from '#/api/ai/knowledge/segment';
 import { Page } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
-
 import {
   ElButton,
   ElCard,
@@ -13,9 +11,8 @@ import {
   ElInputNumber,
   ElMessage,
 } from 'element-plus';
-
-import { getKnowledge } from '#/api/ai/knowledge/knowledge';
-import { searchKnowledgeSegment } from '#/api/ai/knowledge/segment';
+import { onMounted, reactive, ref } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 
 /** 知识库文档召回测试 */
 defineOptions({ name: 'KnowledgeDocumentRetrieval' });

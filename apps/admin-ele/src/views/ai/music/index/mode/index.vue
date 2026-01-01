@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import type { Nullable, Recordable } from '@x-monorepo/types';
 
-import { ref, unref } from 'vue';
-
 import { ElButton, ElCard, ElRadioButton, ElRadioGroup } from 'element-plus';
+import { ref, unref } from 'vue';
 
 import desc from './desc.vue';
 import lyric from './lyric.vue';

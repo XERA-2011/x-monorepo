@@ -2,16 +2,13 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemDeptApi } from '#/api/system/dept';
 
-import { ref } from 'vue';
-
-import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { isEmpty } from '@x-monorepo/utils';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteDept, deleteDeptList, getDeptList } from '#/api/system/dept';
 import { $t } from '#/locales';
+import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { isEmpty } from '@x-monorepo/utils';
+import { ElLoading, ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import { useGridColumns } from './data';
 import Form from './modules/form.vue';

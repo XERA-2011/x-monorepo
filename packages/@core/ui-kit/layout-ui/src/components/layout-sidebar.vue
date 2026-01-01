@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { CSSProperties } from 'vue';
 
-import { computed, shallowRef, useSlots, watchEffect } from 'vue';
-
-import { XAppScrollbar } from '@x-monorepo-core/shadcn-ui';
-
 import { useScrollLock } from '@vueuse/core';
+import { XAppScrollbar } from '@x-monorepo-core/shadcn-ui';
+import { computed, shallowRef, useSlots, watchEffect } from 'vue';
 
 import { SidebarCollapseButton, SidebarFixedButton } from './widgets';
 

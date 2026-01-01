@@ -1,6 +1,5 @@
-import type { RouteRecordRaw } from 'vue-router';
-
 import type { RouteModuleType } from '../merge-route-modules';
+import type { RouteRecordRaw } from 'vue-router';
 
 import { describe, expect, it } from 'vitest';
 

@@ -2,13 +2,11 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiMindmapApi } from '#/api/ai/mindmap';
 
-import { DocAlert, Page, useXAppDrawer } from '@x-monorepo/common-ui';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteMindMap, getMindMapPage } from '#/api/ai/mindmap';
 import { $t } from '#/locales';
+import { DocAlert, Page, useXAppDrawer } from '@x-monorepo/common-ui';
+import { ElLoading, ElMessage } from 'element-plus';
 
 import Right from '../index/modules/right.vue';
 import { useGridColumns, useGridFormSchema } from './data';

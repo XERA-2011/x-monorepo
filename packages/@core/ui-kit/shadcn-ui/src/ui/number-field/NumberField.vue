@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { NumberFieldRootEmits, NumberFieldRootProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { NumberFieldRoot, useForwardPropsEmits } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<NumberFieldRootProps & { class?: any }>();
 const emits = defineEmits<NumberFieldRootEmits>();

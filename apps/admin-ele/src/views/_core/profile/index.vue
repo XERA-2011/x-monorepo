@@ -1,14 +1,11 @@
 <script setup lang="ts">
 import type { SystemUserProfileApi } from '#/api/system/user/profile';
 
-import { onMounted, ref } from 'vue';
-
-import { Page } from '@x-monorepo/common-ui';
-
-import { ElCard, ElTabPane, ElTabs } from 'element-plus';
-
 import { getUserProfile } from '#/api/system/user/profile';
 import { useAuthStore } from '#/store';
+import { Page } from '@x-monorepo/common-ui';
+import { ElCard, ElTabPane, ElTabs } from 'element-plus';
+import { onMounted, ref } from 'vue';
 
 import BaseInfo from './modules/base-info.vue';
 import ProfileUser from './modules/profile-user.vue';

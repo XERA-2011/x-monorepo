@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import type { MenuRecordRaw } from '@x-monorepo-core/typings';
-
 import type { MenuProps } from './types';
+import type { MenuRecordRaw } from '@x-monorepo-core/typings';
 
 import { useForwardProps } from '@x-monorepo-core/composables';
 

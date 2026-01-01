@@ -2,7 +2,6 @@
 import type { SelectLabelProps } from 'reka-ui';
 
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { SelectLabel } from 'reka-ui';
 
 const props = defineProps<SelectLabelProps & { class?: any }>();

@@ -1,15 +1,12 @@
 <script setup lang="ts">
-import type { PropType } from 'vue';
-
 import type { AiImageApi } from '#/api/ai/image';
-
-import { onMounted, ref, toRefs, watch } from 'vue';
+import type { PropType } from 'vue';
 
 import { confirm } from '@x-monorepo/common-ui';
 import { AiImageStatusEnum } from '@x-monorepo/constants';
 import { IconifyIcon } from '@x-monorepo/icons';
-
 import { ElButton, ElCard, ElImage, ElMessage } from 'element-plus';
+import { onMounted, ref, toRefs, watch } from 'vue';
 
 const props = defineProps({
   detail: {

@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { Recordable } from '@x-monorepo/types';
 
-import { provide, ref } from 'vue';
-
 import { ElCol, ElEmpty, ElRow, ElTabPane, ElTabs } from 'element-plus';
+import { provide, ref } from 'vue';
 
 import audioBar from './audioBar/index.vue';
 import songCard from './songCard/index.vue';

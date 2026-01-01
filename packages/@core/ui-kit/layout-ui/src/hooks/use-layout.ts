@@ -1,6 +1,5 @@
-import type { LayoutType } from '@x-monorepo-core/typings';
-
 import type { XAppLayoutProps } from '../app-layout';
+import type { LayoutType } from '@x-monorepo-core/typings';
 
 import { computed } from 'vue';
 

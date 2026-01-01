@@ -4,16 +4,14 @@ import type {
   DropdownMenuRadioItemProps,
 } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Circle } from 'lucide-vue-next';
 import {
   DropdownMenuItemIndicator,
   DropdownMenuRadioItem,
   useForwardPropsEmits,
 } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<DropdownMenuRadioItemProps & { class?: any }>();
 

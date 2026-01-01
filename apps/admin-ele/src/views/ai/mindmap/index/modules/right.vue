@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue';
-
 import { IconifyIcon } from '@x-monorepo/icons';
 import {
   MarkdownIt,
@@ -9,8 +7,8 @@ import {
   Transformer,
 } from '@x-monorepo/plugins/markmap';
 import { downloadImageByCanvas } from '@x-monorepo/utils';
-
 import { ElButton, ElCard, ElMessage } from 'element-plus';
+import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
 const props = defineProps<{
   generatedContent: string; // 生成结果

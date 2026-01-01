@@ -1,11 +1,9 @@
 <script lang="ts" setup>
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import { getAreaByIp } from '#/api/system/area';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage } from 'element-plus';
 
 import { useFormSchema } from '../data';
 

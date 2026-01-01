@@ -1,6 +1,5 @@
-import type { Component } from 'vue';
-
 import type { DescInstance, DescriptionProps } from './typing';
+import type { Component } from 'vue';
 
 import { h, reactive } from 'vue';
 

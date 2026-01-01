@@ -1,8 +1,6 @@
-import type { AsTag } from 'reka-ui';
-
-import type { Component } from 'vue';
-
 import type { ButtonVariants, ButtonVariantSize } from '../../ui';
+import type { AsTag } from 'reka-ui';
+import type { Component } from 'vue';
 
 export interface XAppButtonProps {
   /**

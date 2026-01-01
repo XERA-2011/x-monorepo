@@ -1,10 +1,8 @@
 <script setup lang="ts">
+import type { ButtonVariants, ButtonVariantSize } from './types';
 import type { PrimitiveProps } from 'reka-ui';
 
-import type { ButtonVariants, ButtonVariantSize } from './types';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Primitive } from 'reka-ui';
 
 import { buttonVariants } from './button';

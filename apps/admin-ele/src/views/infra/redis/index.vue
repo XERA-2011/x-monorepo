@@ -1,13 +1,10 @@
 <script lang="ts" setup>
 import type { InfraRedisApi } from '#/api/infra/redis';
 
-import { onMounted, ref } from 'vue';
-
-import { DocAlert, Page } from '@x-monorepo/common-ui';
-
-import { ElCard } from 'element-plus';
-
 import { getRedisMonitorInfo } from '#/api/infra/redis';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
+import { ElCard } from 'element-plus';
+import { onMounted, ref } from 'vue';
 
 import Commands from './modules/commands.vue';
 import Info from './modules/info.vue';

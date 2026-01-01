@@ -1,16 +1,14 @@
 import type { Router } from 'vue-router';
 
+import { getSimpleDictDataList } from '#/api/system/dict/data';
+import { accessRoutes, coreRouteNames } from '#/router/routes';
+import { useAuthStore } from '#/store';
 import { LOGIN_PATH } from '@x-monorepo/constants';
 import { $t } from '@x-monorepo/locales';
 import { preferences } from '@x-monorepo/preferences';
 import { useAccessStore, useDictStore, useUserStore } from '@x-monorepo/stores';
 import { startProgress, stopProgress } from '@x-monorepo/utils';
-
 import { ElMessage } from 'element-plus';
-
-import { getSimpleDictDataList } from '#/api/system/dict/data';
-import { accessRoutes, coreRouteNames } from '#/router/routes';
-import { useAuthStore } from '#/store';
 
 import { generateAccess } from './access';
 

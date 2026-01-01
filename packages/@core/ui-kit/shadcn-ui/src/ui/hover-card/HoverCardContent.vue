@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { HoverCardContentProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { HoverCardContent, HoverCardPortal, useForwardProps } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = withDefaults(
   defineProps<HoverCardContentProps & { class?: any }>(),

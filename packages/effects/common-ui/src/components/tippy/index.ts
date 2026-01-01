@@ -1,11 +1,9 @@
 import type { DefaultProps, Props } from 'tippy.js';
-
 import type { App, SetupContext } from 'vue';
 
+import { usePreferences } from '@x-monorepo-core/preferences';
 import { h, watchEffect } from 'vue';
 import { setDefaultProps, Tippy as TippyComponent } from 'vue-tippy';
-
-import { usePreferences } from '@x-monorepo-core/preferences';
 
 import useTippyDirective from './directive';
 

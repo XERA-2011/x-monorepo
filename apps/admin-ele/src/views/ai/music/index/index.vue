@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import type { Nullable, Recordable } from '@x-monorepo/types';
 
-import { ref, unref } from 'vue';
-
 import { Page } from '@x-monorepo/common-ui';
+import { ref, unref } from 'vue';
 
 import List from './list/index.vue';
 import Mode from './mode/index.vue';

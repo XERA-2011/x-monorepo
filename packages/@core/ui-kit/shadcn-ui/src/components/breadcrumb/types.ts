@@ -1,6 +1,5 @@
-import type { Component } from 'vue';
-
 import type { BreadcrumbStyleType } from '@x-monorepo-core/typings';
+import type { Component } from 'vue';
 
 export interface IBreadcrumb {
   icon?: Component | string;

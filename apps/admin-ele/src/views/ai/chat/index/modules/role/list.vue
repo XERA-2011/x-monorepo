@@ -1,12 +1,8 @@
 <script setup lang="ts">
+import type { AiModelChatRoleApi } from '#/api/ai/model/chatRole';
 import type { PropType } from 'vue';
 
-import type { AiModelChatRoleApi } from '#/api/ai/model/chatRole';
-
-import { ref } from 'vue';
-
 import { IconifyIcon } from '@x-monorepo/icons';
-
 import {
   ElAvatar,
   ElButton,
@@ -15,6 +11,7 @@ import {
   ElDropdownItem,
   ElDropdownMenu,
 } from 'element-plus';
+import { ref } from 'vue';
 
 const props = defineProps({
   loading: {

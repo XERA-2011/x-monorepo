@@ -1,13 +1,9 @@
-import type { Language } from 'element-plus/es/locale';
-
-import type { App } from 'vue';
-
 import type {
   LocaleSetupOptions,
   SupportedLanguagesType,
 } from '@x-monorepo/locales';
-
-import { ref } from 'vue';
+import type { Language } from 'element-plus/es/locale';
+import type { App } from 'vue';
 
 import {
   $t,
@@ -15,10 +11,10 @@ import {
   loadLocalesMapFromDir,
 } from '@x-monorepo/locales';
 import { preferences } from '@x-monorepo/preferences';
-
 import dayjs from 'dayjs';
 import enLocale from 'element-plus/es/locale/lang/en';
 import defaultLocale from 'element-plus/es/locale/lang/zh-cn';
+import { ref } from 'vue';
 
 const elementLocale = ref<Language>(defaultLocale);
 

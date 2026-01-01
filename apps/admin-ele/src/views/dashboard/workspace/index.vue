@@ -6,9 +6,6 @@ import type {
   WorkbenchTrendItem,
 } from '@x-monorepo/common-ui';
 
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
-
 import {
   AnalysisChartCard,
   WorkbenchHeader,
@@ -20,6 +17,8 @@ import {
 import { preferences } from '@x-monorepo/preferences';
 import { useUserStore } from '@x-monorepo/stores';
 import { openWindow } from '@x-monorepo/utils';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 import AnalyticsVisitsSource from '../analytics/analytics-visits-source.vue';
 

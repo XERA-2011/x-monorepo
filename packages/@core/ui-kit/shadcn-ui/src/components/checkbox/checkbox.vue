@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { CheckboxRootEmits, CheckboxRootProps } from 'reka-ui';
 
-import { useId } from 'vue';
-
 import { useForwardPropsEmits } from 'reka-ui';
+import { useId } from 'vue';
 
 import { Checkbox } from '../../ui/checkbox';
 

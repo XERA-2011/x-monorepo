@@ -2,14 +2,11 @@
 import type { AiImageApi } from '#/api/ai/image';
 import type { AiModelModelApi } from '#/api/ai/model/model';
 
-import { nextTick, onMounted, ref } from 'vue';
-
+import { getModelSimpleList } from '#/api/ai/model/model';
 import { Page } from '@x-monorepo/common-ui';
 import { AiModelTypeEnum, AiPlatformEnum } from '@x-monorepo/constants';
-
 import { ElSegmented } from 'element-plus';
-
-import { getModelSimpleList } from '#/api/ai/model/model';
+import { nextTick, onMounted, ref } from 'vue';
 
 import Common from './modules/common/index.vue';
 import Dall3 from './modules/dall3/index.vue';

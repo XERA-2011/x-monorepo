@@ -2,17 +2,14 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemMenuApi } from '#/api/system/menu';
 
-import { ref } from 'vue';
-
-import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { SystemMenuTypeEnum } from '@x-monorepo/constants';
-import { IconifyIcon } from '@x-monorepo/icons';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteMenu, getMenuList } from '#/api/system/menu';
 import { $t } from '#/locales';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { SystemMenuTypeEnum } from '@x-monorepo/constants';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { ElLoading, ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import { useGridColumns } from './data';
 import Form from './modules/form.vue';

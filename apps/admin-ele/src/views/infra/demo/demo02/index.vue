@@ -2,13 +2,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { Demo02CategoryApi } from '#/api/infra/demo/demo02';
 
-import { ref } from 'vue';
-
-import { Page, useXAppModal } from '@x-monorepo/common-ui';
-import { downloadFileFromBlobPart } from '@x-monorepo/utils';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteDemo02Category,
@@ -16,6 +9,10 @@ import {
   getDemo02CategoryList,
 } from '#/api/infra/demo/demo02';
 import { $t } from '#/locales';
+import { Page, useXAppModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
+import { ElLoading, ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';

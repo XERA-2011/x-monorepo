@@ -3,15 +3,13 @@
 import type { AiImageApi } from '#/api/ai/image';
 import type { AiModelModelApi } from '#/api/ai/model/model';
 
-import { ref, watch } from 'vue';
-
+import { drawImage } from '#/api/ai/image';
 import { confirm } from '@x-monorepo/common-ui';
 import {
   AiPlatformEnum,
   ImageHotWords,
   OtherPlatformEnum,
 } from '@x-monorepo/constants';
-
 import {
   ElButton,
   ElInputNumber,
@@ -19,8 +17,7 @@ import {
   ElSelect,
   ElSpace,
 } from 'element-plus';
-
-import { drawImage } from '#/api/ai/image';
+import { ref, watch } from 'vue';
 
 const props = defineProps({
   models: {

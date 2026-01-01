@@ -1,17 +1,13 @@
 <script lang="ts" setup>
-import type { Arrayable } from '@vueuse/core';
-import type { FlattenedItem } from 'reka-ui';
-
-import type { ClassType, Recordable } from '@x-monorepo-core/typings';
-
 import type { TreeProps } from './types';
-
-import { onMounted, ref, watchEffect } from 'vue';
+import type { Arrayable } from '@vueuse/core';
+import type { ClassType, Recordable } from '@x-monorepo-core/typings';
+import type { FlattenedItem } from 'reka-ui';
 
 import { ChevronRight, IconifyIcon } from '@x-monorepo-core/icons';
 import { cn, get } from '@x-monorepo-core/shared/utils';
-
 import { TreeItem, TreeRoot } from 'reka-ui';
+import { onMounted, ref, watchEffect } from 'vue';
 
 import { Checkbox } from '../checkbox';
 import { treePropsDefaults } from './types';

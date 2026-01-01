@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue';
-
-import { IconifyIcon } from '@x-monorepo/icons';
-
 import { useClipboard } from '@vueuse/core';
+import { IconifyIcon } from '@x-monorepo/icons';
 import { ElButton, ElCard, ElInput, ElMessage } from 'element-plus';
+import { computed, ref, watch } from 'vue';
 
 const props = defineProps({
   content: {

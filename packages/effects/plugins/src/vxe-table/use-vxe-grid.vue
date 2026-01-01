@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import type { ExtendedVxeGridApi, VxeGridProps } from './types';
+import type { XAppFormProps } from '@x-monorepo-core/form-ui';
+import type { SetupContext } from 'vue';
 import type {
   VxeGridDefines,
   VxeGridInstance,
@@ -8,23 +11,7 @@ import type {
   VxeToolbarPropTypes,
 } from 'vxe-table';
 
-import type { SetupContext } from 'vue';
-
-import type { XAppFormProps } from '@x-monorepo-core/form-ui';
-
-import type { ExtendedVxeGridApi, VxeGridProps } from './types';
-
-import {
-  computed,
-  nextTick,
-  onMounted,
-  onUnmounted,
-  toRaw,
-  useSlots,
-  useTemplateRef,
-  watch,
-} from 'vue';
-
+import { XAppHelpTooltip, XAppLoading } from '@x-monorepo-core/shadcn-ui';
 import { usePriorityValues } from '@x-monorepo/hooks';
 import { EmptyIcon } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
@@ -36,9 +23,16 @@ import {
   isEqual,
   mergeWithArrayOverride,
 } from '@x-monorepo/utils';
-
-import { XAppHelpTooltip, XAppLoading } from '@x-monorepo-core/shadcn-ui';
-
+import {
+  computed,
+  nextTick,
+  onMounted,
+  onUnmounted,
+  toRaw,
+  useSlots,
+  useTemplateRef,
+  watch,
+} from 'vue';
 import { VxeButton } from 'vxe-pc-ui';
 import { VxeGrid, VxeUI } from 'vxe-table';
 

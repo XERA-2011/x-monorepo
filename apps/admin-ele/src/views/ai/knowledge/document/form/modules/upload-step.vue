@@ -1,15 +1,11 @@
 <script setup lang="ts">
+import type { AxiosProgressEvent } from '#/api/infra/file';
 import type { UploadProps, UploadRequestOptions } from 'element-plus';
-
 import type { PropType } from 'vue';
 
-import type { AxiosProgressEvent } from '#/api/infra/file';
-
-import { computed, getCurrentInstance, inject, onMounted, ref } from 'vue';
-
+import { useUpload } from '#/components/upload/use-upload';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { generateAcceptedFileTypes } from '@x-monorepo/utils';
-
 import {
   ElButton,
   ElForm,
@@ -17,8 +13,7 @@ import {
   ElMessage,
   ElUpload,
 } from 'element-plus';
-
-import { useUpload } from '#/components/upload/use-upload';
+import { computed, getCurrentInstance, inject, onMounted, ref } from 'vue';
 
 const props = defineProps({
   modelValue: {

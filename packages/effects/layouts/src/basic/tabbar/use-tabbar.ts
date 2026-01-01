@@ -1,11 +1,6 @@
-import type { RouteLocationNormalizedGeneric } from 'vue-router';
-
-import type { TabDefinition } from '@x-monorepo/types';
-
 import type { IContextMenuItem } from '@x-monorepo-core/tabs-ui';
-
-import { computed, ref, watch } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import type { TabDefinition } from '@x-monorepo/types';
+import type { RouteLocationNormalizedGeneric } from 'vue-router';
 
 import { useContentMaximize, useTabs } from '@x-monorepo/hooks';
 import {
@@ -24,6 +19,8 @@ import {
 import { $t, useI18n } from '@x-monorepo/locales';
 import { getTabKey, useAccessStore, useTabbarStore } from '@x-monorepo/stores';
 import { filterTree } from '@x-monorepo/utils';
+import { computed, ref, watch } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 
 export function useTabbar() {
   const router = useRouter();

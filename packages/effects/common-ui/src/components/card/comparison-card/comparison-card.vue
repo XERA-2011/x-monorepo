@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import type { ComparisonCardProps } from './types';
 
-import { computed } from 'vue';
-
 import {
   Card,
   CardContent,
@@ -10,6 +8,7 @@ import {
   XAppIcon,
   XAppLoading,
 } from '@x-monorepo-core/shadcn-ui';
+import { computed } from 'vue';
 
 /** 对比卡片 */
 defineOptions({ name: 'ComparisonCard' });

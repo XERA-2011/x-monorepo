@@ -2,13 +2,11 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiImageApi } from '#/api/ai/image';
 
-import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteImage, getImagePage, updateImage } from '#/api/ai/image';
 import { $t } from '#/locales';
+import { confirm, DocAlert, Page } from '@x-monorepo/common-ui';
+import { ElLoading, ElMessage } from 'element-plus';
 
 import { useGridColumns, useGridFormSchema } from './data';
 

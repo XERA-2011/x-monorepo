@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { CSSProperties } from 'vue';
 
+import { useElementSize } from '@vueuse/core';
+import { XAppTooltip } from '@x-monorepo-core/shadcn-ui';
 import {
   computed,
   onBeforeUnmount,
@@ -9,10 +11,6 @@ import {
   ref,
   watchEffect,
 } from 'vue';
-
-import { XAppTooltip } from '@x-monorepo-core/shadcn-ui';
-
-import { useElementSize } from '@vueuse/core';
 
 interface Props {
   /**

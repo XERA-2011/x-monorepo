@@ -1,13 +1,11 @@
 <script lang="ts" setup>
 import type { UploadFile, UploadRawFile } from 'element-plus';
 
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage, ElUpload } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import { useUpload } from '#/components/upload/use-upload';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage, ElUpload } from 'element-plus';
 
 import { useFormSchema } from '../data';
 

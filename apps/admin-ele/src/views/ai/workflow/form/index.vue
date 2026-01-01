@@ -1,16 +1,13 @@
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, provide, ref } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-
+import { getModelSimpleList } from '#/api/ai/model/model';
+import { createWorkflow, getWorkflow, updateWorkflow } from '#/api/ai/workflow';
 import { Page } from '@x-monorepo/common-ui';
 import { AiModelTypeEnum, CommonStatusEnum } from '@x-monorepo/constants';
 import { useTabs } from '@x-monorepo/hooks';
 import { IconifyIcon } from '@x-monorepo/icons';
-
 import { ElButton, ElCard, ElMessage } from 'element-plus';
-
-import { getModelSimpleList } from '#/api/ai/model/model';
-import { createWorkflow, getWorkflow, updateWorkflow } from '#/api/ai/workflow';
+import { onBeforeUnmount, onMounted, provide, ref } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 // TODO: 发布功能待实现，已移除 BPM 模块
 // import { createModel, deployModel, updateModel } from '#/api/bpm/model';
 

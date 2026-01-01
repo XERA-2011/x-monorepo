@@ -1,12 +1,10 @@
 <script lang="ts" setup>
-import { computed, useSlots } from 'vue';
-
+import { XAppFullScreen, XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 import { useRefresh } from '@x-monorepo/hooks';
 import { RotateCw } from '@x-monorepo/icons';
 import { preferences, usePreferences } from '@x-monorepo/preferences';
 import { useAccessStore } from '@x-monorepo/stores';
-
-import { XAppFullScreen, XAppIconButton } from '@x-monorepo-core/shadcn-ui';
+import { computed, useSlots } from 'vue';
 
 import {
   GlobalSearch,

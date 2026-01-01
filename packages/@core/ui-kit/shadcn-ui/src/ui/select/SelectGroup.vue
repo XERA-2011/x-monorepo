@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { SelectGroupProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { SelectGroup } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<SelectGroupProps & { class?: any }>();
 

@@ -1,11 +1,10 @@
-import type { PluginOption } from 'vite';
-
 import type {
   ApplicationPluginOptions,
   CommonPluginOptions,
   ConditionPlugin,
   LibraryPluginOptions,
 } from '../typing';
+import type { PluginOption } from 'vite';
 
 import viteVueI18nPlugin from '@intlify/unplugin-vue-i18n/vite';
 import viteVue from '@vitejs/plugin-vue';

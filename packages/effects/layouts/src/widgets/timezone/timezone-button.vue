@@ -1,16 +1,14 @@
 <script setup lang="ts">
-import { ref, unref } from 'vue';
-
-import { createIconifyIcon } from '@x-monorepo/icons';
-import { $t } from '@x-monorepo/locales';
-import { useTimezoneStore } from '@x-monorepo/stores';
-
 import { useXAppModal } from '@x-monorepo-core/popup-ui';
 import {
   RadioGroup,
   RadioGroupItem,
   XAppIconButton,
 } from '@x-monorepo-core/shadcn-ui';
+import { createIconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
+import { useTimezoneStore } from '@x-monorepo/stores';
+import { ref, unref } from 'vue';
 
 const TimezoneIcon = createIconifyIcon('fluent-mdl2:world-clock');
 

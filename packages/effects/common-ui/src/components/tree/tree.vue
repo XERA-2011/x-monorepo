@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import type { TreeProps } from '@x-monorepo-core/shadcn-ui';
 
+import { treePropsDefaults, XAppTree } from '@x-monorepo-core/shadcn-ui';
 import { Inbox } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
-
-import { treePropsDefaults, XAppTree } from '@x-monorepo-core/shadcn-ui';
 
 const props = withDefaults(defineProps<TreeProps>(), treePropsDefaults());
 </script>

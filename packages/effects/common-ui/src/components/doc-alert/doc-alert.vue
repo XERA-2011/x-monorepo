@@ -1,12 +1,10 @@
 <script lang="ts" setup>
 import type { DocAlertProps } from './types';
 
-import { ref } from 'vue';
-
-import { isDocAlertEnable } from '@x-monorepo/hooks';
-
 import { XAppIcon } from '@x-monorepo-core/shadcn-ui';
 import { openWindow } from '@x-monorepo-core/shared/utils';
+import { isDocAlertEnable } from '@x-monorepo/hooks';
+import { ref } from 'vue';
 
 defineOptions({
   name: 'DocAlert',

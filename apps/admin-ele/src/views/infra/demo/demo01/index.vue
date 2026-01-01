@@ -2,13 +2,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { Demo01ContactApi } from '#/api/infra/demo/demo01';
 
-import { ref } from 'vue';
-
-import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteDemo01Contact,
@@ -17,6 +10,10 @@ import {
   getDemo01ContactPage,
 } from '#/api/infra/demo/demo01';
 import { $t } from '#/locales';
+import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
+import { ElLoading, ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';

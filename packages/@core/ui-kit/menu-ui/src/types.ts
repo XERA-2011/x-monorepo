@@ -1,9 +1,8 @@
-import type { Component, Ref } from 'vue';
-
 import type {
   MenuRecordBadgeRaw,
   ThemeModeType,
 } from '@x-monorepo-core/typings';
+import type { Component, Ref } from 'vue';
 
 interface MenuProps {
   /**

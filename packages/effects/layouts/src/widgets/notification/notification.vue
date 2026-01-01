@@ -1,19 +1,16 @@
 <script lang="ts" setup>
 import type { NotificationItem } from './types';
 
-import { useRouter } from 'vue-router';
-
-import { Bell, CircleCheckBig, CircleX, MailCheck } from '@x-monorepo/icons';
-import { $t } from '@x-monorepo/locales';
-
+import { useToggle } from '@vueuse/core';
 import {
   XAppButton,
   XAppIconButton,
   XAppPopover,
   XAppScrollbar,
 } from '@x-monorepo-core/shadcn-ui';
-
-import { useToggle } from '@vueuse/core';
+import { Bell, CircleCheckBig, CircleX, MailCheck } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
+import { useRouter } from 'vue-router';
 
 interface Props {
   /**

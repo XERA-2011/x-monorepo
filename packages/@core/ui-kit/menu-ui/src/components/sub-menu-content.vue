@@ -1,11 +1,10 @@
 <script lang="ts" setup>
 import type { MenuItemProps } from '../types';
 
-import { computed } from 'vue';
-
 import { useNamespace } from '@x-monorepo-core/composables';
 import { ChevronDown, ChevronRight } from '@x-monorepo-core/icons';
 import { XAppIcon } from '@x-monorepo-core/shadcn-ui';
+import { computed } from 'vue';
 
 import { useMenuContext } from '../hooks';
 

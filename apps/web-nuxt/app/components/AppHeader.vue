@@ -31,7 +31,7 @@ const links = [
           v-for="link in links"
           :key="link.to"
           :to="link.to"
-          class="font-mono text-sm uppercase tracking-widest text-[#E0E0E0] transition-all duration-200 hover:text-[#00FFFF] hover:drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]"
+          class="font-mono text-sm tracking-widest text-[#E0E0E0] uppercase transition-all duration-200 hover:text-[#00FFFF] hover:drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]"
         >
           {{ link.label }}
         </NuxtLink>

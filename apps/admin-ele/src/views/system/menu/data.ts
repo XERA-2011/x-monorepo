@@ -1,11 +1,12 @@
-import type { Recordable } from '@x-monorepo/types';
-
 import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemMenuApi } from '#/api/system/menu';
+import type { Recordable } from '@x-monorepo/types';
 
-import { h } from 'vue';
-
+import { z } from '#/adapter/form';
+import { getMenuList } from '#/api/system/menu';
+import { $t } from '#/locales';
+import { componentKeys } from '#/router/routes';
 import {
   CommonStatusEnum,
   DICT_TYPE,
@@ -14,11 +15,7 @@ import {
 import { getDictOptions } from '@x-monorepo/hooks';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { handleTree, isHttpUrl } from '@x-monorepo/utils';
-
-import { z } from '#/adapter/form';
-import { getMenuList } from '#/api/system/menu';
-import { $t } from '#/locales';
-import { componentKeys } from '#/router/routes';
+import { h } from 'vue';
 
 /** 新增/修改的表单 */
 export function useFormSchema(): XAppFormSchema[] {

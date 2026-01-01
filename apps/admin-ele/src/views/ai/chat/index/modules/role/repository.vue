@@ -2,12 +2,10 @@
 import type { AiChatConversationApi } from '#/api/ai/chat/conversation';
 import type { AiModelChatRoleApi } from '#/api/ai/model/chatRole';
 
-import { onMounted, reactive, ref } from 'vue';
-import { useRouter } from 'vue-router';
-
+import { createChatConversationMy } from '#/api/ai/chat/conversation';
+import { deleteMy, getCategoryList, getMyPage } from '#/api/ai/model/chatRole';
 import { useXAppDrawer, useXAppModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
-
 import {
   ElButton,
   ElContainer,
@@ -16,9 +14,8 @@ import {
   ElTabPane,
   ElTabs,
 } from 'element-plus';
-
-import { createChatConversationMy } from '#/api/ai/chat/conversation';
-import { deleteMy, getCategoryList, getMyPage } from '#/api/ai/model/chatRole';
+import { onMounted, reactive, ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 import Form from '../../../../model/chatRole/modules/form.vue';
 import RoleCategoryList from './category-list.vue';

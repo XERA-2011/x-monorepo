@@ -1,9 +1,8 @@
-import type { AxiosInstance, AxiosResponse } from 'axios';
-
 import type {
   RequestInterceptorConfig,
   ResponseInterceptorConfig,
 } from '../types';
+import type { AxiosInstance, AxiosResponse } from 'axios';
 
 const defaultRequestInterceptorConfig: RequestInterceptorConfig = {
   fulfilled: (response) => response,

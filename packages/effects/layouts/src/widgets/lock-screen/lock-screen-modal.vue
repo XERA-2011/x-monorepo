@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import type { Recordable } from '@x-monorepo/types';
 
-import { computed, reactive } from 'vue';
-
-import { $t } from '@x-monorepo/locales';
-
 import { useXAppForm, z } from '@x-monorepo-core/form-ui';
 import { useXAppModal } from '@x-monorepo-core/popup-ui';
 import { XAppAvatar, XAppButton } from '@x-monorepo-core/shadcn-ui';
+import { $t } from '@x-monorepo/locales';
+import { computed, reactive } from 'vue';
 
 interface Props {
   avatar?: string;

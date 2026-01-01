@@ -1,8 +1,6 @@
-import type { Component, Ref } from 'vue';
-
-import type { MaybePromise } from '@x-monorepo-core/typings';
-
 import type { ModalApi } from './modal-api';
+import type { MaybePromise } from '@x-monorepo-core/typings';
+import type { Component, Ref } from 'vue';
 
 export interface ModalProps {
   /**

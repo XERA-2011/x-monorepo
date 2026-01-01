@@ -1,8 +1,10 @@
 <script lang="ts" setup>
+import type { CodeEditorProps } from './types';
 import type { Nullable } from '@x-monorepo/types';
 
-import type { CodeEditorProps } from './types';
-
+import { useDebounceFn, useWindowSize } from '@vueuse/core';
+import { usePreferences } from '@x-monorepo/preferences';
+import CodeMirror from 'codemirror';
 import {
   nextTick,
   onMounted,
@@ -13,18 +15,12 @@ import {
   watchEffect,
 } from 'vue';
 
-import { usePreferences } from '@x-monorepo/preferences';
-
-import { useDebounceFn, useWindowSize } from '@vueuse/core';
-import CodeMirror from 'codemirror';
-
 import { MODE } from './types';
 
 // modes
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/mode/css/css';
 import 'codemirror/mode/htmlmixed/htmlmixed';
-
 // css
 import './codemirror.css';
 import 'codemirror/theme/idea.css';

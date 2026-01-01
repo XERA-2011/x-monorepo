@@ -1,8 +1,7 @@
 import type { XAppFormSchema } from '#/adapter/form';
 
-import { AiModelTypeEnum } from '@x-monorepo/constants';
-
 import { getModelSimpleList } from '#/api/ai/model/model';
+import { AiModelTypeEnum } from '@x-monorepo/constants';
 
 export function useFormSchema(): XAppFormSchema[] {
   return [

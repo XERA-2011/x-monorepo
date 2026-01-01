@@ -1,9 +1,4 @@
 <script lang="ts" setup>
-import { computed } from 'vue';
-
-import { IconifyIcon } from '@x-monorepo/icons';
-import { $t } from '@x-monorepo/locales';
-
 import {
   Button,
   DropdownMenu,
@@ -12,6 +7,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@x-monorepo-core/shadcn-ui';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
+import { computed } from 'vue';
 
 interface Tenant {
   id?: number;

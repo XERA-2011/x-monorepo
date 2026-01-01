@@ -1,25 +1,20 @@
 <script lang="ts" setup>
-import type { SetupContext } from 'vue';
-
-import type { Recordable } from '@x-monorepo/types';
-
 import type {
   JsonViewerAction,
   JsonViewerProps,
   JsonViewerToggle,
   JsonViewerValue,
 } from './types';
+import type { Recordable } from '@x-monorepo/types';
+import type { SetupContext } from 'vue';
 
+import { isBoolean } from '@x-monorepo-core/shared/utils';
+import { $t } from '@x-monorepo/locales';
+// @ts-ignore
+import JsonBigint from 'json-bigint';
 import { computed, useAttrs } from 'vue';
 // @ts-ignore
 import VueJsonViewer from 'vue-json-viewer';
-
-import { $t } from '@x-monorepo/locales';
-
-import { isBoolean } from '@x-monorepo-core/shared/utils';
-
-// @ts-ignore
-import JsonBigint from 'json-bigint';
 
 defineOptions({ name: 'JsonViewer' });
 

@@ -2,13 +2,6 @@
 import type { SystemMenuApi } from '#/api/system/menu';
 import type { SystemTenantPackageApi } from '#/api/system/tenant-package';
 
-import { computed, ref } from 'vue';
-
-import { Tree, useXAppModal } from '@x-monorepo/common-ui';
-import { handleTree } from '@x-monorepo/utils';
-
-import { ElCheckbox, ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import { getMenuList } from '#/api/system/menu';
 import {
@@ -17,6 +10,10 @@ import {
   updateTenantPackage,
 } from '#/api/system/tenant-package';
 import { $t } from '#/locales';
+import { Tree, useXAppModal } from '@x-monorepo/common-ui';
+import { handleTree } from '@x-monorepo/utils';
+import { ElCheckbox, ElMessage } from 'element-plus';
+import { computed, ref } from 'vue';
 
 import { useFormSchema } from '../data';
 

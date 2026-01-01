@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import type { AiWriteApi } from '#/api/ai/write';
 
-import { ref } from 'vue';
-
+import { createReusableTemplate } from '@vueuse/core';
 import {
   AiWriteTypeEnum,
   DICT_TYPE,
@@ -10,9 +9,8 @@ import {
 } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 import { IconifyIcon } from '@x-monorepo/icons';
-
-import { createReusableTemplate } from '@vueuse/core';
 import { ElButton, ElInput, ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import Tag from './tag.vue';
 

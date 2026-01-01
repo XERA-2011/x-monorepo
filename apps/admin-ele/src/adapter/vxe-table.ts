@@ -1,8 +1,8 @@
 import type { VxeTableGridOptions } from '@x-monorepo/plugins/vxe-table';
 import type { Recordable } from '@x-monorepo/types';
 
-import { h } from 'vue';
-
+import { DictTag } from '#/components/dict-tag';
+import { $t } from '#/locales';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { $te } from '@x-monorepo/locales';
 import {
@@ -21,11 +21,8 @@ import {
   isFunction,
   isString,
 } from '@x-monorepo/utils';
-
 import { ElButton, ElImage, ElPopconfirm, ElSwitch, ElTag } from 'element-plus';
-
-import { DictTag } from '#/components/dict-tag';
-import { $t } from '#/locales';
+import { h } from 'vue';
 
 import { useXAppForm } from './form';
 

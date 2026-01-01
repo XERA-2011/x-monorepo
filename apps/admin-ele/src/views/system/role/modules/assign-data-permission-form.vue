@@ -2,19 +2,16 @@
 import type { SystemDeptApi } from '#/api/system/dept';
 import type { SystemRoleApi } from '#/api/system/role';
 
-import { ref } from 'vue';
-
-import { Tree, useXAppModal } from '@x-monorepo/common-ui';
-import { SystemDataScopeEnum } from '@x-monorepo/constants';
-import { handleTree } from '@x-monorepo/utils';
-
-import { ElCheckbox, ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import { getDeptList } from '#/api/system/dept';
 import { assignRoleDataScope } from '#/api/system/permission';
 import { getRole } from '#/api/system/role';
 import { $t } from '#/locales';
+import { Tree, useXAppModal } from '@x-monorepo/common-ui';
+import { SystemDataScopeEnum } from '@x-monorepo/constants';
+import { handleTree } from '@x-monorepo/utils';
+import { ElCheckbox, ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import { useAssignDataPermissionFormSchema } from '../data';
 

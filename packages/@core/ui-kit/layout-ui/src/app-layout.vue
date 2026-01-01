@@ -1,10 +1,8 @@
 <script setup lang="ts">
+import type { XAppLayoutProps } from './app-layout';
 import type { CSSProperties } from 'vue';
 
-import type { XAppLayoutProps } from './app-layout';
-
-import { computed, ref, watch } from 'vue';
-
+import { useMouse, useScroll, useThrottleFn } from '@vueuse/core';
 import {
   SCROLL_FIXED_CLASS,
   useLayoutFooterStyle,
@@ -13,8 +11,7 @@ import {
 import { IconifyIcon } from '@x-monorepo-core/icons';
 import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 import { ELEMENT_ID_MAIN_CONTENT } from '@x-monorepo-core/shared/constants';
-
-import { useMouse, useScroll, useThrottleFn } from '@vueuse/core';
+import { computed, ref, watch } from 'vue';
 
 import {
   LayoutContent,

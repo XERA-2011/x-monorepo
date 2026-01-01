@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import type { FallbackProps } from './fallback';
 
-import { computed, defineAsyncComponent } from 'vue';
-import { useRouter } from 'vue-router';
-
+import { XAppButton } from '@x-monorepo-core/shadcn-ui';
 import { ArrowLeft, RotateCw } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
-
-import { XAppButton } from '@x-monorepo-core/shadcn-ui';
+import { computed, defineAsyncComponent } from 'vue';
+import { useRouter } from 'vue-router';
 
 interface Props extends FallbackProps {}
 

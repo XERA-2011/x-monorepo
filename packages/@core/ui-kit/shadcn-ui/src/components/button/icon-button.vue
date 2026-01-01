@@ -2,9 +2,8 @@
 import type { ButtonVariants } from '../../ui';
 import type { XAppButtonProps } from './button';
 
-import { computed, useSlots } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
+import { computed, useSlots } from 'vue';
 
 import { XAppTooltip } from '../tooltip';
 import XAppButton from './button.vue';

@@ -1,14 +1,11 @@
-import type { Component, VNode } from 'vue';
-
-import type { Recordable } from '@x-monorepo-core/typings';
-
 import type { AlertProps, BeforeCloseScope, PromptProps } from './alert';
-
-import { h, nextTick, ref, render } from 'vue';
+import type { Recordable } from '@x-monorepo-core/typings';
+import type { Component, VNode } from 'vue';
 
 import { useSimpleLocale } from '@x-monorepo-core/composables';
 import { Input, XAppRenderContent } from '@x-monorepo-core/shadcn-ui';
 import { isFunction, isString } from '@x-monorepo-core/shared/utils';
+import { h, nextTick, ref, render } from 'vue';
 
 import Alert from './alert.vue';
 

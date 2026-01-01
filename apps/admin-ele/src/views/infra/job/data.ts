@@ -2,16 +2,13 @@ import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { DescriptionItemSchema } from '#/components/description';
 
-import { h, markRaw } from 'vue';
-
+import { CronTab } from '#/components/cron-tab';
+import { DictTag } from '#/components/dict-tag';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
 import { formatDateTime } from '@x-monorepo/utils';
-
 import { ElTimeline, ElTimelineItem } from 'element-plus';
-
-import { CronTab } from '#/components/cron-tab';
-import { DictTag } from '#/components/dict-tag';
+import { h, markRaw } from 'vue';
 
 /** 新增/修改的表单 */
 export function useFormSchema(): XAppFormSchema[] {

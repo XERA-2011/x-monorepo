@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-
 import { IconifyIcon } from '@x-monorepo/icons';
 import {
   getFileIcon,
   getFileNameFromUrl,
   getFileTypeClass,
 } from '@x-monorepo/utils';
+import { computed } from 'vue';
 
 const props = defineProps<{
   attachmentUrls?: string[];

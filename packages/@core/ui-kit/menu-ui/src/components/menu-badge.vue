@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { MenuRecordBadgeRaw } from '@x-monorepo-core/typings';
 
-import { computed } from 'vue';
-
 import { isValidColor } from '@x-monorepo-core/shared/color';
+import { computed } from 'vue';
 
 import BadgeDot from './menu-badge-dot.vue';
 

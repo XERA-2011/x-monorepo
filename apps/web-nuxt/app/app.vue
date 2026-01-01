@@ -1,3 +1,9 @@
+<script setup lang="ts">
+// 强制暗色模式
+const colorMode = useColorMode();
+colorMode.preference = 'dark';
+</script>
+
 <template>
   <UApp>
     <!-- 背景特效层 -->
@@ -15,9 +21,3 @@
     </div>
   </UApp>
 </template>
-
-<script setup lang="ts">
-// 强制暗色模式
-const colorMode = useColorMode();
-colorMode.preference = 'dark';
-</script>

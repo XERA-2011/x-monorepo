@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { SelectOption } from '@x-monorepo/types';
 
-import { computed } from 'vue';
-
 import { $t } from '@x-monorepo/locales';
+import { computed } from 'vue';
 
 import NumberFieldItem from '../number-field-item.vue';
 import SelectItem from '../select-item.vue';

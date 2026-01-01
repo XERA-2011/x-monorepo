@@ -2,13 +2,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
-import { ref } from 'vue';
-
-import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
-
-import { ElLoading, ElMessage, ElTabPane, ElTabs } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteDemo03Student,
@@ -17,6 +10,10 @@ import {
   getDemo03StudentPage,
 } from '#/api/infra/demo/demo03/inner';
 import { $t } from '#/locales';
+import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
+import { ElLoading, ElMessage, ElTabPane, ElTabs } from 'element-plus';
+import { ref } from 'vue';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Demo03CourseList from './modules/demo03-course-list.vue';

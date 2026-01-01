@@ -1,10 +1,9 @@
+import { resetStaticRoutes } from '@x-monorepo/utils';
 import {
   createRouter,
   createWebHashHistory,
   createWebHistory,
 } from 'vue-router';
-
-import { resetStaticRoutes } from '@x-monorepo/utils';
 
 import { createRouterGuard } from './guard';
 import { routes } from './routes';

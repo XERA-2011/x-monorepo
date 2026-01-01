@@ -2,15 +2,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { InfraJobApi } from '#/api/infra/job';
 
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
-
-import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { InfraJobStatusEnum } from '@x-monorepo/constants';
-import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteJob,
@@ -21,6 +12,12 @@ import {
   updateJobStatus,
 } from '#/api/infra/job';
 import { $t } from '#/locales';
+import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { InfraJobStatusEnum } from '@x-monorepo/constants';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
+import { ElLoading, ElMessage } from 'element-plus';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Detail from './modules/detail.vue';

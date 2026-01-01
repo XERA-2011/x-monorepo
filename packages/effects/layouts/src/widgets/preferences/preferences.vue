@@ -1,13 +1,11 @@
 <script lang="ts" setup>
-import { computed } from 'vue';
-
+import { useXAppDrawer } from '@x-monorepo-core/popup-ui';
+import { XAppButton } from '@x-monorepo-core/shadcn-ui';
 import { Settings } from '@x-monorepo/icons';
 import { $t, loadLocaleMessages } from '@x-monorepo/locales';
 import { preferences, updatePreferences } from '@x-monorepo/preferences';
 import { capitalizeFirstLetter } from '@x-monorepo/utils';
-
-import { useXAppDrawer } from '@x-monorepo-core/popup-ui';
-import { XAppButton } from '@x-monorepo-core/shadcn-ui';
+import { computed } from 'vue';
 
 import PreferencesDrawer from './preferences-drawer.vue';
 

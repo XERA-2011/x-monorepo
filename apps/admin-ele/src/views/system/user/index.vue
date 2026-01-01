@@ -2,15 +2,6 @@
 import type { SystemDeptApi } from '#/api/system/dept';
 import type { SystemUserApi } from '#/api/system/user';
 
-import { ref } from 'vue';
-
-import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { DICT_TYPE } from '@x-monorepo/constants';
-import { getDictLabel } from '@x-monorepo/hooks';
-import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
-
-import { ElCard, ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteUser,
@@ -20,6 +11,12 @@ import {
   updateUserStatus,
 } from '#/api/system/user';
 import { $t } from '#/locales';
+import { confirm, DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel } from '@x-monorepo/hooks';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
+import { ElCard, ElLoading, ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import AssignRoleForm from './modules/assign-role-form.vue';

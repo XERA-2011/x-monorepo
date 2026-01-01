@@ -1,9 +1,7 @@
 <script lang="ts" setup>
-import { ref } from 'vue';
-
 import { DocAlert, Page } from '@x-monorepo/common-ui';
-
 import { ElTabs } from 'element-plus';
+import { ref } from 'vue';
 
 import ChatConversationList from './modules/conversation-list.vue';
 import ChatMessageList from './modules/message-list.vue';

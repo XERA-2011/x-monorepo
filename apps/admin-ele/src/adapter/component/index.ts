@@ -3,24 +3,20 @@
  * 可用于 x-app-form、x-app-modal、x-app-drawer 等组件使用,
  */
 
-import type { Component } from 'vue';
-
 import type { BaseFormComponentType } from '@x-monorepo/common-ui';
 import type { Recordable } from '@x-monorepo/types';
+import type { Component } from 'vue';
 
-import { defineAsyncComponent, defineComponent, h, ref } from 'vue';
-
+import { Tinymce as RichTextarea } from '#/components/tinymce';
+import { FileUpload, ImageUpload } from '#/components/upload';
 import {
   ApiComponent,
   globalShareState,
   IconPicker,
 } from '@x-monorepo/common-ui';
 import { $t } from '@x-monorepo/locales';
-
 import { ElNotification } from 'element-plus';
-
-import { Tinymce as RichTextarea } from '#/components/tinymce';
-import { FileUpload, ImageUpload } from '#/components/upload';
+import { defineAsyncComponent, defineComponent, h, ref } from 'vue';
 
 const ElButton = defineAsyncComponent(() =>
   Promise.all([

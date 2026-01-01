@@ -1,10 +1,8 @@
 import type { TabsProps } from './types';
 
-import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
-
-import { XAppScrollbar } from '@x-monorepo-core/shadcn-ui';
-
 import { useDebounceFn } from '@vueuse/core';
+import { XAppScrollbar } from '@x-monorepo-core/shadcn-ui';
+import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 
 type DomElement = Element | null | undefined;
 

@@ -2,15 +2,14 @@ import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiModelApiKeyApi } from '#/api/ai/model/apiKey';
 
+import { z } from '#/adapter/form';
+import { getApiKeySimpleList } from '#/api/ai/model/apiKey';
 import {
   AiModelTypeEnum,
   CommonStatusEnum,
   DICT_TYPE,
 } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
-
-import { z } from '#/adapter/form';
-import { getApiKeySimpleList } from '#/api/ai/model/apiKey';
 
 /** 关联数据 */
 let apiKeyList: AiModelApiKeyApi.ApiKey[] = [];

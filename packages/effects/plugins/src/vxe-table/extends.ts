@@ -1,8 +1,6 @@
-import type { VxeGridProps, VxeUIExport } from 'vxe-table';
-
-import type { Recordable } from '@x-monorepo/types';
-
 import type { VxeGridApi } from './api';
+import type { Recordable } from '@x-monorepo/types';
+import type { VxeGridProps, VxeUIExport } from 'vxe-table';
 
 import { formatDate, formatDateTime, isFunction } from '@x-monorepo/utils';
 

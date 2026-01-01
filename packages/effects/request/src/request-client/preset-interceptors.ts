@@ -3,7 +3,6 @@ import type { MakeErrorMessageFn, ResponseInterceptorConfig } from './types';
 
 import { $t } from '@x-monorepo/locales';
 import { isFunction } from '@x-monorepo/utils';
-
 import axios from 'axios';
 
 export const defaultResponseInterceptor = ({

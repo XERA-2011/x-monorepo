@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import type { PaginationLastProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { ChevronsRight } from 'lucide-vue-next';
 import { PaginationLast } from 'reka-ui';
+import { computed } from 'vue';
 
 import { Button } from '../button';
 

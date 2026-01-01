@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import type { BuiltinThemeType } from '@x-monorepo/types';
 
+import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 import { Palette } from '@x-monorepo/icons';
 import {
   COLOR_PRESETS,
   preferences,
   updatePreferences,
 } from '@x-monorepo/preferences';
-
-import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 
 defineOptions({
   name: 'AuthenticationColorToggle',

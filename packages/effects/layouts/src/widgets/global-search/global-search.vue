@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { MenuRecordRaw } from '@x-monorepo/types';
 
-import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
-
+import { useMagicKeys, whenever } from '@vueuse/core';
+import { useXAppModal } from '@x-monorepo-core/popup-ui';
 import {
   ArrowDown,
   ArrowUp,
@@ -12,10 +12,7 @@ import {
 } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 import { isWindowsOs } from '@x-monorepo/utils';
-
-import { useXAppModal } from '@x-monorepo-core/popup-ui';
-
-import { useMagicKeys, whenever } from '@vueuse/core';
+import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 
 import SearchPanel from './search-panel.vue';
 

@@ -1,12 +1,10 @@
 <script lang="ts" setup>
-import type { HoverCardContentProps } from '@x-monorepo-core/shadcn-ui';
-
 import type { MenuItemRegistered, MenuProvider, SubMenuProps } from '../types';
-
-import { computed, onBeforeUnmount, onMounted, reactive, ref } from 'vue';
+import type { HoverCardContentProps } from '@x-monorepo-core/shadcn-ui';
 
 import { useNamespace } from '@x-monorepo-core/composables';
 import { XAppHoverCard } from '@x-monorepo-core/shadcn-ui';
+import { computed, onBeforeUnmount, onMounted, reactive, ref } from 'vue';
 
 import {
   createSubMenuContext,

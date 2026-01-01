@@ -1,9 +1,7 @@
+import type { RequestClientConfig, RequestClientOptions } from './types';
 import type { AxiosInstance, AxiosResponse } from 'axios';
 
-import type { RequestClientConfig, RequestClientOptions } from './types';
-
 import { bindMethods, isString, merge } from '@x-monorepo/utils';
-
 import axios from 'axios';
 import qs from 'qs';
 

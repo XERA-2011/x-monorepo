@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { TabsTriggerProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { TabsTrigger, useForwardProps } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<TabsTriggerProps & { class?: any }>();
 

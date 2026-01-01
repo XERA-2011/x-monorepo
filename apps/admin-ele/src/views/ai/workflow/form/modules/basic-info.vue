@@ -1,12 +1,10 @@
 <script lang="ts" setup>
 import type { FormRules } from 'element-plus';
 
-import { ref } from 'vue';
-
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
-
 import { ElForm, ElFormItem, ElInput, ElOption, ElSelect } from 'element-plus';
+import { ref } from 'vue';
 
 const modelData = defineModel<any>(); // 创建本地数据副本
 const formRef = ref(); // 表单引用

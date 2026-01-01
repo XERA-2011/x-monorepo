@@ -1,13 +1,11 @@
-import type { ComputedRef } from 'vue';
-
 import type { MenuRecordRaw } from '@x-monorepo/types';
-
-import { computed, ref, watch } from 'vue';
-import { useRoute } from 'vue-router';
+import type { ComputedRef } from 'vue';
 
 import { preferences } from '@x-monorepo/preferences';
 import { useAccessStore } from '@x-monorepo/stores';
 import { findRootMenuByPath } from '@x-monorepo/utils';
+import { computed, ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 
 import { useNavigation } from './use-navigation';
 

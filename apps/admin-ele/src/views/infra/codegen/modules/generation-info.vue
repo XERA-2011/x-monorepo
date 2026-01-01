@@ -1,13 +1,11 @@
 <script lang="ts" setup>
 import type { InfraCodegenApi } from '#/api/infra/codegen';
 
-import { computed, ref, watch } from 'vue';
-
-import { InfraCodegenTemplateTypeEnum } from '@x-monorepo/constants';
-import { isEmpty } from '@x-monorepo/utils';
-
 import { useXAppForm } from '#/adapter/form';
 import { getCodegenTableList } from '#/api/infra/codegen';
+import { InfraCodegenTemplateTypeEnum } from '@x-monorepo/constants';
+import { isEmpty } from '@x-monorepo/utils';
+import { computed, ref, watch } from 'vue';
 
 import {
   useGenerationInfoBaseFormSchema,

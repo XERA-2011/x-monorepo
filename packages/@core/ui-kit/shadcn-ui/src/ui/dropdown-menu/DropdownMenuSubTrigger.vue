@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import type { DropdownMenuSubTriggerProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { ChevronRight } from 'lucide-vue-next';
 import { DropdownMenuSubTrigger, useForwardProps } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<DropdownMenuSubTriggerProps & { class?: any }>();
 

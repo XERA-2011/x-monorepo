@@ -1,17 +1,14 @@
 <script setup lang="ts">
+import type { ClassType } from '@x-monorepo-core/typings';
 import type { AlertDialogContentEmits, AlertDialogContentProps } from 'reka-ui';
 
-import type { ClassType } from '@x-monorepo-core/typings';
-
-import { computed, ref } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import {
   AlertDialogContent,
   AlertDialogPortal,
   useForwardPropsEmits,
 } from 'reka-ui';
+import { computed, ref } from 'vue';
 
 import AlertDialogOverlay from './AlertDialogOverlay.vue';
 

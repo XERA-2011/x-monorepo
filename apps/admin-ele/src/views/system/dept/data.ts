@@ -3,13 +3,12 @@ import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemDeptApi } from '#/api/system/dept';
 import type { SystemUserApi } from '#/api/system/user';
 
-import { CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
-import { getDictOptions } from '@x-monorepo/hooks';
-import { handleTree } from '@x-monorepo/utils';
-
 import { z } from '#/adapter/form';
 import { getDeptList } from '#/api/system/dept';
 import { getSimpleUserList } from '#/api/system/user';
+import { CommonStatusEnum, DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { handleTree } from '@x-monorepo/utils';
 
 /** 关联数据 */
 let userList: SystemUserApi.User[] = [];

@@ -1,12 +1,10 @@
 <script lang="ts" setup>
-import { useXAppModal } from '@x-monorepo/common-ui';
-import { downloadFileFromBlobPart } from '@x-monorepo/utils';
-
-import { ElButton, ElMessage, ElUpload } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import { importUser, importUserTemplate } from '#/api/system/user';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
+import { ElButton, ElMessage, ElUpload } from 'element-plus';
 
 import { useImportFormSchema } from '../data';
 

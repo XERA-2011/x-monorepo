@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import type { Recordable } from '@x-monorepo/types';
-
 import type { SettingProps } from './types';
+import type { Recordable } from '@x-monorepo/types';
 
 import {
   Form,

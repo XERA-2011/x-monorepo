@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import type { InfraCodegenApi } from '#/api/infra/codegen';
 
-import { watch } from 'vue';
-
 import { useXAppForm } from '#/adapter/form';
+import { watch } from 'vue';
 
 import { useBasicInfoFormSchema } from '../data';
 

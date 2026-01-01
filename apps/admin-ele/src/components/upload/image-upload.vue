@@ -1,17 +1,12 @@
 <script lang="ts" setup>
+import type { AxiosProgressEvent } from '#/api/infra/file';
+import type { UploadListType } from './typing';
+import type { AxiosResponse } from '@x-monorepo/request';
 import type {
   UploadFile,
   UploadProgressEvent,
   UploadRequestOptions,
 } from 'element-plus';
-
-import type { AxiosResponse } from '@x-monorepo/request';
-
-import type { UploadListType } from './typing';
-
-import type { AxiosProgressEvent } from '#/api/infra/file';
-
-import { ref, toRefs, watch } from 'vue';
 
 import { IconifyIcon } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
@@ -22,8 +17,8 @@ import {
   isObject,
   isString,
 } from '@x-monorepo/utils';
-
 import { ElMessage, ElUpload } from 'element-plus';
+import { ref, toRefs, watch } from 'vue';
 
 import { UploadResultStatus } from './typing';
 import { useUpload, useUploadType } from './use-upload';

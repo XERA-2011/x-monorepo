@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { inject } from 'vue';
-
 import { ElButton, ElCard, ElImage } from 'element-plus';
+import { inject } from 'vue';
 
 defineOptions({ name: 'AiMusicSongInfoIndex' });
 

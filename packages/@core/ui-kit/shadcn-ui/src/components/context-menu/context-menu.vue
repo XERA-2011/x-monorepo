@@ -1,17 +1,14 @@
 <script setup lang="ts">
+import type { IContextMenuItem } from './interface';
+import type { ClassType } from '@x-monorepo-core/typings';
 import type {
   ContextMenuContentProps,
   ContextMenuRootEmits,
   ContextMenuRootProps,
 } from 'reka-ui';
 
-import type { ClassType } from '@x-monorepo-core/typings';
-
-import type { IContextMenuItem } from './interface';
-
-import { computed } from 'vue';
-
 import { useForwardPropsEmits } from 'reka-ui';
+import { computed } from 'vue';
 
 import {
   ContextMenu,

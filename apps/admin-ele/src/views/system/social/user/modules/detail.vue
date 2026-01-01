@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import type { SystemSocialUserApi } from '#/api/system/social/user';
 
-import { ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
 import { getSocialUser } from '#/api/system/social/user';
 import { useDescription } from '#/components/description';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ref } from 'vue';
 
 import { useDetailSchema } from '../data';
 

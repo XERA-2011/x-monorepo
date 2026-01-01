@@ -2,13 +2,11 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiModelChatRoleApi } from '#/api/ai/model/chatRole';
 
-import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteChatRole, getChatRolePage } from '#/api/ai/model/chatRole';
 import { $t } from '#/locales';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { ElLoading, ElMessage } from 'element-plus';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';

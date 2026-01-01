@@ -1,14 +1,11 @@
 <script lang="ts" setup>
+import type { NormalMenuProps } from '@x-monorepo-core/menu-ui';
 import type { MenuRecordRaw } from '@x-monorepo/types';
 
-import type { NormalMenuProps } from '@x-monorepo-core/menu-ui';
-
+import { NormalMenu } from '@x-monorepo-core/menu-ui';
+import { findMenuByPath } from '@x-monorepo/utils';
 import { onBeforeMount } from 'vue';
 import { useRoute } from 'vue-router';
-
-import { findMenuByPath } from '@x-monorepo/utils';
-
-import { NormalMenu } from '@x-monorepo-core/menu-ui';
 
 interface Props extends NormalMenuProps {}
 

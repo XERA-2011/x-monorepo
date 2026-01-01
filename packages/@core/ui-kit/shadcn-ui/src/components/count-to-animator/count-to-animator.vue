@@ -1,9 +1,7 @@
 <script lang="ts" setup>
-import { computed, onMounted, ref, unref, watch, watchEffect } from 'vue';
-
-import { isNumber } from '@x-monorepo-core/shared/utils';
-
 import { TransitionPresets, useTransition } from '@vueuse/core';
+import { isNumber } from '@x-monorepo-core/shared/utils';
+import { computed, onMounted, ref, unref, watch, watchEffect } from 'vue';
 
 interface Props {
   autoplay?: boolean;

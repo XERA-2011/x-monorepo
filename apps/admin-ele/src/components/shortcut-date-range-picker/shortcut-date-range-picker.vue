@@ -1,12 +1,10 @@
 <script lang="ts" setup>
 import type { Dayjs } from 'dayjs';
 
-import { onMounted, ref } from 'vue';
-
+import { getRangePickerDefaultProps } from '#/utils/rangePickerProps';
 import dayjs from 'dayjs';
 import { ElDatePicker, ElRadio, ElRadioGroup } from 'element-plus';
-
-import { getRangePickerDefaultProps } from '#/utils/rangePickerProps';
+import { onMounted, ref } from 'vue';
 
 /** 快捷日期范围选择组件 */
 defineOptions({ name: 'ShortcutDateRangePicker' });

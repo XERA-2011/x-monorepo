@@ -1,9 +1,8 @@
 import type { ComputedRef } from 'vue';
 import type { RouteLocationNormalized } from 'vue-router';
 
-import { useRoute, useRouter } from 'vue-router';
-
 import { useTabbarStore } from '@x-monorepo/stores';
+import { useRoute, useRouter } from 'vue-router';
 
 export function useTabs() {
   const router = useRouter();

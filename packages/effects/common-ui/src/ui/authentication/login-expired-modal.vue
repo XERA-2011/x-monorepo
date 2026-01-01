@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import type { AuthenticationProps } from './types';
 
-import { computed, watch } from 'vue';
-
-import { $t } from '@x-monorepo/locales';
-
 import { useXAppModal } from '@x-monorepo-core/popup-ui';
 import { Slot, XAppAvatar } from '@x-monorepo-core/shadcn-ui';
+import { $t } from '@x-monorepo/locales';
+import { computed, watch } from 'vue';
 
 interface Props extends AuthenticationProps {
   avatar?: string;

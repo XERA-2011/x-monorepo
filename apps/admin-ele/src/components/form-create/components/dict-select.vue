@@ -2,10 +2,7 @@
 <script lang="ts" setup>
 import type { DictSelectProps } from '../typing';
 
-import { computed, useAttrs } from 'vue';
-
 import { getDictOptions } from '@x-monorepo/hooks';
-
 import {
   ElCheckbox,
   ElCheckboxGroup,
@@ -14,6 +11,7 @@ import {
   ElRadioGroup,
   ElSelect,
 } from 'element-plus';
+import { computed, useAttrs } from 'vue';
 
 defineOptions({ name: 'DictSelect' });
 

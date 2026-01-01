@@ -1,21 +1,17 @@
 <script lang="ts" setup>
+import type { AuthApi } from '#/api';
 import type { XAppFormSchema } from '@x-monorepo/common-ui';
 import type { Recordable } from '@x-monorepo/types';
-
-import type { AuthApi } from '#/api';
-
-import { computed, onMounted, ref } from 'vue';
-
-import { AuthenticationCodeLogin, z } from '@x-monorepo/common-ui';
-import { isTenantEnable } from '@x-monorepo/hooks';
-import { $t } from '@x-monorepo/locales';
-import { useAccessStore } from '@x-monorepo/stores';
-
-import { ElMessage } from 'element-plus';
 
 import { sendSmsCode } from '#/api';
 import { getTenantByWebsite, getTenantSimpleList } from '#/api/core/auth';
 import { useAuthStore } from '#/store';
+import { AuthenticationCodeLogin, z } from '@x-monorepo/common-ui';
+import { isTenantEnable } from '@x-monorepo/hooks';
+import { $t } from '@x-monorepo/locales';
+import { useAccessStore } from '@x-monorepo/stores';
+import { ElMessage } from 'element-plus';
+import { computed, onMounted, ref } from 'vue';
 
 defineOptions({ name: 'CodeLogin' });
 

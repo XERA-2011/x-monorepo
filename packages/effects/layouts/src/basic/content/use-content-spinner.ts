@@ -1,7 +1,6 @@
+import { preferences } from '@x-monorepo/preferences';
 import { computed, ref } from 'vue';
 import { useRouter } from 'vue-router';
-
-import { preferences } from '@x-monorepo/preferences';
 
 function useContentSpinner() {
   const spinning = ref(false);

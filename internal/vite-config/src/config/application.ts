@@ -1,11 +1,9 @@
-import type { CSSOptions, UserConfig } from 'vite';
-
 import type { DefineApplicationOptions } from '../typing';
+import type { CSSOptions, UserConfig } from 'vite';
 
 import path, { relative } from 'node:path';
 
 import { findMonorepoRoot } from '@x-monorepo/node-utils';
-
 import { NodePackageImporter } from 'sass';
 import { defineConfig, loadEnv, mergeConfig } from 'vite';
 

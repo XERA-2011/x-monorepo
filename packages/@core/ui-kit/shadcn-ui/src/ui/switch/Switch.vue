@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { SwitchRootEmits, SwitchRootProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { SwitchRoot, SwitchThumb, useForwardPropsEmits } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<SwitchRootProps & { class?: any }>();
 

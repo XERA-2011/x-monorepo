@@ -1,12 +1,7 @@
 <script setup lang="ts">
 import type { VNode } from 'vue';
 
-import { computed, ref, useAttrs, watch, watchEffect } from 'vue';
-
-import { usePagination } from '@x-monorepo/hooks';
-import { EmptyIcon, Grip, listIcons } from '@x-monorepo/icons';
-import { $t } from '@x-monorepo/locales';
-
+import { objectOmit, refDebounced, watchDebounced } from '@vueuse/core';
 import {
   Button,
   Input,
@@ -23,8 +18,10 @@ import {
   XAppPopover,
 } from '@x-monorepo-core/shadcn-ui';
 import { isFunction } from '@x-monorepo-core/shared/utils';
-
-import { objectOmit, refDebounced, watchDebounced } from '@vueuse/core';
+import { usePagination } from '@x-monorepo/hooks';
+import { EmptyIcon, Grip, listIcons } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
+import { computed, ref, useAttrs, watch, watchEffect } from 'vue';
 
 import { fetchIconsData } from './icons';
 

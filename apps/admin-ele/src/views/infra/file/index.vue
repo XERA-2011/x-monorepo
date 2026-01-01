@@ -2,17 +2,14 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { InfraFileApi } from '#/api/infra/file';
 
-import { ref } from 'vue';
-
-import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { isEmpty, openWindow } from '@x-monorepo/utils';
-
-import { useClipboard } from '@vueuse/core';
-import { ElButton, ElImage, ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteFile, deleteFileList, getFilePage } from '#/api/infra/file';
 import { $t } from '#/locales';
+import { useClipboard } from '@vueuse/core';
+import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { isEmpty, openWindow } from '@x-monorepo/utils';
+import { ElButton, ElImage, ElLoading, ElMessage } from 'element-plus';
+import { ref } from 'vue';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';

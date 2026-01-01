@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { inject } from 'vue';
-
 import { useScrollLock } from '@x-monorepo-core/composables';
+import { inject } from 'vue';
 
 useScrollLock();
 const id = inject('DISMISSABLE_DRAWER_ID');

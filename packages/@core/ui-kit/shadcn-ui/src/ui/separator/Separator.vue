@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { SeparatorProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Separator } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<SeparatorProps & { class?: any; label?: string }>();
 

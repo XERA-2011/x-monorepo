@@ -1,13 +1,10 @@
 <script setup lang="ts">
+import type { ToggleVariants } from './toggle';
 import type { ToggleEmits, ToggleProps } from 'reka-ui';
 
-import type { ToggleVariants } from './toggle';
-
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Toggle, useForwardPropsEmits } from 'reka-ui';
+import { computed } from 'vue';
 
 import { toggleVariants } from './toggle';
 

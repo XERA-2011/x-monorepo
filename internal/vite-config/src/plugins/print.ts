@@ -1,6 +1,5 @@
-import type { PluginOption } from 'vite';
-
 import type { PrintPluginOptions } from '../typing';
+import type { PluginOption } from 'vite';
 
 import { colors } from '@x-monorepo/node-utils';
 

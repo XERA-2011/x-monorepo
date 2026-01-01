@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { SegmentedItem } from '@x-monorepo-core/shadcn-ui';
 import type { SupportedLanguagesType } from '@x-monorepo/locales';
 import type {
   BreadcrumbStyleType,
@@ -12,10 +13,14 @@ import type {
   ThemeModeType,
 } from '@x-monorepo/types';
 
-import type { SegmentedItem } from '@x-monorepo-core/shadcn-ui';
-
-import { computed, ref } from 'vue';
-
+import { useClipboard } from '@vueuse/core';
+import { useXAppDrawer } from '@x-monorepo-core/popup-ui';
+import {
+  XAppButton,
+  XAppIconButton,
+  XAppSegmented,
+} from '@x-monorepo-core/shadcn-ui';
+import { globalShareState } from '@x-monorepo-core/shared/global-state';
 import { Copy, Pin, PinOff, RotateCw } from '@x-monorepo/icons';
 import { $t, loadLocaleMessages } from '@x-monorepo/locales';
 import {
@@ -24,16 +29,7 @@ import {
   resetPreferences,
   usePreferences,
 } from '@x-monorepo/preferences';
-
-import { useXAppDrawer } from '@x-monorepo-core/popup-ui';
-import {
-  XAppButton,
-  XAppIconButton,
-  XAppSegmented,
-} from '@x-monorepo-core/shadcn-ui';
-import { globalShareState } from '@x-monorepo-core/shared/global-state';
-
-import { useClipboard } from '@vueuse/core';
+import { computed, ref } from 'vue';
 
 import {
   Animation,

@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import type { SupportedLanguagesType } from '@x-monorepo/locales';
 
-import { SUPPORT_LANGUAGES } from '@x-monorepo/constants';
-import { Languages } from '@x-monorepo/icons';
-import { loadLocaleMessages } from '@x-monorepo/locales';
-import { preferences, updatePreferences } from '@x-monorepo/preferences';
-
 import {
   XAppDropdownRadioMenu,
   XAppIconButton,
 } from '@x-monorepo-core/shadcn-ui';
+import { SUPPORT_LANGUAGES } from '@x-monorepo/constants';
+import { Languages } from '@x-monorepo/icons';
+import { loadLocaleMessages } from '@x-monorepo/locales';
+import { preferences, updatePreferences } from '@x-monorepo/preferences';
 
 defineOptions({
   name: 'LanguageToggle',

@@ -1,15 +1,6 @@
 <script lang="ts" setup>
-import type { XAppFormSchema } from '@x-monorepo/common-ui';
-
 import type { AuthApi } from '#/api/core/auth';
-
-import { computed, onMounted, ref } from 'vue';
-import { useRoute } from 'vue-router';
-
-import { AuthenticationLogin, Verification, z } from '@x-monorepo/common-ui';
-import { isCaptchaEnable, isTenantEnable } from '@x-monorepo/hooks';
-import { $t } from '@x-monorepo/locales';
-import { useAccessStore } from '@x-monorepo/stores';
+import type { XAppFormSchema } from '@x-monorepo/common-ui';
 
 import {
   checkCaptcha,
@@ -19,6 +10,12 @@ import {
   socialAuthRedirect,
 } from '#/api/core/auth';
 import { useAuthStore } from '#/store';
+import { AuthenticationLogin, Verification, z } from '@x-monorepo/common-ui';
+import { isCaptchaEnable, isTenantEnable } from '@x-monorepo/hooks';
+import { $t } from '@x-monorepo/locales';
+import { useAccessStore } from '@x-monorepo/stores';
+import { computed, onMounted, ref } from 'vue';
+import { useRoute } from 'vue-router';
 
 defineOptions({ name: 'Login' });
 

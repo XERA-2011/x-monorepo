@@ -1,12 +1,10 @@
 <script lang="ts" setup>
+import type { MenuRecordRaw } from '@x-monorepo/types';
 import type { SetupContext } from 'vue';
 import type { RouteLocationNormalizedLoaded } from 'vue-router';
 
-import type { MenuRecordRaw } from '@x-monorepo/types';
-
-import { computed, onMounted, useSlots, watch } from 'vue';
-import { useRoute } from 'vue-router';
-
+import { XAppAdminLayout } from '@x-monorepo-core/layout-ui';
+import { XAppBackTop, XAppLogo } from '@x-monorepo-core/shadcn-ui';
 import { useRefresh } from '@x-monorepo/hooks';
 import { $t, i18n } from '@x-monorepo/locales';
 import {
@@ -16,9 +14,8 @@ import {
 } from '@x-monorepo/preferences';
 import { useAccessStore } from '@x-monorepo/stores';
 import { cloneDeep, mapTree } from '@x-monorepo/utils';
-
-import { XAppAdminLayout } from '@x-monorepo-core/layout-ui';
-import { XAppBackTop, XAppLogo } from '@x-monorepo-core/shadcn-ui';
+import { computed, onMounted, useSlots, watch } from 'vue';
+import { useRoute } from 'vue-router';
 
 import { Breadcrumb, CheckUpdates, Preferences } from '../widgets';
 import { LayoutContent, LayoutContentSpinner } from './content';

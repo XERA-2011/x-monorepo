@@ -1,9 +1,8 @@
 import type { App, Directive, DirectiveBinding } from 'vue';
 
-import { h, render } from 'vue';
-
 import { XAppLoading, XAppSpinner } from '@x-monorepo-core/shadcn-ui';
 import { isString } from '@x-monorepo-core/shared/utils';
+import { h, render } from 'vue';
 
 const LOADING_INSTANCE_KEY = Symbol('loading');
 const SPINNER_INSTANCE_KEY = Symbol('spinner');

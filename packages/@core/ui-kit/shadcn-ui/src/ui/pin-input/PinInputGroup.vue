@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Primitive, useForwardProps } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<PrimitiveProps & { class?: any }>();
 const delegatedProps = computed(() => {

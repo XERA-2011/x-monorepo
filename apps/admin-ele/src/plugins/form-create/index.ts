@@ -1,5 +1,11 @@
 import type { App, Component } from 'vue';
 
+// ======================= 自定义组件 =======================
+import { useApiSelect } from '#/components/form-create';
+import DictSelect from '#/components/form-create/components/dict-select.vue';
+import { useImagesUpload } from '#/components/form-create/components/use-images-upload';
+import { Tinymce } from '#/components/tinymce';
+import { FileUpload, ImageUpload } from '#/components/upload';
 import FcDesigner from '@form-create/designer';
 import formCreate from '@form-create/element-ui';
 import install from '@form-create/element-ui/auto-import';
@@ -31,13 +37,6 @@ import {
   ElText,
   ElTransfer,
 } from 'element-plus';
-
-// ======================= 自定义组件 =======================
-import { useApiSelect } from '#/components/form-create';
-import DictSelect from '#/components/form-create/components/dict-select.vue';
-import { useImagesUpload } from '#/components/form-create/components/use-images-upload';
-import { Tinymce } from '#/components/tinymce';
-import { FileUpload, ImageUpload } from '#/components/upload';
 
 const UserSelect = useApiSelect({
   name: 'UserSelect',

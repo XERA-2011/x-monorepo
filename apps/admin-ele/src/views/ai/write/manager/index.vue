@@ -2,13 +2,11 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiWriteApi } from '#/api/ai/write';
 
-import { DocAlert, Page } from '@x-monorepo/common-ui';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { deleteWrite, getWritePage } from '#/api/ai/write';
 import { $t } from '#/locales';
+import { DocAlert, Page } from '@x-monorepo/common-ui';
+import { ElLoading, ElMessage } from 'element-plus';
 
 import { useGridColumns, useGridFormSchema } from './data';
 

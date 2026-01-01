@@ -1,13 +1,6 @@
 <script lang="ts" setup>
-import type { FormRules } from 'element-plus';
-
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/erp';
-
-import { computed, reactive, ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElForm, ElFormItem, ElInput, ElMessage } from 'element-plus';
+import type { FormRules } from 'element-plus';
 
 import {
   createDemo03Grade,
@@ -15,6 +8,9 @@ import {
   updateDemo03Grade,
 } from '#/api/infra/demo/demo03/erp';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElForm, ElFormItem, ElInput, ElMessage } from 'element-plus';
+import { computed, reactive, ref } from 'vue';
 
 const emit = defineEmits(['success']);
 const getTitle = computed(() => {

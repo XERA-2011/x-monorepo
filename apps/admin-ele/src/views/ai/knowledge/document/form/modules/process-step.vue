@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import { computed, inject, onBeforeUnmount, onMounted, ref } from 'vue';
-
-import { IconifyIcon } from '@x-monorepo/icons';
-
-import { ElButton, ElProgress } from 'element-plus';
-
 import { getKnowledgeSegmentProcessList } from '#/api/ai/knowledge/segment';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { ElButton, ElProgress } from 'element-plus';
+import { computed, inject, onBeforeUnmount, onMounted, ref } from 'vue';
 
 const props = defineProps({
   modelValue: {

@@ -2,12 +2,11 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemOperateLogApi } from '#/api/system/operate-log';
 
-import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { downloadFileFromBlobPart } from '@x-monorepo/utils';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import { exportOperateLog, getOperateLogPage } from '#/api/system/operate-log';
 import { $t } from '#/locales';
+import { DocAlert, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart } from '@x-monorepo/utils';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Detail from './modules/detail.vue';

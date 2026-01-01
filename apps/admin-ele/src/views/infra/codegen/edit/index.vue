@@ -1,16 +1,13 @@
 <script lang="ts" setup>
 import type { InfraCodegenApi } from '#/api/infra/codegen';
 
-import { ref, unref } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-
-import { Page } from '@x-monorepo/common-ui';
-import { useTabs } from '@x-monorepo/hooks';
-
-import { ElButton, ElLoading, ElMessage, ElStep, ElSteps } from 'element-plus';
-
 import { getCodegenTable, updateCodegenTable } from '#/api/infra/codegen';
 import { $t } from '#/locales';
+import { Page } from '@x-monorepo/common-ui';
+import { useTabs } from '@x-monorepo/hooks';
+import { ElButton, ElLoading, ElMessage, ElStep, ElSteps } from 'element-plus';
+import { ref, unref } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 
 import BasicInfo from '../modules/basic-info.vue';
 import ColumnInfo from '../modules/column-info.vue';

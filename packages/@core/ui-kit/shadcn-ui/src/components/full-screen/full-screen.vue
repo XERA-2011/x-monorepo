@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { Maximize, Minimize } from '@x-monorepo-core/icons';
-
 import { useFullscreen } from '@vueuse/core';
+import { Maximize, Minimize } from '@x-monorepo-core/icons';
 
 import { XAppIconButton } from '../button';
 

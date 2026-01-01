@@ -1,14 +1,17 @@
 <script lang="ts" setup>
+import type { Demo03StudentApi } from '#/api/infra/demo/demo03/normal';
 import type { FormRules } from 'element-plus';
 
-import type { Demo03StudentApi } from '#/api/infra/demo/demo03/normal';
-
-import { computed, reactive, ref } from 'vue';
-
+import {
+  createDemo03Student,
+  getDemo03Student,
+  updateDemo03Student,
+} from '#/api/infra/demo/demo03/normal';
+import { Tinymce as RichTextarea } from '#/components/tinymce';
+import { $t } from '#/locales';
 import { useXAppModal } from '@x-monorepo/common-ui';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictOptions } from '@x-monorepo/hooks';
-
 import {
   ElDatePicker,
   ElForm,
@@ -20,14 +23,7 @@ import {
   ElTabPane,
   ElTabs,
 } from 'element-plus';
-
-import {
-  createDemo03Student,
-  getDemo03Student,
-  updateDemo03Student,
-} from '#/api/infra/demo/demo03/normal';
-import { Tinymce as RichTextarea } from '#/components/tinymce';
-import { $t } from '#/locales';
+import { computed, reactive, ref } from 'vue';
 
 import Demo03CourseForm from './demo03-course-form.vue';
 import Demo03GradeForm from './demo03-grade-form.vue';

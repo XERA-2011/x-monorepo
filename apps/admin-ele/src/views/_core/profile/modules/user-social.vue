@@ -2,16 +2,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemSocialUserApi } from '#/api/system/social/user';
 
-import { computed, onMounted, ref } from 'vue';
-import { useRoute } from 'vue-router';
-
-import { confirm } from '@x-monorepo/common-ui';
-import { DICT_TYPE, SystemUserSocialTypeEnum } from '@x-monorepo/constants';
-import { getDictLabel } from '@x-monorepo/hooks';
-import { getUrlValue } from '@x-monorepo/utils';
-
-import { ElButton, ElCard, ElImage, ElMessage } from 'element-plus';
-
 import { useXAppVxeGrid } from '#/adapter/vxe-table';
 import { socialAuthRedirect } from '#/api/core/auth';
 import {
@@ -20,6 +10,13 @@ import {
   socialUnbind,
 } from '#/api/system/social/user';
 import { $t } from '#/locales';
+import { confirm } from '@x-monorepo/common-ui';
+import { DICT_TYPE, SystemUserSocialTypeEnum } from '@x-monorepo/constants';
+import { getDictLabel } from '@x-monorepo/hooks';
+import { getUrlValue } from '@x-monorepo/utils';
+import { ElButton, ElCard, ElImage, ElMessage } from 'element-plus';
+import { computed, onMounted, ref } from 'vue';
+import { useRoute } from 'vue-router';
 
 const emit = defineEmits<{
   (e: 'update:activeName', v: string): void;

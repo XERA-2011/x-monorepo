@@ -1,6 +1,11 @@
 <script lang="ts" setup>
 import type { ThemeModeType } from '@x-monorepo/types';
 
+import {
+  ToggleGroup,
+  ToggleGroupItem,
+  XAppTooltip,
+} from '@x-monorepo-core/shadcn-ui';
 import { MoonStar, Sun, SunMoon } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';
 import {
@@ -8,12 +13,6 @@ import {
   updatePreferences,
   usePreferences,
 } from '@x-monorepo/preferences';
-
-import {
-  ToggleGroup,
-  ToggleGroupItem,
-  XAppTooltip,
-} from '@x-monorepo-core/shadcn-ui';
 
 import ThemeButton from './theme-button.vue';
 

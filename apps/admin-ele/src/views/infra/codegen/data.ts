@@ -1,21 +1,18 @@
-import type { Recordable } from '@x-monorepo/types';
-
 import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { InfraCodegenApi } from '#/api/infra/codegen';
 import type { SystemMenuApi } from '#/api/system/menu';
-
-import { h } from 'vue';
-
-import { DICT_TYPE } from '@x-monorepo/constants';
-import { getDictOptions } from '@x-monorepo/hooks';
-import { IconifyIcon } from '@x-monorepo/icons';
-import { handleTree } from '@x-monorepo/utils';
+import type { Recordable } from '@x-monorepo/types';
 
 import { getDataSourceConfigList } from '#/api/infra/data-source-config';
 import { getMenuList } from '#/api/system/menu';
 import { $t } from '#/locales';
 import { getRangePickerDefaultProps } from '#/utils';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { handleTree } from '@x-monorepo/utils';
+import { h } from 'vue';
 
 /** 导入数据库表的表单 */
 export function useImportTableFormSchema(): XAppFormSchema[] {

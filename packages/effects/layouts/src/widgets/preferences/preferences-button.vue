@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { Settings } from '@x-monorepo/icons';
-
 import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
+import { Settings } from '@x-monorepo/icons';
 
 import Preferences from './preferences.vue';
 

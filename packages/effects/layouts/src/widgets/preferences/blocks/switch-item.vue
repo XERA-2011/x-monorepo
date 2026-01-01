@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { useSlots } from 'vue';
-
-import { CircleHelp } from '@x-monorepo/icons';
-
 import { Switch, XAppTooltip } from '@x-monorepo-core/shadcn-ui';
+import { CircleHelp } from '@x-monorepo/icons';
+import { useSlots } from 'vue';
 
 defineOptions({
   name: 'PreferenceSwitchItem',

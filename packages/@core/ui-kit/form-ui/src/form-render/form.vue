@@ -1,15 +1,12 @@
 <script setup lang="ts">
-import type { GenericObject } from 'vee-validate';
-import type { ZodTypeAny } from 'zod';
-
 import type {
   FormCommonConfig,
   FormRenderProps,
   FormSchema,
   FormShape,
 } from '../types';
-
-import { computed } from 'vue';
+import type { GenericObject } from 'vee-validate';
+import type { ZodTypeAny } from 'zod';
 
 import { Form } from '@x-monorepo-core/shadcn-ui';
 import {
@@ -18,6 +15,7 @@ import {
   isString,
   mergeWithArrayOverride,
 } from '@x-monorepo-core/shared/utils';
+import { computed } from 'vue';
 
 import { provideFormRenderProps } from './context';
 import { useExpandable } from './expandable';

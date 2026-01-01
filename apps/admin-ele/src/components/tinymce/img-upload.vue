@@ -1,13 +1,10 @@
 <script lang="ts" setup>
 import type { UploadRequestOptions } from 'element-plus';
 
-import { computed, ref } from 'vue';
-
-import { $t } from '@x-monorepo/locales';
-
-import { ElButton, ElUpload } from 'element-plus';
-
 import { useUpload } from '#/components/upload/use-upload';
+import { $t } from '@x-monorepo/locales';
+import { ElButton, ElUpload } from 'element-plus';
+import { computed, ref } from 'vue';
 
 defineOptions({ name: 'TinymceImageUpload' });
 

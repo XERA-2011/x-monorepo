@@ -2,12 +2,10 @@
 import type { InfraCodegenApi } from '#/api/infra/codegen';
 import type { SystemDictTypeApi } from '#/api/system/dict/type';
 
-import { nextTick, onMounted, ref, watch } from 'vue';
-
-import { ElCheckbox, ElInput, ElOption, ElSelect } from 'element-plus';
-
 import { useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getSimpleDictTypeList } from '#/api/system/dict/type';
+import { ElCheckbox, ElInput, ElOption, ElSelect } from 'element-plus';
+import { nextTick, onMounted, ref, watch } from 'vue';
 
 import { useCodegenColumnTableColumns } from '../data';
 

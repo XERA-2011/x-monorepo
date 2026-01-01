@@ -1,23 +1,21 @@
-import { createApp, watchEffect } from 'vue';
-import VueDOMPurifyHTML from 'vue-dompurify-html';
-
+import { $t, setupI18n } from '#/locales';
+import { setupFormCreate } from '#/plugins/form-create';
+import { useTitle } from '@vueuse/core';
 import { registerAccessDirective } from '@x-monorepo/access';
 import { registerLoadingDirective } from '@x-monorepo/common-ui';
 import { preferences } from '@x-monorepo/preferences';
 import { initStores } from '@x-monorepo/stores';
-import '@x-monorepo/styles';
-import '@x-monorepo/styles/ele';
-
-import { useTitle } from '@vueuse/core';
 import { ElLoading } from 'element-plus';
-
-import { $t, setupI18n } from '#/locales';
-import { setupFormCreate } from '#/plugins/form-create';
+import { createApp, watchEffect } from 'vue';
+import VueDOMPurifyHTML from 'vue-dompurify-html';
 
 import { initComponentAdapter } from './adapter/component';
 import { initSetupXAppForm } from './adapter/form';
 import App from './app.vue';
 import { router } from './router';
+
+import '@x-monorepo/styles';
+import '@x-monorepo/styles/ele';
 
 async function bootstrap(namespace: string) {
   // 初始化组件适配器

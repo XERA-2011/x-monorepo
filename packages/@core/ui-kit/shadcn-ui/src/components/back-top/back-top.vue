@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import type { BacktopProps } from './backtop';
 
-import { computed } from 'vue';
-
 import { ArrowUpToLine } from '@x-monorepo-core/icons';
+import { computed } from 'vue';
 
 import { XAppButton } from '../button';
 import { useBackTop } from './use-backtop';

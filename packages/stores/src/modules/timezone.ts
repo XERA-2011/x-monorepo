@@ -1,12 +1,10 @@
-import { ref, unref } from 'vue';
-
 import { DEFAULT_TIME_ZONE_OPTIONS } from '@x-monorepo-core/preferences';
 import {
   getCurrentTimezone,
   setCurrentTimezone,
 } from '@x-monorepo-core/shared/utils';
-
 import { acceptHMRUpdate, defineStore } from 'pinia';
+import { ref, unref } from 'vue';
 
 interface TimezoneHandler {
   getTimezone?: () => Promise<null | string | undefined>;

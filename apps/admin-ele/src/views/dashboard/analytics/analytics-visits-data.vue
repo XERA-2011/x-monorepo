@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import type { EchartsUIType } from '@x-monorepo/plugins/echarts';
 
-import { onMounted, ref } from 'vue';
-
 import { EchartsUI, useEcharts } from '@x-monorepo/plugins/echarts';
+import { onMounted, ref } from 'vue';
 
 const chartRef = ref<EchartsUIType>();
 const { renderEcharts } = useEcharts(chartRef);

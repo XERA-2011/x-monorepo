@@ -1,6 +1,5 @@
-import type { PluginOption } from 'vite';
-
 import type { ArchiverPluginOptions } from '../typing';
+import type { PluginOption } from 'vite';
 
 import fs from 'node:fs';
 import fsp from 'node:fs/promises';

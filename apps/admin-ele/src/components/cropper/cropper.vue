@@ -1,12 +1,10 @@
 <script lang="ts" setup>
-import type { CSSProperties } from 'vue';
-
 import type { CropperProps } from './typing';
-
-import { computed, onMounted, onUnmounted, ref, unref, useAttrs } from 'vue';
+import type { CSSProperties } from 'vue';
 
 import { useDebounceFn } from '@vueuse/core';
 import Cropper from 'cropperjs';
+import { computed, onMounted, onUnmounted, ref, unref, useAttrs } from 'vue';
 
 import { defaultOptions } from './typing';
 

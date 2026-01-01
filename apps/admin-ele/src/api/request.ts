@@ -3,6 +3,7 @@
  */
 import type { RequestClientOptions } from '@x-monorepo/request';
 
+import { useAuthStore } from '#/store';
 import { isTenantEnable, useAppConfig } from '@x-monorepo/hooks';
 import { preferences } from '@x-monorepo/preferences';
 import {
@@ -13,10 +14,7 @@ import {
 } from '@x-monorepo/request';
 import { useAccessStore } from '@x-monorepo/stores';
 import { createApiEncrypt } from '@x-monorepo/utils';
-
 import { ElMessage } from 'element-plus';
-
-import { useAuthStore } from '#/store';
 
 import { refreshTokenApi } from './core';
 

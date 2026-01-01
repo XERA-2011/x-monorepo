@@ -1,9 +1,8 @@
+import type { ComponentType } from './component';
 import type {
   XAppFormSchema as FormSchema,
   XAppFormProps,
 } from '@x-monorepo/common-ui';
-
-import type { ComponentType } from './component';
 
 import {
   setupXAppForm,

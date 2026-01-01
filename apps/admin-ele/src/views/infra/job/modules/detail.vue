@@ -1,12 +1,10 @@
 <script lang="ts" setup>
 import type { InfraJobApi } from '#/api/infra/job';
 
-import { ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
 import { getJob, getJobNextTimes } from '#/api/infra/job';
 import { useDescription } from '#/components/description';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ref } from 'vue';
 
 import { useDetailSchema } from '../data';
 

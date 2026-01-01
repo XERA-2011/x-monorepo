@@ -1,12 +1,11 @@
 <!-- dall3 -->
 <script setup lang="ts">
-import type { ImageModel, ImageSize } from '@x-monorepo/constants';
-
 import type { AiImageApi } from '#/api/ai/image';
 import type { AiModelModelApi } from '#/api/ai/model/model';
+import type { ImageModel, ImageSize } from '@x-monorepo/constants';
 
-import { ref } from 'vue';
-
+import { midjourneyImagine } from '#/api/ai/image';
+import { ImageUpload } from '#/components/upload';
 import { confirm } from '@x-monorepo/common-ui';
 import {
   AiPlatformEnum,
@@ -16,7 +15,6 @@ import {
   MidjourneyVersions,
   NijiVersionList,
 } from '@x-monorepo/constants';
-
 import {
   ElButton,
   ElImage,
@@ -25,9 +23,7 @@ import {
   ElSelect,
   ElSpace,
 } from 'element-plus';
-
-import { midjourneyImagine } from '#/api/ai/image';
-import { ImageUpload } from '#/components/upload';
+import { ref } from 'vue';
 
 const props = defineProps({
   models: {

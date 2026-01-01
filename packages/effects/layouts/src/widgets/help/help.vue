@@ -1,11 +1,9 @@
 <script lang="ts" setup>
-import { $t } from '@x-monorepo/locales';
-import { openWindow } from '@x-monorepo/utils';
-
+import { useMagicKeys, whenever } from '@vueuse/core';
 import { useXAppModal } from '@x-monorepo-core/popup-ui';
 import { Badge, XAppButton, XAppButtonGroup } from '@x-monorepo-core/shadcn-ui';
-
-import { useMagicKeys, whenever } from '@vueuse/core';
+import { $t } from '@x-monorepo/locales';
+import { openWindow } from '@x-monorepo/utils';
 
 defineOptions({
   name: 'Help',

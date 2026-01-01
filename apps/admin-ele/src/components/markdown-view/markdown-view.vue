@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import type { MarkdownViewProps } from './typing';
 
-import { computed, onMounted, ref } from 'vue';
-
-import { MarkdownIt } from '@x-monorepo/plugins/markmap';
-
 import { useClipboard } from '@vueuse/core';
+import { MarkdownIt } from '@x-monorepo/plugins/markmap';
 import { ElMessage } from 'element-plus';
 import hljs from 'highlight.js';
+import { computed, onMounted, ref } from 'vue';
 
 import 'highlight.js/styles/vs2015.min.css';
 

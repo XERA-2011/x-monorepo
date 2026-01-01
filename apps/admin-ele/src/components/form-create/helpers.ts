@@ -1,14 +1,10 @@
+import type { Menu } from '#/components/form-create/typing';
 import type { Rule } from '@form-create/element-ui';
-
 import type { Ref } from 'vue';
 
-import type { Menu } from '#/components/form-create/typing';
-
-import { isRef, nextTick, onMounted } from 'vue';
-
-import formCreate from '@form-create/element-ui';
-
 import { apiSelectRule } from '#/components/form-create/rules/data';
+import formCreate from '@form-create/element-ui';
+import { isRef, nextTick, onMounted } from 'vue';
 
 import {
   useDictSelectRule,

@@ -1,12 +1,9 @@
 <script lang="ts" setup>
 import type { CropendResult, CropperModalProps, CropperType } from './typing';
 
-import { ref } from 'vue';
-
 import { useXAppModal } from '@x-monorepo/common-ui';
 import { $t } from '@x-monorepo/locales';
 import { dataURLtoBlob, isFunction } from '@x-monorepo/utils';
-
 import {
   ElAvatar,
   ElButton,
@@ -15,6 +12,7 @@ import {
   ElTooltip,
   ElUpload,
 } from 'element-plus';
+import { ref } from 'vue';
 
 import CropperImage from './cropper.vue';
 

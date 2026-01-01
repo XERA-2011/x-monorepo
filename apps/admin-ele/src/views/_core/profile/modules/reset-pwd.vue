@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import type { Recordable } from '@x-monorepo/types';
 
-import { $t } from '@x-monorepo/locales';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm, z } from '#/adapter/form';
 import { updateUserPassword } from '#/api/system/user/profile';
+import { $t } from '@x-monorepo/locales';
+import { ElMessage } from 'element-plus';
 
 const [Form, formApi] = useXAppForm({
   commonConfig: {

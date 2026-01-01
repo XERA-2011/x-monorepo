@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import type { MenuRecordRaw } from '@x-monorepo-core/typings';
-
 import type { NormalMenuProps } from './normal-menu';
+import type { MenuRecordRaw } from '@x-monorepo-core/typings';
 
 import { useNamespace } from '@x-monorepo-core/composables';
 import { XAppIcon } from '@x-monorepo-core/shadcn-ui';

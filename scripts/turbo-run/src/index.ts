@@ -1,5 +1,4 @@
 import { colors, consola } from '@x-monorepo/node-utils';
-
 import { cac } from 'cac';
 
 import { run } from './run';

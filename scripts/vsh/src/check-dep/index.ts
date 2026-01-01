@@ -1,7 +1,6 @@
 import type { CAC } from 'cac';
 
 import { getPackages } from '@x-monorepo/node-utils';
-
 import depcheck from 'depcheck';
 
 // 默认配置

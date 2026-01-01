@@ -4,11 +4,10 @@
 import type { SystemDeptApi } from '#/api/system/dept';
 import type { SystemUserApi } from '#/api/system/user';
 
-import { computed, ref } from 'vue';
-
+import { getSimpleDeptList } from '#/api/system/dept';
+import { getUserPage } from '#/api/system/user';
 import { useXAppModal } from '@x-monorepo/common-ui';
 import { handleTree } from '@x-monorepo/utils';
-
 import {
   ElButton,
   ElCol,
@@ -19,9 +18,7 @@ import {
   ElTransfer,
   ElTree,
 } from 'element-plus';
-
-import { getSimpleDeptList } from '#/api/system/dept';
-import { getUserPage } from '#/api/system/user';
+import { computed, ref } from 'vue';
 
 // 部门树节点接口
 interface DeptTreeNode {

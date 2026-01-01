@@ -1,7 +1,6 @@
-import type { AxiosRequestHeaders, InternalAxiosRequestConfig } from 'axios';
-
 import type { RequestClient } from '../request-client';
 import type { SseRequestOptions } from '../types';
+import type { AxiosRequestHeaders, InternalAxiosRequestConfig } from 'axios';
 
 /**
  * SSE模块

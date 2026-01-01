@@ -2,15 +2,12 @@
 import type { VxeTableInstance } from '#/adapter/vxe-table';
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
-import { h, ref, watch } from 'vue';
-
-import { Plus } from '@x-monorepo/icons';
-
-import { ElButton, ElInput } from 'element-plus';
-
 import { VxeColumn, VxeTable } from '#/adapter/vxe-table';
 import { getDemo03CourseListByStudentId } from '#/api/infra/demo/demo03/inner';
 import { $t } from '#/locales';
+import { Plus } from '@x-monorepo/icons';
+import { ElButton, ElInput } from 'element-plus';
+import { h, ref, watch } from 'vue';
 
 const props = defineProps<{
   studentId?: number; // 学生编号（主表的关联字段）

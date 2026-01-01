@@ -1,10 +1,8 @@
 <script setup lang="ts">
+import type { FormSchema, MaybeComponentProps } from '../types';
 import type { ZodType } from 'zod';
 
-import type { FormSchema, MaybeComponentProps } from '../types';
-
-import { computed, nextTick, onUnmounted, useTemplateRef, watch } from 'vue';
-
+import { toTypedSchema } from '@vee-validate/zod';
 import { CircleAlert } from '@x-monorepo-core/icons';
 import {
   FormControl,
@@ -21,9 +19,8 @@ import {
   isObject,
   isString,
 } from '@x-monorepo-core/shared/utils';
-
-import { toTypedSchema } from '@vee-validate/zod';
 import { useFieldError, useFormValues } from 'vee-validate';
+import { computed, nextTick, onUnmounted, useTemplateRef, watch } from 'vue';
 
 import { injectComponentRefMap } from '../use-form-context';
 import { injectRenderFormProps, useFormContext } from './context';

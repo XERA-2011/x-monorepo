@@ -1,6 +1,5 @@
-import type { RouteRecordRaw } from 'vue-router';
-
 import type { MenuRecordRaw } from '@x-monorepo-core/typings';
+import type { RouteRecordRaw } from 'vue-router';
 
 import { acceptHMRUpdate, defineStore } from 'pinia';
 

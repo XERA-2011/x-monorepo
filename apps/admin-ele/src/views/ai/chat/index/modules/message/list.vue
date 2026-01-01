@@ -1,21 +1,17 @@
 <script setup lang="ts">
-import type { PropType } from 'vue';
-
 import type { AiChatConversationApi } from '#/api/ai/chat/conversation';
 import type { AiChatMessageApi } from '#/api/ai/chat/message';
+import type { PropType } from 'vue';
 
-import { computed, nextTick, onMounted, ref, toRefs } from 'vue';
-
+import { deleteChatMessage } from '#/api/ai/chat/message';
+import { MarkdownView } from '#/components/markdown-view';
+import { useClipboard } from '@vueuse/core';
 import { IconifyIcon, SvgGptIcon } from '@x-monorepo/icons';
 import { preferences } from '@x-monorepo/preferences';
 import { useUserStore } from '@x-monorepo/stores';
 import { formatDateTime } from '@x-monorepo/utils';
-
-import { useClipboard } from '@vueuse/core';
 import { ElAvatar, ElButton, ElMessage } from 'element-plus';
-
-import { deleteChatMessage } from '#/api/ai/chat/message';
-import { MarkdownView } from '#/components/markdown-view';
+import { computed, nextTick, onMounted, ref, toRefs } from 'vue';
 
 import MessageFiles from './files.vue';
 import MessageKnowledge from './knowledge.vue';

@@ -2,15 +2,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiKnowledgeDocumentApi } from '#/api/ai/knowledge/document';
 
-import { onMounted } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-
-import { confirm, Page } from '@x-monorepo/common-ui';
-import { DICT_TYPE } from '@x-monorepo/constants';
-import { getDictLabel } from '@x-monorepo/hooks';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteKnowledgeDocument,
@@ -18,6 +9,12 @@ import {
   updateKnowledgeDocumentStatus,
 } from '#/api/ai/knowledge/document';
 import { $t } from '#/locales';
+import { confirm, Page } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel } from '@x-monorepo/hooks';
+import { ElLoading, ElMessage } from 'element-plus';
+import { onMounted } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 
 import { useGridColumns, useGridFormSchema } from './data';
 

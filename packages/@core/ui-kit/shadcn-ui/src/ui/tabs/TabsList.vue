@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { TabsListProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { TabsList } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<TabsListProps & { class?: any }>();
 

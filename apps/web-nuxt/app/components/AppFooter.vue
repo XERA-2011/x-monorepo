@@ -3,11 +3,17 @@ const year = new Date().getFullYear();
 </script>
 
 <template>
-  <footer class="relative z-10 mt-auto border-t-2 border-[#2D1B4E] bg-[rgba(9,0,20,0.9)] py-8">
+  <footer
+    class="relative z-10 mt-auto border-t-2 border-[#2D1B4E] bg-[rgba(9,0,20,0.9)] py-8"
+  >
     <!-- 霓虹顶部装饰线 -->
-    <div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-[#FF00FF] via-[#00FFFF] to-[#FF9900]"></div>
+    <div
+      class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-[#FF00FF] via-[#00FFFF] to-[#FF9900]"
+    ></div>
 
-    <UContainer class="flex flex-col items-center justify-between gap-6 md:flex-row">
+    <UContainer
+      class="flex flex-col items-center justify-between gap-6 md:flex-row"
+    >
       <!-- 终端风格版权信息 -->
       <div class="font-mono text-sm text-[#E0E0E0]/70">
         <span class="text-[#FF00FF]">&gt;</span> © {{ year }} XERA

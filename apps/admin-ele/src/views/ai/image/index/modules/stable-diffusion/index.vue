@@ -3,8 +3,7 @@
 import type { AiImageApi } from '#/api/ai/image';
 import type { AiModelModelApi } from '#/api/ai/model/model';
 
-import { ref } from 'vue';
-
+import { drawImage } from '#/api/ai/image';
 import { alert, confirm } from '@x-monorepo/common-ui';
 import {
   AiPlatformEnum,
@@ -13,7 +12,6 @@ import {
   StableDiffusionSamplers,
   StableDiffusionStylePresets,
 } from '@x-monorepo/constants';
-
 import {
   ElButton,
   ElInputNumber,
@@ -22,8 +20,7 @@ import {
   ElSelect,
   ElSpace,
 } from 'element-plus';
-
-import { drawImage } from '#/api/ai/image';
+import { ref } from 'vue';
 
 const props = defineProps({
   models: {

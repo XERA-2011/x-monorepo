@@ -1,6 +1,5 @@
-import { defineComponent } from 'vue';
-
 import ImageUpload from '#/components/upload/image-upload.vue';
+import { defineComponent } from 'vue';
 
 export function useImagesUpload() {
   return defineComponent({

@@ -1,13 +1,11 @@
 <script lang="ts" setup>
 import type { XAppFormSchema } from '#/adapter/form';
 
-import { computed, onMounted, reactive, ref } from 'vue';
-import { useRoute } from 'vue-router';
-
-import { AuthenticationAuthTitle, XAppButton } from '@x-monorepo/common-ui';
-
 import { useXAppForm } from '#/adapter/form';
 import { authorize, getAuthorize } from '#/api/system/oauth2/open';
+import { AuthenticationAuthTitle, XAppButton } from '@x-monorepo/common-ui';
+import { computed, onMounted, reactive, ref } from 'vue';
+import { useRoute } from 'vue-router';
 
 defineOptions({ name: 'SSOLogin' });
 

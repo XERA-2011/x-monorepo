@@ -1,12 +1,6 @@
 <script lang="ts" setup>
 import type { SystemSmsChannelApi } from '#/api/system/sms/channel';
 
-import { computed, ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import {
   createSmsChannel,
@@ -14,6 +8,9 @@ import {
   updateSmsChannel,
 } from '#/api/system/sms/channel';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage } from 'element-plus';
+import { computed, ref } from 'vue';
 
 import { useFormSchema } from '../data';
 

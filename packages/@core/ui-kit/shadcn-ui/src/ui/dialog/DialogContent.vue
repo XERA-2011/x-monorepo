@@ -1,14 +1,11 @@
 <script setup lang="ts">
+import type { ClassType } from '@x-monorepo-core/typings';
 import type { DialogContentEmits, DialogContentProps } from 'reka-ui';
 
-import type { ClassType } from '@x-monorepo-core/typings';
-
-import { computed, ref } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { X } from 'lucide-vue-next';
 import { DialogClose, DialogContent, useForwardPropsEmits } from 'reka-ui';
+import { computed, ref } from 'vue';
 
 import DialogOverlay from './DialogOverlay.vue';
 

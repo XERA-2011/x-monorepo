@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import type { Component } from 'vue';
-
 import type { ThemeModeType } from '@x-monorepo/types';
+import type { Component } from 'vue';
 
 import { MoonStar, Sun, SunMoon } from '@x-monorepo/icons';
 import { $t } from '@x-monorepo/locales';

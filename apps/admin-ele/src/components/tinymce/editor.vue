@@ -2,6 +2,10 @@
 import type { IPropTypes } from '@tinymce/tinymce-vue/lib/cjs/main/ts/components/EditorPropTypes';
 import type { Editor as EditorType } from 'tinymce/tinymce';
 
+import { useUpload } from '#/components/upload/use-upload';
+import Editor from '@tinymce/tinymce-vue';
+import { preferences, usePreferences } from '@x-monorepo/preferences';
+import { buildShortUUID, isNumber } from '@x-monorepo/utils';
 import {
   computed,
   nextTick,
@@ -14,13 +18,6 @@ import {
   useAttrs,
   watch,
 } from 'vue';
-
-import { preferences, usePreferences } from '@x-monorepo/preferences';
-import { buildShortUUID, isNumber } from '@x-monorepo/utils';
-
-import Editor from '@tinymce/tinymce-vue';
-
-import { useUpload } from '#/components/upload/use-upload';
 
 import { bindHandlers } from './helper';
 import ImgUpload from './img-upload.vue';

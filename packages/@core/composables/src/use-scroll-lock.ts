@@ -1,13 +1,12 @@
 import {
-  getScrollbarWidth,
-  needsScrollbar,
-} from '@x-monorepo-core/shared/utils';
-
-import {
   useScrollLock as _useScrollLock,
   tryOnBeforeUnmount,
   tryOnMounted,
 } from '@vueuse/core';
+import {
+  getScrollbarWidth,
+  needsScrollbar,
+} from '@x-monorepo-core/shared/utils';
 
 export const SCROLL_FIXED_CLASS = `_scroll__fixed_`;
 

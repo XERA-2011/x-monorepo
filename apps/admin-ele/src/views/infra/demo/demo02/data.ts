@@ -2,10 +2,9 @@ import type { XAppFormSchema } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { Demo02CategoryApi } from '#/api/infra/demo/demo02';
 
-import { handleTree } from '@x-monorepo/utils';
-
 import { getDemo02CategoryList } from '#/api/infra/demo/demo02';
 import { getRangePickerDefaultProps } from '#/utils';
+import { handleTree } from '@x-monorepo/utils';
 
 /** 新增/修改的表单 */
 export function useFormSchema(): XAppFormSchema[] {

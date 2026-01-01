@@ -1,6 +1,5 @@
 import type Cropper from 'cropperjs';
 import type { ButtonProps } from 'element-plus';
-
 import type { CSSProperties } from 'vue';
 
 export interface apiFunParams {

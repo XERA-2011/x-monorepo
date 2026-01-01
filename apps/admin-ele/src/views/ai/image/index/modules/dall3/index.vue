@@ -1,12 +1,10 @@
 <!-- dall3 -->
 <script setup lang="ts">
-import type { ImageModel, ImageSize } from '@x-monorepo/constants';
-
 import type { AiImageApi } from '#/api/ai/image';
 import type { AiModelModelApi } from '#/api/ai/model/model';
+import type { ImageModel, ImageSize } from '@x-monorepo/constants';
 
-import { ref } from 'vue';
-
+import { drawImage } from '#/api/ai/image';
 import { confirm } from '@x-monorepo/common-ui';
 import {
   AiPlatformEnum,
@@ -15,10 +13,8 @@ import {
   Dall3StyleList,
   ImageHotWords,
 } from '@x-monorepo/constants';
-
 import { ElButton, ElImage, ElMessage, ElSpace } from 'element-plus';
-
-import { drawImage } from '#/api/ai/image';
+import { ref } from 'vue';
 
 const props = defineProps({
   models: {

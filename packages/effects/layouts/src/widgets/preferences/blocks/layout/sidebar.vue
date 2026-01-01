@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { LayoutType } from '@x-monorepo/types';
 
-import { onMounted } from 'vue';
-
 import { $t } from '@x-monorepo/locales';
+import { onMounted } from 'vue';
 
 import CheckboxItem from '../checkbox-item.vue';
 import NumberFieldItem from '../number-field-item.vue';

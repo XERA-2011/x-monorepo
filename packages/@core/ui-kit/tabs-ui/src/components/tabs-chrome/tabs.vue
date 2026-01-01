@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import type { TabDefinition } from '@x-monorepo-core/typings';
-
 import type { TabConfig, TabsProps } from '../../types';
-
-import { computed, ref } from 'vue';
+import type { TabDefinition } from '@x-monorepo-core/typings';
 
 import { Pin, X } from '@x-monorepo-core/icons';
 import { XAppContextMenu, XAppIcon } from '@x-monorepo-core/shadcn-ui';
+import { computed, ref } from 'vue';
 
 interface Props extends TabsProps {}
 

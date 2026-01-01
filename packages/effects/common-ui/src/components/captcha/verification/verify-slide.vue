@@ -1,6 +1,9 @@
 <script lang="ts" setup>
 import type { VerificationProps } from './typing';
 
+import { AES } from '@x-monorepo-core/shared/utils';
+import { IconifyIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
 /**
  * VerifySlide
  * @description 滑块
@@ -14,11 +17,6 @@ import {
   ref,
   toRefs,
 } from 'vue';
-
-import { IconifyIcon } from '@x-monorepo/icons';
-import { $t } from '@x-monorepo/locales';
-
-import { AES } from '@x-monorepo-core/shared/utils';
 
 import { resetSize } from './utils/util';
 

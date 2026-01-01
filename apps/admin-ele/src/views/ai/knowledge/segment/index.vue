@@ -2,15 +2,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { AiKnowledgeSegmentApi } from '#/api/ai/knowledge/segment';
 
-import { onMounted } from 'vue';
-import { useRoute } from 'vue-router';
-
-import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
-import { DICT_TYPE } from '@x-monorepo/constants';
-import { getDictLabel } from '@x-monorepo/hooks';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteKnowledgeSegment,
@@ -18,6 +9,12 @@ import {
   updateKnowledgeSegmentStatus,
 } from '#/api/ai/knowledge/segment';
 import { $t } from '#/locales';
+import { confirm, Page, useXAppModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictLabel } from '@x-monorepo/hooks';
+import { ElLoading, ElMessage } from 'element-plus';
+import { onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 
 import { useGridColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';

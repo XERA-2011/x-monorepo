@@ -1,9 +1,7 @@
 <script lang="ts" setup>
-import { inject } from 'vue';
-
 import { IconifyIcon } from '@x-monorepo/icons';
-
 import { ElImage } from 'element-plus';
+import { inject } from 'vue';
 
 defineOptions({ name: 'AiMusicSongCardIndex' });
 

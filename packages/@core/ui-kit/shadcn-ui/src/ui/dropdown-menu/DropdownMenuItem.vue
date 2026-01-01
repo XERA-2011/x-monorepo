@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { DropdownMenuItemProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { DropdownMenuItem, useForwardProps } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<
   DropdownMenuItemProps & { class?: any; inset?: boolean }

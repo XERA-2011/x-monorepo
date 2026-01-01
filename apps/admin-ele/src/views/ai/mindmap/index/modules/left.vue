@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { reactive, ref } from 'vue';
-
 import { MindMapContentExample } from '@x-monorepo/constants';
-
 import { ElButton, ElInput } from 'element-plus';
+import { reactive, ref } from 'vue';
 
 defineProps<{
   isGenerating: boolean;

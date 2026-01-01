@@ -4,7 +4,6 @@ import type { OperateLogProps } from './typing';
 import { DICT_TYPE } from '@x-monorepo/constants';
 import { getDictLabel, getDictObj } from '@x-monorepo/hooks';
 import { formatDateTime } from '@x-monorepo/utils';
-
 import { ElTag, ElTimeline, ElTimelineItem } from 'element-plus';
 
 defineOptions({ name: 'OperateLogV2' });

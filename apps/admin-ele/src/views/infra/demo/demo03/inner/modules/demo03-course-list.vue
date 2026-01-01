@@ -2,10 +2,9 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { Demo03StudentApi } from '#/api/infra/demo/demo03/inner';
 
-import { nextTick, watch } from 'vue';
-
 import { useXAppVxeGrid } from '#/adapter/vxe-table';
 import { getDemo03CourseListByStudentId } from '#/api/infra/demo/demo03/inner';
+import { nextTick, watch } from 'vue';
 
 import { useDemo03CourseGridColumns } from '../data';
 

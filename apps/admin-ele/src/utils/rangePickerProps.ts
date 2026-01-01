@@ -1,6 +1,5 @@
-import dayjs from 'dayjs';
-
 import { $t } from '#/locales';
+import dayjs from 'dayjs';
 
 /** 时间段选择器拓展 */
 export function getRangePickerDefaultProps() {

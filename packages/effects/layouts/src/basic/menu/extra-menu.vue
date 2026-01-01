@@ -1,11 +1,9 @@
 <script lang="ts" setup>
+import type { MenuProps } from '@x-monorepo-core/menu-ui';
 import type { MenuRecordRaw } from '@x-monorepo/types';
 
-import type { MenuProps } from '@x-monorepo-core/menu-ui';
-
-import { useRoute } from 'vue-router';
-
 import { Menu } from '@x-monorepo-core/menu-ui';
+import { useRoute } from 'vue-router';
 
 import { useNavigation } from './use-navigation';
 

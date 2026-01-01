@@ -1,10 +1,9 @@
-import type { RouteRecordRaw } from 'vue-router';
-
 import type {
   ComponentRecordType,
   GenerateMenuAndRoutesOptions,
   RouteRecordStringComponent,
 } from '@x-monorepo-core/typings';
+import type { RouteRecordRaw } from 'vue-router';
 
 import { mapTree } from '@x-monorepo-core/shared/utils';
 

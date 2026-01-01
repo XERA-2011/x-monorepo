@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { AccordionItemProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { AccordionItem, useForwardProps } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<AccordionItemProps & { class?: any }>();
 

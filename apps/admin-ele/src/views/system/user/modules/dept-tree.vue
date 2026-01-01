@@ -1,14 +1,11 @@
 <script lang="ts" setup>
 import type { SystemDeptApi } from '#/api/system/dept';
 
-import { onMounted, ref } from 'vue';
-
+import { getSimpleDeptList } from '#/api/system/dept';
 import { Search } from '@x-monorepo/icons';
 import { handleTree } from '@x-monorepo/utils';
-
 import { ElInput, ElTree } from 'element-plus';
-
-import { getSimpleDeptList } from '#/api/system/dept';
+import { onMounted, ref } from 'vue';
 
 const emit = defineEmits(['select']);
 const deptList = ref<SystemDeptApi.Dept[]>([]); // 部门列表

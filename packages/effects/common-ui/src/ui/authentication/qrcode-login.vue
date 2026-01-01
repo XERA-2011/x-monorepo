@@ -1,12 +1,9 @@
 <script setup lang="ts">
+import { useQRCode } from '@vueuse/integrations/useQRCode';
+import { XAppButton } from '@x-monorepo-core/shadcn-ui';
+import { $t } from '@x-monorepo/locales';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-
-import { $t } from '@x-monorepo/locales';
-
-import { XAppButton } from '@x-monorepo-core/shadcn-ui';
-
-import { useQRCode } from '@vueuse/integrations/useQRCode';
 
 import Title from './auth-title.vue';
 

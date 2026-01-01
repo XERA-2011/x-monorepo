@@ -1,9 +1,7 @@
+import type { DefineLibraryOptions } from '../typing';
 import type { ConfigEnv, UserConfig } from 'vite';
 
-import type { DefineLibraryOptions } from '../typing';
-
 import { readPackageJSON } from '@x-monorepo/node-utils';
-
 import { defineConfig, mergeConfig } from 'vite';
 
 import { loadLibraryPlugins } from '../plugins';

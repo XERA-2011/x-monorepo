@@ -1,12 +1,6 @@
 <script lang="ts" setup>
 import type { SystemDictTypeApi } from '#/api/system/dict/type';
 
-import { computed, ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-
-import { ElMessage } from 'element-plus';
-
 import { useXAppForm } from '#/adapter/form';
 import {
   createDictType,
@@ -14,6 +8,9 @@ import {
   updateDictType,
 } from '#/api/system/dict/type';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { ElMessage } from 'element-plus';
+import { computed, ref } from 'vue';
 
 import { useTypeFormSchema } from '../data';
 

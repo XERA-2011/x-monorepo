@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { ToolbarType } from './types';
 
-import { computed } from 'vue';
-
 import { preferences } from '@x-monorepo/preferences';
+import { computed } from 'vue';
 
 import {
   AuthenticationColorToggle,

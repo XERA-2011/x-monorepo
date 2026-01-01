@@ -1,18 +1,14 @@
 <script lang="ts" setup>
+import type { InfraCodegenApi } from '#/api/infra/codegen';
 import type { TabPaneName } from 'element-plus';
 
-import type { InfraCodegenApi } from '#/api/infra/codegen';
-
-import { ref } from 'vue';
-
+import { previewCodegen } from '#/api/infra/codegen';
+import { useClipboard } from '@vueuse/core';
 import { useXAppModal } from '@x-monorepo/common-ui';
 import { IconifyIcon } from '@x-monorepo/icons';
 import { CodeEditor } from '@x-monorepo/plugins/code-editor';
-
-import { useClipboard } from '@vueuse/core';
 import { ElMessage, ElTabPane, ElTabs, ElTree } from 'element-plus';
-
-import { previewCodegen } from '#/api/infra/codegen';
+import { ref } from 'vue';
 
 /** 文件树类型 */
 interface FileNode {

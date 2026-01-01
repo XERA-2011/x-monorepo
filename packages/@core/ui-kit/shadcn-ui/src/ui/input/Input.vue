@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { cn } from '@x-monorepo-core/shared/utils';
-
 import { useVModel } from '@vueuse/core';
+import { cn } from '@x-monorepo-core/shared/utils';
 
 const props = defineProps<{
   class?: any;

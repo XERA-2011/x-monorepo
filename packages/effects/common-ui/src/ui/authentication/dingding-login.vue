@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-
-import { SvgDingDingIcon } from '@x-monorepo/icons';
-import { $t } from '@x-monorepo/locales';
-
 import { alert, useXAppModal } from '@x-monorepo-core/popup-ui';
 import { XAppIconButton } from '@x-monorepo-core/shadcn-ui';
 import { loadScript } from '@x-monorepo-core/shared/utils';
+import { SvgDingDingIcon } from '@x-monorepo/icons';
+import { $t } from '@x-monorepo/locales';
+import { useRoute } from 'vue-router';
 
 interface Props {
   clientId: string;

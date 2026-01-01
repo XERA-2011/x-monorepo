@@ -4,12 +4,11 @@ import type {
   GenerateMenuAndRoutesOptions,
 } from '@x-monorepo/types';
 
+import { BasicLayout, IFrameView } from '#/layouts';
 import { generateAccessible } from '@x-monorepo/access';
 import { preferences } from '@x-monorepo/preferences';
 import { useAccessStore } from '@x-monorepo/stores';
 import { convertServerMenuToRouteRecordStringComponent } from '@x-monorepo/utils';
-
-import { BasicLayout, IFrameView } from '#/layouts';
 
 const forbiddenComponent = () => import('#/views/_core/fallback/forbidden.vue');
 

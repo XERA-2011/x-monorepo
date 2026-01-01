@@ -1,10 +1,18 @@
 <script lang="ts" setup>
+import type { SystemTenantApi } from '#/api/system/tenant';
 import type { NotificationItem } from '@x-monorepo/layouts';
 
-import type { SystemTenantApi } from '#/api/system/tenant';
-
-import { computed, onMounted, ref, watch } from 'vue';
-
+import {
+  getUnreadNotifyMessageCount,
+  getUnreadNotifyMessageList,
+  updateAllNotifyMessageRead,
+  updateNotifyMessageRead,
+} from '#/api/system/notify/message';
+import { getSimpleTenantList } from '#/api/system/tenant';
+import { $t } from '#/locales';
+import { router } from '#/router';
+import { useAuthStore } from '#/store';
+import LoginForm from '#/views/_core/authentication/login.vue';
 import { useAccess } from '@x-monorepo/access';
 import {
   AuthenticationLoginExpiredModal,
@@ -29,20 +37,8 @@ import {
 import { preferences } from '@x-monorepo/preferences';
 import { useAccessStore, useUserStore } from '@x-monorepo/stores';
 import { formatDateTime, openWindow } from '@x-monorepo/utils';
-
 import { ElMessage } from 'element-plus';
-
-import {
-  getUnreadNotifyMessageCount,
-  getUnreadNotifyMessageList,
-  updateAllNotifyMessageRead,
-  updateNotifyMessageRead,
-} from '#/api/system/notify/message';
-import { getSimpleTenantList } from '#/api/system/tenant';
-import { $t } from '#/locales';
-import { router } from '#/router';
-import { useAuthStore } from '#/store';
-import LoginForm from '#/views/_core/authentication/login.vue';
+import { computed, onMounted, ref, watch } from 'vue';
 
 const userStore = useUserStore();
 const authStore = useAuthStore();

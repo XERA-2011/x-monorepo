@@ -1,14 +1,11 @@
 <script lang="ts" setup>
+import type { IBreadcrumb } from '@x-monorepo-core/shadcn-ui';
 import type { BreadcrumbStyleType } from '@x-monorepo/types';
 
-import type { IBreadcrumb } from '@x-monorepo-core/shadcn-ui';
-
+import { XAppBreadcrumbView } from '@x-monorepo-core/shadcn-ui';
+import { $t } from '@x-monorepo/locales';
 import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-
-import { $t } from '@x-monorepo/locales';
-
-import { XAppBreadcrumbView } from '@x-monorepo-core/shadcn-ui';
 
 interface Props {
   hideWhenOnlyOne?: boolean;

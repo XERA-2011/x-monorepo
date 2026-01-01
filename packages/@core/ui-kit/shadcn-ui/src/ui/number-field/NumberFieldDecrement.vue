@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import type { NumberFieldDecrementProps } from 'reka-ui';
 
-import { computed } from 'vue';
-
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Minus } from 'lucide-vue-next';
 import { NumberFieldDecrement, useForwardProps } from 'reka-ui';
+import { computed } from 'vue';
 
 const props = defineProps<NumberFieldDecrementProps & { class?: any }>();
 

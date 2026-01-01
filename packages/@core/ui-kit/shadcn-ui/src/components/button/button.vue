@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import type { XAppButtonProps } from './button';
 
-import { computed } from 'vue';
-
 import { LoaderCircle } from '@x-monorepo-core/icons';
 import { cn } from '@x-monorepo-core/shared/utils';
-
 import { Primitive } from 'reka-ui';
+import { computed } from 'vue';
 
 import { buttonVariants } from '../../ui';
 

@@ -1,15 +1,16 @@
 <script lang="ts" setup>
-import type { UseResizeObserverReturn } from '@vueuse/core';
-
-import type { SetupContext, VNodeArrayChildren } from 'vue';
-
 import type {
   MenuItemClicked,
   MenuItemRegistered,
   MenuProps,
   MenuProvider,
 } from '../types';
+import type { UseResizeObserverReturn } from '@vueuse/core';
+import type { SetupContext, VNodeArrayChildren } from 'vue';
 
+import { useResizeObserver } from '@vueuse/core';
+import { useNamespace } from '@x-monorepo-core/composables';
+import { Ellipsis } from '@x-monorepo-core/icons';
 import {
   computed,
   nextTick,
@@ -20,11 +21,6 @@ import {
   watch,
   watchEffect,
 } from 'vue';
-
-import { useNamespace } from '@x-monorepo-core/composables';
-import { Ellipsis } from '@x-monorepo-core/icons';
-
-import { useResizeObserver } from '@vueuse/core';
 
 import {
   createMenuContext,

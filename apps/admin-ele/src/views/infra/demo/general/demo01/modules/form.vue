@@ -1,23 +1,6 @@
 <script lang="ts" setup>
-import type { FormRules } from 'element-plus';
-
 import type { Demo01ContactApi } from '#/api/infra/demo/demo01';
-
-import { computed, reactive, ref } from 'vue';
-
-import { useXAppModal } from '@x-monorepo/common-ui';
-import { DICT_TYPE } from '@x-monorepo/constants';
-import { getDictOptions } from '@x-monorepo/hooks';
-
-import {
-  ElDatePicker,
-  ElForm,
-  ElFormItem,
-  ElInput,
-  ElMessage,
-  ElRadio,
-  ElRadioGroup,
-} from 'element-plus';
+import type { FormRules } from 'element-plus';
 
 import {
   createDemo01Contact,
@@ -27,6 +10,19 @@ import {
 import { Tinymce as RichTextarea } from '#/components/tinymce';
 import { ImageUpload } from '#/components/upload';
 import { $t } from '#/locales';
+import { useXAppModal } from '@x-monorepo/common-ui';
+import { DICT_TYPE } from '@x-monorepo/constants';
+import { getDictOptions } from '@x-monorepo/hooks';
+import {
+  ElDatePicker,
+  ElForm,
+  ElFormItem,
+  ElInput,
+  ElMessage,
+  ElRadio,
+  ElRadioGroup,
+} from 'element-plus';
+import { computed, reactive, ref } from 'vue';
 
 const emit = defineEmits(['success']);
 

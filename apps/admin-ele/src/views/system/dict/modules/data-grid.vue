@@ -2,13 +2,6 @@
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 import type { SystemDictDataApi } from '#/api/system/dict/data';
 
-import { ref, watch } from 'vue';
-
-import { confirm, useXAppModal } from '@x-monorepo/common-ui';
-import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
-
-import { ElLoading, ElMessage } from 'element-plus';
-
 import { ACTION_ICON, TableAction, useXAppVxeGrid } from '#/adapter/vxe-table';
 import {
   deleteDictData,
@@ -17,6 +10,10 @@ import {
   getDictDataPage,
 } from '#/api/system/dict/data';
 import { $t } from '#/locales';
+import { confirm, useXAppModal } from '@x-monorepo/common-ui';
+import { downloadFileFromBlobPart, isEmpty } from '@x-monorepo/utils';
+import { ElLoading, ElMessage } from 'element-plus';
+import { ref, watch } from 'vue';
 
 import { useDataGridColumns, useDataGridFormSchema } from '../data';
 import DataForm from './data-form.vue';

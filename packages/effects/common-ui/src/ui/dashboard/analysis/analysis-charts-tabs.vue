@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import type { TabOption } from '@x-monorepo/types';
 
-import { computed } from 'vue';
-
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
 } from '@x-monorepo-core/shadcn-ui';
+import { computed } from 'vue';
 
 interface Props {
   tabs?: TabOption[];

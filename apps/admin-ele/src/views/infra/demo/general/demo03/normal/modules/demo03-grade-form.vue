@@ -1,13 +1,10 @@
 <script lang="ts" setup>
+import type { Demo03StudentApi } from '#/api/infra/demo/demo03/normal';
 import type { FormRules } from 'element-plus';
 
-import type { Demo03StudentApi } from '#/api/infra/demo/demo03/normal';
-
-import { nextTick, reactive, ref, watch } from 'vue';
-
-import { ElForm, ElFormItem, ElInput } from 'element-plus';
-
 import { getDemo03GradeByStudentId } from '#/api/infra/demo/demo03/normal';
+import { ElForm, ElFormItem, ElInput } from 'element-plus';
+import { nextTick, reactive, ref, watch } from 'vue';
 
 const props = defineProps<{
   studentId?: number; // 学生编号（主表的关联字段）
