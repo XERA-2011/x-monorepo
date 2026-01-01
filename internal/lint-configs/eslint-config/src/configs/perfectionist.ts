@@ -21,26 +21,11 @@ export async function perfectionist(): Promise<Linter.Config[]> {
         'perfectionist/sort-imports': [
           'error',
           {
-            customGroups: [
-              { groupName: 'vue-type', modifiers: ['type'], elementNamePattern: '^vue$|^vue-.+|^@vue/.+' },
-              { groupName: 'x-monorepo-type', modifiers: ['type'], elementNamePattern: '^@x-monorepo/.+' },
-              { groupName: 'x-monorepo-core-type', modifiers: ['type'], elementNamePattern: '^@x-monorepo-core/.+' },
-              { groupName: 'vue', elementNamePattern: '^vue$|^vue-.+|^@vue/.+' },
-              { groupName: 'x-monorepo', elementNamePattern: '^@x-monorepo/.+' },
-              { groupName: 'x-monorepo-core', elementNamePattern: '^@x-monorepo-core/.+' },
-            ],
-            environment: 'node',
             groups: [
               ['external-type', 'builtin-type', 'type'],
-              'vue-type',
-              'x-monorepo-type',
-              'x-monorepo-core-type',
               ['parent-type', 'sibling-type', 'index-type'],
               ['internal-type'],
               'builtin',
-              'vue',
-              'x-monorepo',
-              'x-monorepo-core',
               'external',
               'internal',
               ['parent', 'sibling', 'index'],
@@ -50,11 +35,6 @@ export async function perfectionist(): Promise<Linter.Config[]> {
               'object',
               'unknown',
             ],
-            internalPattern: ['^#/.+'],
-            newlinesBetween: {
-              groups: 'always',
-              fallback: 'never',
-            },
             order: 'asc',
             type: 'natural',
           },
