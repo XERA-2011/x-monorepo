@@ -544,8 +544,8 @@ catalogs:
       specifier: ^1.6.3
       version: 1.6.3
     zod:
-      specifier: ^3.25.76
-      version: 3.25.76
+      specifier: ^4.3.4
+      version: 4.3.4
     zod-defaults:
       specifier: 0.2.3
       version: 0.2.3
@@ -767,7 +767,7 @@ importers:
         version: 1.2.82
       '@nuxt/ui':
         specifier: ^4.3.0
-        version: 4.3.0(851f6dd4e8ebbcd8ce2840a71b82af55)
+        version: 4.3.0(67ebe69117c0e2d983e8df241d81e3c0)
       nuxt:
         specifier: ^4.2.2
         version: 4.2.2(@parcel/watcher@2.5.1)(@types/node@25.0.3)(@vue/compiler-sfc@3.5.26)(cac@6.7.14)(db0@0.3.4)(eslint@9.39.2(jiti@2.6.1))(ioredis@5.8.2)(lightningcss@1.30.2)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(rollup@4.54.0)(sass@1.97.1)(stylelint@16.26.1(typescript@5.9.3))(terser@5.44.1)(typescript@5.9.3)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.1)(terser@5.44.1)(yaml@2.8.2))(vue-tsc@3.2.1(typescript@5.9.3))(yaml@2.8.2)
@@ -1268,7 +1268,7 @@ importers:
     dependencies:
       '@vee-validate/zod':
         specifier: 'catalog:'
-        version: 4.15.1(vue@3.5.26(typescript@5.9.3))(zod@3.25.76)
+        version: 4.15.1(vue@3.5.26(typescript@5.9.3))(zod@4.3.4)
       '@vueuse/core':
         specifier: 'catalog:'
         version: 13.9.0(vue@3.5.26(typescript@5.9.3))
@@ -1295,10 +1295,10 @@ importers:
         version: 3.5.26(typescript@5.9.3)
       zod:
         specifier: 'catalog:'
-        version: 3.25.76
+        version: 4.3.4
       zod-defaults:
         specifier: 'catalog:'
-        version: 0.2.3(zod@3.25.76)
+        version: 0.2.3(zod@4.3.4)
 
   packages/@core/ui-kit/layout-ui:
     dependencies:
@@ -11748,8 +11748,8 @@ packages:
     peerDependencies:
       zod: ^4.1.12
 
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+  zod@4.3.4:
+    resolution: {integrity: sha512-Zw/uYiiyF6pUT1qmKbZziChgNPRu+ZRneAsMUDU6IwmXdWt5JwcUfy2bvLOCUtz5UniaN/Zx5aFttZYbYc7O/A==}
 
   zrender@6.0.0:
     resolution: {integrity: sha512-41dFXEEXuJpNecuUQq6JlbybmnHaqqpGlbH1yxnA5V9MMP4SbohSVZsJIwz+zdjQXSSlR1Vc34EgH1zxyTDvhg==}
@@ -14256,7 +14256,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxt/ui@4.3.0(851f6dd4e8ebbcd8ce2840a71b82af55)':
+  '@nuxt/ui@4.3.0(67ebe69117c0e2d983e8df241d81e3c0)':
     dependencies:
       '@iconify/vue': 5.0.0(vue@3.5.26(typescript@5.9.3))
       '@internationalized/date': 3.10.1
@@ -14319,7 +14319,7 @@ snapshots:
       vue-component-type-helpers: 3.2.1
     optionalDependencies:
       vue-router: 4.6.4(vue@3.5.26(typescript@5.9.3))
-      zod: 3.25.76
+      zod: 4.3.4
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -15678,11 +15678,11 @@ snapshots:
 
   '@unrs/resolver-binding-win32-x64-msvc@1.11.1': {}
 
-  '@vee-validate/zod@4.15.1(vue@3.5.26(typescript@5.9.3))(zod@3.25.76)':
+  '@vee-validate/zod@4.15.1(vue@3.5.26(typescript@5.9.3))(zod@4.3.4)':
     dependencies:
       type-fest: 4.41.0
       vee-validate: 4.15.1(vue@3.5.26(typescript@5.9.3))
-      zod: 3.25.76
+      zod: 4.3.4
     transitivePeerDependencies:
       - vue
 
@@ -23136,11 +23136,11 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.7.0
 
-  zod-defaults@0.2.3(zod@3.25.76):
+  zod-defaults@0.2.3(zod@4.3.4):
     dependencies:
-      zod: 3.25.76
+      zod: 4.3.4
 
-  zod@3.25.76: {}
+  zod@4.3.4: {}
 
   zrender@6.0.0:
     dependencies:
