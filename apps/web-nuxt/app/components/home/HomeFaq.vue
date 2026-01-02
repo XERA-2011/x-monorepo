@@ -30,7 +30,7 @@ const toggleFaq = (index: number) => {
   <section class="mx-auto max-w-4xl px-4 py-20">
     <div class="border-2 border-[#2D1B4E] bg-black p-4 font-mono sm:p-8">
       <h2
-        class="mb-6 text-center text-2xl font-black uppercase tracking-widest text-[#00FFFF] sm:mb-8 sm:text-3xl"
+        class="mb-6 text-center text-2xl font-black tracking-widest text-[#00FFFF] uppercase sm:mb-8 sm:text-3xl"
       >
         &gt; FAQ_DATABASE
       </h2>

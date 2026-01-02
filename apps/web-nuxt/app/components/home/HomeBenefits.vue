@@ -31,7 +31,7 @@ const benefits = [
       <div
         class="flex items-center justify-between border-b-2 border-[#E0E0E0]/20 bg-[#E0E0E0]/10 px-4 py-2"
       >
-        <span class="font-bold text-sm text-[#E0E0E0]">C:\SYSTEM\BENEFITS</span>
+        <span class="text-sm font-bold text-[#E0E0E0]">C:\SYSTEM\BENEFITS</span>
         <div class="h-4 w-4 border border-[#E0E0E0]"></div>
       </div>
       <div class="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 lg:grid-cols-3">
@@ -46,7 +46,7 @@ const benefits = [
           />
           <div class="text-center">
             <h3
-              class="font-bold text-[#E0E0E0] underline decoration-2 decoration-[#00FFFF] underline-offset-4"
+              class="font-bold text-[#E0E0E0] underline decoration-[#00FFFF] decoration-2 underline-offset-4"
             >
               {{ benefit.title }}
             </h3>

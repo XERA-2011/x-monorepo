@@ -7,9 +7,7 @@ const links = [
 </script>
 
 <template>
-  <header
-    class="sticky top-0 z-50 bg-[rgba(9,0,20,0.85)] backdrop-blur-xl"
-  >
+  <header class="sticky top-0 z-50 bg-[rgba(9,0,20,0.85)] backdrop-blur-xl">
     <!-- 霓虹底部边框 -->
     <div
       class="absolute right-0 bottom-0 left-0 h-[2px] bg-gradient-to-r from-[#FF00FF] via-[#00FFFF] to-[#FF9900] opacity-80 shadow-[0_0_15px_rgba(0,255,255,0.5)]"
@@ -34,8 +32,12 @@ const links = [
           </span>
           <div class="flex items-center gap-2">
             <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FFFF] opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-[#00FFFF]"></span>
+              <span
+                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00FFFF] opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex h-2 w-2 rounded-full bg-[#00FFFF]"
+              ></span>
             </span>
             <span
               class="font-mono text-[10px] tracking-[0.3em] text-[#00FFFF] uppercase opacity-90"
@@ -61,7 +63,7 @@ const links = [
           </span>
           <!-- 悬停背景块 -->
           <div
-            class="absolute inset-0 -skew-x-12 scale-y-0 bg-[#00FFFF] transition-transform duration-300 group-hover:scale-y-100 group-hover:shadow-[0_0_15px_#00FFFF]"
+            class="absolute inset-0 scale-y-0 -skew-x-12 bg-[#00FFFF] transition-transform duration-300 group-hover:scale-y-100 group-hover:shadow-[0_0_15px_#00FFFF]"
           ></div>
         </NuxtLink>
       </nav>

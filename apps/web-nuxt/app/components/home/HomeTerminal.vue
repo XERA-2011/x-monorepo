@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <section class="container mx-auto px-4 py-20">
@@ -9,8 +8,7 @@
       <div
         class="flex items-center justify-between border-b border-[#00FFFF] bg-[#00FFFF]/10 px-4 py-2"
       >
-        <span
-          class="font-bold text-sm uppercase tracking-wider text-[#00FFFF]"
+        <span class="text-sm font-bold tracking-wider text-[#00FFFF] uppercase"
           >TERMINAL_VIEW: PRODUCT_CORE</span
         >
         <div class="flex gap-2">
@@ -22,7 +20,7 @@
       <div class="grid grid-cols-1 gap-12 p-8 md:grid-cols-2">
         <div class="flex flex-col justify-center space-y-6">
           <h2
-            class="font-black font-heading text-3xl text-[#E0E0E0] md:text-5xl"
+            class="font-heading text-3xl font-black text-[#E0E0E0] md:text-5xl"
           >
             Experience the future of team collaboration with our unified,
             intelligent platform today.
@@ -43,9 +41,9 @@
             </p>
           </div>
           <button
-            class="self-start skew-button border-2 border-[#FF00FF] bg-[#FF00FF] px-8 py-3 text-lg text-white transition-all duration-200 hover:scale-105 hover:opacity-80"
+            class="skew-button self-start border-2 border-[#FF00FF] bg-[#FF00FF] px-8 py-3 text-lg text-white transition-all duration-200 hover:scale-105 hover:opacity-80"
           >
-            <span class="font-mono uppercase tracking-wider"
+            <span class="font-mono tracking-wider uppercase"
               >INITIATE_SEQUENCE</span
             >
           </button>
@@ -63,7 +61,7 @@
             />
           </div>
           <div
-            class="pointer-events-none absolute inset-0 bg-[length:100%_4px] bg-[linear-gradient(rgba(18,16,20,0)_50%,rgba(0,0,0,0.5)_50%)]"
+            class="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(18,16,20,0)_50%,rgba(0,0,0,0.5)_50%)] bg-[length:100%_4px]"
           ></div>
         </div>
       </div>

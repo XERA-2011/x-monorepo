@@ -1,10 +1,11 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <section class="container mx-auto px-4 py-20 sm:py-32">
     <div class="mb-12 text-center sm:mb-20">
-      <h2 class="mb-4 font-heading text-3xl font-black text-[#E0E0E0] sm:mb-6 sm:text-5xl md:text-6xl">
+      <h2
+        class="font-heading mb-4 text-3xl font-black text-[#E0E0E0] sm:mb-6 sm:text-5xl md:text-6xl"
+      >
         SYSTEM <span class="text-[#FF00FF]">MODULES</span>
       </h2>
       <p class="mx-auto max-w-2xl text-lg text-[#E0E0E0]/70 sm:text-xl">
@@ -47,7 +48,7 @@
           },
         ]"
         :key="index"
-        class="group border-t-2 border-t-[#00FFFF] border-r border-b border-l border-r-[#FF00FF]/30 border-b-[#FF00FF]/30 border-l-[#FF00FF]/30 bg-[#1a103c]/80 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-[#00FFFF] hover:shadow-[0_0_20px_rgba(0,255,255,0.3)]"
+        class="group border-t-2 border-r border-b border-l border-t-[#00FFFF] border-r-[#FF00FF]/30 border-b-[#FF00FF]/30 border-l-[#FF00FF]/30 bg-[#1a103c]/80 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-[#00FFFF] hover:shadow-[0_0_20px_rgba(0,255,255,0.3)]"
       >
         <div class="flex flex-col space-y-1.5 p-6">
           <div
@@ -60,7 +61,7 @@
             </div>
           </div>
           <h3
-            class="font-heading text-2xl font-semibold leading-none tracking-tight text-[#00FFFF] drop-shadow-[0_0_5px_rgba(0,255,255,0.8)]"
+            class="font-heading text-2xl leading-none font-semibold tracking-tight text-[#00FFFF] drop-shadow-[0_0_5px_rgba(0,255,255,0.8)]"
           >
             {{ module.title }}
           </h3>

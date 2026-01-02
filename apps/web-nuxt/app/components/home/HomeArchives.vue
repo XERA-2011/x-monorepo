@@ -1,10 +1,9 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <section class="container mx-auto px-4 py-20">
     <h2
-      class="mb-8 text-center font-heading text-3xl font-black text-[#E0E0E0] sm:mb-12 sm:text-4xl"
+      class="font-heading mb-8 text-center text-3xl font-black text-[#E0E0E0] sm:mb-12 sm:text-4xl"
     >
       DATA_<span class="text-[#FF9900]">ARCHIVES</span>
     </h2>
@@ -26,7 +25,7 @@
             class="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#FF00FF] to-[#00FFFF] opacity-20 mix-blend-overlay"
           ></div>
         </div>
-        <div class="mb-2 text-xs uppercase tracking-widest text-[#FF00FF]">
+        <div class="mb-2 text-xs tracking-widest text-[#FF00FF] uppercase">
           2026-01-0{{ i }}
         </div>
         <h3

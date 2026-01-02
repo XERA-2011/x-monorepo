@@ -10,7 +10,8 @@ const year = new Date().getFullYear();
     <div
       class="pointer-events-none absolute inset-0 opacity-20"
       style="
-        background-image: linear-gradient(#2d1b4e 1px, transparent 1px),
+        background-image:
+          linear-gradient(#2d1b4e 1px, transparent 1px),
           linear-gradient(90deg, #2d1b4e 1px, transparent 1px);
         background-size: 40px 40px;
         transform: perspective(300px) rotateX(40deg) scale(2);
@@ -28,29 +29,31 @@ const year = new Date().getFullYear();
         <div class="col-span-2 md:col-span-1">
           <div class="mb-6 flex items-center gap-2">
             <div
-              class="skew-button h-8 w-8 bg-[#FF00FF] flex items-center justify-center"
+              class="skew-button flex h-8 w-8 items-center justify-center bg-[#FF00FF]"
             >
               <UIcon name="i-lucide-box" class="h-5 w-5 text-black" />
             </div>
-            <span class="font-heading font-black text-xl tracking-widest text-[#E0E0E0]">
+            <span
+              class="font-heading text-xl font-black tracking-widest text-[#E0E0E0]"
+            >
               X-MONOREPO
             </span>
           </div>
-          <p class="text-[#E0E0E0]/50 text-sm">
-            现代化 Monorepo 全栈开发模板
-          </p>
+          <p class="text-sm text-[#E0E0E0]/50">现代化 Monorepo 全栈开发模板</p>
         </div>
 
         <!-- 产品链接 -->
         <div>
-          <h4 class="mb-6 font-bold text-[#00FFFF] text-sm uppercase tracking-wider">
+          <h4
+            class="mb-6 text-sm font-bold tracking-wider text-[#00FFFF] uppercase"
+          >
             产品
           </h4>
           <ul class="space-y-3">
             <li>
               <a
                 href="#"
-                class="text-[#E0E0E0]/60 text-sm transition-colors hover:text-[#FF00FF] hover:underline decoration-2 decoration-[#FF00FF] underline-offset-4"
+                class="text-sm text-[#E0E0E0]/60 decoration-[#FF00FF] decoration-2 underline-offset-4 transition-colors hover:text-[#FF00FF] hover:underline"
               >
                 功能
               </a>
@@ -58,7 +61,7 @@ const year = new Date().getFullYear();
             <li>
               <a
                 href="#"
-                class="text-[#E0E0E0]/60 text-sm transition-colors hover:text-[#FF00FF] hover:underline decoration-2 decoration-[#FF00FF] underline-offset-4"
+                class="text-sm text-[#E0E0E0]/60 decoration-[#FF00FF] decoration-2 underline-offset-4 transition-colors hover:text-[#FF00FF] hover:underline"
               >
                 模板
               </a>
@@ -66,7 +69,7 @@ const year = new Date().getFullYear();
             <li>
               <a
                 href="#"
-                class="text-[#E0E0E0]/60 text-sm transition-colors hover:text-[#FF00FF] hover:underline decoration-2 decoration-[#FF00FF] underline-offset-4"
+                class="text-sm text-[#E0E0E0]/60 decoration-[#FF00FF] decoration-2 underline-offset-4 transition-colors hover:text-[#FF00FF] hover:underline"
               >
                 文档
               </a>
@@ -76,7 +79,9 @@ const year = new Date().getFullYear();
 
         <!-- 资源链接 -->
         <div>
-          <h4 class="mb-6 font-bold text-[#00FFFF] text-sm uppercase tracking-wider">
+          <h4
+            class="mb-6 text-sm font-bold tracking-wider text-[#00FFFF] uppercase"
+          >
             资源
           </h4>
           <ul class="space-y-3">
@@ -84,7 +89,7 @@ const year = new Date().getFullYear();
               <a
                 href="https://github.com/XERA-2011/x-monorepo"
                 target="_blank"
-                class="text-[#E0E0E0]/60 text-sm transition-colors hover:text-[#FF00FF] hover:underline decoration-2 decoration-[#FF00FF] underline-offset-4"
+                class="text-sm text-[#E0E0E0]/60 decoration-[#FF00FF] decoration-2 underline-offset-4 transition-colors hover:text-[#FF00FF] hover:underline"
               >
                 GitHub
               </a>
@@ -92,7 +97,7 @@ const year = new Date().getFullYear();
             <li>
               <a
                 href="#"
-                class="text-[#E0E0E0]/60 text-sm transition-colors hover:text-[#FF00FF] hover:underline decoration-2 decoration-[#FF00FF] underline-offset-4"
+                class="text-sm text-[#E0E0E0]/60 decoration-[#FF00FF] decoration-2 underline-offset-4 transition-colors hover:text-[#FF00FF] hover:underline"
               >
                 教程
               </a>
@@ -100,7 +105,7 @@ const year = new Date().getFullYear();
             <li>
               <a
                 href="#"
-                class="text-[#E0E0E0]/60 text-sm transition-colors hover:text-[#FF00FF] hover:underline decoration-2 decoration-[#FF00FF] underline-offset-4"
+                class="text-sm text-[#E0E0E0]/60 decoration-[#FF00FF] decoration-2 underline-offset-4 transition-colors hover:text-[#FF00FF] hover:underline"
               >
                 API
               </a>
@@ -110,14 +115,16 @@ const year = new Date().getFullYear();
 
         <!-- 社区链接 -->
         <div>
-          <h4 class="mb-6 font-bold text-[#00FFFF] text-sm uppercase tracking-wider">
+          <h4
+            class="mb-6 text-sm font-bold tracking-wider text-[#00FFFF] uppercase"
+          >
             社区
           </h4>
           <ul class="space-y-3">
             <li>
               <a
                 href="#"
-                class="text-[#E0E0E0]/60 text-sm transition-colors hover:text-[#FF00FF] hover:underline decoration-2 decoration-[#FF00FF] underline-offset-4"
+                class="text-sm text-[#E0E0E0]/60 decoration-[#FF00FF] decoration-2 underline-offset-4 transition-colors hover:text-[#FF00FF] hover:underline"
               >
                 讨论
               </a>
@@ -125,7 +132,7 @@ const year = new Date().getFullYear();
             <li>
               <a
                 href="#"
-                class="text-[#E0E0E0]/60 text-sm transition-colors hover:text-[#FF00FF] hover:underline decoration-2 decoration-[#FF00FF] underline-offset-4"
+                class="text-sm text-[#E0E0E0]/60 decoration-[#FF00FF] decoration-2 underline-offset-4 transition-colors hover:text-[#FF00FF] hover:underline"
               >
                 贡献
               </a>
@@ -133,7 +140,7 @@ const year = new Date().getFullYear();
             <li>
               <a
                 href="#"
-                class="text-[#E0E0E0]/60 text-sm transition-colors hover:text-[#FF00FF] hover:underline decoration-2 decoration-[#FF00FF] underline-offset-4"
+                class="text-sm text-[#E0E0E0]/60 decoration-[#FF00FF] decoration-2 underline-offset-4 transition-colors hover:text-[#FF00FF] hover:underline"
               >
                 赞助
               </a>

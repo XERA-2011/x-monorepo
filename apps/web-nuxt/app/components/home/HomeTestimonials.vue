@@ -43,7 +43,7 @@ const testimonials = [
   <section class="py-20 sm:py-32">
     <div class="container mx-auto px-4">
       <h2
-        class="mb-8 text-center font-black font-heading text-3xl text-[#00FFFF] sm:mb-12 sm:text-4xl"
+        class="font-heading mb-8 text-center text-3xl font-black text-[#00FFFF] sm:mb-12 sm:text-4xl"
       >
         &lt;USER_LOGS&gt;
       </h2>

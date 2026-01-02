@@ -31,7 +31,7 @@ const steps = [
     <!-- 点阵背景 -->
     <div class="dot-grid absolute inset-0"></div>
 
-    <div class="container relative z-10 mx-auto px-4">
+    <div class="relative z-10 container mx-auto px-4">
       <!-- 标题 -->
       <div class="mb-12 text-center sm:mb-20">
         <h2
@@ -67,14 +67,16 @@ const steps = [
             <div class="ml-12 px-4 md:ml-0 md:w-1/2">
               <div
                 class="relative border border-[#00FFFF] bg-black p-6"
-                :class="step.align === 'left' ? 'md:text-left' : 'md:text-right'"
+                :class="
+                  step.align === 'left' ? 'md:text-left' : 'md:text-right'
+                "
               >
                 <!-- 角落装饰 -->
                 <div
-                  class="absolute top-0 left-0 h-2 w-2 border-l border-t border-[#00FFFF]"
+                  class="absolute top-0 left-0 h-2 w-2 border-t border-l border-[#00FFFF]"
                 ></div>
                 <div
-                  class="absolute top-0 right-0 h-2 w-2 border-r border-t border-[#00FFFF]"
+                  class="absolute top-0 right-0 h-2 w-2 border-t border-r border-[#00FFFF]"
                 ></div>
                 <div
                   class="absolute bottom-0 left-0 h-2 w-2 border-b border-l border-[#00FFFF]"
