@@ -7,12 +7,36 @@ export default defineNuxtConfig({
   // 开发工具
   devtools: { enabled: true },
 
+  // 字体配置
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com',
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: '',
+        },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap',
+        },
+      ],
+    },
+  },
+
   // 模块
   modules: ['@nuxt/ui'],
 
-  // 字体配置：使用 bunny 替代 google fonts 以解决国内访问问题
+  // Disable server-side font fetching to avoid timeouts
   fonts: {
-    provider: 'bunny',
+    providers: {
+      google: false,
+      googleicons: false,
+    },
   },
 
   // 引入全局样式
@@ -43,3 +67,4 @@ export default defineNuxtConfig({
     },
   },
 });
+
