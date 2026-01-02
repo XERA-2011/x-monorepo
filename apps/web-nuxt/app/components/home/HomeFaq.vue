@@ -19,7 +19,7 @@ const faqs = [
   },
 ];
 
-const activeFaq = ref<number | null>(null);
+const activeFaq = ref<null | number>(null);
 
 const toggleFaq = (index: number) => {
   activeFaq.value = activeFaq.value === index ? null : index;

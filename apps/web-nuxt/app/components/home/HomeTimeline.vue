@@ -53,7 +53,7 @@ const steps = [
 
         <div class="space-y-16">
           <div
-            v-for="(step, index) in steps"
+            v-for="step in steps"
             :key="step.number"
             class="relative flex flex-col gap-8 md:flex-row"
             :class="{ 'md:flex-row-reverse': step.align === 'left' }"
