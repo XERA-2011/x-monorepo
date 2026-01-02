@@ -72,6 +72,40 @@ pnpm dev:nuxt    # 前台网站 → http://localhost:2011
 | `pnpm clean` | 清理构建产物 |
 | `pnpm reinstall` | 重新安装依赖 |
 
+## 代码规范检查 | Code Quality
+
+**提交代码前请务必执行以下检查，确保通过 CI/CD 检查：**
+
+### 快速检查与修复
+
+```bash
+# 1. 运行完整的代码检查
+pnpm run lint
+
+# 2. 自动修复格式问题 (推荐)
+pnpm exec prettier . --write
+
+# 3. 仅检查 web-nuxt 的样式文件
+pnpm exec stylelint "apps/web-nuxt/**/*.{vue,css}" --fix
+```
+
+### 常见问题修复
+
+| 错误类型 | 修复命令 |
+| --- | --- |
+| **Prettier 格式错误** | `pnpm exec prettier . --write` |
+| **Stylelint CSS 错误** | `pnpm exec stylelint "**/*.{vue,css}" --fix` |
+| **ESLint JS/TS 错误** | `pnpm exec eslint . --fix` |
+
+### 提交前检查清单
+
+- [ ] `pnpm run lint` 无错误
+- [ ] 代码已格式化（`prettier --write`）
+- [ ] 没有未使用的导入和变量
+- [ ] 提交信息符合规范（feat/fix/docs/style/refactor 等）
+
+> **💡 提示**: 建议配置 Git hooks 自动在提交前运行 `pnpm run lint`
+
 ## 配置说明 | Configuration
 
 | 文件               | 环境 | 关键变量                         |
