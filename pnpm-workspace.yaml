@@ -223,5 +223,5 @@ catalog:
   vxe-pc-ui: ^4.11.28
   vxe-table: ^4.17.37
   watermark-js-plus: ^1.6.3
-  zod: ^3.25.76
+  zod: ^4.3.4
   zod-defaults: 0.2.3
