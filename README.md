@@ -91,11 +91,11 @@ pnpm exec stylelint "apps/web-nuxt/**/*.{vue,css}" --fix
 
 ### 常见问题修复
 
-| 错误类型 | 修复命令 |
-| --- | --- |
-| **Prettier 格式错误** | `pnpm exec prettier . --write` |
+| 错误类型               | 修复命令                                     |
+| ---------------------- | -------------------------------------------- |
+| **Prettier 格式错误**  | `pnpm exec prettier . --write`               |
 | **Stylelint CSS 错误** | `pnpm exec stylelint "**/*.{vue,css}" --fix` |
-| **ESLint JS/TS 错误** | `pnpm exec eslint . --fix` |
+| **ESLint JS/TS 错误**  | `pnpm exec eslint . --fix`                   |
 
 ### 提交前检查清单
 
