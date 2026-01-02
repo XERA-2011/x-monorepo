@@ -81,7 +81,7 @@ catalog:
   autoprefixer: ^10.4.23
   axios: ^1.13.2
   axios-mock-adapter: ^2.1.0
-  bpmn-js: ^17.11.1
+  bpmn-js: ^18.9.1
   bpmn-js-properties-panel: 5.45.0
   bpmn-js-token-simulation: ^0.38.2
   cac: ^6.7.14
