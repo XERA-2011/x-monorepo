@@ -74,52 +74,17 @@ pnpm dev:nuxt    # 前台网站 → http://localhost:2011
 
 ## 代码规范检查 | Code Quality
 
-**提交代码前请务必执行以下检查，确保通过 CI/CD 检查：**
-
-### ⚠️ 彻底检查（推荐，与 CI 一致）
+提交代码前，请务必执行以下命令以确保通过 CI：
 
 ```bash
-# 运行完整检查（包含了 lint 和 typecheck，与 CI 完全一致）
+# 1. 自动修复格式与 Lint 问题
+pnpm run format
+
+# 2. 执行完整检查 (包含 Lint、类型检查、拼写检查等)
 pnpm run check:all
-
-
-# 或者分步运行：
-pnpm run check:type    # 类型检查（所有包）
-pnpm run lint          # ESLint + Prettier + Stylelint
 ```
 
-> **重要**：不要只检查单个包，必须运行 `pnpm run check` 或 `pnpm run check:type` 检查**所有包**！
-
-### 强制完整检查（忽略缓存）
-
-```bash
-# 忽略 Turborepo 缓存，强制重新检查所有包
-pnpm exec turbo run typecheck --force
-
-# 清理后重新检查（最彻底）
-pnpm clean && pnpm run check
-```
-
-### 快速修复
-
-| 错误类型               | 修复命令                                     |
-| ---------------------- | -------------------------------------------- |
-| **Prettier 格式错误**  | `pnpm exec prettier . --write`               |
-| **Stylelint CSS 错误** | `pnpm exec stylelint "**/*.{vue,css}" --fix` |
-| **ESLint JS/TS 错误**  | `pnpm exec eslint . --fix`                   |
-
-### 提交前检查清单
-
-- [ ] `pnpm run check:all` 无错误（**必须执行**）
-- [ ] 代码已格式化（`prettier --write`）
-- [ ] 没有未使用的导入和变量
-- [ ] 提交信息符合规范（feat/fix/docs/style/refactor 等）
-
-> **💡 为什么本地通过但 CI 失败？**
->
-> - 本地只检查了单个包，CI 检查所有包
-> - Turborepo 缓存导致跳过部分检查
-> - 解决方案：始终运行 `pnpm run check` 或加 `--force` 参数
+> **注意**：CI 环境会执行 `check:all`，请确保本地检查通过后再 PUSH。
 
 ## 配置说明 | Configuration
 
