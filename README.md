@@ -76,20 +76,30 @@ pnpm dev:nuxt    # 前台网站 → http://localhost:2011
 
 **提交代码前请务必执行以下检查，确保通过 CI/CD 检查：**
 
-### 快速检查与修复
+### ⚠️ 彻底检查（推荐，与 CI 一致）
 
 ```bash
-# 1. 运行完整的代码检查
-pnpm run lint
+# 运行完整检查（与 CI 完全一致）
+pnpm run check
 
-# 2. 自动修复格式问题 (推荐)
-pnpm exec prettier . --write
-
-# 3. 仅检查 web-nuxt 的样式文件
-pnpm exec stylelint "apps/web-nuxt/**/*.{vue,css}" --fix
+# 或者分步运行：
+pnpm run check:type    # 类型检查（所有包）
+pnpm run lint          # ESLint + Prettier + Stylelint
 ```
 
-### 常见问题修复
+> **重要**：不要只检查单个包，必须运行 `pnpm run check` 或 `pnpm run check:type` 检查**所有包**！
+
+### 强制完整检查（忽略缓存）
+
+```bash
+# 忽略 Turborepo 缓存，强制重新检查所有包
+pnpm exec turbo run typecheck --force
+
+# 清理后重新检查（最彻底）
+pnpm clean && pnpm run check
+```
+
+### 快速修复
 
 | 错误类型               | 修复命令                                     |
 | ---------------------- | -------------------------------------------- |
@@ -99,12 +109,16 @@ pnpm exec stylelint "apps/web-nuxt/**/*.{vue,css}" --fix
 
 ### 提交前检查清单
 
-- [ ] `pnpm run lint` 无错误
+- [ ] `pnpm run check` 无错误（**必须执行**）
 - [ ] 代码已格式化（`prettier --write`）
 - [ ] 没有未使用的导入和变量
 - [ ] 提交信息符合规范（feat/fix/docs/style/refactor 等）
 
-> **💡 提示**: 建议配置 Git hooks 自动在提交前运行 `pnpm run lint`
+> **💡 为什么本地通过但 CI 失败？**
+>
+> - 本地只检查了单个包，CI 检查所有包
+> - Turborepo 缓存导致跳过部分检查
+> - 解决方案：始终运行 `pnpm run check` 或加 `--force` 参数
 
 ## 配置说明 | Configuration
 
