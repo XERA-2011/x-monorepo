@@ -79,8 +79,9 @@ pnpm dev:nuxt    # 前台网站 → http://localhost:2011
 ### ⚠️ 彻底检查（推荐，与 CI 一致）
 
 ```bash
-# 运行完整检查（与 CI 完全一致）
-pnpm run check
+# 运行完整检查（包含了 lint 和 typecheck，与 CI 完全一致）
+pnpm run check:all
+
 
 # 或者分步运行：
 pnpm run check:type    # 类型检查（所有包）
@@ -109,7 +110,7 @@ pnpm clean && pnpm run check
 
 ### 提交前检查清单
 
-- [ ] `pnpm run check` 无错误（**必须执行**）
+- [ ] `pnpm run check:all` 无错误（**必须执行**）
 - [ ] 代码已格式化（`prettier --write`）
 - [ ] 没有未使用的导入和变量
 - [ ] 提交信息符合规范（feat/fix/docs/style/refactor 等）

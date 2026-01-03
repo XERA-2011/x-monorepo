@@ -25,6 +25,7 @@
     "build:ele": "pnpm run build --filter=@x-monorepo/admin-ele",
     "build:nuxt": "pnpm run build --filter=@x-monorepo/web-nuxt",
     "changeset": "pnpm exec changeset",
+    "check:all": "pnpm run lint && pnpm run check",
     "check": "pnpm run check:circular && pnpm run check:dep && pnpm run check:type && pnpm check:cspell",
     "check:circular": "vsh check-circular",
     "check:cspell": "cspell lint **/*.ts **/README.md .changeset/*.md --no-progress",
