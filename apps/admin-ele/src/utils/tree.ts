@@ -216,17 +216,17 @@ export const treeMapEach = (
   const conversionData = conversion(data) || {};
   return haveChildren
     ? {
-      ...conversionData,
-      [children]: data[children].map((i: number) =>
-        treeMapEach(i, {
-          children,
-          conversion,
-        }),
-      ),
-    }
+        ...conversionData,
+        [children]: data[children].map((i: number) =>
+          treeMapEach(i, {
+            children,
+            conversion,
+          }),
+        ),
+      }
     : {
-      ...conversionData,
-    };
+        ...conversionData,
+      };
 };
 
 /**
