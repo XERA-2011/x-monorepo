@@ -119,7 +119,7 @@ async function customRequest(info: UploadRequestOptions) {
     // 上传文件
     const progressEvent: AxiosProgressEvent = (e) => {
       const percent = Math.trunc((e.loaded / e.total!) * 100);
-      info.onProgress!({ percent });
+      info.onProgress!({ percent } as any);
     };
     const res = await httpRequest(info.file as File, progressEvent);
     info.onSuccess!(res);
@@ -241,7 +241,7 @@ onMounted(() => {
               type="danger"
               text
               link
-              @click="removeFile(index)"
+              @click="removeFile(Number(index))"
               class="ml-2"
             >
               <IconifyIcon icon="lucide:trash-2" />

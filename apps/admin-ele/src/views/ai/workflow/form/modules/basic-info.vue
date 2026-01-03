@@ -55,7 +55,7 @@ defineExpose({ validate });
       >
         <ElOption
           v-for="dict in getDictOptions(DICT_TYPE.COMMON_STATUS, 'number')"
-          :key="dict.value"
+          :key="String(dict.value)"
           :value="dict.value"
           :label="dict.label"
         />

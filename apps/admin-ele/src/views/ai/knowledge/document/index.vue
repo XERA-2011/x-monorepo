@@ -92,6 +92,7 @@ async function handleStatusChange(
   });
 }
 
+// @ts-expect-error 泛型实例化深度过深，第三方库类型问题
 const [Grid, gridApi] = useXAppVxeGrid({
   formOptions: {
     schema: useGridFormSchema(),

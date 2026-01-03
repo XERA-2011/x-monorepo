@@ -114,7 +114,7 @@ const [Modal, modalApi] = useXAppModal({
         <ElRadioGroup v-model="formData.sex">
           <ElRadio
             v-for="dict in getDictOptions(DICT_TYPE.SYSTEM_USER_SEX, 'number')"
-            :key="dict.value"
+            :key="String(dict.value)"
             :label="dict.value"
           >
             {{ dict.label }}
