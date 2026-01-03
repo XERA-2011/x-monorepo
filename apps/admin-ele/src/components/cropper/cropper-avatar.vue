@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<CropperAvatarProps>(), {
   width: 200,
   value: '',
   showBtn: true,
-  btnProps: () => ({}),
+  btnProps: undefined,
   btnText: '',
   uploadApi: () => Promise.resolve(),
   size: 5,

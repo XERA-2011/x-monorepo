@@ -1,3 +1,6 @@
+// 通用函数类型
+type Fn<T = any> = (...args: any[]) => T;
+
 interface TreeHelperConfig {
   id: string;
   children: string;
@@ -17,7 +20,7 @@ export const defaultProps = {
   emitPath: false, // 用于 cascader 组件：在选中节点改变时，是否返回由该节点所在的各级菜单的值所组成的数组，若设置 false，则只返回该节点的值
 };
 
-const getConfig = (config: Partial<TreeHelperConfig>) =>
+const getConfig = (config: Partial<TreeHelperConfig>): TreeHelperConfig =>
   Object.assign({}, DEFAULT_CONFIG, config);
 
 // tree from list
@@ -45,8 +48,8 @@ export const treeToList = <T = any>(
   tree: any,
   config: Partial<TreeHelperConfig> = {},
 ): T => {
-  config = getConfig(config);
-  const { children } = config;
+  const conf = getConfig(config);
+  const { children } = conf;
   const result: any = [...tree];
   for (let i = 0; i < result.length; i++) {
     const childNodes = result[i][children];
@@ -61,8 +64,8 @@ export const findNode = <T = any>(
   func: Fn,
   config: Partial<TreeHelperConfig> = {},
 ): null | T => {
-  config = getConfig(config);
-  const { children } = config;
+  const conf = getConfig(config);
+  const { children } = conf;
   const list = [...tree];
   for (const node of list) {
     if (func(node)) return node;
@@ -79,8 +82,8 @@ export const findNodeAll = <T = any>(
   func: Fn,
   config: Partial<TreeHelperConfig> = {},
 ): T[] => {
-  config = getConfig(config);
-  const { children } = config;
+  const conf = getConfig(config);
+  const { children } = conf;
   const list = [...tree];
   const result: T[] = [];
   for (const node of list) {
@@ -98,11 +101,11 @@ export const findPath = <T = any>(
   func: Fn,
   config: Partial<TreeHelperConfig> = {},
 ): null | T | T[] => {
-  config = getConfig(config);
+  const conf = getConfig(config);
   const path: T[] = [];
   const list = [...tree];
   const visitedSet = new Set();
-  const { children } = config;
+  const { children } = conf;
   while (list.length > 0) {
     const node = list[0];
     if (visitedSet.has(node)) {
@@ -128,12 +131,12 @@ export const findPathAll = (
   func: Fn,
   config: Partial<TreeHelperConfig> = {},
 ) => {
-  config = getConfig(config);
+  const conf = getConfig(config);
   const path: any[] = [];
   const list = [...tree];
   const result: any[] = [];
   const visitedSet = new Set();
-  const { children } = config;
+  const { children } = conf;
   while (list.length > 0) {
     const node = list[0];
     if (visitedSet.has(node)) {
@@ -213,17 +216,17 @@ export const treeMapEach = (
   const conversionData = conversion(data) || {};
   return haveChildren
     ? {
-        ...conversionData,
-        [children]: data[children].map((i: number) =>
-          treeMapEach(i, {
-            children,
-            conversion,
-          }),
-        ),
-      }
+      ...conversionData,
+      [children]: data[children].map((i: number) =>
+        treeMapEach(i, {
+          children,
+          conversion,
+        }),
+      ),
+    }
     : {
-        ...conversionData,
-      };
+      ...conversionData,
+    };
 };
 
 /**
@@ -264,8 +267,8 @@ export const handleTree = (
     childrenList: children || 'children',
   };
 
-  const childrenListMap = {};
-  const nodeIds = {};
+  const childrenListMap: Record<string, any[]> = {};
+  const nodeIds: Record<string, any> = {};
   const tree: any[] = [];
 
   for (const d of data) {
@@ -291,7 +294,7 @@ export const handleTree = (
     adaptToChildrenList(t);
   }
 
-  function adaptToChildrenList(o) {
+  function adaptToChildrenList(o: any) {
     if (childrenListMap[o[config.id]] !== null) {
       o[config.childrenList] = childrenListMap[o[config.id]];
     }
@@ -321,7 +324,7 @@ export const handleTree2 = (data, id, parentId, children, rootId) => {
   rootId =
     rootId ||
     Math.min(
-      ...data.map((item) => {
+      ...data.map((item: any) => {
         return item[parentId];
       }),
     ) ||
@@ -329,8 +332,8 @@ export const handleTree2 = (data, id, parentId, children, rootId) => {
   // 对源数据深度克隆
   const cloneData = structuredClone(data);
   // 循环所有项
-  const treeData = cloneData.filter((father) => {
-    const branchArr = cloneData.filter((child) => {
+  const treeData = cloneData.filter((father: any) => {
+    const branchArr = cloneData.filter((child: any) => {
       // 返回每一项的子级数组
       return father[id] === child[parentId];
     });
@@ -402,7 +405,7 @@ export const checkSelectedNode = (
  * @param tree 树数据
  * @param nodeId 节点 id
  */
-export const treeToString = (tree: any[], nodeId) => {
+export const treeToString = (tree: any[], nodeId: any) => {
   if (tree === undefined || !Array.isArray(tree) || tree.length === 0) {
     console.warn('tree must be an array');
     return '';
@@ -414,7 +417,7 @@ export const treeToString = (tree: any[], nodeId) => {
   }
   let str = '';
 
-  function performAThoroughValidation(arr) {
+  function performAThoroughValidation(arr: any[]) {
     if (arr === undefined || !Array.isArray(arr) || arr.length === 0) {
       return false;
     }

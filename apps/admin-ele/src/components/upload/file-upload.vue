@@ -28,7 +28,7 @@ const props = withDefaults(
     fileType?: string[];
     isShowTip?: boolean;
     limit?: number;
-    modelValue: string | string[];
+    modelValue?: string | string[];
   }>(),
   {
     fileType: () => ['doc', 'xls', 'ppt', 'txt', 'pdf'], // 文件类型, 例如['png', 'jpg', 'jpeg']
@@ -39,6 +39,7 @@ const props = withDefaults(
     isShowTip: true, // 是否显示提示
     disabled: false, // 是否禁用上传组件 ==> 非必传（默认为 false）
     directory: undefined, // 上传目录 ==> 非必传（默认为 undefined）
+    modelValue: '', // 默认值
   },
 );
 
