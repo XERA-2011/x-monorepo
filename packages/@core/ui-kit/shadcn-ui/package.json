@@ -1,6 +1,6 @@
 {
   "name": "@x-monorepo-core/shadcn-ui",
-  "version": "5.5.9",
+  "version": "0.0.1",
   "#main": "./dist/index.mjs",
   "#module": "./dist/index.mjs",
   "homepage": "https://github.com/XERA-2011/x-monorepo",
