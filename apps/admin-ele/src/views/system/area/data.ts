@@ -14,7 +14,12 @@ export function useFormSchema(): XAppFormSchema[] {
       componentProps: {
         placeholder: '请输入 IP 地址',
       },
-      rules: z.string().ip({ message: '请输入正确的 IP 地址' }),
+      rules: z
+        .string()
+        .regex(
+          /^(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)$/,
+          { message: '请输入正确的 IP 地址' },
+        ),
     },
     {
       fieldName: 'result',

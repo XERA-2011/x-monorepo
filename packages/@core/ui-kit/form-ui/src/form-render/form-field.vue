@@ -123,9 +123,9 @@ const shouldRequired = computed(() => {
   let isOptional = currentRules?.value?.isOptional?.();
 
   // 如果有设置默认值，则不是必填，需要特殊处理
-  const typeName = currentRules?.value?._def?.typeName;
+  const typeName = (currentRules?.value?._def as any)?.typeName;
   if (typeName === 'ZodDefault') {
-    const innerType = currentRules?.value?._def.innerType;
+    const innerType = (currentRules?.value?._def as any).innerType;
     if (innerType) {
       isOptional = innerType.isOptional?.();
     }

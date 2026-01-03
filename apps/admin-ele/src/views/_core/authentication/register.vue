@@ -160,7 +160,7 @@ const formSchema = computed((): XAppFormSchema[] => {
         rules(values) {
           const { password } = values;
           return z
-            .string({ required_error: $t('authentication.passwordTip') })
+            .string({ message: $t('authentication.passwordTip') })
             .min(1, { message: $t('authentication.passwordTip') })
             .refine((value) => value === password, {
               message: $t('authentication.confirmPasswordTip'),

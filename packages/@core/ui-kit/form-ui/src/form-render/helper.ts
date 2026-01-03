@@ -1,11 +1,8 @@
-import type {
-  AnyZodObject,
-  ZodDefault,
-  ZodEffects,
-  ZodNumber,
-  ZodString,
-  ZodTypeAny,
-} from 'zod';
+import type { ZodDefault, ZodNumber, ZodString, ZodTypeAny } from 'zod';
+
+// Zod v4 兼容：使用类型别名处理内部 API 变化
+type AnyZodObject = ZodTypeAny;
+type ZodEffects<T extends ZodTypeAny = ZodTypeAny> = T;
 
 import { isObject, isString } from '@x-monorepo-core/shared/utils';
 
@@ -35,8 +32,8 @@ export function getDefaultValueInZodStack(schema: ZodTypeAny): any {
   }
   const typedSchema = schema as unknown as ZodDefault<ZodNumber | ZodString>;
 
-  if (typedSchema._def.typeName === 'ZodDefault')
-    return typedSchema._def.defaultValue();
+  if ((typedSchema._def as any).typeName === 'ZodDefault')
+    return (typedSchema._def as any).defaultValue();
 
   if ('innerType' in typedSchema._def) {
     return getDefaultValueInZodStack(

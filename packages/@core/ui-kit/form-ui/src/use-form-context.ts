@@ -54,7 +54,7 @@ export function useFormInitial(
       } else if (item.rules && !isString(item.rules)) {
         // 检查规则是否适合提取默认值
         const customDefaultValue = getCustomDefaultValue(item.rules);
-        zodObject[item.fieldName] = item.rules;
+        (zodObject as Record<string, any>)[item.fieldName] = item.rules;
         if (customDefaultValue !== undefined) {
           initialValues[item.fieldName] = customDefaultValue;
         }
