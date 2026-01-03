@@ -128,6 +128,7 @@ defineExpose({
 </script>
 
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <ElCard class="my-card flex h-full flex-grow flex-col">
     <template #header>
       <div class="m-0 flex shrink-0 items-center justify-between px-7">
@@ -153,6 +154,7 @@ defineExpose({
         ref="mdContainerRef"
         class="wh-full overflow-y-auto"
       >
+        <!-- eslint-disable-next-line vue/no-v-html -->
         <div
           class="flex flex-col items-center justify-center"
           v-html="html"

@@ -8,6 +8,7 @@ const currentSong = inject<any>('currentSong', {});
 </script>
 
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <ElCard class="!mb-0 w-40 leading-6">
     <ElImage :src="currentSong.imageUrl" class="h-full w-full" />
 
@@ -19,6 +20,7 @@ const currentSong = inject<any>('currentSong', {});
       {{ currentSong.date }}
     </div>
     <ElButton size="small" round class="my-2">信息复用</ElButton>
+    <!-- eslint-disable-next-line vue/no-v-html -->
     <div class="text-xs" v-html="currentSong.lyric"></div>
   </ElCard>
 </template>

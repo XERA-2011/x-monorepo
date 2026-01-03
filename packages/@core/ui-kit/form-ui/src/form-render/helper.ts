@@ -1,10 +1,10 @@
 import type { ZodDefault, ZodNumber, ZodString, ZodTypeAny } from 'zod';
 
+import { isObject, isString } from '@x-monorepo-core/shared/utils';
+
 // Zod v4 兼容：使用类型别名处理内部 API 变化
 type AnyZodObject = ZodTypeAny;
 type ZodEffects<T extends ZodTypeAny = ZodTypeAny> = T;
-
-import { isObject, isString } from '@x-monorepo-core/shared/utils';
 
 /**
  * Get the lowest level Zod type.
