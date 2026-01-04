@@ -4,20 +4,20 @@
   "configurations": [
     {
       "type": "chrome",
-      "name": "x-monorepo admin antd dev",
+      "name": "x-monorepo web-nuxt dev",
       "request": "launch",
-      "url": "http://localhost:5666",
+      "url": "http://localhost:2011",
       "env": {
         "NODE_ENV": "development"
       },
       "sourceMaps": true,
-      "webRoot": "${workspaceFolder}/apps/web-antd"
+      "webRoot": "${workspaceFolder}/apps/web-nuxt"
     },
     {
       "type": "chrome",
       "name": "x-monorepo admin ele dev",
       "request": "launch",
-      "url": "http://localhost:5777",
+      "url": "http://localhost:2012",
       "env": {
         "NODE_ENV": "development"
       },
