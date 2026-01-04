@@ -9,7 +9,7 @@ import {
   set,
 } from '@x-monorepo-core/shared/utils';
 import { useForm } from 'vee-validate';
-import { computed, unref, useSlots } from 'vue';
+import { computed, toRaw, unref, useSlots } from 'vue';
 import { object, ZodIntersection, ZodNumber, ZodObject, ZodString } from 'zod';
 import { getDefaultsForSchema } from 'zod-defaults';
 
@@ -52,9 +52,11 @@ export function useFormInitial(
       if (Reflect.has(item, 'defaultValue')) {
         set(initialValues, item.fieldName, item.defaultValue);
       } else if (item.rules && !isString(item.rules)) {
+        // 使用 toRaw 获取原始的 Zod schema，避免 Vue 代理与 Zod 不可配置属性的冲突
+        const rawRules = toRaw(item.rules);
         // 检查规则是否适合提取默认值
-        const customDefaultValue = getCustomDefaultValue(item.rules);
-        (zodObject as Record<string, any>)[item.fieldName] = item.rules;
+        const customDefaultValue = getCustomDefaultValue(rawRules);
+        (zodObject as Record<string, any>)[item.fieldName] = rawRules;
         if (customDefaultValue !== undefined) {
           initialValues[item.fieldName] = customDefaultValue;
         }

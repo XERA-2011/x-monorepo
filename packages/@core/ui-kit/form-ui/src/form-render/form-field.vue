@@ -20,7 +20,14 @@ import {
   isString,
 } from '@x-monorepo-core/shared/utils';
 import { useFieldError, useFormValues } from 'vee-validate';
-import { computed, nextTick, onUnmounted, toRaw, useTemplateRef, watch } from 'vue';
+import {
+  computed,
+  nextTick,
+  onUnmounted,
+  toRaw,
+  useTemplateRef,
+  watch,
+} from 'vue';
 
 import { injectComponentRefMap } from '../use-form-context';
 import { injectRenderFormProps, useFormContext } from './context';
@@ -142,7 +149,7 @@ const fieldRules = computed(() => {
     return null;
   }
 
-  let rules = currentRules.value;
+  const rules = currentRules.value;
   if (!rules) {
     return isRequired.value ? 'required' : null;
   }
