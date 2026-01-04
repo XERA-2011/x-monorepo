@@ -20,7 +20,7 @@ import {
   isString,
 } from '@x-monorepo-core/shared/utils';
 import { useFieldError, useFormValues } from 'vee-validate';
-import { computed, nextTick, onUnmounted, useTemplateRef, watch } from 'vue';
+import { computed, nextTick, onUnmounted, toRaw, useTemplateRef, watch } from 'vue';
 
 import { injectComponentRefMap } from '../use-form-context';
 import { injectRenderFormProps, useFormContext } from './context';
@@ -120,14 +120,17 @@ const shouldRequired = computed(() => {
     );
   }
 
-  let isOptional = currentRules?.value?.isOptional?.();
+  // 使用 toRaw 解包 Vue 代理，避免 Zod 4 的 _def 属性访问冲突
+  const rawRules = toRaw(currentRules.value);
+  let isOptional = rawRules?.isOptional?.();
 
   // 如果有设置默认值，则不是必填，需要特殊处理
-  const typeName = (currentRules?.value?._def as any)?.typeName;
+  const def = rawRules?._def as any;
+  const typeName = def?.typeName;
   if (typeName === 'ZodDefault') {
-    const innerType = (currentRules?.value?._def as any).innerType;
+    const innerType = def?.innerType;
     if (innerType) {
-      isOptional = innerType.isOptional?.();
+      isOptional = toRaw(innerType).isOptional?.();
     }
   }
 
@@ -148,14 +151,16 @@ const fieldRules = computed(() => {
     return rules;
   }
 
+  // 使用 toRaw 解包 Vue 代理，避免 Zod 4 的代理冲突
+  let rawRules = toRaw(rules) as any;
   const isOptional = !shouldRequired.value;
   if (!isOptional) {
-    const unwrappedRules = (rules as any)?.unwrap?.();
+    const unwrappedRules = rawRules?.unwrap?.();
     if (unwrappedRules) {
-      rules = unwrappedRules;
+      rawRules = toRaw(unwrappedRules);
     }
   }
-  return toTypedSchema(rules as ZodType);
+  return toTypedSchema(rawRules as ZodType);
 });
 
 const computedProps = computed(() => {

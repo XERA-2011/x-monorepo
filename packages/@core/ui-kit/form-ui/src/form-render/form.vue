@@ -15,7 +15,7 @@ import {
   isString,
   mergeWithArrayOverride,
 } from '@x-monorepo-core/shared/utils';
-import { computed } from 'vue';
+import { computed, toRaw } from 'vue';
 
 import { provideFormRenderProps } from './context';
 import { useExpandable } from './expandable';
@@ -57,11 +57,13 @@ const shapes = computed(() => {
   const resultShapes: FormShape[] = [];
   props.schema?.forEach((schema) => {
     const { fieldName } = schema;
-    const rules = schema.rules as ZodTypeAny;
+    // 使用 toRaw 解包 Vue 代理，避免 Zod 4 的 _def 属性访问冲突
+    const rules = toRaw(schema.rules) as ZodTypeAny;
 
     let typeName = '';
     if (rules && !isString(rules)) {
-      typeName = (rules._def as any).typeName || '';
+      const rawRules = toRaw(rules);
+      typeName = (rawRules._def as any)?.typeName || '';
     }
 
     const baseRules = getBaseRules(rules) as ZodTypeAny;
