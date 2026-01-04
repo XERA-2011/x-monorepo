@@ -1,0 +1,66 @@
+name: Deploy to Aliyun
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  CI: true
+  TZ: Asia/Shanghai
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    if: github.actor != 'dependabot[bot]' && !contains(github.event.head_commit.message, '[skip ci]')
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
+
+      # 构建 admin-ele (后台管理)
+      - name: Build admin-ele
+        run: pnpm run build:ele
+
+      # 构建 web-nuxt (前台网站 SSG)
+      - name: Build web-nuxt
+        run: pnpm --filter @x-monorepo/web-nuxt generate
+
+      # 部署 admin-ele 到 /opt/xera/html/admin/
+      - name: Deploy admin-ele
+        uses: easingthemes/ssh-deploy@v5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
+          REMOTE_USER: ${{ secrets.ALIYUN_USER }}
+          SOURCE: "apps/admin-ele/dist/"
+          TARGET: "/opt/xera/html/admin/"
+          ARGS: "-avz --delete"
+
+      # 部署 web-nuxt 到 /opt/xera/html/
+      - name: Deploy web-nuxt
+        uses: easingthemes/ssh-deploy@v5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
+          REMOTE_USER: ${{ secrets.ALIYUN_USER }}
+          SOURCE: "apps/web-nuxt/.output/public/"
+          TARGET: "/opt/xera/html/"
+          ARGS: "-avz --delete --exclude admin"
+
+      # 可选：重载 Nginx
+      - name: Reload Nginx
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.ALIYUN_HOST }}
+          username: ${{ secrets.ALIYUN_USER }}
+          key: ${{ secrets.ALIYUN_SSH_KEY }}
+          script: |
+            docker exec xera-nginx nginx -s reload || true
