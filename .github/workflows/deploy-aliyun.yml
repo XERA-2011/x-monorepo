@@ -62,7 +62,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup-node
-      
+
       - name: Build admin-ele
         run: pnpm run build:ele
 
@@ -72,9 +72,9 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
           REMOTE_USER: ${{ secrets.ALIYUN_USER }}
-          SOURCE: "apps/admin-ele/dist/"
-          TARGET: "/opt/xera/html/admin/"
-          ARGS: "-avz --delete"
+          SOURCE: 'apps/admin-ele/dist/'
+          TARGET: '/opt/xera/html/admin/'
+          ARGS: '-avz --delete'
 
   # 部署 web-nuxt
   deploy-web-nuxt:
@@ -87,7 +87,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup-node
-      
+
       - name: Build web-nuxt
         run: pnpm --filter @x-monorepo/web-nuxt generate
 
@@ -97,9 +97,9 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
           REMOTE_USER: ${{ secrets.ALIYUN_USER }}
-          SOURCE: "apps/web-nuxt/.output/public/"
-          TARGET: "/opt/xera/html/"
-          ARGS: "-avz --delete --exclude admin"
+          SOURCE: 'apps/web-nuxt/.output/public/'
+          TARGET: '/opt/xera/html/'
+          ARGS: '-avz --delete --exclude admin'
 
   # 同步 nginx.conf
   deploy-nginx-conf:
@@ -115,9 +115,9 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
           REMOTE_USER: ${{ secrets.ALIYUN_USER }}
-          SOURCE: "nginx.conf"
-          TARGET: "/opt/xera/"
-          ARGS: "-avz"
+          SOURCE: 'nginx.conf'
+          TARGET: '/opt/xera/'
+          ARGS: '-avz'
 
   # 重载 Nginx
   reload-nginx:
