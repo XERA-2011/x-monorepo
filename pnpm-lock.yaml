@@ -535,8 +535,8 @@ catalogs:
       specifier: ^4.1.0
       version: 4.1.0
     vxe-pc-ui:
-      specifier: ^4.11.28
-      version: 4.11.28
+      specifier: ^4.11.30
+      version: 4.11.30
     vxe-table:
       specifier: ^4.17.37
       version: 4.17.38
@@ -544,14 +544,14 @@ catalogs:
       specifier: ^1.6.3
       version: 1.6.3
     zod:
-      specifier: ^4.3.4
-      version: 4.3.4
+      specifier: ^4.3.5
+      version: 4.3.5
     zod-defaults:
       specifier: 0.2.3
       version: 0.2.3
 
 overrides:
-  '@ast-grep/napi': ^0.40.3
+  '@ast-grep/napi': ^0.40.4
   '@ctrl/tinycolor': ^4.2.0
   clsx: ^2.1.1
   esbuild: 0.25.3
@@ -767,7 +767,7 @@ importers:
         version: 1.2.82
       '@nuxt/ui':
         specifier: ^4.3.0
-        version: 4.3.0(67ebe69117c0e2d983e8df241d81e3c0)
+        version: 4.3.0(93e9bbf157dd2e4c1d3986a6890eefbf)
       nuxt:
         specifier: ^4.2.2
         version: 4.2.2(@parcel/watcher@2.5.1)(@types/node@25.0.3)(@vue/compiler-sfc@3.5.26)(cac@6.7.14)(db0@0.3.4)(eslint@9.39.2(jiti@2.6.1))(ioredis@5.8.2)(lightningcss@1.30.2)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(rollup@4.54.0)(sass@1.97.1)(stylelint@16.26.1(typescript@5.9.3))(terser@5.44.1)(typescript@5.9.3)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.1)(terser@5.44.1)(yaml@2.8.2))(vue-tsc@3.2.1(typescript@5.9.3))(yaml@2.8.2)
@@ -1268,7 +1268,7 @@ importers:
     dependencies:
       '@vee-validate/zod':
         specifier: 'catalog:'
-        version: 4.15.1(vue@3.5.26(typescript@5.9.3))(zod@4.3.4)
+        version: 4.15.1(vue@3.5.26(typescript@5.9.3))(zod@4.3.5)
       '@vueuse/core':
         specifier: 'catalog:'
         version: 13.9.0(vue@3.5.26(typescript@5.9.3))
@@ -1295,10 +1295,10 @@ importers:
         version: 3.5.26(typescript@5.9.3)
       zod:
         specifier: 'catalog:'
-        version: 4.3.4
+        version: 4.3.5
       zod-defaults:
         specifier: 'catalog:'
-        version: 0.2.3(zod@4.3.4)
+        version: 0.2.3(zod@4.3.5)
 
   packages/@core/ui-kit/layout-ui:
     dependencies:
@@ -1668,7 +1668,7 @@ importers:
         version: 3.5.26(typescript@5.9.3)
       vxe-pc-ui:
         specifier: 'catalog:'
-        version: 4.11.28(vue@3.5.26(typescript@5.9.3))
+        version: 4.11.30(vue@3.5.26(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
         version: 4.17.38(vue@3.5.26(typescript@5.9.3))
@@ -1837,66 +1837,66 @@ packages:
     peerDependencies:
       ajv: '>=8'
 
-  '@ast-grep/napi-darwin-arm64@0.40.3':
-    resolution: {integrity: sha512-uIUecbLHjGE2HHSrCH2jzpjekPFaHOnBkqhUkMmfNUTG5c3H/4zSUDcWRLalFPOlNBgHtKGPe/RcIYGfC7Uk6Q==}
+  '@ast-grep/napi-darwin-arm64@0.40.4':
+    resolution: {integrity: sha512-UIkpoEExRghZe5wN6QXGkDzI65zKVoaBQowAzmEd3MCGP8VlAK3FoxDMdy0OLgQVTyRUdBUwG384WpxiWilYEw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@ast-grep/napi-darwin-x64@0.40.3':
-    resolution: {integrity: sha512-j6wNLb0LGNpKCkCYRd4zDWe5Q/+1CSKP62WtKgvACEvlLw4nMldxE6TnNYZpZddV7wG+Rb+tfuih33rB4h+dZA==}
+  '@ast-grep/napi-darwin-x64@0.40.4':
+    resolution: {integrity: sha512-derMkDWiMFjRlcN0SEHXNPeZ67OGR5So6b4r/+ETvZMZavLQv+ER0vevltFS4ci8m402g7l/wVOdSE1oHcN2Iw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@ast-grep/napi-linux-arm64-gnu@0.40.3':
-    resolution: {integrity: sha512-/KNX7byCcXrmPXLbtBExJSjajVxlgwl3rlFxtDZvgPAoIa+kpTZ4IGKgciNaUi0TXEpJsq9mPvVHLR2WpP52rA==}
+  '@ast-grep/napi-linux-arm64-gnu@0.40.4':
+    resolution: {integrity: sha512-1CeDsK6WRMz169mTXLfXdn2GkQAsMkYbqGd7mHDa2VqutJwDYrqe6t4QiFAlr+LRT2bQuExpPh3AiC8BNd6UQQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@ast-grep/napi-linux-arm64-musl@0.40.3':
-    resolution: {integrity: sha512-w5ivvONb3zb6AigCvl0sr+O4WYgMziQg+I4n4JDdYu8rCGLUBc0WSb4++nmEY0KSNbHxKYVduLIPaEtXKUVhdg==}
+  '@ast-grep/napi-linux-arm64-musl@0.40.4':
+    resolution: {integrity: sha512-VqjL9Xbq5NNXexY4rluaFtpuHHGbcNIwFXInbm8hdaZS3Rsr9tz+QCEhDNO4IJgPtcRUOpa7AIztZotwxrb/iw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@ast-grep/napi-linux-x64-gnu@0.40.3':
-    resolution: {integrity: sha512-3W1I9hKREFR/Wpu443C7RCR7s3kIP61eBDaevpJcO3Xi99+t2UNas6p765oqv08M7DOxJoTbC4OpI9GybD0aUA==}
+  '@ast-grep/napi-linux-x64-gnu@0.40.4':
+    resolution: {integrity: sha512-6BrPYjP+Gr+mkI3z3Xh/UHkOedJ25qKGdhRwbYteeK/QX3rWeuuo/tUjow4nh/8ewhk04wHGw/G96OiF47ICjA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@ast-grep/napi-linux-x64-musl@0.40.3':
-    resolution: {integrity: sha512-A7W/iRlkuGQG7qR6ov4QZjk7/1QPSxTOLxQFHjvdUUEa5Eklv85YMpMCi38v9NI2PP9fBFNB/dQisf6cvQUoLA==}
+  '@ast-grep/napi-linux-x64-musl@0.40.4':
+    resolution: {integrity: sha512-4LGq6xYmOsgEycx4Cu9CdyNYa99O/C1bOsZi09T0C/NifKR+55v8og6nZrGCwsKEs4jWresdal4p7WXw3k8+0g==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@ast-grep/napi-win32-arm64-msvc@0.40.3':
-    resolution: {integrity: sha512-nvBtz+g0d0eNIJo8+ryP2pETuGg1K5Up5AwDWQ+dbfQq3xvuL/kSseG+3MwNp6ASWjL3OZ/JinTDo6r3p/BocA==}
+  '@ast-grep/napi-win32-arm64-msvc@0.40.4':
+    resolution: {integrity: sha512-QrI9m9wmFYTRnyTsYOX+9/D/B+h0eyFqZf2qh/U3kbRU/ZZJnxI75YjYVjtoa2QI4oEJlzYb0QhKAN8NKIDYRA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@ast-grep/napi-win32-ia32-msvc@0.40.3':
-    resolution: {integrity: sha512-4oiHlAEuD8BcdtDPGhodN9vBzW7P2z0YU1Yeau5rEzLrfwi2SHptfTDsmngBAKLYXoRqHHs9T4E5ZENnDs6SQA==}
+  '@ast-grep/napi-win32-ia32-msvc@0.40.4':
+    resolution: {integrity: sha512-JLhcgCUD7e74rZ39XLEfUOU26TQboJltzHir2oSpvjZPtq4aBHEJOynq7dGABZdMrzRUOPdbBdM+nFzPiU38iQ==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@ast-grep/napi-win32-x64-msvc@0.40.3':
-    resolution: {integrity: sha512-aZijW9FjFlUaC9NBv8f+yAR5Ql5tPtBPNBZkyy6GcOPiiHSjZKObvNJxIiw5KsQ26mTtZzq/l7z3t/z3lDqWWA==}
+  '@ast-grep/napi-win32-x64-msvc@0.40.4':
+    resolution: {integrity: sha512-DdsqVs/kg4Iun8GU8GoOw9L9WkT2pVLAZ+1hV9t+PsdI6SR3HGRIUIJSzKz2uejr8tY8evTZmdjBWyjUav8qbQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
-  '@ast-grep/napi@0.40.3':
-    resolution: {integrity: sha512-pRChD3a571FjQndLyabnrrZ5N3T0n68Q+6LyJz5SaZs/gc/TA0s4+UuoL12GEx/oqmaHHYOhnaFW0WB6dvI6fA==}
+  '@ast-grep/napi@0.40.4':
+    resolution: {integrity: sha512-unRhSrSn4X0tf7nCuj300rBrlrXqtGbKanFX75CNmn2NM+NyPrdvq1tdDk2F+XA8Z574MynpSeCESii3WBK+bw==}
     engines: {node: '>= 10'}
 
   '@babel/code-frame@7.27.1':
@@ -11463,8 +11463,8 @@ packages:
     peerDependencies:
       vue: ^3.5.26
 
-  vxe-pc-ui@4.11.28:
-    resolution: {integrity: sha512-pNyDQ5/oXM4+E2z8ps/ZVIk6IvTSK5XVswMzyWVpxGGWwwdL7DsU0YuK4kAjhy+a5crn96n3qk5HILs5el49Ww==}
+  vxe-pc-ui@4.11.30:
+    resolution: {integrity: sha512-lylAZ+uwPBlTj8lc8mrZGGlfBG/1yLpP8eWTDKZwfkkNKaBzLn7pMwPUi9FOKTevG3wfeok/QgFWIcjg+c9jTQ==}
 
   vxe-table@4.17.38:
     resolution: {integrity: sha512-vakc7wlSkwa/s4kBeIjNAVuHdxQ4Xby82v1pVYQPJdZAOY3EX9rJ1Wz8Y7QNXI57sC4sbi1Nb1ka29H9vJBSrA==}
@@ -11752,8 +11752,8 @@ packages:
     peerDependencies:
       zod: ^4.1.12
 
-  zod@4.3.4:
-    resolution: {integrity: sha512-Zw/uYiiyF6pUT1qmKbZziChgNPRu+ZRneAsMUDU6IwmXdWt5JwcUfy2bvLOCUtz5UniaN/Zx5aFttZYbYc7O/A==}
+  zod@4.3.5:
+    resolution: {integrity: sha512-k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==}
 
   zrender@6.0.0:
     resolution: {integrity: sha512-41dFXEEXuJpNecuUQq6JlbybmnHaqqpGlbH1yxnA5V9MMP4SbohSVZsJIwz+zdjQXSSlR1Vc34EgH1zxyTDvhg==}
@@ -11779,44 +11779,44 @@ snapshots:
       jsonpointer: 5.0.1
       leven: 3.1.0
 
-  '@ast-grep/napi-darwin-arm64@0.40.3':
+  '@ast-grep/napi-darwin-arm64@0.40.4':
     optional: true
 
-  '@ast-grep/napi-darwin-x64@0.40.3':
+  '@ast-grep/napi-darwin-x64@0.40.4':
     optional: true
 
-  '@ast-grep/napi-linux-arm64-gnu@0.40.3':
+  '@ast-grep/napi-linux-arm64-gnu@0.40.4':
     optional: true
 
-  '@ast-grep/napi-linux-arm64-musl@0.40.3':
+  '@ast-grep/napi-linux-arm64-musl@0.40.4':
     optional: true
 
-  '@ast-grep/napi-linux-x64-gnu@0.40.3':
+  '@ast-grep/napi-linux-x64-gnu@0.40.4':
     optional: true
 
-  '@ast-grep/napi-linux-x64-musl@0.40.3':
+  '@ast-grep/napi-linux-x64-musl@0.40.4':
     optional: true
 
-  '@ast-grep/napi-win32-arm64-msvc@0.40.3':
+  '@ast-grep/napi-win32-arm64-msvc@0.40.4':
     optional: true
 
-  '@ast-grep/napi-win32-ia32-msvc@0.40.3':
+  '@ast-grep/napi-win32-ia32-msvc@0.40.4':
     optional: true
 
-  '@ast-grep/napi-win32-x64-msvc@0.40.3':
+  '@ast-grep/napi-win32-x64-msvc@0.40.4':
     optional: true
 
-  '@ast-grep/napi@0.40.3':
+  '@ast-grep/napi@0.40.4':
     optionalDependencies:
-      '@ast-grep/napi-darwin-arm64': 0.40.3
-      '@ast-grep/napi-darwin-x64': 0.40.3
-      '@ast-grep/napi-linux-arm64-gnu': 0.40.3
-      '@ast-grep/napi-linux-arm64-musl': 0.40.3
-      '@ast-grep/napi-linux-x64-gnu': 0.40.3
-      '@ast-grep/napi-linux-x64-musl': 0.40.3
-      '@ast-grep/napi-win32-arm64-msvc': 0.40.3
-      '@ast-grep/napi-win32-ia32-msvc': 0.40.3
-      '@ast-grep/napi-win32-x64-msvc': 0.40.3
+      '@ast-grep/napi-darwin-arm64': 0.40.4
+      '@ast-grep/napi-darwin-x64': 0.40.4
+      '@ast-grep/napi-linux-arm64-gnu': 0.40.4
+      '@ast-grep/napi-linux-arm64-musl': 0.40.4
+      '@ast-grep/napi-linux-x64-gnu': 0.40.4
+      '@ast-grep/napi-linux-x64-musl': 0.40.4
+      '@ast-grep/napi-win32-arm64-msvc': 0.40.4
+      '@ast-grep/napi-win32-ia32-msvc': 0.40.4
+      '@ast-grep/napi-win32-x64-msvc': 0.40.4
 
   '@babel/code-frame@7.27.1':
     dependencies:
@@ -14260,7 +14260,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxt/ui@4.3.0(67ebe69117c0e2d983e8df241d81e3c0)':
+  '@nuxt/ui@4.3.0(93e9bbf157dd2e4c1d3986a6890eefbf)':
     dependencies:
       '@iconify/vue': 5.0.0(vue@3.5.26(typescript@5.9.3))
       '@internationalized/date': 3.10.1
@@ -14323,7 +14323,7 @@ snapshots:
       vue-component-type-helpers: 3.2.1
     optionalDependencies:
       vue-router: 4.6.4(vue@3.5.26(typescript@5.9.3))
-      zod: 4.3.4
+      zod: 4.3.5
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -15682,11 +15682,11 @@ snapshots:
 
   '@unrs/resolver-binding-win32-x64-msvc@1.11.1': {}
 
-  '@vee-validate/zod@4.15.1(vue@3.5.26(typescript@5.9.3))(zod@4.3.4)':
+  '@vee-validate/zod@4.15.1(vue@3.5.26(typescript@5.9.3))(zod@4.3.5)':
     dependencies:
       type-fest: 4.41.0
       vee-validate: 4.15.1(vue@3.5.26(typescript@5.9.3))
-      zod: 4.3.4
+      zod: 4.3.5
     transitivePeerDependencies:
       - vue
 
@@ -16615,7 +16615,7 @@ snapshots:
 
   circular-dependency-scanner@2.3.0:
     dependencies:
-      '@ast-grep/napi': 0.40.3
+      '@ast-grep/napi': 0.40.4
       '@vue/compiler-sfc': 3.5.26
       commander: 12.1.0
       get-tsconfig: 4.13.0
@@ -22771,7 +22771,7 @@ snapshots:
       sortablejs: 1.14.0
       vue: 3.5.26(typescript@5.9.3)
 
-  vxe-pc-ui@4.11.28(vue@3.5.26(typescript@5.9.3)):
+  vxe-pc-ui@4.11.30(vue@3.5.26(typescript@5.9.3)):
     dependencies:
       '@vxe-ui/core': 4.2.19(vue@3.5.26(typescript@5.9.3))
     transitivePeerDependencies:
@@ -22779,7 +22779,7 @@ snapshots:
 
   vxe-table@4.17.38(vue@3.5.26(typescript@5.9.3)):
     dependencies:
-      vxe-pc-ui: 4.11.28(vue@3.5.26(typescript@5.9.3))
+      vxe-pc-ui: 4.11.30(vue@3.5.26(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
@@ -23142,11 +23142,11 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.7.0
 
-  zod-defaults@0.2.3(zod@4.3.4):
+  zod-defaults@0.2.3(zod@4.3.5):
     dependencies:
-      zod: 4.3.4
+      zod: 4.3.5
 
-  zod@4.3.4: {}
+  zod@4.3.5: {}
 
   zrender@6.0.0:
     dependencies:

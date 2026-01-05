@@ -10,7 +10,7 @@ packages:
   - scripts/*
 
 catalog:
-  '@ast-grep/napi': ^0.40.3
+  '@ast-grep/napi': ^0.40.4
   '@changesets/changelog-github': ^0.5.2
   '@changesets/cli': ^2.29.8
   '@changesets/git': ^3.0.4
@@ -217,8 +217,8 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.1
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.11.28
+  vxe-pc-ui: ^4.11.30
   vxe-table: ^4.17.37
   watermark-js-plus: ^1.6.3
-  zod: ^4.3.4
+  zod: ^4.3.5
   zod-defaults: 0.2.3
