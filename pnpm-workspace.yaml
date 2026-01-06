@@ -189,7 +189,7 @@ catalog:
   tailwindcss: 3.4.19
   tailwindcss-animate: ^1.0.7
   theme-colors: ^0.1.0
-  tinymce: ^7.9.1
+  tinymce: ^8.3.1
   tippy.js: ^6.3.7
   turbo: ^2.7.2
   typescript: ^5.9.3
