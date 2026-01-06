@@ -123,7 +123,7 @@ catalog:
   eslint-plugin-vitest: ^0.5.4
   eslint-plugin-vue: ^10.6.2
   execa: ^9.6.1
-  fast-xml-parser: ^4.5.3
+  fast-xml-parser: ^5.3.3
   find-up: ^8.0.0
   get-port: ^7.1.0
   globals: ^17.0.0
