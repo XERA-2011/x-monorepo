@@ -154,8 +154,8 @@ catalogs:
       specifier: ^2.4.6
       version: 2.4.6
     '@vueuse/core':
-      specifier: ^13.9.0
-      version: 13.9.0
+      specifier: ^14.1.0
+      version: 14.1.0
     '@vueuse/integrations':
       specifier: ^14.1.0
       version: 14.1.0
@@ -673,7 +673,7 @@ importers:
         version: 6.3.0(tinymce@8.3.1)(vue@3.5.26(typescript@5.9.3))
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@vueuse/integrations':
         specifier: 'catalog:'
         version: 14.1.0(async-validator@4.2.5)(axios@1.13.2)(change-case@5.4.4)(fuse.js@7.1.0)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(vue@3.5.26(typescript@5.9.3))
@@ -1231,7 +1231,7 @@ importers:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@x-monorepo-core/shared':
         specifier: workspace:*
         version: link:../base/shared
@@ -1253,7 +1253,7 @@ importers:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@x-monorepo-core/shared':
         specifier: workspace:*
         version: link:../base/shared
@@ -1271,7 +1271,7 @@ importers:
         version: 4.15.1(vue@3.5.26(typescript@5.9.3))(zod@4.3.4)
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@x-monorepo-core/composables':
         specifier: workspace:*
         version: link:../../composables
@@ -1304,7 +1304,7 @@ importers:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@x-monorepo-core/composables':
         specifier: workspace:*
         version: link:../../composables
@@ -1328,7 +1328,7 @@ importers:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@x-monorepo-core/composables':
         specifier: workspace:*
         version: link:../../composables
@@ -1352,7 +1352,7 @@ importers:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@x-monorepo-core/composables':
         specifier: workspace:*
         version: link:../../composables
@@ -1376,7 +1376,7 @@ importers:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@x-monorepo-core/composables':
         specifier: workspace:*
         version: link:../../composables
@@ -1409,7 +1409,7 @@ importers:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@x-monorepo-core/composables':
         specifier: workspace:*
         version: link:../../composables
@@ -1454,7 +1454,7 @@ importers:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@vueuse/integrations':
         specifier: 'catalog:'
         version: 14.1.0(async-validator@4.2.5)(axios@1.13.2)(change-case@5.4.4)(fuse.js@7.1.0)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(vue@3.5.26(typescript@5.9.3))
@@ -1518,7 +1518,7 @@ importers:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@x-monorepo-core/composables':
         specifier: workspace:*
         version: link:../../@core/composables
@@ -1548,7 +1548,7 @@ importers:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@x-monorepo-core/composables':
         specifier: workspace:*
         version: link:../../@core/composables
@@ -1611,7 +1611,7 @@ importers:
         version: 1.1.10(svelte@5.46.1)(vue@3.5.26(typescript@5.9.3))
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 13.9.0(vue@3.5.26(typescript@5.9.3))
+        version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       '@vueuse/motion':
         specifier: 'catalog:'
         version: 3.0.3(magicast@0.5.1)(vue@3.5.26(typescript@5.9.3))
