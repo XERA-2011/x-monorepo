@@ -23,9 +23,9 @@ catalog:
   '@form-create/ant-design-vue': ^3.2.34
   '@form-create/antd-designer': ^3.4.0
   '@form-create/designer': ^3.4.0
-  '@form-create/element-ui': ^3.2.34
-  '@iconify-json/lucide': ^1.2.68
+  '@form-create/element-ui': ^3.2.37
   '@iconify-json/ant-design': ^1.2.5
+  '@iconify-json/lucide': ^1.2.68
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.0
   '@intlify/core-base': ^11.2.8
@@ -171,7 +171,7 @@ catalog:
   resolve.exports: ^2.0.3
   rimraf: ^6.1.2
   rollup: ^4.54.0
-  rollup-plugin-visualizer: ^5.14.0
+  rollup-plugin-visualizer: ^6.0.5
   sass: ^1.97.2
   secure-ls: ^2.0.0
   sortablejs: ^1.15.6
