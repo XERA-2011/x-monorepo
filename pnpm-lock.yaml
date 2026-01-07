@@ -31,8 +31,8 @@ catalogs:
       specifier: ^3.4.0
       version: 3.4.0
     '@form-create/element-ui':
-      specifier: ^3.2.34
-      version: 3.2.35
+      specifier: ^3.2.37
+      version: 3.2.37
     '@iconify-json/ant-design':
       specifier: ^1.2.5
       version: 1.2.5
@@ -409,8 +409,8 @@ catalogs:
       specifier: ^4.54.0
       version: 4.54.0
     rollup-plugin-visualizer:
-      specifier: ^5.14.0
-      version: 5.14.0
+      specifier: ^6.0.5
+      version: 6.0.5
     sass:
       specifier: ^1.97.2
       version: 1.97.2
@@ -667,7 +667,7 @@ importers:
         version: 3.4.0(vue@3.5.26(typescript@5.9.3))
       '@form-create/element-ui':
         specifier: 'catalog:'
-        version: 3.2.35(vue@3.5.26(typescript@5.9.3))
+        version: 3.2.37(vue@3.5.26(typescript@5.9.3))
       '@tinymce/tinymce-vue':
         specifier: 'catalog:'
         version: 6.3.0(tinymce@8.3.1)(vue@3.5.26(typescript@5.9.3))
@@ -1123,7 +1123,7 @@ importers:
         version: 4.54.0
       rollup-plugin-visualizer:
         specifier: 'catalog:'
-        version: 5.14.0(rollup@4.54.0)
+        version: 6.0.5(rollup@4.54.0)
       sass:
         specifier: 'catalog:'
         version: 1.97.2
@@ -3390,8 +3390,8 @@ packages:
   '@form-create/component-elm-radio@3.2.31':
     resolution: {integrity: sha512-hm/+tuBPf6bH1iw1xP80JXGe9rhUTovMcQpDfLMNkrdXrLZJ618sKXzID1nId03QKYcocnOHvkbX0NuNPila+A==}
 
-  '@form-create/component-elm-select@3.2.31':
-    resolution: {integrity: sha512-olUL1rt31xn5MYF13b/5KGWXf0iJuo5z3l5xowP2xmfzWV9OfX8fRNToXNurZj9Y2HQbFBAA/uy78TFHqKh4gQ==}
+  '@form-create/component-elm-select@3.2.37':
+    resolution: {integrity: sha512-kbxYHdA5KOVmvD9HIBJZWntjpRXFf8uO2+uSjolamCmKh+St0RDttdUMRNjXDxroHHrdtJMIP9K778/BCHYk4g==}
 
   '@form-create/component-elm-tree@3.2.31':
     resolution: {integrity: sha512-cLWwqT+3ES5FSRywQ7HIh05jvEeMPhoQnIxcSbLnzB24tS2eM2x5DhbhjJ02wsZGPvfcO4m3BBp0fgv1RKww1g==}
@@ -3405,8 +3405,8 @@ packages:
   '@form-create/component-wangeditor@3.2.14':
     resolution: {integrity: sha512-N/U/hFBdBu2OIguxoKe1Kslq5fW6XmtyhKDImLfKLn1xI6X5WUtt3r7QTaUPcVUl2vntpM9wJ/FBdG17RzF/Dg==}
 
-  '@form-create/core@3.2.35':
-    resolution: {integrity: sha512-I6a84qO+5/oy09bkwE2SuoUbcvcyJW1HXTSWNWq/tWr7DHFJmYP0ME18XWrzxBF3iJrtRk5EJBdP687tJ5JrdQ==}
+  '@form-create/core@3.2.37':
+    resolution: {integrity: sha512-1Wwr+6xMrL/6XfeeZJtlhMIKOWjwdUxuTiOJEApk+Q+Stsaz15LtKqsffyZTs7mN5DajUGnDxW8MP/myYgABXw==}
     peerDependencies:
       vue: ^3.5.26
 
@@ -3415,8 +3415,8 @@ packages:
     peerDependencies:
       vue: ^3.5.26
 
-  '@form-create/element-ui@3.2.35':
-    resolution: {integrity: sha512-QR8ziwwmpaZ6VFnqEXaMH5gHwJ2pY1tJLT8nZ3+09NGNbXMbbMyf66rT0LbX9OXOOCeUvfNKN6AuEsSAlOPyAQ==}
+  '@form-create/element-ui@3.2.37':
+    resolution: {integrity: sha512-KfC+a1zE1SfEpiZR3i+C95GPsoXajrT/b76bvToI6Nxk4SKSG+cqNyrS4FnRU0WbJlxjF9lzPJ+oejOLmqPjmQ==}
     peerDependencies:
       vue: ^3.5.26
 
@@ -10121,19 +10121,6 @@ packages:
       rollup: ^3.29.4 || ^4
       typescript: ^4.5 || ^5.0
 
-  rollup-plugin-visualizer@5.14.0:
-    resolution: {integrity: sha512-VlDXneTDaKsHIw8yzJAFWtrzguoJ/LnQ+lMpoVfYJ3jJF4Ihe5oYLAqLklIK/35lgUY+1yEzCkHyZ1j4A5w5fA==}
-    engines: {node: '>=18'}
-    hasBin: true
-    peerDependencies:
-      rolldown: 1.x
-      rollup: 2.x || 3.x || 4.x
-    peerDependenciesMeta:
-      rolldown:
-        optional: true
-      rollup:
-        optional: true
-
   rollup-plugin-visualizer@6.0.5:
     resolution: {integrity: sha512-9+HlNgKCVbJDs8tVtjQ43US12eqaiHyyiLMdBwQ7vSZPiHMysGNo2E88TAp1si5wx8NAoYriI2A5kuKfIakmJg==}
     engines: {node: '>=18'}
@@ -13582,7 +13569,7 @@ snapshots:
     dependencies:
       '@form-create/utils': 3.2.31
 
-  '@form-create/component-elm-select@3.2.31':
+  '@form-create/component-elm-select@3.2.37':
     dependencies:
       '@form-create/utils': 3.2.31
 
@@ -13600,7 +13587,7 @@ snapshots:
     dependencies:
       wangeditor: 4.7.15
 
-  '@form-create/core@3.2.35(vue@3.5.26(typescript@5.9.3))':
+  '@form-create/core@3.2.37(vue@3.5.26(typescript@5.9.3))':
     dependencies:
       '@form-create/utils': 3.2.31
       vue: 3.5.26(typescript@5.9.3)
@@ -13608,7 +13595,7 @@ snapshots:
   '@form-create/designer@3.4.0(vue@3.5.26(typescript@5.9.3))':
     dependencies:
       '@form-create/component-wangeditor': 3.2.14
-      '@form-create/element-ui': 3.2.35(vue@3.5.26(typescript@5.9.3))
+      '@form-create/element-ui': 3.2.37(vue@3.5.26(typescript@5.9.3))
       '@form-create/utils': 3.2.31
       codemirror: 6.65.7
       element-plus: 2.13.0(vue@3.5.26(typescript@5.9.3))
@@ -13620,17 +13607,17 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
 
-  '@form-create/element-ui@3.2.35(vue@3.5.26(typescript@5.9.3))':
+  '@form-create/element-ui@3.2.37(vue@3.5.26(typescript@5.9.3))':
     dependencies:
       '@form-create/component-elm-checkbox': 3.2.31
       '@form-create/component-elm-frame': 3.2.31
       '@form-create/component-elm-group': 3.2.34
       '@form-create/component-elm-radio': 3.2.31
-      '@form-create/component-elm-select': 3.2.31
+      '@form-create/component-elm-select': 3.2.37
       '@form-create/component-elm-tree': 3.2.31
       '@form-create/component-elm-upload': 3.2.31
       '@form-create/component-subform': 3.2.34
-      '@form-create/core': 3.2.35(vue@3.5.26(typescript@5.9.3))
+      '@form-create/core': 3.2.37(vue@3.5.26(typescript@5.9.3))
       '@form-create/utils': 3.2.31
       vue: 3.5.26(typescript@5.9.3)
 
@@ -21142,15 +21129,6 @@ snapshots:
       typescript: 5.9.3
     optionalDependencies:
       '@babel/code-frame': 7.27.1
-
-  rollup-plugin-visualizer@5.14.0(rollup@4.54.0):
-    dependencies:
-      open: 8.4.2
-      picomatch: 4.0.3
-      source-map: 0.7.6
-      yargs: 17.7.2
-    optionalDependencies:
-      rollup: 4.54.0
 
   rollup-plugin-visualizer@6.0.5(rollup@4.54.0):
     dependencies:
