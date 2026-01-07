@@ -67,7 +67,7 @@ jobs:
         run: pnpm run build:ele
 
       - name: Deploy to server
-        uses: easingthemes/ssh-deploy@v5
+        uses: easingthemes/ssh-deploy@v5.1.0
         with:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
@@ -92,7 +92,7 @@ jobs:
         run: pnpm --filter @x-monorepo/web-nuxt generate
 
       - name: Deploy to server
-        uses: easingthemes/ssh-deploy@v5
+        uses: easingthemes/ssh-deploy@v5.1.0
         with:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
@@ -110,7 +110,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Deploy nginx.conf
-        uses: easingthemes/ssh-deploy@v5
+        uses: easingthemes/ssh-deploy@v5.1.0
         with:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
