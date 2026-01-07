@@ -170,7 +170,7 @@ catalog:
   reka-ui: ^2.7.0
   resolve.exports: ^2.0.3
   rimraf: ^6.1.2
-  rollup: ^4.54.0
+  rollup: ^4.55.1
   rollup-plugin-visualizer: ^6.0.5
   sass: ^1.97.2
   secure-ls: ^2.0.0
