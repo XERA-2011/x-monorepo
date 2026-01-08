@@ -1,5 +1,6 @@
 /* 字体导入 - 必须放在最前面 */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap');
+/* stylelint-disable property-no-deprecated */
 @import 'tailwindcss';
 @import '@nuxt/ui';
 
@@ -42,11 +43,9 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    to bottom,
-    var(--color-neon-magenta),
-    var(--color-neon-cyan)
-  );
+  background: linear-gradient(to bottom,
+      var(--color-neon-magenta),
+      var(--color-neon-cyan));
   border: 2px solid var(--color-void);
   border-radius: 5px;
 }
@@ -84,19 +83,15 @@ h6,
   pointer-events: none;
   content: '';
   background:
-    repeating-linear-gradient(
-      0deg,
+    repeating-linear-gradient(0deg,
       rgb(0 0 0 / 15%) 0,
       rgb(0 0 0 / 15%) 1px,
       transparent 1px,
-      transparent 2px
-    ),
-    linear-gradient(
-      90deg,
+      transparent 2px),
+    linear-gradient(90deg,
       rgb(255 0 0 / 6%),
       rgb(0 255 0 / 2%),
-      rgb(0 0 255 / 6%)
-    );
+      rgb(0 0 255 / 6%));
   background-size:
     100% 4px,
     3px 100%;
@@ -159,11 +154,9 @@ h6,
   width: 500px;
   height: 500px;
   pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    var(--color-neon-orange),
-    var(--color-neon-magenta)
-  );
+  background: linear-gradient(to bottom,
+      var(--color-neon-orange),
+      var(--color-neon-magenta));
   border-radius: 50%;
   opacity: 0.15;
   filter: blur(120px);
@@ -172,6 +165,7 @@ h6,
 }
 
 @keyframes sun-float {
+
   0%,
   100% {
     transform: translateX(-50%) translateY(0);
@@ -202,26 +196,22 @@ h6,
 /* 渐变文字 */
 .gradient-text {
   color: transparent;
-  background: linear-gradient(
-    to right,
-    var(--color-neon-orange),
-    var(--color-neon-magenta),
-    var(--color-neon-cyan)
-  );
+  background: linear-gradient(to right,
+      var(--color-neon-orange),
+      var(--color-neon-magenta),
+      var(--color-neon-cyan));
   background-clip: text;
 }
 
 /* 动态渐变文字动画 */
 .gradient-text-animated {
   color: transparent;
-  background: linear-gradient(
-    90deg,
-    var(--color-neon-orange),
-    var(--color-neon-magenta),
-    var(--color-neon-cyan),
-    var(--color-neon-magenta),
-    var(--color-neon-orange)
-  );
+  background: linear-gradient(90deg,
+      var(--color-neon-orange),
+      var(--color-neon-magenta),
+      var(--color-neon-cyan),
+      var(--color-neon-magenta),
+      var(--color-neon-orange));
   background-clip: text;
   background-size: 300% 100%;
   animation: gradient-shift 6s ease-in-out infinite;
@@ -251,12 +241,12 @@ h6,
   transform: skewX(0deg);
 }
 
-.skew-button > * {
+.skew-button>* {
   display: inline-block;
   transform: skewX(12deg);
 }
 
-.skew-button:hover > * {
+.skew-button:hover>* {
   transform: skewX(0deg);
 }
 
@@ -318,7 +308,7 @@ h6,
   transform: rotate(90deg);
 }
 
-.diamond-icon > * {
+.diamond-icon>* {
   transform: rotate(-45deg);
 }
 
@@ -638,6 +628,7 @@ h6,
 
 /* 霓虹闪烁动画 */
 @keyframes neon-flicker {
+
   0%,
   19%,
   21%,
@@ -668,10 +659,8 @@ h6,
 
 /* 点阵背景 */
 .dot-grid {
-  background-image: radial-gradient(
-    var(--color-neon-magenta) 1px,
-    transparent 1px
-  );
+  background-image: radial-gradient(var(--color-neon-magenta) 1px,
+      transparent 1px);
   background-size: 20px 20px;
   opacity: 0.1;
 }
@@ -692,11 +681,9 @@ h6,
   width: 100%;
   height: 2px;
   content: '';
-  background: linear-gradient(
-    to right,
-    var(--color-neon-magenta),
-    var(--color-neon-cyan)
-  );
+  background: linear-gradient(to right,
+      var(--color-neon-magenta),
+      var(--color-neon-cyan));
 }
 
 .stat-card:hover {
@@ -723,6 +710,7 @@ h6,
 
 /* 霓虹边框脉冲 */
 @keyframes neon-border-pulse {
+
   0%,
   100% {
     box-shadow:
@@ -747,12 +735,10 @@ h6,
 /* 分隔线装饰 */
 .divider-neon {
   height: 2px;
-  background: linear-gradient(
-    to right,
-    var(--color-neon-magenta),
-    var(--color-neon-cyan),
-    var(--color-neon-orange)
-  );
+  background: linear-gradient(to right,
+      var(--color-neon-magenta),
+      var(--color-neon-cyan),
+      var(--color-neon-orange));
 }
 
 /* 角落装饰 */
