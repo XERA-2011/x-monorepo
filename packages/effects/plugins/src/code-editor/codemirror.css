@@ -24,14 +24,20 @@
 /* PADDING */
 
 .CodeMirror-lines {
-  min-height: 1px; /* prevents collapsing before first draw */
-  padding: 4px 0; /* Vertical padding around content */
+  min-height: 1px;
+
+  /* prevents collapsing before first draw */
+  padding: 4px 0;
+
+  /* Vertical padding around content */
   cursor: text;
 }
 
 .CodeMirror-scrollbar-filler,
 .CodeMirror-gutter-filler {
-  background-color: white; /* The little square between H and V scrollbars */
+  background-color: white;
+
+  /* The little square between H and V scrollbars */
 }
 
 /* GUTTER */
@@ -316,8 +322,12 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
   /* See overflow: hidden in .CodeMirror */
   margin-bottom: -30px;
-  overflow: scroll !important; /* Things will break if this is overridden */
-  outline: none; /* Prevent dragging from highlighting the element */
+  overflow: scroll !important;
+
+  /* Things will break if this is overridden */
+  outline: none;
+
+  /* Prevent dragging from highlighting the element */
 }
 
 .CodeMirror-sizer {
@@ -399,7 +409,9 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .CodeMirror pre {
   position: relative;
   z-index: 2;
-  padding: 0 4px; /* Horizontal padding of content */
+  padding: 0 4px;
+
+  /* Horizontal padding of content */
   margin: 0;
   overflow: visible;
   font-family: inherit;
@@ -407,7 +419,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   font-variant-ligatures: contextual;
   line-height: inherit;
   color: inherit;
-  word-wrap: normal;
+  overflow-wrap: normal;
   white-space: pre;
   background: transparent;
   border-width: 0;
@@ -432,7 +444,9 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .CodeMirror-linewidget {
   position: relative;
   z-index: 2;
-  padding: 0.1px; /* Force widget margins to stay inside of the container */
+  padding: 0.1px;
+
+  /* Force widget margins to stay inside of the container */
 }
 
 .CodeMirror-rtl pre {
