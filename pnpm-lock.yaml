@@ -448,8 +448,8 @@ catalogs:
       specifier: ^6.14.0
       version: 6.14.0
     tailwind-merge:
-      specifier: ^2.6.0
-      version: 2.6.0
+      specifier: ^3.4.0
+      version: 3.4.0
     tailwindcss:
       specifier: 3.4.19
       version: 3.4.19
@@ -1194,7 +1194,7 @@ importers:
         version: 0.2.0
       tailwind-merge:
         specifier: 'catalog:'
-        version: 2.6.0
+        version: 3.4.0
       theme-colors:
         specifier: 'catalog:'
         version: 0.1.0
@@ -10792,9 +10792,6 @@ packages:
   tagged-tag@1.0.0:
     resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
     engines: {node: '>=20'}
-
-  tailwind-merge@2.6.0:
-    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
 
   tailwind-merge@3.4.0:
     resolution: {integrity: sha512-uSaO4gnW+b3Y2aWoWfFpX62vn2sR3skfhbjsEnaBI81WD1wBLlHZe5sWf0AqjksNdYTbGBEd0UasQMT3SNV15g==}
@@ -22058,8 +22055,6 @@ snapshots:
       strip-ansi: 6.0.1
 
   tagged-tag@1.0.0: {}
-
-  tailwind-merge@2.6.0: {}
 
   tailwind-merge@3.4.0: {}
 
