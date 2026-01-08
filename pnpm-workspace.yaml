@@ -205,7 +205,7 @@ catalog:
   vite-plugin-vue-devtools: ^8.0.5
   vitepress: ^1.6.4
   vitepress-plugin-group-icons: ^1.6.5
-  vitest: ^3.2.4
+  vitest: ^4.0.16
   vue: ^3.5.26
   vue-dompurify-html: ^5.3.0
   vue-eslint-parser: ^10.2.0
