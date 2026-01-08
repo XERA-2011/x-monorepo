@@ -105,6 +105,7 @@ watch(copied, (val) => {
   -ms-overflow-style: none;
   scrollbar-width: none;
 
+  /* stylelint-disable nesting-selector-no-missing-scoping-root */
   &::-webkit-scrollbar {
     width: 0;
     height: 0;
