@@ -67,6 +67,7 @@ jobs:
         run: pnpm run build:ele
 
       - name: Deploy to server
+        if: ${{ secrets.ALIYUN_HOST != '' }}
         uses: easingthemes/ssh-deploy@v5.1.1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
@@ -92,6 +93,7 @@ jobs:
         run: pnpm --filter @x-monorepo/web-nuxt generate
 
       - name: Deploy to server
+        if: ${{ secrets.ALIYUN_HOST != '' }}
         uses: easingthemes/ssh-deploy@v5.1.1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
@@ -110,6 +112,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Deploy nginx.conf
+        if: ${{ secrets.ALIYUN_HOST != '' }}
         uses: easingthemes/ssh-deploy@v5.1.1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
@@ -127,6 +130,7 @@ jobs:
     if: always() && (needs.deploy-admin-ele.result == 'success' || needs.deploy-web-nuxt.result == 'success' || needs.deploy-nginx-conf.result == 'success')
     steps:
       - name: Reload Nginx
+        if: ${{ secrets.ALIYUN_HOST != '' }}
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.ALIYUN_HOST }}
