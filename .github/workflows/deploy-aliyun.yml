@@ -67,6 +67,13 @@ jobs:
       - name: Build admin-ele
         run: pnpm run build:ele
 
+      - name: Check admin-ele build output
+        run: |
+          if [ ! -d "apps/admin-ele/dist" ] || [ -z "$(ls -A apps/admin-ele/dist)" ]; then
+            echo "Error: admin-ele build output directory is empty or does not exist."
+            exit 1
+          fi
+
       - name: Deploy to server
         if: ${{ env.ALIYUN_HOST != '' }}
         uses: easingthemes/ssh-deploy@v5.1.1
@@ -92,6 +99,13 @@ jobs:
 
       - name: Build web-nuxt
         run: pnpm --filter @x-monorepo/web-nuxt generate
+
+      - name: Check web-nuxt build output
+        run: |
+          if [ ! -d "apps/web-nuxt/.output/public" ] || [ -z "$(ls -A apps/web-nuxt/.output/public)" ]; then
+            echo "Error: web-nuxt build output directory is empty or does not exist."
+            exit 1
+          fi
 
       - name: Deploy to server
         if: ${{ env.ALIYUN_HOST != '' }}
