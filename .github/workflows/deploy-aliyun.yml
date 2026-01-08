@@ -24,6 +24,7 @@ on:
 env:
   CI: true
   TZ: Asia/Shanghai
+  ALIYUN_HOST: ${{ secrets.ALIYUN_HOST }}
 
 jobs:
   # 检测变更的应用
@@ -66,7 +67,15 @@ jobs:
       - name: Build admin-ele
         run: pnpm run build:ele
 
+      - name: Check admin-ele build output
+        run: |
+          if [ ! -d "apps/admin-ele/dist" ] || [ -z "$(ls -A apps/admin-ele/dist)" ]; then
+            echo "Error: admin-ele build output directory is empty or does not exist."
+            exit 1
+          fi
+
       - name: Deploy to server
+        if: ${{ env.ALIYUN_HOST != '' }}
         uses: easingthemes/ssh-deploy@v5.1.1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
@@ -91,7 +100,15 @@ jobs:
       - name: Build web-nuxt
         run: pnpm --filter @x-monorepo/web-nuxt generate
 
+      - name: Check web-nuxt build output
+        run: |
+          if [ ! -d "apps/web-nuxt/.output/public" ] || [ -z "$(ls -A apps/web-nuxt/.output/public)" ]; then
+            echo "Error: web-nuxt build output directory is empty or does not exist."
+            exit 1
+          fi
+
       - name: Deploy to server
+        if: ${{ env.ALIYUN_HOST != '' }}
         uses: easingthemes/ssh-deploy@v5.1.1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
@@ -110,6 +127,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Deploy nginx.conf
+        if: ${{ env.ALIYUN_HOST != '' }}
         uses: easingthemes/ssh-deploy@v5.1.1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
@@ -127,6 +145,7 @@ jobs:
     if: always() && (needs.deploy-admin-ele.result == 'success' || needs.deploy-web-nuxt.result == 'success' || needs.deploy-nginx-conf.result == 'success')
     steps:
       - name: Reload Nginx
+        if: ${{ env.ALIYUN_HOST != '' }}
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.ALIYUN_HOST }}

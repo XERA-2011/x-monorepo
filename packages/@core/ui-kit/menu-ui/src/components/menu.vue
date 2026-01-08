@@ -405,6 +405,7 @@ $namespace: x-app;
     padding 0.15s ease,
     border-color 0.15s ease;
 
+  /* stylelint-disable nesting-selector-no-missing-scoping-root */
   &.is-disabled {
     cursor: not-allowed;
     background: none !important;

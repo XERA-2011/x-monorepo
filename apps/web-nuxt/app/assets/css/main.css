@@ -1,5 +1,6 @@
 /* 字体导入 - 必须放在最前面 */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap');
+/* stylelint-disable property-no-deprecated */
 @import 'tailwindcss';
 @import '@nuxt/ui';
 
