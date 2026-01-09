@@ -9,7 +9,7 @@ export default {
     'postcss-antd-fixes': { prefixes: ['ant', 'el'] },
     'postcss-import': {},
     'postcss-preset-env': {},
+    '@tailwindcss/nesting': {},
     tailwindcss: { config },
-    'tailwindcss/nesting': {},
   },
 };
