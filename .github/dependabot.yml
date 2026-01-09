@@ -15,6 +15,9 @@ updates:
       # cropperjs v2 changes from class-based to Web Components API
       - dependency-name: 'cropperjs'
         update-types: ['version-update:semver-major']
+      # circular-dependency-scanner v3 has broken ESM exports
+      - dependency-name: 'circular-dependency-scanner'
+        update-types: ['version-update:semver-major']
       # Add other known breaking-change packages here as needed
 
   - package-ecosystem: github-actions
