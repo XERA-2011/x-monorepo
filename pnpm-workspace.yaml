@@ -15,8 +15,8 @@ catalog:
   '@changesets/cli': ^2.29.8
   '@changesets/git': ^3.0.4
   '@clack/prompts': ^0.11.0
-  '@commitlint/cli': ^20.3.0
-  '@commitlint/config-conventional': ^20.2.0
+  '@commitlint/cli': ^20.3.1
+  '@commitlint/config-conventional': ^20.3.1
   '@ctrl/tinycolor': ^4.2.0
   '@eslint/js': ^9.39.2
   '@faker-js/faker': ^10.1.0
@@ -25,7 +25,7 @@ catalog:
   '@form-create/designer': ^3.4.0
   '@form-create/element-ui': ^3.2.37
   '@iconify-json/ant-design': ^1.2.5
-  '@iconify-json/lucide': ^1.2.68
+  '@iconify-json/lucide': ^1.2.83
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.0
   '@intlify/core-base': ^11.2.8
@@ -79,7 +79,7 @@ catalog:
   axios: ^1.13.2
   axios-mock-adapter: ^2.1.0
   bpmn-js: ^18.9.1
-  bpmn-js-properties-panel: 5.45.0
+  bpmn-js-properties-panel: 5.46.0
   bpmn-js-token-simulation: ^0.38.2
   cac: ^6.7.14
   camunda-bpmn-moddle: ^7.0.1
@@ -111,11 +111,11 @@ catalog:
   eslint-plugin-command: ^3.4.0
   eslint-plugin-eslint-comments: ^3.2.0
   eslint-plugin-import-x: ^4.16.1
-  eslint-plugin-jsdoc: ^61.5.0
+  eslint-plugin-jsdoc: ^61.7.1
   eslint-plugin-jsonc: ^2.21.0
   eslint-plugin-n: ^17.23.1
   eslint-plugin-no-only-tests: ^3.3.0
-  eslint-plugin-perfectionist: ^5.3.0
+  eslint-plugin-perfectionist: ^5.3.1
   eslint-plugin-prettier: ^5.5.4
   eslint-plugin-regexp: ^2.10.0
   eslint-plugin-unicorn: ^62.0.0
@@ -149,7 +149,7 @@ catalog:
   markmap-toolbar: ^0.18.12
   markmap-view: ^0.18.12
   medium-zoom: ^1.1.0
-  nitropack: ^2.12.9
+  nitropack: ^2.13.0
   nprogress: ^0.2.0
   ora: ^9.0.0
   pinia: ^3.0.4
@@ -217,7 +217,7 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.1
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.11.36
+  vxe-pc-ui: ^4.11.38
   vxe-table: ^4.17.40
   watermark-js-plus: ^1.6.3
   zod: ^4.3.5
