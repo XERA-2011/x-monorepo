@@ -10,8 +10,8 @@ updates:
     # Globally ignore ALL major version upgrades (breaking changes)
     # You will only receive PRs for patch and minor updates
     ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
 
   - package-ecosystem: github-actions
     directory: '/'
