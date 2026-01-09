@@ -7,6 +7,15 @@ updates:
     groups:
       non-breaking-changes:
         update-types: [minor, patch]
+    # Ignore major version upgrades for packages that require significant migration
+    ignore:
+      # Tailwind CSS v4 requires major code changes (@apply needs @reference in Vue SFCs)
+      - dependency-name: 'tailwindcss'
+        update-types: ['version-update:semver-major']
+      # cropperjs v2 changes from class-based to Web Components API
+      - dependency-name: 'cropperjs'
+        update-types: ['version-update:semver-major']
+      # Add other known breaking-change packages here as needed
 
   - package-ecosystem: github-actions
     directory: '/'
