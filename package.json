@@ -114,10 +114,5 @@
         "x64"
       ]
     }
-  },
-  "dependencies": {
-    "@tailwindcss/nesting": "catalog:",
-    "@tailwindcss/postcss": "^4.1.18",
-    "postcss-nesting": "^13.0.2"
   }
 }
