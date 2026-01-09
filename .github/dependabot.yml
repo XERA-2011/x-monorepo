@@ -7,18 +7,11 @@ updates:
     groups:
       non-breaking-changes:
         update-types: [minor, patch]
-    # Ignore major version upgrades for packages that require significant migration
+    # Globally ignore ALL major version upgrades (breaking changes)
+    # You will only receive PRs for patch and minor updates
     ignore:
-      # Tailwind CSS v4 requires major code changes (@apply needs @reference in Vue SFCs)
-      - dependency-name: 'tailwindcss'
-        update-types: ['version-update:semver-major']
-      # cropperjs v2 changes from class-based to Web Components API
-      - dependency-name: 'cropperjs'
-        update-types: ['version-update:semver-major']
-      # circular-dependency-scanner v3 has broken ESM exports
-      - dependency-name: 'circular-dependency-scanner'
-        update-types: ['version-update:semver-major']
-      # Add other known breaking-change packages here as needed
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: github-actions
     directory: '/'
