@@ -37,8 +37,8 @@ catalogs:
       specifier: ^1.2.5
       version: 1.2.5
     '@iconify-json/lucide':
-      specifier: ^1.2.83
-      version: 1.2.83
+      specifier: ^1.2.84
+      version: 1.2.84
     '@iconify/tailwind':
       specifier: ^1.2.0
       version: 1.2.0
@@ -235,8 +235,8 @@ catalogs:
       specifier: ^6.0.0
       version: 6.0.0
     element-plus:
-      specifier: ^2.13.0
-      version: 2.13.0
+      specifier: ^2.13.1
+      version: 2.13.1
     es-toolkit:
       specifier: ^1.43.0
       version: 1.43.0
@@ -244,8 +244,8 @@ catalogs:
       specifier: ^9.39.2
       version: 9.39.2
     eslint-config-turbo:
-      specifier: ^2.7.3
-      version: 2.7.3
+      specifier: ^2.7.4
+      version: 2.7.4
     eslint-plugin-command:
       specifier: ^3.4.0
       version: 3.4.0
@@ -376,8 +376,8 @@ catalogs:
       specifier: ^16.1.1
       version: 16.1.1
     postcss-preset-env:
-      specifier: ^10.6.0
-      version: 10.6.0
+      specifier: ^10.6.1
+      version: 10.6.1
     postcss-scss:
       specifier: ^4.0.9
       version: 4.0.9
@@ -466,8 +466,8 @@ catalogs:
       specifier: ^6.3.7
       version: 6.3.7
     turbo:
-      specifier: ^2.7.3
-      version: 2.7.3
+      specifier: ^2.7.4
+      version: 2.7.4
     typescript:
       specifier: ^5.9.3
       version: 5.9.3
@@ -535,8 +535,8 @@ catalogs:
       specifier: ^4.1.0
       version: 4.1.0
     vxe-pc-ui:
-      specifier: ^4.11.38
-      version: 4.11.38
+      specifier: ^4.11.43
+      version: 4.11.43
     vxe-table:
       specifier: ^4.17.40
       version: 4.17.40
@@ -551,7 +551,7 @@ catalogs:
       version: 0.2.3
 
 overrides:
-  '@ast-grep/napi': ^0.40.4
+  '@ast-grep/napi': ^0.40.5
   '@ctrl/tinycolor': ^4.2.0
   clsx: ^2.1.1
   esbuild: 0.25.3
@@ -640,7 +640,7 @@ importers:
         version: 3.4.19(yaml@2.8.2)
       turbo:
         specifier: 'catalog:'
-        version: 2.7.3
+        version: 2.7.4
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
@@ -727,7 +727,7 @@ importers:
         version: 1.11.19
       element-plus:
         specifier: 'catalog:'
-        version: 2.13.0(vue@3.5.26(typescript@5.9.3))
+        version: 2.13.1(vue@3.5.26(typescript@5.9.3))
       highlight.js:
         specifier: 'catalog:'
         version: 11.11.1
@@ -764,7 +764,7 @@ importers:
     dependencies:
       '@iconify-json/lucide':
         specifier: 'catalog:'
-        version: 1.2.83
+        version: 1.2.84
       '@nuxt/ui':
         specifier: ^4.3.0
         version: 4.3.0(dae47cb72a0be6c2c324ab149113bd9d)
@@ -813,7 +813,7 @@ importers:
     dependencies:
       '@commitlint/cli':
         specifier: 'catalog:'
-        version: 20.3.1(@types/node@25.0.3)(typescript@5.9.3)
+        version: 20.3.1(@types/node@24.10.4)(typescript@5.9.3)
       '@commitlint/config-conventional':
         specifier: 'catalog:'
         version: 20.3.1
@@ -834,7 +834,7 @@ importers:
     dependencies:
       eslint-config-turbo:
         specifier: 'catalog:'
-        version: 2.7.3(eslint@9.39.2(jiti@2.6.1))(turbo@2.7.3)
+        version: 2.7.4(eslint@9.39.2(jiti@2.6.1))(turbo@2.7.4)
       eslint-plugin-command:
         specifier: 'catalog:'
         version: 3.4.0(eslint@9.39.2(jiti@2.6.1))
@@ -1001,7 +1001,7 @@ importers:
         version: 1.2.5
       '@iconify-json/lucide':
         specifier: 'catalog:'
-        version: 1.2.83
+        version: 1.2.84
       '@iconify-json/mdi':
         specifier: ^1.2.3
         version: 1.2.3
@@ -1040,7 +1040,7 @@ importers:
         version: 16.1.1(postcss@8.5.6)
       postcss-preset-env:
         specifier: 'catalog:'
-        version: 10.6.0(postcss@8.5.6)
+        version: 10.6.1(postcss@8.5.6)
       tailwindcss:
         specifier: 'catalog:'
         version: 3.4.19(yaml@2.8.2)
@@ -1668,7 +1668,7 @@ importers:
         version: 3.5.26(typescript@5.9.3)
       vxe-pc-ui:
         specifier: 'catalog:'
-        version: 4.11.38(vue@3.5.26(typescript@5.9.3))
+        version: 4.11.43(vue@3.5.26(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
         version: 4.17.40(vue@3.5.26(typescript@5.9.3))
@@ -1837,66 +1837,66 @@ packages:
     peerDependencies:
       ajv: '>=8'
 
-  '@ast-grep/napi-darwin-arm64@0.40.4':
-    resolution: {integrity: sha512-UIkpoEExRghZe5wN6QXGkDzI65zKVoaBQowAzmEd3MCGP8VlAK3FoxDMdy0OLgQVTyRUdBUwG384WpxiWilYEw==}
+  '@ast-grep/napi-darwin-arm64@0.40.5':
+    resolution: {integrity: sha512-2F072fGN0WTq7KI3okuEnkGJVEHLbi56Bw1H6NAMf7j2mJJeQWsRyGOMcyNnUXZDeNdvoMH0OB2a5wwUegY/nQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@ast-grep/napi-darwin-x64@0.40.4':
-    resolution: {integrity: sha512-derMkDWiMFjRlcN0SEHXNPeZ67OGR5So6b4r/+ETvZMZavLQv+ER0vevltFS4ci8m402g7l/wVOdSE1oHcN2Iw==}
+  '@ast-grep/napi-darwin-x64@0.40.5':
+    resolution: {integrity: sha512-dJMidHZhhxuLBYNi6/FKI812jQ7wcFPSKkVPwviez2D+KvYagapUMAV/4dJ7FCORfguVk8Y0jpPAlYmWRT5nvA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@ast-grep/napi-linux-arm64-gnu@0.40.4':
-    resolution: {integrity: sha512-1CeDsK6WRMz169mTXLfXdn2GkQAsMkYbqGd7mHDa2VqutJwDYrqe6t4QiFAlr+LRT2bQuExpPh3AiC8BNd6UQQ==}
+  '@ast-grep/napi-linux-arm64-gnu@0.40.5':
+    resolution: {integrity: sha512-nBRCbyoS87uqkaw4Oyfe5VO+SRm2B+0g0T8ME69Qry9ShMf41a2bTdpcQx9e8scZPogq+CTwDHo3THyBV71l9w==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@ast-grep/napi-linux-arm64-musl@0.40.4':
-    resolution: {integrity: sha512-VqjL9Xbq5NNXexY4rluaFtpuHHGbcNIwFXInbm8hdaZS3Rsr9tz+QCEhDNO4IJgPtcRUOpa7AIztZotwxrb/iw==}
+  '@ast-grep/napi-linux-arm64-musl@0.40.5':
+    resolution: {integrity: sha512-/qKsmds5FMoaEj6FdNzepbmLMtlFuBLdrAn9GIWCqOIcVcYvM1Nka8+mncfeXB/MFZKOrzQsQdPTWqrrQzXLrA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@ast-grep/napi-linux-x64-gnu@0.40.4':
-    resolution: {integrity: sha512-6BrPYjP+Gr+mkI3z3Xh/UHkOedJ25qKGdhRwbYteeK/QX3rWeuuo/tUjow4nh/8ewhk04wHGw/G96OiF47ICjA==}
+  '@ast-grep/napi-linux-x64-gnu@0.40.5':
+    resolution: {integrity: sha512-DP4oDbq7f/1A2hRTFLhJfDFR6aI5mRWdEfKfHzRItmlKsR9WlcEl1qDJs/zX9R2EEtIDsSKRzuJNfJllY3/W8Q==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@ast-grep/napi-linux-x64-musl@0.40.4':
-    resolution: {integrity: sha512-4LGq6xYmOsgEycx4Cu9CdyNYa99O/C1bOsZi09T0C/NifKR+55v8og6nZrGCwsKEs4jWresdal4p7WXw3k8+0g==}
+  '@ast-grep/napi-linux-x64-musl@0.40.5':
+    resolution: {integrity: sha512-BRZUvVBPUNpWPo6Ns8chXVzxHPY+k9gpsubGTHy92Q26ecZULd/dTkWWdnvfhRqttsSQ9Pe/XQdi5+hDQ6RYcg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@ast-grep/napi-win32-arm64-msvc@0.40.4':
-    resolution: {integrity: sha512-QrI9m9wmFYTRnyTsYOX+9/D/B+h0eyFqZf2qh/U3kbRU/ZZJnxI75YjYVjtoa2QI4oEJlzYb0QhKAN8NKIDYRA==}
+  '@ast-grep/napi-win32-arm64-msvc@0.40.5':
+    resolution: {integrity: sha512-y95zSEwc7vhxmcrcH0GnK4ZHEBQrmrszRBNQovzaciF9GUqEcCACNLoBesn4V47IaOp4fYgD2/EhGRTIBFb2Ug==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@ast-grep/napi-win32-ia32-msvc@0.40.4':
-    resolution: {integrity: sha512-JLhcgCUD7e74rZ39XLEfUOU26TQboJltzHir2oSpvjZPtq4aBHEJOynq7dGABZdMrzRUOPdbBdM+nFzPiU38iQ==}
+  '@ast-grep/napi-win32-ia32-msvc@0.40.5':
+    resolution: {integrity: sha512-K/u8De62iUnFCzVUs7FBdTZ2Jrgc5/DLHqjpup66KxZ7GIM9/HGME/O8aSoPkpcAeCD4TiTZ11C1i5p5H98hTg==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@ast-grep/napi-win32-x64-msvc@0.40.4':
-    resolution: {integrity: sha512-DdsqVs/kg4Iun8GU8GoOw9L9WkT2pVLAZ+1hV9t+PsdI6SR3HGRIUIJSzKz2uejr8tY8evTZmdjBWyjUav8qbQ==}
+  '@ast-grep/napi-win32-x64-msvc@0.40.5':
+    resolution: {integrity: sha512-dqm5zg/o4Nh4VOQPEpMS23ot8HVd22gG0eg01t4CFcZeuzyuSgBlOL3N7xLbz3iH2sVkk7keuBwAzOIpTqziNQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
-  '@ast-grep/napi@0.40.4':
-    resolution: {integrity: sha512-unRhSrSn4X0tf7nCuj300rBrlrXqtGbKanFX75CNmn2NM+NyPrdvq1tdDk2F+XA8Z574MynpSeCESii3WBK+bw==}
+  '@ast-grep/napi@0.40.5':
+    resolution: {integrity: sha512-hJA62OeBKUQT68DD2gDyhOqJxZxycqg8wLxbqjgqSzYttCMSDL9tiAQ9abgekBYNHudbJosm9sWOEbmCDfpX2A==}
     engines: {node: '>= 10'}
 
   '@babel/code-frame@7.27.1':
@@ -3028,8 +3028,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  '@csstools/postcss-normalize-display-values@4.0.0':
-    resolution: {integrity: sha512-HlEoG0IDRoHXzXnkV4in47dzsxdsjdz6+j7MLjaACABX2NfvjFS6XVAnpaDyGesz9gK2SC7MbNwdCHusObKJ9Q==}
+  '@csstools/postcss-normalize-display-values@4.0.1':
+    resolution: {integrity: sha512-TQUGBuRvxdc7TgNSTevYqrL8oItxiwPDixk20qCB5me/W8uF7BPbhRrAvFuhEoywQp/woRsUZ6SJ+sU5idZAIA==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -3441,8 +3441,8 @@ packages:
   '@iconify-json/ant-design@1.2.5':
     resolution: {integrity: sha512-SYxhrx1AFq2MBcXk77AERYz2mPhLQes1F0vtvG64+dJZWyge9studXo7MiR8PPeLjRjZdWRrReRbxiwdRMf70Q==}
 
-  '@iconify-json/lucide@1.2.83':
-    resolution: {integrity: sha512-k/255BFdcE+gY8cwQOlJMKjxOScW++8tiMxWw8jJXqHoQhBmOgsxm8SHVUIZqSrquMCcSNJn6rx67ZTQhoR2cA==}
+  '@iconify-json/lucide@1.2.84':
+    resolution: {integrity: sha512-m45MY1aW2swSK6Neb3J2qdZ+BxZ1VTdN7UeoXENwyMACG9bqGHWYJYxWoFzwoSnCfYLyKWTcBhesBgMd5IrUzQ==}
 
   '@iconify-json/mdi@1.2.3':
     resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
@@ -3834,6 +3834,7 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@oxc-minify/binding-linux-x64-musl@0.102.0':
     resolution: {integrity: sha512-Ew4QDpEsXoV+pG5+bJpheEy3GH436GBe6ASPB0X27Hh9cQ2gb1NVZ7cY7xJj68+fizwS/PtT8GHoG3uxyH17Pg==}
@@ -3941,6 +3942,7 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@oxc-parser/binding-linux-x64-musl@0.102.0':
     resolution: {integrity: sha512-xM5A+03Ti3jvWYZoqaBRS3lusvnvIQjA46Fc9aBE/MHgvKgHSkrGEluLWg/33QEwBwxupkH25Pxc1yu97oZCtg==}
@@ -4051,6 +4053,7 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@oxc-transform/binding-linux-x64-musl@0.102.0':
     resolution: {integrity: sha512-rUHZSZBw0FUnUgOhL/Rs7xJz9KjH2eFur/0df6Lwq/isgJc/ggtBtFoZ+y4Fb8ON87a3Y2gS2LT7SEctX0XdPQ==}
@@ -5426,6 +5429,7 @@ packages:
     resolution: {integrity: sha512-C3ZAHugKgovV5YvAMsxhq0gtXuwESUKc5MhEtjBpLoHPLYM+iuwSj3lflFwK3DPm68660rZ7G8BMcwSro7hD5w==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@unrs/resolver-binding-linux-x64-musl@1.11.1':
     resolution: {integrity: sha512-rV0YSoyhK2nZ4vEswT/QwqzqQXw5I6CjoaYMOX0TqBlWhojUf8P94mvI7nuJTeaCkkds3QE4+zS8Ko+GdXuZtA==}
@@ -6997,8 +7001,8 @@ packages:
   electron-to-chromium@1.5.267:
     resolution: {integrity: sha512-0Drusm6MVRXSOJpGbaSVgcQsuB4hEkMpHXaVstcPmhu5LIedxs1xNK/nIxmQIU/RPC0+1/o0AVZfBTkTNJOdUw==}
 
-  element-plus@2.13.0:
-    resolution: {integrity: sha512-qjxS+SBChvqCl6lU6ShiliLMN6WqFHiXQENYbAY3GKNflG+FS3jqn8JmQq0CBZq4koFqsi95NT1M6SL4whZfrA==}
+  element-plus@2.13.1:
+    resolution: {integrity: sha512-eG4BDBGdAsUGN6URH1PixzZb0ngdapLivIk1meghS1uEueLvQ3aljSKrCt5x6sYb6mUk8eGtzTQFgsPmLavQcA==}
     peerDependencies:
       vue: ^3.5.26
 
@@ -7184,8 +7188,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-turbo@2.7.3:
-    resolution: {integrity: sha512-1ik3XQLJoE9d9ljhw60wTQf7rlwnz8tc6vnhSL7/Ciep2+qPMJpNg+mapcmGhirfDSceVNI8r9pv+HyvrBXhpQ==}
+  eslint-config-turbo@2.7.4:
+    resolution: {integrity: sha512-HhIqaGxIxZ8IxOqH30zvOr8kMmLGiOiDaOrFJwER9R++9L1OztVVsbs695Vti60XkYG6aa5F1TIBsYA5TP3hEw==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -7288,8 +7292,8 @@ packages:
     peerDependencies:
       eslint: '>=8.44.0'
 
-  eslint-plugin-turbo@2.7.3:
-    resolution: {integrity: sha512-q7kYzJCyvceSLVwHgmn3ZBhqpUihQHxC7LEddq5a1eLe5P+/Ob4TnJrdocP38qO1n9MCuO+cJSUTGUtZb1X3bQ==}
+  eslint-plugin-turbo@2.7.4:
+    resolution: {integrity: sha512-kye4pyGpZMJLgykeRDYTK2kpzHFw7kWlaio66Y4dL/9IMa7cIXirvvHVryV8D7ni3eOsHZYYQ9k0nADKNnecjQ==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -9812,8 +9816,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-preset-env@10.6.0:
-    resolution: {integrity: sha512-+LzpUSLCGHUdlZ1YZP7lp7w1MjxInJRSG0uaLyk/V/BM17iU2B7xTO7I8x3uk0WQAcLLh/ffqKzOzfaBvG7Fdw==}
+  postcss-preset-env@10.6.1:
+    resolution: {integrity: sha512-yrk74d9EvY+W7+lO9Aj1QmjWY9q5NsKjK2V9drkOPZB/X6KZ0B3igKsHUYakb7oYVhnioWypQX3xGuePf89f3g==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -11015,38 +11019,38 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  turbo-darwin-64@2.7.3:
-    resolution: {integrity: sha512-aZHhvRiRHXbJw1EcEAq4aws1hsVVUZ9DPuSFaq9VVFAKCup7niIEwc22glxb7240yYEr1vLafdQ2U294Vcwz+w==}
+  turbo-darwin-64@2.7.4:
+    resolution: {integrity: sha512-xDR30ltfkSsRfGzABBckvl1nz1cZ3ssTujvdj+TPwOweeDRvZ0e06t5DS0rmRBvyKpgGs42K/EK6Mn2qLlFY9A==}
     cpu: [x64]
     os: [darwin]
 
-  turbo-darwin-arm64@2.7.3:
-    resolution: {integrity: sha512-CkVrHSq+Bnhl9sX2LQgqQYVfLTWC2gvI74C4758OmU0djfrssDKU9d4YQF0AYXXhIIRZipSXfxClQziIMD+EAg==}
+  turbo-darwin-arm64@2.7.4:
+    resolution: {integrity: sha512-P7sjqXtOL/+nYWPvcDGWhi8wf8M8mZHHB8XEzw2VX7VJrS8IGHyJHGD1AYfDvhAEcr7pnk3gGifz3/xyhI655w==}
     cpu: [arm64]
     os: [darwin]
 
-  turbo-linux-64@2.7.3:
-    resolution: {integrity: sha512-GqDsCNnzzr89kMaLGpRALyigUklzgxIrSy2pHZVXyifgczvYPnLglex78Aj3T2gu+T3trPPH2iJ+pWucVOCC2Q==}
+  turbo-linux-64@2.7.4:
+    resolution: {integrity: sha512-GofFOxRO/IhG8BcPyMSSB3Y2+oKQotsaYbHxL9yD6JPb20/o35eo+zUSyazOtilAwDHnak5dorAJFoFU8MIg2A==}
     cpu: [x64]
     os: [linux]
 
-  turbo-linux-arm64@2.7.3:
-    resolution: {integrity: sha512-NdCDTfIcIo3dWjsiaAHlxu5gW61Ed/8maah1IAF/9E3EtX0aAHNiBMbuYLZaR4vRJ7BeVkYB6xKWRtdFLZ0y3g==}
+  turbo-linux-arm64@2.7.4:
+    resolution: {integrity: sha512-+RQKgNjksVPxYAyAgmDV7w/1qj++qca+nSNTAOKGOfJiDtSvRKoci89oftJ6anGs00uamLKVEQ712TI/tfNAIw==}
     cpu: [arm64]
     os: [linux]
 
-  turbo-windows-64@2.7.3:
-    resolution: {integrity: sha512-7bVvO987daXGSJVYBoG8R4Q+csT1pKIgLJYZevXRQ0Hqw0Vv4mKme/TOjYXs9Qb1xMKh51Tb3bXKDbd8/4G08g==}
+  turbo-windows-64@2.7.4:
+    resolution: {integrity: sha512-rfak1+g+ON3czs1mDYsCS4X74ZmK6gOgRQTXjDICtzvR4o61paqtgAYtNPofcVsMWeF4wvCajSeoAkkeAnQ1kg==}
     cpu: [x64]
     os: [win32]
 
-  turbo-windows-arm64@2.7.3:
-    resolution: {integrity: sha512-nTodweTbPmkvwMu/a55XvjMsPtuyUSC+sV7f/SR57K36rB2I0YG21qNETN+00LOTUW9B3omd8XkiXJkt4kx/cw==}
+  turbo-windows-arm64@2.7.4:
+    resolution: {integrity: sha512-1ZgBNjNRbDu/fPeqXuX9i26x3CJ/Y1gcwUpQ+Vp7kN9Un6RZ9kzs164f/knrjcu5E+szCRexVjRSJay1k5jApA==}
     cpu: [arm64]
     os: [win32]
 
-  turbo@2.7.3:
-    resolution: {integrity: sha512-+HjKlP4OfYk+qzvWNETA3cUO5UuK6b5MSc2UJOKyvBceKucQoQGb2g7HlC2H1GHdkfKrk4YF1VPvROkhVZDDLQ==}
+  turbo@2.7.4:
+    resolution: {integrity: sha512-bkO4AddmDishzJB2ze7aYYPaejMoJVfS0XnaR6RCdXFOY8JGJfQE+l9fKiV7uDPa5Ut44gmOWJL3894CIMeH9g==}
     hasBin: true
 
   type-check@0.4.0:
@@ -11648,8 +11652,8 @@ packages:
     peerDependencies:
       vue: ^3.5.26
 
-  vxe-pc-ui@4.11.38:
-    resolution: {integrity: sha512-pcnPSHyviT/tJmoby6HalyDTZIVU2NTHHUFGoFT5CNASIXPb+GC8TJb1N1nOPVVTq4Lz5OMzjeW5Y/SZ8kYTGg==}
+  vxe-pc-ui@4.11.43:
+    resolution: {integrity: sha512-cRDind8+MCQEx6KP2tpZmceEihkLWPhVhbdiFqo09bu2+qlnkVMDr2QLNf+1aJfySDE/BMp2AmBa3+Ez34IQow==}
 
   vxe-table@4.17.40:
     resolution: {integrity: sha512-CXENBQpIBNX9BRGWVlAZGQi0l51nhQP2NmRkjqqbbxfUEpcFTt/yxgf7sBT1yYSzbz6x8pH1cK7nBZq5Ejjf4w==}
@@ -11967,44 +11971,44 @@ snapshots:
       jsonpointer: 5.0.1
       leven: 3.1.0
 
-  '@ast-grep/napi-darwin-arm64@0.40.4':
+  '@ast-grep/napi-darwin-arm64@0.40.5':
     optional: true
 
-  '@ast-grep/napi-darwin-x64@0.40.4':
+  '@ast-grep/napi-darwin-x64@0.40.5':
     optional: true
 
-  '@ast-grep/napi-linux-arm64-gnu@0.40.4':
+  '@ast-grep/napi-linux-arm64-gnu@0.40.5':
     optional: true
 
-  '@ast-grep/napi-linux-arm64-musl@0.40.4':
+  '@ast-grep/napi-linux-arm64-musl@0.40.5':
     optional: true
 
-  '@ast-grep/napi-linux-x64-gnu@0.40.4':
+  '@ast-grep/napi-linux-x64-gnu@0.40.5':
     optional: true
 
-  '@ast-grep/napi-linux-x64-musl@0.40.4':
+  '@ast-grep/napi-linux-x64-musl@0.40.5':
     optional: true
 
-  '@ast-grep/napi-win32-arm64-msvc@0.40.4':
+  '@ast-grep/napi-win32-arm64-msvc@0.40.5':
     optional: true
 
-  '@ast-grep/napi-win32-ia32-msvc@0.40.4':
+  '@ast-grep/napi-win32-ia32-msvc@0.40.5':
     optional: true
 
-  '@ast-grep/napi-win32-x64-msvc@0.40.4':
+  '@ast-grep/napi-win32-x64-msvc@0.40.5':
     optional: true
 
-  '@ast-grep/napi@0.40.4':
+  '@ast-grep/napi@0.40.5':
     optionalDependencies:
-      '@ast-grep/napi-darwin-arm64': 0.40.4
-      '@ast-grep/napi-darwin-x64': 0.40.4
-      '@ast-grep/napi-linux-arm64-gnu': 0.40.4
-      '@ast-grep/napi-linux-arm64-musl': 0.40.4
-      '@ast-grep/napi-linux-x64-gnu': 0.40.4
-      '@ast-grep/napi-linux-x64-musl': 0.40.4
-      '@ast-grep/napi-win32-arm64-msvc': 0.40.4
-      '@ast-grep/napi-win32-ia32-msvc': 0.40.4
-      '@ast-grep/napi-win32-x64-msvc': 0.40.4
+      '@ast-grep/napi-darwin-arm64': 0.40.5
+      '@ast-grep/napi-darwin-x64': 0.40.5
+      '@ast-grep/napi-linux-arm64-gnu': 0.40.5
+      '@ast-grep/napi-linux-arm64-musl': 0.40.5
+      '@ast-grep/napi-linux-x64-gnu': 0.40.5
+      '@ast-grep/napi-linux-x64-musl': 0.40.5
+      '@ast-grep/napi-win32-arm64-msvc': 0.40.5
+      '@ast-grep/napi-win32-ia32-msvc': 0.40.5
+      '@ast-grep/napi-win32-x64-msvc': 0.40.5
 
   '@babel/code-frame@7.27.1':
     dependencies:
@@ -12921,11 +12925,11 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@commitlint/cli@20.3.1(@types/node@25.0.3)(typescript@5.9.3)':
+  '@commitlint/cli@20.3.1(@types/node@24.10.4)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 20.3.1
       '@commitlint/lint': 20.3.1
-      '@commitlint/load': 20.3.1(@types/node@25.0.3)(typescript@5.9.3)
+      '@commitlint/load': 20.3.1(@types/node@24.10.4)(typescript@5.9.3)
       '@commitlint/read': 20.3.1
       '@commitlint/types': 20.3.1
       tinyexec: 1.0.2
@@ -12972,7 +12976,7 @@ snapshots:
       '@commitlint/rules': 20.3.1
       '@commitlint/types': 20.3.1
 
-  '@commitlint/load@20.3.1(@types/node@25.0.3)(typescript@5.9.3)':
+  '@commitlint/load@20.3.1(@types/node@24.10.4)(typescript@5.9.3)':
     dependencies:
       '@commitlint/config-validator': 20.3.1
       '@commitlint/execute-rule': 20.0.0
@@ -12980,7 +12984,7 @@ snapshots:
       '@commitlint/types': 20.3.1
       chalk: 5.6.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.2.0(@types/node@25.0.3)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.2.0(@types/node@24.10.4)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -13452,7 +13456,7 @@ snapshots:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  '@csstools/postcss-normalize-display-values@4.0.0(postcss@8.5.6)':
+  '@csstools/postcss-normalize-display-values@4.0.1(postcss@8.5.6)':
     dependencies:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
@@ -13790,7 +13794,7 @@ snapshots:
       '@form-create/element-ui': 3.2.37(vue@3.5.26(typescript@5.9.3))
       '@form-create/utils': 3.2.31
       codemirror: 6.65.7
-      element-plus: 2.13.0(vue@3.5.26(typescript@5.9.3))
+      element-plus: 2.13.1(vue@3.5.26(typescript@5.9.3))
       js-beautify: 1.15.4
       marked: 17.0.1
       signature_pad: 5.1.3
@@ -13834,7 +13838,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/lucide@1.2.83':
+  '@iconify-json/lucide@1.2.84':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -16987,7 +16991,7 @@ snapshots:
 
   circular-dependency-scanner@2.3.0:
     dependencies:
-      '@ast-grep/napi': 0.40.4
+      '@ast-grep/napi': 0.40.5
       '@vue/compiler-sfc': 3.5.26
       commander: 12.1.0
       get-tsconfig: 4.13.0
@@ -17199,9 +17203,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@6.2.0(@types/node@25.0.3)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
+  cosmiconfig-typescript-loader@6.2.0(@types/node@24.10.4)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
-      '@types/node': 25.0.3
+      '@types/node': 24.10.4
       cosmiconfig: 9.0.0(typescript@5.9.3)
       jiti: 2.6.1
       typescript: 5.9.3
@@ -17839,7 +17843,7 @@ snapshots:
 
   electron-to-chromium@1.5.267: {}
 
-  element-plus@2.13.0(vue@3.5.26(typescript@5.9.3)):
+  element-plus@2.13.1(vue@3.5.26(typescript@5.9.3)):
     dependencies:
       '@ctrl/tinycolor': 4.2.0
       '@element-plus/icons-vue': 2.3.2(vue@3.5.26(typescript@5.9.3))
@@ -18083,11 +18087,11 @@ snapshots:
       eslint: 9.39.2(jiti@2.6.1)
       semver: 7.7.3
 
-  eslint-config-turbo@2.7.3(eslint@9.39.2(jiti@2.6.1))(turbo@2.7.3):
+  eslint-config-turbo@2.7.4(eslint@9.39.2(jiti@2.6.1))(turbo@2.7.4):
     dependencies:
       eslint: 9.39.2(jiti@2.6.1)
-      eslint-plugin-turbo: 2.7.3(eslint@9.39.2(jiti@2.6.1))(turbo@2.7.3)
-      turbo: 2.7.3
+      eslint-plugin-turbo: 2.7.4(eslint@9.39.2(jiti@2.6.1))(turbo@2.7.4)
+      turbo: 2.7.4
 
   eslint-import-context@0.1.9(unrs-resolver@1.11.1):
     dependencies:
@@ -18218,11 +18222,11 @@ snapshots:
       regexp-ast-analysis: 0.7.1
       scslre: 0.3.0
 
-  eslint-plugin-turbo@2.7.3(eslint@9.39.2(jiti@2.6.1))(turbo@2.7.3):
+  eslint-plugin-turbo@2.7.4(eslint@9.39.2(jiti@2.6.1))(turbo@2.7.4):
     dependencies:
       dotenv: 16.0.3
       eslint: 9.39.2(jiti@2.6.1)
-      turbo: 2.7.3
+      turbo: 2.7.4
 
   eslint-plugin-unicorn@62.0.0(eslint@9.39.2(jiti@2.6.1)):
     dependencies:
@@ -21063,7 +21067,7 @@ snapshots:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  postcss-preset-env@10.6.0(postcss@8.5.6):
+  postcss-preset-env@10.6.1(postcss@8.5.6):
     dependencies:
       '@csstools/postcss-alpha-function': 1.0.1(postcss@8.5.6)
       '@csstools/postcss-cascade-layers': 5.0.2(postcss@8.5.6)
@@ -21090,7 +21094,7 @@ snapshots:
       '@csstools/postcss-media-minmax': 2.0.9(postcss@8.5.6)
       '@csstools/postcss-media-queries-aspect-ratio-number-values': 3.0.5(postcss@8.5.6)
       '@csstools/postcss-nested-calc': 4.0.0(postcss@8.5.6)
-      '@csstools/postcss-normalize-display-values': 4.0.0(postcss@8.5.6)
+      '@csstools/postcss-normalize-display-values': 4.0.1(postcss@8.5.6)
       '@csstools/postcss-oklab-function': 4.0.12(postcss@8.5.6)
       '@csstools/postcss-position-area-property': 1.0.0(postcss@8.5.6)
       '@csstools/postcss-progressive-custom-properties': 4.2.1(postcss@8.5.6)
@@ -22467,32 +22471,32 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  turbo-darwin-64@2.7.3:
+  turbo-darwin-64@2.7.4:
     optional: true
 
-  turbo-darwin-arm64@2.7.3:
+  turbo-darwin-arm64@2.7.4:
     optional: true
 
-  turbo-linux-64@2.7.3:
+  turbo-linux-64@2.7.4:
     optional: true
 
-  turbo-linux-arm64@2.7.3:
+  turbo-linux-arm64@2.7.4:
     optional: true
 
-  turbo-windows-64@2.7.3:
+  turbo-windows-64@2.7.4:
     optional: true
 
-  turbo-windows-arm64@2.7.3:
+  turbo-windows-arm64@2.7.4:
     optional: true
 
-  turbo@2.7.3:
+  turbo@2.7.4:
     optionalDependencies:
-      turbo-darwin-64: 2.7.3
-      turbo-darwin-arm64: 2.7.3
-      turbo-linux-64: 2.7.3
-      turbo-linux-arm64: 2.7.3
-      turbo-windows-64: 2.7.3
-      turbo-windows-arm64: 2.7.3
+      turbo-darwin-64: 2.7.4
+      turbo-darwin-arm64: 2.7.4
+      turbo-linux-64: 2.7.4
+      turbo-linux-arm64: 2.7.4
+      turbo-windows-64: 2.7.4
+      turbo-windows-arm64: 2.7.4
 
   type-check@0.4.0:
     dependencies:
@@ -23266,7 +23270,7 @@ snapshots:
       sortablejs: 1.14.0
       vue: 3.5.26(typescript@5.9.3)
 
-  vxe-pc-ui@4.11.38(vue@3.5.26(typescript@5.9.3)):
+  vxe-pc-ui@4.11.43(vue@3.5.26(typescript@5.9.3)):
     dependencies:
       '@vxe-ui/core': 4.2.21(vue@3.5.26(typescript@5.9.3))
     transitivePeerDependencies:
@@ -23274,7 +23278,7 @@ snapshots:
 
   vxe-table@4.17.40(vue@3.5.26(typescript@5.9.3)):
     dependencies:
-      vxe-pc-ui: 4.11.38(vue@3.5.26(typescript@5.9.3))
+      vxe-pc-ui: 4.11.43(vue@3.5.26(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
