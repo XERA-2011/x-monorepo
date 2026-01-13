@@ -35,12 +35,12 @@
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@oxc-minify/binding-linux-x64-gnu": "0.107.0",
-    "@oxc-minify/binding-win32-x64-msvc": "0.107.0",
-    "@oxc-parser/binding-linux-x64-gnu": "0.107.0",
-    "@oxc-parser/binding-win32-x64-msvc": "0.107.0",
-    "@oxc-transform/binding-linux-x64-gnu": "0.107.0",
-    "@oxc-transform/binding-win32-x64-msvc": "0.107.0",
+    "@oxc-minify/binding-linux-x64-gnu": "0.108.0",
+    "@oxc-minify/binding-win32-x64-msvc": "0.108.0",
+    "@oxc-parser/binding-linux-x64-gnu": "0.108.0",
+    "@oxc-parser/binding-win32-x64-msvc": "0.108.0",
+    "@oxc-transform/binding-linux-x64-gnu": "0.108.0",
+    "@oxc-transform/binding-win32-x64-msvc": "0.108.0",
     "@unrs/resolver-binding-linux-x64-gnu": "1.11.1",
     "@unrs/resolver-binding-win32-x64-msvc": "1.11.1",
     "@x-monorepo/eslint-config": "workspace:*",
