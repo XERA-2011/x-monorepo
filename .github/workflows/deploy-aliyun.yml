@@ -50,7 +50,6 @@ jobs:
               - 'packages/**'
               - 'pnpm-lock.yaml'
 
-
   # 部署 admin-ele
   deploy-admin-ele:
     name: Deploy admin-ele
@@ -116,5 +115,3 @@ jobs:
           SOURCE: 'apps/web-nuxt/.output/public/'
           TARGET: '/opt/xera/html/nuxt/'
           ARGS: '-avz --delete'
-
-
