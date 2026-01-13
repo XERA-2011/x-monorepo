@@ -115,8 +115,8 @@ jobs:
           REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
           REMOTE_USER: ${{ secrets.ALIYUN_USER }}
           SOURCE: 'apps/web-nuxt/.output/public/'
-          TARGET: '/opt/xera/html/'
-          ARGS: '-avz --delete --exclude admin'
+          TARGET: '/opt/xera/html/nuxt/'
+          ARGS: '-avz --delete'
 
   # 同步 nginx.conf
   deploy-nginx-conf:

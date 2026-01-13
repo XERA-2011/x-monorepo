@@ -9,6 +9,7 @@ export default defineNuxtConfig({
 
   // 字体配置
   app: {
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       link: [
         {
