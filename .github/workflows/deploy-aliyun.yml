@@ -8,7 +8,7 @@ on:
       - 'apps/**'
       - 'packages/**'
       - 'pnpm-lock.yaml'
-      - 'nginx.conf'
+
   workflow_dispatch:
     inputs:
       deploy_target:
@@ -35,7 +35,7 @@ jobs:
       admin-ele: ${{ steps.filter.outputs.admin-ele }}
       web-nuxt: ${{ steps.filter.outputs.web-nuxt }}
       shared: ${{ steps.filter.outputs.shared }}
-      nginx: ${{ steps.filter.outputs.nginx }}
+
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -49,8 +49,7 @@ jobs:
             shared:
               - 'packages/**'
               - 'pnpm-lock.yaml'
-            nginx:
-              - 'nginx.conf'
+
 
   # 部署 admin-ele
   deploy-admin-ele:
@@ -118,38 +117,4 @@ jobs:
           TARGET: '/opt/xera/html/nuxt/'
           ARGS: '-avz --delete'
 
-  # 同步 nginx.conf
-  deploy-nginx-conf:
-    name: Deploy nginx.conf
-    runs-on: ubuntu-latest
-    needs: detect-changes
-    if: needs.detect-changes.outputs.nginx == 'true'
-    steps:
-      - uses: actions/checkout@v4
-      - name: Deploy nginx.conf
-        if: ${{ env.ALIYUN_HOST != '' }}
-        uses: easingthemes/ssh-deploy@v5.1.1
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
-          REMOTE_USER: ${{ secrets.ALIYUN_USER }}
-          SOURCE: 'nginx.conf'
-          TARGET: '/opt/xera/'
-          ARGS: '-avz'
 
-  # 重载 Nginx
-  reload-nginx:
-    name: Reload Nginx
-    runs-on: ubuntu-latest
-    needs: [deploy-admin-ele, deploy-web-nuxt, deploy-nginx-conf]
-    if: always() && (needs.deploy-admin-ele.result == 'success' || needs.deploy-web-nuxt.result == 'success' || needs.deploy-nginx-conf.result == 'success')
-    steps:
-      - name: Reload Nginx
-        if: ${{ env.ALIYUN_HOST != '' }}
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.ALIYUN_HOST }}
-          username: ${{ secrets.ALIYUN_USER }}
-          key: ${{ secrets.ALIYUN_SSH_KEY }}
-          script: |
-            docker exec xera-nginx nginx -s reload || true
