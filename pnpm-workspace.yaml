@@ -89,7 +89,7 @@ catalog:
   class-variance-authority: ^0.7.1
   clsx: ^2.1.1
   codemirror: ^5.65.18
-  commitlint-plugin-function-rules: ^4.3.0
+  commitlint-plugin-function-rules: ^4.3.1
   consola: ^3.4.2
   cropperjs: ^1.6.2
   cross-env: ^10.1.0
@@ -113,7 +113,7 @@ catalog:
   eslint-plugin-import-x: ^4.16.1
   eslint-plugin-jsdoc: ^61.7.1
   eslint-plugin-jsonc: ^2.21.0
-  eslint-plugin-n: ^17.23.1
+  eslint-plugin-n: ^17.23.2
   eslint-plugin-no-only-tests: ^3.3.0
   eslint-plugin-perfectionist: ^5.3.1
   eslint-plugin-prettier: ^5.5.4
@@ -158,7 +158,7 @@ catalog:
   playwright: ^1.57.0
   postcss: ^8.5.6
   postcss-antd-fixes: ^0.2.0
-  postcss-html: ^1.8.0
+  postcss-html: ^1.8.1
   postcss-import: ^16.1.1
   postcss-preset-env: ^10.6.1
   postcss-scss: ^4.0.9
@@ -189,7 +189,7 @@ catalog:
   tailwindcss: ^3.4.19
   tailwindcss-animate: ^1.0.7
   theme-colors: ^0.1.0
-  tinymce: ^8.3.1
+  tinymce: ^8.3.2
   tippy.js: ^6.3.7
   turbo: ^2.7.4
   typescript: ^5.9.3
@@ -218,7 +218,7 @@ catalog:
   vue3-signature: ^0.4.1
   vuedraggable: ^4.1.0
   vxe-pc-ui: ^4.11.44
-  vxe-table: ^4.17.40
+  vxe-table: ^4.17.42
   watermark-js-plus: ^1.6.3
   zod: ^4.3.5
   zod-defaults: 0.2.3

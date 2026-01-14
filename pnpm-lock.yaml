@@ -193,8 +193,8 @@ catalogs:
       specifier: ^5.65.18
       version: 5.65.20
     commitlint-plugin-function-rules:
-      specifier: ^4.3.0
-      version: 4.3.0
+      specifier: ^4.3.1
+      version: 4.3.1
     consola:
       specifier: ^3.4.2
       version: 3.4.2
@@ -262,8 +262,8 @@ catalogs:
       specifier: ^2.21.0
       version: 2.21.0
     eslint-plugin-n:
-      specifier: ^17.23.1
-      version: 17.23.1
+      specifier: ^17.23.2
+      version: 17.23.2
     eslint-plugin-no-only-tests:
       specifier: ^3.3.0
       version: 3.3.0
@@ -370,8 +370,8 @@ catalogs:
       specifier: ^0.2.0
       version: 0.2.0
     postcss-html:
-      specifier: ^1.8.0
-      version: 1.8.0
+      specifier: ^1.8.1
+      version: 1.8.1
     postcss-import:
       specifier: ^16.1.1
       version: 16.1.1
@@ -460,8 +460,8 @@ catalogs:
       specifier: ^0.1.0
       version: 0.1.0
     tinymce:
-      specifier: ^8.3.1
-      version: 8.3.1
+      specifier: ^8.3.2
+      version: 8.3.2
     tippy.js:
       specifier: ^6.3.7
       version: 6.3.7
@@ -538,8 +538,8 @@ catalogs:
       specifier: ^4.11.44
       version: 4.11.44
     vxe-table:
-      specifier: ^4.17.40
-      version: 4.17.40
+      specifier: ^4.17.42
+      version: 4.17.42
     watermark-js-plus:
       specifier: ^1.6.3
       version: 1.6.3
@@ -670,7 +670,7 @@ importers:
         version: 3.2.37(vue@3.5.26(typescript@5.9.3))
       '@tinymce/tinymce-vue':
         specifier: 'catalog:'
-        version: 6.3.0(tinymce@8.3.1)(vue@3.5.26(typescript@5.9.3))
+        version: 6.3.0(tinymce@8.3.2)(vue@3.5.26(typescript@5.9.3))
       '@vueuse/core':
         specifier: 'catalog:'
         version: 14.1.0(vue@3.5.26(typescript@5.9.3))
@@ -736,7 +736,7 @@ importers:
         version: 3.0.4(typescript@5.9.3)(vue@3.5.26(typescript@5.9.3))
       tinymce:
         specifier: 'catalog:'
-        version: 8.3.1
+        version: 8.3.2
       vue:
         specifier: ^3.5.26
         version: 3.5.26(typescript@5.9.3)
@@ -822,7 +822,7 @@ importers:
         version: link:../../node-utils
       commitlint-plugin-function-rules:
         specifier: 'catalog:'
-        version: 4.3.0(@commitlint/lint@20.3.1)
+        version: 4.3.1(@commitlint/lint@20.3.1)
       cz-git:
         specifier: 'catalog:'
         version: 1.12.0
@@ -874,7 +874,7 @@ importers:
         version: 2.21.0(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-n:
         specifier: 'catalog:'
-        version: 17.23.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+        version: 17.23.2(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-no-only-tests:
         specifier: 'catalog:'
         version: 3.3.0
@@ -929,7 +929,7 @@ importers:
         version: 8.5.6
       postcss-html:
         specifier: 'catalog:'
-        version: 1.8.0
+        version: 1.8.1
       postcss-scss:
         specifier: 'catalog:'
         version: 4.0.9(postcss@8.5.6)
@@ -947,7 +947,7 @@ importers:
         version: 16.0.2(postcss@8.5.6)(stylelint@16.26.1(typescript@5.9.3))
       stylelint-config-recommended-vue:
         specifier: 'catalog:'
-        version: 1.6.1(postcss-html@1.8.0)(stylelint@16.26.1(typescript@5.9.3))
+        version: 1.6.1(postcss-html@1.8.1)(stylelint@16.26.1(typescript@5.9.3))
       stylelint-config-standard:
         specifier: 'catalog:'
         version: 39.0.1(stylelint@16.26.1(typescript@5.9.3))
@@ -1671,7 +1671,7 @@ importers:
         version: 4.11.44(vue@3.5.26(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
-        version: 4.17.40(vue@3.5.26(typescript@5.9.3))
+        version: 4.17.42(vue@3.5.26(typescript@5.9.3))
     devDependencies:
       '@types/codemirror':
         specifier: 'catalog:'
@@ -6437,8 +6437,8 @@ packages:
     resolution: {integrity: sha512-buhp5kePrmda3vhc5B9t7pUQXAb2Tnd0qgpkIhPhkHXxJpiPJ11H0ZEU0oBpJ2QztSbzG/ZxMj/CHsYJqRHmyg==}
     engines: {node: '>= 12.0.0'}
 
-  commitlint-plugin-function-rules@4.3.0:
-    resolution: {integrity: sha512-o8U6x344rot5+3m8tgK/eM1q58RpS38+oD+PrHhJDNZ6zqZlw5JyyDwlTfSPg7qvAtJQnNNIOGuPvYL8SwKI9A==}
+  commitlint-plugin-function-rules@4.3.1:
+    resolution: {integrity: sha512-wRvlVUWRgN9qTlfUelB1EqnhTfGLVUKz6xBSnjnBRIwHEn2Ma39WZHJEzmANOqDYa9kpS5hyr3iLD2OliwlDIw==}
     engines: {node: '>=20'}
     peerDependencies:
       '@commitlint/lint': '>=19 <21'
@@ -7370,8 +7370,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-plugin-n@17.23.1:
-    resolution: {integrity: sha512-68PealUpYoHOBh332JLLD9Sj7OQUDkFpmcfqt8R9sySfFSeuGJjMTJQvCRRB96zO3A/PELRLkPrzsHmzEFQQ5A==}
+  eslint-plugin-n@17.23.2:
+    resolution: {integrity: sha512-RhWBeb7YVPmNa2eggvJooiuehdL76/bbfj/OJewyoGT80qn5PXdz8zMOTO6YHOsI7byPt7+Ighh/i/4a5/v7hw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
@@ -9726,8 +9726,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-html@1.8.0:
-    resolution: {integrity: sha512-5mMeb1TgLWoRKxZ0Xh9RZDfwUUIqRrcxO2uXO+Ezl1N5lqpCiSU5Gk6+1kZediBfBHFtPCdopr2UZ2SgUsKcgQ==}
+  postcss-html@1.8.1:
+    resolution: {integrity: sha512-OLF6P7qctfAWayOhLpcVnTGqVeJzu2W3WpIYelfz2+JV5oGxfkcEvweN9U4XpeqE0P98dcD9ssusGwlF0TK0uQ==}
     engines: {node: ^12 || >=14}
 
   postcss-image-set-function@7.0.0:
@@ -11066,8 +11066,8 @@ packages:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
     engines: {node: '>=12.0.0'}
 
-  tinymce@8.3.1:
-    resolution: {integrity: sha512-mdQdTAA90aEIyhEteIwy+QQ6UnxPCd3qQ5MlGvvByOvnjyOSdBzBcmnXeqWuhGz3fIs3XBJjIw7JyIMiHjebqw==}
+  tinymce@8.3.2:
+    resolution: {integrity: sha512-iZ8aIUtrgGOw2AkukNf8spUM0LOzNLoCHRepwXQwWmHxP2TI5LzHjjG0SmXGxbya4EmoD5/pAox0ZXJfLO5DUw==}
 
   tinyrainbow@3.0.3:
     resolution: {integrity: sha512-PSkbLUoxOFRzJYjjxHJt9xro7D+iilgMX/C9lawzVuYiIdcihh9DXmVibBe8lmcFrRi/VzlPjBxbN7rH24q8/Q==}
@@ -11763,8 +11763,8 @@ packages:
   vxe-pc-ui@4.11.44:
     resolution: {integrity: sha512-Ao1kGUek0yzjxpNtN+76gM0uCKWDS0F8bqckgjukQoKI9QrWQ2RhpS7oWFUquVolBhb3LwnkuxmrDS+RPpt5vg==}
 
-  vxe-table@4.17.40:
-    resolution: {integrity: sha512-CXENBQpIBNX9BRGWVlAZGQi0l51nhQP2NmRkjqqbbxfUEpcFTt/yxgf7sBT1yYSzbz6x8pH1cK7nBZq5Ejjf4w==}
+  vxe-table@4.17.42:
+    resolution: {integrity: sha512-G9SM7K2Ml9jLeL7a1NCigeI4vAHxqZZDfq3dA7a1LuM9S749vhmqoPF/lj/qn0GAVJgJyaaOQNtizO/fDGRH1Q==}
 
   w3c-keyname@2.2.8:
     resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
@@ -15643,11 +15643,11 @@ snapshots:
     transitivePeerDependencies:
       - svelte
 
-  '@tinymce/tinymce-vue@6.3.0(tinymce@8.3.1)(vue@3.5.26(typescript@5.9.3))':
+  '@tinymce/tinymce-vue@6.3.0(tinymce@8.3.2)(vue@3.5.26(typescript@5.9.3))':
     dependencies:
       vue: 3.5.26(typescript@5.9.3)
     optionalDependencies:
-      tinymce: 8.3.1
+      tinymce: 8.3.2
 
   '@tiptap/core@3.13.0(@tiptap/pm@3.13.0)':
     dependencies:
@@ -17382,7 +17382,7 @@ snapshots:
 
   comment-parser@1.4.1: {}
 
-  commitlint-plugin-function-rules@4.3.0(@commitlint/lint@20.3.1):
+  commitlint-plugin-function-rules@4.3.1(@commitlint/lint@20.3.1):
     dependencies:
       '@commitlint/lint': 20.3.1
 
@@ -18439,7 +18439,7 @@ snapshots:
     transitivePeerDependencies:
       - '@eslint/json'
 
-  eslint-plugin-n@17.23.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3):
+  eslint-plugin-n@17.23.2(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.2(jiti@2.6.1))
       enhanced-resolve: 5.18.4
@@ -21144,7 +21144,7 @@ snapshots:
     dependencies:
       postcss: 8.5.6
 
-  postcss-html@1.8.0:
+  postcss-html@1.8.1:
     dependencies:
       htmlparser2: 8.0.2
       js-tokens: 9.0.1
@@ -22382,9 +22382,9 @@ snapshots:
       postcss: 8.5.6
       postcss-selector-parser: 7.1.1
 
-  stylelint-config-html@1.1.0(postcss-html@1.8.0)(stylelint@16.26.1(typescript@5.9.3)):
+  stylelint-config-html@1.1.0(postcss-html@1.8.1)(stylelint@16.26.1(typescript@5.9.3)):
     dependencies:
-      postcss-html: 1.8.0
+      postcss-html: 1.8.1
       stylelint: 16.26.1(typescript@5.9.3)
 
   stylelint-config-recess-order@7.4.0(stylelint-order@7.0.1(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3)):
@@ -22401,12 +22401,12 @@ snapshots:
     optionalDependencies:
       postcss: 8.5.6
 
-  stylelint-config-recommended-vue@1.6.1(postcss-html@1.8.0)(stylelint@16.26.1(typescript@5.9.3)):
+  stylelint-config-recommended-vue@1.6.1(postcss-html@1.8.1)(stylelint@16.26.1(typescript@5.9.3)):
     dependencies:
-      postcss-html: 1.8.0
+      postcss-html: 1.8.1
       semver: 7.7.3
       stylelint: 16.26.1(typescript@5.9.3)
-      stylelint-config-html: 1.1.0(postcss-html@1.8.0)(stylelint@16.26.1(typescript@5.9.3))
+      stylelint-config-html: 1.1.0(postcss-html@1.8.1)(stylelint@16.26.1(typescript@5.9.3))
       stylelint-config-recommended: 17.0.0(stylelint@16.26.1(typescript@5.9.3))
 
   stylelint-config-recommended@17.0.0(stylelint@16.26.1(typescript@5.9.3)):
@@ -22682,7 +22682,7 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
 
-  tinymce@8.3.1: {}
+  tinymce@8.3.2: {}
 
   tinyrainbow@3.0.3: {}
 
@@ -23535,7 +23535,7 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  vxe-table@4.17.40(vue@3.5.26(typescript@5.9.3)):
+  vxe-table@4.17.42(vue@3.5.26(typescript@5.9.3)):
     dependencies:
       vxe-pc-ui: 4.11.44(vue@3.5.26(typescript@5.9.3))
     transitivePeerDependencies:
