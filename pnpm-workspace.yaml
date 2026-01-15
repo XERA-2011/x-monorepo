@@ -25,7 +25,7 @@ catalog:
   '@form-create/designer': ^3.4.0
   '@form-create/element-ui': ^3.2.37
   '@iconify-json/ant-design': ^1.2.5
-  '@iconify-json/lucide': ^1.2.84
+  '@iconify-json/lucide': ^1.2.85
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.0
   '@intlify/core-base': ^11.2.8
@@ -116,7 +116,7 @@ catalog:
   eslint-plugin-n: ^17.23.2
   eslint-plugin-no-only-tests: ^3.3.0
   eslint-plugin-perfectionist: ^5.3.1
-  eslint-plugin-prettier: ^5.5.4
+  eslint-plugin-prettier: ^5.5.5
   eslint-plugin-regexp: ^2.10.0
   eslint-plugin-unicorn: ^62.0.0
   eslint-plugin-unused-imports: ^4.3.0
@@ -128,7 +128,7 @@ catalog:
   get-port: ^7.1.0
   globals: ^17.0.0
   h3: ^1.15.4
-  happy-dom: ^20.1.0
+  happy-dom: ^20.3.0
   highlight.js: ^11.11.1
   html-minifier-terser: ^7.2.0
   is-ci: ^4.1.0
@@ -217,7 +217,7 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.1
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.11.44
+  vxe-pc-ui: ^4.12.0
   vxe-table: ^4.17.42
   watermark-js-plus: ^1.6.3
   zod: ^4.3.5
