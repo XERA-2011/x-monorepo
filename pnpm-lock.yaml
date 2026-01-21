@@ -352,8 +352,8 @@ catalogs:
       specifier: ^0.2.0
       version: 0.2.0
     ora:
-      specifier: ^9.0.0
-      version: 9.0.0
+      specifier: ^9.1.0
+      version: 9.1.0
     pinia-plugin-persistedstate:
       specifier: ^4.7.1
       version: 4.7.1
@@ -424,8 +424,8 @@ catalogs:
       specifier: ^16.26.1
       version: 16.26.1
     stylelint-config-recess-order:
-      specifier: ^7.5.0
-      version: 7.5.0
+      specifier: ^7.6.0
+      version: 7.6.0
     stylelint-config-recommended:
       specifier: ^17.0.0
       version: 17.0.0
@@ -535,11 +535,11 @@ catalogs:
       specifier: ^4.1.0
       version: 4.1.0
     vxe-pc-ui:
-      specifier: ^4.12.6
-      version: 4.12.6
+      specifier: ^4.12.7
+      version: 4.12.7
     vxe-table:
-      specifier: ^4.17.43
-      version: 4.17.43
+      specifier: ^4.17.44
+      version: 4.17.44
     watermark-js-plus:
       specifier: ^1.6.3
       version: 1.6.3
@@ -919,7 +919,7 @@ importers:
         version: 4.0.1(stylelint@16.26.1(typescript@5.9.3))
       stylelint-config-recess-order:
         specifier: 'catalog:'
-        version: 7.5.0(stylelint-order@7.0.1(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3))
+        version: 7.6.0(stylelint-order@7.0.1(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3))
       stylelint-scss:
         specifier: 'catalog:'
         version: 6.14.0(stylelint@16.26.1(typescript@5.9.3))
@@ -983,7 +983,7 @@ importers:
         version: 8.0.0
       ora:
         specifier: 'catalog:'
-        version: 9.0.0
+        version: 9.1.0
       pkg-types:
         specifier: 'catalog:'
         version: 2.3.0
@@ -1668,10 +1668,10 @@ importers:
         version: 3.5.27(typescript@5.9.3)
       vxe-pc-ui:
         specifier: 'catalog:'
-        version: 4.12.6(vue@3.5.27(typescript@5.9.3))
+        version: 4.12.7(vue@3.5.27(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
-        version: 4.17.43(vue@3.5.27(typescript@5.9.3))
+        version: 4.17.44(vue@3.5.27(typescript@5.9.3))
     devDependencies:
       '@types/codemirror':
         specifier: 'catalog:'
@@ -7506,8 +7506,8 @@ packages:
     resolution: {integrity: sha512-Ap6G0WQwcU/LHsvLwON1fAQX9Zp0A2Y6Y/cJBl9r/JbW90Zyg4/zbG6zzKa2OTALELarYHmKu0GhpM5EO+7T0g==}
     engines: {node: '>=0.10'}
 
-  esrap@2.2.1:
-    resolution: {integrity: sha512-GiYWG34AN/4CUyaWAgunGt0Rxvr1PTMlGC0vvEov/uOQYWne2bpN03Um+k8jT+q3op33mKouP2zeJ6OlM+qeUg==}
+  esrap@2.2.2:
+    resolution: {integrity: sha512-zA6497ha+qKvoWIK+WM9NAh5ni17sKZKhbS5B3PoYbBvaYHZWoS33zmFybmyqpn07RLUxSmn+RCls2/XF+d0oQ==}
 
   esrecurse@4.3.0:
     resolution: {integrity: sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==}
@@ -9318,8 +9318,8 @@ packages:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
 
-  ora@9.0.0:
-    resolution: {integrity: sha512-m0pg2zscbYgWbqRR6ABga5c3sZdEon7bSgjnlXC64kxtxLOyjRcbbUkLj7HFyy/FTD+P2xdBWu8snGhYI0jc4A==}
+  ora@9.1.0:
+    resolution: {integrity: sha512-53uuLsXHOAJl5zLrUrzY9/kE+uIFEx7iaH4g2BIJQK4LZjY4LpCCYZVKDWIkL+F01wAaCg93duQ1whnK/AmY1A==}
     engines: {node: '>=20'}
 
   orderedmap@2.1.1:
@@ -10846,8 +10846,8 @@ packages:
       postcss-html: ^1.0.0
       stylelint: '>=14.0.0'
 
-  stylelint-config-recess-order@7.5.0:
-    resolution: {integrity: sha512-b9ognlz6WvEJeJSpElV4msr3FTfDUYD5Br7S9btdhCND7kSyUTAN1JdiPABc++8bYR4gHlW/DpkTkWQDCcZqAw==}
+  stylelint-config-recess-order@7.6.0:
+    resolution: {integrity: sha512-c3LXX4a8UEtrMD/KigK4I7LFexbM2p/eSTqnix5dmmvydEqX3dzrRt981h8giSEhA51vxdCEefQc3umH60i2bA==}
     peerDependencies:
       stylelint: ^16.18.0 || ^17.0.0
       stylelint-order: ^7.0.0
@@ -11819,11 +11819,11 @@ packages:
     peerDependencies:
       vue: ^3.5.27
 
-  vxe-pc-ui@4.12.6:
-    resolution: {integrity: sha512-OX4GIQIf0iHOZTBSqEtTTluQ1xVqqT+4cI7dTLwhbOyC5Uj+hHcAeXzxrNg4qIEueTGvHjIaNOm5T3wKvJ69fw==}
+  vxe-pc-ui@4.12.7:
+    resolution: {integrity: sha512-skD0Cy0RRrQ1i3uzTTkU9WagunknVN22AHWPCX9GfXUGj7BCBKFEyC7o85ScSvXq5TQ3RWlsyeKihhzqZlrMgQ==}
 
-  vxe-table@4.17.43:
-    resolution: {integrity: sha512-KwtwB5hJictkENS8UxcC6Ov7qG8IwwBIHaaZiuZcDL7az0VvSqlbGRUbgKnhzRrNDVw8gW1D1XN98XtAYa1QnA==}
+  vxe-table@4.17.44:
+    resolution: {integrity: sha512-2GY5xc5wWgh71onBv01WrHiiEUr872cJ8H+ZB7CyI35ZRdCd9zPa/j2wjB3uNCuLjj+dp4RxDYmQ7IusK5oyQg==}
 
   w3c-keyname@2.2.8:
     resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
@@ -18666,7 +18666,7 @@ snapshots:
     dependencies:
       estraverse: 5.3.0
 
-  esrap@2.2.1:
+  esrap@2.2.2:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
@@ -20758,7 +20758,7 @@ snapshots:
       type-check: 0.4.0
       word-wrap: 1.2.5
 
-  ora@9.0.0:
+  ora@9.1.0:
     dependencies:
       chalk: 5.6.2
       cli-cursor: 5.0.0
@@ -20768,7 +20768,6 @@ snapshots:
       log-symbols: 7.0.1
       stdin-discarder: 0.2.2
       string-width: 8.1.0
-      strip-ansi: 7.1.2
 
   orderedmap@2.1.1: {}
 
@@ -22420,7 +22419,7 @@ snapshots:
       postcss-html: 1.8.1
       stylelint: 16.26.1(typescript@5.9.3)
 
-  stylelint-config-recess-order@7.5.0(stylelint-order@7.0.1(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3)):
+  stylelint-config-recess-order@7.6.0(stylelint-order@7.0.1(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3)):
     dependencies:
       stylelint: 16.26.1(typescript@5.9.3)
       stylelint-order: 7.0.1(stylelint@16.26.1(typescript@5.9.3))
@@ -22563,7 +22562,7 @@ snapshots:
       clsx: 2.1.1
       devalue: 5.6.2
       esm-env: 1.2.2
-      esrap: 2.2.1
+      esrap: 2.2.2
       is-reference: 3.0.3
       locate-character: 3.0.0
       magic-string: 0.30.21
@@ -23566,15 +23565,15 @@ snapshots:
       sortablejs: 1.14.0
       vue: 3.5.27(typescript@5.9.3)
 
-  vxe-pc-ui@4.12.6(vue@3.5.27(typescript@5.9.3)):
+  vxe-pc-ui@4.12.7(vue@3.5.27(typescript@5.9.3)):
     dependencies:
       '@vxe-ui/core': 4.2.21(vue@3.5.27(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
-  vxe-table@4.17.43(vue@3.5.27(typescript@5.9.3)):
+  vxe-table@4.17.44(vue@3.5.27(typescript@5.9.3)):
     dependencies:
-      vxe-pc-ui: 4.12.6(vue@3.5.27(typescript@5.9.3))
+      vxe-pc-ui: 4.12.7(vue@3.5.27(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
