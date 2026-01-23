@@ -79,7 +79,7 @@ catalog:
   axios: ^1.13.2
   axios-mock-adapter: ^2.1.0
   bpmn-js: ^18.9.1
-  bpmn-js-properties-panel: 5.47.0
+  bpmn-js-properties-panel: 5.48.0
   bpmn-js-token-simulation: ^0.38.2
   cac: ^6.7.14
   camunda-bpmn-moddle: ^7.0.1
@@ -128,7 +128,7 @@ catalog:
   get-port: ^7.1.0
   globals: ^17.0.0
   h3: ^1.15.5
-  happy-dom: ^20.3.4
+  happy-dom: ^20.3.7
   highlight.js: ^11.11.1
   html-minifier-terser: ^7.2.0
   is-ci: ^4.1.0
@@ -205,7 +205,7 @@ catalog:
   vite-plugin-vue-devtools: ^8.0.5
   vitepress: ^1.6.4
   vitepress-plugin-group-icons: ^1.6.5
-  vitest: ^4.0.17
+  vitest: ^4.0.18
   vue: ^3.5.27
   vue-dompurify-html: ^5.3.0
   vue-eslint-parser: ^10.2.0
@@ -213,12 +213,12 @@ catalog:
   vue-json-viewer: ^3.0.4
   vue-router: ^4.6.4
   vue-tippy: ^6.7.1
-  vue-tsc: ^3.2.2
+  vue-tsc: ^3.2.3
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.1
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.12.7
-  vxe-table: ^4.17.44
+  vxe-pc-ui: ^4.12.10
+  vxe-table: ^4.17.46
   watermark-js-plus: ^1.6.3
-  zod: ^4.3.5
+  zod: ^4.3.6
   zod-defaults: 0.2.3
