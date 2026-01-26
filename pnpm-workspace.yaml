@@ -34,7 +34,7 @@ catalog:
   '@manypkg/get-packages': ^3.1.0
   '@microsoft/fetch-event-source': ^2.0.1
   '@nolebase/vitepress-plugin-git-changelog': ^2.18.2
-  '@playwright/test': ^1.57.0
+  '@playwright/test': ^1.58.0
   '@pnpm/workspace.read-manifest': ^1000.2.10
   '@stylistic/stylelint-plugin': ^4.0.1
   '@tailwindcss/nesting': 0.0.0-insiders.565cd3e
@@ -76,7 +76,7 @@ catalog:
   ant-design-vue: ^4.2.6
   archiver: ^7.0.1
   autoprefixer: ^10.4.23
-  axios: ^1.13.2
+  axios: ^1.13.3
   axios-mock-adapter: ^2.1.0
   bpmn-js: ^18.9.1
   bpmn-js-properties-panel: 5.48.0
@@ -84,7 +84,7 @@ catalog:
   cac: ^6.7.14
   camunda-bpmn-moddle: ^7.0.1
   chalk: ^5.6.2
-  cheerio: ^1.1.2
+  cheerio: ^1.2.0
   circular-dependency-scanner: ^2.3.0
   class-variance-authority: ^0.7.1
   clsx: ^2.1.1
@@ -94,7 +94,7 @@ catalog:
   cropperjs: ^1.6.2
   cross-env: ^10.1.0
   crypto-js: ^4.2.0
-  cspell: ^9.6.0
+  cspell: ^9.6.1
   cssnano: ^7.1.2
   cz-git: ^1.12.0
   czg: ^1.12.0
@@ -107,7 +107,7 @@ catalog:
   element-plus: ^2.13.1
   es-toolkit: ^1.44.0
   eslint: ^9.39.2
-  eslint-config-turbo: ^2.7.5
+  eslint-config-turbo: ^2.7.6
   eslint-plugin-command: ^3.4.0
   eslint-plugin-eslint-comments: ^3.2.0
   eslint-plugin-import-x: ^4.16.1
@@ -128,7 +128,7 @@ catalog:
   get-port: ^7.1.0
   globals: ^17.0.0
   h3: ^1.15.5
-  happy-dom: ^20.3.7
+  happy-dom: ^20.3.9
   highlight.js: ^11.11.1
   html-minifier-terser: ^7.2.0
   is-ci: ^4.1.0
@@ -142,7 +142,7 @@ catalog:
   lodash.get: ^4.4.2
   lodash.isequal: ^4.5.0
   lodash.set: ^4.3.2
-  lucide-vue-next: ^0.562.0
+  lucide-vue-next: ^0.563.0
   markdown-it: ^14.1.0
   markmap-common: ^0.18.9
   markmap-lib: ^0.18.12
@@ -155,7 +155,7 @@ catalog:
   pinia: ^3.0.4
   pinia-plugin-persistedstate: ^4.7.1
   pkg-types: ^2.3.0
-  playwright: ^1.57.0
+  playwright: ^1.58.0
   postcss: ^8.5.6
   postcss-antd-fixes: ^0.2.0
   postcss-html: ^1.8.1
@@ -191,7 +191,7 @@ catalog:
   theme-colors: ^0.1.0
   tinymce: ^8.3.2
   tippy.js: ^6.3.7
-  turbo: ^2.7.5
+  turbo: ^2.7.6
   typescript: ^5.9.3
   unbuild: ^3.6.1
   unplugin-element-plus: ^0.11.2
@@ -213,11 +213,11 @@ catalog:
   vue-json-viewer: ^3.0.4
   vue-router: ^4.6.4
   vue-tippy: ^6.7.1
-  vue-tsc: ^3.2.3
+  vue-tsc: ^3.2.4
   vue3-print-nb: ^0.1.4
-  vue3-signature: ^0.4.1
+  vue3-signature: ^0.4.2
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.12.10
+  vxe-pc-ui: ^4.12.12
   vxe-table: ^4.17.46
   watermark-js-plus: ^1.6.3
   zod: ^4.3.6
