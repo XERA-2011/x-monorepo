@@ -535,8 +535,8 @@ catalogs:
       specifier: ^4.1.0
       version: 4.1.0
     vxe-pc-ui:
-      specifier: ^4.12.32
-      version: 4.12.32
+      specifier: ^4.12.33
+      version: 4.12.33
     vxe-table:
       specifier: ^4.17.48
       version: 4.17.48
@@ -1668,7 +1668,7 @@ importers:
         version: 3.5.27(typescript@5.9.3)
       vxe-pc-ui:
         specifier: 'catalog:'
-        version: 4.12.32(vue@3.5.27(typescript@5.9.3))
+        version: 4.12.33(vue@3.5.27(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
         version: 4.17.48(vue@3.5.27(typescript@5.9.3))
@@ -3643,6 +3643,10 @@ packages:
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
+
+  '@isaacs/cliui@9.0.0':
+    resolution: {integrity: sha512-AokJm4tuBHillT+FpMtxQ60n8ObyXBatq7jD2/JA9dxbDDokKQm8KMht5ibGzLVU9IJDIKK4TPKgMHEYMn3lMg==}
+    engines: {node: '>=18'}
 
   '@isaacs/fs-minipass@4.0.1':
     resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
@@ -8591,8 +8595,8 @@ packages:
   jackspeak@3.4.3:
     resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
 
-  jackspeak@4.1.1:
-    resolution: {integrity: sha512-zptv57P3GpL+O0I7VdMJNBZCu+BPHVQUk55Ft8/QCJjTVxrnJHuVuX/0Bl2A6/+2oyR/ZMEuFKwmzqqZ/U5nPQ==}
+  jackspeak@4.2.1:
+    resolution: {integrity: sha512-GPBXyfcZSGujjddPeA+V34bW70ZJT7jzCEbloVasSH4yjiqWqXHX8iZQtZdVbOhc5esSeAIuiSmMutRZQB/olg==}
     engines: {node: 20 || >=22}
 
   jake@10.9.4:
@@ -11964,8 +11968,8 @@ packages:
     peerDependencies:
       vue: ^3.5.27
 
-  vxe-pc-ui@4.12.32:
-    resolution: {integrity: sha512-tZXv6OP6VvkBcGPKonNHveuAmmIVgBsFiOc6m+roM1k3pXJDivb1vAzgKMVkLVzJIqykIZi/0ESUCYDH34Bxtg==}
+  vxe-pc-ui@4.12.33:
+    resolution: {integrity: sha512-cznRJ4Y/0rvDlzmN9FGJ85hXbCBFuceH/WZIfqU+k740RpvwxLAxtg41sp+RrLK34qjmFIGV7VCSI/4kEyIkGA==}
 
   vxe-table@4.17.48:
     resolution: {integrity: sha512-hd2j3FMA5vu3Qc3wyCavwMdsaT5uEq1GCux3eV5VKPkd/MoSdh9DIyMzmqDKh/0QnpVPsoQuIZPJi/govnw2Iw==}
@@ -14465,6 +14469,8 @@ snapshots:
       strip-ansi-cjs: strip-ansi@6.0.1
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
+
+  '@isaacs/cliui@9.0.0': {}
 
   '@isaacs/fs-minipass@4.0.1':
     dependencies:
@@ -19451,7 +19457,7 @@ snapshots:
   glob@11.1.0:
     dependencies:
       foreground-child: 3.3.1
-      jackspeak: 4.1.1
+      jackspeak: 4.2.1
       minimatch: 10.1.2
       minipass: 7.1.2
       package-json-from-dist: 1.0.1
@@ -19982,9 +19988,9 @@ snapshots:
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
 
-  jackspeak@4.1.1:
+  jackspeak@4.2.1:
     dependencies:
-      '@isaacs/cliui': 8.0.2
+      '@isaacs/cliui': 9.0.0
 
   jake@10.9.4:
     dependencies:
@@ -23827,7 +23833,7 @@ snapshots:
       sortablejs: 1.14.0
       vue: 3.5.27(typescript@5.9.3)
 
-  vxe-pc-ui@4.12.32(vue@3.5.27(typescript@5.9.3)):
+  vxe-pc-ui@4.12.33(vue@3.5.27(typescript@5.9.3)):
     dependencies:
       '@vxe-ui/core': 4.3.1(vue@3.5.27(typescript@5.9.3))
     transitivePeerDependencies:
@@ -23835,7 +23841,7 @@ snapshots:
 
   vxe-table@4.17.48(vue@3.5.27(typescript@5.9.3)):
     dependencies:
-      vxe-pc-ui: 4.12.32(vue@3.5.27(typescript@5.9.3))
+      vxe-pc-ui: 4.12.33(vue@3.5.27(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
