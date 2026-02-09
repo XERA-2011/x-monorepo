@@ -25,7 +25,7 @@ catalog:
   '@form-create/designer': ^3.4.0
   '@form-create/element-ui': ^3.2.37
   '@iconify-json/ant-design': ^1.2.5
-  '@iconify-json/lucide': ^1.2.88
+  '@iconify-json/lucide': ^1.2.89
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.0
   '@intlify/core-base': ^11.2.8
@@ -34,7 +34,7 @@ catalog:
   '@manypkg/get-packages': ^3.1.0
   '@microsoft/fetch-event-source': ^2.0.1
   '@nolebase/vitepress-plugin-git-changelog': ^2.18.2
-  '@playwright/test': ^1.58.1
+  '@playwright/test': ^1.58.2
   '@pnpm/workspace.read-manifest': ^1000.2.10
   '@stylistic/stylelint-plugin': ^4.0.1
   '@tailwindcss/nesting': 0.0.0-insiders.565cd3e
@@ -76,7 +76,7 @@ catalog:
   ant-design-vue: ^4.2.6
   archiver: ^7.0.1
   autoprefixer: ^10.4.24
-  axios: ^1.13.4
+  axios: ^1.13.5
   axios-mock-adapter: ^2.1.0
   bpmn-js: ^18.9.1
   bpmn-js-properties-panel: 5.50.1
@@ -88,7 +88,7 @@ catalog:
   circular-dependency-scanner: ^2.3.0
   class-variance-authority: ^0.7.1
   clsx: ^2.1.1
-  codemirror: ^5.65.18
+  codemirror: ^5.65.21
   commitlint-plugin-function-rules: ^4.3.1
   consola: ^3.4.2
   cropperjs: ^1.6.2
@@ -128,7 +128,7 @@ catalog:
   get-port: ^7.1.0
   globals: ^17.0.0
   h3: ^1.15.5
-  happy-dom: ^20.5.0
+  happy-dom: ^20.5.3
   highlight.js: ^11.11.1
   html-minifier-terser: ^7.2.0
   is-ci: ^4.1.0
@@ -155,7 +155,7 @@ catalog:
   pinia: ^3.0.4
   pinia-plugin-persistedstate: ^4.7.1
   pkg-types: ^2.3.0
-  playwright: ^1.58.1
+  playwright: ^1.58.2
   postcss: ^8.5.6
   postcss-antd-fixes: ^0.2.0
   postcss-html: ^1.8.1
@@ -177,7 +177,7 @@ catalog:
   sortablejs: ^1.15.6
   steady-xml: ^0.1.0
   stylelint: ^16.26.1
-  stylelint-config-recess-order: ^7.6.0
+  stylelint-config-recess-order: ^7.6.1
   stylelint-config-recommended: ^17.0.0
   stylelint-config-recommended-scss: ^16.0.2
   stylelint-config-recommended-vue: ^1.6.1
@@ -217,7 +217,7 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.12.33
+  vxe-pc-ui: ^4.12.35
   vxe-table: ^4.17.48
   watermark-js-plus: ^1.6.3
   zod: ^4.3.6
