@@ -107,7 +107,7 @@ catalog:
   element-plus: ^2.13.2
   es-toolkit: ^1.44.0
   eslint: ^9.39.2
-  eslint-config-turbo: ^2.8.9
+  eslint-config-turbo: ^2.8.10
   eslint-plugin-command: ^3.4.0
   eslint-plugin-eslint-comments: ^3.2.0
   eslint-plugin-import-x: ^4.16.1
@@ -128,7 +128,7 @@ catalog:
   get-port: ^7.1.0
   globals: ^17.0.0
   h3: ^1.15.5
-  happy-dom: ^20.6.2
+  happy-dom: ^20.6.3
   highlight.js: ^11.11.1
   html-minifier-terser: ^7.2.0
   is-ci: ^4.1.0
@@ -185,13 +185,13 @@ catalog:
   stylelint-order: ^7.0.1
   stylelint-prettier: ^5.0.3
   stylelint-scss: ^6.14.0
-  tailwind-merge: ^3.4.1
-  tailwindcss: ^3.4.19
+  tailwind-merge: ^3.5.0
+  tailwindcss: ^4.2.0
   tailwindcss-animate: ^1.0.7
   theme-colors: ^0.1.0
   tinymce: ^8.3.2
   tippy.js: ^6.3.7
-  turbo: ^2.8.9
+  turbo: ^2.8.10
   typescript: ^5.9.3
   unbuild: ^3.6.1
   unplugin-element-plus: ^0.11.2
