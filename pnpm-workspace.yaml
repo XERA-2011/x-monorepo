@@ -25,7 +25,7 @@ catalog:
   '@form-create/designer': ^3.4.0
   '@form-create/element-ui': ^3.2.37
   '@iconify-json/ant-design': ^1.2.5
-  '@iconify-json/lucide': ^1.2.93
+  '@iconify-json/lucide': ^1.2.94
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.0
   '@intlify/core-base': ^11.2.8
@@ -68,7 +68,7 @@ catalog:
   '@vitejs/plugin-vue': ^6.0.4
   '@vitejs/plugin-vue-jsx': ^5.1.4
   '@vue/reactivity': ^3.5.29
-  '@vue/shared': ^3.5.28
+  '@vue/shared': ^3.5.29
   '@vue/test-utils': ^2.4.6
   '@vueuse/core': ^14.1.0
   '@vueuse/integrations': ^14.2.1
@@ -79,7 +79,7 @@ catalog:
   axios: ^1.13.5
   axios-mock-adapter: ^2.1.0
   bpmn-js: ^18.9.1
-  bpmn-js-properties-panel: 5.52.0
+  bpmn-js-properties-panel: 5.52.1
   bpmn-js-token-simulation: ^0.39.1
   cac: ^6.7.14
   camunda-bpmn-moddle: ^7.0.1
@@ -89,7 +89,7 @@ catalog:
   class-variance-authority: ^0.7.1
   clsx: ^2.1.1
   codemirror: ^5.65.21
-  commitlint-plugin-function-rules: ^4.3.1
+  commitlint-plugin-function-rules: ^4.3.2
   consola: ^3.4.2
   cropperjs: ^1.6.2
   cross-env: ^10.1.0
@@ -108,7 +108,7 @@ catalog:
   es-toolkit: ^1.44.0
   eslint: ^9.39.3
   eslint-config-turbo: ^2.8.10
-  eslint-plugin-command: ^3.4.0
+  eslint-plugin-command: ^3.5.2
   eslint-plugin-eslint-comments: ^3.2.0
   eslint-plugin-import-x: ^4.16.1
   eslint-plugin-jsdoc: ^61.7.1
@@ -206,7 +206,7 @@ catalog:
   vitepress: ^1.6.4
   vitepress-plugin-group-icons: ^1.6.5
   vitest: ^4.0.18
-  vue: ^3.5.28
+  vue: ^3.5.29
   vue-dompurify-html: ^5.3.0
   vue-eslint-parser: ^10.4.0
   vue-i18n: ^11.2.8
