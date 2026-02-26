@@ -75,7 +75,7 @@ catalog:
   '@vueuse/motion': ^3.0.3
   ant-design-vue: ^4.2.6
   archiver: ^7.0.1
-  autoprefixer: ^10.4.24
+  autoprefixer: ^10.4.27
   axios: ^1.13.5
   axios-mock-adapter: ^2.1.0
   bpmn-js: ^18.9.1
@@ -107,7 +107,7 @@ catalog:
   element-plus: ^2.13.2
   es-toolkit: ^1.44.0
   eslint: ^9.39.3
-  eslint-config-turbo: ^2.8.10
+  eslint-config-turbo: ^2.8.11
   eslint-plugin-command: ^3.5.2
   eslint-plugin-eslint-comments: ^3.2.0
   eslint-plugin-import-x: ^4.16.1
@@ -191,7 +191,7 @@ catalog:
   theme-colors: ^0.1.0
   tinymce: ^8.3.2
   tippy.js: ^6.3.7
-  turbo: ^2.8.10
+  turbo: ^2.8.11
   typescript: ^5.9.3
   unbuild: ^3.6.1
   unplugin-element-plus: ^0.11.2
