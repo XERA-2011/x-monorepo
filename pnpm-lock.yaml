@@ -127,8 +127,8 @@ catalogs:
       specifier: ^1.5.6
       version: 1.5.6
     '@types/qs':
-      specifier: ^6.14.0
-      version: 6.14.0
+      specifier: ^6.15.0
+      version: 6.15.0
     '@types/sortablejs':
       specifier: ^1.15.9
       version: 1.15.9
@@ -1697,7 +1697,7 @@ importers:
     devDependencies:
       '@types/qs':
         specifier: 'catalog:'
-        version: 6.14.0
+        version: 6.15.0
       axios-mock-adapter:
         specifier: 'catalog:'
         version: 2.1.0(axios@1.13.6)
@@ -5406,8 +5406,8 @@ packages:
   '@types/qrcode@1.5.6':
     resolution: {integrity: sha512-te7NQcV2BOvdj2b1hCAHzAoMNuj65kNBMz0KBaxM6c3VGBOhU0dURQKOtH8CFNI/dsKkwlv32p26qYQTWoB5bw==}
 
-  '@types/qs@6.14.0':
-    resolution: {integrity: sha512-eOunJqu0K1923aExK6y8p6fsihYEn/BYuQ4g0CxAAgFc4b/ZLN4CrsRZ55srTdqoiLzU2B2evC+apEIxprEzkQ==}
+  '@types/qs@6.15.0':
+    resolution: {integrity: sha512-JawvT8iBVWpzTrz3EGw9BTQFg3BQNmwERdKE22vlTxawwtbyUSlMppvZYKLZzB5zgACXdXxbD3m1bXaMqP/9ow==}
 
   '@types/readdir-glob@1.1.5':
     resolution: {integrity: sha512-raiuEPUYqXu+nvtY2Pe8s8FEmZ3x5yAH4VkLdihcPdalvsHltomrRC9BzuStrJ9yk06470hS0Crw0f1pXqD+Hg==}
@@ -16225,7 +16225,7 @@ snapshots:
     dependencies:
       '@types/node': 25.0.3
 
-  '@types/qs@6.14.0': {}
+  '@types/qs@6.15.0': {}
 
   '@types/readdir-glob@1.1.5':
     dependencies:
