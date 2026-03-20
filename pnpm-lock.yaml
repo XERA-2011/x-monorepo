@@ -244,8 +244,8 @@ catalogs:
       specifier: ^9.39.4
       version: 9.39.4
     eslint-config-turbo:
-      specifier: ^2.8.19
-      version: 2.8.19
+      specifier: ^2.8.20
+      version: 2.8.20
     eslint-plugin-command:
       specifier: ^3.5.2
       version: 3.5.2
@@ -466,8 +466,8 @@ catalogs:
       specifier: ^6.3.7
       version: 6.3.7
     turbo:
-      specifier: ^2.8.19
-      version: 2.8.19
+      specifier: ^2.8.20
+      version: 2.8.20
     typescript:
       specifier: ^5.9.3
       version: 5.9.3
@@ -535,11 +535,11 @@ catalogs:
       specifier: ^4.1.0
       version: 4.1.0
     vxe-pc-ui:
-      specifier: ^4.13.10
-      version: 4.13.10
+      specifier: ^4.13.11
+      version: 4.13.11
     vxe-table:
-      specifier: ^4.18.5
-      version: 4.18.5
+      specifier: ^4.18.6
+      version: 4.18.6
     watermark-js-plus:
       specifier: ^1.6.3
       version: 1.6.3
@@ -640,7 +640,7 @@ importers:
         version: 4.2.2
       turbo:
         specifier: 'catalog:'
-        version: 2.8.19
+        version: 2.8.20
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
@@ -779,23 +779,23 @@ importers:
         version: 4.6.4(vue@3.5.30(typescript@5.9.3))
     devDependencies:
       '@oxc-minify/binding-linux-x64-gnu':
-        specifier: 0.120.0
-        version: 0.120.0
+        specifier: 0.121.0
+        version: 0.121.0
       '@oxc-minify/binding-win32-x64-msvc':
-        specifier: 0.120.0
-        version: 0.120.0
+        specifier: 0.121.0
+        version: 0.121.0
       '@oxc-parser/binding-linux-x64-gnu':
-        specifier: 0.120.0
-        version: 0.120.0
+        specifier: 0.121.0
+        version: 0.121.0
       '@oxc-parser/binding-win32-x64-msvc':
-        specifier: 0.120.0
-        version: 0.120.0
+        specifier: 0.121.0
+        version: 0.121.0
       '@oxc-transform/binding-linux-x64-gnu':
-        specifier: 0.120.0
-        version: 0.120.0
+        specifier: 0.121.0
+        version: 0.121.0
       '@oxc-transform/binding-win32-x64-msvc':
-        specifier: 0.120.0
-        version: 0.120.0
+        specifier: 0.121.0
+        version: 0.121.0
       '@unrs/resolver-binding-linux-x64-gnu':
         specifier: 1.11.1
         version: 1.11.1
@@ -834,7 +834,7 @@ importers:
     dependencies:
       eslint-config-turbo:
         specifier: 'catalog:'
-        version: 2.8.19(eslint@9.39.4(jiti@2.6.1))(turbo@2.8.19)
+        version: 2.8.20(eslint@9.39.4(jiti@2.6.1))(turbo@2.8.20)
       eslint-plugin-command:
         specifier: 'catalog:'
         version: 3.5.2(@typescript-eslint/rule-tester@8.56.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/typescript-estree@8.57.1(typescript@5.9.3))(@typescript-eslint/utils@8.57.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))
@@ -1668,10 +1668,10 @@ importers:
         version: 3.5.30(typescript@5.9.3)
       vxe-pc-ui:
         specifier: 'catalog:'
-        version: 4.13.10(vue@3.5.30(typescript@5.9.3))
+        version: 4.13.11(vue@3.5.30(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
-        version: 4.18.5(vue@3.5.30(typescript@5.9.3))
+        version: 4.18.6(vue@3.5.30(typescript@5.9.3))
     devDependencies:
       '@types/codemirror':
         specifier: 'catalog:'
@@ -3998,8 +3998,8 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@oxc-minify/binding-linux-x64-gnu@0.120.0':
-    resolution: {integrity: sha512-t+ieObHRVg/n2WdcH8hKACVCx2+HfjGv1TsWeocZF8/npsQmHaXFBZ1YwaxbCgDlmWgB5HnYSgyHYiRQbaj0WA==}
+  '@oxc-minify/binding-linux-x64-gnu@0.121.0':
+    resolution: {integrity: sha512-OOUpoGKeGN6D9bP9dr2lczK3SgOFeMLFiJuldPxOcY21VAxlemEiTPFTPXp4VWzw65sy3bCx0k8R6wyE8TA3EQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
@@ -4041,8 +4041,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oxc-minify/binding-win32-x64-msvc@0.120.0':
-    resolution: {integrity: sha512-yWAx/Dj7bzL+KkV2F+cDyZNZ7cx694dNKTjBO5B3UMDyKAL743IsPdlYScGcG4wRLnTILvBYy6u73UjjvJQvzg==}
+  '@oxc-minify/binding-win32-x64-msvc@0.121.0':
+    resolution: {integrity: sha512-/0qRGvYnBVhzwSXHcJ6sF+2rb2QpotbJeAr1wmADgq/hm7JjdRukktngmwXQuIILmC+UELYLoVpa0PTBoEqwrg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -4138,8 +4138,8 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@oxc-parser/binding-linux-x64-gnu@0.120.0':
-    resolution: {integrity: sha512-q+5jSVZkprJCIy3dzJpApat0InJaoxQLsJuD6DkX8hrUS61z2lHQ1Fe9L2+TYbKHXCLWbL0zXe7ovkIdopBGMQ==}
+  '@oxc-parser/binding-linux-x64-gnu@0.121.0':
+    resolution: {integrity: sha512-s4lfobX9p4kPTclvMiH3gcQUd88VlnkMTF6n2MTMDAyX5FPNRhhRSFZK05Ykhf8Zy5NibV4PbGR6DnK7FGNN6A==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
@@ -4181,8 +4181,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oxc-parser/binding-win32-x64-msvc@0.120.0':
-    resolution: {integrity: sha512-ys+upfqNtSu58huAhJMBKl3XCkGzyVFBlMlGPzHeFKgpFF/OdgNs1MMf8oaJIbgMH8ZxgGF7qfue39eJohmKIg==}
+  '@oxc-parser/binding-win32-x64-msvc@0.121.0':
+    resolution: {integrity: sha512-BOp1KCzdboB1tPqoCPXgntgFs0jjeSyOXHzgxVFR7B/qfr3F8r4YDacHkTOUNXtDgM8YwKnkf3rE5gwALYX7NA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -4281,8 +4281,8 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@oxc-transform/binding-linux-x64-gnu@0.120.0':
-    resolution: {integrity: sha512-ewRGO9hsl3AQ4FvbollEDzoAEGecyECnX75k9k89iBXYxX/4FQgBjUne4M4on4CBiBd8iplGSh8fT0+ZaJJkFg==}
+  '@oxc-transform/binding-linux-x64-gnu@0.121.0':
+    resolution: {integrity: sha512-KedV2jkFxeMvUqfh6SgXjCnO5SBZ+SorTUxSBeql7zp59ONZgAcehWAqDX+YWsK8wEpt23Q8ydC/0d6ebJIAzQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
@@ -4324,8 +4324,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oxc-transform/binding-win32-x64-msvc@0.120.0':
-    resolution: {integrity: sha512-rX6VYwSwjENgteKnnzb36Cpa06TtJ0EdDm2pVdi8HOJgz40O++lTUbRtQz/93w07MnItGNTwxB4hgBGCaqizuQ==}
+  '@oxc-transform/binding-win32-x64-msvc@0.121.0':
+    resolution: {integrity: sha512-vV/rzJsmJeeXI1q/xuy93PnoL/IYMwCCyYMX9MmIgMx2a4Lu3vIjUNBLJx1R5CqP/NnvAelsuz05sKlO017FmQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -5349,33 +5349,28 @@ packages:
       y-protocols: ^1.0.1
       yjs: ^13.5.38
 
-  '@turbo/darwin-64@2.8.19':
-    resolution: {integrity: sha512-WNzpqJV7rO/oKmsxjtSFXuV87fZb/qxzeGWXJng4oHFz7iPOFSWrPb2gTazJgoTvXUfe1kOH2o0F+zFrerwzRw==}
+  '@turbo/darwin-64@2.8.20':
+    resolution: {integrity: sha512-FQ9EX1xMU5nbwjxXxM3yU88AQQ6Sqc6S44exPRroMcx9XZHqqppl5ymJF0Ig/z3nvQNwDmz1Gsnvxubo+nXWjQ==}
     cpu: [x64]
     os: [darwin]
 
-  '@turbo/darwin-arm64@2.8.19':
-    resolution: {integrity: sha512-KTq8/PH0/ml9bNFomZ2VjmOqW6RYPRqBqV5CfNeD5ekJMuNwJUdeQz0qXguxCzW4OkHCnTdPeKIehR0cdQObPg==}
+  '@turbo/darwin-arm64@2.8.20':
+    resolution: {integrity: sha512-Gpyh9ATFGThD6/s9L95YWY54cizg/VRWl2B67h0yofG8BpHf67DFAh9nuJVKG7bY0+SBJDAo5cMur+wOl9YOYw==}
     cpu: [arm64]
     os: [darwin]
 
-  '@turbo/linux-64@2.8.19':
-    resolution: {integrity: sha512-d0xcXiGUt1Q/HzMfgkqai5KyXrassLRuUZhxmUs4ZX99tQFbqRL2/CkSKCnMqyDv7c0K5eugLerVUY+DYr1DQg==}
+  '@turbo/linux-64@2.8.20':
+    resolution: {integrity: sha512-p2QxWUYyYUgUFG0b0kR+pPi8t7c9uaVlRtjTTI1AbCvVqkpjUfCcReBn6DgG/Hu8xrWdKLuyQFaLYFzQskZbcA==}
     cpu: [x64]
     os: [linux]
 
-  '@turbo/linux-arm64@2.8.19':
-    resolution: {integrity: sha512-UX3r1iwqsOK8dMgKFtZpDqZk7feqHXZJ/EQAknh0SVQrnc4vkm6mZqjX4j2j3DVoSo4Ho8xGITYlor9Xxsyomw==}
-    cpu: [arm64]
-    os: [linux]
-
-  '@turbo/windows-64@2.8.19':
-    resolution: {integrity: sha512-3MrvD/gMYWfQKZVZOeilKm1629zPG0+KlErZbI0n9Nr3L32+5qrZOF/cgWErukLnOSR38whgf8t2WaPJQALqxg==}
+  '@turbo/windows-64@2.8.20':
+    resolution: {integrity: sha512-vyaDpYk/8T6Qz5V/X+ihKvKFEZFUoC0oxYpC1sZanK6gaESJlmV3cMRT3Qhcg4D2VxvtC2Jjs9IRkrZGL+exLw==}
     cpu: [x64]
     os: [win32]
 
-  '@turbo/windows-arm64@2.8.19':
-    resolution: {integrity: sha512-j+8mi7kyEgT7cUTPOtPJS8KbTWxu4+OQBiDIo+zklz/RKV4hoN+k4+J8iCM9Nj+o+SVnzc01xSI+s3eBG0MDSA==}
+  '@turbo/windows-arm64@2.8.20':
+    resolution: {integrity: sha512-voicVULvUV5yaGXo0Iue13BcHGYW3u0VgqSbfQwBaHbpj1zLjYV4KIe+7fYIo6DO8FVUJzxFps3ODCQG/Wy2Qw==}
     cpu: [arm64]
     os: [win32]
 
@@ -7585,8 +7580,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-turbo@2.8.19:
-    resolution: {integrity: sha512-3xVezpHtCNEWrb88BddTYZAN4M2In9siDQxmPP3Rcm8iUMNuWgp9MaLmhajEhDVQVwdHQeX3a4CHnpYje37TIA==}
+  eslint-config-turbo@2.8.20:
+    resolution: {integrity: sha512-zT17KSqM4gTrChIocN+WfSdjg21QZTCDrcssylFab/wxu6S1EHDbt0JOna9b8rH5OKafZxDuFxKMV8BkulWShg==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -7692,8 +7687,8 @@ packages:
     peerDependencies:
       eslint: '>=8.44.0'
 
-  eslint-plugin-turbo@2.8.19:
-    resolution: {integrity: sha512-UTOWpSGNbXPV/JAbtw3t2iDdn+iAnwjpDNwu++NZO8kuM3y28ahaUAaLJgQ/R9IHda8jBp2cWHpxC3bfYUvWQw==}
+  eslint-plugin-turbo@2.8.20:
+    resolution: {integrity: sha512-sMDremg73XbX+Imh7iDRS3TAro5jIf7CdzSqrT50wCGhClbiUvmWcLomnX+ldUbfTy+OvtqOeePvTivJMR87eQ==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -11397,8 +11392,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  turbo@2.8.19:
-    resolution: {integrity: sha512-9NTKvQZ/02XnJCSU4mF5gvAPK+nuLbvCtft/NE8dJeOwaup0bJ14rYx7TxmSXp8JJuAN8nAjqfXWFsWwoQSFHg==}
+  turbo@2.8.20:
+    resolution: {integrity: sha512-Rb4qk5YT8RUwwdXtkLpkVhNEe/lor6+WV7S5tTlLpxSz6MjV5Qi8jGNn4gS6NAvrYGA/rNrE6YUQM85sCZUDbQ==}
     hasBin: true
 
   type-check@0.4.0:
@@ -12005,11 +12000,11 @@ packages:
     peerDependencies:
       vue: ^3.5.30
 
-  vxe-pc-ui@4.13.10:
-    resolution: {integrity: sha512-enzsav5WiXCY1xZrCNITdmnXE6rQ7a0DeOdAWVQnt1+IG8o/EIyRTOUPQJi9/d74MaoToWEQ1BONvMhA06I3mQ==}
+  vxe-pc-ui@4.13.11:
+    resolution: {integrity: sha512-20BfxaNgClnzxHmaglcfOPmYmhAelBUcVXSyM0RUVOTISxQUFGs3iHr+svPUmKkivzMFdp8HovMtPGQwNyOdSA==}
 
-  vxe-table@4.18.5:
-    resolution: {integrity: sha512-nTIzZHbdZoCoj55h/Y/NLx5Yp1ZnuEFsuy3k7xajc6eBWby0WGBaqr3OfWvxiYLFAT+zmff5/DG6r0Hox91lqA==}
+  vxe-table@4.18.6:
+    resolution: {integrity: sha512-qneRRbQW/6gG7cnbm3plJiyuhgDQsqq04q9wqkcM3o6rywa3rcShpW6JgrXu0WEDPXPoLtd6VA9MPDfvPs111g==}
 
   w3c-keyname@2.2.8:
     resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
@@ -15228,7 +15223,7 @@ snapshots:
   '@oxc-minify/binding-linux-x64-gnu@0.117.0':
     optional: true
 
-  '@oxc-minify/binding-linux-x64-gnu@0.120.0': {}
+  '@oxc-minify/binding-linux-x64-gnu@0.121.0': {}
 
   '@oxc-minify/binding-linux-x64-musl@0.117.0':
     optional: true
@@ -15250,7 +15245,7 @@ snapshots:
   '@oxc-minify/binding-win32-x64-msvc@0.117.0':
     optional: true
 
-  '@oxc-minify/binding-win32-x64-msvc@0.120.0': {}
+  '@oxc-minify/binding-win32-x64-msvc@0.121.0': {}
 
   '@oxc-parser/binding-android-arm-eabi@0.117.0':
     optional: true
@@ -15294,7 +15289,7 @@ snapshots:
   '@oxc-parser/binding-linux-x64-gnu@0.117.0':
     optional: true
 
-  '@oxc-parser/binding-linux-x64-gnu@0.120.0': {}
+  '@oxc-parser/binding-linux-x64-gnu@0.121.0': {}
 
   '@oxc-parser/binding-linux-x64-musl@0.117.0':
     optional: true
@@ -15316,7 +15311,7 @@ snapshots:
   '@oxc-parser/binding-win32-x64-msvc@0.117.0':
     optional: true
 
-  '@oxc-parser/binding-win32-x64-msvc@0.120.0': {}
+  '@oxc-parser/binding-win32-x64-msvc@0.121.0': {}
 
   '@oxc-project/types@0.117.0': {}
 
@@ -15362,7 +15357,7 @@ snapshots:
   '@oxc-transform/binding-linux-x64-gnu@0.117.0':
     optional: true
 
-  '@oxc-transform/binding-linux-x64-gnu@0.120.0': {}
+  '@oxc-transform/binding-linux-x64-gnu@0.121.0': {}
 
   '@oxc-transform/binding-linux-x64-musl@0.117.0':
     optional: true
@@ -15384,7 +15379,7 @@ snapshots:
   '@oxc-transform/binding-win32-x64-msvc@0.117.0':
     optional: true
 
-  '@oxc-transform/binding-win32-x64-msvc@0.120.0': {}
+  '@oxc-transform/binding-win32-x64-msvc@0.121.0': {}
 
   '@package-json/types@0.0.12': {}
 
@@ -16281,22 +16276,19 @@ snapshots:
       y-protocols: 1.0.7(yjs@13.6.28)
       yjs: 13.6.28
 
-  '@turbo/darwin-64@2.8.19':
+  '@turbo/darwin-64@2.8.20':
     optional: true
 
-  '@turbo/darwin-arm64@2.8.19':
+  '@turbo/darwin-arm64@2.8.20':
     optional: true
 
-  '@turbo/linux-64@2.8.19':
+  '@turbo/linux-64@2.8.20':
     optional: true
 
-  '@turbo/linux-arm64@2.8.19':
+  '@turbo/windows-64@2.8.20':
     optional: true
 
-  '@turbo/windows-64@2.8.19':
-    optional: true
-
-  '@turbo/windows-arm64@2.8.19':
+  '@turbo/windows-arm64@2.8.20':
     optional: true
 
   '@tybys/wasm-util@0.10.1':
@@ -18897,11 +18889,11 @@ snapshots:
       eslint: 9.39.4(jiti@2.6.1)
       semver: 7.7.4
 
-  eslint-config-turbo@2.8.19(eslint@9.39.4(jiti@2.6.1))(turbo@2.8.19):
+  eslint-config-turbo@2.8.20(eslint@9.39.4(jiti@2.6.1))(turbo@2.8.20):
     dependencies:
       eslint: 9.39.4(jiti@2.6.1)
-      eslint-plugin-turbo: 2.8.19(eslint@9.39.4(jiti@2.6.1))(turbo@2.8.19)
-      turbo: 2.8.19
+      eslint-plugin-turbo: 2.8.20(eslint@9.39.4(jiti@2.6.1))(turbo@2.8.20)
+      turbo: 2.8.20
 
   eslint-import-context@0.1.9(unrs-resolver@1.11.1):
     dependencies:
@@ -19036,11 +19028,11 @@ snapshots:
       regexp-ast-analysis: 0.7.1
       scslre: 0.3.0
 
-  eslint-plugin-turbo@2.8.19(eslint@9.39.4(jiti@2.6.1))(turbo@2.8.19):
+  eslint-plugin-turbo@2.8.20(eslint@9.39.4(jiti@2.6.1))(turbo@2.8.20):
     dependencies:
       dotenv: 16.0.3
       eslint: 9.39.4(jiti@2.6.1)
-      turbo: 2.8.19
+      turbo: 2.8.20
 
   eslint-plugin-unicorn@62.0.0(eslint@9.39.4(jiti@2.6.1)):
     dependencies:
@@ -23162,14 +23154,13 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  turbo@2.8.19:
+  turbo@2.8.20:
     optionalDependencies:
-      '@turbo/darwin-64': 2.8.19
-      '@turbo/darwin-arm64': 2.8.19
-      '@turbo/linux-64': 2.8.19
-      '@turbo/linux-arm64': 2.8.19
-      '@turbo/windows-64': 2.8.19
-      '@turbo/windows-arm64': 2.8.19
+      '@turbo/darwin-64': 2.8.20
+      '@turbo/darwin-arm64': 2.8.20
+      '@turbo/linux-64': 2.8.20
+      '@turbo/windows-64': 2.8.20
+      '@turbo/windows-arm64': 2.8.20
 
   type-check@0.4.0:
     dependencies:
@@ -23930,15 +23921,15 @@ snapshots:
       sortablejs: 1.14.0
       vue: 3.5.30(typescript@5.9.3)
 
-  vxe-pc-ui@4.13.10(vue@3.5.30(typescript@5.9.3)):
+  vxe-pc-ui@4.13.11(vue@3.5.30(typescript@5.9.3)):
     dependencies:
       '@vxe-ui/core': 4.4.3(vue@3.5.30(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
-  vxe-table@4.18.5(vue@3.5.30(typescript@5.9.3)):
+  vxe-table@4.18.6(vue@3.5.30(typescript@5.9.3)):
     dependencies:
-      vxe-pc-ui: 4.13.10(vue@3.5.30(typescript@5.9.3))
+      vxe-pc-ui: 4.13.11(vue@3.5.30(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
