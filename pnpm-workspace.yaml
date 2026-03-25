@@ -35,7 +35,7 @@ catalog:
   '@microsoft/fetch-event-source': ^2.0.1
   '@nolebase/vitepress-plugin-git-changelog': ^2.18.2
   '@playwright/test': ^1.58.2
-  '@pnpm/workspace.read-manifest': ^1000.3.0
+  '@pnpm/workspace.read-manifest': ^1000.3.1
   '@stylistic/stylelint-plugin': ^4.0.1
   '@tailwindcss/nesting': 0.0.0-insiders.565cd3e
   '@tailwindcss/typography': ^0.5.19
@@ -128,7 +128,7 @@ catalog:
   get-port: ^7.2.0
   globals: ^17.0.0
   h3: ^1.15.10
-  happy-dom: ^20.8.7
+  happy-dom: ^20.8.8
   highlight.js: ^11.11.1
   html-minifier-terser: ^7.2.0
   is-ci: ^4.1.0
@@ -217,7 +217,7 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.13.14
+  vxe-pc-ui: ^4.13.15
   vxe-table: ^4.18.8
   watermark-js-plus: ^1.6.3
   zod: ^4.3.6
