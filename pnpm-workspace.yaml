@@ -23,7 +23,7 @@ catalog:
   '@form-create/ant-design-vue': ^3.2.34
   '@form-create/antd-designer': ^3.4.0
   '@form-create/designer': ^3.4.0
-  '@form-create/element-ui': ^3.2.38
+  '@form-create/element-ui': ^3.2.39
   '@iconify-json/ant-design': ^1.2.5
   '@iconify-json/lucide': ^1.2.102
   '@iconify/tailwind': ^1.2.0
@@ -156,7 +156,7 @@ catalog:
   pinia-plugin-persistedstate: ^4.7.1
   pkg-types: ^2.3.0
   playwright: ^1.59.1
-  postcss: ^8.5.9
+  postcss: ^8.5.10
   postcss-antd-fixes: ^0.2.0
   postcss-html: ^1.8.1
   postcss-import: ^16.1.1
