@@ -31,8 +31,8 @@ catalogs:
       specifier: ^3.4.0
       version: 3.4.0
     '@form-create/element-ui':
-      specifier: ^3.2.39
-      version: 3.2.39
+      specifier: ^3.2.40
+      version: 3.2.40
     '@iconify-json/ant-design':
       specifier: ^1.2.5
       version: 1.2.5
@@ -667,7 +667,7 @@ importers:
         version: 3.4.0(typescript@5.9.3)(vue@3.5.32(typescript@5.9.3))
       '@form-create/element-ui':
         specifier: 'catalog:'
-        version: 3.2.39(vue@3.5.32(typescript@5.9.3))
+        version: 3.2.40(vue@3.5.32(typescript@5.9.3))
       '@tinymce/tinymce-vue':
         specifier: 'catalog:'
         version: 6.3.0(tinymce@8.4.0)(vue@3.5.32(typescript@5.9.3))
@@ -3484,8 +3484,8 @@ packages:
   '@form-create/component-wangeditor@3.2.14':
     resolution: {integrity: sha512-N/U/hFBdBu2OIguxoKe1Kslq5fW6XmtyhKDImLfKLn1xI6X5WUtt3r7QTaUPcVUl2vntpM9wJ/FBdG17RzF/Dg==}
 
-  '@form-create/core@3.2.39':
-    resolution: {integrity: sha512-lEWpOa8GSJFJTvYsrmTno+i5JCCDnT6PPrkJHRejmslVRWjgYry+eY5cI2ZyggpENoq97vZYywO8nHURqYmgEw==}
+  '@form-create/core@3.2.40':
+    resolution: {integrity: sha512-QIHlaZT0ewEIX3TnZJ+uksl/xXnPF2aLnHq0fcbldOqaYwPxQTy7h2kVwH6TYvhAtKvUkoAx+FJx88XQKFq20w==}
     peerDependencies:
       vue: ^3.5.32
 
@@ -3494,8 +3494,8 @@ packages:
     peerDependencies:
       vue: ^3.5.32
 
-  '@form-create/element-ui@3.2.39':
-    resolution: {integrity: sha512-Rnu6zkUzyB+GmKmHoqQqhOPOqacCL70dBQJrqVPc6Pxx9KzzCacu6Slju158kirnXqEgCMGl/pN9r6ZSOmqnkg==}
+  '@form-create/element-ui@3.2.40':
+    resolution: {integrity: sha512-/5ON1kiA+KY37st03NjNZfJgD3btgNMFgx8tuDSIy06OZB3LjUam7Z9AHYwFsbCHx2gWL8KwYgin+YXvqY/vlA==}
     peerDependencies:
       vue: ^3.5.32
 
@@ -14691,7 +14691,7 @@ snapshots:
     dependencies:
       wangeditor: 4.7.15
 
-  '@form-create/core@3.2.39(vue@3.5.32(typescript@5.9.3))':
+  '@form-create/core@3.2.40(vue@3.5.32(typescript@5.9.3))':
     dependencies:
       '@form-create/utils': 3.2.31
       vue: 3.5.32(typescript@5.9.3)
@@ -14699,7 +14699,7 @@ snapshots:
   '@form-create/designer@3.4.0(typescript@5.9.3)(vue@3.5.32(typescript@5.9.3))':
     dependencies:
       '@form-create/component-wangeditor': 3.2.14
-      '@form-create/element-ui': 3.2.39(vue@3.5.32(typescript@5.9.3))
+      '@form-create/element-ui': 3.2.40(vue@3.5.32(typescript@5.9.3))
       '@form-create/utils': 3.2.31
       codemirror: 6.65.7
       element-plus: 2.13.7(typescript@5.9.3)(vue@3.5.32(typescript@5.9.3))
@@ -14711,7 +14711,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@form-create/element-ui@3.2.39(vue@3.5.32(typescript@5.9.3))':
+  '@form-create/element-ui@3.2.40(vue@3.5.32(typescript@5.9.3))':
     dependencies:
       '@form-create/component-elm-checkbox': 3.2.39
       '@form-create/component-elm-frame': 3.2.31
@@ -14721,7 +14721,7 @@ snapshots:
       '@form-create/component-elm-tree': 3.2.31
       '@form-create/component-elm-upload': 3.2.31
       '@form-create/component-subform': 3.2.34
-      '@form-create/core': 3.2.39(vue@3.5.32(typescript@5.9.3))
+      '@form-create/core': 3.2.40(vue@3.5.32(typescript@5.9.3))
       '@form-create/utils': 3.2.31
       vue: 3.5.32(typescript@5.9.3)
 
