@@ -25,10 +25,10 @@ catalog:
   '@form-create/designer': ^3.4.0
   '@form-create/element-ui': ^3.2.41
   '@iconify-json/ant-design': ^1.2.5
-  '@iconify-json/lucide': ^1.2.102
+  '@iconify-json/lucide': ^1.2.103
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.0
-  '@intlify/core-base': ^11.3.2
+  '@intlify/core-base': ^11.4.0
   '@intlify/unplugin-vue-i18n': ^6.0.8
   '@jspm/generator': ^2.14.0
   '@manypkg/get-packages': ^3.1.0
@@ -163,7 +163,7 @@ catalog:
   postcss-preset-env: ^10.6.1
   postcss-scss: ^4.0.9
   prettier: ^3.7.4
-  prettier-plugin-tailwindcss: ^0.7.2
+  prettier-plugin-tailwindcss: ^0.7.3
   publint: ^0.3.18
   qrcode: ^1.5.4
   qs: ^6.15.1
@@ -209,7 +209,7 @@ catalog:
   vue: ^3.5.33
   vue-dompurify-html: ^5.3.0
   vue-eslint-parser: ^10.4.0
-  vue-i18n: ^11.3.2
+  vue-i18n: ^11.4.0
   vue-json-viewer: ^3.0.4
   vue-router: ^4.6.4
   vue-tippy: ^6.7.1
@@ -217,8 +217,8 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.13.26
-  vxe-table: ^4.18.12
+  vxe-pc-ui: ^4.13.28
+  vxe-table: ^4.18.13
   watermark-js-plus: ^1.6.3
   zod: ^4.3.6
   zod-defaults: 0.2.3
