@@ -189,7 +189,7 @@ catalog:
   tailwindcss: ^4.2.4
   tailwindcss-animate: ^1.0.7
   theme-colors: ^0.1.0
-  tinymce: ^8.4.0
+  tinymce: ^8.5.0
   tippy.js: ^6.3.7
   turbo: ^2.9.6
   typescript: ^5.9.3
@@ -217,7 +217,7 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.13.28
+  vxe-pc-ui: ^4.13.29
   vxe-table: ^4.18.13
   watermark-js-plus: ^1.6.3
   zod: ^4.3.6
