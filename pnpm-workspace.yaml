@@ -25,7 +25,7 @@ catalog:
   '@form-create/designer': ^3.4.0
   '@form-create/element-ui': ^3.2.41
   '@iconify-json/ant-design': ^1.2.5
-  '@iconify-json/lucide': ^1.2.104
+  '@iconify-json/lucide': ^1.2.105
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.0
   '@intlify/core-base': ^11.4.0
@@ -105,7 +105,7 @@ catalog:
   dotenv: ^17.2.3
   echarts: ^6.0.0
   element-plus: ^2.13.7
-  es-toolkit: ^1.46.0
+  es-toolkit: ^1.46.1
   eslint: ^9.39.4
   eslint-config-turbo: ^2.9.6
   eslint-plugin-command: ^3.5.2
@@ -114,7 +114,7 @@ catalog:
   eslint-plugin-jsdoc: ^61.7.1
   eslint-plugin-jsonc: ^2.21.1
   eslint-plugin-n: ^17.24.0
-  eslint-plugin-no-only-tests: ^3.3.0
+  eslint-plugin-no-only-tests: ^3.4.0
   eslint-plugin-perfectionist: ^5.9.0
   eslint-plugin-prettier: ^5.5.5
   eslint-plugin-regexp: ^2.10.0
@@ -220,5 +220,5 @@ catalog:
   vxe-pc-ui: ^4.13.29
   vxe-table: ^4.18.13
   watermark-js-plus: ^1.6.3
-  zod: ^4.3.6
+  zod: ^4.4.1
   zod-defaults: 0.2.3
