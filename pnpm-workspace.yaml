@@ -25,7 +25,7 @@ catalog:
   '@form-create/designer': ^3.4.0
   '@form-create/element-ui': ^3.2.42
   '@iconify-json/ant-design': ^1.2.5
-  '@iconify-json/lucide': ^1.2.106
+  '@iconify-json/lucide': ^1.2.107
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.1
   '@intlify/core-base': ^11.4.2
@@ -34,7 +34,7 @@ catalog:
   '@manypkg/get-packages': ^3.1.0
   '@microsoft/fetch-event-source': ^2.0.1
   '@nolebase/vitepress-plugin-git-changelog': ^2.18.2
-  '@playwright/test': ^1.59.1
+  '@playwright/test': ^1.60.0
   '@pnpm/workspace.read-manifest': ^1000.3.1
   '@stylistic/stylelint-plugin': ^4.0.1
   '@tailwindcss/nesting': 0.0.0-insiders.565cd3e
@@ -61,8 +61,8 @@ catalog:
   '@types/qrcode': ^1.5.6
   '@types/qs': ^6.15.1
   '@types/sortablejs': ^1.15.9
-  '@typescript-eslint/eslint-plugin': ^8.59.2
-  '@typescript-eslint/parser': ^8.59.2
+  '@typescript-eslint/eslint-plugin': ^8.59.3
+  '@typescript-eslint/parser': ^8.59.3
   '@vee-validate/zod': ^4.15.1
   '@vite-pwa/vitepress': ^1.1.0
   '@vitejs/plugin-vue': ^6.0.6
@@ -155,7 +155,7 @@ catalog:
   pinia: ^3.0.4
   pinia-plugin-persistedstate: ^4.7.1
   pkg-types: ^2.3.0
-  playwright: ^1.59.1
+  playwright: ^1.60.0
   postcss: ^8.5.14
   postcss-antd-fixes: ^0.2.0
   postcss-html: ^1.8.1
@@ -205,7 +205,7 @@ catalog:
   vite-plugin-vue-devtools: ^8.1.2
   vitepress: ^1.6.4
   vitepress-plugin-group-icons: ^1.6.5
-  vitest: ^4.1.5
+  vitest: ^4.1.6
   vue: ^3.5.34
   vue-dompurify-html: ^5.3.0
   vue-eslint-parser: ^10.4.0
@@ -217,7 +217,7 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.14.7
+  vxe-pc-ui: ^4.14.8
   vxe-table: ^4.18.13
   watermark-js-plus: ^1.6.3
   zod: ^4.4.3
