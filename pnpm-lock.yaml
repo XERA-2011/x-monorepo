@@ -142,8 +142,8 @@ catalogs:
       specifier: ^4.15.1
       version: 4.15.1
     '@vitejs/plugin-vue':
-      specifier: ^6.0.6
-      version: 6.0.6
+      specifier: ^6.0.7
+      version: 6.0.7
     '@vitejs/plugin-vue-jsx':
       specifier: ^5.1.5
       version: 5.1.5
@@ -244,8 +244,8 @@ catalogs:
       specifier: ^9.39.4
       version: 9.39.4
     eslint-config-turbo:
-      specifier: ^2.9.12
-      version: 2.9.12
+      specifier: ^2.9.14
+      version: 2.9.14
     eslint-plugin-command:
       specifier: ^3.5.2
       version: 3.5.2
@@ -466,8 +466,8 @@ catalogs:
       specifier: ^6.3.7
       version: 6.3.7
     turbo:
-      specifier: ^2.9.12
-      version: 2.9.12
+      specifier: ^2.9.14
+      version: 2.9.14
     typescript:
       specifier: ^5.9.3
       version: 5.9.3
@@ -535,8 +535,8 @@ catalogs:
       specifier: ^4.1.0
       version: 4.1.0
     vxe-pc-ui:
-      specifier: ^4.14.11
-      version: 4.14.11
+      specifier: ^4.14.12
+      version: 4.14.12
     vxe-table:
       specifier: ^4.18.13
       version: 4.18.13
@@ -577,7 +577,7 @@ importers:
         version: 24.10.4
       '@vitejs/plugin-vue':
         specifier: 'catalog:'
-        version: 6.0.6(vite@7.3.3(@types/node@24.10.4)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))
+        version: 6.0.7(vite@7.3.3(@types/node@24.10.4)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))
       '@vitejs/plugin-vue-jsx':
         specifier: 'catalog:'
         version: 5.1.5(vite@7.3.3(@types/node@24.10.4)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))
@@ -640,7 +640,7 @@ importers:
         version: 4.3.0
       turbo:
         specifier: 'catalog:'
-        version: 2.9.12
+        version: 2.9.14
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
@@ -834,7 +834,7 @@ importers:
     dependencies:
       eslint-config-turbo:
         specifier: 'catalog:'
-        version: 2.9.12(eslint@9.39.4(jiti@2.7.0))(turbo@2.9.12)
+        version: 2.9.14(eslint@9.39.4(jiti@2.7.0))(turbo@2.9.14)
       eslint-plugin-command:
         specifier: 'catalog:'
         version: 3.5.2(@typescript-eslint/rule-tester@8.56.1(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(@typescript-eslint/typescript-estree@8.59.3(typescript@5.9.3))(@typescript-eslint/utils@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))
@@ -1105,7 +1105,7 @@ importers:
         version: 7.0.2
       '@vitejs/plugin-vue':
         specifier: 'catalog:'
-        version: 6.0.6(vite@7.3.3(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))
+        version: 6.0.7(vite@7.3.3(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))
       '@vitejs/plugin-vue-jsx':
         specifier: 'catalog:'
         version: 5.1.5(vite@7.3.3(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))
@@ -1668,7 +1668,7 @@ importers:
         version: 3.5.34(typescript@5.9.3)
       vxe-pc-ui:
         specifier: 'catalog:'
-        version: 4.14.11(vue@3.5.34(typescript@5.9.3))
+        version: 4.14.12(vue@3.5.34(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
         version: 4.18.13(vue@3.5.34(typescript@5.9.3))
@@ -4504,11 +4504,11 @@ packages:
     resolution: {integrity: sha512-HDVTWq3H0uTXiU0eeSQntcVUTPP3GamzeXI41+x7uU9J65JgWQh3qWZHblR1i0npXfFtF+mxBiU2nJH8znxWnQ==}
     engines: {node: '>=18'}
 
-  '@rolldown/pluginutils@1.0.0-rc.13':
-    resolution: {integrity: sha512-3ngTAv6F/Py35BsYbeeLeecvhMKdsKm4AoOETVhAA+Qc8nrA2I0kF7oa93mE9qnIurngOSpMnQ0x2nQY2FPviA==}
-
   '@rolldown/pluginutils@1.0.0-rc.9':
     resolution: {integrity: sha512-w6oiRWgEBl04QkFZgmW+jnU1EC9b57Oihi2ot3HNWIQRqgHp5PnYDia5iZ5FF7rpa4EQdiqMDXjlqKGXBhsoXw==}
+
+  '@rolldown/pluginutils@1.0.1':
+    resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
 
   '@rollup/plugin-alias@5.1.1':
     resolution: {integrity: sha512-PR9zDb+rOzkRb2VD+EuKB7UC41vU5DIwZ5qqCpk0KJudcWAyi8rvYOhS7+L5aZCspw1stTViLgN5v6FF1p5cgQ==}
@@ -5648,33 +5648,33 @@ packages:
       y-protocols: ^1.0.1
       yjs: ^13.5.38
 
-  '@turbo/darwin-64@2.9.12':
-    resolution: {integrity: sha512-eu3eFRmE9NjgZ0wPdRJ44l+LGSeIky+tz5ZQd8zQkw/Yqi+BM7wq+8nbabeoiVUcICi/IZweMOKl/MCmkrd1+g==}
+  '@turbo/darwin-64@2.9.14':
+    resolution: {integrity: sha512-t7QiPflaEyBE4oayeZtSmu4mEfjgIrcNlNNl1z1dmIVPqEdtA7+CfTf8d7KXsOGPh6aNgWjKxyvQg9uGfDQF+A==}
     cpu: [x64]
     os: [darwin]
 
-  '@turbo/darwin-arm64@2.9.12':
-    resolution: {integrity: sha512-RUkAE404z/J8NsyrUosMcBaXT6M4bRFxTQrmkDQBLQVXaC8Jl0e9bMvYDSX0GW7Ffm2m3j9y7RXgR1foeUAM9w==}
+  '@turbo/darwin-arm64@2.9.14':
+    resolution: {integrity: sha512-d23147mC9BsCPA9mJ0h/ubcpbRgcJBXbcG3+Vq7YLhjz3IXuvQsJ1UXH8f4MD76ZjJ4m/E4aRdJV+MW88CDfbw==}
     cpu: [arm64]
     os: [darwin]
 
-  '@turbo/linux-64@2.9.12':
-    resolution: {integrity: sha512-InIUtH7cw/vqXNX1Gr7QgWfmw3ct08pV5CpfdEOR48z2u2rzdmpIuk00B/Q2xCb0PMWtKgiMQynfuphmEuUyTQ==}
+  '@turbo/linux-64@2.9.14':
+    resolution: {integrity: sha512-P3ZKB5tuUDdDQWuAsACGUR1qv9W7BNWxdxqVJ0kZNuNNPRaVYTPPikLcp79+GiEcW3npsR+KyP38lnQiBc5aSA==}
     cpu: [x64]
     os: [linux]
 
-  '@turbo/linux-arm64@2.9.12':
-    resolution: {integrity: sha512-lC6nD//Xh67fmJM0LKaLsg74Wry0aYrgMklpiNgCbUaMdPIOqj0A00iri3NU7Lb7pZHx8ViisgpeDKlpSgFUCA==}
+  '@turbo/linux-arm64@2.9.14':
+    resolution: {integrity: sha512-ZRTlzcUMrrPv9ZuDzRF9n60Ym13bKeG9jDB8WjxyLhWNzV+AJQN+zdpIk3NJYf2zQsGUm1mNar2P0elRzLw25g==}
     cpu: [arm64]
     os: [linux]
 
-  '@turbo/windows-64@2.9.12':
-    resolution: {integrity: sha512-conYri8VUl72JOdYnLDPYwzqbPcY5ECoHmo9FWoKznemhaAIilj4maHqs9Uar0aKfNoZIULniy+6iWaLtLO34A==}
+  '@turbo/windows-64@2.9.14':
+    resolution: {integrity: sha512-exanwN6sIduZwykYeiTQj8kCmOhazP5WOz3bvXMcYtjhL6Z3iRWLewKrXCBq0bqwSP3iBMb/AerRCnHI4lx46A==}
     cpu: [x64]
     os: [win32]
 
-  '@turbo/windows-arm64@2.9.12':
-    resolution: {integrity: sha512-XoR4bsg62/L/esRVcmoMESEiNZ36+YmyjYGLpoqk8nwMgXzzVjNOgX0lRSz5w/U/ajLGv3nhMsS0Q2QOdvp2AQ==}
+  '@turbo/windows-arm64@2.9.14':
+    resolution: {integrity: sha512-fVdCsnmYoKICsycbWuuGp6Jvi51/3G/UluFWuAUCvR8PIW5IJkAk5BM9UF8PSm0Q2IphWHFZjYEgjHsh3B9y/g==}
     cpu: [arm64]
     os: [win32]
 
@@ -6169,8 +6169,8 @@ packages:
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
       vue: ^3.5.34
 
-  '@vitejs/plugin-vue@6.0.6':
-    resolution: {integrity: sha512-u9HHgfrq3AjXlysn0eINFnWQOJQLO9WN6VprZ8FXl7A2bYisv3Hui9Ij+7QZ41F/WYWarHjwBbXtD7dKg3uxbg==}
+  '@vitejs/plugin-vue@6.0.7':
+    resolution: {integrity: sha512-km+p+XdSz9Sxm5rqUbqcSfZYaAniKxWBj1KURl+Jr7UaPvvX7BmaWMdP69I5rrFDeQGyxAG7NXdc57vz+snhWg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -7724,6 +7724,9 @@ packages:
   devalue@5.8.0:
     resolution: {integrity: sha512-2zA9pFEsnp7vWBZbXF5JAgAq0fsUIt/1XPbRiAmRV3lp/2C3upzH+sADiyy66aFCihoLEsrQHxNM5w1gIDfsBg==}
 
+  devalue@5.8.1:
+    resolution: {integrity: sha512-4CXDYRBGqN+57wVJkuXBYmpAVUSg3L6JAQa/DFqm238G73E1wuyc/JhGQJzN7vUf/CMphYau2zXbfWzDR5aTEw==}
+
   diff-sequences@27.5.1:
     resolution: {integrity: sha512-k1gCAXAsNgLwEL+Y8Wvl+M6oEFj5bgazfZULpS5CneoPPXRaCCW7dm+q21Ky2VEE5X+VeRDBVg1Pcvvsr4TtNQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -8037,8 +8040,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-turbo@2.9.12:
-    resolution: {integrity: sha512-QnAiTMzCz2mP2EGGVLx1j6mDsKRhMaY424IqJql3z1AQ06OSlXYl3aSIQEwQJEH5RgW/fHx9VK213BF3ZwO8Sw==}
+  eslint-config-turbo@2.9.14:
+    resolution: {integrity: sha512-8bAXNDwtmHV7CuSDX+FB9+TslZEP8qJoNWY9FQTEhyO42bRimcExxwOh1+K2H2JV2VFXJrkt1KxyJmy2xm8Ukw==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -8144,8 +8147,8 @@ packages:
     peerDependencies:
       eslint: '>=8.44.0'
 
-  eslint-plugin-turbo@2.9.12:
-    resolution: {integrity: sha512-Ilv1DTYyghdIdTUsW/VbjVTYKt1Hfs7X2C+rq/i4u7ZVofzcHZwk/3QwrV5UyOGADmxmWNyD+xcRS7+ZE5arQg==}
+  eslint-plugin-turbo@2.9.14:
+    resolution: {integrity: sha512-ROTlsO1JBJLATxtDNd7t22vviSb0hD8fKnjOO0WRgtxJW3VBRNO3BLAC129GPZSvEvtMH/f71Y2TzrqGPjLpEw==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -11353,6 +11356,10 @@ packages:
     resolution: {integrity: sha512-KAkBqZl3c2GvNgNhcoyJae1aKldDW0LO279wF9bk1PnluRTETKBq0WyzRXxEhoQLk56yHaOY4JCBEKDuJIET5g==}
     engines: {node: '>=20.0.0'}
 
+  smob@1.6.2:
+    resolution: {integrity: sha512-RQsvleCbF8cVHEv+xuDGaA4pOizFqJ0GgjtMSRo6oP8pnN7WsigHgVGey6aILRBKv4W2YOMHLqbKdnB6hpB9fw==}
+    engines: {node: '>=20.0.0'}
+
   smol-toml@1.6.1:
     resolution: {integrity: sha512-dWUG8F5sIIARXih1DTaQAX4SsiTXhInKf1buxdY9DIg4ZYPZK5nGM1VRIYmEbDbsHt7USo99xSLFu5Q1IqTmsg==}
     engines: {node: '>= 18'}
@@ -11848,8 +11855,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  turbo@2.9.12:
-    resolution: {integrity: sha512-lCPgus1NuTiBdaITWqzSH/Ff6HVL8HHGBtOXHg1dHRfcshN79XkygSdh0M6g8b0td91ILLG5MTkLOkp5UvyPJw==}
+  turbo@2.9.14:
+    resolution: {integrity: sha512-BQqXRr4UoWI3UPFrtznCLykYHxwxWh53iCB57x092jPMjIlW1wnm3N895g5irpiXmnxUhREBB0n6+y8BHhs4nw==}
     hasBin: true
 
   type-check@0.4.0:
@@ -12461,8 +12468,8 @@ packages:
     peerDependencies:
       vue: ^3.5.34
 
-  vxe-pc-ui@4.14.11:
-    resolution: {integrity: sha512-c68Q1LmJshJSArJqj9EL4dw2bqpE3PMDvOqX/SAdux48O0fzqOL9cJxQM2vY+5bxU2o4x4yorYZN3/6glvkb4Q==}
+  vxe-pc-ui@4.14.12:
+    resolution: {integrity: sha512-STm56AglS9ozULK5wIpF9QVF+LWWY+G9lRG6zAi4HIFT/9tWHoNtbBpo3q8J5Kpz9x97FdYUOshBQEFkPe96Zw==}
 
   vxe-table@4.18.13:
     resolution: {integrity: sha512-aSq+Gl8cbRbDfja5G40ZOmr+uS9aaQ5pMyzsLX2e0gI2ybcUM20ARspX+U0ZMPaidFwt8FRLDJsKoeGxdy470Q==}
@@ -15585,7 +15592,7 @@ snapshots:
     dependencies:
       '@nuxt/kit': 4.4.5(magicast@0.5.2)
       '@rollup/plugin-replace': 6.0.3(rollup@4.60.3)
-      '@vitejs/plugin-vue': 6.0.6(vite@7.3.3(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))
+      '@vitejs/plugin-vue': 6.0.7(vite@7.3.3(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))
       '@vitejs/plugin-vue-jsx': 5.1.5(vite@7.3.3(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))
       autoprefixer: 10.5.0(postcss@8.5.14)
       consola: 3.4.2
@@ -15980,9 +15987,9 @@ snapshots:
 
   '@publint/pack@0.1.4': {}
 
-  '@rolldown/pluginutils@1.0.0-rc.13': {}
-
   '@rolldown/pluginutils@1.0.0-rc.9': {}
+
+  '@rolldown/pluginutils@1.0.1': {}
 
   '@rollup/plugin-alias@5.1.1(rollup@4.54.0)':
     optionalDependencies:
@@ -16105,7 +16112,7 @@ snapshots:
   '@rollup/plugin-terser@0.4.4(rollup@2.80.0)':
     dependencies:
       serialize-javascript: 6.0.2
-      smob: 1.6.1
+      smob: 1.6.2
       terser: 5.47.1
     optionalDependencies:
       rollup: 2.80.0
@@ -16921,22 +16928,22 @@ snapshots:
       y-protocols: 1.0.7(yjs@13.6.28)
       yjs: 13.6.28
 
-  '@turbo/darwin-64@2.9.12':
+  '@turbo/darwin-64@2.9.14':
     optional: true
 
-  '@turbo/darwin-arm64@2.9.12':
+  '@turbo/darwin-arm64@2.9.14':
     optional: true
 
-  '@turbo/linux-64@2.9.12':
+  '@turbo/linux-64@2.9.14':
     optional: true
 
-  '@turbo/linux-arm64@2.9.12':
+  '@turbo/linux-arm64@2.9.14':
     optional: true
 
-  '@turbo/windows-64@2.9.12':
+  '@turbo/windows-64@2.9.14':
     optional: true
 
-  '@turbo/windows-arm64@2.9.12':
+  '@turbo/windows-arm64@2.9.14':
     optional: true
 
   '@tybys/wasm-util@0.10.1':
@@ -17514,15 +17521,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitejs/plugin-vue@6.0.6(vite@7.3.3(@types/node@24.10.4)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.7(vite@7.3.3(@types/node@24.10.4)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@rolldown/pluginutils': 1.0.0-rc.13
+      '@rolldown/pluginutils': 1.0.1
       vite: 7.3.3(@types/node@24.10.4)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4)
       vue: 3.5.34(typescript@5.9.3)
 
-  '@vitejs/plugin-vue@6.0.6(vite@7.3.3(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.7(vite@7.3.3(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@rolldown/pluginutils': 1.0.0-rc.13
+      '@rolldown/pluginutils': 1.0.1
       vite: 7.3.3(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4)
       vue: 3.5.34(typescript@5.9.3)
 
@@ -19296,6 +19303,8 @@ snapshots:
 
   devalue@5.8.0: {}
 
+  devalue@5.8.1: {}
+
   diff-sequences@27.5.1: {}
 
   diff@8.0.2: {}
@@ -19661,11 +19670,11 @@ snapshots:
       eslint: 9.39.4(jiti@2.7.0)
       semver: 7.8.0
 
-  eslint-config-turbo@2.9.12(eslint@9.39.4(jiti@2.7.0))(turbo@2.9.12):
+  eslint-config-turbo@2.9.14(eslint@9.39.4(jiti@2.7.0))(turbo@2.9.14):
     dependencies:
       eslint: 9.39.4(jiti@2.7.0)
-      eslint-plugin-turbo: 2.9.12(eslint@9.39.4(jiti@2.7.0))(turbo@2.9.12)
-      turbo: 2.9.12
+      eslint-plugin-turbo: 2.9.14(eslint@9.39.4(jiti@2.7.0))(turbo@2.9.14)
+      turbo: 2.9.14
 
   eslint-import-context@0.1.9(unrs-resolver@1.11.1):
     dependencies:
@@ -19800,11 +19809,11 @@ snapshots:
       regexp-ast-analysis: 0.7.1
       scslre: 0.3.0
 
-  eslint-plugin-turbo@2.9.12(eslint@9.39.4(jiti@2.7.0))(turbo@2.9.12):
+  eslint-plugin-turbo@2.9.14(eslint@9.39.4(jiti@2.7.0))(turbo@2.9.14):
     dependencies:
       dotenv: 16.0.3
       eslint: 9.39.4(jiti@2.7.0)
-      turbo: 2.9.12
+      turbo: 2.9.14
 
   eslint-plugin-unicorn@62.0.0(eslint@9.39.4(jiti@2.7.0)):
     dependencies:
@@ -23457,6 +23466,8 @@ snapshots:
 
   smob@1.6.1: {}
 
+  smob@1.6.2: {}
+
   smol-toml@1.6.1: {}
 
   sortablejs@1.14.0: {}
@@ -23811,7 +23822,7 @@ snapshots:
       aria-query: 5.3.2
       axobject-query: 4.1.0
       clsx: 2.1.1
-      devalue: 5.8.0
+      devalue: 5.8.1
       esm-env: 1.2.2
       esrap: 2.2.8(@typescript-eslint/types@8.59.3)
       is-reference: 3.0.3
@@ -23998,14 +24009,14 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  turbo@2.9.12:
+  turbo@2.9.14:
     optionalDependencies:
-      '@turbo/darwin-64': 2.9.12
-      '@turbo/darwin-arm64': 2.9.12
-      '@turbo/linux-64': 2.9.12
-      '@turbo/linux-arm64': 2.9.12
-      '@turbo/windows-64': 2.9.12
-      '@turbo/windows-arm64': 2.9.12
+      '@turbo/darwin-64': 2.9.14
+      '@turbo/darwin-arm64': 2.9.14
+      '@turbo/linux-64': 2.9.14
+      '@turbo/linux-arm64': 2.9.14
+      '@turbo/windows-64': 2.9.14
+      '@turbo/windows-arm64': 2.9.14
 
   type-check@0.4.0:
     dependencies:
@@ -24754,7 +24765,7 @@ snapshots:
       sortablejs: 1.14.0
       vue: 3.5.34(typescript@5.9.3)
 
-  vxe-pc-ui@4.14.11(vue@3.5.34(typescript@5.9.3)):
+  vxe-pc-ui@4.14.12(vue@3.5.34(typescript@5.9.3)):
     dependencies:
       '@vxe-ui/core': 4.4.12(vue@3.5.34(typescript@5.9.3))
     transitivePeerDependencies:
@@ -24762,7 +24773,7 @@ snapshots:
 
   vxe-table@4.18.13(vue@3.5.34(typescript@5.9.3)):
     dependencies:
-      vxe-pc-ui: 4.14.11(vue@3.5.34(typescript@5.9.3))
+      vxe-pc-ui: 4.14.12(vue@3.5.34(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
