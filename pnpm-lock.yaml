@@ -31,14 +31,14 @@ catalogs:
       specifier: ^3.4.0
       version: 3.4.0
     '@form-create/element-ui':
-      specifier: ^3.2.42
-      version: 3.2.42
+      specifier: ^3.3.0
+      version: 3.3.0
     '@iconify-json/ant-design':
       specifier: ^1.2.5
       version: 1.2.5
     '@iconify-json/lucide':
-      specifier: ^1.2.107
-      version: 1.2.107
+      specifier: ^1.2.108
+      version: 1.2.108
     '@iconify/tailwind':
       specifier: ^1.2.0
       version: 1.2.0
@@ -46,8 +46,8 @@ catalogs:
       specifier: ^5.0.1
       version: 5.0.1
     '@intlify/core-base':
-      specifier: ^11.4.2
-      version: 11.4.2
+      specifier: ^11.4.4
+      version: 11.4.4
     '@intlify/unplugin-vue-i18n':
       specifier: ^6.0.8
       version: 6.0.8
@@ -394,8 +394,8 @@ catalogs:
       specifier: ^1.5.4
       version: 1.5.4
     qs:
-      specifier: ^6.15.1
-      version: 6.15.1
+      specifier: ^6.15.2
+      version: 6.15.2
     reka-ui:
       specifier: ^2.9.7
       version: 2.9.7
@@ -511,8 +511,8 @@ catalogs:
       specifier: ^10.4.0
       version: 10.4.0
     vue-i18n:
-      specifier: ^11.4.2
-      version: 11.4.2
+      specifier: ^11.4.4
+      version: 11.4.4
     vue-json-viewer:
       specifier: ^3.0.4
       version: 3.0.4
@@ -535,8 +535,8 @@ catalogs:
       specifier: ^4.1.0
       version: 4.1.0
     vxe-pc-ui:
-      specifier: ^4.14.12
-      version: 4.14.12
+      specifier: ^4.14.14
+      version: 4.14.14
     vxe-table:
       specifier: ^4.18.13
       version: 4.18.13
@@ -667,7 +667,7 @@ importers:
         version: 3.4.0(vue@3.5.34(typescript@5.9.3))
       '@form-create/element-ui':
         specifier: 'catalog:'
-        version: 3.2.42(vue@3.5.34(typescript@5.9.3))
+        version: 3.3.0(vue@3.5.34(typescript@5.9.3))
       '@tinymce/tinymce-vue':
         specifier: 'catalog:'
         version: 6.3.0(tinymce@8.5.0)(vue@3.5.34(typescript@5.9.3))
@@ -764,7 +764,7 @@ importers:
     dependencies:
       '@iconify-json/lucide':
         specifier: 'catalog:'
-        version: 1.2.107
+        version: 1.2.108
       '@nuxt/ui':
         specifier: ^4.7.1
         version: 4.7.1(@internationalized/date@3.12.0)(@internationalized/number@3.6.5)(@tiptap/extensions@3.22.5(@tiptap/core@3.22.5(@tiptap/pm@3.22.5))(@tiptap/pm@3.22.5))(@tiptap/y-tiptap@3.0.1(prosemirror-model@1.25.4)(prosemirror-state@1.4.4)(prosemirror-view@1.41.8)(y-protocols@1.0.7(yjs@13.6.28))(yjs@13.6.28))(async-validator@4.2.5)(axios@1.16.1)(change-case@5.4.4)(db0@0.3.4)(embla-carousel@8.6.0)(ioredis@5.10.1)(magicast@0.5.2)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.7)(tailwindcss@4.3.0)(typescript@5.9.3)(vite@7.3.3(@types/node@25.6.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.8.4))(vue-router@4.6.4(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))(yjs@13.6.28)(zod@4.4.3)
@@ -779,23 +779,23 @@ importers:
         version: 4.6.4(vue@3.5.34(typescript@5.9.3))
     devDependencies:
       '@oxc-minify/binding-linux-x64-gnu':
-        specifier: 0.130.0
-        version: 0.130.0
+        specifier: 0.131.0
+        version: 0.131.0
       '@oxc-minify/binding-win32-x64-msvc':
-        specifier: 0.130.0
-        version: 0.130.0
+        specifier: 0.131.0
+        version: 0.131.0
       '@oxc-parser/binding-linux-x64-gnu':
-        specifier: 0.130.0
-        version: 0.130.0
+        specifier: 0.131.0
+        version: 0.131.0
       '@oxc-parser/binding-win32-x64-msvc':
-        specifier: 0.130.0
-        version: 0.130.0
+        specifier: 0.131.0
+        version: 0.131.0
       '@oxc-transform/binding-linux-x64-gnu':
-        specifier: 0.130.0
-        version: 0.130.0
+        specifier: 0.131.0
+        version: 0.131.0
       '@oxc-transform/binding-win32-x64-msvc':
-        specifier: 0.130.0
-        version: 0.130.0
+        specifier: 0.131.0
+        version: 0.131.0
       '@unrs/resolver-binding-linux-x64-gnu':
         specifier: 1.11.1
         version: 1.11.1
@@ -1001,7 +1001,7 @@ importers:
         version: 1.2.5
       '@iconify-json/lucide':
         specifier: 'catalog:'
-        version: 1.2.107
+        version: 1.2.108
       '@iconify-json/mdi':
         specifier: ^1.2.3
         version: 1.2.3
@@ -1065,7 +1065,7 @@ importers:
     dependencies:
       '@intlify/unplugin-vue-i18n':
         specifier: 'catalog:'
-        version: 6.0.8(@vue/compiler-dom@3.5.34)(eslint@9.39.4(jiti@2.7.0))(rollup@4.55.1)(typescript@5.9.3)(vue-i18n@11.4.2(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))
+        version: 6.0.8(@vue/compiler-dom@3.5.34)(eslint@9.39.4(jiti@2.7.0))(rollup@4.55.1)(typescript@5.9.3)(vue-i18n@11.4.4(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))
       '@jspm/generator':
         specifier: 'catalog:'
         version: 2.15.0
@@ -1668,7 +1668,7 @@ importers:
         version: 3.5.34(typescript@5.9.3)
       vxe-pc-ui:
         specifier: 'catalog:'
-        version: 4.14.12(vue@3.5.34(typescript@5.9.3))
+        version: 4.14.14(vue@3.5.34(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
         version: 4.18.13(vue@3.5.34(typescript@5.9.3))
@@ -1696,7 +1696,7 @@ importers:
         version: 1.16.1
       qs:
         specifier: 'catalog:'
-        version: 6.15.1
+        version: 6.15.2
     devDependencies:
       '@types/qs':
         specifier: 'catalog:'
@@ -1715,7 +1715,7 @@ importers:
     dependencies:
       '@intlify/core-base':
         specifier: 'catalog:'
-        version: 11.4.2
+        version: 11.4.4
       '@x-monorepo-core/composables':
         specifier: workspace:*
         version: link:../@core/composables
@@ -1724,7 +1724,7 @@ importers:
         version: 3.5.34(typescript@5.9.3)
       vue-i18n:
         specifier: 'catalog:'
-        version: 11.4.2(vue@3.5.34(typescript@5.9.3))
+        version: 11.4.4(vue@3.5.34(typescript@5.9.3))
 
   packages/preferences:
     dependencies:
@@ -3467,35 +3467,51 @@ packages:
   '@floating-ui/vue@1.1.9':
     resolution: {integrity: sha512-BfNqNW6KA83Nexspgb9DZuz578R7HT8MZw1CfK9I6Ah4QReNWEJsXWHN+SdmOVLNGmTPDi+fDT535Df5PzMLbQ==}
 
-  '@form-create/component-elm-checkbox@3.2.39':
-    resolution: {integrity: sha512-HlphSEl3QwMz24xqvcavWpKcco8rbZ/z/fPOM6w209VZz2KpGBHAzZMH0KLoNp00BriTawCo4bKi3B+4mwWdTQ==}
+  '@form-create/component-elm-checkbox@3.3.0':
+    resolution: {integrity: sha512-BNJcJ8SXtDOJCy8OXLstn6ZIbvEVAObiSJfazIW3AmAVuu958qlw6896dvQqZK0zTBpgOl3hRmMNjoFguglJfg==}
+    peerDependencies:
+      vue: ^3.5.34
 
-  '@form-create/component-elm-frame@3.2.31':
-    resolution: {integrity: sha512-8ub7SnIRVV6YVIBXHps1A7hi7ivrjm8v1qNIcUOndUliXjP90PZ02YUZkVNh12aX8LNhGtuq8kLZqtdSdh78uA==}
+  '@form-create/component-elm-frame@3.3.0':
+    resolution: {integrity: sha512-4iFyg7Jaqv/Q8Lq24XEoQOBClflmMSNxh83KV+cgH3afDIJYHngVSbCqrflaB+lWyMHzIPA3cVrgRbkhkw1eyA==}
+    peerDependencies:
+      vue: ^3.5.34
 
-  '@form-create/component-elm-group@3.2.38':
-    resolution: {integrity: sha512-TbsSf60qbgza5C8G49eX99iQEBxMdlN7Emayctq5eL+TzORx1qR1XFGGfHIm2Waizeq5uJXoh1jQm3QuKG4Q8A==}
+  '@form-create/component-elm-group@3.3.0':
+    resolution: {integrity: sha512-9lJKkEH+hCet27WkXEX6vRf1Kc01Sj4lcEksfKHmNJe/aP+Zp6D96kmYt5M6Ew9aKSNNAPdpkkLae9AUCAz4YQ==}
+    peerDependencies:
+      vue: ^3.5.34
 
-  '@form-create/component-elm-radio@3.2.31':
-    resolution: {integrity: sha512-hm/+tuBPf6bH1iw1xP80JXGe9rhUTovMcQpDfLMNkrdXrLZJ618sKXzID1nId03QKYcocnOHvkbX0NuNPila+A==}
+  '@form-create/component-elm-radio@3.3.0':
+    resolution: {integrity: sha512-b3v/3ytifIc4+y3KCkZjo9X//66yY5k8MHysKqtsmRMx73cAgmHzz3wtpR773zr78xrHGnZH1mE7apdecoJoPQ==}
+    peerDependencies:
+      vue: ^3.5.34
 
-  '@form-create/component-elm-select@3.2.37':
-    resolution: {integrity: sha512-kbxYHdA5KOVmvD9HIBJZWntjpRXFf8uO2+uSjolamCmKh+St0RDttdUMRNjXDxroHHrdtJMIP9K778/BCHYk4g==}
+  '@form-create/component-elm-select@3.3.0':
+    resolution: {integrity: sha512-uBE1rwm4/loVOjWn5/tVMaT8/BFLS6U5nieFNO+ChDJ6HwwbAjr/wXXYKPchoLzLAiDV4Tysvydkpz22hYOnjw==}
+    peerDependencies:
+      vue: ^3.5.34
 
-  '@form-create/component-elm-tree@3.2.31':
-    resolution: {integrity: sha512-cLWwqT+3ES5FSRywQ7HIh05jvEeMPhoQnIxcSbLnzB24tS2eM2x5DhbhjJ02wsZGPvfcO4m3BBp0fgv1RKww1g==}
+  '@form-create/component-elm-tree@3.3.0':
+    resolution: {integrity: sha512-C2cAxTL8zHrt2LC1HLyp+kxhXgfGU71pkv2hCM+kleU+eJ6Ly4TQoaACUwf9oCZexxjCe1dA+zq0HZ/osQdYrQ==}
+    peerDependencies:
+      vue: ^3.5.34
 
-  '@form-create/component-elm-upload@3.2.31':
-    resolution: {integrity: sha512-2XJr7x8gPf+U0FnPYLyPt0+qLG9+lZSO7tlInT0fw7TJF9pWzrtxicnX6sWvd4EoWCNzYU13HXL33Aq1zP2IeA==}
+  '@form-create/component-elm-upload@3.3.0':
+    resolution: {integrity: sha512-oIRpa2cEpHyBtsQh00BpCoD8R2tmQmQ+X6p8Oa3wD9OjGOfKJD7cAKp3bV798/uCXu3LzIh6PyQJQ0Iwjvqhtg==}
+    peerDependencies:
+      vue: ^3.5.34
 
-  '@form-create/component-subform@3.2.34':
-    resolution: {integrity: sha512-h1AiMdpHfMr3s1AuX3L5BChc6Na5Megp/UU/FOCbAqt6+XEEEAKWt+2p6X1MMOJRLT+EI8ZRBcUfVbcw4/dHSQ==}
+  '@form-create/component-subform@3.3.0':
+    resolution: {integrity: sha512-y8F6LxvVZIiHa5Jwur6xKGfxuWFuiFzR4vhwPWTXsRbARLqaPV5OVPhB3gQWjbOjoJ2cnercEEhOFvvXf99WWQ==}
+    peerDependencies:
+      vue: ^3.5.34
 
   '@form-create/component-wangeditor@3.2.14':
     resolution: {integrity: sha512-N/U/hFBdBu2OIguxoKe1Kslq5fW6XmtyhKDImLfKLn1xI6X5WUtt3r7QTaUPcVUl2vntpM9wJ/FBdG17RzF/Dg==}
 
-  '@form-create/core@3.2.42':
-    resolution: {integrity: sha512-0E9lAx3dQbApjgPT3WxmKozp54zhNDBNjGwornumUjeL3PAhkkDBTBDzZhUUpR/HfcJYRh+2/nbCl2u45TmaLQ==}
+  '@form-create/core@3.3.0':
+    resolution: {integrity: sha512-Cm53KhuCn3AvB5Jz+ugoCIHR0MxNW0KDF4ZK4VhBXIauKQLsFHzM73wdt301wQHeTcF8UR5rgtFrAufxgE/8Lw==}
     peerDependencies:
       vue: ^3.5.34
 
@@ -3504,13 +3520,16 @@ packages:
     peerDependencies:
       vue: ^3.5.34
 
-  '@form-create/element-ui@3.2.42':
-    resolution: {integrity: sha512-yOc53N6TfNYuwNhs87kxcTfrQesjYCuv5IPmrkRLGWPvbvpb9IoBFhnVq2yekezO0p8Ng5ZKuzPY4o78QCuNmg==}
+  '@form-create/element-ui@3.3.0':
+    resolution: {integrity: sha512-j9a50noabsgRHA9Iuezj49rZw9V/cM12FpBv22G5fDrlB0IwiVLxilPcjsRmUprILQFDTKC104ufurMsIGoa4g==}
     peerDependencies:
       vue: ^3.5.34
 
   '@form-create/utils@3.2.31':
     resolution: {integrity: sha512-YcisHXuQEF0r9y2VKS2CB2nMQ2q8EkKvQXp4nPR9sjbsCabPZOXq2n2MrkWDMhwQNwep08/0NCf7z0wslHzyWQ==}
+
+  '@form-create/utils@3.3.0':
+    resolution: {integrity: sha512-4VGI3Qowkc0HsrxmC6NT1eUlEnN2xURqStjJXD+PjgbYKqzR01pNHJbz1UyfkrmcFE9HTUaWrH7IgPPxjlSo2g==}
 
   '@gera2ld/jsx-dom@2.2.2':
     resolution: {integrity: sha512-EOqf31IATRE6zS1W1EoWmXZhGfLAoO9FIlwTtHduSrBdud4npYBxYAkv8dZ5hudDPwJeeSjn40kbCL4wAzr8dA==}
@@ -3534,8 +3553,8 @@ packages:
   '@iconify-json/ant-design@1.2.5':
     resolution: {integrity: sha512-SYxhrx1AFq2MBcXk77AERYz2mPhLQes1F0vtvG64+dJZWyge9studXo7MiR8PPeLjRjZdWRrReRbxiwdRMf70Q==}
 
-  '@iconify-json/lucide@1.2.107':
-    resolution: {integrity: sha512-Q4JmCICVwHqaGhB3ugDFdb4uGXuU/o8OJrJuo1YjeZhGeT3jX5fc//7qMNsCb10VuL2PVDM/CkaqO9chnmI3gg==}
+  '@iconify-json/lucide@1.2.108':
+    resolution: {integrity: sha512-jnmMx7xxShfsKeNNJhn47IKj3gD/AbRz+poKLIPn4rSIXw+yVbXCfUBXza/Jo9YIEEFajBk6Zayet8DqGCvX6w==}
 
   '@iconify-json/mdi@1.2.3':
     resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
@@ -3592,29 +3611,29 @@ packages:
       vue-i18n:
         optional: true
 
-  '@intlify/core-base@11.4.2':
-    resolution: {integrity: sha512-7fpuCcVmeLv2T9qHsARqGvh8xt+sV2fH+Q+gMHFwB/rPXzo85DpbJFKn7dBH1L5p0c2cSh2DW+2h/64EKrISmA==}
-    engines: {node: '>= 16'}
+  '@intlify/core-base@11.4.4':
+    resolution: {integrity: sha512-w/vItlylrAmhebkIbVl5YY8XMCtj8Mb2g70ttxktMYuf5AuRahgEHL2iLgLIsZBIbTSgs4hkUo7ucCL0uTJvOg==}
+    engines: {node: '>= 22'}
 
-  '@intlify/devtools-types@11.4.2':
-    resolution: {integrity: sha512-3u8EN1kB6EMSi96KXs5k7a8y2X2g4+h3X6iwVZU47cP4n+mTuq//WMjG588BzSp/2XQ/dTXo2BLUXX+XS+PNfA==}
-    engines: {node: '>= 16'}
+  '@intlify/devtools-types@11.4.4':
+    resolution: {integrity: sha512-PcBLmGmDQsTSVV911P8upzpcLJO1CNVYi/IH6bGnLR2nA+0L963+kXN1ZrisTEnbtw2ewN6HMMSldqzjronA0Q==}
+    engines: {node: '>= 22'}
 
   '@intlify/message-compiler@11.2.8':
     resolution: {integrity: sha512-A5n33doOjmHsBtCN421386cG1tWp5rpOjOYPNsnpjIJbQ4POF0QY2ezhZR9kr0boKwaHjbOifvyQvHj2UTrDFQ==}
     engines: {node: '>= 16'}
 
-  '@intlify/message-compiler@11.4.2':
-    resolution: {integrity: sha512-a6CDSGSMTGrg0BjD97x8TBYPf7qQMDlZipJ6UDfv/pd4OIym8TMlHu3MsH0bTNnRdAG2D6EFEykIgiQPqvtTkA==}
-    engines: {node: '>= 16'}
+  '@intlify/message-compiler@11.4.4':
+    resolution: {integrity: sha512-vn0OAV9pYkJlPPmgnsSm5eAG3mL0+9C/oaded2JY9jmxBbhmUXT3TcAUY8WRgLY9Hte7lkUJKpXrVlYjMXBD2w==}
+    engines: {node: '>= 22'}
 
   '@intlify/shared@11.2.8':
     resolution: {integrity: sha512-l6e4NZyUgv8VyXXH4DbuucFOBmxLF56C/mqh2tvApbzl2Hrhi1aTDcuv5TKdxzfHYmpO3UB0Cz04fgDT9vszfw==}
     engines: {node: '>= 16'}
 
-  '@intlify/shared@11.4.2':
-    resolution: {integrity: sha512-NzpHbguRCsOHDwxmlBa9qu/imc+/QWgsYUaK6FZeNC0wK8QfAbhqrktEp/haVzxU1aikH8IX4ytD+mfFEMi/9A==}
-    engines: {node: '>= 16'}
+  '@intlify/shared@11.4.4':
+    resolution: {integrity: sha512-QRUCHqda1U6aR14FR0vvXD4+4gj6+fm0AhAozvSuRCw0fCvrmCugWpgiR4xH2NI6s8am6N9p5OhirplsX8ZS3g==}
+    engines: {node: '>= 22'}
 
   '@intlify/unplugin-vue-i18n@6.0.8':
     resolution: {integrity: sha512-Vvm3KhjE6TIBVUQAk37rBiaYy2M5OcWH0ZcI1XKEsOTeN1o0bErk+zeuXmcrcMc/73YggfI8RoxOUz9EB/69JQ==}
@@ -4015,8 +4034,8 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@oxc-minify/binding-linux-x64-gnu@0.130.0':
-    resolution: {integrity: sha512-F41i0t1EBq/qUtiLB1z0Fwq1Ogq1E9h/69Ec00QNstSq3pe1BPnd1QeL5rxrDrEJn89NLAKmLUdiBUFaAU2u5Q==}
+  '@oxc-minify/binding-linux-x64-gnu@0.131.0':
+    resolution: {integrity: sha512-KodzbW12zmT/C/w4bGv2aWN7Q5+KVJKbNoAv5hooYeSujj8xSPGWl8pnyj7dJ9nd8j0CVjubEvHQ86rtzV99OA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
@@ -4058,8 +4077,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oxc-minify/binding-win32-x64-msvc@0.130.0':
-    resolution: {integrity: sha512-gwyLRToAVoFjzzr90TEie1etfCZmKN8zMumtkZwswqd2seB+YF0GTyZvTaZCeEm2GX80DA8LXqocwuVksFVXeQ==}
+  '@oxc-minify/binding-win32-x64-msvc@0.131.0':
+    resolution: {integrity: sha512-Lih6D0rjXStl0eUjzlcCiqr60AI/LuE+Zy29beEeXrXqTjOf8t0mcDX/MN3TZBBncxwUNi6osAEsKj4FRnItmQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -4155,8 +4174,8 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@oxc-parser/binding-linux-x64-gnu@0.130.0':
-    resolution: {integrity: sha512-9aCWj83dp3heTQGmGnZGdIWgxjZrr/7VQ0TGFHH5PKByxJKF2Hcr4qvaSUHhhGEa3MSsDjTL1YDP8RAgdL5/Cg==}
+  '@oxc-parser/binding-linux-x64-gnu@0.131.0':
+    resolution: {integrity: sha512-JHK/h95qVqVQ+ITER837kcTdwBDFpFaNnOTYGCP0zdUSX/mLKC7tXOoyrTb6vG7iRPwGlcgBil3v2IjYw1FqJA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
@@ -4198,8 +4217,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oxc-parser/binding-win32-x64-msvc@0.130.0':
-    resolution: {integrity: sha512-RBpA9TsRucJq6HNVNCFF1iKg+QeTkLdZf7hi4xaOGCPvMZWvDHjQgSOEZMUpuW4JNciHbxNhLEYmz5CVygjVGQ==}
+  '@oxc-parser/binding-win32-x64-msvc@0.131.0':
+    resolution: {integrity: sha512-o14Hk8dAyiEUMFEWEgmAwFZvBt1RzAYLM3xeQ+5315JXgVYhoemivgYcbYVRbsFkS71ShMGlAFE0kPnr460rww==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -4298,8 +4317,8 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@oxc-transform/binding-linux-x64-gnu@0.130.0':
-    resolution: {integrity: sha512-/a7ODMlKZdXy449GP91vx8oFgmuoDd08lKr/YnbKnGx9iyUiRsTEEJRqSM6j0EKk6FLJlJYY/pTB3ze6aJf/Rw==}
+  '@oxc-transform/binding-linux-x64-gnu@0.131.0':
+    resolution: {integrity: sha512-XdbvDT1GPNxrTLXSRt4RU2uCH112q3nINTT05DZqTYYcAxaCPImnMoZe2TlBv5j2376Gk+2pcVnJs6xut47aSw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
@@ -4341,8 +4360,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oxc-transform/binding-win32-x64-msvc@0.130.0':
-    resolution: {integrity: sha512-tH8QSCOJV01jdM2PsXADQJHXXZe20wq235PgoZ224/q/5qZ34lu9PMcD8OsN7uhFVcRya1DkiURk69G2ufhKUA==}
+  '@oxc-transform/binding-win32-x64-msvc@0.131.0':
+    resolution: {integrity: sha512-VXgk106WLl3NpBO/6G2gxkWBHguCJm01mGqAq2Q0l2o7hnbglsND0UWSCtM3a9MlsDimfJkLWFQveZu4UtnRvA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -8249,8 +8268,8 @@ packages:
     resolution: {integrity: sha512-Ap6G0WQwcU/LHsvLwON1fAQX9Zp0A2Y6Y/cJBl9r/JbW90Zyg4/zbG6zzKa2OTALELarYHmKu0GhpM5EO+7T0g==}
     engines: {node: '>=0.10'}
 
-  esrap@2.2.8:
-    resolution: {integrity: sha512-MPweq2EvEGj8jwOI7Hgycw/QIHzqA1EbAM8lG7p+FBfZbZq/hQ6h3AMsqnu/djzisH1KVWNzbb7LSgIVtMlPSg==}
+  esrap@2.2.9:
+    resolution: {integrity: sha512-4KijP+NxCWthMCUC3qHbE6n4vCjqgJS1uAYKhuT/GWfFTf1Qyive2TgOjep+gzbSzRfnNyaN/UU9YmdOt8Eg0A==}
     peerDependencies:
       '@typescript-eslint/types': ^8.2.0
     peerDependenciesMeta:
@@ -10856,8 +10875,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  qs@6.15.1:
-    resolution: {integrity: sha512-6YHEFRL9mfgcAvql/XhwTvf5jKcOiiupt2FiJxHkiX1z4j7WL8J/jRHYLluORvc1XxB5rV20KoeK00gVJamspg==}
+  qs@6.15.2:
+    resolution: {integrity: sha512-Rzq0KEyX/w/tEybncDgdkZrJgVUsUMk3xjh3t5bv3S1HTAtg+uOYt72+ZfwiQwKdysThkTBdL/rTi6HDmX9Ddw==}
     engines: {node: '>=0.6'}
 
   quansync@0.2.11:
@@ -12405,9 +12424,9 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
 
-  vue-i18n@11.4.2:
-    resolution: {integrity: sha512-sADDeKXqAGsPX6tK3t3y2ZiMpbVWN12tG+MhTiJ06rVoh58eGtM4wFyw3uWGbVkXByVp9Ne/AP+nSSzI+J9OAQ==}
-    engines: {node: '>= 16'}
+  vue-i18n@11.4.4:
+    resolution: {integrity: sha512-gIbXVSFQV4jcSJxfwdZ5zSZmZ+12CnX0K3vBkRSd6Zn+HSzCp+QwUgPwpD/uN0oKNKI9RzlUXPKVedEuMgNG0A==}
+    engines: {node: '>= 22'}
     peerDependencies:
       vue: ^3.5.34
 
@@ -12468,8 +12487,8 @@ packages:
     peerDependencies:
       vue: ^3.5.34
 
-  vxe-pc-ui@4.14.12:
-    resolution: {integrity: sha512-STm56AglS9ozULK5wIpF9QVF+LWWY+G9lRG6zAi4HIFT/9tWHoNtbBpo3q8J5Kpz9x97FdYUOshBQEFkPe96Zw==}
+  vxe-pc-ui@4.14.14:
+    resolution: {integrity: sha512-A76KENc+2ldV26URdiRjz7EkKYxkGhHx7vkcpfoI04Y8UyYOVdGzC9BmT6wlEzjGycpzKGACdrUmfEk3bqxBeg==}
 
   vxe-table@4.18.13:
     resolution: {integrity: sha512-aSq+Gl8cbRbDfja5G40ZOmr+uS9aaQ5pMyzsLX2e0gI2ybcUM20ARspX+U0ZMPaidFwt8FRLDJsKoeGxdy470Q==}
@@ -14684,49 +14703,58 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@form-create/component-elm-checkbox@3.2.39':
+  '@form-create/component-elm-checkbox@3.3.0(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@form-create/utils': 3.2.31
+      '@form-create/utils': 3.3.0
+      vue: 3.5.34(typescript@5.9.3)
 
-  '@form-create/component-elm-frame@3.2.31':
+  '@form-create/component-elm-frame@3.3.0(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@form-create/utils': 3.2.31
+      '@form-create/utils': 3.3.0
+      vue: 3.5.34(typescript@5.9.3)
 
-  '@form-create/component-elm-group@3.2.38':
+  '@form-create/component-elm-group@3.3.0(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@form-create/utils': 3.2.31
+      '@form-create/utils': 3.3.0
+      vue: 3.5.34(typescript@5.9.3)
 
-  '@form-create/component-elm-radio@3.2.31':
+  '@form-create/component-elm-radio@3.3.0(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@form-create/utils': 3.2.31
+      '@form-create/utils': 3.3.0
+      vue: 3.5.34(typescript@5.9.3)
 
-  '@form-create/component-elm-select@3.2.37':
+  '@form-create/component-elm-select@3.3.0(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@form-create/utils': 3.2.31
+      '@form-create/utils': 3.3.0
+      vue: 3.5.34(typescript@5.9.3)
 
-  '@form-create/component-elm-tree@3.2.31':
+  '@form-create/component-elm-tree@3.3.0(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@form-create/utils': 3.2.31
+      '@form-create/utils': 3.3.0
+      vue: 3.5.34(typescript@5.9.3)
 
-  '@form-create/component-elm-upload@3.2.31':
+  '@form-create/component-elm-upload@3.3.0(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@form-create/utils': 3.2.31
+      '@form-create/utils': 3.3.0
+      vue: 3.5.34(typescript@5.9.3)
 
-  '@form-create/component-subform@3.2.34': {}
+  '@form-create/component-subform@3.3.0(vue@3.5.34(typescript@5.9.3))':
+    dependencies:
+      vue: 3.5.34(typescript@5.9.3)
 
   '@form-create/component-wangeditor@3.2.14':
     dependencies:
       wangeditor: 4.7.15
 
-  '@form-create/core@3.2.42(vue@3.5.34(typescript@5.9.3))':
+  '@form-create/core@3.3.0(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@form-create/utils': 3.2.31
+      '@form-create/utils': 3.3.0
       vue: 3.5.34(typescript@5.9.3)
 
   '@form-create/designer@3.4.0(vue@3.5.34(typescript@5.9.3))':
     dependencies:
       '@form-create/component-wangeditor': 3.2.14
-      '@form-create/element-ui': 3.2.42(vue@3.5.34(typescript@5.9.3))
+      '@form-create/element-ui': 3.3.0(vue@3.5.34(typescript@5.9.3))
       '@form-create/utils': 3.2.31
       codemirror: 6.65.7
       element-plus: 2.14.0(vue@3.5.34(typescript@5.9.3))
@@ -14736,21 +14764,23 @@ snapshots:
       vue: 3.5.34(typescript@5.9.3)
       vuedraggable: 4.1.0(vue@3.5.34(typescript@5.9.3))
 
-  '@form-create/element-ui@3.2.42(vue@3.5.34(typescript@5.9.3))':
+  '@form-create/element-ui@3.3.0(vue@3.5.34(typescript@5.9.3))':
     dependencies:
-      '@form-create/component-elm-checkbox': 3.2.39
-      '@form-create/component-elm-frame': 3.2.31
-      '@form-create/component-elm-group': 3.2.38
-      '@form-create/component-elm-radio': 3.2.31
-      '@form-create/component-elm-select': 3.2.37
-      '@form-create/component-elm-tree': 3.2.31
-      '@form-create/component-elm-upload': 3.2.31
-      '@form-create/component-subform': 3.2.34
-      '@form-create/core': 3.2.42(vue@3.5.34(typescript@5.9.3))
-      '@form-create/utils': 3.2.31
+      '@form-create/component-elm-checkbox': 3.3.0(vue@3.5.34(typescript@5.9.3))
+      '@form-create/component-elm-frame': 3.3.0(vue@3.5.34(typescript@5.9.3))
+      '@form-create/component-elm-group': 3.3.0(vue@3.5.34(typescript@5.9.3))
+      '@form-create/component-elm-radio': 3.3.0(vue@3.5.34(typescript@5.9.3))
+      '@form-create/component-elm-select': 3.3.0(vue@3.5.34(typescript@5.9.3))
+      '@form-create/component-elm-tree': 3.3.0(vue@3.5.34(typescript@5.9.3))
+      '@form-create/component-elm-upload': 3.3.0(vue@3.5.34(typescript@5.9.3))
+      '@form-create/component-subform': 3.3.0(vue@3.5.34(typescript@5.9.3))
+      '@form-create/core': 3.3.0(vue@3.5.34(typescript@5.9.3))
+      '@form-create/utils': 3.3.0
       vue: 3.5.34(typescript@5.9.3)
 
   '@form-create/utils@3.2.31': {}
+
+  '@form-create/utils@3.3.0': {}
 
   '@gera2ld/jsx-dom@2.2.2':
     dependencies:
@@ -14771,7 +14801,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/lucide@1.2.107':
+  '@iconify-json/lucide@1.2.108':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -14824,7 +14854,7 @@ snapshots:
     dependencies:
       '@swc/helpers': 0.5.21
 
-  '@intlify/bundle-utils@10.0.1(vue-i18n@11.4.2(vue@3.5.34(typescript@5.9.3)))':
+  '@intlify/bundle-utils@10.0.1(vue-i18n@11.4.4(vue@3.5.34(typescript@5.9.3)))':
     dependencies:
       '@intlify/message-compiler': 11.2.8
       '@intlify/shared': 11.2.8
@@ -14836,39 +14866,39 @@ snapshots:
       source-map-js: 1.2.1
       yaml-eslint-parser: 1.3.2
     optionalDependencies:
-      vue-i18n: 11.4.2(vue@3.5.34(typescript@5.9.3))
+      vue-i18n: 11.4.4(vue@3.5.34(typescript@5.9.3))
 
-  '@intlify/core-base@11.4.2':
+  '@intlify/core-base@11.4.4':
     dependencies:
-      '@intlify/devtools-types': 11.4.2
-      '@intlify/message-compiler': 11.4.2
-      '@intlify/shared': 11.4.2
+      '@intlify/devtools-types': 11.4.4
+      '@intlify/message-compiler': 11.4.4
+      '@intlify/shared': 11.4.4
 
-  '@intlify/devtools-types@11.4.2':
+  '@intlify/devtools-types@11.4.4':
     dependencies:
-      '@intlify/core-base': 11.4.2
-      '@intlify/shared': 11.4.2
+      '@intlify/core-base': 11.4.4
+      '@intlify/shared': 11.4.4
 
   '@intlify/message-compiler@11.2.8':
     dependencies:
       '@intlify/shared': 11.2.8
       source-map-js: 1.2.1
 
-  '@intlify/message-compiler@11.4.2':
+  '@intlify/message-compiler@11.4.4':
     dependencies:
-      '@intlify/shared': 11.4.2
+      '@intlify/shared': 11.4.4
       source-map-js: 1.2.1
 
   '@intlify/shared@11.2.8': {}
 
-  '@intlify/shared@11.4.2': {}
+  '@intlify/shared@11.4.4': {}
 
-  '@intlify/unplugin-vue-i18n@6.0.8(@vue/compiler-dom@3.5.34)(eslint@9.39.4(jiti@2.7.0))(rollup@4.55.1)(typescript@5.9.3)(vue-i18n@11.4.2(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))':
+  '@intlify/unplugin-vue-i18n@6.0.8(@vue/compiler-dom@3.5.34)(eslint@9.39.4(jiti@2.7.0))(rollup@4.55.1)(typescript@5.9.3)(vue-i18n@11.4.4(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))':
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@2.7.0))
-      '@intlify/bundle-utils': 10.0.1(vue-i18n@11.4.2(vue@3.5.34(typescript@5.9.3)))
+      '@intlify/bundle-utils': 10.0.1(vue-i18n@11.4.4(vue@3.5.34(typescript@5.9.3)))
       '@intlify/shared': 11.2.8
-      '@intlify/vue-i18n-extensions': 8.0.0(@intlify/shared@11.2.8)(@vue/compiler-dom@3.5.34)(vue-i18n@11.4.2(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))
+      '@intlify/vue-i18n-extensions': 8.0.0(@intlify/shared@11.2.8)(@vue/compiler-dom@3.5.34)(vue-i18n@11.4.4(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))
       '@rollup/pluginutils': 5.3.0(rollup@4.55.1)
       '@typescript-eslint/scope-manager': 8.51.0
       '@typescript-eslint/typescript-estree': 8.51.0(typescript@5.9.3)
@@ -14882,7 +14912,7 @@ snapshots:
       unplugin: 1.16.1
       vue: 3.5.34(typescript@5.9.3)
     optionalDependencies:
-      vue-i18n: 11.4.2(vue@3.5.34(typescript@5.9.3))
+      vue-i18n: 11.4.4(vue@3.5.34(typescript@5.9.3))
     transitivePeerDependencies:
       - '@vue/compiler-dom'
       - eslint
@@ -14890,14 +14920,14 @@ snapshots:
       - supports-color
       - typescript
 
-  '@intlify/vue-i18n-extensions@8.0.0(@intlify/shared@11.2.8)(@vue/compiler-dom@3.5.34)(vue-i18n@11.4.2(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))':
+  '@intlify/vue-i18n-extensions@8.0.0(@intlify/shared@11.2.8)(@vue/compiler-dom@3.5.34)(vue-i18n@11.4.4(vue@3.5.34(typescript@5.9.3)))(vue@3.5.34(typescript@5.9.3))':
     dependencies:
       '@babel/parser': 7.28.5
     optionalDependencies:
       '@intlify/shared': 11.2.8
       '@vue/compiler-dom': 3.5.34
       vue: 3.5.34(typescript@5.9.3)
-      vue-i18n: 11.4.2(vue@3.5.34(typescript@5.9.3))
+      vue-i18n: 11.4.4(vue@3.5.34(typescript@5.9.3))
 
   '@ioredis/commands@1.5.1': {}
 
@@ -15702,7 +15732,7 @@ snapshots:
   '@oxc-minify/binding-linux-x64-gnu@0.128.0':
     optional: true
 
-  '@oxc-minify/binding-linux-x64-gnu@0.130.0': {}
+  '@oxc-minify/binding-linux-x64-gnu@0.131.0': {}
 
   '@oxc-minify/binding-linux-x64-musl@0.128.0':
     optional: true
@@ -15726,7 +15756,7 @@ snapshots:
   '@oxc-minify/binding-win32-x64-msvc@0.128.0':
     optional: true
 
-  '@oxc-minify/binding-win32-x64-msvc@0.130.0': {}
+  '@oxc-minify/binding-win32-x64-msvc@0.131.0': {}
 
   '@oxc-parser/binding-android-arm-eabi@0.128.0':
     optional: true
@@ -15770,7 +15800,7 @@ snapshots:
   '@oxc-parser/binding-linux-x64-gnu@0.128.0':
     optional: true
 
-  '@oxc-parser/binding-linux-x64-gnu@0.130.0': {}
+  '@oxc-parser/binding-linux-x64-gnu@0.131.0': {}
 
   '@oxc-parser/binding-linux-x64-musl@0.128.0':
     optional: true
@@ -15794,7 +15824,7 @@ snapshots:
   '@oxc-parser/binding-win32-x64-msvc@0.128.0':
     optional: true
 
-  '@oxc-parser/binding-win32-x64-msvc@0.130.0': {}
+  '@oxc-parser/binding-win32-x64-msvc@0.131.0': {}
 
   '@oxc-project/types@0.128.0': {}
 
@@ -15840,7 +15870,7 @@ snapshots:
   '@oxc-transform/binding-linux-x64-gnu@0.128.0':
     optional: true
 
-  '@oxc-transform/binding-linux-x64-gnu@0.130.0': {}
+  '@oxc-transform/binding-linux-x64-gnu@0.131.0': {}
 
   '@oxc-transform/binding-linux-x64-musl@0.128.0':
     optional: true
@@ -15864,7 +15894,7 @@ snapshots:
   '@oxc-transform/binding-win32-x64-msvc@0.128.0':
     optional: true
 
-  '@oxc-transform/binding-win32-x64-msvc@0.130.0': {}
+  '@oxc-transform/binding-win32-x64-msvc@0.131.0': {}
 
   '@package-json/types@0.0.12': {}
 
@@ -19947,7 +19977,7 @@ snapshots:
     dependencies:
       estraverse: 5.3.0
 
-  esrap@2.2.8(@typescript-eslint/types@8.59.3):
+  esrap@2.2.9(@typescript-eslint/types@8.59.3):
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
     optionalDependencies:
@@ -22813,7 +22843,7 @@ snapshots:
       pngjs: 5.0.0
       yargs: 15.4.1
 
-  qs@6.15.1:
+  qs@6.15.2:
     dependencies:
       side-channel: 1.1.0
 
@@ -23824,7 +23854,7 @@ snapshots:
       clsx: 2.1.1
       devalue: 5.8.1
       esm-env: 1.2.2
-      esrap: 2.2.8(@typescript-eslint/types@8.59.3)
+      esrap: 2.2.9(@typescript-eslint/types@8.59.3)
       is-reference: 3.0.3
       locate-character: 3.0.0
       magic-string: 0.30.21
@@ -24685,11 +24715,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-i18n@11.4.2(vue@3.5.34(typescript@5.9.3)):
+  vue-i18n@11.4.4(vue@3.5.34(typescript@5.9.3)):
     dependencies:
-      '@intlify/core-base': 11.4.2
-      '@intlify/devtools-types': 11.4.2
-      '@intlify/shared': 11.4.2
+      '@intlify/core-base': 11.4.4
+      '@intlify/devtools-types': 11.4.4
+      '@intlify/shared': 11.4.4
       '@vue/devtools-api': 6.6.4
       vue: 3.5.34(typescript@5.9.3)
 
@@ -24765,7 +24795,7 @@ snapshots:
       sortablejs: 1.14.0
       vue: 3.5.34(typescript@5.9.3)
 
-  vxe-pc-ui@4.14.12(vue@3.5.34(typescript@5.9.3)):
+  vxe-pc-ui@4.14.14(vue@3.5.34(typescript@5.9.3)):
     dependencies:
       '@vxe-ui/core': 4.4.12(vue@3.5.34(typescript@5.9.3))
     transitivePeerDependencies:
@@ -24773,7 +24803,7 @@ snapshots:
 
   vxe-table@4.18.13(vue@3.5.34(typescript@5.9.3)):
     dependencies:
-      vxe-pc-ui: 4.14.12(vue@3.5.34(typescript@5.9.3))
+      vxe-pc-ui: 4.14.14(vue@3.5.34(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
