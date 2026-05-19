@@ -30,19 +30,19 @@
   "dependencies": {
     "@iconify-json/lucide": "catalog:",
     "@nuxt/ui": "^4.7.1",
-    "nuxt": "^4.4.5",
+    "nuxt": "^4.4.6",
     "vue": "^3.5.34",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@oxc-minify/binding-linux-x64-gnu": "0.131.0",
-    "@oxc-minify/binding-win32-x64-msvc": "0.131.0",
-    "@oxc-parser/binding-linux-x64-gnu": "0.131.0",
-    "@oxc-parser/binding-win32-x64-msvc": "0.131.0",
-    "@oxc-transform/binding-linux-x64-gnu": "0.131.0",
-    "@oxc-transform/binding-win32-x64-msvc": "0.131.0",
-    "@unrs/resolver-binding-linux-x64-gnu": "1.11.1",
-    "@unrs/resolver-binding-win32-x64-msvc": "1.11.1",
+    "@oxc-minify/binding-linux-x64-gnu": "0.132.0",
+    "@oxc-minify/binding-win32-x64-msvc": "0.132.0",
+    "@oxc-parser/binding-linux-x64-gnu": "0.132.0",
+    "@oxc-parser/binding-win32-x64-msvc": "0.132.0",
+    "@oxc-transform/binding-linux-x64-gnu": "0.132.0",
+    "@oxc-transform/binding-win32-x64-msvc": "0.132.0",
+    "@unrs/resolver-binding-linux-x64-gnu": "1.12.2",
+    "@unrs/resolver-binding-win32-x64-msvc": "1.12.2",
     "@x-monorepo/eslint-config": "workspace:*",
     "tailwindcss": "^4.3.0"
   }
