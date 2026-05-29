@@ -25,7 +25,7 @@ catalog:
   '@form-create/designer': ^3.4.0
   '@form-create/element-ui': ^3.3.0
   '@iconify-json/ant-design': ^1.2.5
-  '@iconify-json/lucide': ^1.2.109
+  '@iconify-json/lucide': ^1.2.110
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.1
   '@intlify/core-base': ^11.4.4
@@ -107,7 +107,7 @@ catalog:
   element-plus: ^2.14.0
   es-toolkit: ^1.47.0
   eslint: ^9.39.4
-  eslint-config-turbo: ^2.9.15
+  eslint-config-turbo: ^2.9.16
   eslint-plugin-command: ^3.5.2
   eslint-plugin-eslint-comments: ^3.2.0
   eslint-plugin-import-x: ^4.16.2
@@ -116,7 +116,7 @@ catalog:
   eslint-plugin-n: ^17.24.0
   eslint-plugin-no-only-tests: ^3.4.0
   eslint-plugin-perfectionist: ^5.9.0
-  eslint-plugin-prettier: ^5.5.5
+  eslint-plugin-prettier: ^5.5.6
   eslint-plugin-regexp: ^2.10.0
   eslint-plugin-unicorn: ^62.0.0
   eslint-plugin-unused-imports: ^4.4.1
@@ -191,7 +191,7 @@ catalog:
   theme-colors: ^0.1.0
   tinymce: ^8.5.1
   tippy.js: ^6.3.7
-  turbo: ^2.9.15
+  turbo: ^2.9.16
   typescript: ^5.9.3
   unbuild: ^3.6.1
   unplugin-element-plus: ^0.11.2
