@@ -35,8 +35,8 @@
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@oxc-minify/binding-linux-x64-gnu": "0.133.0",
-    "@oxc-minify/binding-win32-x64-msvc": "0.133.0",
+    "@oxc-minify/binding-linux-x64-gnu": "0.134.0",
+    "@oxc-minify/binding-win32-x64-msvc": "0.134.0",
     "@oxc-parser/binding-linux-x64-gnu": "0.133.0",
     "@oxc-parser/binding-win32-x64-msvc": "0.133.0",
     "@oxc-transform/binding-linux-x64-gnu": "0.133.0",
