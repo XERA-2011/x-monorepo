@@ -69,7 +69,7 @@ catalog:
   '@vitejs/plugin-vue-jsx': ^5.1.5
   '@vue/reactivity': ^3.5.29
   '@vue/shared': ^3.5.35
-  '@vue/test-utils': ^2.4.10
+  '@vue/test-utils': ^2.4.11
   '@vueuse/core': ^14.1.0
   '@vueuse/integrations': ^14.3.0
   '@vueuse/motion': ^3.0.3
@@ -121,7 +121,7 @@ catalog:
   eslint-plugin-unicorn: ^62.0.0
   eslint-plugin-unused-imports: ^4.4.1
   eslint-plugin-vitest: ^0.5.4
-  eslint-plugin-vue: ^10.9.1
+  eslint-plugin-vue: ^10.9.2
   execa: ^9.6.1
   fast-xml-parser: ^5.3.3
   find-up: ^8.0.0
@@ -217,7 +217,7 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.14.26
+  vxe-pc-ui: ^4.14.28
   vxe-table: ^4.19.6
   watermark-js-plus: ^1.6.3
   zod: ^4.4.3
