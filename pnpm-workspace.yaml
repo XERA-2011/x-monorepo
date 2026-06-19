@@ -25,7 +25,7 @@ catalog:
   '@form-create/designer': ^3.5.0
   '@form-create/element-ui': ^3.3.1
   '@iconify-json/ant-design': ^1.2.5
-  '@iconify-json/lucide': ^1.2.113
+  '@iconify-json/lucide': ^1.2.114
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.1
   '@intlify/core-base': ^11.4.6
