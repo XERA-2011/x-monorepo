@@ -61,8 +61,8 @@ catalog:
   '@types/qrcode': ^1.5.6
   '@types/qs': ^6.15.1
   '@types/sortablejs': ^1.15.9
-  '@typescript-eslint/eslint-plugin': ^8.61.1
-  '@typescript-eslint/parser': ^8.61.1
+  '@typescript-eslint/eslint-plugin': ^8.62.0
+  '@typescript-eslint/parser': ^8.62.0
   '@vee-validate/zod': ^4.15.1
   '@vite-pwa/vitepress': ^1.1.0
   '@vitejs/plugin-vue': ^6.0.7
@@ -76,7 +76,7 @@ catalog:
   ant-design-vue: ^4.2.6
   archiver: ^7.0.1
   autoprefixer: ^10.5.0
-  axios: ^1.18.0
+  axios: ^1.18.1
   axios-mock-adapter: ^2.1.0
   bpmn-js: ^18.9.1
   bpmn-js-properties-panel: 5.59.0
@@ -110,7 +110,7 @@ catalog:
   eslint-config-turbo: ^2.9.18
   eslint-plugin-command: ^3.5.2
   eslint-plugin-eslint-comments: ^3.2.0
-  eslint-plugin-import-x: ^4.16.2
+  eslint-plugin-import-x: ^4.17.0
   eslint-plugin-jsdoc: ^61.7.1
   eslint-plugin-jsonc: ^2.21.1
   eslint-plugin-n: ^17.24.0
@@ -151,7 +151,7 @@ catalog:
   medium-zoom: ^1.1.0
   nitropack: ^2.13.4
   nprogress: ^0.2.0
-  ora: ^9.4.0
+  ora: ^9.4.1
   pinia: ^3.0.4
   pinia-plugin-persistedstate: ^4.7.1
   pkg-types: ^2.3.0
@@ -217,8 +217,8 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.15.5
-  vxe-table: ^4.19.17
+  vxe-pc-ui: ^4.15.9
+  vxe-table: ^4.19.18
   watermark-js-plus: ^1.6.3
   zod: ^4.4.3
   zod-defaults: 0.2.3
