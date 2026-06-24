@@ -37,7 +37,7 @@ jobs:
       shared: ${{ steps.filter.outputs.shared }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: dorny/paths-filter@v4
         id: filter
         with:
@@ -59,7 +59,7 @@ jobs:
       github.event_name == 'workflow_dispatch' && (github.event.inputs.deploy_target == 'all' || github.event.inputs.deploy_target == 'admin-ele') ||
       github.event_name == 'push' && (needs.detect-changes.outputs.admin-ele == 'true' || needs.detect-changes.outputs.shared == 'true')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: ./.github/actions/setup-node
 
       - name: Build admin-ele
@@ -92,7 +92,7 @@ jobs:
       github.event_name == 'workflow_dispatch' && (github.event.inputs.deploy_target == 'all' || github.event.inputs.deploy_target == 'web-nuxt') ||
       github.event_name == 'push' && (needs.detect-changes.outputs.web-nuxt == 'true' || needs.detect-changes.outputs.shared == 'true')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: ./.github/actions/setup-node
 
       - name: Build web-nuxt
