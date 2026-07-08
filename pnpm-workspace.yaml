@@ -24,7 +24,7 @@ catalog:
   '@form-create/antd-designer': ^3.4.0
   '@form-create/designer': ^3.5.0
   '@form-create/element-ui': ^3.3.1
-  '@iconify-json/ant-design': ^1.2.7
+  '@iconify-json/ant-design': ^1.2.8
   '@iconify-json/lucide': ^1.2.116
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.1
@@ -213,12 +213,12 @@ catalog:
   vue-json-viewer: ^3.0.4
   vue-router: ^4.6.4
   vue-tippy: ^6.7.1
-  vue-tsc: ^3.3.6
+  vue-tsc: ^3.3.7
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.15.28
-  vxe-table: ^4.19.24
+  vxe-pc-ui: ^4.16.1
+  vxe-table: ^4.19.25
   watermark-js-plus: ^1.6.5
   zod: ^4.4.3
   zod-defaults: 0.2.3
