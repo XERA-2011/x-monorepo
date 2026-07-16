@@ -68,7 +68,7 @@ catalog:
   '@vitejs/plugin-vue': ^6.0.8
   '@vitejs/plugin-vue-jsx': ^5.1.6
   '@vue/reactivity': ^3.5.29
-  '@vue/shared': ^3.5.39
+  '@vue/shared': ^3.5.40
   '@vue/test-utils': ^2.4.11
   '@vueuse/core': ^14.1.0
   '@vueuse/integrations': ^14.3.0
@@ -163,7 +163,7 @@ catalog:
   postcss-preset-env: ^10.6.1
   postcss-scss: ^4.0.9
   prettier: ^3.7.4
-  prettier-plugin-tailwindcss: ^0.8.0
+  prettier-plugin-tailwindcss: ^0.8.1
   publint: ^0.3.21
   qrcode: ^1.5.4
   qs: ^6.15.3
@@ -206,7 +206,7 @@ catalog:
   vitepress: ^1.6.4
   vitepress-plugin-group-icons: ^1.6.5
   vitest: ^4.1.10
-  vue: ^3.5.39
+  vue: ^3.5.40
   vue-dompurify-html: ^5.3.0
   vue-eslint-parser: ^10.4.1
   vue-i18n: ^11.4.6
@@ -217,8 +217,8 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.16.10
-  vxe-table: ^4.20.1
+  vxe-pc-ui: ^4.16.12
+  vxe-table: ^4.20.2
   watermark-js-plus: ^1.6.6
   zod: ^4.4.3
   zod-defaults: 0.2.3
