@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@iconify-json/lucide": "catalog:",
-    "@nuxt/ui": "^4.9.0",
+    "@nuxt/ui": "^4.10.0",
     "nuxt": "^4.4.8",
     "vue": "^3.5.40",
     "vue-router": "^4.6.4"
@@ -44,6 +44,6 @@
     "@unrs/resolver-binding-linux-x64-gnu": "1.12.2",
     "@unrs/resolver-binding-win32-x64-msvc": "1.12.2",
     "@x-monorepo/eslint-config": "workspace:*",
-    "tailwindcss": "^4.3.2"
+    "tailwindcss": "^4.3.3"
   }
 }
