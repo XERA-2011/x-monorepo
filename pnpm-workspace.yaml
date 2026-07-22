@@ -156,7 +156,7 @@ catalog:
   pinia-plugin-persistedstate: ^4.7.1
   pkg-types: ^2.3.0
   playwright: ^1.61.1
-  postcss: ^8.5.20
+  postcss: ^8.5.21
   postcss-antd-fixes: ^0.2.0
   postcss-html: ^1.8.1
   postcss-import: ^16.1.1
@@ -189,7 +189,7 @@ catalog:
   tailwindcss: ^4.3.3
   tailwindcss-animate: ^1.0.7
   theme-colors: ^0.1.0
-  tinymce: ^8.8.0
+  tinymce: ^8.8.1
   tippy.js: ^6.3.7
   turbo: ^2.10.5
   typescript: ^5.9.3
@@ -217,7 +217,7 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.16.15
+  vxe-pc-ui: ^4.16.17
   vxe-table: ^4.20.5
   watermark-js-plus: ^1.6.6
   zod: ^4.4.3
