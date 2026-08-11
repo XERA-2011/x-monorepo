@@ -10,7 +10,7 @@ packages:
   - scripts/*
 
 catalog:
-  '@ast-grep/napi': ^0.45.0
+  '@ast-grep/napi': ^0.45.1
   '@changesets/changelog-github': ^0.7.0
   '@changesets/cli': ^2.31.1
   '@changesets/git': ^3.0.4
@@ -25,7 +25,7 @@ catalog:
   '@form-create/designer': ^3.5.0
   '@form-create/element-ui': ^3.3.3
   '@iconify-json/ant-design': ^1.2.8
-  '@iconify-json/lucide': ^1.2.121
+  '@iconify-json/lucide': ^1.2.122
   '@iconify/tailwind': ^1.2.0
   '@iconify/vue': ^5.0.1
   '@intlify/core-base': ^11.4.8
@@ -104,10 +104,10 @@ catalog:
   diagram-js: ^15.5.0
   dotenv: ^17.2.3
   echarts: ^6.1.0
-  element-plus: ^2.14.3
+  element-plus: ^2.14.4
   es-toolkit: ^1.50.0
   eslint: ^9.39.5
-  eslint-config-turbo: ^2.10.8
+  eslint-config-turbo: ^2.10.9
   eslint-plugin-command: ^3.5.3
   eslint-plugin-eslint-comments: ^3.2.0
   eslint-plugin-import-x: ^4.17.1
@@ -128,7 +128,7 @@ catalog:
   get-port: ^7.2.0
   globals: ^17.0.0
   h3: ^1.15.11
-  happy-dom: ^20.11.1
+  happy-dom: ^20.11.2
   highlight.js: ^11.11.1
   html-minifier-terser: ^7.2.0
   is-ci: ^4.1.0
@@ -191,7 +191,7 @@ catalog:
   theme-colors: ^0.1.0
   tinymce: ^8.8.2
   tippy.js: ^6.3.7
-  turbo: ^2.10.8
+  turbo: ^2.10.9
   typescript: ^5.9.3
   unbuild: ^3.6.1
   unplugin-element-plus: ^0.11.2
