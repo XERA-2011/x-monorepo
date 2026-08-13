@@ -397,8 +397,8 @@ catalogs:
       specifier: ^6.15.3
       version: 6.15.3
     reka-ui:
-      specifier: ^2.10.1
-      version: 2.10.1
+      specifier: ^2.10.3
+      version: 2.10.3
     resolve.exports:
       specifier: ^2.0.3
       version: 2.0.3
@@ -1234,7 +1234,7 @@ importers:
         version: link:../base/shared
       reka-ui:
         specifier: 'catalog:'
-        version: 2.10.1(vue@3.5.41(typescript@5.9.3))
+        version: 2.10.3(vue@3.5.41(typescript@5.9.3))
       sortablejs:
         specifier: 'catalog:'
         version: 1.15.7
@@ -1394,7 +1394,7 @@ importers:
         version: 0.577.0(vue@3.5.41(typescript@5.9.3))
       reka-ui:
         specifier: 'catalog:'
-        version: 2.10.1(vue@3.5.41(typescript@5.9.3))
+        version: 2.10.3(vue@3.5.41(typescript@5.9.3))
       vee-validate:
         specifier: 'catalog:'
         version: 4.15.1(vue@3.5.41(typescript@5.9.3))
@@ -11295,6 +11295,11 @@ packages:
     peerDependencies:
       vue: ^3.5.41
 
+  reka-ui@2.10.3:
+    resolution: {integrity: sha512-nJGZbwcha8AcP2wbnjodfzsciTKBqp1mIzepC9Pi2xDI/YK3++ej3vpJOSPyxqrkq1Oorj4K+BdJkbVCV6x6ag==}
+    peerDependencies:
+      vue: ^3.5.41
+
   relateurl@0.2.7:
     resolution: {integrity: sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==}
     engines: {node: '>= 0.10'}
@@ -15281,7 +15286,7 @@ snapshots:
   '@floating-ui/vue@1.1.9(vue@3.5.41(typescript@5.9.3))':
     dependencies:
       '@floating-ui/dom': 1.8.0
-      '@floating-ui/utils': 0.2.11
+      '@floating-ui/utils': 0.2.12
       vue-demi: 0.14.10(vue@3.5.41(typescript@5.9.3))
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -23933,6 +23938,22 @@ snapshots:
       '@tanstack/vue-virtual': 3.13.29(vue@3.5.41(typescript@5.9.3))
       '@vueuse/core': 14.3.0(vue@3.5.41(typescript@5.9.3))
       '@vueuse/shared': 14.3.0(vue@3.5.41(typescript@5.9.3))
+      aria-hidden: 1.2.6
+      defu: 6.1.7
+      ohash: 2.0.11
+      vue: 3.5.41(typescript@5.9.3)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  reka-ui@2.10.3(vue@3.5.41(typescript@5.9.3)):
+    dependencies:
+      '@floating-ui/dom': 1.8.0
+      '@floating-ui/vue': 1.1.9(vue@3.5.41(typescript@5.9.3))
+      '@internationalized/date': 3.12.0
+      '@internationalized/number': 3.6.5
+      '@tanstack/vue-virtual': 3.13.32(vue@3.5.41(typescript@5.9.3))
+      '@vueuse/core': 14.4.0(vue@3.5.41(typescript@5.9.3))
+      '@vueuse/shared': 14.4.0(vue@3.5.41(typescript@5.9.3))
       aria-hidden: 1.2.6
       defu: 6.1.7
       ohash: 2.0.11
