@@ -214,11 +214,11 @@ catalogs:
       specifier: ^7.1.9
       version: 7.1.9
     cz-git:
-      specifier: ^1.13.1
-      version: 1.13.1
+      specifier: ^1.13.2
+      version: 1.13.2
     czg:
-      specifier: ^1.13.1
-      version: 1.13.1
+      specifier: ^1.13.2
+      version: 1.13.2
     dayjs:
       specifier: ^1.11.21
       version: 1.11.21
@@ -304,8 +304,8 @@ catalogs:
       specifier: ^20.11.2
       version: 20.11.2
     highlight.js:
-      specifier: ^11.11.1
-      version: 11.11.1
+      specifier: ^11.12.0
+      version: 11.12.0
     html-minifier-terser:
       specifier: ^7.2.0
       version: 7.2.0
@@ -373,8 +373,8 @@ catalogs:
       specifier: ^1.8.1
       version: 1.8.1
     postcss-import:
-      specifier: ^16.1.1
-      version: 16.1.1
+      specifier: ^16.2.0
+      version: 16.2.0
     postcss-preset-env:
       specifier: ^10.6.1
       version: 10.6.1
@@ -424,8 +424,8 @@ catalogs:
       specifier: ^16.26.1
       version: 16.26.1
     stylelint-config-recess-order:
-      specifier: ^7.7.0
-      version: 7.7.0
+      specifier: ^7.8.0
+      version: 7.8.0
     stylelint-config-recommended:
       specifier: ^17.0.0
       version: 17.0.0
@@ -468,6 +468,9 @@ catalogs:
     turbo:
       specifier: ^2.10.9
       version: 2.10.9
+    typescript:
+      specifier: ^5.9.3
+      version: 5.9.3
     unbuild:
       specifier: ^3.6.1
       version: 3.6.1
@@ -532,11 +535,11 @@ catalogs:
       specifier: ^4.1.0
       version: 4.1.0
     vxe-pc-ui:
-      specifier: ^4.16.27
-      version: 4.16.27
+      specifier: ^4.16.28
+      version: 4.17.3
     vxe-table:
-      specifier: ^4.20.10
-      version: 4.20.11
+      specifier: ^4.20.12
+      version: 4.20.12
     watermark-js-plus:
       specifier: ^1.6.6
       version: 1.6.6
@@ -639,7 +642,7 @@ importers:
         specifier: 'catalog:'
         version: 2.10.9
       typescript:
-        specifier: 5.9.3
+        specifier: 'catalog:'
         version: 5.9.3
       unbuild:
         specifier: 'catalog:'
@@ -727,7 +730,7 @@ importers:
         version: 2.14.4(vue@3.5.41(typescript@5.9.3))
       highlight.js:
         specifier: 'catalog:'
-        version: 11.11.1
+        version: 11.12.0
       pinia:
         specifier: ^3.0.4
         version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
@@ -822,10 +825,10 @@ importers:
         version: 4.3.2(@commitlint/lint@20.5.3)
       cz-git:
         specifier: 'catalog:'
-        version: 1.13.1
+        version: 1.13.2
       czg:
         specifier: 'catalog:'
-        version: 1.13.1
+        version: 1.13.2
 
   internal/lint-configs/eslint-config:
     dependencies:
@@ -916,7 +919,7 @@ importers:
         version: 4.0.1(stylelint@16.26.1(typescript@5.9.3))
       stylelint-config-recess-order:
         specifier: 'catalog:'
-        version: 7.7.0(stylelint-order@7.0.1(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3))
+        version: 7.8.0(stylelint-order@7.0.1(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3))
       stylelint-scss:
         specifier: 'catalog:'
         version: 6.14.0(stylelint@16.26.1(typescript@5.9.3))
@@ -1034,7 +1037,7 @@ importers:
         version: 0.2.0(postcss@8.5.26)
       postcss-import:
         specifier: 'catalog:'
-        version: 16.1.1(postcss@8.5.26)
+        version: 16.2.0(postcss@8.5.26)
       postcss-preset-env:
         specifier: 'catalog:'
         version: 10.6.1(postcss@8.5.26)
@@ -1665,10 +1668,10 @@ importers:
         version: 3.5.41(typescript@5.9.3)
       vxe-pc-ui:
         specifier: 'catalog:'
-        version: 4.16.27(vue@3.5.41(typescript@5.9.3))
+        version: 4.17.3(vue@3.5.41(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
-        version: 4.20.11
+        version: 4.20.12
     devDependencies:
       '@types/codemirror':
         specifier: 'catalog:'
@@ -6476,8 +6479,8 @@ packages:
     peerDependencies:
       vue: ^3.5.41
 
-  '@vxe-ui/core@4.4.19':
-    resolution: {integrity: sha512-Ahx7WWS43tkT6JzVbfZsZ0+81xmVDuzIw0ZXhbUAYqGd98DPX3pnMOdYCHe9OzgpQWkDwsmXF0zuPcEIMnUdQQ==}
+  '@vxe-ui/core@4.4.20':
+    resolution: {integrity: sha512-PYsssySS4cK3M2nahIRGcIRjQvnsDA/AB9Ie1fu5zAFRaUGTpyHh62sSRi1qNSsqpDiABEYquOSrexZ/NG6akw==}
     peerDependencies:
       vue: ^3.5.41
 
@@ -7452,12 +7455,12 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  cz-git@1.13.1:
-    resolution: {integrity: sha512-xeMA5ci+gkBY6uKmqc6nzhG/Q4pmK1DKbVVUgByOTBgregoiYE0f3otEF0ADelyEWH4vNsO1W2o7QZYEe7Nwlw==}
+  cz-git@1.13.2:
+    resolution: {integrity: sha512-OZDo8EYvFGNqYUY3y45DLVJAgAKBFRUTQi57Mdo83vGuDfHNWt0u7g6q/VRv3JEDDNNdouC9swKMYQ0QhpUKTQ==}
     engines: {node: '>=v12.20.0'}
 
-  czg@1.13.1:
-    resolution: {integrity: sha512-mCfY4bCAMAdaFSlrQwtUTChzFAv59kD/y2leX5+C7X9inu0mt/VkHT7gkbzwcToh26oJaOaYPA9lcXUX92/6cw==}
+  czg@1.13.2:
+    resolution: {integrity: sha512-qfabNsNazjGND5WSPUZbuBtKkZc0hJOLBk8yS2sfF99cHkyBoAuFOLgMosfc/keoa6QEz64Vje29nmP6T01oSw==}
     engines: {node: '>=v12.20.0'}
     hasBin: true
 
@@ -8291,8 +8294,8 @@ packages:
     resolution: {integrity: sha512-Ap6G0WQwcU/LHsvLwON1fAQX9Zp0A2Y6Y/cJBl9r/JbW90Zyg4/zbG6zzKa2OTALELarYHmKu0GhpM5EO+7T0g==}
     engines: {node: '>=0.10'}
 
-  esrap@2.3.3:
-    resolution: {integrity: sha512-OETBYYsX6L8btUkOyi8AcdtlfpsyNO9nCmP92U/Cxm07epHeLo5we1ck6z0HsbB/jxWlfmEBF9oobZKqSBWD4Q==}
+  esrap@2.3.4:
+    resolution: {integrity: sha512-CHnJXZDfBeOAjLIGNy/0BEsmDu5+irHgUXRW9pGptxCbO3uyjJ98crilzFgiBqizW94UodjX3GAPLg/dhEnUfA==}
     peerDependencies:
       '@typescript-eslint/types': ^8.2.0
     peerDependenciesMeta:
@@ -8830,6 +8833,10 @@ packages:
 
   highlight.js@11.11.1:
     resolution: {integrity: sha512-Xwwo44whKBVCYoliBQwaPvtd/2tYFkRQtXDWj1nackaV2JPXx3L0+Jvd8/qCJ2p+ML0/XVkJ2q+Mr+UVdpJK5w==}
+    engines: {node: '>=12.0.0'}
+
+  highlight.js@11.12.0:
+    resolution: {integrity: sha512-nbfWpyRMcMrPMmDwJB+dhX/eiaPKtc2RB+0QZskqJ3WjRA/FDS0e9hZrx8EC/lbEv8gXy98FcDbNa/dspAaJMg==}
     engines: {node: '>=12.0.0'}
 
   homedir-polyfill@1.0.3:
@@ -10647,8 +10654,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  postcss-import@16.1.1:
-    resolution: {integrity: sha512-2xVS1NCZAfjtVdvXiyegxzJ447GyqCeEI5V7ApgQVOWnros1p5lGNovJNapwPpMombyFBfqDwt7AD3n2l0KOfQ==}
+  postcss-import@16.2.0:
+    resolution: {integrity: sha512-0mQUGlSp87Zl70K58RNwQAN1WS9plFE6KWGui9nyK6ninduMyjW/Khaoy/BpBoFTBh7ndAvAKrSKVbwy6vd/BA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       postcss: ^8.0.0
@@ -11958,8 +11965,8 @@ packages:
       postcss-html: ^1.0.0
       stylelint: '>=14.0.0'
 
-  stylelint-config-recess-order@7.7.0:
-    resolution: {integrity: sha512-TWRkg+BrwHOki4pi9y1emWgx6pFwZXOYZhNsbEObke/mzYUJVJvDEzJJQXhH7ajslQJGcrExy8ZvJqDiUbhFpA==}
+  stylelint-config-recess-order@7.8.0:
+    resolution: {integrity: sha512-ObYusdkXavm8ulgb5xvmU1l8wgCdveNYG12hOTUEdjS8bNhSRggl4or0mE0JaOnQz+Ve2xZemVpwqERCgJbntg==}
     peerDependencies:
       stylelint: ^16.18.0 || ^17.0.0
       stylelint-order: ^7.0.0 || ^8.0.0
@@ -13009,11 +13016,11 @@ packages:
     peerDependencies:
       vue: ^3.5.41
 
-  vxe-pc-ui@4.16.27:
-    resolution: {integrity: sha512-6CbBAau0HGnsB8eo3JZvThMhzmNudC+I3i5QsM6y80GITEehV1zxaZt4079GmjbqQ99134ivAWYykg+z0EWlIw==}
+  vxe-pc-ui@4.17.3:
+    resolution: {integrity: sha512-h1BEQj7Zch53dqGMX2hMcCZdS7i7MugMawBIQj9V6xT1ZHQV19Bni3VefeP0tS9ycD2s3v1O6b69v0Lpu7QKAw==}
 
-  vxe-table@4.20.11:
-    resolution: {integrity: sha512-H9SCcd9fb6LhnHT2lL4YgruPax/aMXOvNgT5ZezbZP4DzkXpPbTN0lp/KFetay6VZjDTWFJtGFtskzkfdXOV3g==}
+  vxe-table@4.20.12:
+    resolution: {integrity: sha512-7vYORN4LOY67C/jR0ZpX3rxiU4odW/okWRZBL9PGb4qBtzo/0dlHKblvmBd7AyuxIvUX/xrkd2p3DkAwTGQGdQ==}
 
   w3c-keyname@2.2.8:
     resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
@@ -15703,7 +15710,7 @@ snapshots:
       diff: 8.0.2
       lodash: 4.17.23
       minimatch: 10.0.3
-      resolve: 1.22.11
+      resolve: 1.22.12
       semver: 7.5.4
       source-map: 0.6.1
       typescript: 5.8.2
@@ -15717,7 +15724,7 @@ snapshots:
       '@microsoft/tsdoc': 0.16.0
       ajv: 8.12.0
       jju: 1.4.0
-      resolve: 1.22.11
+      resolve: 1.22.12
 
   '@microsoft/tsdoc@0.16.0': {}
 
@@ -17156,7 +17163,7 @@ snapshots:
       fs-extra: 11.3.6
       import-lazy: 4.0.0
       jju: 1.4.0
-      resolve: 1.22.11
+      resolve: 1.22.12
       semver: 7.5.4
     optionalDependencies:
       '@types/node': 26.2.0
@@ -17167,7 +17174,7 @@ snapshots:
 
   '@rushstack/rig-package@0.6.0':
     dependencies:
-      resolve: 1.22.11
+      resolve: 1.22.12
       strip-json-comments: 3.1.1
 
   '@rushstack/terminal@0.19.5(@types/node@26.2.0)':
@@ -18645,7 +18652,7 @@ snapshots:
     dependencies:
       vue: 3.5.41(typescript@5.9.3)
 
-  '@vxe-ui/core@4.4.19(vue@3.5.41(typescript@5.9.3))':
+  '@vxe-ui/core@4.4.20(vue@3.5.41(typescript@5.9.3))':
     dependencies:
       dom-zindex: 1.0.7
       vue: 3.5.41(typescript@5.9.3)
@@ -19789,9 +19796,9 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  cz-git@1.13.1: {}
+  cz-git@1.13.2: {}
 
-  czg@1.13.1: {}
+  czg@1.13.2: {}
 
   d3-array@3.2.4:
     dependencies:
@@ -20749,7 +20756,7 @@ snapshots:
     dependencies:
       estraverse: 5.3.0
 
-  esrap@2.3.3(@typescript-eslint/types@8.67.0):
+  esrap@2.3.4(@typescript-eslint/types@8.67.0):
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
     optionalDependencies:
@@ -21356,6 +21363,8 @@ snapshots:
   hey-listen@1.0.8: {}
 
   highlight.js@11.11.1: {}
+
+  highlight.js@11.12.0: {}
 
   homedir-polyfill@1.0.3:
     dependencies:
@@ -23294,12 +23303,12 @@ snapshots:
       postcss: 8.5.26
       postcss-value-parser: 4.2.0
 
-  postcss-import@16.1.1(postcss@8.5.26):
+  postcss-import@16.2.0(postcss@8.5.26):
     dependencies:
       postcss: 8.5.26
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
-      resolve: 1.22.11
+      resolve: 1.22.12
 
   postcss-lab-function@7.0.12(postcss@8.5.26):
     dependencies:
@@ -24778,7 +24787,7 @@ snapshots:
       postcss-html: 1.8.1
       stylelint: 16.26.1(typescript@5.9.3)
 
-  stylelint-config-recess-order@7.7.0(stylelint-order@7.0.1(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3)):
+  stylelint-config-recess-order@7.8.0(stylelint-order@7.0.1(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3)):
     dependencies:
       stylelint: 16.26.1(typescript@5.9.3)
       stylelint-order: 7.0.1(stylelint@16.26.1(typescript@5.9.3))
@@ -24927,7 +24936,7 @@ snapshots:
       clsx: 2.1.1
       devalue: 5.9.0
       esm-env: 1.2.2
-      esrap: 2.3.3(@typescript-eslint/types@8.67.0)
+      esrap: 2.3.4(@typescript-eslint/types@8.67.0)
       is-reference: 3.0.3
       locate-character: 3.0.0
       magic-string: 0.30.21
@@ -26044,13 +26053,13 @@ snapshots:
       sortablejs: 1.14.0
       vue: 3.5.41(typescript@5.9.3)
 
-  vxe-pc-ui@4.16.27(vue@3.5.41(typescript@5.9.3)):
+  vxe-pc-ui@4.17.3(vue@3.5.41(typescript@5.9.3)):
     dependencies:
-      '@vxe-ui/core': 4.4.19(vue@3.5.41(typescript@5.9.3))
+      '@vxe-ui/core': 4.4.20(vue@3.5.41(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
-  vxe-table@4.20.11: {}
+  vxe-table@4.20.12: {}
 
   w3c-keyname@2.2.8: {}
 

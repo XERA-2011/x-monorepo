@@ -96,8 +96,8 @@ catalog:
   crypto-js: ^4.2.0
   cspell: ^9.8.0
   cssnano: ^7.1.9
-  cz-git: ^1.13.1
-  czg: ^1.13.1
+  cz-git: ^1.13.2
+  czg: ^1.13.2
   dayjs: ^1.11.21
   defu: ^6.1.7
   depcheck: ^1.4.7
@@ -129,7 +129,7 @@ catalog:
   globals: ^17.0.0
   h3: ^1.15.11
   happy-dom: ^20.11.2
-  highlight.js: ^11.11.1
+  highlight.js: ^11.12.0
   html-minifier-terser: ^7.2.0
   is-ci: ^4.1.0
   jiti: ^2.7.0
@@ -159,7 +159,7 @@ catalog:
   postcss: ^8.5.26
   postcss-antd-fixes: ^0.2.0
   postcss-html: ^1.8.1
-  postcss-import: ^16.1.1
+  postcss-import: ^16.2.0
   postcss-preset-env: ^10.6.1
   postcss-scss: ^4.0.9
   prettier: ^3.7.4
@@ -177,7 +177,7 @@ catalog:
   sortablejs: ^1.15.7
   steady-xml: ^0.1.0
   stylelint: ^16.26.1
-  stylelint-config-recess-order: ^7.7.0
+  stylelint-config-recess-order: ^7.8.0
   stylelint-config-recommended: ^17.0.0
   stylelint-config-recommended-scss: ^16.0.2
   stylelint-config-recommended-vue: ^1.6.1
@@ -217,8 +217,8 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.4
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.16.27
-  vxe-table: ^4.20.10
+  vxe-pc-ui: ^4.16.28
+  vxe-table: ^4.20.12
   watermark-js-plus: ^1.6.6
   zod: ^4.4.3
   zod-defaults: 0.2.3
