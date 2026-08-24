@@ -128,7 +128,7 @@ catalog:
   get-port: ^7.2.0
   globals: ^17.0.0
   h3: ^1.15.11
-  happy-dom: ^20.11.2
+  happy-dom: ^20.11.6
   highlight.js: ^11.12.0
   html-minifier-terser: ^7.2.0
   is-ci: ^4.1.0
@@ -205,7 +205,7 @@ catalog:
   vite-plugin-vue-devtools: ^8.2.1
   vitepress: ^1.6.4
   vitepress-plugin-group-icons: ^1.6.5
-  vitest: ^4.1.10
+  vitest: ^4.1.11
   vue: ^3.5.41
   vue-dompurify-html: ^5.3.0
   vue-eslint-parser: ^10.4.1
