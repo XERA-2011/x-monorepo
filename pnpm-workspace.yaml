@@ -107,7 +107,7 @@ catalog:
   element-plus: ^2.14.6
   es-toolkit: ^1.52.0
   eslint: ^9.39.5
-  eslint-config-turbo: ^2.11.4
+  eslint-config-turbo: ^2.11.5
   eslint-plugin-command: ^3.5.3
   eslint-plugin-eslint-comments: ^3.2.0
   eslint-plugin-import-x: ^4.17.1
@@ -191,7 +191,7 @@ catalog:
   theme-colors: ^0.1.0
   tinymce: ^8.9.2
   tippy.js: ^6.3.7
-  turbo: ^2.11.4
+  turbo: ^2.11.5
   typescript: ^5.9.3
   unbuild: ^3.6.1
   unplugin-element-plus: ^0.11.2
