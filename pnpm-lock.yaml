@@ -238,8 +238,8 @@ catalogs:
       specifier: ^2.14.7
       version: 2.14.7
     es-toolkit:
-      specifier: ^1.52.0
-      version: 1.52.0
+      specifier: ^1.53.0
+      version: 1.53.0
     eslint:
       specifier: ^9.39.5
       version: 9.39.5
@@ -535,11 +535,11 @@ catalogs:
       specifier: ^4.1.0
       version: 4.1.0
     vxe-pc-ui:
-      specifier: ^4.20.18
-      version: 4.20.18
+      specifier: ^4.20.19
+      version: 4.20.19
     vxe-table:
-      specifier: ^4.23.4
-      version: 4.23.4
+      specifier: ^4.23.5
+      version: 4.23.5
     watermark-js-plus:
       specifier: ^1.6.6
       version: 1.6.6
@@ -1182,7 +1182,7 @@ importers:
         version: 6.1.7
       es-toolkit:
         specifier: 'catalog:'
-        version: 1.52.0
+        version: 1.53.0
       jsencrypt:
         specifier: 'catalog:'
         version: 3.5.4
@@ -1668,10 +1668,10 @@ importers:
         version: 3.5.44(typescript@5.9.3)
       vxe-pc-ui:
         specifier: 'catalog:'
-        version: 4.20.18(vue@3.5.44(typescript@5.9.3))
+        version: 4.20.19(vue@3.5.44(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
-        version: 4.23.4
+        version: 4.23.5
     devDependencies:
       '@types/codemirror':
         specifier: 'catalog:'
@@ -7729,11 +7729,11 @@ packages:
     resolution: {integrity: sha512-yPDz7wqpg1/mmHLmS3tcfTfbw5f1eryXvyghYBffGdERwe+mV7ZcWzTR8LR17Kvqt3qfPurjlonmnq3MKXIOXw==}
     engines: {node: '>= 0.4'}
 
-  es-toolkit@1.51.0:
-    resolution: {integrity: sha512-zC2lQGkM7QX+Gm6iM3+WIdZJzthsEd14LvRNJneSO2hzyz/zNBENR8+YXWo1cKxgPBtV6ksPYHELbcwBRzmdCw==}
-
   es-toolkit@1.52.0:
     resolution: {integrity: sha512-XTNEJQh1tY1ZJVcf6ayP/2n4ZPyaHlW2FWs7xvw5ddPuhUVjLD3olQVQS7kf58JbAB48iL0uL/jerTrjtV3lDA==}
+
+  es-toolkit@1.53.0:
+    resolution: {integrity: sha512-3+AYXp9fmJ/UhHBMYj2/U+RaUouMD90SzoItyDOB2Za7W6dB7fQApFGnZPl2MF6K8/Tv1koh1JyirSx/kju6Pw==}
 
   esbuild@0.25.3:
     resolution: {integrity: sha512-qKA6Pvai73+M2FtftpNKRxJ78GIjmFXFxd/1DVBqGo/qNhLSfv+G12n9pNoWdytJC8U00TrViOwpjT0zgqQS8Q==}
@@ -12586,11 +12586,11 @@ packages:
     peerDependencies:
       vue: ^3.5.44
 
-  vxe-pc-ui@4.20.18:
-    resolution: {integrity: sha512-7G5MplYod7VdF98+pR9jzw4Mi2hYU5JNiDUS8m9e2XPhQG5JmZIuHEErDIs0mskrh90oi1tDsp/RWqJFnEcSSA==}
+  vxe-pc-ui@4.20.19:
+    resolution: {integrity: sha512-JjCmpGNuDfilzFtD15z4GVzevntTQwVfi/mip/dyOXIIuT0LT+4qxVKY8N+8rd/0uLWnY66me3AJusAs82ZSfg==}
 
-  vxe-table@4.23.4:
-    resolution: {integrity: sha512-al+2rUhH6M5WZDb6rJNW3ia9VLshrcSJh4qwFqKHDlp1HnmvyihUI/d1xoHVzE+9X4G/Ohq0D1swO1T3Xqy1wg==}
+  vxe-table@4.23.5:
+    resolution: {integrity: sha512-UyURHLbcUUDRKSgAMpS7RRSlHxacq9J42IL78520Xk9A1plBahctxwcJ5M+2II7RNiKrJz2IL7JRrM+ygd/ZqQ==}
 
   w3c-keyname@2.2.8:
     resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
@@ -13998,7 +13998,7 @@ snapshots:
   '@commitlint/ensure@20.5.3':
     dependencies:
       '@commitlint/types': 20.5.0
-      es-toolkit: 1.51.0
+      es-toolkit: 1.52.0
 
   '@commitlint/execute-rule@20.0.0': {}
 
@@ -14027,7 +14027,7 @@ snapshots:
       '@commitlint/types': 20.5.0
       cosmiconfig: 9.0.1(typescript@5.9.3)
       cosmiconfig-typescript-loader: 6.2.0(@types/node@24.19.2)(cosmiconfig@9.0.1(typescript@5.9.3))(typescript@5.9.3)
-      es-toolkit: 1.51.0
+      es-toolkit: 1.52.0
       is-plain-obj: 4.1.0
       picocolors: 1.1.1
     transitivePeerDependencies:
@@ -14057,7 +14057,7 @@ snapshots:
     dependencies:
       '@commitlint/config-validator': 20.5.0
       '@commitlint/types': 20.5.0
-      es-toolkit: 1.51.0
+      es-toolkit: 1.52.0
       global-directory: 5.0.0
       import-meta-resolve: 4.2.0
       resolve-from: 5.0.0
@@ -19820,9 +19820,9 @@ snapshots:
       is-date-object: 1.1.0
       is-symbol: 1.1.1
 
-  es-toolkit@1.51.0: {}
-
   es-toolkit@1.52.0: {}
+
+  es-toolkit@1.53.0: {}
 
   esbuild@0.25.3:
     optionalDependencies:
@@ -25571,13 +25571,13 @@ snapshots:
       sortablejs: 1.14.0
       vue: 3.5.44(typescript@5.9.3)
 
-  vxe-pc-ui@4.20.18(vue@3.5.44(typescript@5.9.3)):
+  vxe-pc-ui@4.20.19(vue@3.5.44(typescript@5.9.3)):
     dependencies:
       '@vxe-ui/core': 4.4.38(vue@3.5.44(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
-  vxe-table@4.23.4: {}
+  vxe-table@4.23.5: {}
 
   w3c-keyname@2.2.8: {}
 
