@@ -217,8 +217,8 @@ catalog:
   vue3-print-nb: ^0.1.4
   vue3-signature: ^0.4.5
   vuedraggable: ^4.1.0
-  vxe-pc-ui: ^4.20.19
-  vxe-table: ^4.23.5
+  vxe-pc-ui: ^4.20.25
+  vxe-table: ^4.23.7
   watermark-js-plus: ^1.6.6
   zod: ^4.6.7
   zod-defaults: 0.2.3

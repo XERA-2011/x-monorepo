@@ -535,11 +535,11 @@ catalogs:
       specifier: ^4.1.0
       version: 4.1.0
     vxe-pc-ui:
-      specifier: ^4.20.19
-      version: 4.20.19
+      specifier: ^4.20.25
+      version: 4.20.25
     vxe-table:
-      specifier: ^4.23.5
-      version: 4.23.5
+      specifier: ^4.23.7
+      version: 4.23.7
     watermark-js-plus:
       specifier: ^1.6.6
       version: 1.6.6
@@ -1668,10 +1668,10 @@ importers:
         version: 3.5.44(typescript@5.9.3)
       vxe-pc-ui:
         specifier: 'catalog:'
-        version: 4.20.19(vue@3.5.44(typescript@5.9.3))
+        version: 4.20.25(vue@3.5.44(typescript@5.9.3))
       vxe-table:
         specifier: 'catalog:'
-        version: 4.23.5
+        version: 4.23.7
     devDependencies:
       '@types/codemirror':
         specifier: 'catalog:'
@@ -6158,8 +6158,8 @@ packages:
     peerDependencies:
       vue: ^3.5.44
 
-  '@vxe-ui/core@4.4.38':
-    resolution: {integrity: sha512-VtZw4FrhZxKnkuok0ad0/6p3cMPts2u3EsWnk/GpJ6IXZj+CAXCWR6JEVz3qHdTM4bMXCnj9Elp9/kotyQMooQ==}
+  '@vxe-ui/core@4.4.42':
+    resolution: {integrity: sha512-mdbuccuqouwNtS29lHZUk6K1iruvH515fa3gW/aWVQtVvH/ZCYKnq0YZDeefhizq9zOntA6Cl9UqhorXB72Y5w==}
     peerDependencies:
       vue: ^3.5.44
 
@@ -12586,11 +12586,11 @@ packages:
     peerDependencies:
       vue: ^3.5.44
 
-  vxe-pc-ui@4.20.19:
-    resolution: {integrity: sha512-JjCmpGNuDfilzFtD15z4GVzevntTQwVfi/mip/dyOXIIuT0LT+4qxVKY8N+8rd/0uLWnY66me3AJusAs82ZSfg==}
+  vxe-pc-ui@4.20.25:
+    resolution: {integrity: sha512-M0CGzk4lEjVQyYWoR1E6lwH6B/MaRSVgG25wuOx3eIUnCsL6MoYfYbFZt20uxi0bJzLp/Y7Nk+HorOHEIQmLbA==}
 
-  vxe-table@4.23.5:
-    resolution: {integrity: sha512-UyURHLbcUUDRKSgAMpS7RRSlHxacq9J42IL78520Xk9A1plBahctxwcJ5M+2II7RNiKrJz2IL7JRrM+ygd/ZqQ==}
+  vxe-table@4.23.7:
+    resolution: {integrity: sha512-tcEO/pU2lygNg7b5r3MasBuV2Wsdk79Iv5mEcLVWB8LFX+aasRuthyXN4wcZRHfjIUdQ7coinItQja+HfRsHVQ==}
 
   w3c-keyname@2.2.8:
     resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
@@ -18072,7 +18072,7 @@ snapshots:
     dependencies:
       vue: 3.5.44(typescript@5.9.3)
 
-  '@vxe-ui/core@4.4.38(vue@3.5.44(typescript@5.9.3))':
+  '@vxe-ui/core@4.4.42(vue@3.5.44(typescript@5.9.3))':
     dependencies:
       dom-zindex: 1.0.7
       vue: 3.5.44(typescript@5.9.3)
@@ -25571,13 +25571,13 @@ snapshots:
       sortablejs: 1.14.0
       vue: 3.5.44(typescript@5.9.3)
 
-  vxe-pc-ui@4.20.19(vue@3.5.44(typescript@5.9.3)):
+  vxe-pc-ui@4.20.25(vue@3.5.44(typescript@5.9.3)):
     dependencies:
-      '@vxe-ui/core': 4.4.38(vue@3.5.44(typescript@5.9.3))
+      '@vxe-ui/core': 4.4.42(vue@3.5.44(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
 
-  vxe-table@4.23.5: {}
+  vxe-table@4.23.7: {}
 
   w3c-keyname@2.2.8: {}
 
